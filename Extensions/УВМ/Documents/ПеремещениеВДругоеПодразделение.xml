@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="4dc57619-8279-46e9-aa86-64266deccc43">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ПеремещениеВДругоеПодразделение" category="Object">
+				<xr:TypeId>9ddbd192-486e-490a-9c5f-7264ec358601</xr:TypeId>
+				<xr:ValueId>43ca1bde-01d4-40aa-91af-5db8b57948f0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ПеремещениеВДругоеПодразделение" category="Ref">
+				<xr:TypeId>ed6869dd-e7fd-44c6-960b-6997bd67bde1</xr:TypeId>
+				<xr:ValueId>74f1b50d-d196-4cee-ac18-53a1d66d2b12</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ПеремещениеВДругоеПодразделение" category="Selection">
+				<xr:TypeId>028304b5-1126-4f80-ba72-f7ec8c124511</xr:TypeId>
+				<xr:ValueId>8f9d931f-6913-449f-95a7-93008e238cc7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ПеремещениеВДругоеПодразделение" category="List">
+				<xr:TypeId>0133b3cb-c4e9-4eaf-bee4-177f8ea8e3c3</xr:TypeId>
+				<xr:ValueId>ca74ccc7-9b0d-4475-ac1e-44464b715095</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ПеремещениеВДругоеПодразделение" category="Manager">
+				<xr:TypeId>63a3798d-b176-4115-bfda-f7b128b52d19</xr:TypeId>
+				<xr:ValueId>3fe8db03-2feb-4e22-ae4e-07432e3adde6</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПеремещениеВДругоеПодразделение</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>d2c4997c-1df6-4fbf-8eb2-701244405e6c</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="8b72ae47-c1e2-4cab-bd00-d6c55ebd083d">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДатаПеремещения</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>e753ae31-77c6-493d-bb7d-cbabd6281b1f</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="4ed6c512-008f-4f91-a0de-459cc5943b21">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПодразделениеНовое</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>a352522b-828f-4dc1-8901-6b0f0742dcd9</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПодразделенияОрганизаций</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="601fd579-4d19-4a47-a26d-7df5280eff57">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Организация</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>9d59b39f-42ed-40c9-9dd5-462ad3fc0efe</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="453a2c63-5d04-4cc4-8e83-7a52adcc2155">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ПеремещениеВДругоеПодразделение.Сотрудники" category="TabularSection">
+						<xr:TypeId>ce69e280-ac6f-4378-82bd-eb4e5242315f</xr:TypeId>
+						<xr:ValueId>825ea3e1-a70e-4c7a-898e-f5a13add02a9</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ПеремещениеВДругоеПодразделение.Сотрудники" category="TabularSectionRow">
+						<xr:TypeId>1f57fa03-c6b9-4276-8463-e4c4360479ad</xr:TypeId>
+						<xr:ValueId>368e8662-d34a-4404-b815-04d18bbff915</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Сотрудники</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>826b271d-e627-470a-956b-60b81ee2c374</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="cb758e6f-ad67-47d7-9b98-059ba3079e5e">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Сотрудник</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>0f729a89-cac8-4323-a85a-2a5e70999194</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="21a33203-0a20-4b9c-989b-7378bc3aa996">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Должность</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>49f04687-d22c-4a38-bd54-c21cdd510375</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Должности</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="2eaf7fb4-7375-4b7d-813c-5d0a828414f5">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>РабочееМесто</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>2417b09f-c0dc-441c-8e81-18b82e60d230</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.РабочиеМестаОхраныТруда</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

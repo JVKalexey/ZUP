@@ -1,0 +1,1675 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoURL>false</AutoURL>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ГруппаСинхронизацияНеНастроена" id="615">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Синхронизация не настроена</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСинхронизацияНеНастроенаРасширеннаяПодсказка" id="616"/>
+			<ChildItems>
+				<PictureDecoration name="ДекорацияИнформация" id="617">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Декорация информация</v8:content>
+						</v8:item>
+					</Title>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="ДекорацияИнформацияКонтекстноеМеню" id="618"/>
+					<ExtendedTooltip name="ДекорацияИнформацияРасширеннаяПодсказка" id="619"/>
+				</PictureDecoration>
+				<UsualGroup name="ГруппаИнформационнаяНадписьСинхронизацияНеНастроена" id="620">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информационная надпись синхронизация не настроена</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаИнформационнаяНадписьСинхронизацияНеНастроенаРасширеннаяПодсказка" id="621"/>
+					<ChildItems>
+						<Pages name="ИнформационнаяНадпись" id="622">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Информационная надпись</v8:content>
+								</v8:item>
+							</Title>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="ИнформационнаяНадписьРасширеннаяПодсказка" id="623"/>
+							<ChildItems>
+								<Page name="ЕстьПраваНаСинхронизацию" id="624">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Есть права на синхронизацию</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ЕстьПраваНаСинхронизациюРасширеннаяПодсказка" id="625"/>
+									<ChildItems>
+										<LabelDecoration name="ИнформацияОСинхронизацииЕстьПрава" id="626">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Если для работы в этой программе необходимо синхронизировать данные с другими программами или требуется настроить распределенную информационную базу, то нажмите на кнопку "Новая синхронизация данных".
+Данные могут синхронизироваться автоматически по расписанию или по требованию в любой момент времени.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ИнформацияОСинхронизацииЕстьПраваКонтекстноеМеню" id="627"/>
+											<ExtendedTooltip name="ИнформацияОСинхронизацииЕстьПраваРасширеннаяПодсказка" id="628"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="НетПравНаСинхронизацию" id="629">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Нет прав на синхронизацию</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="НетПравНаСинхронизациюРасширеннаяПодсказка" id="630"/>
+									<ChildItems>
+										<LabelDecoration name="ИнформацияОСинхронизацииНетПрав" id="631">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Если для работы в этой программе необходимо синхронизировать данные с другими программами или требуется настроить распределенную информационную базу, то обратитесь к администратору информационной базы.
+Данные могут синхронизироваться автоматически по расписанию или по требованию в любой момент времени.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ИнформацияОСинхронизацииНетПравКонтекстноеМеню" id="632"/>
+											<ExtendedTooltip name="ИнформацияОСинхронизацииНетПравРасширеннаяПодсказка" id="633"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ИнформационнаяПанельТребуетсяОбновление" id="740">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информационная панель требуется обновление</v8:content>
+				</v8:item>
+			</Title>
+			<Width>45</Width>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ЦветФонаПредупреждения</BackColor>
+			<ExtendedTooltip name="ИнформационнаяПанельТребуетсяОбновлениеРасширеннаяПодсказка" id="741"/>
+			<ChildItems>
+				<PictureDecoration name="КартинкаПредупреждениеОбновление" id="742">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка предупреждение обновление</v8:content>
+						</v8:item>
+					</Title>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="КартинкаПредупреждениеОбновлениеКонтекстноеМеню" id="743"/>
+					<ExtendedTooltip name="КартинкаПредупреждениеОбновлениеРасширеннаяПодсказка" id="744"/>
+				</PictureDecoration>
+				<Pages name="ПравоОбновленияСтраницы" id="745">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Право обновления страницы</v8:content>
+						</v8:item>
+					</Title>
+					<PagesRepresentation>None</PagesRepresentation>
+					<ExtendedTooltip name="ПравоОбновленияСтраницыExtendedTooltip" id="746"/>
+					<ChildItems>
+						<Page name="ИнформацияОбменДаннымиПриостановленЕстьПравоОбновления" id="747">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Информация обмен данными приостановлен есть право обновления</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ИнформацияОбменДаннымиПриостановленЕстьПравоОбновленияРасширеннаяПодсказка" id="748"/>
+							<ChildItems>
+								<LabelDecoration name="НадписьОбменДаннымиПриостановленЕстьПравоОбновления" id="749">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Необходимо установить обновление программы, после чего синхронизация данных будет продолжена.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="НадписьОбменДаннымиПриостановленЕстьПравоОбновленияКонтекстноеМеню" id="750"/>
+									<ExtendedTooltip name="НадписьОбменДаннымиПриостановленЕстьПравоОбновленияРасширеннаяПодсказка" id="751"/>
+								</LabelDecoration>
+								<Button name="УстановитьОбновление" id="752">
+									<Type>Hyperlink</Type>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="УстановитьОбновлениеРасширеннаяПодсказка" id="753"/>
+								</Button>
+							</ChildItems>
+						</Page>
+						<Page name="ИнформацияОбменДаннымиПриостановленНетПраваОбновления" id="754">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Информация обмен данными приостановлен нет права обновления</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ИнформацияОбменДаннымиПриостановленНетПраваОбновленияРасширеннаяПодсказка" id="755"/>
+							<ChildItems>
+								<LabelDecoration name="НадписьОбменДаннымиПриостановленНетПраваОбновления" id="756">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Синхронизация данных приостановлена в связи с необходимостью установки полученного обновления.
+Обратитесь к администратору.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="НадписьОбменДаннымиПриостановленНетПраваОбновленияКонтекстноеМеню" id="757"/>
+									<ExtendedTooltip name="НадписьОбменДаннымиПриостановленНетПраваОбновленияРасширеннаяПодсказка" id="758"/>
+								</LabelDecoration>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ИнформационнаяПанельТребуетсяПерезагрузка" id="759">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предупреждение</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ЦветФонаПредупреждения</BackColor>
+			<ExtendedTooltip name="ИнформационнаяПанельТребуетсяПерезагрузкаРасширеннаяПодсказка" id="760"/>
+			<ChildItems>
+				<PictureDecoration name="ПредупреждениеОПерезагрузкеКартинка" id="761">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предупреждение о перезагрузке картинка</v8:content>
+						</v8:item>
+					</Title>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="ПредупреждениеОПерезагрузкеКартинкаКонтекстноеМеню" id="762"/>
+					<ExtendedTooltip name="ПредупреждениеОПерезагрузкеКартинкаРасширеннаяПодсказка" id="763"/>
+				</PictureDecoration>
+				<LabelDecoration name="ПредупреждениеОПерезагрузкеОписание" id="764">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Title formatted="true">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменены расширения конфигурации. Чтобы продолжить работу с учетом сделанных изменений, необходимо &lt;link 1&gt;перезапустить&lt;/&gt; программу.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПредупреждениеОПерезагрузкеОписаниеКонтекстноеМеню" id="765"/>
+					<ExtendedTooltip name="ПредупреждениеОПерезагрузкеОписаниеРасширеннаяПодсказка" id="766"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ПанельСписокПриложений" id="701">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Панель список приложений</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="ПанельСписокПриложенийРасширеннаяПодсказка" id="702"/>
+			<ChildItems>
+				<Page name="СтраницаСписокПриложений" id="703">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница список приложений</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаСписокПриложенийРасширеннаяПодсказка" id="704"/>
+					<ChildItems>
+						<CommandBar name="КоманднаяПанель" id="145">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Командная панель</v8:content>
+								</v8:item>
+							</Title>
+							<CommandSource>Item.СписокПриложений</CommandSource>
+							<ExtendedTooltip name="КоманднаяПанельExtendedTooltip" id="462"/>
+							<ChildItems>
+								<ButtonGroup name="СписокПриложенийГруппаВыполненияОбменаДанными" id="390">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Приложений группа выполнения обмена данными</v8:content>
+										</v8:item>
+									</Title>
+									<Representation>Compact</Representation>
+									<ExtendedTooltip name="СписокПриложенийГруппаВыполненияОбменаДаннымиРасширеннаяПодсказка" id="466"/>
+									<ChildItems>
+										<Button name="СписокПриложенийВыполнитьСинхронизацию" id="52">
+											<Type>CommandBarButton</Type>
+											<DefaultButton>true</DefaultButton>
+											<SkipOnInput>false</SkipOnInput>
+											<CommandName>0</CommandName>
+											<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+											<ExtendedTooltip name="СписокПриложенийВыполнитьСинхронизациюРасширеннаяПодсказка" id="467"/>
+										</Button>
+										<Button name="СписокПриложенийВыполнитьСинхронизациюСДополнительнымиОтборами" id="713">
+											<Type>CommandBarButton</Type>
+											<CommandName>0</CommandName>
+											<ExtendedTooltip name="СписокПриложенийВыполнитьСинхронизациюСДополнительнымиОтборамиРасширеннаяПодсказка" id="714"/>
+										</Button>
+										<Button name="СписокПриложенийНачальнаяВыгрузкаДанных" id="681">
+											<Type>CommandBarButton</Type>
+											<CommandName>0</CommandName>
+											<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+											<ExtendedTooltip name="СписокПриложенийНачальнаяВыгрузкаДанныхРасширеннаяПодсказка" id="682"/>
+										</Button>
+									</ChildItems>
+								</ButtonGroup>
+								<ButtonGroup name="СписокПриложенийГруппаУправление" id="366">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Приложений группа управление</v8:content>
+										</v8:item>
+									</Title>
+									<Representation>Compact</Representation>
+									<ExtendedTooltip name="СписокПриложенийГруппаУправлениеРасширеннаяПодсказка" id="485"/>
+									<ChildItems>
+										<Button name="СписокПриложенийИзменитьНастройкуСинхронизации" id="53">
+											<Type>CommandBarButton</Type>
+											<SkipOnInput>false</SkipOnInput>
+											<CommandName>0</CommandName>
+											<ExtendedTooltip name="СписокПриложенийИзменитьНастройкуСинхронизацииРасширеннаяПодсказка" id="470"/>
+										</Button>
+										<Button name="СписокПриложенийСоставОтправляемыхДанных" id="360">
+											<Type>CommandBarButton</Type>
+											<CommandName>0</CommandName>
+											<ExtendedTooltip name="СписокПриложенийСоставОтправляемыхДанныхРасширеннаяПодсказка" id="471"/>
+										</Button>
+										<Button name="СписокПриложенийЗагрузитьПравилаСинхронизацииДанных" id="535">
+											<Type>CommandBarButton</Type>
+											<CommandName>0</CommandName>
+											<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+											<ExtendedTooltip name="СписокПриложенийЗагрузитьПравилаСинхронизацииДанныхРасширеннаяПодсказка" id="536"/>
+										</Button>
+										<Button name="СписокПриложенийУдалитьНастройкуСинхронизации" id="364">
+											<Type>CommandBarButton</Type>
+											<CommandName>0</CommandName>
+											<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+											<ExtendedTooltip name="СписокПриложенийУдалитьНастройкуСинхронизацииРасширеннаяПодсказка" id="486"/>
+										</Button>
+										<Button name="СписокПриложенийОбновитьНастройкуСинхронизации" id="771">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ОбновитьНастройкуСинхронизации</CommandName>
+											<ExtendedTooltip name="СписокПриложенийОбновитьНастройкуСинхронизацииРасширеннаяПодсказка" id="772"/>
+										</Button>
+									</ChildItems>
+								</ButtonGroup>
+								<Button name="СписокПриложенийСоздатьНастройкуСинхронизации" id="634">
+									<Type>CommandBarButton</Type>
+									<CommandName>0</CommandName>
+									<ToolTipRepresentation>Balloon</ToolTipRepresentation>
+									<ExtendedTooltip name="СписокПриложенийСоздатьНастройкуСинхронизацииРасширеннаяПодсказка" id="635"/>
+								</Button>
+								<Button name="СписокПриложенийОбновитьМонитор" id="671">
+									<Type>CommandBarButton</Type>
+									<CommandName>0</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="СписокПриложенийОбновитьМониторРасширеннаяПодсказка" id="672"/>
+								</Button>
+								<ButtonGroup name="СписокПриложенийГруппаСобытия" id="94">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Приложений группа события</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="СписокПриложенийГруппаСобытияРасширеннаяПодсказка" id="472"/>
+									<ChildItems>
+										<Button name="СписокПриложенийПерейтиВЖурналРегистрацииСобытийВыгрузкиДанных" id="98">
+											<Type>CommandBarButton</Type>
+											<CommandName>0</CommandName>
+											<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+											<ExtendedTooltip name="СписокПриложенийПерейтиВЖурналРегистрацииСобытийВыгрузкиДанныхРасширеннаяПодсказка" id="473"/>
+										</Button>
+										<Button name="СписокПриложенийПерейтиВЖурналРегистрацииСобытийЗагрузкиДанных" id="99">
+											<Type>CommandBarButton</Type>
+											<CommandName>0</CommandName>
+											<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+											<ExtendedTooltip name="СписокПриложенийПерейтиВЖурналРегистрацииСобытийЗагрузкиДанныхРасширеннаяПодсказка" id="474"/>
+										</Button>
+									</ChildItems>
+								</ButtonGroup>
+								<Button name="СписокПриложенийПредыдущаяФормаПредупреждений" id="738">
+									<Type>CommandBarButton</Type>
+									<CommandName>0</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="СписокПриложенийПредыдущаяФормаПредупрежденийРасширеннаяПодсказка" id="739"/>
+								</Button>
+								<ButtonGroup name="СписокПриложенийГруппаТиповые" id="340">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Приложений группа типовые</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="СписокПриложенийГруппаТиповыеРасширеннаяПодсказка" id="476"/>
+									<ChildItems>
+										<Button name="СписокПриложенийНайти" id="341">
+											<Type>CommandBarButton</Type>
+											<CommandName>0</CommandName>
+											<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+											<ExtendedTooltip name="СписокПриложенийНайтиРасширеннаяПодсказка" id="477"/>
+										</Button>
+										<Button name="СписокПриложенийОтменитьПоиск" id="342">
+											<Type>CommandBarButton</Type>
+											<CommandName>0</CommandName>
+											<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+											<ExtendedTooltip name="СписокПриложенийОтменитьПоискРасширеннаяПодсказка" id="478"/>
+										</Button>
+										<Button name="СписокПриложенийВывестиСписок" id="115">
+											<Type>CommandBarButton</Type>
+											<CommandName>0</CommandName>
+											<ExtendedTooltip name="СписокПриложенийВывестиСписокРасширеннаяПодсказка" id="482"/>
+										</Button>
+									</ChildItems>
+								</ButtonGroup>
+								<Button name="СписокПриложенийНовыйКодПредопределенногоУзла" id="767">
+									<Type>CommandBarButton</Type>
+									<CommandName>0</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Новый код предопределенного узла...</v8:content>
+										</v8:item>
+									</Title>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="СписокПриложенийНовыйКодПредопределенногоУзлаРасширеннаяПодсказка" id="768"/>
+								</Button>
+								<Button name="ФормаИзменитьФорму" id="134">
+									<Type>CommandBarButton</Type>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="ФормаИзменитьФормуExtendedTooltip" id="483"/>
+								</Button>
+								<Button name="ФормаСправка" id="133">
+									<Type>CommandBarButton</Type>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="ФормаСправкаExtendedTooltip" id="487"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+						<Table name="СписокПриложений" id="1">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ReadOnly>true</ReadOnly>
+							<SkipOnInput>false</SkipOnInput>
+							<SelectionMode>SingleRow</SelectionMode>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<RowsPicture>
+								<xr:Ref>CommonPicture.РежимИспользованияПриложенияВСервисеЛокально</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</RowsPicture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Приложений</v8:content>
+								</v8:item>
+							</Title>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СписокПриложенийКонтекстноеМеню" id="2">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<ButtonGroup name="СписокПриложенийКонтекстноеМенюГруппаВыполненияОбменаДанными" id="695">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Приложений контекстное меню группа выполнения обмена данными</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="СписокПриложенийКонтекстноеМенюГруппаВыполненияОбменаДаннымиРасширеннаяПодсказка" id="696"/>
+										<ChildItems>
+											<Button name="СписокПриложенийКонтекстноеМенюВыполнитьСинхронизацию" id="673">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="СписокПриложенийКонтекстноеМенюВыполнитьСинхронизациюРасширеннаяПодсказка" id="674"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="СписокПриложенийКонтекстноеМенюГруппаУправление" id="697">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Приложений контекстное меню группа управление</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="СписокПриложенийКонтекстноеМенюГруппаУправлениеРасширеннаяПодсказка" id="698"/>
+										<ChildItems>
+											<Button name="СписокПриложенийКонтекстноеМенюИзменитьНастройкуСинхронизации" id="679">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="СписокПриложенийКонтекстноеМенюИзменитьНастройкуСинхронизацииРасширеннаяПодсказка" id="680"/>
+											</Button>
+											<Button name="СписокПриложенийКонтекстноеМенюСоставОтправляемыхДанных" id="687">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="СписокПриложенийКонтекстноеМенюСоставОтправляемыхДанныхРасширеннаяПодсказка" id="688"/>
+											</Button>
+											<Button name="СписокПриложенийКонтекстноеМенюУдалитьНастройкуСинхронизации" id="683">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="СписокПриложенийКонтекстноеМенюУдалитьНастройкуСинхронизацииРасширеннаяПодсказка" id="684"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="СписокПриложенийКонтекстноеМенюГруппаСобытия" id="689">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Приложений контекстное меню группа события</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="СписокПриложенийКонтекстноеМенюГруппаСобытияРасширеннаяПодсказка" id="690"/>
+										<ChildItems>
+											<Button name="СписокПриложенийКонтекстноеМенюПерейтиВЖурналРегистрацииСобытийВыгрузкиДанных" id="675">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="СписокПриложенийКонтекстноеМенюПерейтиВЖурналРегистрацииСобытийВыгрузкиДанныхРасширеннаяПодсказка" id="676"/>
+											</Button>
+											<Button name="СписокПриложенийКонтекстноеМенюПерейтиВЖурналРегистрацииСобытийЗагрузкиДанных" id="677">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="СписокПриложенийКонтекстноеМенюПерейтиВЖурналРегистрацииСобытийЗагрузкиДанныхРасширеннаяПодсказка" id="678"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Button name="СписокПриложенийКонтекстноеМенюОбновитьМонитор" id="669">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="СписокПриложенийКонтекстноеМенюОбновитьМониторРасширеннаяПодсказка" id="670"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="СписокПриложенийКоманднаяПанель" id="3"/>
+							<ExtendedTooltip name="СписокПриложенийРасширеннаяПодсказка" id="499"/>
+							<SearchStringAddition name="СписокПриложенийСтрокаПоиска" id="537">
+								<AdditionSource>
+									<Item>СписокПриложений</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокПриложенийСтрокаПоискаКонтекстноеМеню" id="538"/>
+								<ExtendedTooltip name="СписокПриложенийСтрокаПоискаРасширеннаяПодсказка" id="539"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокПриложенийСостояниеПросмотра" id="540">
+								<AdditionSource>
+									<Item>СписокПриложений</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокПриложенийСостояниеПросмотраКонтекстноеМеню" id="541"/>
+								<ExtendedTooltip name="СписокПриложенийСостояниеПросмотраРасширеннаяПодсказка" id="542"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокПриложенийУправлениеПоиском" id="543">
+								<AdditionSource>
+									<Item>СписокПриложений</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокПриложенийУправлениеПоискомКонтекстноеМеню" id="544"/>
+								<ExtendedTooltip name="СписокПриложенийУправлениеПоискомРасширеннаяПодсказка" id="545"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СписокПриложенийПрограмма" id="588">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокПриложенийПрограммаКонтекстноеМеню" id="589"/>
+									<ExtendedTooltip name="СписокПриложенийПрограммаРасширеннаяПодсказка" id="590"/>
+								</LabelField>
+								<LabelField name="СписокПриложенийПрефиксКорреспондента" id="591">
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СписокПриложенийПрефиксКорреспондентаКонтекстноеМеню" id="592"/>
+									<ExtendedTooltip name="СписокПриложенийПрефиксКорреспондентаРасширеннаяПодсказка" id="593"/>
+								</LabelField>
+								<ColumnGroup name="СписокПриложенийГруппаСостояние" id="566">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Приложений группа состояние</v8:content>
+										</v8:item>
+									</Title>
+									<Group>InCell</Group>
+									<ExtendedTooltip name="СписокПриложенийГруппаСостояниеРасширеннаяПодсказка" id="567"/>
+									<ChildItems>
+										<PictureField name="СписокПриложенийСостояниеКартинка" id="568">
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<ValuesPicture>
+												<xr:Ref>CommonPicture.СинхронизацияДанныхСостояниеСинхронизации</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</ValuesPicture>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="СписокПриложенийСостояниеКартинкаКонтекстноеМеню" id="569"/>
+											<ExtendedTooltip name="СписокПриложенийСостояниеКартинкаРасширеннаяПодсказка" id="570"/>
+										</PictureField>
+										<LabelField name="СписокПриложенийСостояниеПредставление" id="571">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Состояние</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СписокПриложенийСостояниеПредставлениеКонтекстноеМеню" id="572"/>
+											<ExtendedTooltip name="СписокПриложенийСостояниеПредставлениеРасширеннаяПодсказка" id="573"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="СписокПриложенийГруппаОтправкаДанных" id="720">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Последнее отправление</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сведения об отправке данных</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ExtendedTooltip name="СписокПриложенийГруппаОтправкаДанныхРасширеннаяПодсказка" id="721"/>
+									<ChildItems>
+										<ColumnGroup name="СписокПриложенийГруппаПоследняяВыгрузка" id="650">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Приложений группа последняя выгрузка</v8:content>
+												</v8:item>
+											</Title>
+											<Group>InCell</Group>
+											<ExtendedTooltip name="СписокПриложенийГруппаПоследняяВыгрузкаРасширеннаяПодсказка" id="651"/>
+											<ChildItems>
+												<PictureField name="СписокПриложенийСостояниеВыгрузкиКартинка" id="654">
+													<TitleLocation>None</TitleLocation>
+													<EditMode>EnterOnInput</EditMode>
+													<Hyperlink>true</Hyperlink>
+													<ValuesPicture>
+														<xr:Ref>CommonPicture.СинхронизацияДанныхСостояниеСинхронизации</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</ValuesPicture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="СписокПриложенийСостояниеВыгрузкиКартинкаКонтекстноеМеню" id="655"/>
+													<ExtendedTooltip name="СписокПриложенийСостояниеВыгрузкиКартинкаРасширеннаяПодсказка" id="656"/>
+												</PictureField>
+												<LabelField name="СписокПриложенийПредставлениеДатыПоследнейУспешнойВыгрузки" id="666">
+													<EditMode>EnterOnInput</EditMode>
+													<CellHyperlink>true</CellHyperlink>
+													<Hiperlink>true</Hiperlink>
+													<ContextMenu name="СписокПриложенийПредставлениеДатыПоследнейУспешнойВыгрузкиКонтекстноеМеню" id="667"/>
+													<ExtendedTooltip name="СписокПриложенийПредставлениеДатыПоследнейУспешнойВыгрузкиРасширеннаяПодсказка" id="668"/>
+												</LabelField>
+												<InputField name="СписокПриложенийОтправкаПредупреждения" id="732">
+													<EditMode>EnterOnInput</EditMode>
+													<CellHyperlink>true</CellHyperlink>
+													<ShowInHeader>false</ShowInHeader>
+													<ContextMenu name="СписокПриложенийОтправкаПредупрежденияКонтекстноеМеню" id="733"/>
+													<ExtendedTooltip name="СписокПриложенийОтправкаПредупрежденияРасширеннаяПодсказка" id="734"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="СписокПриложенийГруппаПолучениеДанных" id="730">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Последнее получение</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сведения о получении данных</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СписокПриложенийГруппаПолучениеДанныхРасширеннаяПодсказка" id="731"/>
+									<ChildItems>
+										<ColumnGroup name="СписокПриложенийГруппаПоследняяЗагрузка" id="652">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Приложений группа последняя загрузка</v8:content>
+												</v8:item>
+											</Title>
+											<Group>InCell</Group>
+											<ExtendedTooltip name="СписокПриложенийГруппаПоследняяЗагрузкаРасширеннаяПодсказка" id="653"/>
+											<ChildItems>
+												<PictureField name="СписокПриложенийСостояниеЗагрузкиКартинка" id="657">
+													<TitleLocation>None</TitleLocation>
+													<EditMode>EnterOnInput</EditMode>
+													<ValuesPicture>
+														<xr:Ref>CommonPicture.СинхронизацияДанныхСостояниеСинхронизации</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</ValuesPicture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="СписокПриложенийСостояниеЗагрузкиКартинкаКонтекстноеМеню" id="658"/>
+													<ExtendedTooltip name="СписокПриложенийСостояниеЗагрузкиКартинкаРасширеннаяПодсказка" id="659"/>
+												</PictureField>
+												<LabelField name="СписокПриложенийПредставлениеДатыПоследнейУспешнойЗагрузки" id="663">
+													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
+													<CellHyperlink>true</CellHyperlink>
+													<ContextMenu name="СписокПриложенийПредставлениеДатыПоследнейУспешнойЗагрузкиКонтекстноеМеню" id="664"/>
+													<ExtendedTooltip name="СписокПриложенийПредставлениеДатыПоследнейУспешнойЗагрузкиРасширеннаяПодсказка" id="665"/>
+												</LabelField>
+												<InputField name="СписокПриложенийПолучениеПредупреждения" id="735">
+													<EditMode>EnterOnInput</EditMode>
+													<CellHyperlink>true</CellHyperlink>
+													<ShowInHeader>false</ShowInHeader>
+													<ContextMenu name="СписокПриложенийПолучениеПредупрежденияКонтекстноеМеню" id="736"/>
+													<ExtendedTooltip name="СписокПриложенийПолучениеПредупрежденияРасширеннаяПодсказка" id="737"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</ColumnGroup>
+								<CheckBoxField name="СписокПриложенийРасписаниеНастроено" id="641">
+									<TitleLocation>None</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Включено - настроено расписание синхронизации данных.</v8:content>
+										</v8:item>
+									</ToolTip>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderPicture>
+										<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</HeaderPicture>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СписокПриложенийРасписаниеНастроеноКонтекстноеМеню" id="642"/>
+									<ExtendedTooltip name="СписокПриложенийРасписаниеНастроеноРасширеннаяПодсказка" id="643"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаОжидание" id="705">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница ожидание</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<VerticalAlign>Center</VerticalAlign>
+					<ExtendedTooltip name="СтраницаОжиданиеРасширеннаяПодсказка" id="706"/>
+					<ChildItems>
+						<PictureDecoration name="Декорация1" id="707">
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="708"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="709"/>
+						</PictureDecoration>
+						<LabelDecoration name="Декорация2" id="710">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выполняется получение списка настроенных синхронизаций данных.
+Пожалуйста, подождите...</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация2КонтекстноеМеню" id="711"/>
+							<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="712"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="ГруппаПрефиксИБ" id="337">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Префикс ИБ</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<VerticalAlign>Center</VerticalAlign>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПрефиксИБРасширеннаяПодсказка" id="514"/>
+			<ChildItems>
+				<PictureDecoration name="ДекорацияКартинкаПрефикс" id="636">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Декорация картинка префикс</v8:content>
+						</v8:item>
+					</Title>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="ДекорацияКартинкаПрефиксКонтекстноеМеню" id="637"/>
+					<ExtendedTooltip name="ДекорацияКартинкаПрефиксРасширеннаяПодсказка" id="638"/>
+				</PictureDecoration>
+				<InputField name="ПрефиксИБ" id="333">
+					<ReadOnly>true</ReadOnly>
+					<SkipOnInput>true</SkipOnInput>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Префикс этой информационной базы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTipRepresentation>Button</ToolTipRepresentation>
+					<ContextMenu name="ПрефиксИБКонтекстноеМеню" id="334"/>
+					<ExtendedTooltip name="ПрефиксИБРасширеннаяПодсказка" id="515">
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Префикс добавляется автоматически к кодам элементов справочников и номерам документов для того, чтобы различать, в какой из программ они были введены, и избежать дублирования данных. Префикс вводиться в панели администрирования до настройки первой синхронизации и неизменен до тех пор, пока в информационной базе есть хотя бы одна синхронизация.</v8:content>
+							</v8:item>
+						</Title>
+					</ExtendedTooltip>
+				</InputField>
+				<Button name="ИзменитьПрефиксИБ" id="769">
+					<Type>Hyperlink</Type>
+					<CommandName>0</CommandName>
+					<ExtendedTooltip name="ИзменитьПрефиксИБРасширеннаяПодсказка" id="770"/>
+				</Button>
+				<UsualGroup name="СписокПриложенийГруппаРасписаниеВыполненияОбмена" id="594">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приложений группа расписание выполнения обмена</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>true</HorizontalStretch>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<HorizontalAlign>Right</HorizontalAlign>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="СписокПриложенийГруппаРасписаниеВыполненияОбменаРасширеннаяПодсказка" id="595"/>
+					<ChildItems>
+						<Button name="СписокПриложенийНастроитьРасписаниеВыполненияОбмена" id="102">
+							<Type>Hyperlink</Type>
+							<CommandName>0</CommandName>
+							<ExtendedTooltip name="СписокПриложенийНастроитьРасписаниеВыполненияОбменаРасширеннаяПодсказка" id="475"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+	<Commands>
+		<Command name="ОбновитьНастройкуСинхронизации" id="1000000">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить настройку синхронизации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить настройку синхронизации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action callType="After">УВМ_ОбновитьНастройкуСинхронизацииПосле</Action>
+		</Command>
+	</Commands>
+	<BaseForm version="2.20">
+		<AutoURL>false</AutoURL>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+			<Autofill>false</Autofill>
+		</AutoCommandBar>
+		<ChildItems>
+			<UsualGroup name="ГруппаСинхронизацияНеНастроена" id="615">
+				<Visible>false</Visible>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Синхронизация не настроена</v8:content>
+					</v8:item>
+				</Title>
+				<Group>Horizontal</Group>
+				<Behavior>Usual</Behavior>
+				<Representation>NormalSeparation</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаСинхронизацияНеНастроенаРасширеннаяПодсказка" id="616"/>
+				<ChildItems>
+					<PictureDecoration name="ДекорацияИнформация" id="617">
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Декорация информация</v8:content>
+							</v8:item>
+						</Title>
+						<FileDragMode>AsFile</FileDragMode>
+						<ContextMenu name="ДекорацияИнформацияКонтекстноеМеню" id="618"/>
+						<ExtendedTooltip name="ДекорацияИнформацияРасширеннаяПодсказка" id="619"/>
+					</PictureDecoration>
+					<UsualGroup name="ГруппаИнформационнаяНадписьСинхронизацияНеНастроена" id="620">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Информационная надпись синхронизация не настроена</v8:content>
+							</v8:item>
+						</Title>
+						<Group>Vertical</Group>
+						<Behavior>Usual</Behavior>
+						<Representation>None</Representation>
+						<ShowTitle>false</ShowTitle>
+						<ExtendedTooltip name="ГруппаИнформационнаяНадписьСинхронизацияНеНастроенаРасширеннаяПодсказка" id="621"/>
+						<ChildItems>
+							<Pages name="ИнформационнаяНадпись" id="622">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Информационная надпись</v8:content>
+									</v8:item>
+								</Title>
+								<PagesRepresentation>None</PagesRepresentation>
+								<ExtendedTooltip name="ИнформационнаяНадписьРасширеннаяПодсказка" id="623"/>
+								<ChildItems>
+									<Page name="ЕстьПраваНаСинхронизацию" id="624">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Есть права на синхронизацию</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ЕстьПраваНаСинхронизациюРасширеннаяПодсказка" id="625"/>
+										<ChildItems>
+											<LabelDecoration name="ИнформацияОСинхронизацииЕстьПрава" id="626">
+												<AutoMaxWidth>false</AutoMaxWidth>
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Если для работы в этой программе необходимо синхронизировать данные с другими программами или требуется настроить распределенную информационную базу, то нажмите на кнопку "Новая синхронизация данных".
+Данные могут синхронизироваться автоматически по расписанию или по требованию в любой момент времени.</v8:content>
+													</v8:item>
+												</Title>
+												<ContextMenu name="ИнформацияОСинхронизацииЕстьПраваКонтекстноеМеню" id="627"/>
+												<ExtendedTooltip name="ИнформацияОСинхронизацииЕстьПраваРасширеннаяПодсказка" id="628"/>
+											</LabelDecoration>
+										</ChildItems>
+									</Page>
+									<Page name="НетПравНаСинхронизацию" id="629">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Нет прав на синхронизацию</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="НетПравНаСинхронизациюРасширеннаяПодсказка" id="630"/>
+										<ChildItems>
+											<LabelDecoration name="ИнформацияОСинхронизацииНетПрав" id="631">
+												<AutoMaxWidth>false</AutoMaxWidth>
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Если для работы в этой программе необходимо синхронизировать данные с другими программами или требуется настроить распределенную информационную базу, то обратитесь к администратору информационной базы.
+Данные могут синхронизироваться автоматически по расписанию или по требованию в любой момент времени.</v8:content>
+													</v8:item>
+												</Title>
+												<ContextMenu name="ИнформацияОСинхронизацииНетПравКонтекстноеМеню" id="632"/>
+												<ExtendedTooltip name="ИнформацияОСинхронизацииНетПравРасширеннаяПодсказка" id="633"/>
+											</LabelDecoration>
+										</ChildItems>
+									</Page>
+								</ChildItems>
+							</Pages>
+						</ChildItems>
+					</UsualGroup>
+				</ChildItems>
+			</UsualGroup>
+			<UsualGroup name="ИнформационнаяПанельТребуетсяОбновление" id="740">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Информационная панель требуется обновление</v8:content>
+					</v8:item>
+				</Title>
+				<Width>45</Width>
+				<Group>Horizontal</Group>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<BackColor>style:ЦветФонаПредупреждения</BackColor>
+				<ExtendedTooltip name="ИнформационнаяПанельТребуетсяОбновлениеРасширеннаяПодсказка" id="741"/>
+				<ChildItems>
+					<PictureDecoration name="КартинкаПредупреждениеОбновление" id="742">
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Картинка предупреждение обновление</v8:content>
+							</v8:item>
+						</Title>
+						<FileDragMode>AsFile</FileDragMode>
+						<ContextMenu name="КартинкаПредупреждениеОбновлениеКонтекстноеМеню" id="743"/>
+						<ExtendedTooltip name="КартинкаПредупреждениеОбновлениеРасширеннаяПодсказка" id="744"/>
+					</PictureDecoration>
+					<Pages name="ПравоОбновленияСтраницы" id="745">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Право обновления страницы</v8:content>
+							</v8:item>
+						</Title>
+						<PagesRepresentation>None</PagesRepresentation>
+						<ExtendedTooltip name="ПравоОбновленияСтраницыExtendedTooltip" id="746"/>
+						<ChildItems>
+							<Page name="ИнформацияОбменДаннымиПриостановленЕстьПравоОбновления" id="747">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Информация обмен данными приостановлен есть право обновления</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ИнформацияОбменДаннымиПриостановленЕстьПравоОбновленияРасширеннаяПодсказка" id="748"/>
+								<ChildItems>
+									<LabelDecoration name="НадписьОбменДаннымиПриостановленЕстьПравоОбновления" id="749">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Необходимо установить обновление программы, после чего синхронизация данных будет продолжена.</v8:content>
+											</v8:item>
+										</Title>
+										<ContextMenu name="НадписьОбменДаннымиПриостановленЕстьПравоОбновленияКонтекстноеМеню" id="750"/>
+										<ExtendedTooltip name="НадписьОбменДаннымиПриостановленЕстьПравоОбновленияРасширеннаяПодсказка" id="751"/>
+									</LabelDecoration>
+									<Button name="УстановитьОбновление" id="752">
+										<Type>Hyperlink</Type>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="УстановитьОбновлениеРасширеннаяПодсказка" id="753"/>
+									</Button>
+								</ChildItems>
+							</Page>
+							<Page name="ИнформацияОбменДаннымиПриостановленНетПраваОбновления" id="754">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Информация обмен данными приостановлен нет права обновления</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ИнформацияОбменДаннымиПриостановленНетПраваОбновленияРасширеннаяПодсказка" id="755"/>
+								<ChildItems>
+									<LabelDecoration name="НадписьОбменДаннымиПриостановленНетПраваОбновления" id="756">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Синхронизация данных приостановлена в связи с необходимостью установки полученного обновления.
+Обратитесь к администратору.</v8:content>
+											</v8:item>
+										</Title>
+										<ContextMenu name="НадписьОбменДаннымиПриостановленНетПраваОбновленияКонтекстноеМеню" id="757"/>
+										<ExtendedTooltip name="НадписьОбменДаннымиПриостановленНетПраваОбновленияРасширеннаяПодсказка" id="758"/>
+									</LabelDecoration>
+								</ChildItems>
+							</Page>
+						</ChildItems>
+					</Pages>
+				</ChildItems>
+			</UsualGroup>
+			<UsualGroup name="ИнформационнаяПанельТребуетсяПерезагрузка" id="759">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Предупреждение</v8:content>
+					</v8:item>
+				</Title>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<BackColor>style:ЦветФонаПредупреждения</BackColor>
+				<ExtendedTooltip name="ИнформационнаяПанельТребуетсяПерезагрузкаРасширеннаяПодсказка" id="760"/>
+				<ChildItems>
+					<PictureDecoration name="ПредупреждениеОПерезагрузкеКартинка" id="761">
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Предупреждение о перезагрузке картинка</v8:content>
+							</v8:item>
+						</Title>
+						<FileDragMode>AsFile</FileDragMode>
+						<ContextMenu name="ПредупреждениеОПерезагрузкеКартинкаКонтекстноеМеню" id="762"/>
+						<ExtendedTooltip name="ПредупреждениеОПерезагрузкеКартинкаРасширеннаяПодсказка" id="763"/>
+					</PictureDecoration>
+					<LabelDecoration name="ПредупреждениеОПерезагрузкеОписание" id="764">
+						<AutoMaxWidth>false</AutoMaxWidth>
+						<Title formatted="true">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Изменены расширения конфигурации. Чтобы продолжить работу с учетом сделанных изменений, необходимо &lt;link 1&gt;перезапустить&lt;/&gt; программу.</v8:content>
+							</v8:item>
+						</Title>
+						<ContextMenu name="ПредупреждениеОПерезагрузкеОписаниеКонтекстноеМеню" id="765"/>
+						<ExtendedTooltip name="ПредупреждениеОПерезагрузкеОписаниеРасширеннаяПодсказка" id="766"/>
+					</LabelDecoration>
+				</ChildItems>
+			</UsualGroup>
+			<Pages name="ПанельСписокПриложений" id="701">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Панель список приложений</v8:content>
+					</v8:item>
+				</Title>
+				<PagesRepresentation>None</PagesRepresentation>
+				<ExtendedTooltip name="ПанельСписокПриложенийРасширеннаяПодсказка" id="702"/>
+				<ChildItems>
+					<Page name="СтраницаСписокПриложений" id="703">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Страница список приложений</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="СтраницаСписокПриложенийРасширеннаяПодсказка" id="704"/>
+						<ChildItems>
+							<CommandBar name="КоманднаяПанель" id="145">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Командная панель</v8:content>
+									</v8:item>
+								</Title>
+								<CommandSource>Item.СписокПриложений</CommandSource>
+								<ExtendedTooltip name="КоманднаяПанельExtendedTooltip" id="462"/>
+								<ChildItems>
+									<ButtonGroup name="СписокПриложенийГруппаВыполненияОбменаДанными" id="390">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Приложений группа выполнения обмена данными</v8:content>
+											</v8:item>
+										</Title>
+										<Representation>Compact</Representation>
+										<ExtendedTooltip name="СписокПриложенийГруппаВыполненияОбменаДаннымиРасширеннаяПодсказка" id="466"/>
+										<ChildItems>
+											<Button name="СписокПриложенийВыполнитьСинхронизацию" id="52">
+												<Type>CommandBarButton</Type>
+												<DefaultButton>true</DefaultButton>
+												<SkipOnInput>false</SkipOnInput>
+												<CommandName>0</CommandName>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="СписокПриложенийВыполнитьСинхронизациюРасширеннаяПодсказка" id="467"/>
+											</Button>
+											<Button name="СписокПриложенийВыполнитьСинхронизациюСДополнительнымиОтборами" id="713">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="СписокПриложенийВыполнитьСинхронизациюСДополнительнымиОтборамиРасширеннаяПодсказка" id="714"/>
+											</Button>
+											<Button name="СписокПриложенийНачальнаяВыгрузкаДанных" id="681">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="СписокПриложенийНачальнаяВыгрузкаДанныхРасширеннаяПодсказка" id="682"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="СписокПриложенийГруппаУправление" id="366">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Приложений группа управление</v8:content>
+											</v8:item>
+										</Title>
+										<Representation>Compact</Representation>
+										<ExtendedTooltip name="СписокПриложенийГруппаУправлениеРасширеннаяПодсказка" id="485"/>
+										<ChildItems>
+											<Button name="СписокПриложенийИзменитьНастройкуСинхронизации" id="53">
+												<Type>CommandBarButton</Type>
+												<SkipOnInput>false</SkipOnInput>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="СписокПриложенийИзменитьНастройкуСинхронизацииРасширеннаяПодсказка" id="470"/>
+											</Button>
+											<Button name="СписокПриложенийСоставОтправляемыхДанных" id="360">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="СписокПриложенийСоставОтправляемыхДанныхРасширеннаяПодсказка" id="471"/>
+											</Button>
+											<Button name="СписокПриложенийЗагрузитьПравилаСинхронизацииДанных" id="535">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="СписокПриложенийЗагрузитьПравилаСинхронизацииДанныхРасширеннаяПодсказка" id="536"/>
+											</Button>
+											<Button name="СписокПриложенийУдалитьНастройкуСинхронизации" id="364">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="СписокПриложенийУдалитьНастройкуСинхронизацииРасширеннаяПодсказка" id="486"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Button name="СписокПриложенийСоздатьНастройкуСинхронизации" id="634">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<ToolTipRepresentation>Balloon</ToolTipRepresentation>
+										<ExtendedTooltip name="СписокПриложенийСоздатьНастройкуСинхронизацииРасширеннаяПодсказка" id="635"/>
+									</Button>
+									<Button name="СписокПриложенийОбновитьМонитор" id="671">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="СписокПриложенийОбновитьМониторРасширеннаяПодсказка" id="672"/>
+									</Button>
+									<ButtonGroup name="СписокПриложенийГруппаСобытия" id="94">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Приложений группа события</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="СписокПриложенийГруппаСобытияРасширеннаяПодсказка" id="472"/>
+										<ChildItems>
+											<Button name="СписокПриложенийПерейтиВЖурналРегистрацииСобытийВыгрузкиДанных" id="98">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="СписокПриложенийПерейтиВЖурналРегистрацииСобытийВыгрузкиДанныхРасширеннаяПодсказка" id="473"/>
+											</Button>
+											<Button name="СписокПриложенийПерейтиВЖурналРегистрацииСобытийЗагрузкиДанных" id="99">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="СписокПриложенийПерейтиВЖурналРегистрацииСобытийЗагрузкиДанныхРасширеннаяПодсказка" id="474"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Button name="СписокПриложенийПредыдущаяФормаПредупреждений" id="738">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="СписокПриложенийПредыдущаяФормаПредупрежденийРасширеннаяПодсказка" id="739"/>
+									</Button>
+									<ButtonGroup name="СписокПриложенийГруппаТиповые" id="340">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Приложений группа типовые</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="СписокПриложенийГруппаТиповыеРасширеннаяПодсказка" id="476"/>
+										<ChildItems>
+											<Button name="СписокПриложенийНайти" id="341">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="СписокПриложенийНайтиРасширеннаяПодсказка" id="477"/>
+											</Button>
+											<Button name="СписокПриложенийОтменитьПоиск" id="342">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="СписокПриложенийОтменитьПоискРасширеннаяПодсказка" id="478"/>
+											</Button>
+											<Button name="СписокПриложенийВывестиСписок" id="115">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="СписокПриложенийВывестиСписокРасширеннаяПодсказка" id="482"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Button name="СписокПриложенийНовыйКодПредопределенногоУзла" id="767">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Новый код предопределенного узла...</v8:content>
+											</v8:item>
+										</Title>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="СписокПриложенийНовыйКодПредопределенногоУзлаРасширеннаяПодсказка" id="768"/>
+									</Button>
+									<Button name="ФормаИзменитьФорму" id="134">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="ФормаИзменитьФормуExtendedTooltip" id="483"/>
+									</Button>
+									<Button name="ФормаСправка" id="133">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="ФормаСправкаExtendedTooltip" id="487"/>
+									</Button>
+								</ChildItems>
+							</CommandBar>
+							<Table name="СписокПриложений" id="1">
+								<Representation>List</Representation>
+								<CommandBarLocation>None</CommandBarLocation>
+								<ReadOnly>true</ReadOnly>
+								<SkipOnInput>false</SkipOnInput>
+								<SelectionMode>SingleRow</SelectionMode>
+								<AutoInsertNewRow>true</AutoInsertNewRow>
+								<EnableStartDrag>true</EnableStartDrag>
+								<EnableDrag>true</EnableDrag>
+								<FileDragMode>AsFile</FileDragMode>
+								<RowsPicture>
+									<xr:Ref>CommonPicture.РежимИспользованияПриложенияВСервисеЛокально</xr:Ref>
+									<xr:LoadTransparent>false</xr:LoadTransparent>
+								</RowsPicture>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Приложений</v8:content>
+									</v8:item>
+								</Title>
+								<RowFilter xsi:nil="true"/>
+								<ContextMenu name="СписокПриложенийКонтекстноеМеню" id="2">
+									<Autofill>false</Autofill>
+									<ChildItems>
+										<ButtonGroup name="СписокПриложенийКонтекстноеМенюГруппаВыполненияОбменаДанными" id="695">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Приложений контекстное меню группа выполнения обмена данными</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="СписокПриложенийКонтекстноеМенюГруппаВыполненияОбменаДаннымиРасширеннаяПодсказка" id="696"/>
+											<ChildItems>
+												<Button name="СписокПриложенийКонтекстноеМенюВыполнитьСинхронизацию" id="673">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<ExtendedTooltip name="СписокПриложенийКонтекстноеМенюВыполнитьСинхронизациюРасширеннаяПодсказка" id="674"/>
+												</Button>
+											</ChildItems>
+										</ButtonGroup>
+										<ButtonGroup name="СписокПриложенийКонтекстноеМенюГруппаУправление" id="697">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Приложений контекстное меню группа управление</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="СписокПриложенийКонтекстноеМенюГруппаУправлениеРасширеннаяПодсказка" id="698"/>
+											<ChildItems>
+												<Button name="СписокПриложенийКонтекстноеМенюИзменитьНастройкуСинхронизации" id="679">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<ExtendedTooltip name="СписокПриложенийКонтекстноеМенюИзменитьНастройкуСинхронизацииРасширеннаяПодсказка" id="680"/>
+												</Button>
+												<Button name="СписокПриложенийКонтекстноеМенюСоставОтправляемыхДанных" id="687">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<ExtendedTooltip name="СписокПриложенийКонтекстноеМенюСоставОтправляемыхДанныхРасширеннаяПодсказка" id="688"/>
+												</Button>
+												<Button name="СписокПриложенийКонтекстноеМенюУдалитьНастройкуСинхронизации" id="683">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<ExtendedTooltip name="СписокПриложенийКонтекстноеМенюУдалитьНастройкуСинхронизацииРасширеннаяПодсказка" id="684"/>
+												</Button>
+											</ChildItems>
+										</ButtonGroup>
+										<ButtonGroup name="СписокПриложенийКонтекстноеМенюГруппаСобытия" id="689">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Приложений контекстное меню группа события</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="СписокПриложенийКонтекстноеМенюГруппаСобытияРасширеннаяПодсказка" id="690"/>
+											<ChildItems>
+												<Button name="СписокПриложенийКонтекстноеМенюПерейтиВЖурналРегистрацииСобытийВыгрузкиДанных" id="675">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<ExtendedTooltip name="СписокПриложенийКонтекстноеМенюПерейтиВЖурналРегистрацииСобытийВыгрузкиДанныхРасширеннаяПодсказка" id="676"/>
+												</Button>
+												<Button name="СписокПриложенийКонтекстноеМенюПерейтиВЖурналРегистрацииСобытийЗагрузкиДанных" id="677">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<ExtendedTooltip name="СписокПриложенийКонтекстноеМенюПерейтиВЖурналРегистрацииСобытийЗагрузкиДанныхРасширеннаяПодсказка" id="678"/>
+												</Button>
+											</ChildItems>
+										</ButtonGroup>
+										<Button name="СписокПриложенийКонтекстноеМенюОбновитьМонитор" id="669">
+											<Type>CommandBarButton</Type>
+											<CommandName>0</CommandName>
+											<ExtendedTooltip name="СписокПриложенийКонтекстноеМенюОбновитьМониторРасширеннаяПодсказка" id="670"/>
+										</Button>
+									</ChildItems>
+								</ContextMenu>
+								<AutoCommandBar name="СписокПриложенийКоманднаяПанель" id="3"/>
+								<ExtendedTooltip name="СписокПриложенийРасширеннаяПодсказка" id="499"/>
+								<SearchStringAddition name="СписокПриложенийСтрокаПоиска" id="537">
+									<AdditionSource>
+										<Item>СписокПриложений</Item>
+										<Type>SearchStringRepresentation</Type>
+									</AdditionSource>
+									<ContextMenu name="СписокПриложенийСтрокаПоискаКонтекстноеМеню" id="538"/>
+									<ExtendedTooltip name="СписокПриложенийСтрокаПоискаРасширеннаяПодсказка" id="539"/>
+								</SearchStringAddition>
+								<ViewStatusAddition name="СписокПриложенийСостояниеПросмотра" id="540">
+									<AdditionSource>
+										<Item>СписокПриложений</Item>
+										<Type>ViewStatusRepresentation</Type>
+									</AdditionSource>
+									<ContextMenu name="СписокПриложенийСостояниеПросмотраКонтекстноеМеню" id="541"/>
+									<ExtendedTooltip name="СписокПриложенийСостояниеПросмотраРасширеннаяПодсказка" id="542"/>
+								</ViewStatusAddition>
+								<SearchControlAddition name="СписокПриложенийУправлениеПоиском" id="543">
+									<AdditionSource>
+										<Item>СписокПриложений</Item>
+										<Type>SearchControl</Type>
+									</AdditionSource>
+									<ContextMenu name="СписокПриложенийУправлениеПоискомКонтекстноеМеню" id="544"/>
+									<ExtendedTooltip name="СписокПриложенийУправлениеПоискомРасширеннаяПодсказка" id="545"/>
+								</SearchControlAddition>
+								<ChildItems>
+									<LabelField name="СписокПриложенийПрограмма" id="588">
+										<EditMode>EnterOnInput</EditMode>
+										<ContextMenu name="СписокПриложенийПрограммаКонтекстноеМеню" id="589"/>
+										<ExtendedTooltip name="СписокПриложенийПрограммаРасширеннаяПодсказка" id="590"/>
+									</LabelField>
+									<LabelField name="СписокПриложенийПрефиксКорреспондента" id="591">
+										<EditMode>EnterOnInput</EditMode>
+										<HorizontalStretch>false</HorizontalStretch>
+										<ContextMenu name="СписокПриложенийПрефиксКорреспондентаКонтекстноеМеню" id="592"/>
+										<ExtendedTooltip name="СписокПриложенийПрефиксКорреспондентаРасширеннаяПодсказка" id="593"/>
+									</LabelField>
+									<ColumnGroup name="СписокПриложенийГруппаСостояние" id="566">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Приложений группа состояние</v8:content>
+											</v8:item>
+										</Title>
+										<Group>InCell</Group>
+										<ExtendedTooltip name="СписокПриложенийГруппаСостояниеРасширеннаяПодсказка" id="567"/>
+										<ChildItems>
+											<PictureField name="СписокПриложенийСостояниеКартинка" id="568">
+												<TitleLocation>None</TitleLocation>
+												<EditMode>EnterOnInput</EditMode>
+												<ValuesPicture>
+													<xr:Ref>CommonPicture.СинхронизацияДанныхСостояниеСинхронизации</xr:Ref>
+													<xr:LoadTransparent>false</xr:LoadTransparent>
+												</ValuesPicture>
+												<FileDragMode>AsFile</FileDragMode>
+												<ContextMenu name="СписокПриложенийСостояниеКартинкаКонтекстноеМеню" id="569"/>
+												<ExtendedTooltip name="СписокПриложенийСостояниеКартинкаРасширеннаяПодсказка" id="570"/>
+											</PictureField>
+											<LabelField name="СписокПриложенийСостояниеПредставление" id="571">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Состояние</v8:content>
+													</v8:item>
+												</Title>
+												<EditMode>EnterOnInput</EditMode>
+												<ContextMenu name="СписокПриложенийСостояниеПредставлениеКонтекстноеМеню" id="572"/>
+												<ExtendedTooltip name="СписокПриложенийСостояниеПредставлениеРасширеннаяПодсказка" id="573"/>
+											</LabelField>
+										</ChildItems>
+									</ColumnGroup>
+									<ColumnGroup name="СписокПриложенийГруппаОтправкаДанных" id="720">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Последнее отправление</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сведения об отправке данных</v8:content>
+											</v8:item>
+										</ToolTip>
+										<Group>Horizontal</Group>
+										<ExtendedTooltip name="СписокПриложенийГруппаОтправкаДанныхРасширеннаяПодсказка" id="721"/>
+										<ChildItems>
+											<ColumnGroup name="СписокПриложенийГруппаПоследняяВыгрузка" id="650">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Приложений группа последняя выгрузка</v8:content>
+													</v8:item>
+												</Title>
+												<Group>InCell</Group>
+												<ExtendedTooltip name="СписокПриложенийГруппаПоследняяВыгрузкаРасширеннаяПодсказка" id="651"/>
+												<ChildItems>
+													<PictureField name="СписокПриложенийСостояниеВыгрузкиКартинка" id="654">
+														<TitleLocation>None</TitleLocation>
+														<EditMode>EnterOnInput</EditMode>
+														<Hyperlink>true</Hyperlink>
+														<ValuesPicture>
+															<xr:Ref>CommonPicture.СинхронизацияДанныхСостояниеСинхронизации</xr:Ref>
+															<xr:LoadTransparent>false</xr:LoadTransparent>
+														</ValuesPicture>
+														<FileDragMode>AsFile</FileDragMode>
+														<ContextMenu name="СписокПриложенийСостояниеВыгрузкиКартинкаКонтекстноеМеню" id="655"/>
+														<ExtendedTooltip name="СписокПриложенийСостояниеВыгрузкиКартинкаРасширеннаяПодсказка" id="656"/>
+													</PictureField>
+													<LabelField name="СписокПриложенийПредставлениеДатыПоследнейУспешнойВыгрузки" id="666">
+														<EditMode>EnterOnInput</EditMode>
+														<CellHyperlink>true</CellHyperlink>
+														<Hiperlink>true</Hiperlink>
+														<ContextMenu name="СписокПриложенийПредставлениеДатыПоследнейУспешнойВыгрузкиКонтекстноеМеню" id="667"/>
+														<ExtendedTooltip name="СписокПриложенийПредставлениеДатыПоследнейУспешнойВыгрузкиРасширеннаяПодсказка" id="668"/>
+													</LabelField>
+													<InputField name="СписокПриложенийОтправкаПредупреждения" id="732">
+														<EditMode>EnterOnInput</EditMode>
+														<CellHyperlink>true</CellHyperlink>
+														<ShowInHeader>false</ShowInHeader>
+														<ContextMenu name="СписокПриложенийОтправкаПредупрежденияКонтекстноеМеню" id="733"/>
+														<ExtendedTooltip name="СписокПриложенийОтправкаПредупрежденияРасширеннаяПодсказка" id="734"/>
+													</InputField>
+												</ChildItems>
+											</ColumnGroup>
+										</ChildItems>
+									</ColumnGroup>
+									<ColumnGroup name="СписокПриложенийГруппаПолучениеДанных" id="730">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Последнее получение</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сведения о получении данных</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокПриложенийГруппаПолучениеДанныхРасширеннаяПодсказка" id="731"/>
+										<ChildItems>
+											<ColumnGroup name="СписокПриложенийГруппаПоследняяЗагрузка" id="652">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Приложений группа последняя загрузка</v8:content>
+													</v8:item>
+												</Title>
+												<Group>InCell</Group>
+												<ExtendedTooltip name="СписокПриложенийГруппаПоследняяЗагрузкаРасширеннаяПодсказка" id="653"/>
+												<ChildItems>
+													<PictureField name="СписокПриложенийСостояниеЗагрузкиКартинка" id="657">
+														<TitleLocation>None</TitleLocation>
+														<EditMode>EnterOnInput</EditMode>
+														<ValuesPicture>
+															<xr:Ref>CommonPicture.СинхронизацияДанныхСостояниеСинхронизации</xr:Ref>
+															<xr:LoadTransparent>false</xr:LoadTransparent>
+														</ValuesPicture>
+														<FileDragMode>AsFile</FileDragMode>
+														<ContextMenu name="СписокПриложенийСостояниеЗагрузкиКартинкаКонтекстноеМеню" id="658"/>
+														<ExtendedTooltip name="СписокПриложенийСостояниеЗагрузкиКартинкаРасширеннаяПодсказка" id="659"/>
+													</PictureField>
+													<LabelField name="СписокПриложенийПредставлениеДатыПоследнейУспешнойЗагрузки" id="663">
+														<ReadOnly>true</ReadOnly>
+														<EditMode>EnterOnInput</EditMode>
+														<CellHyperlink>true</CellHyperlink>
+														<ContextMenu name="СписокПриложенийПредставлениеДатыПоследнейУспешнойЗагрузкиКонтекстноеМеню" id="664"/>
+														<ExtendedTooltip name="СписокПриложенийПредставлениеДатыПоследнейУспешнойЗагрузкиРасширеннаяПодсказка" id="665"/>
+													</LabelField>
+													<InputField name="СписокПриложенийПолучениеПредупреждения" id="735">
+														<EditMode>EnterOnInput</EditMode>
+														<CellHyperlink>true</CellHyperlink>
+														<ShowInHeader>false</ShowInHeader>
+														<ContextMenu name="СписокПриложенийПолучениеПредупрежденияКонтекстноеМеню" id="736"/>
+														<ExtendedTooltip name="СписокПриложенийПолучениеПредупрежденияРасширеннаяПодсказка" id="737"/>
+													</InputField>
+												</ChildItems>
+											</ColumnGroup>
+										</ChildItems>
+									</ColumnGroup>
+									<CheckBoxField name="СписокПриложенийРасписаниеНастроено" id="641">
+										<TitleLocation>None</TitleLocation>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Включено - настроено расписание синхронизации данных.</v8:content>
+											</v8:item>
+										</ToolTip>
+										<EditMode>EnterOnInput</EditMode>
+										<HeaderPicture>
+											<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</HeaderPicture>
+										<CheckBoxType>Auto</CheckBoxType>
+										<ContextMenu name="СписокПриложенийРасписаниеНастроеноКонтекстноеМеню" id="642"/>
+										<ExtendedTooltip name="СписокПриложенийРасписаниеНастроеноРасширеннаяПодсказка" id="643"/>
+									</CheckBoxField>
+								</ChildItems>
+							</Table>
+						</ChildItems>
+					</Page>
+					<Page name="СтраницаОжидание" id="705">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Страница ожидание</v8:content>
+							</v8:item>
+						</Title>
+						<Group>AlwaysHorizontal</Group>
+						<VerticalAlign>Center</VerticalAlign>
+						<ExtendedTooltip name="СтраницаОжиданиеРасширеннаяПодсказка" id="706"/>
+						<ChildItems>
+							<PictureDecoration name="Декорация1" id="707">
+								<FileDragMode>AsFile</FileDragMode>
+								<ContextMenu name="Декорация1КонтекстноеМеню" id="708"/>
+								<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="709"/>
+							</PictureDecoration>
+							<LabelDecoration name="Декорация2" id="710">
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Выполняется получение списка настроенных синхронизаций данных.
+Пожалуйста, подождите...</v8:content>
+									</v8:item>
+								</Title>
+								<ContextMenu name="Декорация2КонтекстноеМеню" id="711"/>
+								<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="712"/>
+							</LabelDecoration>
+						</ChildItems>
+					</Page>
+				</ChildItems>
+			</Pages>
+			<UsualGroup name="ГруппаПрефиксИБ" id="337">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Префикс ИБ</v8:content>
+					</v8:item>
+				</Title>
+				<Group>AlwaysHorizontal</Group>
+				<VerticalAlign>Center</VerticalAlign>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаПрефиксИБРасширеннаяПодсказка" id="514"/>
+				<ChildItems>
+					<PictureDecoration name="ДекорацияКартинкаПрефикс" id="636">
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Декорация картинка префикс</v8:content>
+							</v8:item>
+						</Title>
+						<FileDragMode>AsFile</FileDragMode>
+						<ContextMenu name="ДекорацияКартинкаПрефиксКонтекстноеМеню" id="637"/>
+						<ExtendedTooltip name="ДекорацияКартинкаПрефиксРасширеннаяПодсказка" id="638"/>
+					</PictureDecoration>
+					<InputField name="ПрефиксИБ" id="333">
+						<ReadOnly>true</ReadOnly>
+						<SkipOnInput>true</SkipOnInput>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Префикс этой информационной базы</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTipRepresentation>Button</ToolTipRepresentation>
+						<ContextMenu name="ПрефиксИБКонтекстноеМеню" id="334"/>
+						<ExtendedTooltip name="ПрефиксИБРасширеннаяПодсказка" id="515">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Префикс добавляется автоматически к кодам элементов справочников и номерам документов для того, чтобы различать, в какой из программ они были введены, и избежать дублирования данных. Префикс вводиться в панели администрирования до настройки первой синхронизации и неизменен до тех пор, пока в информационной базе есть хотя бы одна синхронизация.</v8:content>
+								</v8:item>
+							</Title>
+						</ExtendedTooltip>
+					</InputField>
+					<Button name="ИзменитьПрефиксИБ" id="769">
+						<Type>Hyperlink</Type>
+						<CommandName>0</CommandName>
+						<ExtendedTooltip name="ИзменитьПрефиксИБРасширеннаяПодсказка" id="770"/>
+					</Button>
+					<UsualGroup name="СписокПриложенийГруппаРасписаниеВыполненияОбмена" id="594">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Приложений группа расписание выполнения обмена</v8:content>
+							</v8:item>
+						</Title>
+						<HorizontalStretch>true</HorizontalStretch>
+						<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+						<HorizontalAlign>Right</HorizontalAlign>
+						<Behavior>Usual</Behavior>
+						<ShowTitle>false</ShowTitle>
+						<ExtendedTooltip name="СписокПриложенийГруппаРасписаниеВыполненияОбменаРасширеннаяПодсказка" id="595"/>
+						<ChildItems>
+							<Button name="СписокПриложенийНастроитьРасписаниеВыполненияОбмена" id="102">
+								<Type>Hyperlink</Type>
+								<CommandName>0</CommandName>
+								<ExtendedTooltip name="СписокПриложенийНастроитьРасписаниеВыполненияОбменаРасширеннаяПодсказка" id="475"/>
+							</Button>
+						</ChildItems>
+					</UsualGroup>
+				</ChildItems>
+			</UsualGroup>
+		</ChildItems>
+		<Attributes/>
+	</BaseForm>
+</Form>

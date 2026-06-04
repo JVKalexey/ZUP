@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Customizable>false</Customizable>
+	<CommandBarLocation>None</CommandBarLocation>
+	<CommandSet>
+		<ExcludedCommand>WriteAndClose</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаКадровыйУчет" id="1084">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кадровый учет</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Collapsible</Behavior>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>NormalSeparation</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ExtendedTooltip name="ГруппаКадровыйУчетРасширеннаяПодсказка" id="1085"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНастройкаКадровогоУчета" id="1086">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка кадрового учета</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="sys:DefaultGUIFont" height="11" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<Width>43</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>NormalSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастройкаКадровогоУчетаРасширеннаяПодсказка" id="1087"/>
+					<ChildItems>
+						<RadioButtonField name="КадровыйУчетУпрощенный" id="1088">
+							<DataPath>КадровыйУчет</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Упрощенный</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="КадровыйУчетУпрощенныйКонтекстноеМеню" id="1089"/>
+							<ExtendedTooltip name="КадровыйУчетУпрощенныйExtendedTooltip" id="1090">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Кадровые документы не используются. Приказы печатаются из карточки сотрудника.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+							<Events>
+								<Event name="OnChange">КадровыйУчетУпрощенныйПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
+						<RadioButtonField name="КадровыйУчетПолный" id="1091">
+							<DataPath>КадровыйУчет</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Полный</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">1</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="КадровыйУчетПолныйКонтекстноеМеню" id="1092"/>
+							<ExtendedTooltip name="КадровыйУчетПолныйExtendedTooltip" id="1093">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Используются кадровые документы: приказы о приеме, переводе и увольнении сотрудников.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+							<Events>
+								<Event name="OnChange">КадровыйУчетПолныйПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
+						<UsualGroup name="ГруппаФормированиеКадровыхДокументов" id="1094">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Необходимо сформировать кадровые документы:</v8:content>
+								</v8:item>
+							</Title>
+							<TitleTextColor>style:FormTextColor</TitleTextColor>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<BackColor>style:СобытиеОтказ</BackColor>
+							<ExtendedTooltip name="ГруппаФормированиеКадровыхДокументовРасширеннаяПодсказка" id="1095"/>
+							<ChildItems>
+								<Button name="СформироватьКадровыеДокументы" id="1096">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.СформироватьКадровыеДокументы</CommandName>
+									<ExtendedTooltip name="СформироватьКадровыеДокументыРасширеннаяПодсказка" id="1097"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаУчетМигрантов" id="1098">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учет мигрантов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа учет мигрантов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Collapsible</Behavior>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>NormalSeparation</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ExtendedTooltip name="ГруппаУчетМигрантовРасширеннаяПодсказка" id="1099"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНастройкаУчетаМигрантов" id="1100">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка учета мигрантов</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="sys:DefaultGUIFont" height="11" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройка учета мигрантов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>43</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>NormalSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастройкаУчетаМигрантовРасширеннаяПодсказка" id="1101"/>
+					<ChildItems>
+						<InputField name="бит_ум_ВидАдресаПостоянногоМестаЖительства" id="1069">
+							<DataPath>НаборКонстант.бит_ум_ВидАдресаПостоянногоМестаЖительства</DataPath>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<ContextMenu name="бит_ум_ВидАдресаПостоянногоМестаЖительстваКонтекстноеМеню" id="1070"/>
+							<ExtendedTooltip name="бит_ум_ВидАдресаПостоянногоМестаЖительстваРасширеннаяПодсказка" id="1071"/>
+							<Events>
+								<Event name="OnChange">бит_ум_ВидАдресаПостоянногоМестаЖительстваПриИзменении</Event>
+								<Event name="StartChoice">бит_ум_ВидАдресаПостоянногоМестаЖительстваНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="бит_ум_ВидАдресаМестаПребывания" id="1072">
+							<DataPath>НаборКонстант.бит_ум_ВидАдресаМестаПребывания</DataPath>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<ContextMenu name="бит_ум_ВидАдресаМестаПребыванияКонтекстноеМеню" id="1073"/>
+							<ExtendedTooltip name="бит_ум_ВидАдресаМестаПребыванияРасширеннаяПодсказка" id="1074"/>
+							<Events>
+								<Event name="OnChange">бит_ум_ВидАдресаМестаПребыванияПриИзменении</Event>
+								<Event name="StartChoice">бит_ум_ВидАдресаМестаПребыванияНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="бит_ум_ВидАдресаФактическогоОрганизации" id="1075">
+							<DataPath>НаборКонстант.бит_ум_ВидАдресаФактическогоОрганизации</DataPath>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<ContextMenu name="бит_ум_ВидАдресаФактическогоОрганизацииКонтекстноеМеню" id="1076"/>
+							<ExtendedTooltip name="бит_ум_ВидАдресаФактическогоОрганизацииРасширеннаяПодсказка" id="1077"/>
+							<Events>
+								<Event name="OnChange">бит_ум_ВидАдресаФактическогоОрганизацииПриИзменении</Event>
+								<Event name="StartChoice">бит_ум_ВидАдресаФактическогоОрганизацииНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="бит_ум_ВидАдресаМестонахожденияОрганизации" id="1102">
+							<DataPath>НаборКонстант.бит_ум_ВидАдресаМестонахожденияОрганизации</DataPath>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="бит_ум_ВидАдресаМестонахожденияОрганизацииКонтекстноеМеню" id="1103"/>
+							<ExtendedTooltip name="бит_ум_ВидАдресаМестонахожденияОрганизацииРасширеннаяПодсказка" id="1104"/>
+							<Events>
+								<Event name="OnChange">бит_ум_ВидАдресаМестонахожденияОрганизацииПриИзменении</Event>
+								<Event name="StartChoice">бит_ум_ВидАдресаМестонахожденияОрганизацииНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="бит_ум_ВидТелефонаОрганизации" id="1108">
+							<DataPath>НаборКонстант.бит_ум_ВидТелефонаОрганизации</DataPath>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<ContextMenu name="бит_ум_ВидТелефонаОрганизацииКонтекстноеМеню" id="1109"/>
+							<ExtendedTooltip name="бит_ум_ВидТелефонаОрганизацииРасширеннаяПодсказка" id="1110"/>
+							<Events>
+								<Event name="OnChange">бит_ум_ВидТелефонаОрганизацииПриИзменении</Event>
+								<Event name="StartChoice">бит_ум_ВидТелефонаОрганизацииНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="бит_ум_ВариантНаименованияОрганизацииДляФормОтчетности" id="1105">
+							<DataPath>НаборКонстант.бит_ум_ВариантНаименованияОрганизацииДляФормОтчетности</DataPath>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<ContextMenu name="бит_ум_ВариантНаименованияОрганизацииДляФормОтчетностиКонтекстноеМеню" id="1106"/>
+							<ExtendedTooltip name="бит_ум_ВариантНаименованияОрганизацииДляФормОтчетностиРасширеннаяПодсказка" id="1107"/>
+							<Events>
+								<Event name="OnChange">бит_ум_ВариантНаименованияОрганизацииДляФормОтчетностиПриИзменении</Event>
+							</Events>
+						</InputField>
+						<CheckBoxField name="бит_ум_ВыводитьИндексВАдресе" id="1078">
+							<DataPath>НаборКонстант.бит_ум_ВыводитьИндексВАдресе</DataPath>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="бит_ум_ВыводитьИндексВАдресеКонтекстноеМеню" id="1079"/>
+							<ExtendedTooltip name="бит_ум_ВыводитьИндексВАдресеРасширеннаяПодсказка" id="1080">
+								<Title formatted="true">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>В некоторых регионах контролирующие органы требуют, чтобы при указании адреса, был указан почтовый индекс.
+Настройка включает отображение почтового индекса во всех формах, где выводится адрес работника или организации.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+							<Events>
+								<Event name="OnChange">бит_ум_ВыводитьИндексВАдресеПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="бит_ум_ПереноситьДанныеПаспортаИзДокументовФизЛиц" id="1114">
+							<DataPath>НаборКонстант.бит_ум_ПереноситьДанныеПаспортаИзДокументовФизЛиц</DataPath>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="бит_ум_ПереноситьДанныеПаспортаИзДокументовФизЛицКонтекстноеМеню" id="1115"/>
+							<ExtendedTooltip name="бит_ум_ПереноситьДанныеПаспортаИзДокументовФизЛицРасширеннаяПодсказка" id="1116"/>
+							<Events>
+								<Event name="OnChange">бит_ум_ПереноситьДанныеПаспортаИзДокументовФизЛицПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="бит_ум_УчетПатентов" id="1081">
+							<DataPath>НаборКонстант.бит_ум_УчетПатентов</DataPath>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="бит_ум_УчетПатентовКонтекстноеМеню" id="1082"/>
+							<ExtendedTooltip name="бит_ум_УчетПатентовРасширеннаяПодсказка" id="1083">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Включает учет патентов - отслеживание взаиморасчетов сотрудников по патентам (внесение в информационную базу квитанций по патентам, отслеживание неуплаты платежа за патент)</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+							<Events>
+								<Event name="OnChange">бит_ум_УчетПатентовПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="бит_ум_ПредупреждениеОбОплатеПатентов" id="1111">
+							<DataPath>НаборКонстант.бит_ум_ПредупреждениеОбОплатеПатентов</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Предупреждать об оплате патентов за (дн.)</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<ContextMenu name="бит_ум_ПредупреждениеОбОплатеПатентовКонтекстноеМеню" id="1112"/>
+							<ExtendedTooltip name="бит_ум_ПредупреждениеОбОплатеПатентовРасширеннаяПодсказка" id="1113">
+								<Title formatted="true">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Количество дней за которое предупреждать об оплате патентов в "Текущих делах".
+0 - не предупреждать.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+							<Events>
+								<Event name="OnChange">бит_ум_ПредупреждениеОбОплатеПатентовПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="17">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>НаборКонстант.ИспользоватьКадровыйУчет</Field>
+				<Field>НаборКонстант.бит_ум_ВариантНаименованияОрганизацииДляФормОтчетности</Field>
+				<Field>НаборКонстант.бит_ум_ВидАдресаМестаПребывания</Field>
+				<Field>НаборКонстант.бит_ум_ВидАдресаМестонахожденияОрганизации</Field>
+				<Field>НаборКонстант.бит_ум_ВидАдресаПостоянногоМестаЖительства</Field>
+				<Field>НаборКонстант.бит_ум_ВидАдресаФактическогоОрганизации</Field>
+				<Field>НаборКонстант.бит_ум_ВидТелефонаОрганизации</Field>
+				<Field>НаборКонстант.бит_ум_ВыводитьИндексВАдресе</Field>
+				<Field>НаборКонстант.бит_ум_ПереноситьДанныеПаспортаИзДокументовФизЛиц</Field>
+				<Field>НаборКонстант.бит_ум_ПредупреждениеОбОплатеПатентов</Field>
+				<Field>НаборКонстант.бит_ум_УчетПатентов</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="КадровыйУчет" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кадровый учет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<FunctionalOptions>
+				<Item>FunctionalOption.бит_ум_РаботаВРежимеОтдельногоПриложения</Item>
+			</FunctionalOptions>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СформироватьКадровыеДокументы" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать кадровые документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоматическое формирование приказов не повлияет на начисление зарплаты и не потребует перепроведения документов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Use>
+			<Action>СоздатьКадровыеДокументы</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.бит_ум_РаботаВРежимеОтдельногоПриложения</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

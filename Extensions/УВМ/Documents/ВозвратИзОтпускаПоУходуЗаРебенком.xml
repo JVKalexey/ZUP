@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="f093e096-159e-481a-8bbd-23fbd86ed448">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ВозвратИзОтпускаПоУходуЗаРебенком" category="Object">
+				<xr:TypeId>41b9562e-c275-444a-a5b9-22ac085b8f6f</xr:TypeId>
+				<xr:ValueId>95983cb1-570a-4da7-867b-2b5f70bb177a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ВозвратИзОтпускаПоУходуЗаРебенком" category="Ref">
+				<xr:TypeId>6acc375c-69fd-40bf-815b-6a589efd491a</xr:TypeId>
+				<xr:ValueId>ce3ea2ba-bfa8-4095-bf73-e3ce4638c76b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ВозвратИзОтпускаПоУходуЗаРебенком" category="Selection">
+				<xr:TypeId>2231940a-0bb9-4d40-ba7f-2d367e92bd36</xr:TypeId>
+				<xr:ValueId>e339a618-6ffb-4fe6-ae09-58a2125c84d2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ВозвратИзОтпускаПоУходуЗаРебенком" category="List">
+				<xr:TypeId>2c4eca10-54bf-48b6-81c5-96f6dabef8c0</xr:TypeId>
+				<xr:ValueId>c88b39a6-1c95-4d75-92ca-887a33cb561c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ВозвратИзОтпускаПоУходуЗаРебенком" category="Manager">
+				<xr:TypeId>881f79f5-5825-4aa7-9c78-e8c5dd278b85</xr:TypeId>
+				<xr:ValueId>20c8ed78-2683-42e6-bf54-5682db7da949</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ВозвратИзОтпускаПоУходуЗаРебенком</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>c6753f12-d8e0-4099-8162-66c67a14c0da</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="f003ec87-309e-4745-90fd-661e676bb010">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДатаВозврата</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>0bd4f564-d76e-463a-8e4d-2dbc01e8d4df</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="69888f22-963f-4bdd-b516-37e79bb5a090">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Сотрудник</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>5c3f3e40-b4cc-4242-a9bd-36ff0af08415</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="ceb5e3d5-6fd3-4a81-b2ed-07bac4790233">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Организация</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>232c06f2-14e3-456c-8289-aa8d0c20a971</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

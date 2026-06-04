@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="74ddfa22-e0f3-41af-b484-2fe04b39c682">
+		<Properties>
+			<Name>УчетМигрантовИнтеграция</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учет мигрантов (интеграция)</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.бит_ум_ОбновлениеИнформационнойБазы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.бит_ум_ДействияПоСобытиям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.бит_ум_ВидыДокументовИР</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.бит_ум_ГосударственныеОрганы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.бит_ум_ОтчетностьПоИР</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.бит_ум_ОбщегоНазначенияВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.бит_ум_ИспользоватьНесколькоОрганизаций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.бит_ум_ПроверитьУникальностьЕстественногоКлюча</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.бит_ум_РежимыВъездаИР</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.бит_ум_СтатусыИР</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.бит_ум_ОткрытьСправочникВидыДокументовИР</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.бит_ум_ВидыСобытийПоИР</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.бит_ум_ВидыОформляемыхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.бит_ум_ОткрытьСправочникВидыОформляемыхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.бит_ум_ОткрытьСправочникДействияПоСобытиям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.бит_ум_ВыполненныеДействия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.бит_ум_ДокументыИР</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.бит_ум_ДопДанныеФизЛиц</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.бит_ум_ИностранныйРаботник</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.бит_ум_ПерсональныеНастройки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.бит_ум_УчетМигрантовСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.бит_ум_ДокументыИностранногоРаботника</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.бит_ум_НазначениеДополнительныхПараметровПечати</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.бит_ум_ЗначенияПараметровПечати</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCharacteristicTypes.бит_ум_ДополнительныеПараметрыПечати</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.бит_ум_ОтветственныеЛицаЗаИР</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.бит_ум_ОткрытьРегистрСведенийОтветственныеЛицаЗаИР</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.бит_ум_ПричинаВыдачиДубликата</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.бит_ум_ПричинаИзмененияСведений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.бит_ум_СостоянияДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.бит_ум_УчетМигрантовПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.бит_ум_Галочка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.бит_ум_ЗаписатьВерсиюДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.бит_ум_УстановитьПрефиксОрганизацииНомеруДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.бит_ум_ОтчетностьПоИРПрисоединенныеФайлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.бит_ум_НастройкиПрограммы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.бит_ум_ВидАдресаПостоянногоМестаЖительства</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.бит_ум_ВидАдресаМестаПребывания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.бит_ум_ВидАдресаФактическогоОрганизации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.бит_ум_УчетМигрантовПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.бит_ум_РазделУчетМигрантов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.бит_ум_ВыводитьИндексВАдресе</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.бит_ум_УчетМигрантовПовтИспНаВремяВызова</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.бит_ум_ДокументыИностранныхРаботников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.бит_ум_ИностранныеРаботники</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.бит_ум_НесданныеФормыОтчетности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.бит_ум_ОсновнаяФормаРабочегоСтола</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.бит_ум_ОбщегоНазначения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.бит_ум_ПанельОтчетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.бит_ум_УчетМигрантовВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.бит_ум_НастройкиПрограммы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.бит_ум_СтандартныеПодсистемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.бит_ум_СтандартныеПодсистемыКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.бит_ум_Настройки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.бит_ум_ОбщегоНазначенияКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.бит_ум_Пользователь</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.бит_ум_РаботаВРежимеОтдельногоПриложения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.бит_ум_РаботаВРежимеОтдельногоПриложения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.бит_ум_ОПрограмме</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.бит_ум_Логотип</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.бит_ум_ОписаниеИзмененийСистемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.бит_ум_ДоверенностьИностранца</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.бит_ум_УчетПатентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.бит_ум_УчетПатентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.бит_ум_КвитанцияЗаПатент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.бит_ум_ОплатаПатентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.бит_ум_ДополнительныеОбработкиИностранныеРаботники</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.бит_ум_ДополнительныеОтчетыИностранныеРаботники</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.бит_ум_ЗаявлениеНаУменьшениеСуммыНДФЛ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.бит_ум_УчетМигрантовСобытия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.бит_ум_ДокументыФизическихЛицПриЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.бит_ум_ПодтверждениеПраваНаУменьшениеСуммыНДФЛ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.бит_ум_ПодтверждениеПраваНаУменьшениеСуммыНДФЛ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.бит_ум_СформироватьАвансовыеПлатежиНДФЛ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.бит_ум_УчетПатентовНДФЛ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.бит_ум_УчетПатентовНДФЛ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.бит_ум_ИнформацияОПатентах</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.бит_ум_ВзаиморасчетыПоПатентам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.бит_ум_УстановитьПометкуУдаленияПрисоединенныхФайловДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.бит_ум_ОпределитьФормуПрисоединенногоФайла</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.бит_ум_ОснованияДляРаботыБезРазрешения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.бит_ум_КвитанцииЗаПатент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.бит_ум_ВидАдресаМестонахожденияОрганизации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.бит_ум_УбратьЗапятыеИзАдреса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.бит_ум_ПроверитьДатуЗапретаИзмененияПередЗаписьюДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.бит_ум_ПроверитьДатуЗапретаИзмененияПередУдалением</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.бит_ум_ПроверитьДатуЗапретаИзмененияПередЗаписьюНабораЗаписей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.бит_ум_ВариантыНаименованияДляФормОтчетности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.бит_ум_ВариантНаименованияОрганизацииДляФормОтчетности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.бит_ум_ВидТелефонаОрганизации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCharacteristicTypes.бит_ум_НастройкиДействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.бит_ум_МастерНастройки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.бит_ум_ВыполнятьНачальнуюНастройкуПрограммы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.бит_ум_НеВыполнятьНачальнуюНастройкуПрограммы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.бит_ум_СправочникОрганизации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.бит_ум_ВыполнятьНачальнуюНастройкуПрограммы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.бит_ум_НеВыполнятьНачальнуюНастройкуПрограммы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.бит_ум_ПредупреждениеОбОплатеПатентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.бит_ум_ИсторияДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.бит_ум_ИспользованиеОбработкиОбменДаннымиСТиповымиРешениями</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.бит_ум_РаботаВРежимеИнтеграции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.бит_ум_РаботаВРежимеИнтеграции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.бит_ум_Пользователь315</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.сл2_КлиентЛицензирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сл2_Кэш</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.сл2_ОбычныйШрифтЭлементовUI</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.сл2_ШрифтВажныхЗаголовков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.сл2</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.сл2_ОткрытьФормуКлиентаЛицензирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.сл2_МенеджерСеансов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.сл2_Пользователь</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.сл2_Администратор</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сл2_СерверКэшируемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сл2_Сервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сл2_Переопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сл2_Общий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сл2_Клиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сл2_Глобальный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сл2_Внешний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.бит_ум_ПриОткрытииФормы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.бит_ум_КонтролирующиеОрганыПоОрганизациям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.бит_ум_ПереноситьДанныеПаспортаИзДокументовФизЛиц</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FilterCriterion.бит_ум_ДокументыИностранногоРаботника</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.бит_ум_ЖурналДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.бит_ум_КвитанцияЗаПатентПрисоединенныеФайлы</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

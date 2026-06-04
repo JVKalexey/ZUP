@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Физлицо" id="4">
+			<DataPath>Запись.Физлицо</DataPath>
+			<ContextMenu name="ФизлицоКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ФизлицоРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ВидДокумента" id="7">
+			<DataPath>Запись.ВидДокумента</DataPath>
+			<ContextMenu name="ВидДокументаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ВидДокументаРасширеннаяПодсказка" id="9"/>
+			<Events>
+				<Event name="OnChange">ВидДокументаПриИзменении</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="ГруппаСерияИНомер" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Серия и номер</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСерияИНомерРасширеннаяПодсказка" id="35"/>
+			<ChildItems>
+				<InputField name="Серия" id="10">
+					<DataPath>Запись.Серия</DataPath>
+					<Width>11</Width>
+					<ContextMenu name="СерияКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="СерияРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="Номер" id="13">
+					<DataPath>Запись.Номер</DataPath>
+					<Width>14</Width>
+					<ContextMenu name="НомерКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДатаВыдачиИСрокДействия" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата выдачи и срок действия</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДатаВыдачиИСрокДействияРасширеннаяПодсказка" id="44"/>
+			<ChildItems>
+				<InputField name="ДатаВыдачи" id="16">
+					<DataPath>Запись.ДатаВыдачи</DataPath>
+					<ContextMenu name="ДатаВыдачиКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ДатаВыдачиРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<InputField name="СрокДействия" id="19">
+					<DataPath>Запись.СрокДействия</DataPath>
+					<ContextMenu name="СрокДействияКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="СрокДействияРасширеннаяПодсказка" id="21"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДополнительноеПоле" id="36">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительное поле №1</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДополнительноеПолеРасширеннаяПодсказка" id="37"/>
+			<ChildItems>
+				<InputField name="ДопПоле" id="22">
+					<DataPath>Запись.ДопПоле</DataPath>
+					<ToolTipRepresentation>None</ToolTipRepresentation>
+					<ContextMenu name="ДопПолеКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ДопПолеРасширеннаяПодсказка" id="24"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДополнительноеПоле2" id="48">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительное поле №2</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДополнительноеПоле2РасширеннаяПодсказка" id="49"/>
+			<ChildItems>
+				<InputField name="ДопПоле2" id="50">
+					<DataPath>Запись.ДопПоле2</DataPath>
+					<ToolTipRepresentation>None</ToolTipRepresentation>
+					<ContextMenu name="ДопПоле2КонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ДопПоле2РасширеннаяПодсказка" id="52"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ГосударственныйОрган" id="28">
+			<DataPath>Запись.ГосударственныйОрган</DataPath>
+			<ContextMenu name="ГосударственныйОрганКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ГосударственныйОрганРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="ТерриторияДействия" id="45">
+			<DataPath>Запись.ТерриторияДействия</DataPath>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Территория действия документа. Если не заполнено, то будет определяться из данных государственного органа, указанного в соответствующем поле.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<ContextMenu name="ТерриторияДействияКонтекстноеМеню" id="46"/>
+			<ExtendedTooltip name="ТерриторияДействияРасширеннаяПодсказка" id="47"/>
+		</InputField>
+		<InputField name="Примечание" id="53">
+			<DataPath>Запись.Примечание</DataPath>
+			<TitleLocation>Left</TitleLocation>
+			<ContextMenu name="ПримечаниеКонтекстноеМеню" id="54"/>
+			<ExtendedTooltip name="ПримечаниеРасширеннаяПодсказка" id="55"/>
+		</InputField>
+		<UsualGroup name="ГруппаПериодИАрхив" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период и архив</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПериодИАрхивРасширеннаяПодсказка" id="42"/>
+			<ChildItems>
+				<InputField name="Период" id="1">
+					<DataPath>Запись.Period</DataPath>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<CheckBoxField name="Архив" id="25">
+					<DataPath>Запись.Архив</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>архив</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Left</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="АрхивКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="АрхивРасширеннаяПодсказка" id="27"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.бит_ум_ДокументыИР</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<CommandsVisibility>
+		<Command name="Catalog.Контрагенты.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsOrder>
+		<Command name="Document.бит_ум_ОтчетностьПоИР.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Контрагенты.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="AccumulationRegister.бит_ум_ОплатаПатентов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.бит_ум_КвитанцияЗаПатент.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.бит_ум_ЗаявлениеНаУменьшениеСуммыНДФЛ.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.бит_ум_ПодтверждениеПраваНаУменьшениеСуммыНДФЛ.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Report.бит_ум_ДокументыИностранныхРаботников.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.бит_ум_ИностранныеРаботники.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.бит_ум_НесданныеФормыОтчетности.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.бит_ум_ИнформацияОПатентах.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.бит_ум_ВзаиморасчетыПоПатентам.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.бит_ум_ИсторияДокументов.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.бит_ум_ДополнительныеОтчетыИностранныеРаботники">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.бит_ум_СформироватьАвансовыеПлатежиНДФЛ.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.бит_ум_ДоверенностьИностранца.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:4a05c7e1-5480-4bd8-82b1-c86ad9edbbdb">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.бит_ум_МастерНастройки.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.сл2_ОткрытьФормуКлиентаЛицензирования">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.бит_ум_ОПрограмме.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.бит_ум_ДополнительныеОбработкиИностранныеРаботники">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="0:00b05dbe-bc64-4c15-aca6-e35be3db2d4c">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.бит_ум_ОткрытьСправочникВидыДокументовИР">
+			<CommandGroup>CommandGroup.бит_ум_Настройки</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.бит_ум_ОткрытьСправочникВидыОформляемыхДокументов">
+			<CommandGroup>CommandGroup.бит_ум_Настройки</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.бит_ум_ОткрытьСправочникДействияПоСобытиям">
+			<CommandGroup>CommandGroup.бит_ум_Настройки</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.бит_ум_ОткрытьРегистрСведенийОтветственныеЛицаЗаИР">
+			<CommandGroup>CommandGroup.бит_ум_Настройки</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>NavigationPanelSeeAlso</Group>
+		<Group>ActionsPanelReports</Group>
+		<Group>ActionsPanelTools</Group>
+		<Group>CommandGroup.бит_ум_Настройки</Group>
+	</GroupsOrder>
+</CommandInterface>

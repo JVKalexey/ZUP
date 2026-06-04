@@ -1,0 +1,64 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://v8.1c.ru/edi/edi_stnd/ED_Ext_UVM/1.20">
+	<import namespace="http://www.1c.ru/SSL/Exchange/Message"/>
+	<import namespace="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20"/>
+	<valueType name="ВидыКадровыхСобытий" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">Прием</enumeration>
+		<enumeration xsi:type="xs:string">Перемещение</enumeration>
+		<enumeration xsi:type="xs:string">Увольнение</enumeration>
+		<enumeration xsi:type="xs:string">НачальныеДанные</enumeration>
+		<enumeration xsi:type="xs:string">ВосстановлениеВДолжности</enumeration>
+		<enumeration xsi:type="xs:string">НеподтвержденныеДанные</enumeration>
+		<enumeration xsi:type="xs:string">ИзменениеОплатыТруда</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.УВМ_ДолжностиУпр" base="d2p1:Ref"/>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.Пользователи" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваПользователь" lowerBound="1"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ОбщиеСвойстваОбъектовФормата" type="d3p1:ОбщиеСвойстваОбъектовФормата" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Подразделение" type="d3p1:КлючевыеСвойстваПодразделение" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваУВМ_ДолжностиУпр" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/ED_Ext_UVM/1.20" name="Ссылка" type="d3p1:СправочникСсылка.УВМ_ДолжностиУпр" lowerBound="0"/>
+		<property name="Наименование" type="xs:string"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.УВМ_ДолжностиУпр" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/ED_Ext_UVM/1.20" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваУВМ_ДолжностиУпр"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ОбщиеСвойстваОбъектовФормата" type="d3p1:ОбщиеСвойстваОбъектовФормата" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="РегистрСведений.УВМ_ИсторияСотрудников" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ФизическоеЛицоОтбор" type="d3p1:КлючевыеСвойстваФизическоеЛицо" lowerBound="1"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ПользовательОтбор" type="d3p1:КлючевыеСвойстваПользователь" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ОрганизацияОтбор" type="d3p1:КлючевыеСвойстваОрганизация" lowerBound="0"/>
+		<property name="ПериодОтбор" type="xs:dateTime" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/ED_Ext_UVM/1.20" name="Записи" type="d3p1:РегистрСведений.УВМ_ИсторияСотрудниковЗаписи" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ОбщиеСвойстваОбъектовФормата" type="d3p1:ОбщиеСвойстваОбъектовФормата" lowerBound="0"/>
+	</objectType>
+	<objectType name="РегистрСведений.УВМ_ИсторияСотрудниковЗаписи">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/ED_Ext_UVM/1.20" name="Строка" type="d3p1:РегистрСведений.УВМ_ИсторияСотрудниковЗапись" upperBound="-1"/>
+	</objectType>
+	<objectType name="РегистрСведений.УВМ_ИсторияСотрудниковЗапись" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ФизическоеЛицо" type="d3p1:КлючевыеСвойстваФизическоеЛицо" lowerBound="1"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Пользователь" type="d3p1:КлючевыеСвойстваПользователь" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Организация" type="d3p1:КлючевыеСвойстваОрганизация"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Подразделение" type="d3p1:КлючевыеСвойстваПодразделение" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Должность" type="d3p1:КлючевыеСвойстваДолжности" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/ED_Ext_UVM/1.20" name="ДолжностьУпр" type="d3p1:КлючевыеСвойстваУВМ_ДолжностиУпр" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/ED_Ext_UVM/1.20" name="ВидСобытия" type="d3p1:ВидыКадровыхСобытий"/>
+		<property name="Период" type="xs:dateTime" lowerBound="0"/>
+		<property name="НавигационнаяСсылкаДокумента" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="РегистрСведений.УВМ_Руководители" base="d2p1:Object" open="true" abstract="false" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ФизическоеЛицоОтбор" type="d3p1:КлючевыеСвойстваФизическоеЛицо" lowerBound="1"/>
+		<property name="ПериодОтбор" type="xs:dateTime" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/ED_Ext_UVM/1.20" name="Записи" type="d3p1:РегистрСведений.УВМ_РуководителиЗаписи" lowerBound="0"/>
+	</objectType>
+	<objectType name="РегистрСведений.УВМ_РуководителиЗаписи">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/ED_Ext_UVM/1.20" name="Строка" type="d3p1:РегистрСведений.УВМ_РуководителиЗапись" lowerBound="1" upperBound="-1"/>
+	</objectType>
+	<objectType name="РегистрСведений.УВМ_РуководителиЗапись" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ФизическоеЛицо" type="d3p1:КлючевыеСвойстваФизическоеЛицо" lowerBound="0"/>
+		<property name="Период" type="xs:dateTime" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Руководитель" type="d3p1:КлючевыеСвойстваФизическоеЛицо" lowerBound="0"/>
+		<property name="ДействуетДо" type="xs:date" lowerBound="0"/>
+		<property name="НавигационнаяСсылкаДокумента" type="xs:string" lowerBound="0"/>
+	</objectType>
+</package>

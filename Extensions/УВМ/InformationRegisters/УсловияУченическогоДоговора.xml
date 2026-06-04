@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="8db7e7e8-efd8-4742-ac3d-302bd9fc4006">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.УсловияУченическогоДоговора" category="Record">
+				<xr:TypeId>b58a9787-6d1f-4eac-82ee-12444d2a6089</xr:TypeId>
+				<xr:ValueId>2c91df75-0823-4c2e-8556-c693089becf2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.УсловияУченическогоДоговора" category="Manager">
+				<xr:TypeId>08c4218d-01a3-4e1c-a1d0-d9761b62b0d0</xr:TypeId>
+				<xr:ValueId>73791d6f-d114-406b-8f88-ffd67833f5e4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.УсловияУченическогоДоговора" category="Selection">
+				<xr:TypeId>7d761735-1fc7-45e2-8c3e-5e81c1e2908b</xr:TypeId>
+				<xr:ValueId>4f2c5ece-6b11-4aa9-8b03-7332ec1fc2d0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.УсловияУченическогоДоговора" category="List">
+				<xr:TypeId>02b25330-b238-425b-a139-b6b32bcbc347</xr:TypeId>
+				<xr:ValueId>f682a51e-fcc0-48e4-95bd-4bad47e97772</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.УсловияУченическогоДоговора" category="RecordSet">
+				<xr:TypeId>1b45ffa8-c935-49ea-a475-da1bd6f8569e</xr:TypeId>
+				<xr:ValueId>6c09e664-ff94-4d5b-b67d-4ddf0b52fdf3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.УсловияУченическогоДоговора" category="RecordKey">
+				<xr:TypeId>f2d5fe81-6732-429e-b7b9-637204d07571</xr:TypeId>
+				<xr:ValueId>67e137f7-874f-4ad7-ad2f-99b56ef6a926</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.УсловияУченическогоДоговора" category="RecordManager">
+				<xr:TypeId>fd3ab2bc-4321-4388-85a3-ac8163751208</xr:TypeId>
+				<xr:ValueId>d9008c4a-9e9e-46ec-82d6-a4b3f914295d</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>УсловияУченическогоДоговора</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>dad079c2-bd99-4098-bf26-ab084f329465</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>RecorderSubordinate</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="019be97e-1569-402d-b364-b75a8d63ac2a">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДатаОкончанияОбязательств</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>03e815d2-7f2d-4584-8146-6cdd8cdca04c</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="870755f5-b4e1-4f70-97ce-364e1ee43546">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Сумма</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>19fece8a-26ea-443d-bf8f-3be5e02f4d77</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="54582075-2382-4c09-a140-3a9355140ca6">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДатаНачалаОбязательств</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>ef55f703-8c2b-4324-8869-1bdc62b96a54</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="35e5c09f-eb55-46fc-898b-431b3b1f3c5e">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Организация</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>2a1da0dd-c5fc-4a4b-b953-39fa85e0231a</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="99c98be7-6e40-4f26-a868-d999c1cd634a">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>УченическийДоговор</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>def42e3f-7de3-4c5a-b86b-22555a574b3d</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:DocumentRef.УченическийДоговор</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="9669dc1d-3181-4a7c-b054-2d4af14a8219">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ФизическоеЛицо</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>7e2a46b3-d273-4ef1-894d-6e1c8a6c83fc</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

@@ -1,0 +1,779 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PlanOfCharacteristicKindPredefinedItems" version="2.20">
+	<Item id="59e4427b-f3ad-4e9c-a137-9bd8e38334a6">
+		<Name>ВизоваяАнкета</Name>
+		<Code/>
+		<Description>Визовая анкета</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="4be74c51-9bef-4ffa-a443-1a7c41c281fe">
+				<Name>КатегорияВизы</Name>
+				<Code/>
+				<Description>Категория визы</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.бит_ум_ЗначенияПараметровПечати</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="b9e0dfd3-a926-4e7d-901b-d51bec80bfdc">
+				<Name>КратностьВизы</Name>
+				<Code/>
+				<Description>Кратность визы</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.бит_ум_ЗначенияПараметровПечати</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="7b775421-539e-4a4b-90c1-2b43505a341d">
+		<Name>ЗаявлениеОбИсправленииОшибок</Name>
+		<Code/>
+		<Description>Заявление об исправлении ошибок</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="55ea0cc2-1826-473b-bd4b-d46c0be2f355">
+				<Name>ОписаниеОшибок</Name>
+				<Code/>
+				<Description>Описание ошибок</Description>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>999</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="3806504f-e35c-42d1-9f8d-8fa58e95251c">
+				<Name>ОтрывнаяЧастьУведомления</Name>
+				<Code/>
+				<Description>Отрывная часть уведомления</Description>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>999</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="17c7af9b-7f6c-4f80-8dab-af6ecc421c49">
+		<Name>ЛистокСтатистическогоУчета</Name>
+		<Code/>
+		<Description>Листок статистического учета</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="29c51be6-0082-457e-8686-f81ee6bbb75c">
+				<Name>ВидСоциальногоОбеспеченияПоПоследнемуМестуЖительства</Name>
+				<Code/>
+				<Description>Вид социального обеспечения по последнему месту жительства</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.бит_ум_ЗначенияПараметровПечати</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="e8f5d0e3-e4b5-41bc-8a4a-6eadaa27e43c">
+				<Name>ДоПереселенияПроживалССемьейИПрибыл</Name>
+				<Code/>
+				<Description>До переселения проживал с семьей и прибыл</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.бит_ум_ЗначенияПараметровПечати</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="0255383a-6d11-4ee5-a28e-313867da126e">
+				<Name>ЗанятиеПоПоследнемуМестуЖительства</Name>
+				<Code/>
+				<Description>Занятие по последнему месту жительства</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.бит_ум_ЗначенияПараметровПечати</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="3c1b0204-f44d-4fb4-8419-df5b72f648e3">
+				<Name>Образование</Name>
+				<Code/>
+				<Description>Образование</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.бит_ум_ЗначенияПараметровПечати</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="00b99a47-934a-4ada-9dfe-46a992ae6c42">
+				<Name>ОсновнаяПричинаПереселения</Name>
+				<Code/>
+				<Description>Основная причина переселения</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.бит_ум_ЗначенияПараметровПечати</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="f98a0a03-c4ef-454a-a654-5de967414f7e">
+				<Name>ПоследнееМестоЖительства</Name>
+				<Code/>
+				<Description>Последнее место жительства</Description>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>999</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="4db5d608-c763-46d4-a94c-7116613c7d9d">
+				<Name>ГодНачалаПроживанияНаПоследнемМесте</Name>
+				<Code/>
+				<Description>С какого года проживал по последнему месту жительства</Description>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>4</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="941f68e8-64f4-445c-89ad-db1cc44fed70">
+				<Name>СостояниеВБраке</Name>
+				<Code/>
+				<Description>Состояние в браке</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.бит_ум_ЗначенияПараметровПечати</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="63349727-df8d-4c43-8ff2-91c928703d03">
+				<Name>СтатусЗанятости</Name>
+				<Code/>
+				<Description>Статус занятости</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.бит_ум_ЗначенияПараметровПечати</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="8651f938-aaa9-4afa-b326-cf44c6d3cfeb">
+				<Name>ТипРегистрации</Name>
+				<Code/>
+				<Description>Тип регистрации</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.бит_ум_ЗначенияПараметровПечати</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="8d42faf5-e2b7-4cbc-a747-d6df3531d91b">
+				<Name>ЧастьЧленовСемьиПроживаетПоНовомуАдресу</Name>
+				<Code/>
+				<Description>Часть членов семьи проживает по новому адресу</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.бит_ум_ЗначенияПараметровПечати</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="6b468065-8354-4a3c-94eb-89a96ba519eb">
+		<Name>СведенияОбОбучении</Name>
+		<Code/>
+		<Description>Сведения об обучении</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="56f02202-df9f-4f8a-a21e-69e5af9a95b0">
+				<Name>ДатаАккредитации</Name>
+				<Code/>
+				<Description>Дата аккредитации</Description>
+				<Type>
+					<v8:Type>xs:dateTime</v8:Type>
+					<v8:DateQualifiers>
+						<v8:DateFractions>Date</v8:DateFractions>
+					</v8:DateQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="e56c2f23-9bf3-4fdc-9063-087b489f61c5">
+				<Name>НомерАккредитации</Name>
+				<Code/>
+				<Description>Номер аккредитации</Description>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>999</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="faf2a230-32bb-496e-9388-f6a801328a08">
+				<Name>ОбразовательнаяОрганизация</Name>
+				<Code/>
+				<Description>Образовательная организация</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.Контрагенты</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="95e68c04-14ca-4ab9-a569-67c1fd4fa214">
+				<Name>ОбразовательнаяПрограмма</Name>
+				<Code/>
+				<Description>Образовательная программа</Description>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>999</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="1c27a0dc-3ff2-481a-a740-2617c5c25470">
+				<Name>СрокОбученияПо</Name>
+				<Code/>
+				<Description>Срок обучения по</Description>
+				<Type>
+					<v8:Type>xs:dateTime</v8:Type>
+					<v8:DateQualifiers>
+						<v8:DateFractions>Date</v8:DateFractions>
+					</v8:DateQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="51568dc4-b452-4cc2-a1af-e6c038a7f8e4">
+				<Name>СрокОбученияС</Name>
+				<Code/>
+				<Description>Срок обучения с</Description>
+				<Type>
+					<v8:Type>xs:dateTime</v8:Type>
+					<v8:DateQualifiers>
+						<v8:DateFractions>Date</v8:DateFractions>
+					</v8:DateQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="f42dc030-faba-4fe8-98e2-32e3eacf4d83">
+		<Name>УведомлениеОПрибытии</Name>
+		<Code/>
+		<Description>Уведомление о прибытии</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="36a5303d-42c3-4c0a-b5e6-50a3e3034cc3">
+				<Name>ФактическоеМестоНахожденияКадастровыйНомер</Name>
+				<Code/>
+				<Description>Кадастровый номер</Description>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>999</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="a890eacf-f671-4cc4-8fe3-2fc539a3f8ce">
+				<Name>МестоПребывания</Name>
+				<Code/>
+				<Description>Место пребывания</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.бит_ум_ЗначенияПараметровПечати</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="f7fbfb84-df7a-4c7f-94e8-1499c5a59dd5">
+				<Name>НаименованиеДокументаОПравеПользованияЖилымПомещением</Name>
+				<Code/>
+				<Description>Наименование документа о праве пользования жилым помещением</Description>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>100</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="4d113558-7ee4-4366-8c07-ad5d44c4150b">
+				<Name>РеквизитыДокументаОПравеПользованияЖилымПомещением</Name>
+				<Code/>
+				<Description>Реквизиты документа о праве пользования жилым помещением</Description>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>100</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="048743a5-5fab-45bf-afcf-f14c375d0eb1">
+				<Name>ФактическоеМестоНахождения</Name>
+				<Code/>
+				<Description>Фактическое место нахождения</Description>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>999</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="9f5fdc9e-9bca-49f1-a49b-29dae8948134">
+		<Name>ХодатайствоИностранногоСпециалиста</Name>
+		<Code/>
+		<Description>Ходатайство иостранного гражданина о привлечении его в качестве специалиста</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="346473d6-771b-4eee-a757-18e2c2430597">
+				<Name>ЛичнаяХарактеристика</Name>
+				<Code/>
+				<Description>Личная характеристика</Description>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>100</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="3d25462d-4652-460e-98c7-42ab6a99356d">
+				<Name>ОценкаПрофессиональныхКачеств</Name>
+				<Code/>
+				<Description>Оценка профессиональных качеств</Description>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>100</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="72616d81-7e78-4bd7-a281-46a91018331a">
+				<Name>Рекомендатель</Name>
+				<Code/>
+				<Description>Рекомендатель</Description>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>200</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="759b53bf-6a9c-4606-874f-34e2cb28718e">
+				<Name>РодДеятельностиХарактеризуемого</Name>
+				<Code/>
+				<Description>Род деятельности характеризуемого</Description>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>100</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="58f26d82-a13b-4ae7-8da3-93e4122ecaf8">
+		<Name>Ходатайство</Name>
+		<Code/>
+		<Description>Ходатайство о привлечении иностранного специалиста</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="fdf80ac1-a419-4be3-a521-6f148c86dcf8">
+				<Name>ПредыдущийРаботодательАдрес</Name>
+				<Code/>
+				<Description>Адрес в пределах местонахождения предыдущего работодателя</Description>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>999</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="932a4015-b490-4b20-b271-293536863c0c">
+				<Name>ПредыдущийРаботодательИНН</Name>
+				<Code/>
+				<Description>ИНН предыдущего работодателя</Description>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>999</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="d58836ec-bb0d-4a76-a502-5f1f2d87d90e">
+				<Name>ПредыдущийРаботодательНаименование</Name>
+				<Code/>
+				<Description>Наименование предыдущего работодателя</Description>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>999</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="4a5dccf1-c30c-4c3d-bd76-0a11cc80977e">
+				<Name>ХодатайствоПунктыПосещения</Name>
+				<Code/>
+				<Description>Пункты посещения</Description>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>999</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="93832555-26b6-4193-afb4-ab906f60281e">
+		<Name>АдресПрежнегоМестаПребыванияРФ</Name>
+		<Code/>
+		<Description>Адрес прежнего места пребывания в РФ</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>999</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="293b5085-6800-42bd-bf73-0139087c7fb3">
+		<Name>АдресРаботы</Name>
+		<Code/>
+		<Description>Адрес работы</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>999</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5c745630-d9f7-4ddb-8c1d-cad20bc8c439">
+		<Name>ВидОбъектаСобственности</Name>
+		<Code/>
+		<Description>Вид объекта собственности</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.бит_ум_ЗначенияПараметровПечати</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="968732d1-4b24-4796-88a3-a5251d3bc12b">
+		<Name>ГражданскоПравовойДоговорВУстнойФорме</Name>
+		<Code/>
+		<Description>Гражданско-правовой договор заключен в устной форме</Description>
+		<Type>
+			<v8:Type>xs:boolean</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="90b9f06f-2844-4ac2-93ea-430b3b0eb57f">
+		<Name>ДатаРазрешенияРаботодателю</Name>
+		<Code/>
+		<Description>Дата разрешения работодателю</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b12a7381-5138-4973-8a8f-5de9485eb3e1">
+		<Name>ЗарплатаЗаПериодПо</Name>
+		<Code/>
+		<Description>Зарплата за период по</Description>
+		<Type>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ba7eeea8-884a-44e1-a89d-dedb22ca1f3f">
+		<Name>ЗарплатаЗаПериодС</Name>
+		<Code/>
+		<Description>Зарплата за период с</Description>
+		<Type>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3f804c1e-0269-4a26-86f3-c79a4c652681">
+		<Name>Контрагент</Name>
+		<Code/>
+		<Description>Контрагент</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Контрагенты</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="266322e7-18d1-40f5-b52e-dd478e63196b">
+		<Name>НовоеНаименованиеРаботодателя</Name>
+		<Code/>
+		<Description>Новое наименование работодателя</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>999</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="40a5060a-5e9b-41ed-ba43-3d0f7dc5f936">
+		<Name>НомерРазрешенияРаботодателю</Name>
+		<Code/>
+		<Description>Номер разрешения работодателю</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c988ff01-efd9-4128-bf2b-9db55cc9cff5">
+		<Name>КонтрагентОГРН</Name>
+		<Code/>
+		<Description>ОГРН (контрагент)</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9a8d89a2-6efc-4a16-9f6d-9a20172b8c6f">
+		<Name>ОснованиеДляРаботыБезРазрешения</Name>
+		<Code/>
+		<Description>Основание для работы без разрешения</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.бит_ум_ОснованияДляРаботыБезРазрешения</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8f1002e1-d21e-41dc-8653-1716091a1270">
+		<Name>ОснованиеДляСнятияСУчета</Name>
+		<Code/>
+		<Description>Основание для снятия с учета</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>999</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="263cd48c-174a-4c45-90d2-d57ee6c13868">
+		<Name>ОсобыеУсловия</Name>
+		<Code/>
+		<Description>Особые условия</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>100</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ff73c8c0-68a9-4ee6-8dbb-b3074ac519df">
+		<Name>ПланируемаяДолжность</Name>
+		<Code/>
+		<Description>Планируемая должность</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Должности</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6c43151c-9058-42fb-8e37-9449c5db9ce0">
+		<Name>ПричинаВыдачиДубликата</Name>
+		<Code/>
+		<Description>Причина выдачи дубликата</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.бит_ум_ПричинаВыдачиДубликата</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4336503e-3edb-4484-8e5b-e579b0521ffe">
+		<Name>ПричинаИзмененияСведенийПатента</Name>
+		<Code/>
+		<Description>Причина изменения сведений</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.бит_ум_ПричинаИзмененияСведений</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="56a73413-001f-49f2-8d22-523fb9188b99">
+		<Name>РазрешениеНаРаботуПо</Name>
+		<Code/>
+		<Description>Разрешение на работу по</Description>
+		<Type>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ca3715a9-db1e-47de-8652-c2a041b14d9d">
+		<Name>РазрешениеНаРаботуС</Name>
+		<Code/>
+		<Description>Разрешение на работу с</Description>
+		<Type>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c84eba6d-62e1-487e-ab6f-fee0dcc12863">
+		<Name>РеквизитыДокументаОСнятииСУчета</Name>
+		<Code/>
+		<Description>Реквизиты документа о снятии с учета</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>999</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2618ee9f-18b0-4e0d-9392-7b3a9392cf43">
+		<Name>СведенияОбИзмененииФИО</Name>
+		<Code/>
+		<Description>Сведения об изменении ФИО</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>200</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2e44f6de-1d81-4a20-abc3-c5b8d7444726">
+		<Name>СвидетельствоОГосударственнойРегистрацииДата</Name>
+		<Code/>
+		<Description>Свидетельство о государственной регистрации дата</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0cbc9260-f094-437e-96c9-9696fd5c0d93">
+		<Name>КонтрагентСвидетельствоОГосударственнойРегистрацииДата</Name>
+		<Code/>
+		<Description>Свидетельство о государственной регистрации дата (контрагент)</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3d090604-555c-4550-860c-e20d804a8f65">
+		<Name>СвидетельствоОГосударственнойРегистрацииСерияНомер</Name>
+		<Code/>
+		<Description>Свидетельство о государственной регистрации серия и №</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b95e6704-c32a-4372-bdfa-93a30c7c8765">
+		<Name>КонтрагентСвидетельствоОГосударственнойРегистрацииСерияНомер</Name>
+		<Code/>
+		<Description>Свидетельство о государственной регистрации серия и № (контрагент)</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="75d86f3d-c504-4731-89f2-61afb2fd071c">
+		<Name>СвидетельствоОПостановкеНаУчетВНалоговойДата</Name>
+		<Code/>
+		<Description>Свидетельство о постановке на учет в налоговом органе дата</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8a03c2bb-d90f-4732-84b1-1af012c6a19b">
+		<Name>КонтрагентСвидетельствоОПостановкеНаУчетВНалоговойДата</Name>
+		<Code/>
+		<Description>Свидетельство о постановке на учет в налоговом органе дата (контрагент)</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8f17d6e6-ee84-45ad-a5fb-f5bd9b2e0556">
+		<Name>СвидетельствоОПостановкеНаУчетВНалоговойСерияНомер</Name>
+		<Code/>
+		<Description>Свидетельство о постановке на учет в налоговом органе серия и №</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7ff89fa2-a0e9-4e32-b889-cd0230183372">
+		<Name>КонтрагентСвидетельствоОПостановкеНаУчетВНалоговойСерияНомер</Name>
+		<Code/>
+		<Description>Свидетельство о постановке на учет в налоговом органе серия и № (контрагент)</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="16f7dbfd-66a1-4d37-9a70-d2899973d1ba">
+		<Name>СрокПродления</Name>
+		<Code/>
+		<Description>Срок продления</Description>
+		<Type>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="50ae31c0-e87c-4844-93a5-e758da2348f3">
+		<Name>УсловияПривлеченияВысококвалифицированногоСпециалиста</Name>
+		<Code/>
+		<Description>Условия привлечения высококвалифицированного специалиста</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>999</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

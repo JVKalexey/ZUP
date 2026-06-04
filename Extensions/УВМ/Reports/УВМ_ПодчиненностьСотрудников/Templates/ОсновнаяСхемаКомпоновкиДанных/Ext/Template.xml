@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ФизическоеЛицо</dataPath>
+			<field>ФизическоеЛицо</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Должность</dataPath>
+			<field>Должность</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Руководитель</dataPath>
+			<field>Руководитель</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	УВМ_Руководители.Период КАК Период,
+	УВМ_Руководители.Физлицо КАК Физлицо
+ПОМЕСТИТЬ ВТ_Сотрудники
+ИЗ
+	РегистрСведений.УВМ_Руководители КАК УВМ_Руководители
+ГДЕ
+	УВМ_Руководители.Период &lt;= &amp;ТекущаяДатаСеанса
+	И УВМ_Руководители.ДействуетДо = ДАТАВРЕМЯ(1, 1, 1)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	УВМ_Руководители.Период,
+	УВМ_Руководители.Физлицо
+ИЗ
+	РегистрСведений.УВМ_Руководители КАК УВМ_Руководители
+ГДЕ
+	УВМ_Руководители.Период &lt;= &amp;ТекущаяДатаСеанса
+	И УВМ_Руководители.ДействуетДо &gt;= &amp;ТекущаяДатаСеанса
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	МАКСИМУМ(ВТ_Сотрудники.Период) КАК Период,
+	ВТ_Сотрудники.Физлицо КАК Физлицо
+ПОМЕСТИТЬ ВТ_АктуальныеСотрудники
+ИЗ
+	ВТ_Сотрудники КАК ВТ_Сотрудники
+
+СГРУППИРОВАТЬ ПО
+	ВТ_Сотрудники.Физлицо
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	УВМ_Руководители.Физлицо КАК Физлицо,
+	УВМ_Руководители.Руководитель КАК Руководитель
+ПОМЕСТИТЬ ВТ_Руководители
+ИЗ
+	РегистрСведений.УВМ_Руководители КАК УВМ_Руководители
+ГДЕ
+	(УВМ_Руководители.Период, УВМ_Руководители.Физлицо) В
+			(ВЫБРАТЬ
+				ВТ_АктуальныеСотрудники.Период КАК Период,
+				ВТ_АктуальныеСотрудники.Физлицо КАК Физлицо
+			ИЗ
+				ВТ_АктуальныеСотрудники КАК ВТ_АктуальныеСотрудники)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	МестоПозицииШтатногоРасписанияВСтруктуреПредприятия.Подразделение КАК Подразделение,
+	КадроваяИсторияСотрудников.Организация КАК Организация,
+	КадроваяИсторияСотрудников.ФизическоеЛицо КАК ФизическоеЛицо,
+	КадроваяИсторияСотрудников.Должность КАК Должность,
+	ВТ_Руководители.Руководитель КАК Руководитель
+{ВЫБРАТЬ
+	Подразделение.*,
+	ФизическоеЛицо.*,
+	Должность.*,
+	Руководитель.*,
+	Организация.*}
+ИЗ
+	РегистрСведений.КадроваяИсторияСотрудников.СрезПоследних КАК КадроваяИсторияСотрудников
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.МестоПозицииШтатногоРасписанияВСтруктуреПредприятия КАК МестоПозицииШтатногоРасписанияВСтруктуреПредприятия
+		ПО КадроваяИсторияСотрудников.ДолжностьПоШтатномуРасписанию = МестоПозицииШтатногоРасписанияВСтруктуреПредприятия.Позиция
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Руководители КАК ВТ_Руководители
+		ПО КадроваяИсторияСотрудников.ФизическоеЛицо = ВТ_Руководители.Физлицо
+ГДЕ
+	КадроваяИсторияСотрудников.ВидСобытия &lt;&gt; ЗНАЧЕНИЕ(Перечисление.ВидыКадровыхСобытий.Увольнение)
+{ГДЕ
+	МестоПозицииШтатногоРасписанияВСтруктуреПредприятия.Подразделение.*,
+	КадроваяИсторияСотрудников.ФизическоеЛицо.*,
+	КадроваяИсторияСотрудников.Должность.*,
+	ВТ_Руководители.Руководитель.*,
+	КадроваяИсторияСотрудников.Организация.*}</query>
+		<autoFillFields>false</autoFillFields>
+	</dataSet>
+	<parameter>
+		<name>ТекущаяДатаСеанса</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Текущая дата сеанса</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>ТЕКУЩАЯДАТА()</expression>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ПодчиненностьСотрудников</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Подчиненность сотрудников</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Подразделение</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Организация</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ФизическоеЛицо</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Должность</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Руководитель</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Подразделение</dcsset:field>
+						<dcsset:groupType>Hierarchy</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

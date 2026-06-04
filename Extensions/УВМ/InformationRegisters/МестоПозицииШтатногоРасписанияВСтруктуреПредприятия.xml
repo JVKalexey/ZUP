@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="18343911-c7e6-4d0e-9274-ee6226df8e7f">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.МестоПозицииШтатногоРасписанияВСтруктуреПредприятия" category="Record">
+				<xr:TypeId>a505aeea-bb9a-458a-8020-8740828fde57</xr:TypeId>
+				<xr:ValueId>545ed9f7-f146-433d-aca9-5dee40845b67</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.МестоПозицииШтатногоРасписанияВСтруктуреПредприятия" category="Manager">
+				<xr:TypeId>ac1640d2-07c0-48da-bf16-6c0e124f5fb7</xr:TypeId>
+				<xr:ValueId>eb1a591b-2514-4be2-94f4-96ba8ddf38c0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.МестоПозицииШтатногоРасписанияВСтруктуреПредприятия" category="Selection">
+				<xr:TypeId>9e24d143-4a8c-49f5-9eca-9e753bfa78a8</xr:TypeId>
+				<xr:ValueId>f015fcf8-29d7-417f-b4f9-fb7e3d6021e7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.МестоПозицииШтатногоРасписанияВСтруктуреПредприятия" category="List">
+				<xr:TypeId>0f87aff2-b90b-4d50-9ff2-7c0fbb530f26</xr:TypeId>
+				<xr:ValueId>bbb7df07-ff2d-4841-b4af-1dfd3a6cf16e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.МестоПозицииШтатногоРасписанияВСтруктуреПредприятия" category="RecordSet">
+				<xr:TypeId>aa15eb27-cf31-4a8b-834d-927133411c93</xr:TypeId>
+				<xr:ValueId>5d3a3211-7f8c-4b52-a519-fdf19a098f1b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.МестоПозицииШтатногоРасписанияВСтруктуреПредприятия" category="RecordKey">
+				<xr:TypeId>3bfb13ad-a485-4a59-a613-8aacfa532b0a</xr:TypeId>
+				<xr:ValueId>66adb3d4-c9bd-47cc-a7d2-3a070b278d96</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.МестоПозицииШтатногоРасписанияВСтруктуреПредприятия" category="RecordManager">
+				<xr:TypeId>a6bf8100-75cb-4a25-9e1f-c25bdeaeefd0</xr:TypeId>
+				<xr:ValueId>909531f3-0446-4712-a5aa-3a2c8d529c75</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>МестоПозицииШтатногоРасписанияВСтруктуреПредприятия</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>82cd05ae-610f-46ed-850d-47e9ce60ab83</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="507d3e81-e987-49d5-8222-9ffbd95f1eed">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Подразделение</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>cd93ae5a-f56b-4688-80e1-2b0d77b939e6</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СтруктураПредприятия</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="1a950892-9b5d-40ce-bb0a-f61742413161">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>УВМ_ДолжностьУпр</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>a0eb20dc-307f-4740-91d8-e6388d331632</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.УВМ_ДолжностиУпр</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="dc5e1529-4624-4bfd-884c-5b5a01be9308">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Позиция</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>2e615ca0-95e3-4072-a117-42c9b5401041</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ШтатноеРасписание</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

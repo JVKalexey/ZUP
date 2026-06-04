@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="73fb347f-27cc-4bb9-a73d-c1f0411272a9">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.РолиСотрудников" category="Record">
+				<xr:TypeId>99016f93-8753-499e-9540-4772a29ddf8c</xr:TypeId>
+				<xr:ValueId>f2fe929f-58eb-4fab-be44-6c281ba79206</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.РолиСотрудников" category="Manager">
+				<xr:TypeId>3a2bf87d-065b-42a7-ab84-6bdb3f01940d</xr:TypeId>
+				<xr:ValueId>f3380531-316f-451b-98de-2123bc081d54</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.РолиСотрудников" category="Selection">
+				<xr:TypeId>4a0a0584-ab23-4d2b-be0d-8faac9b916b9</xr:TypeId>
+				<xr:ValueId>4f8f020a-50a4-4c7f-931f-3c97560ad6e9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.РолиСотрудников" category="List">
+				<xr:TypeId>95dd75ca-4c6f-446f-bed2-57e33fa1bd44</xr:TypeId>
+				<xr:ValueId>c2861b03-6d29-486b-a238-cb1e48f887ef</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.РолиСотрудников" category="RecordSet">
+				<xr:TypeId>6ba2217d-b095-4e40-af72-ca173f3155c6</xr:TypeId>
+				<xr:ValueId>5131a818-50a7-4b71-ae6b-243c5b772558</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.РолиСотрудников" category="RecordKey">
+				<xr:TypeId>4b78736a-c254-44c6-a7c8-1e2c5dfedc7c</xr:TypeId>
+				<xr:ValueId>0c47480b-3648-4879-8d1a-dd7df4a1aca7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.РолиСотрудников" category="RecordManager">
+				<xr:TypeId>2d41c2a4-d449-4ebc-ad36-66e82515278e</xr:TypeId>
+				<xr:ValueId>ae53e30f-6d2e-4e77-ac20-6ed96d81b62a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>РолиСотрудников</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>7e358074-f775-49aa-8558-7a182f94ec3d</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Dimension uuid="98014fc1-246a-42ac-a44f-2258c6422d19">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Сотрудник</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>279a9024-c50f-4ff1-beaf-31133c72b03c</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="ecae92bd-ed40-4ca5-bd97-6eb90dfa99e4">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РольСотрудника</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>56b90b54-c884-441b-8b2b-755c7ccb9640</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.РолиСотрудников</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

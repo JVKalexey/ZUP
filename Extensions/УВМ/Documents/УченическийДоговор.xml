@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="e27b5890-72da-4208-9bc8-0e162b7e576d">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.УченическийДоговор" category="Object">
+				<xr:TypeId>2c9445b7-04ac-4c0d-998e-fe4f521e6652</xr:TypeId>
+				<xr:ValueId>ab82b009-daf5-40c3-bc1a-525ab45fa884</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.УченическийДоговор" category="Ref">
+				<xr:TypeId>5e5782c3-b0d8-418b-b68e-a46c295183a6</xr:TypeId>
+				<xr:ValueId>ac5daf7b-0df4-40c6-b936-b27626ec4a4a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.УченическийДоговор" category="Selection">
+				<xr:TypeId>3fb39fdc-3c97-4d70-8a2b-d0034461432b</xr:TypeId>
+				<xr:ValueId>c9b22933-d739-4033-9c30-d0b6aefc8a47</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.УченическийДоговор" category="List">
+				<xr:TypeId>e87cac23-a539-4681-9ed2-670277905fcb</xr:TypeId>
+				<xr:ValueId>5933cc8a-5792-4707-8456-ef0b4b483893</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.УченическийДоговор" category="Manager">
+				<xr:TypeId>693835b0-ed10-4673-b704-cd015c7b44cf</xr:TypeId>
+				<xr:ValueId>11e74981-d981-43df-a3a9-2d39bb51a62c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+			<xr:PropertyState>
+				<xr:Property>ManagerModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>УченическийДоговор</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>b222e1db-5348-4861-9019-6627b9f75a0d</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="e4e6fb3c-ede6-4198-bcbf-223787c30a13">
+				<Properties>
+					<Name>УВМ_ТипРасчетаВозмещения</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип расчета возмещения (УВМ)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:EnumRef.УВМ_ТипыРасчетаВозмещенияПоУченическимДоговорам</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:type="xr:DesignTimeRef">Enum.УВМ_ТипыРасчетаВозмещенияПоУченическимДоговорам.EnumValue.Стандартный</FillValue>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="69783d4c-7898-4bbc-b4ef-c185eebde787">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДатаНачалаОбязательств</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>bf2a2289-65bc-4300-88cd-be41ec6b529a</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="3fcffd33-d111-4500-91e6-1b26b3bd0574">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДатаНачалаУчебы</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>01ac4926-af2c-4ef5-aa23-afa61a358a4e</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="e01d76ae-a51c-4a3e-9fe2-e6958465837b">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДатаОкончанияОбязательств</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>80c45b6d-c892-4c7c-b9b4-26d0b5015e82</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="da3d75da-2a92-4ba3-bd57-22030b65e4d2">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДатаОкончанияУчебы</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>4106fa7c-8f93-4e96-959a-01cf2eec72fa</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="2141aec8-4e8a-4e20-9a66-5bac8182005a">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Мероприятие</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>1b422b92-02b2-41ad-a7d7-11678c01ca49</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.МероприятияОбученияРазвития</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="f2bf813a-94a2-4825-a591-f2a67f5b321d">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Организация</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>488ac582-df29-424b-8795-f6044433bf8a</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="0ac9a84c-86af-4389-8120-4a2517c820e1">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ФизическоеЛицо</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>526aa0f0-2f48-4c13-99b6-2d3c8b70d230</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаДокумента</Form>
+			<TabularSection uuid="ffd15ba8-a247-4cd7-a051-af7bae927d8a">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.УченическийДоговор.Обязательства" category="TabularSection">
+						<xr:TypeId>8a29e5d9-3bce-4ccf-856f-0e6f078f1c2a</xr:TypeId>
+						<xr:ValueId>cd60009c-ddd2-4829-a366-6295a5228381</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.УченическийДоговор.Обязательства" category="TabularSectionRow">
+						<xr:TypeId>eb082dba-0e1b-47fb-9579-5319449e4b2b</xr:TypeId>
+						<xr:ValueId>69998326-7bad-4c58-8a25-4cc5581af60e</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Обязательства</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>24b63c38-a092-4c0b-87fa-a7c55eaefadb</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects/>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ГруппаСменаРуководителя" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Смена руководителя</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа смена руководителя</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаСменаРуководителяРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<InputField name="ДатаСмены" id="34">
+					<DataPath>ДатаСмены</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДатаСменыКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ДатаСменыРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<InputField name="СтарыйРуководитель" id="3">
+					<DataPath>СтарыйРуководитель</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтарыйРуководительКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="СтарыйРуководительРасширеннаяПодсказка" id="5"/>
+				</InputField>
+				<InputField name="НовыйРуководитель" id="6">
+					<DataPath>НовыйРуководитель</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НовыйРуководительКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="НовыйРуководительРасширеннаяПодсказка" id="8"/>
+				</InputField>
+				<Button name="ПоменятьРуководителя" id="9">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПоменятьРуководителя</CommandName>
+					<ExtendedTooltip name="ПоменятьРуководителяРасширеннаяПодсказка" id="10"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНазначениеРуководителя" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назначение руководителя</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа назначение руководителя</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаНазначениеРуководителяРасширеннаяПодсказка" id="12"/>
+			<ChildItems>
+				<InputField name="ДатаНазначения" id="37">
+					<DataPath>ДатаНазначения</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДатаНазначенияКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ДатаНазначенияРасширеннаяПодсказка" id="39"/>
+				</InputField>
+				<InputField name="Руководитель" id="13">
+					<DataPath>Руководитель</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РуководительКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="РуководительРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<Table name="Подчиненные" id="18">
+					<Representation>List</Representation>
+					<Height>4</Height>
+					<Header>false</Header>
+					<HorizontalLines>false</HorizontalLines>
+					<VerticalLines>false</VerticalLines>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<DataPath>Подчиненные</DataPath>
+					<RowPictureDataPath>Подчиненные.Picture</RowPictureDataPath>
+					<ContextMenu name="ПодчиненныеКонтекстноеМеню" id="19"/>
+					<AutoCommandBar name="ПодчиненныеКоманднаяПанель" id="20"/>
+					<ExtendedTooltip name="ПодчиненныеРасширеннаяПодсказка" id="21"/>
+					<SearchStringAddition name="ПодчиненныеСтрокаПоиска" id="22">
+						<AdditionSource>
+							<Item>Подчиненные</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПодчиненныеСтрокаПоискаКонтекстноеМеню" id="23"/>
+						<ExtendedTooltip name="ПодчиненныеСтрокаПоискаРасширеннаяПодсказка" id="24"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ПодчиненныеСостояниеПросмотра" id="25">
+						<AdditionSource>
+							<Item>Подчиненные</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПодчиненныеСостояниеПросмотраКонтекстноеМеню" id="26"/>
+						<ExtendedTooltip name="ПодчиненныеСостояниеПросмотраРасширеннаяПодсказка" id="27"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ПодчиненныеУправлениеПоиском" id="28">
+						<AdditionSource>
+							<Item>Подчиненные</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ПодчиненныеУправлениеПоискомКонтекстноеМеню" id="29"/>
+						<ExtendedTooltip name="ПодчиненныеУправлениеПоискомРасширеннаяПодсказка" id="30"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="ПодчиненныеЗначение" id="31">
+							<DataPath>Подчиненные.Value</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПодчиненныеЗначениеКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="ПодчиненныеЗначениеРасширеннаяПодсказка" id="33"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Button name="НазначитьРуководителя" id="16">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.НазначитьРуководителя</CommandName>
+					<ExtendedTooltip name="НазначитьРуководителяРасширеннаяПодсказка" id="17"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.УВМ_ОбработкаРуководителей</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СтарыйРуководитель" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Старый руководитель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НовыйРуководитель" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новый руководитель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Руководитель" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Руководитель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Подчиненные" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подчиненные</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="ДатаСмены" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата смены</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаНазначения" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата назначения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПоменятьРуководителя" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поменять руководителя</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поменять руководителя</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоменятьРуководителя</Action>
+		</Command>
+		<Command name="НазначитьРуководителя" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назначить руководителя</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назначить руководителя</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НазначитьРуководителя</Action>
+		</Command>
+	</Commands>
+</Form>

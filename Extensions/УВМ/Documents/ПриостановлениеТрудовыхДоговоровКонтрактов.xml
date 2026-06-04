@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="5659c6c1-3cc3-43b6-9507-a8d50493cab9">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ПриостановлениеТрудовыхДоговоровКонтрактов" category="Object">
+				<xr:TypeId>2f91236b-8c70-4875-988c-93999aa74fbf</xr:TypeId>
+				<xr:ValueId>c2768d4f-4b6f-4953-bd3e-f376c2602296</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ПриостановлениеТрудовыхДоговоровКонтрактов" category="Ref">
+				<xr:TypeId>dc2dd3ae-9579-4d0d-afee-7fe2a6ef0e3c</xr:TypeId>
+				<xr:ValueId>1cf160a2-8624-46d3-a069-81534d461275</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ПриостановлениеТрудовыхДоговоровКонтрактов" category="Selection">
+				<xr:TypeId>820c03b7-9029-41f3-8988-59c762a4aa40</xr:TypeId>
+				<xr:ValueId>b6906f1d-f77a-42e5-8a31-7f6d0a0f531f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ПриостановлениеТрудовыхДоговоровКонтрактов" category="List">
+				<xr:TypeId>3d3969b7-7363-4891-9244-e86eb2696e1e</xr:TypeId>
+				<xr:ValueId>44b4d150-2f22-4ca9-8219-82d8d40a7c97</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ПриостановлениеТрудовыхДоговоровКонтрактов" category="Manager">
+				<xr:TypeId>4da89873-fa76-46df-af4b-270fde96c099</xr:TypeId>
+				<xr:ValueId>7bb8b58f-a1e9-4a96-8a25-86bf01f9c327</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПриостановлениеТрудовыхДоговоровКонтрактов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>3f08b440-fdee-40d6-9ac8-7e02e210d7d2</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="154be865-2036-40d6-8801-2eae713c7d1d">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Организация</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>649d3150-dabc-416c-bc1a-50861f054c67</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="8016cc15-399b-4771-ac36-a0eed1af23d9">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ПриостановлениеТрудовыхДоговоровКонтрактов.Сотрудники" category="TabularSection">
+						<xr:TypeId>8cf697c8-2564-4800-8390-6fdda7db532c</xr:TypeId>
+						<xr:ValueId>afb4695a-0448-49b9-b620-31d5ea062d29</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ПриостановлениеТрудовыхДоговоровКонтрактов.Сотрудники" category="TabularSectionRow">
+						<xr:TypeId>0d8022ed-89d5-465f-a8ed-7b076d3465c0</xr:TypeId>
+						<xr:ValueId>64e63383-b199-40e0-ac7a-b1efd2ffd397</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Сотрудники</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>04ef44fe-81f6-49db-b1cb-7fa3153fbca9</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="f3b2cab1-95de-4c70-8d01-72175d91a2e7">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Сотрудник</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>582011ad-3d14-4820-85d2-25da7fabaeab</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="f1cad2e0-4abb-4de0-b608-8251a288eaad">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>ДатаНачала</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>0c3e5f40-9920-4a38-af41-331a7401eaea</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:dateTime</v8:Type>
+								<v8:DateQualifiers>
+									<v8:DateFractions>Date</v8:DateFractions>
+								</v8:DateQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="133f7ded-53cb-4275-b492-bbb19b92cb38">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>ДатаОкончания</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>4c44d446-ae84-4f0a-877c-f4f60f9645d7</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:dateTime</v8:Type>
+								<v8:DateQualifiers>
+									<v8:DateFractions>Date</v8:DateFractions>
+								</v8:DateQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

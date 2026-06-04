@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаПредупреждения" id="45">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предупреждения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа предупреждения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПредупрежденияРасширеннаяПодсказка" id="46"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаСотрудникНеЯвляетсяИностранцем" id="29">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сотрудник не является иностранцем</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сотрудник не является иностранцем</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Height>3</Height>
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>#FFD3E9</BackColor>
+					<ExtendedTooltip name="ГруппаСотрудникНеЯвляетсяИностранцемРасширеннаяПодсказка" id="30"/>
+					<ChildItems>
+						<PictureDecoration name="ДекорацияВнимание" id="42">
+							<Width>2</Width>
+							<Height>2</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация внимание</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.ВосклицательныйЗнакКрасный</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="ДекорацияВниманиеКонтекстноеМеню" id="43"/>
+							<ExtendedTooltip name="ДекорацияВниманиеРасширеннаяПодсказка" id="44"/>
+						</PictureDecoration>
+						<LabelDecoration name="ДекорацияАдресныйКлассификаторНеЗагружен" id="31">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сотрудник не является иностранным гражданином.
+Гражданство указывается в личных данных физического лица.</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalAlign>Center</VerticalAlign>
+							<ContextMenu name="ДекорацияАдресныйКлассификаторНеЗагруженКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="ДекорацияАдресныйКлассификаторНеЗагруженExtendedTooltip" id="33"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаДополнительныеДанныеНеЗаписаны" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные данные не записаны</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные данные не записаны</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Height>2</Height>
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>style:ToolTipBackColor</BackColor>
+					<ExtendedTooltip name="ГруппаДополнительныеДанныеНеЗаписаныРасширеннаяПодсказка" id="35"/>
+					<ChildItems>
+						<PictureDecoration name="ДекорацияПредупреждение" id="36">
+							<Width>2</Width>
+							<MaxWidth>16</MaxWidth>
+							<Height>1</Height>
+							<MaxHeight>16</MaxHeight>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация предупреждение</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="ДекорацияПредупреждениеКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="ДекорацияПредупреждениеРасширеннаяПодсказка" id="38"/>
+						</PictureDecoration>
+						<LabelDecoration name="ДекорацияДополнительныеДанныеНеЗаписаны" id="39">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пока дополнительные данные не записаны, сотрудник не будет считаться иностранным работником.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияДополнительныеДанныеНеЗаписаныКонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="ДекорацияДополнительныеДанныеНеЗаписаныРасширеннаяПодсказка" id="41"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Физлицо" id="4">
+			<DataPath>Запись.Физлицо</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ФизлицоКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ФизлицоРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="РежимВъезда" id="7">
+			<DataPath>Запись.РежимВъезда</DataPath>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="РежимВъездаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="РежимВъездаРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Статус" id="10">
+			<DataPath>Запись.Статус</DataPath>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="СтатусКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ДатаПрибытия" id="13">
+			<DataPath>Запись.ДатаПрибытия</DataPath>
+			<ContextMenu name="ДатаПрибытияКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ДатаПрибытияРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="ДатаУбытия" id="16">
+			<DataPath>Запись.ДатаУбытия</DataPath>
+			<ContextMenu name="ДатаУбытияКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ДатаУбытияРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="ПланируемаяДатаОкончанияТрудовойДеятельности" id="22">
+			<DataPath>Запись.ПланируемаяДатаОкончанияТрудовойДеятельности</DataPath>
+			<TitleLocation>Left</TitleLocation>
+			<ContextMenu name="ПланируемаяДатаОкончанияТрудовойДеятельностиКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ПланируемаяДатаОкончанияТрудовойДеятельностиРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<CheckBoxField name="РучнойУчет" id="19">
+			<DataPath>Запись.РучнойУчет</DataPath>
+			<UserVisible>
+				<xr:Common>false</xr:Common>
+			</UserVisible>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="РучнойУчетКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="РучнойУчетРасширеннаяПодсказка" id="21"/>
+		</CheckBoxField>
+		<UsualGroup name="ГруппаИсторияИзменений" id="47">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История изменений</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИсторияИзмененийExtendedTooltip" id="48"/>
+			<ChildItems>
+				<InputField name="Период" id="1">
+					<DataPath>Запись.Period</DataPath>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<Button name="ИсторияИзменений" id="52">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.ИсторияИзменений</CommandName>
+					<ExtendedTooltip name="ИсторияИзмененийExtendedTooltip" id="53"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.бит_ум_ДопДанныеФизЛиц</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="НоваяЗапись" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новая запись</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ИсторияИзменений" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История изменений</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История изменений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИсторияИзменений</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="79c8bc41-3f9e-4ea5-8f07-c3b61cbf5d97">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.СостоянияСотрудников" category="Record">
+				<xr:TypeId>3d6bd62a-2d6e-4970-82c8-4c3f5d3e14d3</xr:TypeId>
+				<xr:ValueId>0996964b-af29-4425-a950-dd260c099b85</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.СостоянияСотрудников" category="Manager">
+				<xr:TypeId>87fd9d2d-7d17-43a1-ad49-7655ef81a001</xr:TypeId>
+				<xr:ValueId>b0db9a17-fc9d-49ad-b840-adbf245e88a6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.СостоянияСотрудников" category="Selection">
+				<xr:TypeId>757efa22-5230-4765-afa0-79869165bedc</xr:TypeId>
+				<xr:ValueId>209fd252-65d9-4284-a2f5-1b82ec0e9991</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.СостоянияСотрудников" category="List">
+				<xr:TypeId>a1691105-664d-430c-8810-9138745592cd</xr:TypeId>
+				<xr:ValueId>c88cc39f-0c91-417a-bee4-31dc59893a5f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.СостоянияСотрудников" category="RecordSet">
+				<xr:TypeId>25c2b6a9-4e26-40c3-a9c9-f13d07d0561e</xr:TypeId>
+				<xr:ValueId>a509cbb5-233c-4fed-b814-a0ce5cfc2934</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.СостоянияСотрудников" category="RecordKey">
+				<xr:TypeId>0fc3b34d-8ac0-45e0-b89a-ab8388bce6f9</xr:TypeId>
+				<xr:ValueId>03bd571a-eec4-43a1-b1e7-1655d664c137</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.СостоянияСотрудников" category="RecordManager">
+				<xr:TypeId>e8e7f5f2-4ef3-444d-97a6-09619179c425</xr:TypeId>
+				<xr:ValueId>e36fb1c9-dd3a-4c69-a8c0-e07e387f440e</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СостоянияСотрудников</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>540dee81-c881-40ed-9ca2-c9522c1becef</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Day</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="77602bb7-960b-4434-92c4-6e8b3cbd0659">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Состояние</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>789566b1-9a2e-4fdc-974c-e1706736b740</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.СостоянияСотрудника</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="cfdc6d86-c634-4157-a2ed-4eaa7b860fca">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ВидВремени</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>c61b4b7a-fa1b-415a-91b4-9a678f4fcf5b</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыИспользованияРабочегоВремени</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="8cf82339-6609-4036-87ab-199b96ba1c34">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДействуетДо</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>2fea86b6-a6be-488e-8cce-86bcbed8581a</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="e5a13885-2f71-442c-ac4d-813ddd3ffc62">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ОкончаниеПредположительно</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>0aec400e-4e06-4577-bd9b-62f5a40338fd</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="d08a6a8f-3a31-49e6-a5b7-ca78925cd088">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДокументОснование</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>cd028770-4304-4fbe-b774-cb4f981f5c90</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="9b74106f-30ae-4c32-8222-27cc605447ab">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Сотрудник</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>77a7dc10-2f3b-46ea-98ac-cdbaccef8a93</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="9864c13b-21f4-4001-a2de-7fcd153631f3">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Год</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>7b3db2dd-917d-48e7-8c5f-9141e289c016</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="6673edc3-1000-4446-b413-a6aa2e53ed35">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.МестаВыплатыЗарплатыСотрудников" category="Record">
+				<xr:TypeId>c42ec4eb-a335-4506-8b26-ea446805acde</xr:TypeId>
+				<xr:ValueId>3ffe3d27-bdcd-41aa-bcd7-c8a690247139</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.МестаВыплатыЗарплатыСотрудников" category="Manager">
+				<xr:TypeId>9471ed5e-3219-4043-bdb4-280e82e54944</xr:TypeId>
+				<xr:ValueId>2ae656bd-f251-4497-b1cf-7866e97ddadd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.МестаВыплатыЗарплатыСотрудников" category="Selection">
+				<xr:TypeId>4f9db6dd-fe97-4304-909f-0954e719c9a7</xr:TypeId>
+				<xr:ValueId>144aed62-7f76-472c-9040-f89f2585b717</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.МестаВыплатыЗарплатыСотрудников" category="List">
+				<xr:TypeId>7a8bba45-959b-4ecf-97bb-d94672e508d2</xr:TypeId>
+				<xr:ValueId>c8e6938d-794e-41c5-994e-2edc03f0d05a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.МестаВыплатыЗарплатыСотрудников" category="RecordSet">
+				<xr:TypeId>e903e267-2d1e-4c7b-af76-c71e6bff266e</xr:TypeId>
+				<xr:ValueId>9d140020-91f4-4e5d-954e-94ba0ea099b0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.МестаВыплатыЗарплатыСотрудников" category="RecordKey">
+				<xr:TypeId>699be0e0-b5c8-457b-b398-1054dbf15c6b</xr:TypeId>
+				<xr:ValueId>856f3d4b-4287-4677-a75c-3b2f12f7143c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.МестаВыплатыЗарплатыСотрудников" category="RecordManager">
+				<xr:TypeId>d918cdde-b41a-4b2e-a65f-fcc31a8143b6</xr:TypeId>
+				<xr:ValueId>8bbdc361-e9ee-4371-a112-1722b49fe044</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>МестаВыплатыЗарплатыСотрудников</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>27a5f591-a972-456d-8c57-36aa72872e44</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="71e18687-17fb-4eec-8644-983d0f5f761c">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Вид</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>bff8b824-e6f6-4626-8980-f07d98c6a577</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВидыМестВыплатыЗарплаты</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="8e514dc8-cbd7-4a0e-b808-b376f73ec963">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>МестоВыплаты</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>fa155992-24a8-4d8f-8e0e-f443ab30bcfc</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="f8e137ae-aaec-4160-9e53-2da9810733a9">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Сотрудник</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>394219ab-bd2f-4e00-8709-3f778e5ba4d7</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="2765adf7-4ca2-471d-8e3f-6334b8a2dc25">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ФизическоеЛицо</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>085d0396-9c40-4e72-8fd8-68a65796d741</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

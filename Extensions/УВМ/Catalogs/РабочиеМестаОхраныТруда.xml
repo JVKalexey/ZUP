@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="57e457cb-37ae-47bb-ad4f-3515181ca08f">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.РабочиеМестаОхраныТруда" category="Object">
+				<xr:TypeId>9ab44474-9cbd-4bdb-b5d4-10a1e8b0b55a</xr:TypeId>
+				<xr:ValueId>4317d42e-324a-4d19-a2b8-b884aabc4aa4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.РабочиеМестаОхраныТруда" category="Ref">
+				<xr:TypeId>9093d7e1-9098-4fbb-86e9-98616c315967</xr:TypeId>
+				<xr:ValueId>531ddde4-df4a-431c-913d-3e1d867da81d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.РабочиеМестаОхраныТруда" category="Selection">
+				<xr:TypeId>d698d0c3-41ae-4c86-ab92-0444d43e798a</xr:TypeId>
+				<xr:ValueId>1648d986-6b04-41fb-9d36-41a0f7b58013</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.РабочиеМестаОхраныТруда" category="List">
+				<xr:TypeId>f3bc91fb-e9db-4972-9666-0b66a9ebccbc</xr:TypeId>
+				<xr:ValueId>bfebc897-abef-4491-b00f-00a5ea9dd0a6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.РабочиеМестаОхраныТруда" category="Manager">
+				<xr:TypeId>483dfcae-a9de-4b06-bb89-09e3acc44442</xr:TypeId>
+				<xr:ValueId>d5603d9e-2365-4915-b369-2db6ce6d36b4</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>РабочиеМестаОхраныТруда</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>fbe24cd3-257e-4f6f-8b32-a6900acff435</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="64c57ca2-32bc-43a7-a37b-8ce6b18d4045">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Номер</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>3a916b08-a193-4deb-aa8d-17c244558b7e</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>30</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="9dc9a353-7113-483f-8b0f-df6dae97a096">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПорядковыйНомер</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>f9135bda-ae46-458d-b912-ac9d351450d0</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>9</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="396ac9e3-edca-4592-89d7-def32aeaa4a4">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Подразделение</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>f3d4eaf9-9918-4511-9ab5-348cbf877154</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПодразделенияОрганизаций</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="638cd1b6-b92b-4367-9df0-8ac900df56b8">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Должность</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>33fc9de4-9ff4-4db0-96c2-a904c940a05c</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Должности</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<CommandsVisibility>
+		<Command name="Catalog.ВидыДокументовФизическихЛиц.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.бит_ум_ДействияПоСобытиям.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:bda5d3bd-6b83-4635-b14a-8bacea32a15e">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Должности.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ОснованияУвольнения.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:8adbb024-de64-40f9-8594-53aac1dc743e">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.бит_ум_ПанельОтчетов">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ПодразделенияОрганизаций.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ФизическиеЛица.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:fd997b65-b01c-4fc6-85be-3dc92ab6c9db">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.ИспользоватьКадровыйУчет.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="100:1eb34467-974c-4eb4-9fd5-2855a2e9ccee">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonForm.бит_ум_ПерсональныеНастройки.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="CommonForm.бит_ум_ПерсональныеНастройки.StandardCommand.Open">
+			<CommandGroup>CommandGroup.бит_ум_Настройки</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="CommonCommand.бит_ум_НастройкиПрограммы">
+			<CommandGroup>CommandGroup.бит_ум_Настройки</CommandGroup>
+		</Command>
+		<Command name="CommonForm.бит_ум_ПерсональныеНастройки.StandardCommand.Open">
+			<CommandGroup>CommandGroup.бит_ум_Настройки</CommandGroup>
+		</Command>
+		<Command name="0:54c767db-d70f-4349-9831-9c0419fcebc9">
+			<CommandGroup>CommandGroup.бит_ум_Настройки</CommandGroup>
+		</Command>
+		<Command name="0:846976a8-41b8-40d2-bda0-e2dde9160c13">
+			<CommandGroup>CommandGroup.бит_ум_Настройки</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.УчетМигрантов.Subsystem.КадровыйУчет</Subsystem>
+		<Subsystem>Subsystem.УчетМигрантов.Subsystem.ИностранныеРаботники</Subsystem>
+	</SubsystemsOrder>
+	<GroupsOrder>
+		<Group>CommandGroup.бит_ум_Настройки</Group>
+	</GroupsOrder>
+</CommandInterface>

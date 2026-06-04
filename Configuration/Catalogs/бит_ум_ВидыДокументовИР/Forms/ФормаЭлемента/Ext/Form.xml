@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="OnChange">НаименованиеПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="НаименованиеДляПечати" id="59">
+			<DataPath>Объект.НаименованиеДляПечати</DataPath>
+			<ContextMenu name="НаименованиеДляПечатиКонтекстноеМеню" id="60"/>
+			<ExtendedTooltip name="НаименованиеДляПечатиРасширеннаяПодсказка" id="61"/>
+		</InputField>
+		<CheckBoxField name="Обязательный" id="4">
+			<DataPath>Объект.Обязательный</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОбязательныйКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ОбязательныйРасширеннаяПодсказка" id="6"/>
+		</CheckBoxField>
+		<UsualGroup name="ГруппаСрокНапоминания" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Срок напоминания</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Срок напоминания</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСрокНапоминанияРасширеннаяПодсказка" id="17"/>
+			<ChildItems>
+				<InputField name="СрокНапоминания" id="7">
+					<DataPath>Объект.СрокНапоминания</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Напоминать об окончании за</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СрокНапоминанияКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="СрокНапоминанияРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<LabelDecoration name="ДекорацияДней" id="18">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>дней</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияДнейКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ДекорацияДнейРасширеннаяПодсказка" id="20"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДополнительноеПоле1" id="49">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительное поле №1</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДополнительноеПоле1РасширеннаяПодсказка" id="50"/>
+			<ChildItems>
+				<CheckBoxField name="ИспользоватьДопПоле" id="10">
+					<DataPath>Объект.ИспользоватьДопПоле</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использовать доп. поле №1</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИспользоватьДопПолеКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ИспользоватьДопПолеРасширеннаяПодсказка" id="12"/>
+					<Events>
+						<Event name="OnChange">ИспользоватьДопПолеПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="НазваниеДопПоля" id="13">
+					<DataPath>Объект.НазваниеДопПоля</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НазваниеДопПоляКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="НазваниеДопПоляРасширеннаяПодсказка" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДополнительноеПоле2" id="51">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительное поле №2</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДополнительноеПоле2РасширеннаяПодсказка" id="52"/>
+			<ChildItems>
+				<CheckBoxField name="ИспользоватьДопПоле2" id="53">
+					<DataPath>Объект.ИспользоватьДопПоле2</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использовать доп. поле №2</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИспользоватьДопПоле2КонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ИспользоватьДопПоле2РасширеннаяПодсказка" id="55"/>
+					<Events>
+						<Event name="OnChange">ИспользоватьДопПоле2ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="НазваниеДопПоля2" id="56">
+					<DataPath>Объект.НазваниеДопПоля2</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="НазваниеДопПоля2КонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="НазваниеДопПоля2РасширеннаяПодсказка" id="58"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ВидыИР" id="21">
+			<HeightInTableRows>3</HeightInTableRows>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.ВидыИР</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ВидыИРКонтекстноеМеню" id="22"/>
+			<AutoCommandBar name="ВидыИРКоманднаяПанель" id="23"/>
+			<ExtendedTooltip name="ВидыИРРасширеннаяПодсказка" id="24"/>
+			<SearchStringAddition name="ВидыИРСтрокаПоиска" id="25">
+				<AdditionSource>
+					<Item>ВидыИР</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВидыИРСтрокаПоискаКонтекстноеМеню" id="28"/>
+				<ExtendedTooltip name="ВидыИРСтрокаПоискаРасширеннаяПодсказка" id="29"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ВидыИРСостояниеПросмотра" id="30">
+				<AdditionSource>
+					<Item>ВидыИР</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВидыИРСостояниеПросмотраКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="ВидыИРСостояниеПросмотраРасширеннаяПодсказка" id="34"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ВидыИРУправлениеПоиском" id="35">
+				<AdditionSource>
+					<Item>ВидыИР</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ВидыИРУправлениеПоискомКонтекстноеМеню" id="38"/>
+				<ExtendedTooltip name="ВидыИРУправлениеПоискомРасширеннаяПодсказка" id="39"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ВидыИРНомерСтроки" id="40">
+					<DataPath>Объект.ВидыИР.LineNumber</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВидыИРНомерСтрокиКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ВидыИРНомерСтрокиРасширеннаяПодсказка" id="42"/>
+				</LabelField>
+				<InputField name="ВидыИРСтатусИР" id="43">
+					<DataPath>Объект.ВидыИР.СтатусИР</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВидыИРСтатусИРКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="ВидыИРСтатусИРРасширеннаяПодсказка" id="45"/>
+				</InputField>
+				<InputField name="ВидыИРРежимВъездаИР" id="46">
+					<DataPath>Объект.ВидыИР.РежимВъездаИР</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВидыИРРежимВъездаИРКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ВидыИРРежимВъездаИРРасширеннаяПодсказка" id="48"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.бит_ум_ВидыДокументовИР</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="20f4e3cf-be63-4b8e-b8d7-90b0374c95d4">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.ВидыЗанятостиСотрудниковИнтервальный" category="Record">
+				<xr:TypeId>c1af9310-f533-46fc-9246-bbb459629b32</xr:TypeId>
+				<xr:ValueId>b2d5f561-1d2b-4629-8227-a04b25d52b68</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.ВидыЗанятостиСотрудниковИнтервальный" category="Manager">
+				<xr:TypeId>c06e5bbf-4e71-40d4-bc19-b4bb5754d5f0</xr:TypeId>
+				<xr:ValueId>9d54b9c3-6085-4844-9081-a350e4256c6a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.ВидыЗанятостиСотрудниковИнтервальный" category="Selection">
+				<xr:TypeId>eb22cb9d-2a74-40f1-87a0-5b038b899875</xr:TypeId>
+				<xr:ValueId>83f9309b-02e7-4f29-9448-162b3ce2bd16</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.ВидыЗанятостиСотрудниковИнтервальный" category="List">
+				<xr:TypeId>f68cf4b7-011f-4894-9157-b22e1f1766c1</xr:TypeId>
+				<xr:ValueId>dce5d4e3-1dae-4ab4-9aba-b87d3a5f8c9d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ВидыЗанятостиСотрудниковИнтервальный" category="RecordSet">
+				<xr:TypeId>30f9cb2b-7c8a-40f6-afcd-680a7bffd975</xr:TypeId>
+				<xr:ValueId>fe167785-e02f-4737-9733-d8adfe0a7d6f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ВидыЗанятостиСотрудниковИнтервальный" category="RecordKey">
+				<xr:TypeId>7beb7baf-121b-444b-a843-bf8b5c468421</xr:TypeId>
+				<xr:ValueId>c393e178-63f5-4339-9690-3fb6913db644</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ВидыЗанятостиСотрудниковИнтервальный" category="RecordManager">
+				<xr:TypeId>26a7e585-2d4f-4709-b4b7-fc1f4a91941d</xr:TypeId>
+				<xr:ValueId>e9bac8cf-9390-4dd4-93a4-2040d071007c</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ВидыЗанятостиСотрудниковИнтервальный</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>680abca9-7d46-4dcb-8ea8-0ee0c388ef37</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="3e9b5ad1-86bb-4470-8507-a841f238556d">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПериодПредыдущейЗаписи</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>84357d25-e73e-44ba-a49d-567b935b6d2f</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="4ac478f5-756c-43d3-bfed-9e251d1eb43d">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ВидЗанятости</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>ad53b1fb-1d7b-4229-8048-d289b031fa8d</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВидыЗанятости</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="ed3d6428-646e-404f-b5eb-1b095cceff60">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДействуетДо</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>4cfd001a-61ec-47fb-8bd2-07432c367cb1</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Attribute uuid="dc1c8390-466b-4f22-8632-da6c7558a444">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РегистраторЗаписи</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>d6448648-e6de-4695-9240-1159e146b9d4</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ДокументыКадровойИстории</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="9cfb9d75-80d5-4bcd-948f-2348a12d5f9a">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РегистраторСобытия</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>d6688b3e-c6da-436e-a895-ef06b0b6d376</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ДокументыКадровойИстории</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="adcc6fe7-5f14-466b-a520-9a2cc82997d2">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПустойИнтервал</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>2035d77c-4e92-430c-b370-320d84b32a55</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Dimension uuid="6abd539c-dba5-4ebf-914f-1cbc9ce87542">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Сотрудник</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>f88bbf33-49fe-4b60-8d7a-8d4e406c8ef9</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="fc104e03-2ea9-4c7e-b8f6-dd9f2b56675f">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДатаОкончания</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>4214ad46-e96b-4eaa-882c-21c63d6d8192</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="0d4c7b2a-a01e-424f-ab3c-7c44d50a0284">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДатаНачала</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>12d97ca4-ea17-4d3b-820c-e5d832863c6b</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="65ceef2b-8a78-4618-a9cf-37c1ea17a07f">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ГоловнаяОрганизация</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>9cf4e5be-be70-4591-8d6b-7f46967faa1c</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="9611ff33-5eec-47f6-ac80-5646de8f52c9">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ФизическоеЛицо</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>85627d3f-74f4-43de-9e9f-0276b114f59f</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="323101e5-92ff-42d6-b7a8-54e90b8cac80">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПериодЗаписи</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>d7e111a8-50ec-4005-b499-cde98fa15994</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="8e9dd41e-f628-45ed-b514-6016492f361b">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Год</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>db05a8a5-c2d9-4c60-95a3-1c2be687ad70</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

@@ -1,0 +1,2158 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Group>AlwaysHorizontal</Group>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<ChildItems>
+			<Button name="ФормаOK" id="139">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>0</CommandName>
+				<ExtendedTooltip name="ФормаOKРасширеннаяПодсказка" id="140"/>
+			</Button>
+			<Button name="ФормаОтмена" id="141">
+				<Type>CommandBarButton</Type>
+				<CommandName>0</CommandName>
+				<ExtendedTooltip name="ФормаОтменаРасширеннаяПодсказка" id="142"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ГруппаМестаВыплаты" id="284">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа места выплаты</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаМестаВыплатыРасширеннаяПодсказка" id="285"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПерваяВыборМестаВыплаты" id="344">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбор места выплаты лицевой счет</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПерваяВыборМестаВыплатыРасширеннаяПодсказка" id="346"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаВидМестаВыплатыЗарплатыКакВсем" id="159">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вид места выплаты зарплаты как всем</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<United>false</United>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВидМестаВыплатыЗарплатыКакВсемРасширеннаяПодсказка" id="160"/>
+							<ChildItems>
+								<RadioButtonField name="ВидМестаВыплатыЗарплатыКакВсем" id="17">
+									<DataPath>МестаВыплатыЗарплатыСотрудников.Вид</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Как всем</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыМестВыплатыЗарплаты.EmptyRef</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ВидМестаВыплатыЗарплатыКакВсемКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="ВидМестаВыплатыЗарплатыКакВсемExtendedTooltip" id="19"/>
+								</RadioButtonField>
+								<Pages name="МестоВыплатыКакВсем" id="46">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Место выплаты как всем</v8:content>
+										</v8:item>
+									</Title>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="МестоВыплатыКакВсемExtendedTooltip" id="47"/>
+									<ChildItems>
+										<Page name="МестоВыплатыКакВсемДоступно" id="48">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Место выплаты как всем доступно</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="МестоВыплатыКакВсемДоступноExtendedTooltip" id="49"/>
+											<ChildItems>
+												<InputField name="МестоВыплатыКакВсемДоступноВид" id="50">
+													<ReadOnly>true</ReadOnly>
+													<TitleLocation>None</TitleLocation>
+													<HorizontalStretch>false</HorizontalStretch>
+													<AutoMarkIncomplete>false</AutoMarkIncomplete>
+													<ContextMenu name="МестоВыплатыКакВсемДоступноВидКонтекстноеМеню" id="51"/>
+													<ExtendedTooltip name="МестоВыплатыКакВсемДоступноВидExtendedTooltip" id="52"/>
+												</InputField>
+												<InputField name="МестоВыплатыКакВсемДоступноМесто" id="53">
+													<ReadOnly>true</ReadOnly>
+													<TitleLocation>None</TitleLocation>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>28</MaxWidth>
+													<ChoiceButton>false</ChoiceButton>
+													<OpenButton>true</OpenButton>
+													<AutoMarkIncomplete>false</AutoMarkIncomplete>
+													<ContextMenu name="МестоВыплатыКакВсемДоступноМестоКонтекстноеМеню" id="54"/>
+													<ExtendedTooltip name="МестоВыплатыКакВсемДоступноМестоExtendedTooltip" id="55"/>
+												</InputField>
+											</ChildItems>
+										</Page>
+										<Page name="МестоВыплатыКакВсемНеДоступно" id="56">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Место выплаты как всем не доступно</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="МестоВыплатыКакВсемНеДоступноExtendedTooltip" id="57"/>
+											<ChildItems>
+												<InputField name="МестоВыплатыКакВсемНеДоступноВид" id="58">
+													<ReadOnly>true</ReadOnly>
+													<TitleLocation>None</TitleLocation>
+													<HorizontalStretch>false</HorizontalStretch>
+													<AutoMarkIncomplete>false</AutoMarkIncomplete>
+													<TextColor>style:ТекстЗапрещеннойЯчейкиЦвет</TextColor>
+													<ContextMenu name="МестоВыплатыКакВсемНеДоступноВидКонтекстноеМеню" id="59"/>
+													<ExtendedTooltip name="МестоВыплатыКакВсемНеДоступноВидExtendedTooltip" id="60"/>
+												</InputField>
+												<InputField name="МестоВыплатыКакВсемНеДоступноМесто" id="61">
+													<ReadOnly>true</ReadOnly>
+													<TitleLocation>None</TitleLocation>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>28</MaxWidth>
+													<ChoiceButton>false</ChoiceButton>
+													<OpenButton>true</OpenButton>
+													<AutoMarkIncomplete>false</AutoMarkIncomplete>
+													<TextColor>style:ТекстЗапрещеннойЯчейкиЦвет</TextColor>
+													<ContextMenu name="МестоВыплатыКакВсемНеДоступноМестоКонтекстноеМеню" id="62"/>
+													<ExtendedTooltip name="МестоВыплатыКакВсемНеДоступноМестоExtendedTooltip" id="63"/>
+												</InputField>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВидМестаВыплатыЗарплатыЗарплатныйПроект" id="163">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<United>false</United>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВидМестаВыплатыЗарплатыЗарплатныйПроектРасширеннаяПодсказка" id="164"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаМестоВыплатыЗарплатныйПроект" id="260">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа место выплаты зарплатный проект</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<United>false</United>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаМестоВыплатыЗарплатныйПроектРасширеннаяПодсказка" id="261"/>
+									<ChildItems>
+										<RadioButtonField name="ВидМестаВыплатыЗарплатыЗарплатныйПроект" id="23">
+											<DataPath>МестаВыплатыЗарплатыСотрудников.Вид</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<RadioButtonType>Auto</RadioButtonType>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Зачислением на карточку</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ВидыМестВыплатыЗарплаты.EnumValue.ЗарплатныйПроект</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ВидМестаВыплатыЗарплатыЗарплатныйПроектКонтекстноеМеню" id="24"/>
+											<ExtendedTooltip name="ВидМестаВыплатыЗарплатыЗарплатныйПроектExtendedTooltip" id="25"/>
+										</RadioButtonField>
+										<Pages name="МестоВыплатыЗарплатныйПроект" id="76">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Место выплаты зарплатный проект</v8:content>
+												</v8:item>
+											</Title>
+											<PagesRepresentation>None</PagesRepresentation>
+											<ExtendedTooltip name="МестоВыплатыЗарплатныйПроектExtendedTooltip" id="77"/>
+											<ChildItems>
+												<Page name="МестоВыплатыЗарплатныйПроектДоступно" id="78">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Место выплаты зарплатный проект доступно</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Horizontal</Group>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="МестоВыплатыЗарплатныйПроектДоступноExtendedTooltip" id="79"/>
+													<ChildItems>
+														<InputField name="МестоВыплатыЗарплатныйПроектДоступноПоле" id="80">
+															<DataPath>МестаВыплатыЗарплатыСотрудников.МестоВыплаты</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>45</MaxWidth>
+															<ChoiceParameterLinks>
+																<xr:Link>
+																	<xr:Name>Отбор.Организация</xr:Name>
+																	<xr:DataPath xsi:type="xs:string">18</xr:DataPath>
+																	<xr:ValueChange>Clear</xr:ValueChange>
+																</xr:Link>
+															</ChoiceParameterLinks>
+															<ContextMenu name="МестоВыплатыЗарплатныйПроектДоступноПолеКонтекстноеМеню" id="81"/>
+															<ExtendedTooltip name="МестоВыплатыЗарплатныйПроектДоступноПолеExtendedTooltip" id="82"/>
+														</InputField>
+													</ChildItems>
+												</Page>
+												<Page name="МестоВыплатыЗарплатныйПроектНеДоступно" id="83">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Место выплаты зарплатный проект не доступно</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Horizontal</Group>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="МестоВыплатыЗарплатныйПроектНеДоступноExtendedTooltip" id="84"/>
+													<ChildItems>
+														<InputField name="МестоВыплатыЗарплатныйПроектНеДоступноПоле" id="85">
+															<DataPath>МестаВыплатыЗарплатыСотрудников.МестоВыплаты</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<TitleTextColor>style:ТекстЗапрещеннойЯчейкиЦвет</TitleTextColor>
+															<TitleLocation>None</TitleLocation>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>45</MaxWidth>
+															<AutoMarkIncomplete>false</AutoMarkIncomplete>
+															<ChoiceParameterLinks>
+																<xr:Link>
+																	<xr:Name>Отбор.Организация</xr:Name>
+																	<xr:DataPath xsi:type="xs:string">8</xr:DataPath>
+																	<xr:ValueChange>Clear</xr:ValueChange>
+																</xr:Link>
+															</ChoiceParameterLinks>
+															<TextColor>style:ТекстЗапрещеннойЯчейкиЦвет</TextColor>
+															<ContextMenu name="МестоВыплатыЗарплатныйПроектНеДоступноПолеКонтекстноеМеню" id="86"/>
+															<ExtendedTooltip name="МестоВыплатыЗарплатныйПроектНеДоступноПолеExtendedTooltip" id="87"/>
+														</InputField>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаСпособыЗачисления" id="265">
+					<EnableContentChange>true</EnableContentChange>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Зачислять:</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Способ зачисления выплат</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Collapsible</Behavior>
+					<Collapsed>true</Collapsed>
+					<ControlRepresentation>Picture</ControlRepresentation>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаСпособыЗачисленияРасширеннаяПодсказка" id="266"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаНаКарточку" id="221">
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<United>false</United>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНаКарточкуРасширеннаяПодсказка" id="222"/>
+							<ChildItems>
+								<RadioButtonField name="СпособПоНомеруКарты" id="231">
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СпособыЗачисленияВыплат.EnumValue.ПоНомеруКарты</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="СпособПоНомеруКартыКонтекстноеМеню" id="232"/>
+									<ExtendedTooltip name="СпособПоНомеруКартыРасширеннаяПодсказка" id="233"/>
+								</RadioButtonField>
+								<InputField name="БанковскаяКарта" id="204">
+									<TitleLocation>None</TitleLocation>
+									<ChoiceParameterLinks>
+										<xr:Link>
+											<xr:Name>Отбор.Владелец</xr:Name>
+											<xr:DataPath xsi:type="xs:string">20</xr:DataPath>
+											<xr:ValueChange>Clear</xr:ValueChange>
+										</xr:Link>
+									</ChoiceParameterLinks>
+									<ChoiceParameters>
+										<app:item name="Отбор.Владелец">
+											<app:value xsi:nil="true"/>
+										</app:item>
+									</ChoiceParameters>
+									<ContextMenu name="БанковскаяКартаКонтекстноеМеню" id="205"/>
+									<ExtendedTooltip name="БанковскаяКартаРасширеннаяПодсказка" id="206"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаНаБанковскийСчет" id="223">
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<United>false</United>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНаБанковскийСчетРасширеннаяПодсказка" id="224"/>
+							<ChildItems>
+								<RadioButtonField name="СпособПоНомеруСчетаВБанк" id="234">
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СпособыЗачисленияВыплат.EnumValue.ПоНомеруСчетаВБанк</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="СпособПоНомеруСчетаВБанкКонтекстноеМеню" id="235"/>
+									<ExtendedTooltip name="СпособПоНомеруСчетаВБанкРасширеннаяПодсказка" id="236"/>
+								</RadioButtonField>
+								<InputField name="БанковскийСчет" id="213">
+									<TitleLocation>None</TitleLocation>
+									<ChoiceParameterLinks>
+										<xr:Link>
+											<xr:Name>Отбор.Владелец</xr:Name>
+											<xr:DataPath xsi:type="xs:string">20</xr:DataPath>
+											<xr:ValueChange>Clear</xr:ValueChange>
+										</xr:Link>
+									</ChoiceParameterLinks>
+									<ChoiceParameters>
+										<app:item name="Отбор.Владелец">
+											<app:value xsi:nil="true"/>
+										</app:item>
+									</ChoiceParameters>
+									<ContextMenu name="БанковскийСчетКонтекстноеМеню" id="214"/>
+									<ExtendedTooltip name="БанковскийСчетРасширеннаяПодсказка" id="215"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПоСНИЛС" id="225">
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<United>false</United>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПоСНИЛСРасширеннаяПодсказка" id="226"/>
+							<ChildItems>
+								<RadioButtonField name="СпособПоСНИЛС" id="237">
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СпособыЗачисленияВыплат.EnumValue.ПоСНИЛС</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="СпособПоСНИЛСКонтекстноеМеню" id="238"/>
+									<ExtendedTooltip name="СпособПоСНИЛСРасширеннаяПодсказка" id="239"/>
+								</RadioButtonField>
+								<LabelDecoration name="НадписьСНИЛС" id="277">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>не заполнен</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="НадписьСНИЛСКонтекстноеМеню" id="278"/>
+									<ExtendedTooltip name="НадписьСНИЛСРасширеннаяПодсказка" id="279"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПоНомеруТелефонаОбщая" id="227">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа по номеру телефона общая</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<United>false</United>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПоНомеруТелефонаОбщаяРасширеннаяПодсказка" id="228"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаПоНомеруТелефона" id="275">
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<United>false</United>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПоНомеруТелефонаРасширеннаяПодсказка" id="276"/>
+									<ChildItems>
+										<RadioButtonField name="СпособПоНомеруТелефона" id="240">
+											<TitleLocation>None</TitleLocation>
+											<RadioButtonType>Auto</RadioButtonType>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.СпособыЗачисленияВыплат.EnumValue.ПоНомеруТелефона</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="СпособПоНомеруТелефонаКонтекстноеМеню" id="241"/>
+											<ExtendedTooltip name="СпособПоНомеруТелефонаРасширеннаяПодсказка" id="242"/>
+										</RadioButtonField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаСсылкаНаТелефон" id="273">
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<United>false</United>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСсылкаНаТелефонРасширеннаяПодсказка" id="274"/>
+									<ChildItems>
+										<InputField name="Телефон" id="207">
+											<TitleLocation>None</TitleLocation>
+											<OpenButton>false</OpenButton>
+											<CreateButton>false</CreateButton>
+											<QuickChoice>true</QuickChoice>
+											<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+											<ChoiceParameters>
+												<app:item name="Отбор.Родитель">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыКонтактнойИнформации.СправочникФизическиеЛица</Value>
+													</app:value>
+												</app:item>
+												<app:item name="Отбор.Используется">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xs:boolean">true</Value>
+													</app:value>
+												</app:item>
+												<app:item name="Отбор.Тип">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ТипыКонтактнойИнформации.EnumValue.Телефон</Value>
+													</app:value>
+												</app:item>
+												<app:item name="Отбор.ПометкаУдаления">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xs:boolean">false</Value>
+													</app:value>
+												</app:item>
+											</ChoiceParameters>
+											<ContextMenu name="ТелефонКонтекстноеМеню" id="208"/>
+											<ExtendedTooltip name="ТелефонРасширеннаяПодсказка" id="209"/>
+										</InputField>
+										<LabelDecoration name="НадписьНомерТелефона" id="270">
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>не заполнен</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="НадписьНомерТелефонаКонтекстноеМеню" id="271"/>
+											<ExtendedTooltip name="НадписьНомерТелефонаРасширеннаяПодсказка" id="272"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПоЛицевомуСчету" id="229">
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<United>false</United>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПоЛицевомуСчетуРасширеннаяПодсказка" id="230"/>
+							<ChildItems>
+								<RadioButtonField name="СпособПоЛицевомуСчету" id="243">
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.СпособыЗачисленияВыплат.EnumValue.ПоЛицевомуСчету</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="СпособПоЛицевомуСчетуКонтекстноеМеню" id="244"/>
+									<ExtendedTooltip name="СпособПоЛицевомуСчетуРасширеннаяПодсказка" id="245"/>
+								</RadioButtonField>
+								<UsualGroup name="ЛицевойСчет" id="171">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Лицевой счет</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<Group>AlwaysHorizontal</Group>
+									<ChildrenAlign>ItemsLeftTitlesRight</ChildrenAlign>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ThroughAlign>DontUse</ThroughAlign>
+									<ExtendedTooltip name="ЛицевойСчетРасширеннаяПодсказка" id="172">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<MaxWidth>70</MaxWidth>
+									</ExtendedTooltip>
+									<ChildItems>
+										<InputField name="ЛицевыеСчетаСотрудниковПоЗарплатнымПроектамНомерЛицевогоСчета" id="118">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Номер счета</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<MaxWidth>20</MaxWidth>
+											<ContextMenu name="ЛицевыеСчетаСотрудниковПоЗарплатнымПроектамНомерЛицевогоСчетаКонтекстноеМеню" id="119"/>
+											<ExtendedTooltip name="ЛицевыеСчетаСотрудниковПоЗарплатнымПроектамНомерЛицевогоСчетаExtendedTooltip" id="120"/>
+										</InputField>
+										<InputField name="ЛицевыеСчетаСотрудниковПоЗарплатнымПроектамДатаОткрытияЛицевогоСчета" id="194">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Открыт</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ЛицевыеСчетаСотрудниковПоЗарплатнымПроектамДатаОткрытияЛицевогоСчетаКонтекстноеМеню" id="195"/>
+											<ExtendedTooltip name="ЛицевыеСчетаСотрудниковПоЗарплатнымПроектамДатаОткрытияЛицевогоСчетаРасширеннаяПодсказка" id="196"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="Отступ" id="267">
+							<ContextMenu name="ОтступКонтекстноеМеню" id="268"/>
+							<ExtendedTooltip name="ОтступРасширеннаяПодсказка" id="269"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаВтораяВыборМестаВыплаты" id="286">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбор места выплаты лицевой счет</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВтораяВыборМестаВыплатыРасширеннаяПодсказка" id="287"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаВидМестаВыплатыЗарплатыБанковскийСчет" id="167">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вид места выплаты зарплаты банковский счет</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<United>false</United>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВидМестаВыплатыЗарплатыБанковскийСчетРасширеннаяПодсказка" id="168"/>
+							<ChildItems>
+								<RadioButtonField name="ВидМестаВыплатыЗарплатыБанковскийСчет" id="29">
+									<DataPath>МестаВыплатыЗарплатыСотрудников.Вид</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыМестВыплатыЗарплаты.EnumValue.БанковскийСчет</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ВидМестаВыплатыЗарплатыБанковскийСчетКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="ВидМестаВыплатыЗарплатыБанковскийСчетExtendedTooltip" id="31"/>
+								</RadioButtonField>
+								<UsualGroup name="ГруппаМестоВыплатыБанковскийЛицевойСчета" id="169">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Место выплаты банковский лицевой счета</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаМестоВыплатыБанковскийЛицевойСчетаРасширеннаяПодсказка" id="170"/>
+									<ChildItems>
+										<Pages name="МестоВыплатыБанковскийСчет" id="100">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Место выплаты банковский счет</v8:content>
+												</v8:item>
+											</Title>
+											<PagesRepresentation>None</PagesRepresentation>
+											<ExtendedTooltip name="МестоВыплатыБанковскийСчетExtendedTooltip" id="101"/>
+											<ChildItems>
+												<Page name="МестоВыплатыБанковскийСчетДоступно" id="102">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Место выплаты банковский счет доступно</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Horizontal</Group>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="МестоВыплатыБанковскийСчетДоступноExtendedTooltip" id="103"/>
+													<ChildItems>
+														<InputField name="МестоВыплатыБанковскийСчетДоступноПоле" id="104">
+															<DataPath>МестаВыплатыЗарплатыСотрудников.МестоВыплаты</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>45</MaxWidth>
+															<AutoMarkIncomplete>true</AutoMarkIncomplete>
+															<ChooseType>false</ChooseType>
+															<ChoiceParameterLinks>
+																<xr:Link>
+																	<xr:Name>Отбор.Организация</xr:Name>
+																	<xr:DataPath xsi:type="xs:string">10</xr:DataPath>
+																	<xr:ValueChange>Clear</xr:ValueChange>
+																</xr:Link>
+															</ChoiceParameterLinks>
+															<ContextMenu name="МестоВыплатыБанковскийСчетДоступноПолеКонтекстноеМеню" id="105"/>
+															<ExtendedTooltip name="МестоВыплатыБанковскийСчетДоступноПолеExtendedTooltip" id="106"/>
+														</InputField>
+													</ChildItems>
+												</Page>
+												<Page name="МестоВыплатыБанковскийСчетНеДоступно" id="107">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Место выплаты банковский счет не доступно</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Horizontal</Group>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="МестоВыплатыБанковскийСчетНеДоступноExtendedTooltip" id="108"/>
+													<ChildItems>
+														<InputField name="МестоВыплатыБанковскийСчетНеДоступноПоле" id="109">
+															<DataPath>МестаВыплатыЗарплатыСотрудников.МестоВыплаты</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<TitleLocation>None</TitleLocation>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>45</MaxWidth>
+															<TextColor>style:ТекстЗапрещеннойЯчейкиЦвет</TextColor>
+															<ContextMenu name="МестоВыплатыБанковскийСчетНеДоступноПолеКонтекстноеМеню" id="110"/>
+															<ExtendedTooltip name="МестоВыплатыБанковскийСчетНеДоступноПолеExtendedTooltip" id="111"/>
+														</InputField>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВидМестаВыплатыЗарплатыКасса" id="161">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вид места выплаты зарплаты касса</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<United>false</United>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВидМестаВыплатыЗарплатыКассаРасширеннаяПодсказка" id="162"/>
+							<ChildItems>
+								<RadioButtonField name="ВидМестаВыплатыЗарплатыКасса" id="20">
+									<DataPath>МестаВыплатыЗарплатыСотрудников.Вид</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыМестВыплатыЗарплаты.EnumValue.Касса</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ВидМестаВыплатыЗарплатыКассаКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="ВидМестаВыплатыЗарплатыКассаExtendedTooltip" id="22"/>
+								</RadioButtonField>
+								<Pages name="МестоВыплатыКасса" id="64">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Место выплаты касса</v8:content>
+										</v8:item>
+									</Title>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="МестоВыплатыКассаExtendedTooltip" id="65"/>
+									<ChildItems>
+										<Page name="МестоВыплатыКассаДоступно" id="66">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Место выплаты касса доступно</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="МестоВыплатыКассаДоступноExtendedTooltip" id="67"/>
+											<ChildItems>
+												<InputField name="МестоВыплатыКассаДоступноПоле" id="68">
+													<DataPath>МестаВыплатыЗарплатыСотрудников.МестоВыплаты</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>45</MaxWidth>
+													<ChoiceParameterLinks>
+														<xr:Link>
+															<xr:Name>Отбор.Владелец</xr:Name>
+															<xr:DataPath xsi:type="xs:string">18</xr:DataPath>
+															<xr:ValueChange>Clear</xr:ValueChange>
+														</xr:Link>
+													</ChoiceParameterLinks>
+													<ContextMenu name="МестоВыплатыКассаДоступноПолеКонтекстноеМеню" id="69"/>
+													<ExtendedTooltip name="МестоВыплатыКассаДоступноПолеExtendedTooltip" id="70"/>
+												</InputField>
+											</ChildItems>
+										</Page>
+										<Page name="МестоВыплатыКассаНеДоступно" id="71">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Место выплаты касса не доступно</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="МестоВыплатыКассаНеДоступноExtendedTooltip" id="72"/>
+											<ChildItems>
+												<InputField name="МестоВыплатыКассаНеДоступноПоле" id="73">
+													<DataPath>МестаВыплатыЗарплатыСотрудников.МестоВыплаты</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<TitleLocation>None</TitleLocation>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>45</MaxWidth>
+													<TextColor>style:ТекстЗапрещеннойЯчейкиЦвет</TextColor>
+													<ContextMenu name="МестоВыплатыКассаНеДоступноПолеКонтекстноеМеню" id="74"/>
+													<ExtendedTooltip name="МестоВыплатыКассаНеДоступноПолеExtendedTooltip" id="75"/>
+												</InputField>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВидМестаВыплатыРаздатчик" id="165">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вид места выплаты раздатчик</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<United>false</United>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВидМестаВыплатыРаздатчикРасширеннаяПодсказка" id="166"/>
+							<ChildItems>
+								<RadioButtonField name="ВидМестаВыплатыРаздатчик" id="26">
+									<DataPath>МестаВыплатыЗарплатыСотрудников.Вид</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВидыМестВыплатыЗарплаты.EnumValue.Раздатчик</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ВидМестаВыплатыРаздатчикКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ВидМестаВыплатыРаздатчикExtendedTooltip" id="28"/>
+								</RadioButtonField>
+								<Pages name="МестоВыплатыРаздатчик" id="88">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Место выплаты раздатчик</v8:content>
+										</v8:item>
+									</Title>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="МестоВыплатыРаздатчикExtendedTooltip" id="89"/>
+									<ChildItems>
+										<Page name="МестоВыплатыРаздатчикДоступно" id="90">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Место выплаты раздатчик доступно</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="МестоВыплатыРаздатчикДоступноExtendedTooltip" id="91"/>
+											<ChildItems>
+												<InputField name="МестоВыплатыРаздатчикДоступноПоле" id="92">
+													<DataPath>МестаВыплатыЗарплатыСотрудников.МестоВыплаты</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>45</MaxWidth>
+													<AutoMarkIncomplete>true</AutoMarkIncomplete>
+													<ChooseType>false</ChooseType>
+													<ChoiceParameterLinks>
+														<xr:Link>
+															<xr:Name>Отбор.Организация</xr:Name>
+															<xr:DataPath xsi:type="xs:string">18</xr:DataPath>
+															<xr:ValueChange>Clear</xr:ValueChange>
+														</xr:Link>
+													</ChoiceParameterLinks>
+													<ChoiceParameters>
+														<app:item name="Отбор.Роль">
+															<app:value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.РолиФизическихЛиц.EnumValue.РаздатчикЗарплаты</Value>
+															</app:value>
+														</app:item>
+													</ChoiceParameters>
+													<ContextMenu name="МестоВыплатыРаздатчикДоступноПолеКонтекстноеМеню" id="93"/>
+													<ExtendedTooltip name="МестоВыплатыРаздатчикДоступноПолеExtendedTooltip" id="94"/>
+												</InputField>
+											</ChildItems>
+										</Page>
+										<Page name="МестоВыплатыРаздатчикНеДоступно" id="95">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Место выплаты раздатчик не доступно</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="МестоВыплатыРаздатчикНеДоступноExtendedTooltip" id="96"/>
+											<ChildItems>
+												<InputField name="МестоВыплатыРаздатчикНеДоступноПоле" id="97">
+													<DataPath>МестаВыплатыЗарплатыСотрудников.МестоВыплаты</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<TitleLocation>None</TitleLocation>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>45</MaxWidth>
+													<TextColor>style:ТекстЗапрещеннойЯчейкиЦвет</TextColor>
+													<ContextMenu name="МестоВыплатыРаздатчикНеДоступноПолеКонтекстноеМеню" id="98"/>
+													<ExtendedTooltip name="МестоВыплатыРаздатчикНеДоступноПолеExtendedTooltip" id="99"/>
+												</InputField>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<LabelField name="РаспределениеПоСотруднику" id="296">
+					<TitleLocation>None</TitleLocation>
+					<Hiperlink>true</Hiperlink>
+					<ContextMenu name="РаспределениеПоСотрудникуКонтекстноеМеню" id="297"/>
+					<ExtendedTooltip name="РаспределениеПоСотрудникуРасширеннаяПодсказка" id="298"/>
+				</LabelField>
+				<UsualGroup name="ГруппаДетализацияМестВыплат" id="299">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Детализация мест выплат</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Детализация мест выплат</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>76</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Behavior>PopUp</Behavior>
+					<ExtendedTooltip name="ГруппаДетализацияМестВыплатРасширеннаяПодсказка" id="300"/>
+					<ChildItems>
+						<Table name="МестаВыплатыЗарплатыДетализация" id="301">
+							<Representation>List</Representation>
+							<Width>71</Width>
+							<MaxWidth>60</MaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<HeightInTableRows>5</HeightInTableRows>
+							<AutoMaxRowsCount>false</AutoMaxRowsCount>
+							<MaxRowsCount>5</MaxRowsCount>
+							<HorizontalStretch>false</HorizontalStretch>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="МестаВыплатыЗарплатыДетализацияКонтекстноеМеню" id="302"/>
+							<AutoCommandBar name="МестаВыплатыЗарплатыДетализацияКоманднаяПанель" id="303"/>
+							<ExtendedTooltip name="МестаВыплатыЗарплатыДетализацияРасширеннаяПодсказка" id="304"/>
+							<SearchStringAddition name="МестаВыплатыЗарплатыДетализацияСтрокаПоиска" id="305">
+								<AdditionSource>
+									<Item>МестаВыплатыЗарплатыДетализация</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="МестаВыплатыЗарплатыДетализацияСтрокаПоискаКонтекстноеМеню" id="306"/>
+								<ExtendedTooltip name="МестаВыплатыЗарплатыДетализацияСтрокаПоискаРасширеннаяПодсказка" id="307"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="МестаВыплатыЗарплатыДетализацияСостояниеПросмотра" id="308">
+								<AdditionSource>
+									<Item>МестаВыплатыЗарплатыДетализация</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="МестаВыплатыЗарплатыДетализацияСостояниеПросмотраКонтекстноеМеню" id="309"/>
+								<ExtendedTooltip name="МестаВыплатыЗарплатыДетализацияСостояниеПросмотраРасширеннаяПодсказка" id="310"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="МестаВыплатыЗарплатыДетализацияУправлениеПоиском" id="311">
+								<AdditionSource>
+									<Item>МестаВыплатыЗарплатыДетализация</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="МестаВыплатыЗарплатыДетализацияУправлениеПоискомКонтекстноеМеню" id="312"/>
+								<ExtendedTooltip name="МестаВыплатыЗарплатыДетализацияУправлениеПоискомРасширеннаяПодсказка" id="313"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="МестаВыплатыЗарплатыДетализацияСпособВыплаты" id="332">
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ContextMenu name="МестаВыплатыЗарплатыДетализацияСпособВыплатыКонтекстноеМеню" id="333"/>
+									<ExtendedTooltip name="МестаВыплатыЗарплатыДетализацияСпособВыплатыРасширеннаяПодсказка" id="334"/>
+								</InputField>
+								<InputField name="МестаВыплатыЗарплатыДетализацияВид" id="335">
+									<EditMode>EnterOnInput</EditMode>
+									<ListChoiceMode>true</ListChoiceMode>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ContextMenu name="МестаВыплатыЗарплатыДетализацияВидКонтекстноеМеню" id="336"/>
+									<ExtendedTooltip name="МестаВыплатыЗарплатыДетализацияВидРасширеннаяПодсказка" id="337"/>
+								</InputField>
+								<InputField name="МестаВыплатыЗарплатыДетализацияМестоВыплаты" id="338">
+									<EditMode>EnterOnInput</EditMode>
+									<CreateButton>true</CreateButton>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ChooseType>false</ChooseType>
+									<ContextMenu name="МестаВыплатыЗарплатыДетализацияМестоВыплатыКонтекстноеМеню" id="339"/>
+									<ExtendedTooltip name="МестаВыплатыЗарплатыДетализацияМестоВыплатыРасширеннаяПодсказка" id="340"/>
+								</InputField>
+								<LabelField name="МестаВыплатыЗарплатыДетализацияРаспределение" id="341">
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<CellHyperlink>true</CellHyperlink>
+									<Hiperlink>true</Hiperlink>
+									<ContextMenu name="МестаВыплатыЗарплатыДетализацияРаспределениеКонтекстноеМеню" id="342"/>
+									<ExtendedTooltip name="МестаВыплатыЗарплатыДетализацияРаспределениеРасширеннаяПодсказка" id="343"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+						<UsualGroup name="ГруппаЗарплатныеПроектыИМестаВыплат" id="326">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа зарплатные проекты и места выплат</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>DontUse</ThroughAlign>
+							<ExtendedTooltip name="ГруппаЗарплатныеПроектыИМестаВыплатРасширеннаяПодсказка" id="327"/>
+							<ChildItems>
+								<Button name="КнопкаОткрытьЛицевыеСчетаЗарплатныхПроектов" id="328">
+									<Type>Hyperlink</Type>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="КнопкаОткрытьЛицевыеСчетаЗарплатныхПроектовРасширеннаяПодсказка" id="329"/>
+								</Button>
+								<Button name="ОткрытьСпособыИМестаВыплаты" id="330">
+									<Type>Hyperlink</Type>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="ОткрытьСпособыИМестаВыплатыРасширеннаяПодсказка" id="331"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="МестаВыплатыЗарплатыСотрудников" id="1000001">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.МестаВыплатыЗарплатыСотрудников</v8:Type>
+			</Type>
+			<View>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.УВМ_ОсновнаяРоль">true</xr:Value>
+			</View>
+			<Edit>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.УВМ_ОсновнаяРоль">true</xr:Value>
+			</Edit>
+			<SavedData>true</SavedData>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьРасчетЗарплатыРасширенная</Item>
+			</FunctionalOptions>
+		</Attribute>
+	</Attributes>
+	<BaseForm version="2.20">
+		<Group>AlwaysHorizontal</Group>
+		<CommandBarLocation>Bottom</CommandBarLocation>
+		<VerticalScroll>useIfNecessary</VerticalScroll>
+		<CommandSet>
+			<ExcludedCommand>Abort</ExcludedCommand>
+			<ExcludedCommand>Cancel</ExcludedCommand>
+			<ExcludedCommand>Close</ExcludedCommand>
+			<ExcludedCommand>CustomizeForm</ExcludedCommand>
+			<ExcludedCommand>Help</ExcludedCommand>
+			<ExcludedCommand>Ignore</ExcludedCommand>
+			<ExcludedCommand>No</ExcludedCommand>
+			<ExcludedCommand>OK</ExcludedCommand>
+			<ExcludedCommand>RestoreValues</ExcludedCommand>
+			<ExcludedCommand>Retry</ExcludedCommand>
+			<ExcludedCommand>SaveValues</ExcludedCommand>
+			<ExcludedCommand>Yes</ExcludedCommand>
+		</CommandSet>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+			<HorizontalAlign>Right</HorizontalAlign>
+			<ChildItems>
+				<Button name="ФормаOK" id="139">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>0</CommandName>
+					<ExtendedTooltip name="ФормаOKРасширеннаяПодсказка" id="140"/>
+				</Button>
+				<Button name="ФормаОтмена" id="141">
+					<Type>CommandBarButton</Type>
+					<CommandName>0</CommandName>
+					<ExtendedTooltip name="ФормаОтменаРасширеннаяПодсказка" id="142"/>
+				</Button>
+			</ChildItems>
+		</AutoCommandBar>
+		<ChildItems>
+			<UsualGroup name="ГруппаМестаВыплаты" id="284">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа места выплаты</v8:content>
+					</v8:item>
+				</Title>
+				<Group>Vertical</Group>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаМестаВыплатыРасширеннаяПодсказка" id="285"/>
+				<ChildItems>
+					<UsualGroup name="ГруппаПерваяВыборМестаВыплаты" id="197">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Выбор места выплаты лицевой счет</v8:content>
+							</v8:item>
+						</Title>
+						<Group>Vertical</Group>
+						<Behavior>Usual</Behavior>
+						<Representation>None</Representation>
+						<ShowTitle>false</ShowTitle>
+						<ExtendedTooltip name="ГруппаПерваяВыборМестаВыплатыРасширеннаяПодсказка" id="198"/>
+						<ChildItems>
+							<UsualGroup name="ГруппаВидМестаВыплатыЗарплатыКакВсем" id="159">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Вид места выплаты зарплаты как всем</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Horizontal</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<United>false</United>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаВидМестаВыплатыЗарплатыКакВсемРасширеннаяПодсказка" id="160"/>
+								<ChildItems>
+									<RadioButtonField name="ВидМестаВыплатыЗарплатыКакВсем" id="17">
+										<DataPath>МестаВыплатыЗарплатыСотрудников.Вид</DataPath>
+										<TitleLocation>None</TitleLocation>
+										<RadioButtonType>Auto</RadioButtonType>
+										<ChoiceList>
+											<xr:Item>
+												<xr:Presentation/>
+												<xr:CheckState>0</xr:CheckState>
+												<xr:Value xsi:type="FormChoiceListDesTimeValue">
+													<Presentation>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Как всем</v8:content>
+														</v8:item>
+													</Presentation>
+													<Value xsi:type="xr:DesignTimeRef">Enum.ВидыМестВыплатыЗарплаты.EmptyRef</Value>
+												</xr:Value>
+											</xr:Item>
+										</ChoiceList>
+										<ContextMenu name="ВидМестаВыплатыЗарплатыКакВсемКонтекстноеМеню" id="18"/>
+										<ExtendedTooltip name="ВидМестаВыплатыЗарплатыКакВсемExtendedTooltip" id="19"/>
+									</RadioButtonField>
+									<Pages name="МестоВыплатыКакВсем" id="46">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Место выплаты как всем</v8:content>
+											</v8:item>
+										</Title>
+										<PagesRepresentation>None</PagesRepresentation>
+										<ExtendedTooltip name="МестоВыплатыКакВсемExtendedTooltip" id="47"/>
+										<ChildItems>
+											<Page name="МестоВыплатыКакВсемДоступно" id="48">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Место выплаты как всем доступно</v8:content>
+													</v8:item>
+												</Title>
+												<Group>Horizontal</Group>
+												<ExtendedTooltip name="МестоВыплатыКакВсемДоступноExtendedTooltip" id="49"/>
+												<ChildItems>
+													<InputField name="МестоВыплатыКакВсемДоступноВид" id="50">
+														<ReadOnly>true</ReadOnly>
+														<TitleLocation>None</TitleLocation>
+														<HorizontalStretch>false</HorizontalStretch>
+														<AutoMarkIncomplete>false</AutoMarkIncomplete>
+														<ContextMenu name="МестоВыплатыКакВсемДоступноВидКонтекстноеМеню" id="51"/>
+														<ExtendedTooltip name="МестоВыплатыКакВсемДоступноВидExtendedTooltip" id="52"/>
+													</InputField>
+													<InputField name="МестоВыплатыКакВсемДоступноМесто" id="53">
+														<ReadOnly>true</ReadOnly>
+														<TitleLocation>None</TitleLocation>
+														<AutoMaxWidth>false</AutoMaxWidth>
+														<MaxWidth>28</MaxWidth>
+														<ChoiceButton>false</ChoiceButton>
+														<OpenButton>true</OpenButton>
+														<AutoMarkIncomplete>false</AutoMarkIncomplete>
+														<ContextMenu name="МестоВыплатыКакВсемДоступноМестоКонтекстноеМеню" id="54"/>
+														<ExtendedTooltip name="МестоВыплатыКакВсемДоступноМестоExtendedTooltip" id="55"/>
+													</InputField>
+												</ChildItems>
+											</Page>
+											<Page name="МестоВыплатыКакВсемНеДоступно" id="56">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Место выплаты как всем не доступно</v8:content>
+													</v8:item>
+												</Title>
+												<Group>Horizontal</Group>
+												<ShowTitle>false</ShowTitle>
+												<ExtendedTooltip name="МестоВыплатыКакВсемНеДоступноExtendedTooltip" id="57"/>
+												<ChildItems>
+													<InputField name="МестоВыплатыКакВсемНеДоступноВид" id="58">
+														<ReadOnly>true</ReadOnly>
+														<TitleLocation>None</TitleLocation>
+														<HorizontalStretch>false</HorizontalStretch>
+														<AutoMarkIncomplete>false</AutoMarkIncomplete>
+														<TextColor>style:ТекстЗапрещеннойЯчейкиЦвет</TextColor>
+														<ContextMenu name="МестоВыплатыКакВсемНеДоступноВидКонтекстноеМеню" id="59"/>
+														<ExtendedTooltip name="МестоВыплатыКакВсемНеДоступноВидExtendedTooltip" id="60"/>
+													</InputField>
+													<InputField name="МестоВыплатыКакВсемНеДоступноМесто" id="61">
+														<ReadOnly>true</ReadOnly>
+														<TitleLocation>None</TitleLocation>
+														<AutoMaxWidth>false</AutoMaxWidth>
+														<MaxWidth>28</MaxWidth>
+														<ChoiceButton>false</ChoiceButton>
+														<OpenButton>true</OpenButton>
+														<AutoMarkIncomplete>false</AutoMarkIncomplete>
+														<TextColor>style:ТекстЗапрещеннойЯчейкиЦвет</TextColor>
+														<ContextMenu name="МестоВыплатыКакВсемНеДоступноМестоКонтекстноеМеню" id="62"/>
+														<ExtendedTooltip name="МестоВыплатыКакВсемНеДоступноМестоExtendedTooltip" id="63"/>
+													</InputField>
+												</ChildItems>
+											</Page>
+										</ChildItems>
+									</Pages>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="ГруппаВидМестаВыплатыЗарплатыЗарплатныйПроект" id="163">
+								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<United>false</United>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаВидМестаВыплатыЗарплатыЗарплатныйПроектРасширеннаяПодсказка" id="164"/>
+								<ChildItems>
+									<UsualGroup name="ГруппаМестоВыплатыЗарплатныйПроект" id="260">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа место выплаты зарплатный проект</v8:content>
+											</v8:item>
+										</Title>
+										<Group>AlwaysHorizontal</Group>
+										<Behavior>Usual</Behavior>
+										<United>false</United>
+										<ShowTitle>false</ShowTitle>
+										<ExtendedTooltip name="ГруппаМестоВыплатыЗарплатныйПроектРасширеннаяПодсказка" id="261"/>
+										<ChildItems>
+											<RadioButtonField name="ВидМестаВыплатыЗарплатыЗарплатныйПроект" id="23">
+												<DataPath>МестаВыплатыЗарплатыСотрудников.Вид</DataPath>
+												<TitleLocation>None</TitleLocation>
+												<RadioButtonType>Auto</RadioButtonType>
+												<ChoiceList>
+													<xr:Item>
+														<xr:Presentation/>
+														<xr:CheckState>0</xr:CheckState>
+														<xr:Value xsi:type="FormChoiceListDesTimeValue">
+															<Presentation/>
+															<Value xsi:type="xr:DesignTimeRef">Enum.ВидыМестВыплатыЗарплаты.EnumValue.ЗарплатныйПроект</Value>
+														</xr:Value>
+													</xr:Item>
+												</ChoiceList>
+												<ContextMenu name="ВидМестаВыплатыЗарплатыЗарплатныйПроектКонтекстноеМеню" id="24"/>
+												<ExtendedTooltip name="ВидМестаВыплатыЗарплатыЗарплатныйПроектExtendedTooltip" id="25"/>
+											</RadioButtonField>
+											<Pages name="МестоВыплатыЗарплатныйПроект" id="76">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Место выплаты зарплатный проект</v8:content>
+													</v8:item>
+												</Title>
+												<PagesRepresentation>None</PagesRepresentation>
+												<ExtendedTooltip name="МестоВыплатыЗарплатныйПроектExtendedTooltip" id="77"/>
+												<ChildItems>
+													<Page name="МестоВыплатыЗарплатныйПроектДоступно" id="78">
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Место выплаты зарплатный проект доступно</v8:content>
+															</v8:item>
+														</Title>
+														<Group>Horizontal</Group>
+														<ShowTitle>false</ShowTitle>
+														<ExtendedTooltip name="МестоВыплатыЗарплатныйПроектДоступноExtendedTooltip" id="79"/>
+														<ChildItems>
+															<InputField name="МестоВыплатыЗарплатныйПроектДоступноПоле" id="80">
+																<DataPath>МестаВыплатыЗарплатыСотрудников.МестоВыплаты</DataPath>
+																<TitleLocation>None</TitleLocation>
+																<AutoMaxWidth>false</AutoMaxWidth>
+																<MaxWidth>45</MaxWidth>
+																<ChoiceParameterLinks>
+																	<xr:Link>
+																		<xr:Name>Отбор.Организация</xr:Name>
+																		<xr:DataPath xsi:type="xs:string">18</xr:DataPath>
+																		<xr:ValueChange>Clear</xr:ValueChange>
+																	</xr:Link>
+																</ChoiceParameterLinks>
+																<ContextMenu name="МестоВыплатыЗарплатныйПроектДоступноПолеКонтекстноеМеню" id="81"/>
+																<ExtendedTooltip name="МестоВыплатыЗарплатныйПроектДоступноПолеExtendedTooltip" id="82"/>
+															</InputField>
+														</ChildItems>
+													</Page>
+													<Page name="МестоВыплатыЗарплатныйПроектНеДоступно" id="83">
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Место выплаты зарплатный проект не доступно</v8:content>
+															</v8:item>
+														</Title>
+														<Group>Horizontal</Group>
+														<ShowTitle>false</ShowTitle>
+														<ExtendedTooltip name="МестоВыплатыЗарплатныйПроектНеДоступноExtendedTooltip" id="84"/>
+														<ChildItems>
+															<InputField name="МестоВыплатыЗарплатныйПроектНеДоступноПоле" id="85">
+																<DataPath>МестаВыплатыЗарплатыСотрудников.МестоВыплаты</DataPath>
+																<ReadOnly>true</ReadOnly>
+																<TitleTextColor>style:ТекстЗапрещеннойЯчейкиЦвет</TitleTextColor>
+																<TitleLocation>None</TitleLocation>
+																<AutoMaxWidth>false</AutoMaxWidth>
+																<MaxWidth>45</MaxWidth>
+																<AutoMarkIncomplete>false</AutoMarkIncomplete>
+																<ChoiceParameterLinks>
+																	<xr:Link>
+																		<xr:Name>Отбор.Организация</xr:Name>
+																		<xr:DataPath xsi:type="xs:string">8</xr:DataPath>
+																		<xr:ValueChange>Clear</xr:ValueChange>
+																	</xr:Link>
+																</ChoiceParameterLinks>
+																<TextColor>style:ТекстЗапрещеннойЯчейкиЦвет</TextColor>
+																<ContextMenu name="МестоВыплатыЗарплатныйПроектНеДоступноПолеКонтекстноеМеню" id="86"/>
+																<ExtendedTooltip name="МестоВыплатыЗарплатныйПроектНеДоступноПолеExtendedTooltip" id="87"/>
+															</InputField>
+														</ChildItems>
+													</Page>
+												</ChildItems>
+											</Pages>
+										</ChildItems>
+									</UsualGroup>
+								</ChildItems>
+							</UsualGroup>
+						</ChildItems>
+					</UsualGroup>
+					<UsualGroup name="ГруппаСпособыЗачисления" id="265">
+						<EnableContentChange>true</EnableContentChange>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Зачислять:</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Способ зачисления выплат</v8:content>
+							</v8:item>
+						</ToolTip>
+						<Group>Vertical</Group>
+						<Behavior>Collapsible</Behavior>
+						<Collapsed>true</Collapsed>
+						<ControlRepresentation>Picture</ControlRepresentation>
+						<Representation>None</Representation>
+						<ExtendedTooltip name="ГруппаСпособыЗачисленияРасширеннаяПодсказка" id="266"/>
+						<ChildItems>
+							<UsualGroup name="ГруппаНаКарточку" id="221">
+								<Group>AlwaysHorizontal</Group>
+								<Behavior>Usual</Behavior>
+								<United>false</United>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаНаКарточкуРасширеннаяПодсказка" id="222"/>
+								<ChildItems>
+									<RadioButtonField name="СпособПоНомеруКарты" id="231">
+										<TitleLocation>None</TitleLocation>
+										<RadioButtonType>Auto</RadioButtonType>
+										<ChoiceList>
+											<xr:Item>
+												<xr:Presentation/>
+												<xr:CheckState>0</xr:CheckState>
+												<xr:Value xsi:type="FormChoiceListDesTimeValue">
+													<Presentation/>
+													<Value xsi:type="xr:DesignTimeRef">Enum.СпособыЗачисленияВыплат.EnumValue.ПоНомеруКарты</Value>
+												</xr:Value>
+											</xr:Item>
+										</ChoiceList>
+										<ContextMenu name="СпособПоНомеруКартыКонтекстноеМеню" id="232"/>
+										<ExtendedTooltip name="СпособПоНомеруКартыРасширеннаяПодсказка" id="233"/>
+									</RadioButtonField>
+									<InputField name="БанковскаяКарта" id="204">
+										<TitleLocation>None</TitleLocation>
+										<ChoiceParameterLinks>
+											<xr:Link>
+												<xr:Name>Отбор.Владелец</xr:Name>
+												<xr:DataPath xsi:type="xs:string">20</xr:DataPath>
+												<xr:ValueChange>Clear</xr:ValueChange>
+											</xr:Link>
+										</ChoiceParameterLinks>
+										<ChoiceParameters>
+											<app:item name="Отбор.Владелец">
+												<app:value xsi:nil="true"/>
+											</app:item>
+										</ChoiceParameters>
+										<ContextMenu name="БанковскаяКартаКонтекстноеМеню" id="205"/>
+										<ExtendedTooltip name="БанковскаяКартаРасширеннаяПодсказка" id="206"/>
+									</InputField>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="ГруппаНаБанковскийСчет" id="223">
+								<Group>AlwaysHorizontal</Group>
+								<Behavior>Usual</Behavior>
+								<United>false</United>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаНаБанковскийСчетРасширеннаяПодсказка" id="224"/>
+								<ChildItems>
+									<RadioButtonField name="СпособПоНомеруСчетаВБанк" id="234">
+										<TitleLocation>None</TitleLocation>
+										<RadioButtonType>Auto</RadioButtonType>
+										<ChoiceList>
+											<xr:Item>
+												<xr:Presentation/>
+												<xr:CheckState>0</xr:CheckState>
+												<xr:Value xsi:type="FormChoiceListDesTimeValue">
+													<Presentation/>
+													<Value xsi:type="xr:DesignTimeRef">Enum.СпособыЗачисленияВыплат.EnumValue.ПоНомеруСчетаВБанк</Value>
+												</xr:Value>
+											</xr:Item>
+										</ChoiceList>
+										<ContextMenu name="СпособПоНомеруСчетаВБанкКонтекстноеМеню" id="235"/>
+										<ExtendedTooltip name="СпособПоНомеруСчетаВБанкРасширеннаяПодсказка" id="236"/>
+									</RadioButtonField>
+									<InputField name="БанковскийСчет" id="213">
+										<TitleLocation>None</TitleLocation>
+										<ChoiceParameterLinks>
+											<xr:Link>
+												<xr:Name>Отбор.Владелец</xr:Name>
+												<xr:DataPath xsi:type="xs:string">20</xr:DataPath>
+												<xr:ValueChange>Clear</xr:ValueChange>
+											</xr:Link>
+										</ChoiceParameterLinks>
+										<ChoiceParameters>
+											<app:item name="Отбор.Владелец">
+												<app:value xsi:nil="true"/>
+											</app:item>
+										</ChoiceParameters>
+										<ContextMenu name="БанковскийСчетКонтекстноеМеню" id="214"/>
+										<ExtendedTooltip name="БанковскийСчетРасширеннаяПодсказка" id="215"/>
+									</InputField>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="ГруппаПоСНИЛС" id="225">
+								<Group>AlwaysHorizontal</Group>
+								<Behavior>Usual</Behavior>
+								<United>false</United>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаПоСНИЛСРасширеннаяПодсказка" id="226"/>
+								<ChildItems>
+									<RadioButtonField name="СпособПоСНИЛС" id="237">
+										<TitleLocation>None</TitleLocation>
+										<RadioButtonType>Auto</RadioButtonType>
+										<ChoiceList>
+											<xr:Item>
+												<xr:Presentation/>
+												<xr:CheckState>0</xr:CheckState>
+												<xr:Value xsi:type="FormChoiceListDesTimeValue">
+													<Presentation/>
+													<Value xsi:type="xr:DesignTimeRef">Enum.СпособыЗачисленияВыплат.EnumValue.ПоСНИЛС</Value>
+												</xr:Value>
+											</xr:Item>
+										</ChoiceList>
+										<ContextMenu name="СпособПоСНИЛСКонтекстноеМеню" id="238"/>
+										<ExtendedTooltip name="СпособПоСНИЛСРасширеннаяПодсказка" id="239"/>
+									</RadioButtonField>
+									<LabelDecoration name="НадписьСНИЛС" id="277">
+										<TextColor>style:ПоясняющийТекст</TextColor>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>не заполнен</v8:content>
+											</v8:item>
+										</Title>
+										<ContextMenu name="НадписьСНИЛСКонтекстноеМеню" id="278"/>
+										<ExtendedTooltip name="НадписьСНИЛСРасширеннаяПодсказка" id="279"/>
+									</LabelDecoration>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="ГруппаПоНомеруТелефонаОбщая" id="227">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Группа по номеру телефона общая</v8:content>
+									</v8:item>
+								</Title>
+								<Group>AlwaysHorizontal</Group>
+								<Behavior>Usual</Behavior>
+								<United>false</United>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаПоНомеруТелефонаОбщаяРасширеннаяПодсказка" id="228"/>
+								<ChildItems>
+									<UsualGroup name="ГруппаПоНомеруТелефона" id="275">
+										<Group>AlwaysHorizontal</Group>
+										<Behavior>Usual</Behavior>
+										<United>false</United>
+										<ShowTitle>false</ShowTitle>
+										<ExtendedTooltip name="ГруппаПоНомеруТелефонаРасширеннаяПодсказка" id="276"/>
+										<ChildItems>
+											<RadioButtonField name="СпособПоНомеруТелефона" id="240">
+												<TitleLocation>None</TitleLocation>
+												<RadioButtonType>Auto</RadioButtonType>
+												<ChoiceList>
+													<xr:Item>
+														<xr:Presentation/>
+														<xr:CheckState>0</xr:CheckState>
+														<xr:Value xsi:type="FormChoiceListDesTimeValue">
+															<Presentation/>
+															<Value xsi:type="xr:DesignTimeRef">Enum.СпособыЗачисленияВыплат.EnumValue.ПоНомеруТелефона</Value>
+														</xr:Value>
+													</xr:Item>
+												</ChoiceList>
+												<ContextMenu name="СпособПоНомеруТелефонаКонтекстноеМеню" id="241"/>
+												<ExtendedTooltip name="СпособПоНомеруТелефонаРасширеннаяПодсказка" id="242"/>
+											</RadioButtonField>
+										</ChildItems>
+									</UsualGroup>
+									<UsualGroup name="ГруппаСсылкаНаТелефон" id="273">
+										<Group>Vertical</Group>
+										<Behavior>Usual</Behavior>
+										<United>false</United>
+										<ShowTitle>false</ShowTitle>
+										<ExtendedTooltip name="ГруппаСсылкаНаТелефонРасширеннаяПодсказка" id="274"/>
+										<ChildItems>
+											<InputField name="Телефон" id="207">
+												<TitleLocation>None</TitleLocation>
+												<OpenButton>false</OpenButton>
+												<CreateButton>false</CreateButton>
+												<QuickChoice>true</QuickChoice>
+												<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+												<ChoiceParameters>
+													<app:item name="Отбор.Родитель">
+														<app:value xsi:type="FormChoiceListDesTimeValue">
+															<Presentation/>
+															<Value xsi:type="xr:DesignTimeRef">Catalog.ВидыКонтактнойИнформации.СправочникФизическиеЛица</Value>
+														</app:value>
+													</app:item>
+													<app:item name="Отбор.Используется">
+														<app:value xsi:type="FormChoiceListDesTimeValue">
+															<Presentation/>
+															<Value xsi:type="xs:boolean">true</Value>
+														</app:value>
+													</app:item>
+													<app:item name="Отбор.Тип">
+														<app:value xsi:type="FormChoiceListDesTimeValue">
+															<Presentation/>
+															<Value xsi:type="xr:DesignTimeRef">Enum.ТипыКонтактнойИнформации.EnumValue.Телефон</Value>
+														</app:value>
+													</app:item>
+													<app:item name="Отбор.ПометкаУдаления">
+														<app:value xsi:type="FormChoiceListDesTimeValue">
+															<Presentation/>
+															<Value xsi:type="xs:boolean">false</Value>
+														</app:value>
+													</app:item>
+												</ChoiceParameters>
+												<ContextMenu name="ТелефонКонтекстноеМеню" id="208"/>
+												<ExtendedTooltip name="ТелефонРасширеннаяПодсказка" id="209"/>
+											</InputField>
+											<LabelDecoration name="НадписьНомерТелефона" id="270">
+												<TextColor>style:ПоясняющийТекст</TextColor>
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>не заполнен</v8:content>
+													</v8:item>
+												</Title>
+												<ContextMenu name="НадписьНомерТелефонаКонтекстноеМеню" id="271"/>
+												<ExtendedTooltip name="НадписьНомерТелефонаРасширеннаяПодсказка" id="272"/>
+											</LabelDecoration>
+										</ChildItems>
+									</UsualGroup>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="ГруппаПоЛицевомуСчету" id="229">
+								<Group>AlwaysHorizontal</Group>
+								<Behavior>Usual</Behavior>
+								<United>false</United>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаПоЛицевомуСчетуРасширеннаяПодсказка" id="230"/>
+								<ChildItems>
+									<RadioButtonField name="СпособПоЛицевомуСчету" id="243">
+										<TitleLocation>None</TitleLocation>
+										<RadioButtonType>Auto</RadioButtonType>
+										<ChoiceList>
+											<xr:Item>
+												<xr:Presentation/>
+												<xr:CheckState>0</xr:CheckState>
+												<xr:Value xsi:type="FormChoiceListDesTimeValue">
+													<Presentation/>
+													<Value xsi:type="xr:DesignTimeRef">Enum.СпособыЗачисленияВыплат.EnumValue.ПоЛицевомуСчету</Value>
+												</xr:Value>
+											</xr:Item>
+										</ChoiceList>
+										<ContextMenu name="СпособПоЛицевомуСчетуКонтекстноеМеню" id="244"/>
+										<ExtendedTooltip name="СпособПоЛицевомуСчетуРасширеннаяПодсказка" id="245"/>
+									</RadioButtonField>
+									<UsualGroup name="ЛицевойСчет" id="288">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Лицевой счет</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+										<Group>AlwaysHorizontal</Group>
+										<ChildrenAlign>ItemsLeftTitlesRight</ChildrenAlign>
+										<Behavior>Usual</Behavior>
+										<Representation>None</Representation>
+										<ShowTitle>false</ShowTitle>
+										<ThroughAlign>DontUse</ThroughAlign>
+										<ExtendedTooltip name="ЛицевойСчетРасширеннаяПодсказка" id="289">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>70</MaxWidth>
+										</ExtendedTooltip>
+										<ChildItems>
+											<InputField name="ЛицевыеСчетаСотрудниковПоЗарплатнымПроектамНомерЛицевогоСчета" id="290">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Номер счета</v8:content>
+													</v8:item>
+												</Title>
+												<TitleLocation>None</TitleLocation>
+												<ToolTipRepresentation>Button</ToolTipRepresentation>
+												<MaxWidth>20</MaxWidth>
+												<ContextMenu name="ЛицевыеСчетаСотрудниковПоЗарплатнымПроектамНомерЛицевогоСчетаКонтекстноеМеню" id="291"/>
+												<ExtendedTooltip name="ЛицевыеСчетаСотрудниковПоЗарплатнымПроектамНомерЛицевогоСчетаExtendedTooltip" id="292"/>
+											</InputField>
+											<InputField name="ЛицевыеСчетаСотрудниковПоЗарплатнымПроектамДатаОткрытияЛицевогоСчета" id="293">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Открыт</v8:content>
+													</v8:item>
+												</Title>
+												<ContextMenu name="ЛицевыеСчетаСотрудниковПоЗарплатнымПроектамДатаОткрытияЛицевогоСчетаКонтекстноеМеню" id="294"/>
+												<ExtendedTooltip name="ЛицевыеСчетаСотрудниковПоЗарплатнымПроектамДатаОткрытияЛицевогоСчетаРасширеннаяПодсказка" id="295"/>
+											</InputField>
+										</ChildItems>
+									</UsualGroup>
+								</ChildItems>
+							</UsualGroup>
+							<LabelDecoration name="Отступ" id="267">
+								<ContextMenu name="ОтступКонтекстноеМеню" id="268"/>
+								<ExtendedTooltip name="ОтступРасширеннаяПодсказка" id="269"/>
+							</LabelDecoration>
+						</ChildItems>
+					</UsualGroup>
+					<UsualGroup name="ГруппаВтораяВыборМестаВыплаты" id="286">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Выбор места выплаты лицевой счет</v8:content>
+							</v8:item>
+						</Title>
+						<Group>Vertical</Group>
+						<Behavior>Usual</Behavior>
+						<Representation>None</Representation>
+						<ShowTitle>false</ShowTitle>
+						<ExtendedTooltip name="ГруппаВтораяВыборМестаВыплатыРасширеннаяПодсказка" id="287"/>
+						<ChildItems>
+							<UsualGroup name="ГруппаВидМестаВыплатыЗарплатыБанковскийСчет" id="167">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Вид места выплаты зарплаты банковский счет</v8:content>
+									</v8:item>
+								</Title>
+								<Group>AlwaysHorizontal</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<United>false</United>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаВидМестаВыплатыЗарплатыБанковскийСчетРасширеннаяПодсказка" id="168"/>
+								<ChildItems>
+									<RadioButtonField name="ВидМестаВыплатыЗарплатыБанковскийСчет" id="29">
+										<DataPath>МестаВыплатыЗарплатыСотрудников.Вид</DataPath>
+										<TitleLocation>None</TitleLocation>
+										<RadioButtonType>Auto</RadioButtonType>
+										<ChoiceList>
+											<xr:Item>
+												<xr:Presentation/>
+												<xr:CheckState>0</xr:CheckState>
+												<xr:Value xsi:type="FormChoiceListDesTimeValue">
+													<Presentation/>
+													<Value xsi:type="xr:DesignTimeRef">Enum.ВидыМестВыплатыЗарплаты.EnumValue.БанковскийСчет</Value>
+												</xr:Value>
+											</xr:Item>
+										</ChoiceList>
+										<ContextMenu name="ВидМестаВыплатыЗарплатыБанковскийСчетКонтекстноеМеню" id="30"/>
+										<ExtendedTooltip name="ВидМестаВыплатыЗарплатыБанковскийСчетExtendedTooltip" id="31"/>
+									</RadioButtonField>
+									<UsualGroup name="ГруппаМестоВыплатыБанковскийЛицевойСчета" id="169">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Место выплаты банковский лицевой счета</v8:content>
+											</v8:item>
+										</Title>
+										<Group>Vertical</Group>
+										<Behavior>Usual</Behavior>
+										<Representation>None</Representation>
+										<ShowTitle>false</ShowTitle>
+										<ExtendedTooltip name="ГруппаМестоВыплатыБанковскийЛицевойСчетаРасширеннаяПодсказка" id="170"/>
+										<ChildItems>
+											<Pages name="МестоВыплатыБанковскийСчет" id="100">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Место выплаты банковский счет</v8:content>
+													</v8:item>
+												</Title>
+												<PagesRepresentation>None</PagesRepresentation>
+												<ExtendedTooltip name="МестоВыплатыБанковскийСчетExtendedTooltip" id="101"/>
+												<ChildItems>
+													<Page name="МестоВыплатыБанковскийСчетДоступно" id="102">
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Место выплаты банковский счет доступно</v8:content>
+															</v8:item>
+														</Title>
+														<Group>Horizontal</Group>
+														<ShowTitle>false</ShowTitle>
+														<ExtendedTooltip name="МестоВыплатыБанковскийСчетДоступноExtendedTooltip" id="103"/>
+														<ChildItems>
+															<InputField name="МестоВыплатыБанковскийСчетДоступноПоле" id="104">
+																<DataPath>МестаВыплатыЗарплатыСотрудников.МестоВыплаты</DataPath>
+																<TitleLocation>None</TitleLocation>
+																<AutoMaxWidth>false</AutoMaxWidth>
+																<MaxWidth>45</MaxWidth>
+																<AutoMarkIncomplete>true</AutoMarkIncomplete>
+																<ChooseType>false</ChooseType>
+																<ChoiceParameterLinks>
+																	<xr:Link>
+																		<xr:Name>Отбор.Организация</xr:Name>
+																		<xr:DataPath xsi:type="xs:string">10</xr:DataPath>
+																		<xr:ValueChange>Clear</xr:ValueChange>
+																	</xr:Link>
+																</ChoiceParameterLinks>
+																<ContextMenu name="МестоВыплатыБанковскийСчетДоступноПолеКонтекстноеМеню" id="105"/>
+																<ExtendedTooltip name="МестоВыплатыБанковскийСчетДоступноПолеExtendedTooltip" id="106"/>
+															</InputField>
+														</ChildItems>
+													</Page>
+													<Page name="МестоВыплатыБанковскийСчетНеДоступно" id="107">
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Место выплаты банковский счет не доступно</v8:content>
+															</v8:item>
+														</Title>
+														<Group>Horizontal</Group>
+														<ShowTitle>false</ShowTitle>
+														<ExtendedTooltip name="МестоВыплатыБанковскийСчетНеДоступноExtendedTooltip" id="108"/>
+														<ChildItems>
+															<InputField name="МестоВыплатыБанковскийСчетНеДоступноПоле" id="109">
+																<DataPath>МестаВыплатыЗарплатыСотрудников.МестоВыплаты</DataPath>
+																<ReadOnly>true</ReadOnly>
+																<TitleLocation>None</TitleLocation>
+																<AutoMaxWidth>false</AutoMaxWidth>
+																<MaxWidth>45</MaxWidth>
+																<TextColor>style:ТекстЗапрещеннойЯчейкиЦвет</TextColor>
+																<ContextMenu name="МестоВыплатыБанковскийСчетНеДоступноПолеКонтекстноеМеню" id="110"/>
+																<ExtendedTooltip name="МестоВыплатыБанковскийСчетНеДоступноПолеExtendedTooltip" id="111"/>
+															</InputField>
+														</ChildItems>
+													</Page>
+												</ChildItems>
+											</Pages>
+										</ChildItems>
+									</UsualGroup>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="ГруппаВидМестаВыплатыЗарплатыКасса" id="161">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Вид места выплаты зарплаты касса</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Horizontal</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<United>false</United>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаВидМестаВыплатыЗарплатыКассаРасширеннаяПодсказка" id="162"/>
+								<ChildItems>
+									<RadioButtonField name="ВидМестаВыплатыЗарплатыКасса" id="20">
+										<DataPath>МестаВыплатыЗарплатыСотрудников.Вид</DataPath>
+										<TitleLocation>None</TitleLocation>
+										<RadioButtonType>Auto</RadioButtonType>
+										<ChoiceList>
+											<xr:Item>
+												<xr:Presentation/>
+												<xr:CheckState>0</xr:CheckState>
+												<xr:Value xsi:type="FormChoiceListDesTimeValue">
+													<Presentation/>
+													<Value xsi:type="xr:DesignTimeRef">Enum.ВидыМестВыплатыЗарплаты.EnumValue.Касса</Value>
+												</xr:Value>
+											</xr:Item>
+										</ChoiceList>
+										<ContextMenu name="ВидМестаВыплатыЗарплатыКассаКонтекстноеМеню" id="21"/>
+										<ExtendedTooltip name="ВидМестаВыплатыЗарплатыКассаExtendedTooltip" id="22"/>
+									</RadioButtonField>
+									<Pages name="МестоВыплатыКасса" id="64">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Место выплаты касса</v8:content>
+											</v8:item>
+										</Title>
+										<PagesRepresentation>None</PagesRepresentation>
+										<ExtendedTooltip name="МестоВыплатыКассаExtendedTooltip" id="65"/>
+										<ChildItems>
+											<Page name="МестоВыплатыКассаДоступно" id="66">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Место выплаты касса доступно</v8:content>
+													</v8:item>
+												</Title>
+												<Group>Horizontal</Group>
+												<ExtendedTooltip name="МестоВыплатыКассаДоступноExtendedTooltip" id="67"/>
+												<ChildItems>
+													<InputField name="МестоВыплатыКассаДоступноПоле" id="68">
+														<DataPath>МестаВыплатыЗарплатыСотрудников.МестоВыплаты</DataPath>
+														<TitleLocation>None</TitleLocation>
+														<AutoMaxWidth>false</AutoMaxWidth>
+														<MaxWidth>45</MaxWidth>
+														<ChoiceParameterLinks>
+															<xr:Link>
+																<xr:Name>Отбор.Владелец</xr:Name>
+																<xr:DataPath xsi:type="xs:string">18</xr:DataPath>
+																<xr:ValueChange>Clear</xr:ValueChange>
+															</xr:Link>
+														</ChoiceParameterLinks>
+														<ContextMenu name="МестоВыплатыКассаДоступноПолеКонтекстноеМеню" id="69"/>
+														<ExtendedTooltip name="МестоВыплатыКассаДоступноПолеExtendedTooltip" id="70"/>
+													</InputField>
+												</ChildItems>
+											</Page>
+											<Page name="МестоВыплатыКассаНеДоступно" id="71">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Место выплаты касса не доступно</v8:content>
+													</v8:item>
+												</Title>
+												<Group>Horizontal</Group>
+												<ExtendedTooltip name="МестоВыплатыКассаНеДоступноExtendedTooltip" id="72"/>
+												<ChildItems>
+													<InputField name="МестоВыплатыКассаНеДоступноПоле" id="73">
+														<DataPath>МестаВыплатыЗарплатыСотрудников.МестоВыплаты</DataPath>
+														<ReadOnly>true</ReadOnly>
+														<TitleLocation>None</TitleLocation>
+														<AutoMaxWidth>false</AutoMaxWidth>
+														<MaxWidth>45</MaxWidth>
+														<TextColor>style:ТекстЗапрещеннойЯчейкиЦвет</TextColor>
+														<ContextMenu name="МестоВыплатыКассаНеДоступноПолеКонтекстноеМеню" id="74"/>
+														<ExtendedTooltip name="МестоВыплатыКассаНеДоступноПолеExtendedTooltip" id="75"/>
+													</InputField>
+												</ChildItems>
+											</Page>
+										</ChildItems>
+									</Pages>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="ГруппаВидМестаВыплатыРаздатчик" id="165">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Вид места выплаты раздатчик</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Horizontal</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<United>false</United>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаВидМестаВыплатыРаздатчикРасширеннаяПодсказка" id="166"/>
+								<ChildItems>
+									<RadioButtonField name="ВидМестаВыплатыРаздатчик" id="26">
+										<DataPath>МестаВыплатыЗарплатыСотрудников.Вид</DataPath>
+										<TitleLocation>None</TitleLocation>
+										<RadioButtonType>Auto</RadioButtonType>
+										<ChoiceList>
+											<xr:Item>
+												<xr:Presentation/>
+												<xr:CheckState>0</xr:CheckState>
+												<xr:Value xsi:type="FormChoiceListDesTimeValue">
+													<Presentation/>
+													<Value xsi:type="xr:DesignTimeRef">Enum.ВидыМестВыплатыЗарплаты.EnumValue.Раздатчик</Value>
+												</xr:Value>
+											</xr:Item>
+										</ChoiceList>
+										<ContextMenu name="ВидМестаВыплатыРаздатчикКонтекстноеМеню" id="27"/>
+										<ExtendedTooltip name="ВидМестаВыплатыРаздатчикExtendedTooltip" id="28"/>
+									</RadioButtonField>
+									<Pages name="МестоВыплатыРаздатчик" id="88">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Место выплаты раздатчик</v8:content>
+											</v8:item>
+										</Title>
+										<PagesRepresentation>None</PagesRepresentation>
+										<ExtendedTooltip name="МестоВыплатыРаздатчикExtendedTooltip" id="89"/>
+										<ChildItems>
+											<Page name="МестоВыплатыРаздатчикДоступно" id="90">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Место выплаты раздатчик доступно</v8:content>
+													</v8:item>
+												</Title>
+												<Group>Horizontal</Group>
+												<ShowTitle>false</ShowTitle>
+												<ExtendedTooltip name="МестоВыплатыРаздатчикДоступноExtendedTooltip" id="91"/>
+												<ChildItems>
+													<InputField name="МестоВыплатыРаздатчикДоступноПоле" id="92">
+														<DataPath>МестаВыплатыЗарплатыСотрудников.МестоВыплаты</DataPath>
+														<TitleLocation>None</TitleLocation>
+														<AutoMaxWidth>false</AutoMaxWidth>
+														<MaxWidth>45</MaxWidth>
+														<AutoMarkIncomplete>true</AutoMarkIncomplete>
+														<ChooseType>false</ChooseType>
+														<ChoiceParameterLinks>
+															<xr:Link>
+																<xr:Name>Отбор.Организация</xr:Name>
+																<xr:DataPath xsi:type="xs:string">18</xr:DataPath>
+																<xr:ValueChange>Clear</xr:ValueChange>
+															</xr:Link>
+														</ChoiceParameterLinks>
+														<ChoiceParameters>
+															<app:item name="Отбор.Роль">
+																<app:value xsi:type="FormChoiceListDesTimeValue">
+																	<Presentation/>
+																	<Value xsi:type="xr:DesignTimeRef">Enum.РолиФизическихЛиц.EnumValue.РаздатчикЗарплаты</Value>
+																</app:value>
+															</app:item>
+														</ChoiceParameters>
+														<ContextMenu name="МестоВыплатыРаздатчикДоступноПолеКонтекстноеМеню" id="93"/>
+														<ExtendedTooltip name="МестоВыплатыРаздатчикДоступноПолеExtendedTooltip" id="94"/>
+													</InputField>
+												</ChildItems>
+											</Page>
+											<Page name="МестоВыплатыРаздатчикНеДоступно" id="95">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Место выплаты раздатчик не доступно</v8:content>
+													</v8:item>
+												</Title>
+												<Group>Horizontal</Group>
+												<ShowTitle>false</ShowTitle>
+												<ExtendedTooltip name="МестоВыплатыРаздатчикНеДоступноExtendedTooltip" id="96"/>
+												<ChildItems>
+													<InputField name="МестоВыплатыРаздатчикНеДоступноПоле" id="97">
+														<DataPath>МестаВыплатыЗарплатыСотрудников.МестоВыплаты</DataPath>
+														<ReadOnly>true</ReadOnly>
+														<TitleLocation>None</TitleLocation>
+														<AutoMaxWidth>false</AutoMaxWidth>
+														<MaxWidth>45</MaxWidth>
+														<TextColor>style:ТекстЗапрещеннойЯчейкиЦвет</TextColor>
+														<ContextMenu name="МестоВыплатыРаздатчикНеДоступноПолеКонтекстноеМеню" id="98"/>
+														<ExtendedTooltip name="МестоВыплатыРаздатчикНеДоступноПолеExtendedTooltip" id="99"/>
+													</InputField>
+												</ChildItems>
+											</Page>
+										</ChildItems>
+									</Pages>
+								</ChildItems>
+							</UsualGroup>
+						</ChildItems>
+					</UsualGroup>
+					<LabelField name="РаспределениеПоСотруднику" id="296">
+						<TitleLocation>None</TitleLocation>
+						<Hiperlink>true</Hiperlink>
+						<ContextMenu name="РаспределениеПоСотрудникуКонтекстноеМеню" id="297"/>
+						<ExtendedTooltip name="РаспределениеПоСотрудникуРасширеннаяПодсказка" id="298"/>
+					</LabelField>
+					<UsualGroup name="ГруппаДетализацияМестВыплат" id="299">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Детализация мест выплат</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Детализация мест выплат</v8:content>
+							</v8:item>
+						</ToolTip>
+						<Width>76</Width>
+						<HorizontalStretch>false</HorizontalStretch>
+						<Group>Vertical</Group>
+						<Behavior>PopUp</Behavior>
+						<ExtendedTooltip name="ГруппаДетализацияМестВыплатРасширеннаяПодсказка" id="300"/>
+						<ChildItems>
+							<Table name="МестаВыплатыЗарплатыДетализация" id="301">
+								<Representation>List</Representation>
+								<Width>71</Width>
+								<MaxWidth>60</MaxWidth>
+								<AutoMaxHeight>false</AutoMaxHeight>
+								<HeightInTableRows>5</HeightInTableRows>
+								<AutoMaxRowsCount>false</AutoMaxRowsCount>
+								<MaxRowsCount>5</MaxRowsCount>
+								<HorizontalStretch>false</HorizontalStretch>
+								<EnableStartDrag>true</EnableStartDrag>
+								<EnableDrag>true</EnableDrag>
+								<RowFilter xsi:nil="true"/>
+								<ContextMenu name="МестаВыплатыЗарплатыДетализацияКонтекстноеМеню" id="302"/>
+								<AutoCommandBar name="МестаВыплатыЗарплатыДетализацияКоманднаяПанель" id="303"/>
+								<ExtendedTooltip name="МестаВыплатыЗарплатыДетализацияРасширеннаяПодсказка" id="304"/>
+								<SearchStringAddition name="МестаВыплатыЗарплатыДетализацияСтрокаПоиска" id="305">
+									<AdditionSource>
+										<Item>МестаВыплатыЗарплатыДетализация</Item>
+										<Type>SearchStringRepresentation</Type>
+									</AdditionSource>
+									<ContextMenu name="МестаВыплатыЗарплатыДетализацияСтрокаПоискаКонтекстноеМеню" id="306"/>
+									<ExtendedTooltip name="МестаВыплатыЗарплатыДетализацияСтрокаПоискаРасширеннаяПодсказка" id="307"/>
+								</SearchStringAddition>
+								<ViewStatusAddition name="МестаВыплатыЗарплатыДетализацияСостояниеПросмотра" id="308">
+									<AdditionSource>
+										<Item>МестаВыплатыЗарплатыДетализация</Item>
+										<Type>ViewStatusRepresentation</Type>
+									</AdditionSource>
+									<ContextMenu name="МестаВыплатыЗарплатыДетализацияСостояниеПросмотраКонтекстноеМеню" id="309"/>
+									<ExtendedTooltip name="МестаВыплатыЗарплатыДетализацияСостояниеПросмотраРасширеннаяПодсказка" id="310"/>
+								</ViewStatusAddition>
+								<SearchControlAddition name="МестаВыплатыЗарплатыДетализацияУправлениеПоиском" id="311">
+									<AdditionSource>
+										<Item>МестаВыплатыЗарплатыДетализация</Item>
+										<Type>SearchControl</Type>
+									</AdditionSource>
+									<ContextMenu name="МестаВыплатыЗарплатыДетализацияУправлениеПоискомКонтекстноеМеню" id="312"/>
+									<ExtendedTooltip name="МестаВыплатыЗарплатыДетализацияУправлениеПоискомРасширеннаяПодсказка" id="313"/>
+								</SearchControlAddition>
+								<ChildItems>
+									<InputField name="МестаВыплатыЗарплатыДетализацияСпособВыплаты" id="332">
+										<EditMode>EnterOnInput</EditMode>
+										<AutoMarkIncomplete>true</AutoMarkIncomplete>
+										<ContextMenu name="МестаВыплатыЗарплатыДетализацияСпособВыплатыКонтекстноеМеню" id="333"/>
+										<ExtendedTooltip name="МестаВыплатыЗарплатыДетализацияСпособВыплатыРасширеннаяПодсказка" id="334"/>
+									</InputField>
+									<InputField name="МестаВыплатыЗарплатыДетализацияВид" id="335">
+										<EditMode>EnterOnInput</EditMode>
+										<ListChoiceMode>true</ListChoiceMode>
+										<AutoMarkIncomplete>true</AutoMarkIncomplete>
+										<ContextMenu name="МестаВыплатыЗарплатыДетализацияВидКонтекстноеМеню" id="336"/>
+										<ExtendedTooltip name="МестаВыплатыЗарплатыДетализацияВидРасширеннаяПодсказка" id="337"/>
+									</InputField>
+									<InputField name="МестаВыплатыЗарплатыДетализацияМестоВыплаты" id="338">
+										<EditMode>EnterOnInput</EditMode>
+										<CreateButton>true</CreateButton>
+										<AutoMarkIncomplete>true</AutoMarkIncomplete>
+										<ChooseType>false</ChooseType>
+										<ContextMenu name="МестаВыплатыЗарплатыДетализацияМестоВыплатыКонтекстноеМеню" id="339"/>
+										<ExtendedTooltip name="МестаВыплатыЗарплатыДетализацияМестоВыплатыРасширеннаяПодсказка" id="340"/>
+									</InputField>
+									<LabelField name="МестаВыплатыЗарплатыДетализацияРаспределение" id="341">
+										<ReadOnly>true</ReadOnly>
+										<EditMode>EnterOnInput</EditMode>
+										<CellHyperlink>true</CellHyperlink>
+										<Hiperlink>true</Hiperlink>
+										<ContextMenu name="МестаВыплатыЗарплатыДетализацияРаспределениеКонтекстноеМеню" id="342"/>
+										<ExtendedTooltip name="МестаВыплатыЗарплатыДетализацияРаспределениеРасширеннаяПодсказка" id="343"/>
+									</LabelField>
+								</ChildItems>
+							</Table>
+							<UsualGroup name="ГруппаЗарплатныеПроектыИМестаВыплат" id="326">
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Группа зарплатные проекты и места выплат</v8:content>
+									</v8:item>
+								</ToolTip>
+								<Behavior>Usual</Behavior>
+								<Representation>NormalSeparation</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ThroughAlign>DontUse</ThroughAlign>
+								<ExtendedTooltip name="ГруппаЗарплатныеПроектыИМестаВыплатРасширеннаяПодсказка" id="327"/>
+								<ChildItems>
+									<Button name="КнопкаОткрытьЛицевыеСчетаЗарплатныхПроектов" id="328">
+										<Type>Hyperlink</Type>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="КнопкаОткрытьЛицевыеСчетаЗарплатныхПроектовРасширеннаяПодсказка" id="329"/>
+									</Button>
+									<Button name="ОткрытьСпособыИМестаВыплаты" id="330">
+										<Type>Hyperlink</Type>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="ОткрытьСпособыИМестаВыплатыРасширеннаяПодсказка" id="331"/>
+									</Button>
+								</ChildItems>
+							</UsualGroup>
+						</ChildItems>
+					</UsualGroup>
+				</ChildItems>
+			</UsualGroup>
+		</ChildItems>
+		<Attributes>
+			<Attribute name="МестаВыплатыЗарплатыСотрудников" id="1000001">
+				<Type>
+					<v8:Type>cfg:InformationRegisterRecordManager.МестаВыплатыЗарплатыСотрудников</v8:Type>
+				</Type>
+				<View>
+					<xr:Common>false</xr:Common>
+				</View>
+				<Edit>
+					<xr:Common>false</xr:Common>
+				</Edit>
+				<SavedData>true</SavedData>
+				<FunctionalOptions>
+					<Item>FunctionalOption.ИспользоватьРасчетЗарплатыРасширенная</Item>
+				</FunctionalOptions>
+			</Attribute>
+		</Attributes>
+	</BaseForm>
+</Form>

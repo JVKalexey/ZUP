@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="8c741fd7-16a2-4594-9cae-32fd000e50d6">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.КадровыйПереводСписком" category="Object">
+				<xr:TypeId>0c84ab9f-b4ae-4898-9b9e-ca6e97bacdcf</xr:TypeId>
+				<xr:ValueId>7d30e64b-1e07-4a4e-bda8-7649b4a64ef5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.КадровыйПереводСписком" category="Ref">
+				<xr:TypeId>86a47922-77f7-4233-8e98-1ebdf845dc1b</xr:TypeId>
+				<xr:ValueId>5e50dc97-d8ed-4544-b58e-5b67f3ad682c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.КадровыйПереводСписком" category="Selection">
+				<xr:TypeId>ba42e54b-9c86-4879-b720-e141654cfbc6</xr:TypeId>
+				<xr:ValueId>bc990e71-487d-4bd6-91c0-734341557c21</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.КадровыйПереводСписком" category="List">
+				<xr:TypeId>dfbc46fe-0188-4be5-aa0f-aab34182029c</xr:TypeId>
+				<xr:ValueId>1e2b10d2-2b18-4aa2-9526-7c5443c5a31a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.КадровыйПереводСписком" category="Manager">
+				<xr:TypeId>9eb6cfdb-4ca5-461f-95ce-c5ea5b320ae5</xr:TypeId>
+				<xr:ValueId>d1bb4b8b-e4da-4d72-af49-18c6a20428fb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>КадровыйПереводСписком</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>828c9cae-7dc7-48a2-af26-a9ceeabd120c</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="fa9608c9-c148-4a65-8706-daad6e9b568b">
+				<Properties>
+					<Name>УВМ_Подразделение</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение с другим префиксом</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПодразделенияОрганизаций</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Form>ФормаДокумента</Form>
+			<Form>ФормаСтроки</Form>
+			<TabularSection uuid="4802275d-8156-41bf-ae27-0d2f9760280d">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.КадровыйПереводСписком.Сотрудники" category="TabularSection">
+						<xr:TypeId>c98d6a58-d7c6-419f-a564-6b5543ad21ad</xr:TypeId>
+						<xr:ValueId>9fe3757d-b82e-4949-ac17-b537ad82da97</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.КадровыйПереводСписком.Сотрудники" category="TabularSectionRow">
+						<xr:TypeId>908e34a5-0ecd-4cb9-8eec-dcdeec1b7863</xr:TypeId>
+						<xr:ValueId>1164fbab-d139-49de-97a5-4c1ba1610eae</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Сотрудники</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>6c97999a-9333-4f70-98e3-89b5b25ba352</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="85d4b6f1-9257-4645-99db-8b2ec62afd02">
+						<Properties>
+							<Name>УВМ_Руководитель</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Руководитель</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="ddad5eea-c0f1-4677-8005-7a6d30312afb">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Сотрудник</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>80e32623-2c08-4337-8c32-48a639d6cf3d</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="662bb6f9-e99c-42e3-b46a-b31db3c40d34">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>ФизическоеЛицо</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>46fa26d0-3c66-4d83-b70e-58282c79963f</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="171804bf-f277-4ebd-bf68-5b16f26436db">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>ДатаНачала</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>714471c2-168e-4423-b1fa-b76154f125b4</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:dateTime</v8:Type>
+								<v8:DateQualifiers>
+									<v8:DateFractions>Date</v8:DateFractions>
+								</v8:DateQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="b7bcfa10-b7d2-444b-bd16-80c471555514">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>ДатаОкончания</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>5b1d0601-c812-446a-b318-25ab3a15897a</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:dateTime</v8:Type>
+								<v8:DateQualifiers>
+									<v8:DateFractions>Date</v8:DateFractions>
+								</v8:DateQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

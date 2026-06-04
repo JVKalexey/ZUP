@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="1294cd3c-4b63-4a61-aea5-7f31180f7427">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.ДанныеОбОплатеТрудаДляПодбораСотрудников" category="Record">
+				<xr:TypeId>2052f7c7-ce18-4a8f-a7da-563616f7f466</xr:TypeId>
+				<xr:ValueId>7861f37a-c753-4f5d-afca-d03d790a4d3e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.ДанныеОбОплатеТрудаДляПодбораСотрудников" category="Manager">
+				<xr:TypeId>f9229653-84cd-43b8-9b5a-2c2954b44ec0</xr:TypeId>
+				<xr:ValueId>f547113c-0027-44e4-abf4-b896f080dc9d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.ДанныеОбОплатеТрудаДляПодбораСотрудников" category="Selection">
+				<xr:TypeId>3441215b-b9d5-4074-ab7f-66abee24a2e5</xr:TypeId>
+				<xr:ValueId>4df27422-b19d-4890-8d72-aeed1d28bddd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.ДанныеОбОплатеТрудаДляПодбораСотрудников" category="List">
+				<xr:TypeId>56dc411c-ccce-449f-88be-42afa670b032</xr:TypeId>
+				<xr:ValueId>66daa7a9-04fd-447a-98cb-d678f1735ec2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ДанныеОбОплатеТрудаДляПодбораСотрудников" category="RecordSet">
+				<xr:TypeId>17e3ce51-3ed4-432b-b656-1c38b48229ac</xr:TypeId>
+				<xr:ValueId>83dec0c0-0225-4c27-8171-b0eba8617dcf</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ДанныеОбОплатеТрудаДляПодбораСотрудников" category="RecordKey">
+				<xr:TypeId>c8118886-67cc-4ec7-88b3-c490eb2c8d65</xr:TypeId>
+				<xr:ValueId>f5c5c07d-a81b-4acc-807b-ea25d927ff67</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ДанныеОбОплатеТрудаДляПодбораСотрудников" category="RecordManager">
+				<xr:TypeId>d7710f96-1b6b-4110-a5ca-ff4414a39cd0</xr:TypeId>
+				<xr:ValueId>0e3ee39d-2e21-4520-87ef-a8957002b80a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ДанныеОбОплатеТрудаДляПодбораСотрудников</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>1de6767d-ebcc-4401-b1fc-5d42065dbdf9</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="1a7b3943-e75e-47dc-917a-3388cbc08a01">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Филиал</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>84df68a3-29c9-4952-8883-d23cffff5fbd</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="a37c99ae-237a-4cfc-99b7-afc20a785b80">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ТарифнаяСтавка</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>85629a92-3a9a-4998-95e5-01debee847e4</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="291f3fe6-112a-4354-82e9-74072e353ebc">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ФОТ</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>6c2a631b-a62a-453a-ab44-5125299f9640</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="264e85a3-fa54-4be5-811f-066d55c145cf">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Надбавка</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>cf0eb60c-a0c0-476e-8fb2-56dce2fc47f2</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="e7bf5ea6-4c8a-4129-9c23-32a9270028b1">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СпособРасчетаАванса</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>0b8e500f-a11a-4e24-ab9c-cae254618ead</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.СпособыРасчетаАванса</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="0b894546-cfbb-4fb2-81b9-2ef04e15f6a2">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Аванс</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>b550fa9b-3de0-40d6-a9ad-4c9aa06987e8</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="312eafe6-7ce3-45a6-9c6b-df31a83e5e4e">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Сотрудник</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>029d4d0d-34f2-4684-854b-065e18f808c1</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="bf9ce195-ec40-47db-a4d7-a70e488abcbc">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ФизическоеЛицо</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>a975b1bc-2707-4487-ac18-cda643b972a0</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="1a955f43-da13-44f2-b3bb-53c43b72df65">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ИдентификаторЗаписи</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>efef1f0c-dd46-4732-bc0a-6373a498cbe6</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

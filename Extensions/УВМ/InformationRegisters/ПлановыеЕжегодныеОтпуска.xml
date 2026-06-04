@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="67f51755-4252-49af-9486-85376b69e2c3">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.ПлановыеЕжегодныеОтпуска" category="Record">
+				<xr:TypeId>7562abec-ce16-4b02-a9c9-980e06bddafa</xr:TypeId>
+				<xr:ValueId>2c2b5a92-1e25-4ba8-b100-e246a72d6418</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.ПлановыеЕжегодныеОтпуска" category="Manager">
+				<xr:TypeId>b1a1e8a2-f562-4c0c-b536-e590ca6df633</xr:TypeId>
+				<xr:ValueId>756d62e3-22a7-4aff-8281-0d84cb0e041e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.ПлановыеЕжегодныеОтпуска" category="Selection">
+				<xr:TypeId>a1705a75-5f18-4b7e-a3e5-d5c61f6fe934</xr:TypeId>
+				<xr:ValueId>4b695b95-0bb2-430e-a2bc-4942435a4d36</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.ПлановыеЕжегодныеОтпуска" category="List">
+				<xr:TypeId>92eaeb17-7fb8-4f5d-9642-aca5ceaced50</xr:TypeId>
+				<xr:ValueId>b0aa9a86-cc6d-4268-9d7f-b6126f085841</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ПлановыеЕжегодныеОтпуска" category="RecordSet">
+				<xr:TypeId>7da244b3-e941-4f6c-9d24-6b0844330284</xr:TypeId>
+				<xr:ValueId>792e24b3-292c-46a5-8108-ea07e801d4f0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ПлановыеЕжегодныеОтпуска" category="RecordKey">
+				<xr:TypeId>fca95d74-859b-43b0-954b-03cf58b63dc6</xr:TypeId>
+				<xr:ValueId>f668d136-0441-45c0-8fd8-d3359b96297e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ПлановыеЕжегодныеОтпуска" category="RecordManager">
+				<xr:TypeId>72f0a158-9c9d-42fc-8b07-0c05c0395f5e</xr:TypeId>
+				<xr:ValueId>bb8cdc77-a7be-403b-b866-d9d3c28c4ea9</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПлановыеЕжегодныеОтпуска</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>1f5b32a3-5dc5-44e7-ac16-6dad7b144fb1</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="4ee8d5a9-2098-42f1-9643-5ba826f36d55">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Запланирован</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>01eafd45-dfcb-4461-8de9-babf9fd9fcbb</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="bc25e445-72dc-47ab-b084-94f2aeaa4098">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Перенесен</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>2778c4cb-f3d7-4977-83f3-c7e238a65ad4</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Attribute uuid="88afc7a3-cb9c-47d5-828a-3e540255e26e">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДокументПланирования</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>9328251f-937a-4420-94d6-a5404dee87d6</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ГрафикОтпусков</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="3c2f6d69-a40e-49ca-be0e-f109332a83de">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>КоличествоДней</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>c83c2081-666b-4158-b77c-7320b120d2f3</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="7d62b988-1027-42ce-bd22-f3867688d7b3">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ВидОтпуска</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>063c8343-8d20-455c-8bef-cf6072f1ccec</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыОтпусков</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="76697cc2-6e63-4a6d-9973-f258459fe50b">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДатаОкончания</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>2f3c7243-2951-41a0-8350-e42db5cd61db</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="4e315d2f-0d87-443a-824c-4d4ef3036677">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>УдалитьПеренесеннаяДатаНачала</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>99ee17d5-fca1-4f1e-b02a-fd24830ec252</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="0cf3fe64-a0f2-4023-822e-a1258d40379f">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДокументПереноса</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>7bdf0bd6-415c-450d-aa97-86a6abdf23d2</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ПереносОтпуска</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="5433da9a-aa4d-4e30-950f-90c136e9911a">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Примечание</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>58fbf2e0-8ab5-4d26-b918-e63c162a07e2</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>1024</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="ffec4b4f-4daa-4de8-b1df-7aeaa3b8d105">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПеренесеннаяДатаОкончания</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>f09e034e-3d30-45ee-9d8d-cef3768940e9</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="c9e3f88c-c2fe-4676-a130-978c22042e25">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПеренесенноеКоличествоДней</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>675043eb-1d61-471c-8a2f-376f21e79eb7</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Dimension uuid="15f63698-c6c3-4a3d-a8b4-c73bfea35fff">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Организация</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>39f17645-128c-460e-8e4d-859791c9c08e</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="7ce4661d-4873-4a53-aff8-b62602ff33aa">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ФизическоеЛицо</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>3087ad7b-ee80-43ce-b70b-4dd42a02573a</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="702b1dec-fc7b-4e28-a6ae-cf9624633894">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Сотрудник</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>ad1ef020-2992-43dc-8777-1d4c52eac50b</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="4b5f1bc1-6829-480e-a574-b0b6dca6d0de">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДатаНачала</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>b91a0dab-72cf-43c5-9ff3-f20fb53a00fc</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="dbd6a141-de57-4d34-b527-23ae3485be9e">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПеренесеннаяДатаНачала</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>7e6bf51f-e707-4935-8b87-0ba73c519df8</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>
