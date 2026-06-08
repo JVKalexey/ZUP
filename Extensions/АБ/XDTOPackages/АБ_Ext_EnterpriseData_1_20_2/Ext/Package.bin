@@ -1,0 +1,15 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://v8.1c.ru/edi/AB_edi_stnd/EnterpriseData/1.20">
+	<import namespace="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20"/>
+	<import namespace="http://www.1c.ru/SSL/Exchange/Message"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.Сотрудники" base="d2p1:Ref"/>
+	<objectType name="КлючевыеСвойстваСотрудники">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/AB_edi_stnd/EnterpriseData/1.20" name="Ссылка" type="d3p1:Справочник.Сотрудники"/>
+		<property name="Наименование" type="xs:string"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Владелец" type="d3p1:КлючевыеСвойстваФизическоеЛицо"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.Сотрудники" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/AB_edi_stnd/EnterpriseData/1.20" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваСотрудники"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Должность" type="d3p1:КлючевыеСвойстваДолжности"/>
+		<property name="Подразделение" type="xs:string"/>
+	</objectType>
+</package>

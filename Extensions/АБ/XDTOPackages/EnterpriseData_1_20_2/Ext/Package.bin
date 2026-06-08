@@ -1,0 +1,27 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20">
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.Сотрудники" base="d2p1:Ref"/>
+	<objectType name="КлючевыеСвойстваСотрудники" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Ссылка" type="d3p1:СправочникСсылка.Сотрудники" lowerBound="0"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="ТабельныйНомер" type="xs:string"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ФизическоеЛицо" type="d3p1:КлючевыеСвойстваФизическоеЛицо"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ГоловнаяОрганизация" type="d3p1:КлючевыеСвойстваОрганизация"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваДолжности" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Ссылка" type="d3p1:СправочникСсылка.Должности" lowerBound="0"/>
+		<property name="Наименование" type="xs:string"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваФизическоеЛицо" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Ссылка" type="d3p1:СправочникСсылка.ФизическиеЛица" lowerBound="0"/>
+		<property name="ФИО" type="xs:string"/>
+		<property name="Фамилия" type="xs:string" lowerBound="0"/>
+		<property name="Имя" type="xs:string" lowerBound="0"/>
+		<property name="Отчество" type="xs:string" lowerBound="0"/>
+		<property name="ДатаРождения" type="xs:date" lowerBound="0"/>
+		<property name="КодВПрограмме" type="xs:string" lowerBound="0"/>
+		<property name="ИНН" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="12"/>
+		</property>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Группа" type="d3p1:КлючевыеСвойстваФизическоеЛицоГруппа" lowerBound="0"/>
+	</objectType>
+</package>
