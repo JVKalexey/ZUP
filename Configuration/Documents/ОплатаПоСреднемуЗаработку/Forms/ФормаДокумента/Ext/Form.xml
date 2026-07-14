@@ -70,6 +70,7 @@
 		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
 		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -5337,6 +5338,14 @@
 			</Item>
 			<Item>
 				<Command>CommonCommand.ЗадачиПоПредмету</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.ОтсутствияНаОснованииОбучения.StandardCommand.OpenByValue.ДокументОтсутствия</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

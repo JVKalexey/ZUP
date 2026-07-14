@@ -684,7 +684,7 @@
 													<Title formatted="false">
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Количество времени, в течении которого будет храниться история отправки и очередь отправки сообщений</v8:content>
+															<v8:content>Количество времени, в течение которого будет храниться история отправки и очередь отправки сообщений</v8:content>
 														</v8:item>
 													</Title>
 													<VerticalAlign>Top</VerticalAlign>
@@ -871,54 +871,27 @@
 													<ExtendedTooltip name="ПояснениеИспользоватьОбработкуОбъектов1СДокументооборотаРасширеннаяПодсказка" id="230"/>
 												</LabelDecoration>
 												<LabelDecoration name="ДекорацияОтделяющаяСпособХраненияФайловДО3" id="306">
+													<Font ref="style:NormalTextFont" height="35" kind="StyleItem"/>
 													<ContextMenu name="ДекорацияОтделяющаяСпособХраненияФайловДО3КонтекстноеМеню" id="307"/>
 													<ExtendedTooltip name="ДекорацияОтделяющаяСпособХраненияФайловДО3РасширеннаяПодсказка" id="308"/>
 												</LabelDecoration>
-												<RadioButtonField name="СпособХраненияПрисоединенныхФайловДО3" id="300">
-													<DataPath>СпособХраненияПрисоединенныхФайлов</DataPath>
+												<CheckBoxField name="ИспользоватьПрисоединенныеФайлы1СДокументооборота" id="300">
+													<DataPath>НаборКонстант.ИспользоватьПрисоединенныеФайлы1СДокументооборота</DataPath>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Хранение присоединенных файлов</v8:content>
+															<v8:content>Использовать 1С:Документооборот для хранения файлов</v8:content>
 														</v8:item>
 													</Title>
-													<RadioButtonType>Auto</RadioButtonType>
-													<ColumnsCount>1</ColumnsCount>
-													<ChoiceList>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation>
-																	<v8:item>
-																		<v8:lang>ru</v8:lang>
-																		<v8:content>1С:Документооборот не используется</v8:content>
-																	</v8:item>
-																</Presentation>
-																<Value xsi:type="xs:decimal">0</Value>
-															</xr:Value>
-														</xr:Item>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation>
-																	<v8:item>
-																		<v8:lang>ru</v8:lang>
-																		<v8:content>Файлы прикреплены к документам</v8:content>
-																	</v8:item>
-																</Presentation>
-																<Value xsi:type="xs:decimal">1</Value>
-															</xr:Value>
-														</xr:Item>
-													</ChoiceList>
-													<ContextMenu name="СпособХраненияПрисоединенныхФайловДО3КонтекстноеМеню" id="301"/>
-													<ExtendedTooltip name="СпособХраненияПрисоединенныхФайловДО3РасширеннаяПодсказка" id="302"/>
+													<TitleLocation>Right</TitleLocation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ИспользоватьПрисоединенныеФайлы1СДокументооборотаКонтекстноеМеню" id="301"/>
+													<ExtendedTooltip name="ИспользоватьПрисоединенныеФайлы1СДокументооборотаРасширеннаяПодсказка" id="302"/>
 													<Events>
-														<Event name="OnChange">СпособХраненияПрисоединенныхФайловПриИзменении</Event>
+														<Event name="OnChange">ИспользоватьПрисоединенныеФайлы1СДокументооборотаПриИзменении</Event>
 													</Events>
-												</RadioButtonField>
-												<LabelDecoration name="ПояснениеСпособХраненияДО3" id="303">
+												</CheckBoxField>
+												<LabelDecoration name="ПояснениеИспользоватьПрисоединенныеФайлы1СДокументооборота" id="303">
 													<Width>45</Width>
 													<AutoMaxWidth>false</AutoMaxWidth>
 													<Height>2</Height>
@@ -926,14 +899,15 @@
 													<Title formatted="false">
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Файлы могут прикрепляться к автоматически создаваемым документам 1С:Документооборота</v8:content>
+															<v8:content>Файлы будут прикрепляться к автоматически создаваемым документам 1С:Документооборота</v8:content>
 														</v8:item>
 													</Title>
 													<VerticalAlign>Top</VerticalAlign>
-													<ContextMenu name="ПояснениеСпособХраненияДО3КонтекстноеМеню" id="304"/>
-													<ExtendedTooltip name="ПояснениеСпособХраненияДО3РасширеннаяПодсказка" id="305"/>
+													<ContextMenu name="ПояснениеИспользоватьПрисоединенныеФайлы1СДокументооборотаКонтекстноеМеню" id="304"/>
+													<ExtendedTooltip name="ПояснениеИспользоватьПрисоединенныеФайлы1СДокументооборотаРасширеннаяПодсказка" id="305"/>
 												</LabelDecoration>
 												<LabelDecoration name="ДекорацияОтделяющаяНастройкиРегЗаданияДО3" id="288">
+													<Font ref="style:NormalTextFont" height="14" kind="StyleItem"/>
 													<ContextMenu name="ДекорацияОтделяющаяНастройкиРегЗаданияДО3КонтекстноеМеню" id="289"/>
 													<ExtendedTooltip name="ДекорацияОтделяющаяНастройкиРегЗаданияДО3РасширеннаяПодсказка" id="290"/>
 												</LabelDecoration>
@@ -1031,8 +1005,38 @@
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаКолонкаДО3ПраваяРасширеннаяПодсказка" id="236"/>
 											<ChildItems>
+												<CheckBoxField name="СоздаватьЭПДляОбъектов1СДокументооборотаСредствамиИС" id="346">
+													<DataPath>НаборКонстант.СоздаватьЭПДляОбъектов1СДокументооборотаСредствамиИС</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Создавать подписи средствами ИС</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>Right</TitleLocation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="СоздаватьЭПДляОбъектов1СДокументооборотаСредствамиИСКонтекстноеМеню" id="347"/>
+													<ExtendedTooltip name="СоздаватьЭПДляОбъектов1СДокументооборотаСредствамиИСРасширеннаяПодсказка" id="348"/>
+													<Events>
+														<Event name="OnChange">СоздаватьЭПДляОбъектов1СДокументооборотаСредствамиИСПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+												<LabelDecoration name="ПояснениеСоздаватьЭПДляОбъектов1СДокументооборотаСредствамиИС" id="349">
+													<Width>40</Width>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Height>3</Height>
+													<TextColor>style:ПоясняющийТекст</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Электронные подписи объектов 1С:Документооборота будут создаваться с использованием сертификатов и настроек, указанных на стороне ИС</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Top</VerticalAlign>
+													<ContextMenu name="ПояснениеСоздаватьЭПДляОбъектов1СДокументооборотаСредствамиИСКонтекстноеМеню" id="350"/>
+													<ExtendedTooltip name="ПояснениеСоздаватьЭПДляОбъектов1СДокументооборотаСредствамиИСРасширеннаяПодсказка" id="351"/>
+												</LabelDecoration>
 												<LabelDecoration name="ДекорацияОтделяющаяОграничениеНаФайлыДО3" id="320">
-													<Font ref="style:NormalTextFont" height="43" kind="StyleItem"/>
 													<ContextMenu name="ДекорацияОтделяющаяОграничениеНаФайлыДО3КонтекстноеМеню" id="321"/>
 													<ExtendedTooltip name="ДекорацияОтделяющаяОграничениеНаФайлыДО3РасширеннаяПодсказка" id="322"/>
 												</LabelDecoration>
@@ -1088,7 +1092,6 @@
 													<ExtendedTooltip name="ПояснениеМаксимальныйРазмерФайлаДляПередачиДО3РасширеннаяПодсказка" id="311"/>
 												</LabelDecoration>
 												<LabelDecoration name="ДекорацияОтделяющаяСрокХраненияСообщенийДО3" id="294">
-													<Font ref="style:NormalTextFont" height="36" kind="StyleItem"/>
 													<ContextMenu name="ДекорацияОтделяющаяСрокХраненияСообщенийДО3КонтекстноеМеню" id="295"/>
 													<ExtendedTooltip name="ДекорацияОтделяющаяСрокХраненияСообщенийДО3РасширеннаяПодсказка" id="296"/>
 												</LabelDecoration>
@@ -1135,7 +1138,7 @@
 													<Title formatted="false">
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Количество времени, в течении которого будет храниться история отправки и очередь отправки сообщений</v8:content>
+															<v8:content>Количество времени, в течение которого будет храниться история отправки и очередь отправки сообщений</v8:content>
 														</v8:item>
 													</Title>
 													<VerticalAlign>Top</VerticalAlign>
@@ -1284,6 +1287,7 @@
 				<Field>НаборКонстант.ИспользоватьЭлектроннуюПочту1СДокументооборота</Field>
 				<Field>НаборКонстант.МаксимальныйРазмерФайлаДляПередачиВ1СДокументооборот</Field>
 				<Field>НаборКонстант.НаименованиеКорневойПапкиФайлов1СДокументооборот</Field>
+				<Field>НаборКонстант.СоздаватьЭПДляОбъектов1СДокументооборотаСредствамиИС</Field>
 				<Field>НаборКонстант.СрокХраненияСообщенийВ1СДокументооборот</Field>
 			</UseAlways>
 		</Attribute>

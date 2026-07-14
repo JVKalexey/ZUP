@@ -904,32 +904,22 @@
 			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ЧисленностьНаКонецПериодаРаботниковЖенщин</dataPath>
-			<field>ЧисленностьНаКонецПериодаРаботниковЖенщин</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Численность женщин на конец периода</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ЧисленностьНаКонецПериодаРаботниковМладше18Лет</dataPath>
-			<field>ЧисленностьНаКонецПериодаРаботниковМладше18Лет</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Численность работников младше 18 лет на конец периода</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>Территория</dataPath>
 			<field>Территория</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Территория</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЧисленностьНаКонецПериодаСписочногоСоставаМладше18Лет</dataPath>
+			<field>ЧисленностьНаКонецПериодаСписочногоСоставаМладше18Лет</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Численность на конец периода списочного состава младше18 лет</v8:content>
 				</v8:item>
 			</title>
 		</field>
@@ -2738,17 +2728,10 @@
 	КОНЕЦ КАК ЧисленностьНаКонецПериодаРаботников,
 	ВЫБОР
 		КОГДА РАЗНОСТЬДАТ(ИтоговыеДанные.Сотрудник.ФизическоеЛицо.ДатаРождения, &amp;КонецПериода, ГОД) &lt; 18
-				И (ИтоговыеДанные.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятости.ОсновноеМестоРаботы)
-					ИЛИ ИтоговыеДанные.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятости.Совместительство))
+				И ИтоговыеДанные.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятости.ОсновноеМестоРаботы)
 			ТОГДА ИтоговыеДанные.ЧисленностьНаКонецПериода
 		ИНАЧЕ 0
-	КОНЕЦ КАК ЧисленностьНаКонецПериодаРаботниковМладше18Лет,
-	ВЫБОР
-		КОГДА ИтоговыеДанные.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятости.ОсновноеМестоРаботы)
-				ИЛИ ИтоговыеДанные.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятости.Совместительство)
-			ТОГДА ИтоговыеДанные.ЧисленностьНаКонецПериодаЖенщин
-		ИНАЧЕ 0
-	КОНЕЦ КАК ЧисленностьНаКонецПериодаРаботниковЖенщин,
+	КОНЕЦ КАК ЧисленностьНаКонецПериодаСписочногоСоставаМладше18Лет,
 	ВЫБОР
 		КОГДА ИтоговыеДанные.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятости.ОсновноеМестоРаботы)
 			ТОГДА ИтоговыеДанные.ЧисленностьНаКонецПериода
@@ -3194,12 +3177,8 @@
 		<expression>Сумма(СредняяЧисленностьЗаПериодРаботниковЖенщин)</expression>
 	</totalField>
 	<totalField>
-		<dataPath>ЧисленностьНаКонецПериодаРаботниковЖенщин</dataPath>
-		<expression>Сумма(ЧисленностьНаКонецПериодаРаботниковЖенщин)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>ЧисленностьНаКонецПериодаРаботниковМладше18Лет</dataPath>
-		<expression>Сумма(ЧисленностьНаКонецПериодаРаботниковМладше18Лет)</expression>
+		<dataPath>ЧисленностьНаКонецПериодаСписочногоСоставаМладше18Лет</dataPath>
+		<expression>Сумма(ЧисленностьНаКонецПериодаСписочногоСоставаМладше18Лет)</expression>
 	</totalField>
 	<parameter>
 		<name>ПериодОтчета</name>
@@ -7624,11 +7603,7 @@
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:use>false</dcsset:use>
-					<dcsset:field>ЧисленностьНаКонецПериодаРаботниковЖенщин</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:use>false</dcsset:use>
-					<dcsset:field>ЧисленностьНаКонецПериодаРаботниковМладше18Лет</dcsset:field>
+					<dcsset:field>ЧисленностьНаКонецПериодаСписочногоСоставаМладше18Лет</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:filter>
@@ -8575,10 +8550,7 @@
 					<dcsset:field>ЧисленностьНаКонецПериодаРаботников</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ЧисленностьНаКонецПериодаРаботниковЖенщин</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ЧисленностьНаКонецПериодаРаботниковМладше18Лет</dcsset:field>
+					<dcsset:field>ЧисленностьНаКонецПериодаСписочногоСоставаМладше18Лет</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:filter>

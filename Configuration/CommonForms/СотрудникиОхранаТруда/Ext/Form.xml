@@ -123,6 +123,13 @@
 									<ContextMenu name="РезультатыСпециальнойОценкиУсловийТрудаСрокДействияКонтекстноеМеню" id="160"/>
 									<ExtendedTooltip name="РезультатыСпециальнойОценкиУсловийТрудаСрокДействияРасширеннаяПодсказка" id="161"/>
 								</InputField>
+								<CheckBoxField name="РезультатыСпециальнойОценкиУсловийТрудаВыявленыВредныеОпасныеФакторы" id="605">
+									<DataPath>РезультатыСпециальнойОценкиУсловийТруда.ВыявленыВредныеОпасныеФакторы</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="РезультатыСпециальнойОценкиУсловийТрудаВыявленыВредныеОпасныеФакторыКонтекстноеМеню" id="606"/>
+									<ExtendedTooltip name="РезультатыСпециальнойОценкиУсловийТрудаВыявленыВредныеОпасныеФакторыРасширеннаяПодсказка" id="607"/>
+								</CheckBoxField>
 							</ChildItems>
 						</Table>
 					</ChildItems>
@@ -1221,6 +1228,17 @@
 						<v8:Type>cfg:DocumentRef.НесчастныйСлучайНаПроизводстве</v8:Type>
 					</Type>
 				</Column>
+				<Column name="ВыявленыВредныеОпасныеФакторы" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выявлены вредные (опасные) факторы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="Организация" id="9">
@@ -1355,11 +1373,6 @@
 			</Title>
 			<Type>
 				<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
-			</Type>
-		</Attribute>
-		<Attribute name="ДокументНаправлениеНаМедицинскийОсмотрПустаяСсылка" id="13">
-			<Type>
-				<v8:Type>cfg:DocumentRef.НаправлениеНаМедицинскийОсмотр</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="ВредныеФакторы" id="14">
@@ -1772,17 +1785,6 @@
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
-			</Type>
-		</Attribute>
-		<Attribute name="ДокументЗаказНаВыдачуСИЗПустаяСсылка" id="32">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Документ заказ на выдачу СИЗ пустая ссылка</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>cfg:DocumentRef.ЗаказНаВыдачуСИЗ</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="ТекущаяДата" id="4">

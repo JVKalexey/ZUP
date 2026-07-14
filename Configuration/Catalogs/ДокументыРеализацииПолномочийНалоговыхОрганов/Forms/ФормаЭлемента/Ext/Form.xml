@@ -482,6 +482,7 @@
 								</v8:item>
 							</Title>
 							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
 							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="4"/>
 							<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="56"/>
 						</LabelField>
@@ -1092,6 +1093,195 @@
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="ОшибкиНСПТекстОшибкиКонтекстноеМеню" id="340"/>
 							<ExtendedTooltip name="ОшибкиНСПТекстОшибкиРасширеннаяПодсказка" id="341"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКвитанцияОПрисвоенииСтатусаДОПП" id="504">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа квитанция о присвоении статуса ДОПП</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКвитанцияОПрисвоенииСтатусаДОППРасширеннаяПодсказка" id="505"/>
+			<ChildItems>
+				<LabelField name="СтатусДОПП" id="556">
+					<DataPath>ТекстСтатусаДОПП</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние</v8:content>
+						</v8:item>
+					</Title>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="СтатусДОППКонтекстноеМеню" id="557"/>
+					<ExtendedTooltip name="СтатусДОППРасширеннаяПодсказка" id="558"/>
+				</LabelField>
+				<LabelField name="СсылкаНаQRКод" id="559">
+					<DataPath>Объект.СсылкаНаQRКод</DataPath>
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>QR-код</v8:content>
+						</v8:item>
+					</Title>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Hiperlink>true</Hiperlink>
+					<ContextMenu name="СсылкаНаQRКодКонтекстноеМеню" id="560"/>
+					<ExtendedTooltip name="СсылкаНаQRКодРасширеннаяПодсказка" id="561"/>
+					<Events>
+						<Event name="Click">СсылкаНаQRКодНажатие</Event>
+					</Events>
+				</LabelField>
+				<LabelField name="НомерДОПП" id="509">
+					<DataPath>Объект.НомерУведомления</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер ДОПП</v8:content>
+						</v8:item>
+					</Title>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="НомерДОППКонтекстноеМеню" id="510"/>
+					<ExtendedTooltip name="НомерДОППРасширеннаяПодсказка" id="511"/>
+				</LabelField>
+				<LabelField name="ДатаДОПП" id="512">
+					<DataPath>Объект.ДатаУведомления</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата ДОПП</v8:content>
+						</v8:item>
+					</Title>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="ДатаДОППКонтекстноеМеню" id="513"/>
+					<ExtendedTooltip name="ДатаДОППРасширеннаяПодсказка" id="514"/>
+				</LabelField>
+				<UsualGroup name="ГруппаРеквизитыНалогоплательщикаЮЛ" id="518">
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРеквизитыНалогоплательщикаЮЛРасширеннаяПодсказка" id="519"/>
+					<ChildItems>
+						<LabelField name="НаименованиеНалогоплательщика" id="520">
+							<DataPath>Объект.НаименованиеСобственника</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="НаименованиеНалогоплательщикаКонтекстноеМеню" id="521"/>
+							<ExtendedTooltip name="НаименованиеНалогоплательщикаРасширеннаяПодсказка" id="522"/>
+						</LabelField>
+						<LabelField name="ИНННалогоплательщика" id="523">
+							<DataPath>Объект.ИННСобственника</DataPath>
+							<ContextMenu name="ИНННалогоплательщикаКонтекстноеМеню" id="524"/>
+							<ExtendedTooltip name="ИНННалогоплательщикаРасширеннаяПодсказка" id="525"/>
+						</LabelField>
+						<LabelField name="КППНалогоплательщика" id="526">
+							<DataPath>Объект.КППСобственника</DataPath>
+							<ContextMenu name="КППНалогоплательщикаКонтекстноеМеню" id="527"/>
+							<ExtendedTooltip name="КППНалогоплательщикаРасширеннаяПодсказка" id="528"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаРеквизитыНалогоплательщикаФЛ" id="529">
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРеквизитыНалогоплательщикаФЛРасширеннаяПодсказка" id="530"/>
+					<ChildItems>
+						<LabelField name="ФИОНалогоплательщика" id="531">
+							<DataPath>Объект.ФИОСобственника</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Фамилия, имя, отчество налогоплательщика</v8:content>
+								</v8:item>
+							</Title>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="ФИОНалогоплательщикаКонтекстноеМеню" id="532"/>
+							<ExtendedTooltip name="ФИОНалогоплательщикаРасширеннаяПодсказка" id="533"/>
+						</LabelField>
+						<LabelField name="ИННФЛНалогоплательщика" id="534">
+							<DataPath>Объект.ИННСобственника</DataPath>
+							<ContextMenu name="ИННФЛНалогоплательщикаКонтекстноеМеню" id="535"/>
+							<ExtendedTooltip name="ИННФЛНалогоплательщикаРасширеннаяПодсказка" id="536"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+				<Table name="ОшибкиКО" id="537">
+					<CommandBarLocation>None</CommandBarLocation>
+					<ReadOnly>true</ReadOnly>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.ОшибкиНСП</DataPath>
+					<CommandSet>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>CancelSearch</ExcludedCommand>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+						<ExcludedCommand>Find</ExcludedCommand>
+						<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+						<ExcludedCommand>MoveDown</ExcludedCommand>
+						<ExcludedCommand>MoveUp</ExcludedCommand>
+						<ExcludedCommand>OutputList</ExcludedCommand>
+						<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+						<ExcludedCommand>SelectAll</ExcludedCommand>
+						<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+						<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+						<ExcludedCommand>SortListAsc</ExcludedCommand>
+						<ExcludedCommand>SortListDesc</ExcludedCommand>
+					</CommandSet>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ОшибкиКОКонтекстноеМеню" id="538"/>
+					<AutoCommandBar name="ОшибкиКОКоманднаяПанель" id="539"/>
+					<ExtendedTooltip name="ОшибкиКОРасширеннаяПодсказка" id="540"/>
+					<SearchStringAddition name="ОшибкиКОСтрокаПоиска" id="541">
+						<AdditionSource>
+							<Item>ОшибкиКО</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ОшибкиКОСтрокаПоискаКонтекстноеМеню" id="542"/>
+						<ExtendedTooltip name="ОшибкиКОСтрокаПоискаРасширеннаяПодсказка" id="543"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ОшибкиКОСостояниеПросмотра" id="544">
+						<AdditionSource>
+							<Item>ОшибкиКО</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ОшибкиКОСостояниеПросмотраКонтекстноеМеню" id="545"/>
+						<ExtendedTooltip name="ОшибкиКОСостояниеПросмотраРасширеннаяПодсказка" id="546"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ОшибкиКОУправлениеПоиском" id="547">
+						<AdditionSource>
+							<Item>ОшибкиКО</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ОшибкиКОУправлениеПоискомКонтекстноеМеню" id="548"/>
+						<ExtendedTooltip name="ОшибкиКОУправлениеПоискомРасширеннаяПодсказка" id="549"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="ОшибкиКОКодОшибки" id="550">
+							<DataPath>Объект.ОшибкиНСП.КодОшибки</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОшибкиКОКодОшибкиКонтекстноеМеню" id="551"/>
+							<ExtendedTooltip name="ОшибкиКОКодОшибкиРасширеннаяПодсказка" id="552"/>
+						</InputField>
+						<InputField name="ОшибкиКОТекстОшибки" id="553">
+							<DataPath>Объект.ОшибкиНСП.ТекстОшибки</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОшибкиКОТекстОшибкиКонтекстноеМеню" id="554"/>
+							<ExtendedTooltip name="ОшибкиКОТекстОшибкиРасширеннаяПодсказка" id="555"/>
 						</InputField>
 					</ChildItems>
 				</Table>
@@ -1741,6 +1931,32 @@
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоКвитанцияОПрисвоенииСтатусаДОПП" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это квитанция о присвоении статуса ДОПП</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстСтатусаДОПП" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст статуса ДОПП</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 	</Attributes>

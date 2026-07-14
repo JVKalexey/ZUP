@@ -60,11 +60,10 @@
 				<v8:Type>cfg:ConstantValueManager.УдалитьХранитьИсториюЗадач</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьСинхронизациюКалендарей</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьПочтовыйКлиент</v8:Type>
-				<v8:Type>cfg:ConstantValueManager.ВерсияДополнительныхПравилПредставленияОтчетовУплатыНалогов</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользуетсяСинхронизацияДанныхСОтборомПоОрганизациям</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьПроцессыНаграждения</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ПапкаФайлов1САрхива</v8:Type>
-				<v8:Type>cfg:ConstantValueManager.ИспользоватьИнтеграциюСРаботаВРоссии</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьИнтеграциюСРаботаРоссии</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ДополнительныйЯзык2</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИнтеграцияС1САрхивомКодБазы</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьДатыЗапретаИзменения</v8:Type>
@@ -124,6 +123,7 @@
 				<v8:Type>cfg:ConstantValueManager.ИнтеграцияС1САрхивом</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.РаботаВХозрасчетнойОрганизации</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.НеИспользоватьНачислениеЗарплаты</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ПересчитыватьПродолжительностьВидовОтпусковПриИсправленииОтпуска</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьЭлектронноеИнтервью</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.МаксимальныйРазмерФайлаОбластиДанных</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьУчетОригиналовПервичныхДокументов</v8:Type>
@@ -136,6 +136,7 @@
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьАттестацииСотрудников</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьПодработки</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИнтеграцияС1САрхивомКаталог</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ВерсияПравилПредставленияОтчетовУплатыНалоговБЗК</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьУправленческуюЗарплату</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьСервисСклоненияMorpher</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ДатаУведомленияОНовыхЗадачахПоОбработкеДокументов</v8:Type>
@@ -152,13 +153,16 @@
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьСогласованиеЧерез1СДокументооборот</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ОтложенноеОбновлениеВГлавномУзлеЗавершеноУспешно</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьПростыеЭППриВыполненииЭтапов</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьДокументИзмененияМестаПозицииВСтруктуреПредприятия</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИнтеграцияС1САрхивомПассивныйРежимFTP</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ПроверятьПодписанныеДанныеПриОчередномПодписании</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИмяПользователя1САрхива</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ПодтверждатьОтправкуПакетовВ1САрхив</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьКлючевыеПоказателиЭффективности</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьПроцессыИЗадачи1СДокументооборота</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.СоздаватьЭПДляОбъектов1СДокументооборотаСредствамиИС</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.НаименованиеКорневойПапкиФайлов1СДокументооборот</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ХранитьПодписанныеДанныеXMLВПрисоединенныхФайлах</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.СписокРасширенийФайловOpenDocument</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьВидеоконференции</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ДатаОбработкиКадровыхДанныхФСС</v8:Type>
@@ -230,6 +234,7 @@
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьРезервыПоОплатеТруда</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ПользовательДляУведомлений</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьКадровыйУчет</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ВерсияФорматаОбменаС1САрхивомМаксимальная</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьПоследниеПодписиДокументов</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ОграничиватьДоступНаУровнеЗаписейЛичныеДанныеКандидатов</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИдентификаторКорневойПапкиФайлов1СДокументооборот</v8:Type>

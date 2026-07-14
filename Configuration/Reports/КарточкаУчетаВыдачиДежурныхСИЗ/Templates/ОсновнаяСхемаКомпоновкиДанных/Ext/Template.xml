@@ -388,7 +388,7 @@
 			<field>СпособВыдачи</field>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Дежурные</dataPath>
+			<dataPath>Дежурное</dataPath>
 			<field>Дежурное</field>
 		</field>
 		<dataSource>Информационная база</dataSource>
@@ -501,6 +501,16 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДежурноеВыдачи</dataPath>
+			<field>ДежурноеВыдачи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дежурное выдачи</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>Информационная база</dataSource>
 		<query>ВЫБРАТЬ
 	ВыданныеСИЗ.ФизическоеЛицо,
@@ -536,7 +546,12 @@
 			КОГДА ВыданныеСИЗ.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Расход)
 				ТОГДА ВЫРАЗИТЬ(ВыданныеСИЗ.Регистратор КАК Документ.СписаниеСИЗИзЭксплуатации).Номер
 			ИНАЧЕ ""
-		КОНЕЦ) КАК НомерАктаСписания
+		КОНЕЦ) КАК НомерАктаСписания,
+	МАКСИМУМ(ВЫБОР
+			КОГДА ВыданныеСИЗ.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Приход)
+				ТОГДА ВыданныеСИЗ.Дежурное
+			ИНАЧЕ ЛОЖЬ
+		КОНЕЦ) КАК ДежурноеВыдачи
 ИЗ
 	РегистрНакопления.ВыданныеСИЗ КАК ВыданныеСИЗ
 СГРУППИРОВАТЬ ПО
@@ -910,7 +925,7 @@
 				<dcsset:item xsi:type="dcsset:StructureItemGroup">
 					<dcsset:filter>
 						<dcsset:item xsi:type="dcsset:FilterItemComparison">
-							<dcsset:left xsi:type="dcscor:Field">Дежурные</dcsset:left>
+							<dcsset:left xsi:type="dcscor:Field">Дежурное</dcsset:left>
 							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
 						</dcsset:item>
@@ -932,7 +947,7 @@
 					<dcsset:item xsi:type="dcsset:StructureItemGroup">
 						<dcsset:filter>
 							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">Дежурные</dcsset:left>
+								<dcsset:left xsi:type="dcscor:Field">ДежурноеВыдачи</dcsset:left>
 								<dcsset:comparisonType>Equal</dcsset:comparisonType>
 								<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
 							</dcsset:item>

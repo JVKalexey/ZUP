@@ -224,6 +224,47 @@
 										</CheckBoxField>
 									</ChildItems>
 								</UsualGroup>
+								<UsualGroup name="ГруппаХранитьВТомах" id="174">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа хранить в томах</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа хранить в томах</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаХранитьВТомахРасширеннаяПодсказка" id="175"/>
+									<ChildItems>
+										<CheckBoxField name="ХранитьПодписанныеДанныеВТомах" id="181">
+											<DataPath>НаборКонстант.ХранитьПодписанныеДанныеXMLВПрисоединенныхФайлах</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Хранить подписанные данные XML в присоединенных файлах</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ХранитьПодписанныеДанныеВТомахКонтекстноеМеню" id="182"/>
+											<ExtendedTooltip name="ХранитьПодписанныеДанныеВТомахРасширеннаяПодсказка" id="183"/>
+											<Events>
+												<Event name="OnChange">ХранитьПодписанныеДанныеВТомахПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<Button name="ПереносПодписанныхДанныхВПрисоединенныеФайлы" id="179">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ПереносПодписанныхДанныхВПрисоединенныеФайлы</CommandName>
+											<ExtendedTooltip name="ПереносПодписанныхДанныхВПрисоединенныеФайлыРасширеннаяПодсказка" id="180"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
 								<LabelDecoration name="ЭлектроннаяПодписьЗаголовокПроверки" id="39">
 									<AutoMaxWidth>false</AutoMaxWidth>
 									<Font ref="style:NormalTextFont" kind="StyleItem"/>
@@ -1234,6 +1275,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>НастройкиОтображенияДатыПодписанияПереопределяемый</Action>
+		</Command>
+		<Command name="ПереносПодписанныхДанныхВПрисоединенныеФайлы" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенос подписанных данных в присоединенные файлы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенос подписанных данных в присоединенные файлы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПереносПодписанныхДанныхВПрисоединенныеФайлы</Action>
 		</Command>
 	</Commands>
 </Form>

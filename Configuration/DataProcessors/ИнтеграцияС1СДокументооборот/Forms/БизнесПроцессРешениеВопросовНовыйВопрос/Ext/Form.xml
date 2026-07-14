@@ -118,7 +118,7 @@
 						<InputField name="СтарыйСрокДата" id="102">
 							<DataPath>СтарыйСрок</DataPath>
 							<ReadOnly>true</ReadOnly>
-							<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<TitleFont ref="style:ОсновнойЭлементСписка" kind="StyleItem"/>
 							<Width>9</Width>
 							<EditFormat>
 								<v8:item>
@@ -162,7 +162,7 @@
 					<ChildItems>
 						<InputField name="НовыйСрокДата" id="110">
 							<DataPath>НовыйСрок</DataPath>
-							<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<TitleFont ref="style:ОсновнойЭлементСписка" kind="StyleItem"/>
 							<Width>9</Width>
 							<EditFormat>
 								<v8:item>
@@ -199,7 +199,7 @@
 							<TitleLocation>None</TitleLocation>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<TextColor>style:ЗакрытыйДокумент</TextColor>
-							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<Font ref="style:ОсновнойЭлементСписка" kind="StyleItem"/>
 							<ContextMenu name="ДлительностьПереносаКонтекстноеМеню" id="117"/>
 							<ExtendedTooltip name="ДлительностьПереносаРасширеннаяПодсказка" id="118"/>
 						</LabelField>

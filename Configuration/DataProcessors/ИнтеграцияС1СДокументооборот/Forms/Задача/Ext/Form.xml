@@ -240,7 +240,7 @@
 																	<v8:content>Задача</v8:content>
 																</v8:item>
 															</Title>
-															<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+															<TitleFont ref="style:ОсновнойЭлементСписка" kind="StyleItem"/>
 															<TitleLocation>Top</TitleLocation>
 															<Width>55</Width>
 															<AutoMaxWidth>false</AutoMaxWidth>
@@ -731,7 +731,7 @@
 											<ChildItems>
 												<LabelField name="СтарыйСрок" id="555">
 													<DataPath>СтарыйСрок</DataPath>
-													<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<TitleFont ref="style:ОсновнойЭлементСписка" kind="StyleItem"/>
 													<ContextMenu name="СтарыйСрокКонтекстноеМеню" id="556"/>
 													<ExtendedTooltip name="СтарыйСрокРасширеннаяПодсказка" id="557"/>
 												</LabelField>
@@ -750,7 +750,7 @@
 													<ChildItems>
 														<InputField name="НовыйСрокДата" id="558">
 															<DataPath>НовыйСрок</DataPath>
-															<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+															<TitleFont ref="style:ОсновнойЭлементСписка" kind="StyleItem"/>
 															<Width>9</Width>
 															<EditFormat>
 																<v8:item>
@@ -1325,14 +1325,13 @@
 									<EnableDrag>true</EnableDrag>
 									<FileDragMode>AsFile</FileDragMode>
 									<DataPath>Исполнители</DataPath>
-									<Font ref="sys:DefaultGUIFont" bold="false" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
 											<v8:content>Ход выполнения</v8:content>
 										</v8:item>
 									</Title>
-									<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<TitleFont ref="style:ОсновнойЭлементСписка" kind="StyleItem"/>
 									<SearchStringLocation>None</SearchStringLocation>
 									<ViewStatusLocation>None</ViewStatusLocation>
 									<SearchControlLocation>None</SearchControlLocation>
@@ -1650,7 +1649,7 @@
 											<v8:content>Комментарий</v8:content>
 										</v8:item>
 									</Title>
-									<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<TitleFont ref="style:ОсновнойЭлементСписка" kind="StyleItem"/>
 									<Height>3</Height>
 									<MultiLine>true</MultiLine>
 									<ContextMenu name="РезультатВыполненияСкрытыйКонтекстноеМеню" id="184"/>
@@ -1676,7 +1675,6 @@
 											<v8:content>Комментарий</v8:content>
 										</v8:item>
 									</Title>
-									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
 									<TitleLocation>None</TitleLocation>
 									<AutoMaxWidth>false</AutoMaxWidth>
 									<MultiLine>true</MultiLine>
@@ -1881,14 +1879,14 @@
 									<Height>2</Height>
 									<CommandName>Form.Command.ВыполнитьЗадачуПервая</CommandName>
 									<TextColor>style:ОтметкаПоложительногоВыполненияЗадачи</TextColor>
-									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Font ref="style:ОсновнойЭлементСписка" kind="StyleItem"/>
 									<ExtendedTooltip name="ВыполнитьЗадачуПерваяExtendedTooltip" id="421"/>
 								</Button>
 								<Button name="ВыполнитьЗадачуВторая" id="283">
 									<Type>UsualButton</Type>
 									<Height>2</Height>
 									<CommandName>Form.Command.ВыполнитьЗадачуВторая</CommandName>
-									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Font ref="style:ОсновнойЭлементСписка" kind="StyleItem"/>
 									<ExtendedTooltip name="ВыполнитьЗадачуВтораяExtendedTooltip" id="422"/>
 								</Button>
 								<Button name="ВыполнитьЗадачуТретья" id="284">
@@ -1896,7 +1894,7 @@
 									<Height>2</Height>
 									<CommandName>Form.Command.ВыполнитьЗадачуТретья</CommandName>
 									<TextColor>style:ОтметкаОтрицательногоВыполненияЗадачи</TextColor>
-									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Font ref="style:ОсновнойЭлементСписка" kind="StyleItem"/>
 									<ExtendedTooltip name="ВыполнитьЗадачуТретьяExtendedTooltip" id="423"/>
 								</Button>
 							</ChildItems>

@@ -1349,16 +1349,47 @@
 				<dcscom:dimension>true</dcscom:dimension>
 			</role>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗарегистрированоДляПередачиВБанкНаАУСН</dataPath>
+			<field>ЗарегистрированоДляПередачиВБанкНаАУСН</field>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
 	СведенияОДоходахНДФЛ.ФизическоеЛицо КАК ФизическоеЛицо,
-	СведенияОДоходахНДФЛ.ДатаПолученияДохода КАК Период
-ПОМЕСТИТЬ ВТПериодыФизлиц
+	СведенияОДоходахНДФЛ.ДатаПолученияДохода КАК ДатаПолученияДохода,
+	СведенияОДоходахНДФЛ.МесяцНалоговогоПериода КАК МесяцНалоговогоПериода,
+	СведенияОДоходахНДФЛ.ЗарегистрированоДляПередачиВБанкНаАУСН КАК ЗарегистрированоДляПередачиВБанкНаАУСН,
+	СведенияОДоходахНДФЛ.ГоловнаяОрганизация КАК ГоловнаяОрганизация
+ПОМЕСТИТЬ ВТДоходы
 ИЗ
 	РегистрНакопления.СведенияОДоходахНДФЛ КАК СведенияОДоходахНДФЛ
 {ГДЕ
 	(СведенияОДоходахНДФЛ.МесяцНалоговогоПериода МЕЖДУ &amp;НачалоНалоговогоПериода И &amp;КонецНалоговогоПериода),
 	(СведенияОДоходахНДФЛ.Период МЕЖДУ &amp;НачалоПериодаРасчета И &amp;КонецПериодаРасчета)}
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	СведенияОДоходахНДФЛ.ФизическоеЛицо КАК ФизическоеЛицо,
+	СведенияОДоходахНДФЛ.ГоловнаяОрганизация КАК ГоловнаяОрганизация,
+	НАЧАЛОПЕРИОДА(СведенияОДоходахНДФЛ.МесяцНалоговогоПериода, МЕСЯЦ) КАК МесяцНалоговогоПериода
+ПОМЕСТИТЬ ВТПериодыДоходовАУСН
+ИЗ
+	ВТДоходы КАК СведенияОДоходахНДФЛ
+ГДЕ
+	СведенияОДоходахНДФЛ.ЗарегистрированоДляПередачиВБанкНаАУСН = ИСТИНА
+
+ИНДЕКСИРОВАТЬ ПО
+	ФизическоеЛицо
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	СведенияОДоходахНДФЛ.ФизическоеЛицо КАК ФизическоеЛицо,
+	СведенияОДоходахНДФЛ.ДатаПолученияДохода КАК Период
+ПОМЕСТИТЬ ВТПериодыФизлиц
+ИЗ
+	ВТДоходы КАК СведенияОДоходахНДФЛ
 
 ОБЪЕДИНИТЬ
 
@@ -1510,10 +1541,10 @@
 	КОНЕЦ КАК Ставка,
 	ВЫБОР
 		КОГДА Доходы.КодДохода.СтавкаНалогообложенияРезидента = ЗНАЧЕНИЕ(Перечисление.НДФЛСтавкиНалогообложенияРезидента.Ставка13)
-						ТОГДА ЗНАЧЕНИЕ(Перечисление.НДФЛСтавкиНалогообложенияРезидента.Ставка13)
+			ТОГДА ЗНАЧЕНИЕ(Перечисление.НДФЛСтавкиНалогообложенияРезидента.Ставка13)
 		КОГДА Доходы.КатегорияДохода = ЗНАЧЕНИЕ(Перечисление.КатегорииДоходовНДФЛ.Дивиденды)
 				ИЛИ Доходы.КодДохода = ЗНАЧЕНИЕ(Справочник.ВидыДоходовНДФЛ.Код1010)
-				ТОГДА ЗНАЧЕНИЕ(Перечисление.НДФЛСтавкиНалогообложенияРезидента.Ставка09)
+			ТОГДА ЗНАЧЕНИЕ(Перечисление.НДФЛСтавкиНалогообложенияРезидента.Ставка09)
 		КОГДА ЕСТЬNULL(СтатусыНалогоплательщиков.Статус, ЗНАЧЕНИЕ(Справочник.СтатусыНалогоплательщиковПоНДФЛ.Резидент)) = ЗНАЧЕНИЕ(Справочник.СтатусыНалогоплательщиковПоНДФЛ.Резидент)
 			ТОГДА ВЫБОР
 					КОГДА Доходы.КодДохода.СтавкаНалогообложенияРезидента = ЗНАЧЕНИЕ(Перечисление.НДФЛСтавкиНалогообложенияРезидента.Ставка09)
@@ -1619,7 +1650,8 @@
 	0 КАК НалогЗачтеноНалогаНаПрибыльСПревышенияПоСтавке20,
 	0 КАК НалогЗачтеноНалогаНаПрибыльСПревышенияПоСтавке22,
 	0 КАК НалогЗачтеноНалогаНаПрибыльВсего,
-	ЗНАЧЕНИЕ(Перечисление.КатегорииДоходовНДФЛ.ПустаяСсылка) КАК ВидНалоговойБазы
+	ЗНАЧЕНИЕ(Перечисление.КатегорииДоходовНДФЛ.ПустаяСсылка) КАК ВидНалоговойБазы,
+	Доходы.ЗарегистрированоДляПередачиВБанкНаАУСН КАК ЗарегистрированоДляПередачиВБанкНаАУСН
 ИЗ
 	РегистрНакопления.СведенияОДоходахНДФЛ КАК Доходы
 		ЛЕВОЕ СОЕДИНЕНИЕ ВТСтатусыФизлиц КАК СтатусыНалогоплательщиков
@@ -1730,12 +1762,17 @@
 	0,
 	0,
 	0,
-	СтандартныеИСоциальныеВычеты.НалоговаяБаза
+	СтандартныеИСоциальныеВычеты.НалоговаяБаза,
+	ПериодыДоходовАУСН.ФизическоеЛицо ЕСТЬ НЕ NULL 
 ИЗ
 	РегистрНакопления.ПредоставленныеСтандартныеИСоциальныеВычетыНДФЛ КАК СтандартныеИСоциальныеВычеты
 		ЛЕВОЕ СОЕДИНЕНИЕ ВТСтатусыФизлиц КАК СтатусыНалогоплательщиков
 		ПО СтандартныеИСоциальныеВычеты.ФизическоеЛицо = СтатусыНалогоплательщиков.ФизическоеЛицо
 			И СтандартныеИСоциальныеВычеты.МесяцНалоговогоПериода = СтатусыНалогоплательщиков.Период
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТПериодыДоходовАУСН КАК ПериодыДоходовАУСН
+		ПО СтандартныеИСоциальныеВычеты.ФизическоеЛицо = ПериодыДоходовАУСН.ФизическоеЛицо
+			И СтандартныеИСоциальныеВычеты.ГоловнаяОрганизация = ПериодыДоходовАУСН.ГоловнаяОрганизация
+			И (НАЧАЛОПЕРИОДА(СтандартныеИСоциальныеВычеты.МесяцНалоговогоПериода, МЕСЯЦ) = ПериодыДоходовАУСН.МесяцНалоговогоПериода)
 {ГДЕ
 	(СтандартныеИСоциальныеВычеты.МесяцНалоговогоПериода МЕЖДУ &amp;НачалоНалоговогоПериода И &amp;КонецНалоговогоПериода),
 	(СтандартныеИСоциальныеВычеты.Период МЕЖДУ &amp;НачалоПериодаРасчета И &amp;КонецПериодаРасчета)}
@@ -1833,12 +1870,17 @@
 	0,
 	0,
 	0,
-	ВычетыПоУведомлениям.НалоговаяБаза
+	ВычетыПоУведомлениям.НалоговаяБаза,
+	ПериодыДоходовАУСН.ФизическоеЛицо ЕСТЬ НЕ NULL 
 ИЗ
 	РегистрНакопления.ИмущественныеВычетыНДФЛ КАК ВычетыПоУведомлениям
 		ЛЕВОЕ СОЕДИНЕНИЕ ВТСтатусыФизлиц КАК СтатусыНалогоплательщиков
 		ПО ВычетыПоУведомлениям.ФизическоеЛицо = СтатусыНалогоплательщиков.ФизическоеЛицо
 			И ВычетыПоУведомлениям.Период = СтатусыНалогоплательщиков.Период
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТПериодыДоходовАУСН КАК ПериодыДоходовАУСН
+		ПО ВычетыПоУведомлениям.ФизическоеЛицо = ПериодыДоходовАУСН.ФизическоеЛицо
+			И ВычетыПоУведомлениям.ГоловнаяОрганизация = ПериодыДоходовАУСН.ГоловнаяОрганизация
+			И (НАЧАЛОПЕРИОДА(ВычетыПоУведомлениям.МесяцРегистрации, МЕСЯЦ) = ПериодыДоходовАУСН.МесяцНалоговогоПериода)
 ГДЕ
 	ВычетыПоУведомлениям.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Расход)
 {ГДЕ
@@ -1919,7 +1961,7 @@
 				КОНЕЦ
 		ИНАЧЕ ЗНАЧЕНИЕ(Перечисление.НДФЛСтавки.Ставка30)
 	КОНЕЦ,
-	СтавкаНалогообложенияРезидента,
+	ИсчисленныйУдержанныйНалог.СтавкаНалогообложенияРезидента,
 	0,
 	ВЫБОР
 		КОГДА ИсчисленныйУдержанныйНалог.КрайнийСрокУплаты &lt; ДАТАВРЕМЯ(2016, 1, 1)
@@ -2169,12 +2211,17 @@
 			ТОГДА ИсчисленныйУдержанныйНалог.НалогНаПрибыльДляДивидендов + ИсчисленныйУдержанныйНалог.НалогСДивидендовУплаченныйЗаРубежом
 		ИНАЧЕ 0
 	КОНЕЦ,
-	ЗНАЧЕНИЕ(Перечисление.КатегорииДоходовНДФЛ.ПустаяСсылка)
+	ЗНАЧЕНИЕ(Перечисление.КатегорииДоходовНДФЛ.ПустаяСсылка),
+	ПериодыДоходовАУСН.ФизическоеЛицо ЕСТЬ НЕ NULL 
 ИЗ
 	РегистрНакопления.РасчетыНалогоплательщиковСБюджетомПоНДФЛ КАК ИсчисленныйУдержанныйНалог
 		ЛЕВОЕ СОЕДИНЕНИЕ ВТСтатусыФизлиц КАК СтатусыНалогоплательщиков
 		ПО ИсчисленныйУдержанныйНалог.ФизическоеЛицо = СтатусыНалогоплательщиков.ФизическоеЛицо
 			И ИсчисленныйУдержанныйНалог.МесяцНалоговогоПериода = СтатусыНалогоплательщиков.Период
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТПериодыДоходовАУСН КАК ПериодыДоходовАУСН
+		ПО ИсчисленныйУдержанныйНалог.ФизическоеЛицо = ПериодыДоходовАУСН.ФизическоеЛицо
+			И ИсчисленныйУдержанныйНалог.ГоловнаяОрганизация = ПериодыДоходовАУСН.ГоловнаяОрганизация
+			И (НАЧАЛОПЕРИОДА(ИсчисленныйУдержанныйНалог.МесяцНалоговогоПериода, МЕСЯЦ) = ПериодыДоходовАУСН.МесяцНалоговогоПериода)
 {ГДЕ
 	(ИсчисленныйУдержанныйНалог.МесяцНалоговогоПериода МЕЖДУ &amp;НачалоНалоговогоПериода И &amp;КонецНалоговогоПериода),
 	(ИсчисленныйУдержанныйНалог.Период МЕЖДУ &amp;НачалоПериодаРасчета И &amp;КонецПериодаРасчета)}
@@ -2269,7 +2316,8 @@
 	0,
 	0,
 	0,
-	NULL
+	NULL,
+	Ложь
 ИЗ
 	РегистрНакопления.РасчетыНалоговыхАгентовСБюджетомПоНДФЛ КАК РасчетыНалоговыхАгентовСБюджетомПоНДФЛ
 		ЛЕВОЕ СОЕДИНЕНИЕ ВТСтатусыФизлиц КАК СтатусыНалогоплательщиков
@@ -2362,7 +2410,8 @@
 	0,
 	0,
 	0,
-	NULL
+	NULL,
+	Ложь
 ИЗ
 	РегистрНакопления.УплатаНДФЛНалоговымиАгентамиКРаспределению.Остатки(&amp;ПериодНераспределенногоОстатка, ) КАК УплатаНДФЛНалоговымиАгентамиКРаспределениюОстатки
 ГДЕ
@@ -2864,7 +2913,14 @@
 	</calculatedField>
 	<calculatedField>
 		<dataPath>ВидНалоговойБазы</dataPath>
-		<expression>Выбор Когда ВидНалоговойБазы = Значение(Перечисление.КатегорииДоходовНДФЛ.ПустаяСсылка) Тогда СоставБаз.ВидНалоговойБазы Иначе ВидНалоговойБазы Конец</expression>
+		<expression>Выбор
+   Когда ЗарегистрированоДляПередачиВБанкНаАУСН = Истина Тогда
+      "АУСН"
+   Когда ВидНалоговойБазы = Значение(Перечисление.КатегорииДоходовНДФЛ.ПустаяСсылка) Тогда
+      СоставБаз.ВидНалоговойБазы 
+   Иначе 
+      ВидНалоговойБазы 
+Конец</expression>
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
@@ -2907,8 +2963,22 @@
 				</v8:item>
 			</presentation>
 		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:string">АУСН</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоматизированная УСН (АУСН)</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
 		<valueType>
+			<v8:Type>xs:string</v8:Type>
 			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.КатегорииДоходовНДФЛ</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>4</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
 		</valueType>
 	</calculatedField>
 	<totalField>
@@ -3650,6 +3720,11 @@
 							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
 						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ВидНалоговойБазы</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string">АУСН</dcsset:right>
+						</dcsset:item>
 					</dcsset:filter>
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
@@ -3680,6 +3755,11 @@
 							<dcsset:left xsi:type="dcscor:Field">ПараметрыДанных.ЕстьПериодыС2025Года</dcsset:left>
 							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ВидНалоговойБазы</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string">АУСН</dcsset:right>
 						</dcsset:item>
 					</dcsset:filter>
 					<dcsset:appearance>
@@ -3960,6 +4040,32 @@
 					<dcsset:useInHeader>DontUse</dcsset:useInHeader>
 					<dcsset:useInParameters>DontUse</dcsset:useInParameters>
 					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>СтавкаНалога</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ВидНалоговойБазы</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string">АУСН</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>13%</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
 				</dcsset:item>
 			</dcsset:conditionalAppearance>
 			<dcsset:outputParameters>
@@ -5274,6 +5380,11 @@
 							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
 						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ВидНалоговойБазы</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string">АУСН</dcsset:right>
+						</dcsset:item>
 					</dcsset:filter>
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
@@ -5304,6 +5415,11 @@
 							<dcsset:left xsi:type="dcscor:Field">ПараметрыДанных.ЕстьПериодыС2025Года</dcsset:left>
 							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ВидНалоговойБазы</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string">АУСН</dcsset:right>
 						</dcsset:item>
 					</dcsset:filter>
 					<dcsset:appearance>
@@ -5403,6 +5519,32 @@
 					<dcsset:useInHeader>DontUse</dcsset:useInHeader>
 					<dcsset:useInParameters>DontUse</dcsset:useInParameters>
 					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>СтавкаНалога</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ВидНалоговойБазы</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string">АУСН</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>13%</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
 				</dcsset:item>
 			</dcsset:conditionalAppearance>
 			<dcsset:outputParameters>
@@ -6503,6 +6645,11 @@
 							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
 						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ВидНалоговойБазы</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string">АУСН</dcsset:right>
+						</dcsset:item>
 					</dcsset:filter>
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
@@ -6533,6 +6680,11 @@
 							<dcsset:left xsi:type="dcscor:Field">ПараметрыДанных.ЕстьПериодыС2025Года</dcsset:left>
 							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ВидНалоговойБазы</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string">АУСН</dcsset:right>
 						</dcsset:item>
 					</dcsset:filter>
 					<dcsset:appearance>
@@ -6634,6 +6786,32 @@
 					<dcsset:useInHeader>DontUse</dcsset:useInHeader>
 					<dcsset:useInParameters>DontUse</dcsset:useInParameters>
 					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>СтавкаНалога</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ВидНалоговойБазы</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string">АУСН</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>13%</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
 				</dcsset:item>
 			</dcsset:conditionalAppearance>
 			<dcsset:outputParameters>
@@ -7733,6 +7911,11 @@
 							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
 						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ВидНалоговойБазы</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string">АУСН</dcsset:right>
+						</dcsset:item>
 					</dcsset:filter>
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
@@ -7763,6 +7946,11 @@
 							<dcsset:left xsi:type="dcscor:Field">ПараметрыДанных.ЕстьПериодыС2025Года</dcsset:left>
 							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ВидНалоговойБазы</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string">АУСН</dcsset:right>
 						</dcsset:item>
 					</dcsset:filter>
 					<dcsset:appearance>
@@ -8132,6 +8320,32 @@
 					<dcsset:useInHeader>DontUse</dcsset:useInHeader>
 					<dcsset:useInParameters>DontUse</dcsset:useInParameters>
 					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>СтавкаНалога</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ВидНалоговойБазы</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string">АУСН</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>13%</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
 				</dcsset:item>
 			</dcsset:conditionalAppearance>
 			<dcsset:outputParameters>
@@ -9593,6 +9807,11 @@
 							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
 						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ВидНалоговойБазы</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string">АУСН</dcsset:right>
+						</dcsset:item>
 					</dcsset:filter>
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
@@ -9623,6 +9842,11 @@
 							<dcsset:left xsi:type="dcscor:Field">ПараметрыДанных.ЕстьПериодыС2025Года</dcsset:left>
 							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ВидНалоговойБазы</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string">АУСН</dcsset:right>
 						</dcsset:item>
 					</dcsset:filter>
 					<dcsset:appearance>
@@ -9690,6 +9914,32 @@
 					<dcsset:useInHeader>DontUse</dcsset:useInHeader>
 					<dcsset:useInParameters>DontUse</dcsset:useInParameters>
 					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>СтавкаНалога</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ВидНалоговойБазы</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string">АУСН</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>13%</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
 				</dcsset:item>
 			</dcsset:conditionalAppearance>
 			<dcsset:outputParameters>
@@ -10833,6 +11083,11 @@
 							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
 						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ВидНалоговойБазы</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string">АУСН</dcsset:right>
+						</dcsset:item>
 					</dcsset:filter>
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
@@ -10899,6 +11154,32 @@
 					<dcsset:useInHeader>DontUse</dcsset:useInHeader>
 					<dcsset:useInParameters>DontUse</dcsset:useInParameters>
 					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>СтавкаНалога</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ВидНалоговойБазы</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string">АУСН</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>13%</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
 				</dcsset:item>
 			</dcsset:conditionalAppearance>
 			<dcsset:outputParameters>

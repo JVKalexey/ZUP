@@ -247,6 +247,31 @@
 								</Button>
 							</ChildItems>
 						</UsualGroup>
+						<UsualGroup name="АдресПубликацииВЛокальнойСетиГруппа" id="67">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Публикация в локальной сети</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="АдресПубликацииВЛокальнойСетиГруппаРасширеннаяПодсказка" id="73"/>
+							<ChildItems>
+								<InputField name="АдресПубликацииВЛокальнойСети" id="68">
+									<DataPath>АдресПубликацииВЛокальнойСети</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<ContextMenu name="АдресПубликацииВЛокальнойСетиКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="АдресПубликацииВЛокальнойСетиРасширеннаяПодсказка" id="69"/>
+								</InputField>
+								<Button name="СкопироватьАдресВЛокальнойСетиВБуферОбмена" id="71">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.СкопироватьАдресВЛокальнойСетиВБуферОбмена</CommandName>
+									<ExtendedTooltip name="СкопироватьАдресВЛокальнойСетиВБуферОбменаРасширеннаяПодсказка" id="72"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
 						<UsualGroup name="ТокенДоступаГруппа" id="1">
 							<Title>
 								<v8:item>
@@ -311,7 +336,22 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Адрес информационной базы</v8:content>
+					<v8:content>Адрес в Интернете</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресПубликацииВЛокальнойСети" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес в локальной сети</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -345,6 +385,20 @@
 				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>СкопироватьАдресПубликацииВБуферОбмена</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="СкопироватьАдресВЛокальнойСетиВБуферОбмена" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать адрес в локальной сети в буфер обмена</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>CommonPicture.СкопироватьВБуферОбмена</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>СкопироватьАдресВЛокальнойСетиВБуферОбмена</Action>
 			<Representation>Picture</Representation>
 		</Command>
 	</Commands>

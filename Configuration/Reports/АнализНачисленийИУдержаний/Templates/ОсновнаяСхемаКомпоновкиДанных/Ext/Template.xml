@@ -793,6 +793,16 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИдентификаторСтроки</dataPath>
+			<field>ИдентификаторСтроки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор строки</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<item xsi:type="DataSetQuery">
 			<name>НачисленияУдержания</name>
 			<field xsi:type="DataSetFieldField">
@@ -1286,6 +1296,16 @@
 					</v8:item>
 				</title>
 			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ИдентификаторСтроки</dataPath>
+				<field>ИдентификаторСтроки</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Идентификатор строки</v8:content>
+					</v8:item>
+				</title>
+			</field>
 			<dataSource>Данные</dataSource>
 			<query>ВЫБРАТЬ ПЕРВЫЕ 0
 	НачисленияУдержанияВыплаты.ОрганизацияСортировки КАК ОрганизацияСортировки,
@@ -1338,7 +1358,8 @@
 	НачисленияУдержанияВыплаты.ТерриторияНачисления КАК ТерриторияНачисления,
 	НачисленияУдержанияВыплаты.ПервыйМесяц КАК ПервыйМесяц,
 	НачисленияУдержанияВыплаты.ПоследнийМесяц КАК ПоследнийМесяц,
-	НачисленияУдержанияВыплаты.ПриоритетВидаРасчета КАК ПриоритетВидаРасчета
+	НачисленияУдержанияВыплаты.ПриоритетВидаРасчета КАК ПриоритетВидаРасчета,
+	НачисленияУдержанияВыплаты.ИдентификаторСтроки КАК ИдентификаторСтроки
 ПОМЕСТИТЬ ОбщиеЗапросы_НачисленияУдержания
 {ВЫБРАТЬ
 	МесяцНачисления,
@@ -1369,7 +1390,8 @@
 	ДолжностьНаКонецПериода.*,
 	ТарифнаяСтавкаНаКонецПериода,
 	ТерриторияНачисления,
-	ВремяВЧасах}
+	ВремяВЧасах,
+	ИдентификаторСтроки}
 ИЗ
 	(ВЫБРАТЬ ПЕРВЫЕ 0
 		ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка) КАК ОрганизацияСортировки,
@@ -1420,7 +1442,8 @@
 		NULL КАК ТерриторияНачисления,
 		NULL КАК ПервыйМесяц,
 		NULL КАК ПоследнийМесяц,
-		0 КАК ПриоритетВидаРасчета
+		0 КАК ПриоритетВидаРасчета,
+		0 КАК ИдентификаторСтроки
 	
 	ОБЪЕДИНИТЬ ВСЕ
 	
@@ -1464,6 +1487,7 @@
 		ЗНАЧЕНИЕ(Перечисление.ВидыЗанятости.ПустаяСсылка),
 		NULL,
 		0,
+		NULL,
 		NULL,
 		NULL,
 		NULL,
@@ -1526,6 +1550,7 @@
 		NULL,
 		NULL,
 		NULL,
+		NULL,
 		NULL
 	
 	ОБЪЕДИНИТЬ ВСЕ
@@ -1570,6 +1595,7 @@
 		ЗНАЧЕНИЕ(Перечисление.ВидыЗанятости.ПустаяСсылка),
 		NULL,
 		0,
+		NULL,
 		NULL,
 		NULL,
 		NULL,
@@ -1663,7 +1689,8 @@
 	Данные.ТерриторияНачисления КАК ТерриторияНачисления,
 	Данные.ПервыйМесяц КАК ПервыйМесяц,
 	Данные.ПоследнийМесяц КАК ПоследнийМесяц,
-	Данные.ПорядокПоказателей КАК ПорядокПоказателей
+	Данные.ПорядокПоказателей КАК ПорядокПоказателей,
+	Данные.ИдентификаторСтроки КАК ИдентификаторСтроки
 ИЗ
 	ОбщиеЗапросы_НачисленияУдержания КАК Данные</query>
 		</item>
@@ -2422,6 +2449,24 @@
 					<v8:item>
 						<v8:lang>ru</v8:lang>
 						<v8:content>Порядок показателей</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type>xs:decimal</v8:Type>
+					<v8:NumberQualifiers>
+						<v8:Digits>0</v8:Digits>
+						<v8:FractionDigits>0</v8:FractionDigits>
+						<v8:AllowedSign>Any</v8:AllowedSign>
+					</v8:NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ИдентификаторСтроки</dataPath>
+				<field>ИдентификаторСтроки</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Идентификатор строки</v8:content>
 					</v8:item>
 				</title>
 				<valueType>
@@ -11548,6 +11593,9 @@
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>ПользовательскиеПоля.Поле12</dcsset:field>
 				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ИдентификаторСтроки</dcsset:field>
+				</dcsset:item>
 				<dcsset:viewMode>Normal</dcsset:viewMode>
 			</dcsset:selection>
 			<dcsset:filter>
@@ -12015,6 +12063,13 @@
 									</dcsset:item>
 									<dcsset:item xsi:type="dcsset:GroupItemField">
 										<dcsset:field>ПорядокПоказателей</dcsset:field>
+										<dcsset:groupType>Items</dcsset:groupType>
+										<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+										<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+										<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:GroupItemField">
+										<dcsset:field>ИдентификаторСтроки</dcsset:field>
 										<dcsset:groupType>Items</dcsset:groupType>
 										<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 										<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
@@ -12854,6 +12909,13 @@
 										</dcsset:item>
 										<dcsset:item xsi:type="dcsset:GroupItemField">
 											<dcsset:field>ПорядокПоказателей</dcsset:field>
+											<dcsset:groupType>Items</dcsset:groupType>
+											<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+											<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+											<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+										</dcsset:item>
+										<dcsset:item xsi:type="dcsset:GroupItemField">
+											<dcsset:field>ИдентификаторСтроки</dcsset:field>
 											<dcsset:groupType>Items</dcsset:groupType>
 											<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 											<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
@@ -18935,6 +18997,13 @@
 									</dcsset:item>
 									<dcsset:item xsi:type="dcsset:GroupItemField">
 										<dcsset:field>ПорядокПоказателей</dcsset:field>
+										<dcsset:groupType>Items</dcsset:groupType>
+										<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+										<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+										<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:GroupItemField">
+										<dcsset:field>ИдентификаторСтроки</dcsset:field>
 										<dcsset:groupType>Items</dcsset:groupType>
 										<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 										<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>

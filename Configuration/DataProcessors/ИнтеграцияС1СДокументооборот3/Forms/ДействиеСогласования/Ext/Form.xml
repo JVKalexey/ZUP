@@ -249,6 +249,29 @@
 															</Button>
 														</ChildItems>
 													</ButtonGroup>
+													<Popup name="ПодменюСохранениеРезультатов" id="221">
+														<Visible>false</Visible>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Направить на новом цикле</v8:content>
+															</v8:item>
+														</Title>
+														<Representation>Text</Representation>
+														<ExtendedTooltip name="ПодменюСохранениеРезультатовРасширеннаяПодсказка" id="222"/>
+														<ChildItems>
+															<Button name="УчастникиПовторитьСогласованиеДляВсех" id="223">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ПовторитьСогласованиеДляВсех</CommandName>
+																<ExtendedTooltip name="УчастникиПовторитьСогласованиеДляВсехРасширеннаяПодсказка" id="224"/>
+															</Button>
+															<Button name="УчастникиПовторитьСогласованиеТолькоНесогласным" id="225">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ПовторитьСогласованиеТолькоНесогласным</CommandName>
+																<ExtendedTooltip name="УчастникиПовторитьСогласованиеТолькоНесогласнымРасширеннаяПодсказка" id="226"/>
+															</Button>
+														</ChildItems>
+													</Popup>
 													<Button name="Изменить" id="179">
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Item.Участники.StandardCommand.Change</CommandName>
@@ -340,6 +363,37 @@
 														<Event name="Clearing">ПредставлениеСтрокиОчистка</Event>
 														<Event name="TextEditEnd">ПредставлениеСтрокиОкончаниеВводаТекста</Event>
 														<Event name="ChoiceProcessing">ПредставлениеСтрокиОбработкаВыбора</Event>
+													</Events>
+												</InputField>
+												<InputField name="УчастникиРезультат" id="215">
+													<DataPath>Участники.РезультатПредставление</DataPath>
+													<Visible>false</Visible>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Результат</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="УчастникиРезультатКонтекстноеМеню" id="216"/>
+													<ExtendedTooltip name="УчастникиРезультатРасширеннаяПодсказка" id="217"/>
+												</InputField>
+												<InputField name="УчастникиНаправитьПредставление" id="218">
+													<DataPath>Участники.НаправитьНаНовомЦиклеПредставление</DataPath>
+													<Visible>false</Visible>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>На новом цикле</v8:content>
+														</v8:item>
+													</Title>
+													<ListChoiceMode>true</ListChoiceMode>
+													<ChooseType>false</ChooseType>
+													<TextEdit>false</TextEdit>
+													<ContextMenu name="УчастникиНаправитьПредставлениеКонтекстноеМеню" id="219"/>
+													<ExtendedTooltip name="УчастникиНаправитьПредставлениеРасширеннаяПодсказка" id="220"/>
+													<Events>
+														<Event name="OnChange">УчастникиНаправитьПредставлениеПриИзменении</Event>
 													</Events>
 												</InputField>
 												<PictureField name="УчастникиЗащищенный" id="62">
@@ -571,6 +625,9 @@
 																			<CheckBoxType>Auto</CheckBoxType>
 																			<ContextMenu name="ФормируетВизыКонтекстноеМеню" id="150"/>
 																			<ExtendedTooltip name="ФормируетВизыРасширеннаяПодсказка" id="151"/>
+																			<Events>
+																				<Event name="OnChange">ФормируетВизыПриИзменении</Event>
+																			</Events>
 																		</CheckBoxField>
 																		<UsualGroup name="ГруппаПодписыватьЭП" id="95">
 																			<Title>
@@ -825,7 +882,6 @@
 																					<v8:content>При получении результата "Не согласовано" отправить на повторное согласование можно будет ограниченное количество раз.</v8:content>
 																				</v8:item>
 																			</ToolTip>
-																			<ToolTipRepresentation>Button</ToolTipRepresentation>
 																			<DropListButton>false</DropListButton>
 																			<SpinButton>true</SpinButton>
 																			<ContextMenu name="МаксимальноеКоличествоЦикловКонтекстноеМеню" id="210"/>
@@ -850,6 +906,27 @@
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="ПродолжатьОбработкуПриОтрицательномРезультатеКонтекстноеМеню" id="213"/>
 															<ExtendedTooltip name="ПродолжатьОбработкуПриОтрицательномРезультатеРасширеннаяПодсказка" id="214"/>
+														</CheckBoxField>
+														<CheckBoxField name="РазрешитьСохранятьРезультаты" id="227">
+															<DataPath>РазрешитьСохранятьРезультаты</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Разрешить сохранение положительных результатов</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>Right</TitleLocation>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>При включённой опции можно сохранить положительные результаты предыдущих циклов согласования. 
+Сотрудники, согласовавшие документ, не будут получать повторные запросы — программа предложит повторить согласование только тем, кто ещё не согласовал.</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ToolTipRepresentation>Button</ToolTipRepresentation>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="РазрешитьСохранятьРезультатыКонтекстноеМеню" id="228"/>
+															<ExtendedTooltip name="РазрешитьСохранятьРезультатыРасширеннаяПодсказка" id="229"/>
 														</CheckBoxField>
 													</ChildItems>
 												</UsualGroup>
@@ -1782,6 +1859,58 @@
 						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
+				<Column name="НаправитьНаНовыйЦикл" id="59">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Направить на новый цикл</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="МожноСохранятьРезультат" id="60">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Можно сохранять результат</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НаправитьНаНовомЦиклеПредставление" id="61">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Направить на новом цикле представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="РезультатПредставление" id="64">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результат представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="АвторID" id="5">
@@ -2350,6 +2479,30 @@
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ЭтоДиалогССохранениемРезультатов" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это диалог с сохранением результатов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РазрешитьСохранятьРезультаты" id="63">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрешить сохранять результаты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
 		</Attribute>
 	</Attributes>
 	<Commands>
@@ -2544,6 +2697,24 @@
 				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>НаправитьНовымУчастникам</Action>
+		</Command>
+		<Command name="ПовторитьСогласованиеДляВсех" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Направить всем</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПовторитьСогласованиеДляВсех</Action>
+		</Command>
+		<Command name="ПовторитьСогласованиеТолькоНесогласным" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Направить только не согласовавшим</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПовторитьСогласованиеТолькоНесогласным</Action>
 		</Command>
 	</Commands>
 	<Parameters>

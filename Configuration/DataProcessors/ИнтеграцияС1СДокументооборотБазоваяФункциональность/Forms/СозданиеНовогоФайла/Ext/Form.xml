@@ -23,12 +23,6 @@
 			<CommandName>Form.Command.ЗагрузитьСДиска</CommandName>
 			<ExtendedTooltip name="ЗагрузитьСДискаРасширеннаяПодсказка" id="2"/>
 		</Button>
-		<Button name="ПрикрепитьСуществующий" id="3">
-			<Type>UsualButton</Type>
-			<Width>27</Width>
-			<CommandName>Form.Command.ПрикрепитьСуществующий</CommandName>
-			<ExtendedTooltip name="ПрикрепитьСуществующийРасширеннаяПодсказка" id="4"/>
-		</Button>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="2">
@@ -84,27 +78,6 @@
 				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>СоздатьПоШаблону</Action>
-			<Representation>TextPicture</Representation>
-			<CurrentRowUse>DontUse</CurrentRowUse>
-		</Command>
-		<Command name="ПрикрепитьСуществующий" id="4">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Прикрепить существующий...</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Выбрать файл из 1С:Документооборота и прикрепить его</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Picture>
-				<xr:Ref>CommonPicture.ДобавитьПредметПрикреплениемФормаНовогоФайла</xr:Ref>
-				<xr:LoadTransparent>false</xr:LoadTransparent>
-			</Picture>
-			<Action>ПрикрепитьСуществующий</Action>
 			<Representation>TextPicture</Representation>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>

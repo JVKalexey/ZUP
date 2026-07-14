@@ -13,16 +13,11 @@
 		<HorizontalAlign>Right</HorizontalAlign>
 		<Autofill>false</Autofill>
 		<ChildItems>
-			<Button name="ФормаПрименитьИЗакрыть" id="216">
+			<Button name="ФормаНазад" id="268">
 				<Type>CommandBarButton</Type>
-				<DefaultButton>true</DefaultButton>
-				<CommandName>Form.Command.ПрименитьИЗакрыть</CommandName>
-				<ExtendedTooltip name="ФормаПрименитьИЗакрытьРасширеннаяПодсказка" id="217"/>
-			</Button>
-			<Button name="ФормаПрименить" id="238">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.Применить</CommandName>
-				<ExtendedTooltip name="ФормаПрименитьРасширеннаяПодсказка" id="239"/>
+				<Visible>false</Visible>
+				<CommandName>Form.Command.Назад</CommandName>
+				<ExtendedTooltip name="ФормаНазадРасширеннаяПодсказка" id="269"/>
 			</Button>
 			<Button name="ФормаОтмена" id="230">
 				<Type>CommandBarButton</Type>
@@ -30,10 +25,28 @@
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
-						<v8:content>Отмена</v8:content>
+						<v8:content>Закрыть</v8:content>
 					</v8:item>
 				</Title>
 				<ExtendedTooltip name="ФормаОтменаРасширеннаяПодсказка" id="231"/>
+			</Button>
+			<Button name="ФормаПрименить" id="238">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<CommandName>Form.Command.Применить</CommandName>
+				<ExtendedTooltip name="ФормаПрименитьРасширеннаяПодсказка" id="239"/>
+			</Button>
+			<Button name="ФормаПрименитьИЗакрыть" id="216">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ПрименитьИЗакрыть</CommandName>
+				<ExtendedTooltip name="ФормаПрименитьИЗакрытьРасширеннаяПодсказка" id="217"/>
+			</Button>
+			<Button name="ФормаПросмотрИзменений" id="266">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПросмотрИзменений</CommandName>
+				<ExtendedTooltip name="ФормаПросмотрИзмененийРасширеннаяПодсказка" id="267"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -144,7 +157,7 @@
 			<Representation>None</Representation>
 			<ExtendedTooltip name="ГруппаВидыКонтактнойИнформацииРасширеннаяПодсказка" id="241"/>
 			<ChildItems>
-				<UsualGroup name="ГруппаКонтактнаяИнформация" id="253">
+				<UsualGroup name="ГруппаКонтактнаяИнформация" id="270">
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -152,9 +165,9 @@
 						</v8:item>
 					</ToolTip>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаКонтактнаяИнформацияРасширеннаяПодсказка" id="254"/>
+					<ExtendedTooltip name="ГруппаКонтактнаяИнформацияРасширеннаяПодсказка" id="271"/>
 					<ChildItems>
-						<LabelDecoration name="ДекорацияВидыКонтактнойИнформации" id="242">
+						<LabelDecoration name="ДекорацияВидыКонтактнойИнформации" id="272">
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<MaxWidth>50</MaxWidth>
 							<TextColor>style:ПоясняющийТекст</TextColor>
@@ -165,10 +178,10 @@
 По умолчанию используются предопределенные виды контактной информации. Вы можете создать собственные виды контактной информации и использовать их для публикации в сервисе.</v8:content>
 								</v8:item>
 							</Title>
-							<ContextMenu name="ДекорацияВидыКонтактнойИнформацииКонтекстноеМеню" id="243"/>
-							<ExtendedTooltip name="ДекорацияВидыКонтактнойИнформацииРасширеннаяПодсказка" id="244"/>
+							<ContextMenu name="ДекорацияВидыКонтактнойИнформацииКонтекстноеМеню" id="273"/>
+							<ExtendedTooltip name="ДекорацияВидыКонтактнойИнформацииРасширеннаяПодсказка" id="274"/>
 						</LabelDecoration>
-						<UsualGroup name="ГруппаТекущиеВидыКИ" id="255">
+						<UsualGroup name="ГруппаТекущиеВидыКИ" id="275">
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -177,9 +190,9 @@
 							</ToolTip>
 							<Group>Vertical</Group>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаТекущиеВидыКИРасширеннаяПодсказка" id="256"/>
+							<ExtendedTooltip name="ГруппаТекущиеВидыКИРасширеннаяПодсказка" id="276"/>
 							<ChildItems>
-								<InputField name="ВидКИМобильныйТелефон" id="245">
+								<InputField name="ВидКИМобильныйТелефон" id="277">
 									<DataPath>ВидКИМобильныйТелефон</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<Title>
@@ -191,10 +204,10 @@
 									<AutoMaxWidth>false</AutoMaxWidth>
 									<MaxWidth>20</MaxWidth>
 									<OpenButton>false</OpenButton>
-									<ContextMenu name="ВидКИМобильныйТелефонКонтекстноеМеню" id="246"/>
-									<ExtendedTooltip name="ВидКИМобильныйТелефонРасширеннаяПодсказка" id="247"/>
+									<ContextMenu name="ВидКИМобильныйТелефонКонтекстноеМеню" id="278"/>
+									<ExtendedTooltip name="ВидКИМобильныйТелефонРасширеннаяПодсказка" id="279"/>
 								</InputField>
-								<InputField name="ВидКИАдресЭлектроннойПочты" id="248">
+								<InputField name="ВидКИАдресЭлектроннойПочты" id="280">
 									<DataPath>ВидКИАдресЭлектроннойПочты</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<Title>
@@ -206,17 +219,17 @@
 									<AutoMaxWidth>false</AutoMaxWidth>
 									<MaxWidth>20</MaxWidth>
 									<OpenButton>false</OpenButton>
-									<ContextMenu name="ВидКИАдресЭлектроннойПочтыКонтекстноеМеню" id="249"/>
-									<ExtendedTooltip name="ВидКИАдресЭлектроннойПочтыРасширеннаяПодсказка" id="250"/>
+									<ContextMenu name="ВидКИАдресЭлектроннойПочтыКонтекстноеМеню" id="281"/>
+									<ExtendedTooltip name="ВидКИАдресЭлектроннойПочтыРасширеннаяПодсказка" id="282"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
-				<Button name="ИзменитьВидыКонтактнойИнформации" id="251">
+				<Button name="ИзменитьВидыКонтактнойИнформации" id="283">
 					<Type>Hyperlink</Type>
 					<CommandName>Form.Command.ИзменитьВидыКонтактнойИнформации</CommandName>
-					<ExtendedTooltip name="ИзменитьВидыКонтактнойИнформацииРасширеннаяПодсказка" id="252"/>
+					<ExtendedTooltip name="ИзменитьВидыКонтактнойИнформацииРасширеннаяПодсказка" id="284"/>
 				</Button>
 			</ChildItems>
 		</UsualGroup>
@@ -333,6 +346,51 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ПодразделенияНеотправляемыеСотрудникиГруппаРасширеннаяПодсказка" id="213"/>
 							<ChildItems>
+								<RadioButtonField name="РазрезНастроек" id="242">
+									<DataPath>РазрезНастроекЧисло</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройки отправки</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Top</TitleLocation>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<RadioButtonType>RadioButtons</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>По структуре предприятия</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">0</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>По подразделениям</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">1</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="РазрезНастроекКонтекстноеМеню" id="243"/>
+									<ExtendedTooltip name="РазрезНастроекРасширеннаяПодсказка" id="244"/>
+									<Events>
+										<Event name="OnChange">РазрезНастроекПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
 								<Table name="ПодразделенияОтбора" id="193">
 									<Representation>List</Representation>
 									<Height>3</Height>
@@ -648,6 +706,93 @@
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
+		<UsualGroup name="ИзмененияПоНастройкамГруппа" id="245">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменения</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ИзмененияПоНастройкамГруппаРасширеннаяПодсказка" id="246"/>
+			<ChildItems>
+				<Table name="ИзмененияПоСотрудникам" id="247">
+					<Representation>List</Representation>
+					<TitleLocation>Top</TitleLocation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<DataPath>ИзмененияПоСотрудникам</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменения отправляемых сотрудников по новым настройкам</v8:content>
+						</v8:item>
+					</Title>
+					<CommandSet>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+						<ExcludedCommand>MoveDown</ExcludedCommand>
+						<ExcludedCommand>MoveUp</ExcludedCommand>
+						<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+					</CommandSet>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ИзмененияПоСотрудникамКонтекстноеМеню" id="248"/>
+					<AutoCommandBar name="ИзмененияПоСотрудникамКоманднаяПанель" id="249">
+						<HorizontalAlign>Right</HorizontalAlign>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ИзмененияПоСотрудникамРасширеннаяПодсказка" id="250"/>
+					<SearchStringAddition name="ИзмененияПоСотрудникамСтрокаПоиска" id="251">
+						<AdditionSource>
+							<Item>ИзмененияПоСотрудникам</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ИзмененияПоСотрудникамСтрокаПоискаКонтекстноеМеню" id="252"/>
+						<ExtendedTooltip name="ИзмененияПоСотрудникамСтрокаПоискаРасширеннаяПодсказка" id="253"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ИзмененияПоСотрудникамСостояниеПросмотра" id="254">
+						<AdditionSource>
+							<Item>ИзмененияПоСотрудникам</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ИзмененияПоСотрудникамСостояниеПросмотраКонтекстноеМеню" id="255"/>
+						<ExtendedTooltip name="ИзмененияПоСотрудникамСостояниеПросмотраРасширеннаяПодсказка" id="256"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ИзмененияПоСотрудникамУправлениеПоиском" id="257">
+						<AdditionSource>
+							<Item>ИзмененияПоСотрудникам</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ИзмененияПоСотрудникамУправлениеПоискомКонтекстноеМеню" id="258"/>
+						<ExtendedTooltip name="ИзмененияПоСотрудникамУправлениеПоискомРасширеннаяПодсказка" id="259"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="ИзмененияПоСотрудникамСотрудник" id="260">
+							<DataPath>ИзмененияПоСотрудникам.Сотрудник</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ИзмененияПоСотрудникамСотрудникКонтекстноеМеню" id="261"/>
+							<ExtendedTooltip name="ИзмененияПоСотрудникамСотрудникРасширеннаяПодсказка" id="262"/>
+						</InputField>
+						<InputField name="ИзмененияПоСотрудникамВидИзменения" id="263">
+							<DataPath>ИзмененияПоСотрудникам.ВидИзменения</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ИзмененияПоСотрудникамВидИзмененияКонтекстноеМеню" id="264"/>
+							<ExtendedTooltip name="ИзмененияПоСотрудникамВидИзмененияРасширеннаяПодсказка" id="265"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -719,16 +864,11 @@
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
 			<Settings xsi:type="v8:TypeDescription">
-				<v8:TypeSet>cfg:DefinedType.МестоВСтруктуреПредприятия</v8:TypeSet>
+				<v8:TypeSet>cfg:DefinedType.ПодразделениеБронированияКомандировок</v8:TypeSet>
 			</Settings>
 		</Attribute>
 		<Attribute name="РезультатВыполненияДлительнойОперации" id="20">
 			<Type/>
-		</Attribute>
-		<Attribute name="ИспользоватьОтборПоПодразделениям" id="21">
-			<Type>
-				<v8:Type>xs:boolean</v8:Type>
-			</Type>
 		</Attribute>
 		<Attribute name="КартинкиФормы" id="22">
 			<Type/>
@@ -745,7 +885,95 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ВидКИАдресЭлектроннойПочты" id="3">
+		<Attribute name="ИспользоватьОтборПоПодразделениям" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать отбор по подразделениям</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоСтруктуреПредприятия" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По структуре предприятия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СтруктураПредприятияСоответствуетСтруктуреЮридическихЛиц" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Структура предприятия соответствует структуре юридических лиц</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РазрезНастроекЧисло" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрез настроек число</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИзмененияПоСотрудникам" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменения по сотрудникам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Сотрудник" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сотрудник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВидИзменения" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид изменения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ВидКИАдресЭлектроннойПочты" id="9">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -756,7 +984,7 @@
 				<v8:Type>cfg:CatalogRef.ВидыКонтактнойИнформации</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ВидКИМобильныйТелефон" id="4">
+		<Attribute name="ВидКИМобильныйТелефон" id="10">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -808,7 +1036,38 @@
 			</Title>
 			<Action>Применить</Action>
 		</Command>
-		<Command name="ИзменитьВидыКонтактнойИнформации" id="4">
+		<Command name="ПросмотрИзменений" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Далее &gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просмотр изменений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПросмотрИзменений</Action>
+		</Command>
+		<Command name="Назад" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt; Назад</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назад</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Назад</Action>
+			<AssociatedTableElementId xsi:type="xs:string">ИзмененияПоСотрудникам</AssociatedTableElementId>
+		</Command>
+		<Command name="ИзменитьВидыКонтактнойИнформации" id="6">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>

@@ -1295,6 +1295,17 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ПоказатьОстаток" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать остаток</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="Отклонить" id="2">
@@ -1593,6 +1604,11 @@
 		</Parameter>
 		<Parameter name="МассивОтпечатков">
 			<Type/>
+		</Parameter>
+		<Parameter name="ПоказатьОстаток">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
 		</Parameter>
 	</Parameters>
 	<CommandInterface>

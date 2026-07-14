@@ -12,9 +12,10 @@
 		<property name="responses" type="xs:anyType" lowerBound="0" upperBound="-1"/>
 	</objectType>
 	<objectType xmlns:d2p1="http://www.1c.ru/dmil" name="DMILCheckExpressionOnBuiltInLanguageRequest" base="d2p1:DMILRequest">
+		<property name="expressionOnBuiltInLanguage" type="xs:string"/>
+		<property name="forTabularSection" type="xs:boolean" lowerBound="0"/>
 		<property name="objectType" type="xs:string"/>
 		<property name="tabularSectionName" type="xs:string" lowerBound="0"/>
-		<property name="expressionOnBuiltInLanguage" type="xs:string"/>
 	</objectType>
 	<objectType xmlns:d2p1="http://www.1c.ru/dmil" name="DMILCreateRelatedIntegrationRuleExistenceRequest" base="d2p1:DMILRequest">
 		<property name="relatedDataLoadingRule" type="d2p1:id"/>
@@ -27,6 +28,7 @@
 	<objectType xmlns:d2p1="http://www.1c.ru/dmil" name="DMILError" base="d2p1:DMILResponse">
 		<property name="description" type="xs:string"/>
 		<property name="subject" type="xs:string"/>
+		<property name="externalObjectsWithoutErrors" type="d2p1:ExternalObjectID" lowerBound="0" upperBound="-1"/>
 	</objectType>
 	<objectType name="DMILExpressionRow">
 		<property xmlns:d3p1="http://www.1c.ru/dmil" name="id" type="d3p1:id"/>

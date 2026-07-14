@@ -681,6 +681,19 @@
 					<ContextMenu name="КомандаПросмотрВзносовКонтекстноеМеню" id="97"/>
 					<ExtendedTooltip name="КомандаПросмотрВзносовРасширеннаяПодсказка" id="98"/>
 				</LabelField>
+				<InputField name="НачисленияУдержанияВзносыМестоПолученияДохода" id="202">
+					<DataPath>Объект.НачисленияУдержанияВзносы.МестоПолученияДохода</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ClearButton>true</ClearButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НачисленияУдержанияВзносыМестоПолученияДоходаКонтекстноеМеню" id="203"/>
+					<ExtendedTooltip name="НачисленияУдержанияВзносыМестоПолученияДоходаРасширеннаяПодсказка" id="204"/>
+					<Events>
+						<Event name="OnChange">НачисленияУдержанияВзносыМестоПолученияДоходаПриИзменении</Event>
+						<Event name="ChoiceProcessing">НачисленияУдержанияВзносыМестоПолученияДоходаОбработкаВыбора</Event>
+					</Events>
+				</InputField>
 			</ChildItems>
 		</Table>
 		<UsualGroup name="ПодписиГруппа" id="123">

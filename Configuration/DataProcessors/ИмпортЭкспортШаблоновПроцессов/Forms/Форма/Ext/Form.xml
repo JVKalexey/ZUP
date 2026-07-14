@@ -244,6 +244,13 @@
 										</InputField>
 									</ChildItems>
 								</ColumnGroup>
+								<InputField name="ВыгружаемыеШаблоныОписание" id="220">
+									<DataPath>ВыгружаемыеШаблоны.Описание</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ВыгружаемыеШаблоныОписаниеКонтекстноеМеню" id="221"/>
+									<ExtendedTooltip name="ВыгружаемыеШаблоныОписаниеРасширеннаяПодсказка" id="222"/>
+								</InputField>
 							</ChildItems>
 						</Table>
 					</ChildItems>
@@ -365,6 +372,20 @@
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ЗагружатьНастройкиИспользованияКонтекстноеМеню" id="184"/>
 									<ExtendedTooltip name="ЗагружатьНастройкиИспользованияРасширеннаяПодсказка" id="185"/>
+								</CheckBoxField>
+								<CheckBoxField name="ЗагружатьНастройкиСвойствЭлементов" id="223">
+									<DataPath>ЗагружатьНастройкиСвойствЭлементов</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Загружать новые настройки управления свойствами элементов формы</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ЗагружатьНастройкиСвойствЭлементовКонтекстноеМеню" id="224"/>
+									<ExtendedTooltip name="ЗагружатьНастройкиСвойствЭлементовРасширеннаяПодсказка" id="225"/>
 								</CheckBoxField>
 							</ChildItems>
 						</UsualGroup>
@@ -915,6 +936,21 @@
 					</Title>
 					<Type>
 						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Описание" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 				</Column>
 			</Columns>
@@ -1473,6 +1509,17 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Скрывать неиспользуемые</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗагружатьНастройкиСвойствЭлементов" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загружать настройки свойств элементов</v8:content>
 				</v8:item>
 			</Title>
 			<Type>

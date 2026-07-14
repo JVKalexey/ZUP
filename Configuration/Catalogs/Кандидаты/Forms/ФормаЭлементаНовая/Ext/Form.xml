@@ -122,6 +122,18 @@
 				<CommandSource>Form</CommandSource>
 				<ExtendedTooltip name="ГруппаКнопокСтандартРасширеннаяПодсказка" id="539"/>
 			</ButtonGroup>
+			<Button name="НастроитьПереносКонтактнойИнформации" id="3027">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.НастроитьПереносКонтактнойИнформации</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Настроить перенос контактов</v8:content>
+					</v8:item>
+				</Title>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="НастроитьПереносКонтактнойИнформацииРасширеннаяПодсказка" id="3028"/>
+			</Button>
 			<Button name="ИспользоватьСтаруюФормуОбъекта" id="2834">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ИспользоватьСтаруюФормуОбъекта</CommandName>
@@ -366,35 +378,155 @@
 																</LabelField>
 															</ChildItems>
 														</UsualGroup>
-														<LabelDecoration name="ДекорацияАдрес" id="1223">
-															<Visible>false</Visible>
-															<ContextMenu name="ДекорацияАдресКонтекстноеМеню" id="1224"/>
-															<ExtendedTooltip name="ДекорацияАдресРасширеннаяПодсказка" id="1225"/>
-														</LabelDecoration>
-														<UsualGroup name="ГруппаТелефон" id="2886">
+														<UsualGroup name="ГруппаАдрес" id="3040">
 															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Телефон</v8:content>
+																	<v8:content>Группа адрес</v8:content>
 																</v8:item>
 															</Title>
 															<HorizontalSpacing>Half</HorizontalSpacing>
 															<ShowTitle>false</ShowTitle>
-															<ExtendedTooltip name="ГруппаТелефонРасширеннаяПодсказка" id="2887"/>
+															<ExtendedTooltip name="ГруппаАдресРасширеннаяПодсказка" id="3041"/>
 															<ChildItems>
-																<LabelDecoration name="ДекорацияТелефон" id="1229">
-																	<Hyperlink>true</Hyperlink>
-																	<ContextMenu name="ДекорацияТелефонКонтекстноеМеню" id="1230"/>
-																	<ExtendedTooltip name="ДекорацияТелефонРасширеннаяПодсказка" id="1231"/>
-																	<Events>
-																		<Event name="Click">ДекорацияТелефонНажатие</Event>
-																	</Events>
+																<PictureDecoration name="КаритинкаАдрес" id="3042">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Каритинка адрес</v8:content>
+																		</v8:item>
+																	</Title>
+																	<GroupVerticalAlign>Center</GroupVerticalAlign>
+																	<Picture>
+																		<xr:Ref>CommonPicture.Адрес</xr:Ref>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="КаритинкаАдресКонтекстноеМеню" id="3043"/>
+																	<ExtendedTooltip name="КаритинкаАдресРасширеннаяПодсказка" id="3044"/>
+																</PictureDecoration>
+																<LabelDecoration name="ДекорацияАдрес" id="1223">
+																	<ContextMenu name="ДекорацияАдресКонтекстноеМеню" id="1224"/>
+																	<ExtendedTooltip name="ДекорацияАдресРасширеннаяПодсказка" id="1225"/>
 																</LabelDecoration>
-																<LabelDecoration name="ДекорацияТелефонКомментарий" id="2890">
-																	<ContextMenu name="ДекорацияТелефонКомментарийКонтекстноеМеню" id="2891"/>
-																	<ExtendedTooltip name="ДекорацияТелефонКомментарийРасширеннаяПодсказка" id="2892"/>
-																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаТелефонМессенджеры" id="3029">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа телефон мессенджеры</v8:content>
+																</v8:item>
+															</Title>
+															<Group>AlwaysHorizontal</Group>
+															<HorizontalSpacing>Half</HorizontalSpacing>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаТелефонМессенджерыРасширеннаяПодсказка" id="3030"/>
+															<ChildItems>
+																<UsualGroup name="ГруппаТелефон" id="2886">
+																	<Visible>false</Visible>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Телефон</v8:content>
+																		</v8:item>
+																	</Title>
+																	<HorizontalSpacing>Half</HorizontalSpacing>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="ГруппаТелефонРасширеннаяПодсказка" id="2887"/>
+																	<ChildItems>
+																		<PictureDecoration name="КартинкаТелефон" id="3045">
+																			<Title formatted="false">
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Картинка телефон</v8:content>
+																				</v8:item>
+																			</Title>
+																			<GroupVerticalAlign>Center</GroupVerticalAlign>
+																			<Picture>
+																				<xr:Ref>CommonPicture.ТелефонныйЗвонок</xr:Ref>
+																				<xr:LoadTransparent>false</xr:LoadTransparent>
+																			</Picture>
+																			<ContextMenu name="КартинкаТелефонКонтекстноеМеню" id="3046"/>
+																			<ExtendedTooltip name="КартинкаТелефонРасширеннаяПодсказка" id="3047"/>
+																		</PictureDecoration>
+																		<LabelDecoration name="ДекорацияТелефон" id="1229">
+																			<Hyperlink>true</Hyperlink>
+																			<ContextMenu name="ДекорацияТелефонКонтекстноеМеню" id="1230"/>
+																			<ExtendedTooltip name="ДекорацияТелефонРасширеннаяПодсказка" id="1231"/>
+																			<Events>
+																				<Event name="Click">ДекорацияТелефонНажатие</Event>
+																			</Events>
+																		</LabelDecoration>
+																		<LabelDecoration name="ДекорацияТелефонКомментарий" id="2890">
+																			<ContextMenu name="ДекорацияТелефонКомментарийКонтекстноеМеню" id="2891"/>
+																			<ExtendedTooltip name="ДекорацияТелефонКомментарийРасширеннаяПодсказка" id="2892"/>
+																		</LabelDecoration>
+																	</ChildItems>
+																</UsualGroup>
+																<UsualGroup name="ГруппаМессенджеры" id="2990">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа мессенджеры</v8:content>
+																		</v8:item>
+																	</Title>
+																	<HorizontalSpacing>Half</HorizontalSpacing>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="ГруппаМессенджерыРасширеннаяПодсказка" id="2991"/>
+																	<ChildItems>
+																		<PictureDecoration name="Telegram" id="2995">
+																			<Visible>false</Visible>
+																			<Title formatted="false">
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Telegram</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ToolTip>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Открыть профиль в Telegram</v8:content>
+																				</v8:item>
+																			</ToolTip>
+																			<Hyperlink>true</Hyperlink>
+																			<Picture>
+																				<xr:Ref>CommonPicture.ЛоготипTelegram</xr:Ref>
+																				<xr:LoadTransparent>false</xr:LoadTransparent>
+																			</Picture>
+																			<ContextMenu name="TelegramКонтекстноеМеню" id="2996"/>
+																			<ExtendedTooltip name="TelegramРасширеннаяПодсказка" id="2997"/>
+																			<Events>
+																				<Event name="Click">TelegramНажатие</Event>
+																			</Events>
+																		</PictureDecoration>
+																		<PictureDecoration name="MAX" id="2992">
+																			<Visible>false</Visible>
+																			<Title formatted="false">
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>MAX</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ToolTip>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Открыть профиль в MAX</v8:content>
+																				</v8:item>
+																			</ToolTip>
+																			<Hyperlink>true</Hyperlink>
+																			<Picture>
+																				<xr:Ref>CommonPicture.ЛоготипMAX</xr:Ref>
+																				<xr:LoadTransparent>false</xr:LoadTransparent>
+																			</Picture>
+																			<ContextMenu name="MAXКонтекстноеМеню" id="2993"/>
+																			<ExtendedTooltip name="MAXРасширеннаяПодсказка" id="2994"/>
+																			<Events>
+																				<Event name="Click">MAXНажатие</Event>
+																			</Events>
+																		</PictureDecoration>
+																	</ChildItems>
+																</UsualGroup>
 															</ChildItems>
 														</UsualGroup>
 														<UsualGroup name="ГруппаПочта" id="2888">
@@ -409,6 +541,21 @@
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаПочтаРасширеннаяПодсказка" id="2889"/>
 															<ChildItems>
+																<PictureDecoration name="КартинкаПочта" id="3048">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Картинка почта</v8:content>
+																		</v8:item>
+																	</Title>
+																	<GroupVerticalAlign>Center</GroupVerticalAlign>
+																	<Picture>
+																		<xr:Ref>CommonPicture.ЭлектроннаяПочта</xr:Ref>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="КартинкаПочтаКонтекстноеМеню" id="3049"/>
+																	<ExtendedTooltip name="КартинкаПочтаРасширеннаяПодсказка" id="3050"/>
+																</PictureDecoration>
 																<LabelDecoration name="ДекорацияПочта" id="1232">
 																	<Hyperlink>true</Hyperlink>
 																	<ContextMenu name="ДекорацияПочтаКонтекстноеМеню" id="1233"/>
@@ -751,11 +898,27 @@
 																				</v8:item>
 																			</Title>
 																			<Group>AlwaysHorizontal</Group>
+																			<HorizontalSpacing>Half</HorizontalSpacing>
 																			<Behavior>Usual</Behavior>
 																			<Representation>None</Representation>
 																			<ShowTitle>false</ShowTitle>
 																			<ExtendedTooltip name="ГруппаКонтактнаяИнформацияПолеАдресЛичныеДанныеКандидатовРасширеннаяПодсказка" id="2847"/>
 																			<ChildItems>
+																				<PictureDecoration name="КаритинкаАдресРедактирование" id="3037">
+																					<Title formatted="false">
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Каритинка адрес редактирование</v8:content>
+																						</v8:item>
+																					</Title>
+																					<GroupVerticalAlign>Center</GroupVerticalAlign>
+																					<Picture>
+																						<xr:Ref>CommonPicture.Адрес</xr:Ref>
+																						<xr:LoadTransparent>false</xr:LoadTransparent>
+																					</Picture>
+																					<ContextMenu name="КаритинкаАдресРедактированиеКонтекстноеМеню" id="3038"/>
+																					<ExtendedTooltip name="КаритинкаАдресРедактированиеРасширеннаяПодсказка" id="3039"/>
+																				</PictureDecoration>
 																				<InputField name="КонтактнаяИнформацияПолеАдресЛичныеДанныеКандидатов" id="2848">
 																					<DataPath>КонтактнаяИнформацияПолеАдресЛичныеДанныеКандидатов</DataPath>
 																					<Title>
@@ -783,11 +946,27 @@
 																				</v8:item>
 																			</Title>
 																			<Group>AlwaysHorizontal</Group>
+																			<HorizontalSpacing>Half</HorizontalSpacing>
 																			<Behavior>Usual</Behavior>
 																			<Representation>None</Representation>
 																			<ShowTitle>false</ShowTitle>
 																			<ExtendedTooltip name="ГруппаКонтактнаяИнформацияПолеТелефонЛичныеДанныеКандидатовРасширеннаяПодсказка" id="2852"/>
 																			<ChildItems>
+																				<PictureDecoration name="КартинкаТелефонРедактирование" id="3031">
+																					<Title formatted="false">
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Картинка телефон редактирование</v8:content>
+																						</v8:item>
+																					</Title>
+																					<GroupVerticalAlign>Center</GroupVerticalAlign>
+																					<Picture>
+																						<xr:Ref>CommonPicture.ТелефонныйЗвонок</xr:Ref>
+																						<xr:LoadTransparent>false</xr:LoadTransparent>
+																					</Picture>
+																					<ContextMenu name="КартинкаТелефонРедактированиеКонтекстноеМеню" id="3032"/>
+																					<ExtendedTooltip name="КартинкаТелефонРедактированиеРасширеннаяПодсказка" id="3033"/>
+																				</PictureDecoration>
 																				<InputField name="КонтактнаяИнформацияПолеТелефонЛичныеДанныеКандидатов" id="2853">
 																					<DataPath>КонтактнаяИнформацияПолеТелефонЛичныеДанныеКандидатов</DataPath>
 																					<Title>
@@ -826,11 +1005,27 @@
 																				</v8:item>
 																			</Title>
 																			<Group>AlwaysHorizontal</Group>
+																			<HorizontalSpacing>Half</HorizontalSpacing>
 																			<Behavior>Usual</Behavior>
 																			<Representation>None</Representation>
 																			<ShowTitle>false</ShowTitle>
 																			<ExtendedTooltip name="ГруппаКонтактнаяИнформацияПолеEMailЛичныеДанныеКандидатовРасширеннаяПодсказка" id="2862"/>
 																			<ChildItems>
+																				<PictureDecoration name="КартинкаПочтаРедактирование" id="3034">
+																					<Title formatted="false">
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Картинка почта редактирование</v8:content>
+																						</v8:item>
+																					</Title>
+																					<GroupVerticalAlign>Center</GroupVerticalAlign>
+																					<Picture>
+																						<xr:Ref>CommonPicture.ЭлектроннаяПочта</xr:Ref>
+																						<xr:LoadTransparent>false</xr:LoadTransparent>
+																					</Picture>
+																					<ContextMenu name="КартинкаПочтаРедактированиеКонтекстноеМеню" id="3035"/>
+																					<ExtendedTooltip name="КартинкаПочтаРедактированиеРасширеннаяПодсказка" id="3036"/>
+																				</PictureDecoration>
 																				<InputField name="КонтактнаяИнформацияПолеEMailЛичныеДанныеКандидатов" id="2863">
 																					<DataPath>КонтактнаяИнформацияПолеEMailЛичныеДанныеКандидатов</DataPath>
 																					<Title>
@@ -859,6 +1054,170 @@
 																					<ContextMenu name="КомментарийКонтактнаяИнформацияПолеEMailЛичныеДанныеКандидатовКонтекстноеМеню" id="2867"/>
 																					<ExtendedTooltip name="КомментарийКонтактнаяИнформацияПолеEMailЛичныеДанныеКандидатовРасширеннаяПодсказка" id="2868"/>
 																				</InputField>
+																			</ChildItems>
+																		</UsualGroup>
+																		<UsualGroup name="ГруппаКонтактнаяИнформацияПолеМессенджерыЛичныеДанныеКандидатов" id="2998">
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Контактная информация (Мессенджеры)</v8:content>
+																				</v8:item>
+																			</Title>
+																			<Group>AlwaysHorizontal</Group>
+																			<Behavior>Usual</Behavior>
+																			<Representation>None</Representation>
+																			<ShowTitle>false</ShowTitle>
+																			<ExtendedTooltip name="ГруппаКонтактнаяИнформацияПолеМессенджерыЛичныеДанныеКандидатовРасширеннаяПодсказка" id="2999"/>
+																			<ChildItems>
+																				<UsualGroup name="ГруппаTelegram" id="3014">
+																					<Title>
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Группа telegram</v8:content>
+																						</v8:item>
+																					</Title>
+																					<HorizontalSpacing>Half</HorizontalSpacing>
+																					<ShowTitle>false</ShowTitle>
+																					<ExtendedTooltip name="ГруппаTelegramРасширеннаяПодсказка" id="3015"/>
+																					<ChildItems>
+																						<PictureDecoration name="КартинкаTelegram" id="3011">
+																							<Title formatted="false">
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>Картинка telegram</v8:content>
+																								</v8:item>
+																							</Title>
+																							<GroupVerticalAlign>Center</GroupVerticalAlign>
+																							<Picture>
+																								<xr:Ref>CommonPicture.ЛоготипTelegram</xr:Ref>
+																								<xr:LoadTransparent>false</xr:LoadTransparent>
+																							</Picture>
+																							<ContextMenu name="КартинкаTelegramКонтекстноеМеню" id="3012"/>
+																							<ExtendedTooltip name="КартинкаTelegramРасширеннаяПодсказка" id="3013"/>
+																						</PictureDecoration>
+																						<InputField name="КонтактнаяИнформацияПолеTelegramЛичныеДанныеКандидатов" id="3000">
+																							<DataPath>КонтактнаяИнформацияПолеTelegramЛичныеДанныеКандидатов</DataPath>
+																							<Title>
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>Telegram</v8:content>
+																								</v8:item>
+																							</Title>
+																							<HorizontalStretch>false</HorizontalStretch>
+																							<InputHint>
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>@никнейм</v8:content>
+																								</v8:item>
+																							</InputHint>
+																							<ContextMenu name="КонтактнаяИнформацияПолеTelegramЛичныеДанныеКандидатовКонтекстноеМеню" id="3001"/>
+																							<ExtendedTooltip name="КонтактнаяИнформацияПолеTelegramЛичныеДанныеКандидатовРасширеннаяПодсказка" id="3002"/>
+																							<Events>
+																								<Event name="OnChange">Подключаемый_КонтактнаяИнформацияПриИзменении</Event>
+																								<Event name="Clearing">Подключаемый_КонтактнаяИнформацияОчистка</Event>
+																							</Events>
+																						</InputField>
+																						<PictureDecoration name="ПредупреждениеTelegram" id="3021">
+																							<Visible>false</Visible>
+																							<Title formatted="false">
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>Предупреждение telegram</v8:content>
+																								</v8:item>
+																							</Title>
+																							<ToolTip>
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>Имя пользователя Telegram должно начинаться с @</v8:content>
+																								</v8:item>
+																							</ToolTip>
+																							<GroupVerticalAlign>Center</GroupVerticalAlign>
+																							<Picture>
+																								<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
+																								<xr:LoadTransparent>false</xr:LoadTransparent>
+																							</Picture>
+																							<ContextMenu name="ПредупреждениеTelegramКонтекстноеМеню" id="3022"/>
+																							<ExtendedTooltip name="ПредупреждениеTelegramРасширеннаяПодсказка" id="3023"/>
+																						</PictureDecoration>
+																					</ChildItems>
+																				</UsualGroup>
+																				<UsualGroup name="ГруппаMAX" id="3016">
+																					<Title>
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Группа MAX</v8:content>
+																						</v8:item>
+																					</Title>
+																					<ToolTip>
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Группа MAX</v8:content>
+																						</v8:item>
+																					</ToolTip>
+																					<HorizontalSpacing>Half</HorizontalSpacing>
+																					<ShowTitle>false</ShowTitle>
+																					<ExtendedTooltip name="ГруппаMAXРасширеннаяПодсказка" id="3017"/>
+																					<ChildItems>
+																						<PictureDecoration name="КартинкаMAX" id="3018">
+																							<Title formatted="false">
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>Картинка MAX</v8:content>
+																								</v8:item>
+																							</Title>
+																							<GroupVerticalAlign>Center</GroupVerticalAlign>
+																							<Picture>
+																								<xr:Ref>CommonPicture.ЛоготипMAX</xr:Ref>
+																								<xr:LoadTransparent>false</xr:LoadTransparent>
+																							</Picture>
+																							<ContextMenu name="КартинкаMAXКонтекстноеМеню" id="3019"/>
+																							<ExtendedTooltip name="КартинкаMAXРасширеннаяПодсказка" id="3020"/>
+																						</PictureDecoration>
+																						<InputField name="КонтактнаяИнформацияПолеMAXЛичныеДанныеКандидатов" id="3008">
+																							<DataPath>КонтактнаяИнформацияПолеMAXЛичныеДанныеКандидатов</DataPath>
+																							<Title>
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>MAX</v8:content>
+																								</v8:item>
+																							</Title>
+																							<InputHint>
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>Ссылка на профиль</v8:content>
+																								</v8:item>
+																							</InputHint>
+																							<ContextMenu name="КонтактнаяИнформацияПолеMAXЛичныеДанныеКандидатовКонтекстноеМеню" id="3009"/>
+																							<ExtendedTooltip name="КонтактнаяИнформацияПолеMAXЛичныеДанныеКандидатовРасширеннаяПодсказка" id="3010"/>
+																							<Events>
+																								<Event name="OnChange">Подключаемый_КонтактнаяИнформацияПриИзменении</Event>
+																								<Event name="Clearing">Подключаемый_КонтактнаяИнформацияОчистка</Event>
+																							</Events>
+																						</InputField>
+																						<PictureDecoration name="ПредупреждениеMAX" id="3024">
+																							<Visible>false</Visible>
+																							<Title formatted="false">
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>Предупреждение MAX</v8:content>
+																								</v8:item>
+																							</Title>
+																							<ToolTip>
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>Введеное значение не является веб-ссылкой</v8:content>
+																								</v8:item>
+																							</ToolTip>
+																							<GroupVerticalAlign>Center</GroupVerticalAlign>
+																							<Picture>
+																								<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
+																								<xr:LoadTransparent>false</xr:LoadTransparent>
+																							</Picture>
+																							<ContextMenu name="ПредупреждениеMAXКонтекстноеМеню" id="3025"/>
+																							<ExtendedTooltip name="ПредупреждениеMAXРасширеннаяПодсказка" id="3026"/>
+																						</PictureDecoration>
+																					</ChildItems>
+																				</UsualGroup>
 																			</ChildItems>
 																		</UsualGroup>
 																	</ChildItems>
@@ -1967,17 +2326,37 @@
 														</UsualGroup>
 													</ChildItems>
 												</UsualGroup>
-												<LabelDecoration name="ДекорацияОСебе" id="1294">
-													<AutoMaxWidth>false</AutoMaxWidth>
-													<Title formatted="false">
+												<UsualGroup name="ГруппаДекорацииОСебе" id="3057">
+													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Информация не указана</v8:content>
+															<v8:content>Группа декорации о себе</v8:content>
 														</v8:item>
 													</Title>
-													<ContextMenu name="ДекорацияОСебеКонтекстноеМеню" id="1295"/>
-													<ExtendedTooltip name="ДекорацияОСебеРасширеннаяПодсказка" id="1296"/>
-												</LabelDecoration>
+													<Group>Vertical</Group>
+													<VerticalSpacing>Single</VerticalSpacing>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаДекорацииОСебеРасширеннаяПодсказка" id="3058"/>
+													<ChildItems>
+														<LabelDecoration name="ДекорацияОСебе" id="1294">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Информация не указана</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ДекорацияОСебеКонтекстноеМеню" id="1295"/>
+															<ExtendedTooltip name="ДекорацияОСебеРасширеннаяПодсказка" id="1296"/>
+														</LabelDecoration>
+														<LabelDecoration name="ДекорацияСопроводительноеПисьмо" id="3054">
+															<Visible>false</Visible>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<ContextMenu name="ДекорацияСопроводительноеПисьмоКонтекстноеМеню" id="3055"/>
+															<ExtendedTooltip name="ДекорацияСопроводительноеПисьмоРасширеннаяПодсказка" id="3056"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
 											</ChildItems>
 										</UsualGroup>
 									</ChildItems>
@@ -3782,6 +4161,38 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="КонтактнаяИнформацияПолеTelegramЛичныеДанныеКандидатов" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Telegram</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КонтактнаяИнформацияПолеMAXЛичныеДанныеКандидатов" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>MAX</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="СписокКандидатов" id="7">
@@ -4075,6 +4486,25 @@
 				</v8:item>
 			</Title>
 			<Action>ИспользоватьСтаруюФормуОбъекта</Action>
+		</Command>
+		<Command name="НастроитьПереносКонтактнойИнформации" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить перенос контактной информации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить перенос контактной информации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ИзменитьНастройки</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>НастроитьПереносКонтактнойИнформации</Action>
 		</Command>
 	</Commands>
 	<Parameters>

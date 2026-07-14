@@ -874,6 +874,43 @@
 				</LabelDecoration>
 			</ChildItems>
 		</UsualGroup>
+		<UsualGroup name="ГруппаПересчитыватьПродолжительностьВидовОтпусков" id="477">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пересчитывать продолжительность видов отпусков</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПересчитыватьПродолжительностьВидовОтпусковРасширеннаяПодсказка" id="478"/>
+			<ChildItems>
+				<CheckBoxField name="ПересчитыватьПродолжительностьВидовОтпусковПриИсправленииОтпуска" id="479">
+					<DataPath>ПересчитыватьПродолжительностьВидовОтпусковПриИсправленииОтпуска</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПересчитыватьПродолжительностьВидовОтпусковПриИсправленииОтпускаКонтекстноеМеню" id="480"/>
+					<ExtendedTooltip name="ПересчитыватьПродолжительностьВидовОтпусковПриИсправленииОтпускаРасширеннаяПодсказка" id="481"/>
+					<Events>
+						<Event name="OnChange">ПересчитыватьПродолжительностьВидовОтпусковПриИсправленииОтпускаПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<LabelDecoration name="ПояснениеПересчитыватьПродолжительностьВидовОтпусков" id="482">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>75</MaxWidth>
+					<TextColor>style:ПоясняющийТекст</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Если в документе Отпуск использовано два или более видов отпусков, то при болезни или отзыве из отпуска (то есть когда заполнена закладка Продления, переносы, отзывы) продолжительность видов отпусков будет пересчитана таким образом, чтобы сначала списались остатки за старые рабочие года.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПояснениеПересчитыватьПродолжительностьВидовОтпусковКонтекстноеМеню" id="483"/>
+					<ExtendedTooltip name="ПояснениеПересчитыватьПродолжительностьВидовОтпусковРасширеннаяПодсказка" id="484"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаШтатноеРасписание" id="33">
 			<Title>
 				<v8:item>
@@ -1177,6 +1214,36 @@
 							</Title>
 							<ContextMenu name="ПояснениеУчитыватьВнешнихСовместителейКонтекстноеМеню" id="462"/>
 							<ExtendedTooltip name="ПояснениеУчитыватьВнешнихСовместителейРасширеннаяПодсказка" id="463"/>
+						</LabelDecoration>
+						<CheckBoxField name="ИспользоватьНаправлениеДляПостановкиНаВоинскийУчет2019" id="485">
+							<DataPath>НастройкиВоинскогоУчета.ИспользоватьНаправлениеДляПостановкиНаВоинскийУчет2019</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Направление для постановки на воинский учет (до 2020 г.)</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьНаправлениеДляПостановкиНаВоинскийУчет2019КонтекстноеМеню" id="486"/>
+							<ExtendedTooltip name="ИспользоватьНаправлениеДляПостановкиНаВоинскийУчет2019РасширеннаяПодсказка" id="487"/>
+							<Events>
+								<Event name="OnChange">ИспользоватьНаправлениеДляПостановкиНаВоинскийУчет2019ПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<LabelDecoration name="ПояснениеИспользоватьНаправлениеДляПостановкиНаВоинскийУчет2019" id="488">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>75</MaxWidth>
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Форма направления для постановки на воинский учет, утвержденная Приказом Министра обороны РФ N 366, МВД РФ N 789, ФМС РФ N 197 от 10.09.2007.
+Обратите внимание - с 2020 года для постановки на воинский учет организации должны выдавать форму Извещение о приеме (Постановление Правительства РФ от 06.02.2020 N 103). Используйте данную форму, только если военкомат явно затребовал именно ее.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПояснениеИспользоватьНаправлениеДляПостановкиНаВоинскийУчет2019КонтекстноеМеню" id="489"/>
+							<ExtendedTooltip name="ПояснениеИспользоватьНаправлениеДляПостановкиНаВоинскийУчет2019РасширеннаяПодсказка" id="490"/>
 						</LabelDecoration>
 					</ChildItems>
 				</UsualGroup>
@@ -2311,6 +2378,17 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Использовать наставничество</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПересчитыватьПродолжительностьВидовОтпусковПриИсправленииОтпуска" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пересчитывать продолжительность видов отпусков при болезни или отзыве из отпуска</v8:content>
 				</v8:item>
 			</Title>
 			<Type>

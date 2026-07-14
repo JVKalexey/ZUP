@@ -539,10 +539,21 @@
 					<ExtendedTooltip name="ПозицииНаименованиеПолноеРасширеннаяПодсказка" id="416"/>
 				</InputField>
 				<InputField name="ПозицииКлассУсловийТруда" id="385">
+					<DataPath>Объект.Позиции.КлассУсловийТруда</DataPath>
+					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
+					<TypeDomainEnabled>false</TypeDomainEnabled>
 					<ContextMenu name="ПозицииКлассУсловийТрудаКонтекстноеМеню" id="386"/>
 					<ExtendedTooltip name="ПозицииКлассУсловийТрудаРасширеннаяПодсказка" id="387"/>
 				</InputField>
+				<CheckBoxField name="ПозицииВыявленыВредныеОпасныеФакторы" id="417">
+					<DataPath>Объект.Позиции.ВыявленыВредныеОпасныеФакторы</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПозицииВыявленыВредныеОпасныеФакторыКонтекстноеМеню" id="418"/>
+					<ExtendedTooltip name="ПозицииВыявленыВредныеОпасныеФакторыРасширеннаяПодсказка" id="419"/>
+				</CheckBoxField>
 				<InputField name="ПозицииКомментарий" id="409">
 					<DataPath>Объект.Позиции.Комментарий</DataPath>
 					<ReadOnly>true</ReadOnly>

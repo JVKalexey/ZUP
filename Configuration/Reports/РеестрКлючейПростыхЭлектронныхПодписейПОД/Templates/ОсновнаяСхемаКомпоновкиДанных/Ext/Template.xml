@@ -33,12 +33,12 @@
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
-	РеестрКлючейПростыхЭлектронныхПодписейСрезПоследних.Период КАК Период,
-	РеестрКлючейПростыхЭлектронныхПодписейСрезПоследних.Пользователь КАК Пользователь,
-	РеестрКлючейПростыхЭлектронныхПодписейСрезПоследних.Пользователь.ФизическоеЛицо КАК ФизическоеЛицо,
-	РеестрКлючейПростыхЭлектронныхПодписейСрезПоследних.ДатаОтзыва КАК ДатаОтзыва
+	РеестрКлючейПростыхЭлектронныхПодписейПОД.Период КАК Период,
+	РеестрКлючейПростыхЭлектронныхПодписейПОД.Пользователь КАК Пользователь,
+	РеестрКлючейПростыхЭлектронныхПодписейПОД.Пользователь.ФизическоеЛицо КАК ФизическоеЛицо,
+	РеестрКлючейПростыхЭлектронныхПодписейПОД.ДатаОтзыва КАК ДатаОтзыва
 ИЗ
-	РегистрСведений.РеестрКлючейПростыхЭлектронныхПодписейПОД.СрезПоследних(, ) КАК РеестрКлючейПростыхЭлектронныхПодписейСрезПоследних</query>
+	РегистрСведений.РеестрКлючейПростыхЭлектронныхПодписейПОД КАК РеестрКлючейПростыхЭлектронныхПодписейПОД</query>
 	</dataSet>
 	<parameter>
 		<name>Период</name>
@@ -96,6 +96,11 @@
 					</dcsset:item>
 					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
 				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Период</dcsset:left>
+					<dcsset:comparisonType>LessOrEqual</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:Field">ПараметрыДанных.Период</dcsset:right>
+				</dcsset:item>
 			</dcsset:filter>
 			<dcsset:dataParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
@@ -103,7 +108,7 @@
 					<dcscor:value xsi:type="v8:StandardBeginningDate">
 						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
 					</dcscor:value>
-					<dcsset:userSettingID>26b4900a-9330-44cf-9dd6-d8a91c1373c1</dcsset:userSettingID>
+					<dcsset:userSettingID>c628f8ba-5068-4be1-8648-2423b53a6260</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:outputParameters>

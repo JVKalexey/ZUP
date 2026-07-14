@@ -1901,164 +1901,6 @@
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="ГруппаСистемаБыстрыхПлатежей" id="1921">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Система быстрых платежей</v8:content>
-				</v8:item>
-			</Title>
-			<HorizontalStretch>true</HorizontalStretch>
-			<Group>AlwaysHorizontal</Group>
-			<Behavior>Collapsible</Behavior>
-			<Collapsed>true</Collapsed>
-			<ControlRepresentation>Picture</ControlRepresentation>
-			<Representation>NormalSeparation</Representation>
-			<ExtendedTooltip name="ГруппаСистемаБыстрыхПлатежейРасширеннаяПодсказка" id="1922"/>
-			<ChildItems>
-				<UsualGroup name="ГруппаСистемаБыстрыхПлатежейЛево" id="1984">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа система быстрых платежей лево</v8:content>
-						</v8:item>
-					</Title>
-					<Group>Vertical</Group>
-					<Behavior>Usual</Behavior>
-					<Representation>None</Representation>
-					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаСистемаБыстрыхПлатежейЛевоРасширеннаяПодсказка" id="1985"/>
-					<ChildItems>
-						<UsualGroup name="ГруппаНастройкиИнтеграции" id="1941">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа настройки интеграции</v8:content>
-								</v8:item>
-							</Title>
-							<Width>43</Width>
-							<Group>AlwaysHorizontal</Group>
-							<Behavior>Usual</Behavior>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаНастройкиИнтеграцииРасширеннаяПодсказка" id="1942"/>
-							<ChildItems>
-								<Button name="НастройкаПодключенияКСистемеБыстрыхПлатежей" id="1923">
-									<Type>Hyperlink</Type>
-									<CommandName>Form.Command.НастройкаПодключенияКСистемеБыстрыхПлатежей</CommandName>
-									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-									<ExtendedTooltip name="НастройкаПодключенияКСистемеБыстрыхПлатежейРасширеннаяПодсказка" id="1924">
-										<Title formatted="false">
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>Настройка подключения и обмена данными с платежными системами.</v8:content>
-											</v8:item>
-										</Title>
-									</ExtendedTooltip>
-								</Button>
-							</ChildItems>
-						</UsualGroup>
-						<UsualGroup name="ГруппаНастройкаШаблоновСБП" id="1988">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа настройка шаблонов СБП</v8:content>
-								</v8:item>
-							</Title>
-							<Group>Vertical</Group>
-							<Behavior>Usual</Behavior>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаНастройкаШаблоновСБПРасширеннаяПодсказка" id="1989"/>
-							<ChildItems>
-								<Button name="ОткрытьШаблоныСообщенийСБП" id="1990">
-									<Type>Hyperlink</Type>
-									<CommandName>Form.Command.ОткрытьШаблоныСообщенийСБП</CommandName>
-									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-									<ExtendedTooltip name="ОткрытьШаблоныСообщенийСБПРасширеннаяПодсказка" id="1991">
-										<Title formatted="false">
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>Шаблоны необходимы для отправки писем и SMS со счетами на оплату через СБП.</v8:content>
-											</v8:item>
-										</Title>
-									</ExtendedTooltip>
-								</Button>
-							</ChildItems>
-						</UsualGroup>
-					</ChildItems>
-				</UsualGroup>
-				<UsualGroup name="ГруппаСистемаБыстрыхПлатежейПраво" id="1986">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа система быстрых платежей право</v8:content>
-						</v8:item>
-					</Title>
-					<Group>Vertical</Group>
-					<Behavior>Usual</Behavior>
-					<Representation>None</Representation>
-					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаСистемаБыстрыхПлатежейПравоРасширеннаяПодсказка" id="1987"/>
-					<ChildItems>
-						<LabelDecoration name="НастройкаОтображенияКоманд" id="2105">
-							<Title formatted="false">
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Настройка отображения команд</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Настройка отображения команды формирования платежной ссылки в оптовых документах.</v8:content>
-								</v8:item>
-							</ToolTip>
-							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-							<Hyperlink>true</Hyperlink>
-							<ContextMenu name="НастройкаОтображенияКомандКонтекстноеМеню" id="2106"/>
-							<ExtendedTooltip name="НастройкаОтображенияКомандРасширеннаяПодсказка" id="2107"/>
-							<Events>
-								<Event name="Click">НастройкаОтображенияКомандНажатие</Event>
-							</Events>
-						</LabelDecoration>
-						<UsualGroup name="ГруппаДлительностьОперации" id="1943">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа длительность операции</v8:content>
-								</v8:item>
-							</Title>
-							<Group>AlwaysHorizontal</Group>
-							<Behavior>Usual</Behavior>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаДлительностьОперацииРасширеннаяПодсказка" id="1944"/>
-							<ChildItems>
-								<InputField name="ДлительностьОперацииПлатежнойСистемы" id="1945">
-									<DataPath>ДлительностьОперацииПлатежнойСистемы</DataPath>
-									<TitleLocation>Top</TitleLocation>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Длительность ожидания подтверждения
-оплаты покупателем (количество секунд).</v8:content>
-										</v8:item>
-									</ToolTip>
-									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-									<Width>14</Width>
-									<ContextMenu name="ДлительностьОперацииПлатежнойСистемыКонтекстноеМеню" id="1946"/>
-									<ExtendedTooltip name="ДлительностьОперацииПлатежнойСистемыРасширеннаяПодсказка" id="1947"/>
-									<Events>
-										<Event name="OnChange">ДлительностьОперацииПлатежнойСистемыПриИзменении</Event>
-									</Events>
-								</InputField>
-							</ChildItems>
-						</UsualGroup>
-					</ChildItems>
-				</UsualGroup>
-			</ChildItems>
-		</UsualGroup>
 		<UsualGroup name="ГруппаИнтеграцияСКоннект" id="1925">
 			<Title>
 				<v8:item>
@@ -2127,6 +1969,245 @@
 								</Title>
 							</ExtendedTooltip>
 						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПлатежныеСистемы" id="2142">
+			<EnableContentChange>true</EnableContentChange>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Платежные системы (СБП, Интернет-эквайринг)</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="ГруппаПлатежныеСистемыРасширеннаяПодсказка" id="2143"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПлатежныеСистемыЛево" id="2144">
+					<EnableContentChange>true</EnableContentChange>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Платежные системы лево</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПлатежныеСистемыЛевоРасширеннаяПодсказка" id="2145"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаНастройкиПодключенияКПлатежнымСистемам" id="2146">
+							<EnableContentChange>true</EnableContentChange>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройки подключения</v8:content>
+								</v8:item>
+							</Title>
+							<Width>43</Width>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНастройкиПодключенияКПлатежнымСистемамРасширеннаяПодсказка" id="2147"/>
+							<ChildItems>
+								<Button name="НастройкиПодключенияКПлатежнымСистемам" id="2148">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.НастройкиПодключенияКПлатежнымСистемам</CommandName>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<ExtendedTooltip name="НастройкиПодключенияКПлатежнымСистемамРасширеннаяПодсказка" id="2149">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Настройка подключения к платежным системам (Система быстрых платежей, Интернет-эквайринг и др.)</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаНастройкаШаблоновПлатежныхСистем" id="2150">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройка шаблонов</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНастройкаШаблоновПлатежныхСистемРасширеннаяПодсказка" id="2151"/>
+							<ChildItems>
+								<Button name="ОткрытьШаблоныСообщенийПлатежныхСистем" id="2152">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьШаблоныСообщенийПлатежныхСистем</CommandName>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<ExtendedTooltip name="ОткрытьШаблоныСообщенийПлатежныхСистемРасширеннаяПодсказка" id="2153">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Шаблоны необходимы для отправки писем и SMS со счетами на оплату при использовании платежных систем.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПлатежныеСистемыПраво" id="2154">
+					<EnableContentChange>true</EnableContentChange>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Платежные системы право</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПлатежныеСистемыПравоРасширеннаяПодсказка" id="2155"/>
+					<ChildItems>
+						<LabelDecoration name="НастройкаОтображенияКомандПлатежныхСистем" id="2156">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройка отображения команд</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройка отображения команды формирования платежной ссылки в оптовых документах.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="НастройкаОтображенияКомандПлатежныхСистемКонтекстноеМеню" id="2157"/>
+							<ExtendedTooltip name="НастройкаОтображенияКомандПлатежныхСистемРасширеннаяПодсказка" id="2158"/>
+							<Events>
+								<Event name="Click">НастройкаОтображенияКомандПлатежныхСистемНажатие</Event>
+							</Events>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаДлительностьОперации" id="2159">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа длительность операции</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДлительностьОперацииРасширеннаяПодсказка" id="2160"/>
+							<ChildItems>
+								<InputField name="ДлительностьОперацииПлатежныхСистем" id="2161">
+									<DataPath>ДлительностьОперацииПлатежныхСистем</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Длительность ожидания подтверждения
+оплаты покупателем (количество секунд).</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<Width>14</Width>
+									<ContextMenu name="ДлительностьОперацииПлатежныхСистемКонтекстноеМеню" id="2162"/>
+									<ExtendedTooltip name="ДлительностьОперацииПлатежныхСистемРасширеннаяПодсказка" id="2163"/>
+									<Events>
+										<Event name="OnChange">ДлительностьОперацииПлатежнойСистемыПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОнлайнЗаказы" id="2108">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Онлайн-заказы</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<ExtendedTooltip name="ГруппаОнлайнЗаказыРасширеннаяПодсказка" id="2109"/>
+			<ChildItems>
+				<UsualGroup name="ОнлайнЗаказыЛево" id="2110">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ОнлайнЗаказыЛевоРасширеннаяПодсказка" id="2111"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаНастройкиСтраниц" id="2112">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНастройкиСтраницРасширеннаяПодсказка" id="2113"/>
+							<ChildItems>
+								<Button name="ОткрытьНастройкиСтраницОнлайнЗаказов" id="2114">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьНастройкиСтраницОнлайнЗаказов</CommandName>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<ExtendedTooltip name="ОткрытьНастройкиСтраницОнлайнЗаказовРасширеннаяПодсказка" id="2115">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Настройки страниц для выставления онлайн-заказов и получения информации об оплатах.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаНастройкиШаблоновСообщенийОнлайнЗаказов" id="2116">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройки шаблонов сообщений онлайн-заказов</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНастройкиШаблоновСообщенийОнлайнЗаказовРасширеннаяПодсказка" id="2117"/>
+							<ChildItems>
+								<Button name="ОткрытьШаблоныСообщенийОнлайнЗаказов" id="2118">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьШаблоныСообщенийОнлайнЗаказов</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Шаблоны сообщений</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<ExtendedTooltip name="ОткрытьШаблоныСообщенийОнлайнЗаказовРасширеннаяПодсказка" id="2119">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Шаблоны необходимы для отправки писем и SMS со ссылками по онлайн-заказам.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
@@ -2305,83 +2386,6 @@
 										</Button>
 									</ChildItems>
 								</UsualGroup>
-							</ChildItems>
-						</UsualGroup>
-					</ChildItems>
-				</UsualGroup>
-			</ChildItems>
-		</UsualGroup>
-		<UsualGroup name="ГруппаОнлайнЗаказы" id="2108">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Онлайн-заказы</v8:content>
-				</v8:item>
-			</Title>
-			<Group>AlwaysHorizontal</Group>
-			<Behavior>Collapsible</Behavior>
-			<Collapsed>true</Collapsed>
-			<ControlRepresentation>Picture</ControlRepresentation>
-			<ExtendedTooltip name="ГруппаОнлайнЗаказыРасширеннаяПодсказка" id="2109"/>
-			<ChildItems>
-				<UsualGroup name="ОнлайнЗаказыЛево" id="2110">
-					<Group>Vertical</Group>
-					<Representation>None</Representation>
-					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ОнлайнЗаказыЛевоРасширеннаяПодсказка" id="2111"/>
-					<ChildItems>
-						<UsualGroup name="ГруппаНастройкиСтраниц" id="2112">
-							<Group>Vertical</Group>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаНастройкиСтраницРасширеннаяПодсказка" id="2113"/>
-							<ChildItems>
-								<Button name="ОткрытьНастройкиСтраницОнлайнЗаказов" id="2114">
-									<Type>Hyperlink</Type>
-									<CommandName>Form.Command.ОткрытьНастройкиСтраницОнлайнЗаказов</CommandName>
-									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-									<ExtendedTooltip name="ОткрытьНастройкиСтраницОнлайнЗаказовРасширеннаяПодсказка" id="2115">
-										<Title formatted="false">
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>Настройки страниц для выставления онлайн-заказов и получения информации об оплатах.</v8:content>
-											</v8:item>
-										</Title>
-									</ExtendedTooltip>
-								</Button>
-							</ChildItems>
-						</UsualGroup>
-						<UsualGroup name="ГруппаНастройкиШаблоновСообщенийОнлайнЗаказов" id="2116">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа настройки шаблонов сообщений онлайн-заказов</v8:content>
-								</v8:item>
-							</Title>
-							<Group>Vertical</Group>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаНастройкиШаблоновСообщенийОнлайнЗаказовРасширеннаяПодсказка" id="2117"/>
-							<ChildItems>
-								<Button name="ОткрытьШаблоныСообщенийОнлайнЗаказов" id="2118">
-									<Type>Hyperlink</Type>
-									<CommandName>Form.Command.ОткрытьШаблоныСообщенийОнлайнЗаказов</CommandName>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Шаблоны сообщений</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-									<ExtendedTooltip name="ОткрытьШаблоныСообщенийОнлайнЗаказовРасширеннаяПодсказка" id="2119">
-										<Title formatted="false">
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>Шаблоны необходимы для отправки писем и SMS со ссылками по онлайн-заказам.</v8:content>
-											</v8:item>
-										</Title>
-									</ExtendedTooltip>
-								</Button>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -2796,7 +2800,7 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ДлительностьОперацииПлатежнойСистемы" id="6">
+		<Attribute name="ДлительностьОперацииПлатежныхСистем" id="6">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -3147,21 +3151,6 @@
 			</Title>
 			<Action>ОбновлениеКлассификаторов</Action>
 		</Command>
-		<Command name="НастройкаПодключенияКСистемеБыстрыхПлатежей" id="10">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Настройка подключения</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Настройка подключения к системе быстрых платежей</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>НастройкаПодключенияКСистемеБыстрыхПлатежей</Action>
-		</Command>
 		<Command name="НастройкаИнтеграцииСКоннект" id="12">
 			<Title>
 				<v8:item>
@@ -3210,21 +3199,6 @@
 				</v8:item>
 			</Title>
 			<Action>ОткрытьШаблоныСообщенийОнлайнОплат</Action>
-		</Command>
-		<Command name="ОткрытьШаблоныСообщенийСБП" id="16">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Шаблоны сообщений</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Открыть шаблоны сообщений СБП</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ОткрытьШаблоныСообщенийСБП</Action>
 		</Command>
 		<Command name="ЗагрузкаАдресногоКлассификатора" id="17">
 			<Title>
@@ -3411,6 +3385,30 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ДосьеКонтрагента</Action>
+		</Command>
+		<Command name="НастройкиПодключенияКПлатежнымСистемам" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки подключения</v8:content>
+				</v8:item>
+			</Title>
+			<Action>НастройкиПодключенияКПлатежнымСистемам</Action>
+		</Command>
+		<Command name="ОткрытьШаблоныСообщенийПлатежныхСистем" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шаблоны сообщений</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть шаблоны сообщений СБП</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьШаблоныСообщенийПлатежныхСистем</Action>
 		</Command>
 	</Commands>
 </Form>

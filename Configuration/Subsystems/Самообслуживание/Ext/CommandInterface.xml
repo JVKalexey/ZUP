@@ -36,6 +36,11 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="Document.СообщениеОНеправильныхДанныхСотрудника.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
 	</CommandsVisibility>
 	<CommandsOrder>
 		<Command name="Document.ЗаявкаНаКомандировку.StandardCommand.OpenList">
@@ -44,10 +49,10 @@
 		<Command name="Document.ЗаявкаНаОтпуск.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
-		<Command name="CommonCommand.СообщенияОбОтсутствииТекущегоПользователя">
+		<Command name="CommonCommand.ЗаявкиТекущегоПользователя">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
-		<Command name="CommonCommand.ЗаявкиТекущегоПользователя">
+		<Command name="CommonCommand.СообщенияОбОтсутствииТекущегоПользователя">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
 		<Command name="CommonCommand.ЗапросыСправокТекущегоПользователя">
@@ -75,6 +80,15 @@
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
 		<Command name="0:b13e4f9c-5b39-4389-8166-974a94000c5f">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.СообщенияОНеправильныхДанныхСотрудника">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.СообщениеОНеправильныхДанныхСотрудника.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:cd661883-d256-4004-8f3d-22e397ceae3c">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
 	</CommandsOrder>

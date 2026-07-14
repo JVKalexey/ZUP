@@ -608,6 +608,16 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИдентификаторСтроки</dataPath>
+			<field>ИдентификаторСтроки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор строки</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>Данные</dataSource>
 		<query>ВЫБРАТЬ ПЕРВЫЕ 0
 	НачисленияУдержанияВыплаты.МесяцНачисления КАК МесяцНачисления,
@@ -657,7 +667,8 @@
 	НачисленияУдержанияВыплаты.ПриоритетВидаРасчета КАК ПриоритетВидаРасчета,
 	НЕОПРЕДЕЛЕНО КАК РазрядКатегория,
 	НЕОПРЕДЕЛЕНО КАК РазрядКатегорияНаКонецПериода,
-	НЕОПРЕДЕЛЕНО КАК РазрядКатегорияГоловногоСотрудникаНаКонецПериода
+	НЕОПРЕДЕЛЕНО КАК РазрядКатегорияГоловногоСотрудникаНаКонецПериода,
+	НачисленияУдержанияВыплаты.ИдентификаторСтроки КАК ИдентификаторСтроки
 ПОМЕСТИТЬ ОбщиеЗапросы_НачисленияУдержанияАвансом
 ИЗ
 	(ВЫБРАТЬ ПЕРВЫЕ 0
@@ -704,7 +715,8 @@
 		ДАТАВРЕМЯ(1, 1, 1) КАК ДатаУвольнения,
 		НЕОПРЕДЕЛЕНО КАК ДокументОснование,
 		ИСТИНА КАК Сторно,
-		0 КАК ПриоритетВидаРасчета
+		0 КАК ПриоритетВидаРасчета,
+		0 КАК ИдентификаторСтроки
 	
 	ОБЪЕДИНИТЬ ВСЕ
 	
@@ -746,6 +758,7 @@
 		ЗНАЧЕНИЕ(Перечисление.ВидыЗанятости.ПустаяСсылка),
 		NULL,
 		0,
+		NULL,
 		NULL,
 		NULL,
 		NULL,
@@ -800,6 +813,7 @@
 		NULL,
 		NULL,
 		NULL,
+		NULL,
 		NULL
 	
 	ОБЪЕДИНИТЬ ВСЕ
@@ -842,6 +856,7 @@
 		ЗНАЧЕНИЕ(Перечисление.ВидыЗанятости.ПустаяСсылка),
 		NULL,
 		0,
+		NULL,
 		NULL,
 		NULL,
 		NULL,
@@ -900,7 +915,8 @@
 	Данные.ОрганизацияСортировки КАК ОрганизацияСортировки,
 	Данные.РазрядКатегория КАК РазрядКатегория,
 	Данные.РазрядКатегорияНаКонецПериода КАК РазрядКатегорияНаКонецПериода,
-	Данные.РазрядКатегорияГоловногоСотрудникаНаКонецПериода КАК РазрядКатегорияГоловногоСотрудникаНаКонецПериода
+	Данные.РазрядКатегорияГоловногоСотрудникаНаКонецПериода КАК РазрядКатегорияГоловногоСотрудникаНаКонецПериода,
+	Данные.ИдентификаторСтроки КАК ИдентификаторСтроки
 ИЗ
 	ОбщиеЗапросы_НачисленияУдержанияАвансом КАК Данные</query>
 	</dataSet>
@@ -4339,6 +4355,13 @@
 										<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
 										<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:GroupItemField">
+										<dcsset:field>ИдентификаторСтроки</dcsset:field>
+										<dcsset:groupType>Items</dcsset:groupType>
+										<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+										<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+										<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+									</dcsset:item>
 								</dcsset:groupItems>
 								<dcsset:filter>
 									<dcsset:item xsi:type="dcsset:FilterItemGroup">
@@ -5079,6 +5102,13 @@
 										</dcsset:item>
 										<dcsset:item xsi:type="dcsset:GroupItemField">
 											<dcsset:field>ПорядокПоказателей</dcsset:field>
+											<dcsset:groupType>Items</dcsset:groupType>
+											<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+											<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+											<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+										</dcsset:item>
+										<dcsset:item xsi:type="dcsset:GroupItemField">
+											<dcsset:field>ИдентификаторСтроки</dcsset:field>
 											<dcsset:groupType>Items</dcsset:groupType>
 											<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 											<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>

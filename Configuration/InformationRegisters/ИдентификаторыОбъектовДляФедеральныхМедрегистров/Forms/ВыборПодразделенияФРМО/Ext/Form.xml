@@ -57,6 +57,13 @@
 				<Event name="ValueChoice">ПодразделенияВыборЗначения</Event>
 			</Events>
 			<ChildItems>
+				<InputField name="ПодразделенияУровень" id="20">
+					<DataPath>Подразделения.Уровень</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПодразделенияУровеньКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ПодразделенияУровеньРасширеннаяПодсказка" id="22"/>
+				</InputField>
 				<InputField name="ПодразделенияНаименование" id="14">
 					<DataPath>Подразделения.Наименование</DataPath>
 					<EditMode>EnterOnInput</EditMode>
@@ -125,6 +132,22 @@
 						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
+				<Column name="Уровень" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уровень</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="ИдентификаторПодразделенияИБ" id="2">
@@ -143,5 +166,27 @@
 				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Подразделения</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Подразделения.ЭтоОтделениеИлиКабинет</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 </Form>

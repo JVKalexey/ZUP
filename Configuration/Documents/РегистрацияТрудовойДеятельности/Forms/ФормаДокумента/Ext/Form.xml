@@ -468,6 +468,14 @@
 						<InputField name="МероприятияТрудоваяФункция" id="56">
 							<DataPath>Объект.Мероприятия.ТрудоваяФункция</DataPath>
 							<EditMode>EnterOnInput</EditMode>
+							<ChoiceParameters>
+								<app:item name="Отбор.ПоказыватьТрудовыеФункцииДоговоровГПХ">
+									<app:value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xs:boolean">true</Value>
+									</app:value>
+								</app:item>
+							</ChoiceParameters>
 							<ContextMenu name="МероприятияТрудоваяФункцияКонтекстноеМеню" id="57"/>
 							<ExtendedTooltip name="МероприятияТрудоваяФункцияРасширеннаяПодсказка" id="58"/>
 						</InputField>

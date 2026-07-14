@@ -311,33 +311,43 @@
 									</Title>
 									<ExtendedTooltip name="ПодменюЗаполнитьРасширеннаяПодсказка" id="940"/>
 									<ChildItems>
-										<Button name="Заполнить" id="282">
-											<Type>CommandBarButton</Type>
-											<Height>1</Height>
-											<CommandName>Form.Command.Заполнить</CommandName>
-											<Font ref="style:LargeTextFont" kind="StyleItem"/>
-											<ExtendedTooltip name="ЗаполнитьExtendedTooltip" id="483"/>
-										</Button>
-										<Button name="ЗаполнитьССохранениемИсправлений" id="941">
-											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.ЗаполнитьССохранениемИсправлений</CommandName>
-											<ExtendedTooltip name="ЗаполнитьССохранениемИсправленийРасширеннаяПодсказка" id="942"/>
-										</Button>
-										<Button name="ЗаполнитьУволенными" id="2089">
-											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.ЗаполнитьУволенными</CommandName>
-											<ExtendedTooltip name="ЗаполнитьУволеннымиРасширеннаяПодсказка" id="2090"/>
-										</Button>
-										<Button name="ЗаполнитьПереведенными" id="2093">
-											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.ЗаполнитьПереведенными</CommandName>
-											<ExtendedTooltip name="ЗаполнитьПереведеннымиРасширеннаяПодсказка" id="2094"/>
-										</Button>
-										<Button name="ЗаполнитьЗачисленными" id="2153">
-											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.ЗаполнитьЗачисленными</CommandName>
-											<ExtendedTooltip name="ЗаполнитьЗачисленнымиРасширеннаяПодсказка" id="2154"/>
-										</Button>
+										<ButtonGroup name="ПодменюЗаполнитьСтандартное" id="2155">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Заполнить (стандартное)</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ПодменюЗаполнитьСтандартноеРасширеннаяПодсказка" id="2156"/>
+											<ChildItems>
+												<Button name="Заполнить" id="282">
+													<Type>CommandBarButton</Type>
+													<Height>1</Height>
+													<CommandName>Form.Command.Заполнить</CommandName>
+													<ExtendedTooltip name="ЗаполнитьExtendedTooltip" id="483"/>
+												</Button>
+												<Button name="ЗаполнитьССохранениемИсправлений" id="941">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ЗаполнитьССохранениемИсправлений</CommandName>
+													<ExtendedTooltip name="ЗаполнитьССохранениемИсправленийРасширеннаяПодсказка" id="942"/>
+												</Button>
+												<Button name="ЗаполнитьУволенными" id="2089">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ЗаполнитьУволенными</CommandName>
+													<ExtendedTooltip name="ЗаполнитьУволеннымиРасширеннаяПодсказка" id="2090"/>
+												</Button>
+												<Button name="ЗаполнитьПереведенными" id="2093">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ЗаполнитьПереведенными</CommandName>
+													<ExtendedTooltip name="ЗаполнитьПереведеннымиРасширеннаяПодсказка" id="2094"/>
+												</Button>
+												<Button name="ЗаполнитьЗачисленными" id="2153">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ЗаполнитьЗачисленными</CommandName>
+													<ExtendedTooltip name="ЗаполнитьЗачисленнымиРасширеннаяПодсказка" id="2154"/>
+												</Button>
+											</ChildItems>
+										</ButtonGroup>
 										<ButtonGroup name="ПодменюЗаполнитьВажное" id="1425">
 											<Title>
 												<v8:item>
@@ -367,25 +377,36 @@
 										</ButtonGroup>
 									</ChildItems>
 								</Popup>
-								<Button name="ПодборСотрудников" id="790">
-									<Type>CommandBarButton</Type>
-									<Height>1</Height>
-									<CommandName>Form.Command.ПодборСотрудников</CommandName>
-									<ExtendedTooltip name="ПодборСотрудниковРасширеннаяПодсказка" id="791"/>
-								</Button>
-								<Button name="Очистить" id="929">
-									<Type>CommandBarButton</Type>
-									<Height>1</Height>
-									<CommandName>Form.Command.Очистить</CommandName>
-									<ExtendedTooltip name="ОчиститьРасширеннаяПодсказка" id="930"/>
-								</Button>
-								<Button name="ПересчитатьДокумент" id="693">
-									<Type>CommandBarButton</Type>
-									<Enabled>false</Enabled>
-									<Height>1</Height>
-									<CommandName>Form.Command.ПересчитатьДокумент</CommandName>
-									<ExtendedTooltip name="ПересчитатьДокументРасширеннаяПодсказка" id="694"/>
-								</Button>
+								<ButtonGroup name="ОсновныеКомандыСтандартное" id="2157">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Основные команды (стандартное)</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ОсновныеКомандыСтандартноеРасширеннаяПодсказка" id="2158"/>
+									<ChildItems>
+										<Button name="ПодборСотрудников" id="790">
+											<Type>CommandBarButton</Type>
+											<Height>1</Height>
+											<CommandName>Form.Command.ПодборСотрудников</CommandName>
+											<ExtendedTooltip name="ПодборСотрудниковРасширеннаяПодсказка" id="791"/>
+										</Button>
+										<Button name="Очистить" id="929">
+											<Type>CommandBarButton</Type>
+											<Height>1</Height>
+											<CommandName>Form.Command.Очистить</CommandName>
+											<ExtendedTooltip name="ОчиститьРасширеннаяПодсказка" id="930"/>
+										</Button>
+										<Button name="ПересчитатьДокумент" id="693">
+											<Type>CommandBarButton</Type>
+											<Enabled>false</Enabled>
+											<Height>1</Height>
+											<CommandName>Form.Command.ПересчитатьДокумент</CommandName>
+											<ExtendedTooltip name="ПересчитатьДокументРасширеннаяПодсказка" id="694"/>
+										</Button>
+									</ChildItems>
+								</ButtonGroup>
 							</ChildItems>
 						</CommandBar>
 					</ChildItems>
@@ -2572,7 +2593,6 @@
 			<UseAlways>
 				<Field>Объект.RegisterRecords</Field>
 				<Field>Объект.Показатели</Field>
-				<Field>Объект.ФизическиеЛица</Field>
 			</UseAlways>
 			<Columns>
 				<AdditionalColumns table="Объект.РасчетРезервов">

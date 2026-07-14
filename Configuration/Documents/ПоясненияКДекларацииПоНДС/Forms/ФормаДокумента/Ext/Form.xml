@@ -715,7 +715,8 @@
 							<Representation>List</Representation>
 							<ChangeRowSet>false</ChangeRowSet>
 							<ChangeRowOrder>false</ChangeRowOrder>
-							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
 							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>Объект.КнигаПокупок</DataPath>
 							<CommandSet>
@@ -909,6 +910,55 @@
 											<ExtendedTooltip name="КнигаПокупокРеквизитыСчетаФактурыРасхождениеРасширеннаяПодсказка" id="428"/>
 											<Events>
 												<Event name="StartChoice">КнигаПокупокРеквизитыСчетаФактурыРасхождениеНачалоВыбора</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="КнигаПокупокГруппаРеквизитыСчетаФактурыВСчетРанееПолученнойОплаты" id="2400">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа реквизиты счета-фактуры в счет ранее полученной оплаты</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="КнигаПокупокГруппаРеквизитыСчетаФактурыВСчетРанееПолученнойОплатыРасширеннаяПодсказка" id="2401"/>
+									<ChildItems>
+										<InputField name="КнигаПокупокСчетФактураВСчетРанееПолученнойОплатыПредставление" id="2402">
+											<DataPath>Объект.КнигаПокупок.СчетФактураВСчетРанееПолученнойОплатыПредставление</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Номер и дата с/ф (частичная оплата)</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Номер и дата счета-фактуры при отгрузке в счет ранее полученной оплаты (частичной оплаты)
+
+
+</v8:content>
+												</v8:item>
+											</ToolTip>
+											<EditMode>EnterOnInput</EditMode>
+											<ChoiceButton>true</ChoiceButton>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КнигаПокупокСчетФактураВСчетРанееПолученнойОплатыПредставлениеКонтекстноеМеню" id="2403"/>
+											<ExtendedTooltip name="КнигаПокупокСчетФактураВСчетРанееПолученнойОплатыПредставлениеРасширеннаяПодсказка" id="2404"/>
+											<Events>
+												<Event name="StartChoice">КнигаПокупокСписокСчетовФактурНачалоВыбора</Event>
+											</Events>
+										</InputField>
+										<InputField name="КнигаПокупокСчетФактураВСчетРанееПолученнойОплатыРасхождениеПредставление" id="2406">
+											<DataPath>Объект.КнигаПокупок.СчетФактураВСчетРанееПолученнойОплатыРасхождениеПредставление</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<ChoiceButton>true</ChoiceButton>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КнигаПокупокСчетФактураВСчетРанееПолученнойОплатыРасхождениеПредставлениеКонтекстноеМеню" id="2407"/>
+											<ExtendedTooltip name="КнигаПокупокСчетФактураВСчетРанееПолученнойОплатыРасхождениеПредставлениеРасширеннаяПодсказка" id="2408"/>
+											<Events>
+												<Event name="StartChoice">КнигаПокупокСписокСчетовФактурНачалоВыбора</Event>
 											</Events>
 										</InputField>
 									</ChildItems>
@@ -1299,7 +1349,7 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Таможенная декларация</v8:content>
+													<v8:content>Декларация или партия</v8:content>
 												</v8:item>
 											</Title>
 											<EditMode>EnterOnInput</EditMode>
@@ -1405,7 +1455,8 @@
 							<Representation>List</Representation>
 							<ChangeRowSet>false</ChangeRowSet>
 							<ChangeRowOrder>false</ChangeRowOrder>
-							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
 							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>Объект.КнигаПокупокДл</DataPath>
 							<CommandSet>
@@ -1591,6 +1642,58 @@
 											<ExtendedTooltip name="КнигаПокупокДлРеквизитыСчетаФактурыРасхождениеРасширеннаяПодсказка" id="662"/>
 											<Events>
 												<Event name="StartChoice">КнигаПокупокДлРеквизитыСчетаФактурыРасхождениеНачалоВыбора</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="КнигаПокупокДлГруппаРеквизитыСчетаФактурыВСчетРанееПолученнойОплаты" id="2410">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа реквизиты счета-фактуры в счет ранее полученной оплаты</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Книга покупок дл группа реквизиты счета фактуры в счет ранее полученной оплаты</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="КнигаПокупокДлГруппаРеквизитыСчетаФактурыВСчетРанееПолученнойОплатыРасширеннаяПодсказка" id="2411"/>
+									<ChildItems>
+										<InputField name="КнигаПокупокДлСчетФактураВСчетРанееПолученнойОплатыПредставление" id="2412">
+											<DataPath>Объект.КнигаПокупокДл.СчетФактураВСчетРанееПолученнойОплатыПредставление</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Номер и дата с/ф (частичная оплата)</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Номер и дата счета-фактуры при отгрузке в счет ранее полученной оплаты (частичной оплаты)</v8:content>
+												</v8:item>
+											</ToolTip>
+											<EditMode>EnterOnInput</EditMode>
+											<ChoiceButton>true</ChoiceButton>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КнигаПокупокДлСчетФактураВСчетРанееПолученнойОплатыПредставлениеКонтекстноеМеню" id="2413"/>
+											<ExtendedTooltip name="КнигаПокупокДлСчетФактураВСчетРанееПолученнойОплатыПредставлениеРасширеннаяПодсказка" id="2414"/>
+											<Events>
+												<Event name="StartChoice">КнигаПокупокДлСписокСчетовФактурНачалоВыбора</Event>
+											</Events>
+										</InputField>
+										<InputField name="КнигаПокупокДлСчетФактураВСчетРанееПолученнойОплатыРасхождениеПредставление" id="2416">
+											<DataPath>Объект.КнигаПокупокДл.СчетФактураВСчетРанееПолученнойОплатыРасхождениеПредставление</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<ChoiceButton>true</ChoiceButton>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КнигаПокупокДлСчетФактураВСчетРанееПолученнойОплатыРасхождениеПредставлениеКонтекстноеМеню" id="2417"/>
+											<ExtendedTooltip name="КнигаПокупокДлСчетФактураВСчетРанееПолученнойОплатыРасхождениеПредставлениеРасширеннаяПодсказка" id="2418"/>
+											<Events>
+												<Event name="StartChoice">КнигаПокупокДлСписокСчетовФактурНачалоВыбора</Event>
 											</Events>
 										</InputField>
 									</ChildItems>
@@ -1965,7 +2068,7 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Таможенная декларация</v8:content>
+													<v8:content>Декларация или партия</v8:content>
 												</v8:item>
 											</Title>
 											<EditMode>EnterOnInput</EditMode>
@@ -2063,7 +2166,8 @@
 							<Representation>List</Representation>
 							<ChangeRowSet>false</ChangeRowSet>
 							<ChangeRowOrder>false</ChangeRowOrder>
-							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
 							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>Объект.КнигаПродаж</DataPath>
 							<CommandSet>
@@ -2259,6 +2363,58 @@
 										</InputField>
 									</ChildItems>
 								</ColumnGroup>
+								<ColumnGroup name="КнигаПродажГруппаРеквизитыСчетаФактурыПродавца" id="2462">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Книга продаж группа реквизиты счета фактуры продавца</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Книга продаж группа реквизиты счета фактуры продавца</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="КнигаПродажГруппаРеквизитыСчетаФактурыПродавцаРасширеннаяПодсказка" id="2463"/>
+									<ChildItems>
+										<InputField name="КнигаПродажСчетФактураПродавцаПредставление" id="2464">
+											<DataPath>Объект.КнигаПродаж.СчетФактураПродавцаПредставление</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Номер и дата с/ф (частичная оплата)</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Номер и дата счета-фактуры продавца, ранее выставленного при получении оплаты (частичной оплаты)</v8:content>
+												</v8:item>
+											</ToolTip>
+											<EditMode>EnterOnInput</EditMode>
+											<ChoiceButton>true</ChoiceButton>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КнигаПродажСчетФактураПродавцаПредставлениеКонтекстноеМеню" id="2465"/>
+											<ExtendedTooltip name="КнигаПродажСчетФактураПродавцаПредставлениеРасширеннаяПодсказка" id="2466"/>
+											<Events>
+												<Event name="StartChoice">КнигаПродажСписокСчетовФактурНачалоВыбора</Event>
+											</Events>
+										</InputField>
+										<InputField name="КнигаПродажСчетФактураПродавцаРасхождениеПредставление" id="2468">
+											<DataPath>Объект.КнигаПродаж.СчетФактураПродавцаРасхождениеПредставление</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<ChoiceButton>true</ChoiceButton>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КнигаПродажСчетФактураПродавцаРасхождениеПредставлениеКонтекстноеМеню" id="2469"/>
+											<ExtendedTooltip name="КнигаПродажСчетФактураПродавцаРасхождениеПредставлениеРасширеннаяПодсказка" id="2470"/>
+											<Events>
+												<Event name="StartChoice">КнигаПродажСписокСчетовФактурНачалоВыбора</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
 								<ColumnGroup name="КнигаПродажГруппаКодВидаОперации" id="772">
 									<Title>
 										<v8:item>
@@ -2392,6 +2548,176 @@
 											<ExtendedTooltip name="КнигаПродажКодВалютыРасхождениеРасширеннаяПодсказка" id="795"/>
 											<Events>
 												<Event name="StartChoice">КнигаПродажКодВалютыРасхождениеНачалоВыбора</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="КнигаПродажГруппаСтоимость22" id="2420">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Стоимость (НДС 22%)</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Книга продаж группа стоимость22</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="КнигаПродажГруппаСтоимость22РасширеннаяПодсказка" id="2421"/>
+									<ChildItems>
+										<InputField name="КнигаПродажСтоимость22" id="2428">
+											<DataPath>Объект.КнигаПродаж.Стоимость22</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Стоимость (НДС 22%)</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КнигаПродажСтоимость22КонтекстноеМеню" id="2429"/>
+											<ExtendedTooltip name="КнигаПродажСтоимость22РасширеннаяПодсказка" id="2430"/>
+											<Events>
+												<Event name="OnChange">КнигаПродажСтоимость22ПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="КнигаПродажСтоимость22Расхождение" id="2432">
+											<DataPath>Объект.КнигаПродаж.Стоимость22Расхождение</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КнигаПродажСтоимость22РасхождениеКонтекстноеМеню" id="2433"/>
+											<ExtendedTooltip name="КнигаПродажСтоимость22РасхождениеРасширеннаяПодсказка" id="2434"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="КнигаПродажГруппаСуммаНДС22" id="2424">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сумма НДС 22%</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Книга продаж группа сумма НДС22</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="КнигаПродажГруппаСуммаНДС22РасширеннаяПодсказка" id="2425"/>
+									<ChildItems>
+										<InputField name="КнигаПродажСуммаНДС22" id="2444">
+											<DataPath>Объект.КнигаПродаж.СуммаНДС22</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>НДС 22%</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КнигаПродажСуммаНДС22КонтекстноеМеню" id="2445"/>
+											<ExtendedTooltip name="КнигаПродажСуммаНДС22РасширеннаяПодсказка" id="2446"/>
+											<Events>
+												<Event name="OnChange">КнигаПродажСуммаНДС22ПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="КнигаПродажСуммаНДС22Расхождение" id="2448">
+											<DataPath>Объект.КнигаПродаж.СуммаНДС22Расхождение</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КнигаПродажСуммаНДС22РасхождениеКонтекстноеМеню" id="2449"/>
+											<ExtendedTooltip name="КнигаПродажСуммаНДС22РасхождениеРасширеннаяПодсказка" id="2450"/>
+											<Events>
+												<Event name="OnChange">КнигаПродажСуммаНДС22РасхождениеПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="КнигаПродажГруппаСтоимость1820" id="2422">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Стоимость (НДС 20% или 18%)</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Книга продаж группа стоимость1820</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="КнигаПродажГруппаСтоимость1820РасширеннаяПодсказка" id="2423"/>
+									<ChildItems>
+										<InputField name="КнигаПродажСтоимость1820" id="2440">
+											<DataPath>Объект.КнигаПродаж.Стоимость1820</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Стоимость (НДС 20% или 18%)</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КнигаПродажСтоимость1820КонтекстноеМеню" id="2441"/>
+											<ExtendedTooltip name="КнигаПродажСтоимость1820РасширеннаяПодсказка" id="2442"/>
+											<Events>
+												<Event name="OnChange">КнигаПродажСтоимость1820ПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="КнигаПродажСтоимость1820Расхождение" id="2436">
+											<DataPath>Объект.КнигаПродаж.Стоимость1820Расхождение</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КнигаПродажСтоимость1820РасхождениеКонтекстноеМеню" id="2437"/>
+											<ExtendedTooltip name="КнигаПродажСтоимость1820РасхождениеРасширеннаяПодсказка" id="2438"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="КнигаПродажГруппаСуммаНДС1820" id="2426">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сумма НДС 20% или 18%</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Книга продаж группа сумма НДС1820</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="КнигаПродажГруппаСуммаНДС1820РасширеннаяПодсказка" id="2427"/>
+									<ChildItems>
+										<InputField name="КнигаПродажСуммаНДС1820" id="2452">
+											<DataPath>Объект.КнигаПродаж.СуммаНДС1820</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>НДС 20% или 18%</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КнигаПродажСуммаНДС1820КонтекстноеМеню" id="2453"/>
+											<ExtendedTooltip name="КнигаПродажСуммаНДС1820РасширеннаяПодсказка" id="2454"/>
+											<Events>
+												<Event name="OnChange">КнигаПродажСуммаНДС1820ПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="КнигаПродажСуммаНДС1820Расхождение" id="2456">
+											<DataPath>Объект.КнигаПродаж.СуммаНДС1820Расхождение</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КнигаПродажСуммаНДС1820РасхождениеКонтекстноеМеню" id="2457"/>
+											<ExtendedTooltip name="КнигаПродажСуммаНДС1820РасхождениеРасширеннаяПодсказка" id="2458"/>
+											<Events>
+												<Event name="OnChange">КнигаПродажСуммаНДС1820РасхождениеПриИзменении</Event>
 											</Events>
 										</InputField>
 									</ChildItems>
@@ -3154,7 +3480,8 @@
 							<Representation>List</Representation>
 							<ChangeRowSet>false</ChangeRowSet>
 							<ChangeRowOrder>false</ChangeRowOrder>
-							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
 							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>Объект.КнигаПродажДл</DataPath>
 							<CommandSet>
@@ -3350,6 +3677,58 @@
 										</InputField>
 									</ChildItems>
 								</ColumnGroup>
+								<ColumnGroup name="КнигаПродажДлГруппаРеквизитыСчетаФактурыПродавца" id="2460">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Книга продаж дл группа реквизиты счета фактуры продавца</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Книга продаж дл группа реквизиты счета фактуры продавца</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="КнигаПродажДлГруппаРеквизитыСчетаФактурыПродавцаРасширеннаяПодсказка" id="2461"/>
+									<ChildItems>
+										<InputField name="КнигаПродажДлСчетФактураПродавцаПредставление" id="2512">
+											<DataPath>Объект.КнигаПродажДл.СчетФактураПродавцаПредставление</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Номер и дата с/ф (частичная оплата)</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Номер и дата счета-фактуры продавца, ранее выставленного при получении оплаты (частичной оплаты)</v8:content>
+												</v8:item>
+											</ToolTip>
+											<EditMode>EnterOnInput</EditMode>
+											<ChoiceButton>true</ChoiceButton>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КнигаПродажДлСчетФактураПродавцаПредставлениеКонтекстноеМеню" id="2513"/>
+											<ExtendedTooltip name="КнигаПродажДлСчетФактураПродавцаПредставлениеРасширеннаяПодсказка" id="2514"/>
+											<Events>
+												<Event name="StartChoice">КнигаПродажДлСписокСчетовФактурНачалоВыбора</Event>
+											</Events>
+										</InputField>
+										<InputField name="КнигаПродажДлСчетФактураПродавцаРасхождениеПредставление" id="2516">
+											<DataPath>Объект.КнигаПродажДл.СчетФактураПродавцаРасхождениеПредставление</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<ChoiceButton>true</ChoiceButton>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КнигаПродажДлСчетФактураПродавцаРасхождениеПредставлениеКонтекстноеМеню" id="2517"/>
+											<ExtendedTooltip name="КнигаПродажДлСчетФактураПродавцаРасхождениеПредставлениеРасширеннаяПодсказка" id="2518"/>
+											<Events>
+												<Event name="StartChoice">КнигаПродажДлСписокСчетовФактурНачалоВыбора</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
 								<ColumnGroup name="КнигаПродажДлГруппаКодВидаОперации" id="915">
 									<Title>
 										<v8:item>
@@ -3477,6 +3856,176 @@
 											<ExtendedTooltip name="КнигаПродажДлКодВалютыРасхождениеРасширеннаяПодсказка" id="938"/>
 											<Events>
 												<Event name="StartChoice">КнигаПродажДлКодВалютыРасхождениеНачалоВыбора</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="КнигаПродажДлГруппаСтоимость22" id="2472">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Книга продаж дл группа стоимость22</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Книга продаж дл группа стоимость22</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="КнигаПродажДлГруппаСтоимость22РасширеннаяПодсказка" id="2473"/>
+									<ChildItems>
+										<InputField name="КнигаПродажДлСтоимость22" id="2480">
+											<DataPath>Объект.КнигаПродажДл.Стоимость22</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Стоимость (НДС 22%)</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КнигаПродажДлСтоимость22КонтекстноеМеню" id="2481"/>
+											<ExtendedTooltip name="КнигаПродажДлСтоимость22РасширеннаяПодсказка" id="2482"/>
+											<Events>
+												<Event name="OnChange">КнигаПродажДлСтоимость22ПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="КнигаПродажДлСтоимость22Расхождение" id="2484">
+											<DataPath>Объект.КнигаПродажДл.Стоимость22Расхождение</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КнигаПродажДлСтоимость22РасхождениеКонтекстноеМеню" id="2485"/>
+											<ExtendedTooltip name="КнигаПродажДлСтоимость22РасхождениеРасширеннаяПодсказка" id="2486"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="КнигаПродажДлГруппаНДС22" id="2476">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Книга продаж дл группа НДС22</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Книга продаж дл группа НДС22</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="КнигаПродажДлГруппаНДС22РасширеннаяПодсказка" id="2477"/>
+									<ChildItems>
+										<InputField name="КнигаПродажДлСуммаНДС22" id="2496">
+											<DataPath>Объект.КнигаПродажДл.СуммаНДС22</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>НДС 22%</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КнигаПродажДлСуммаНДС22КонтекстноеМеню" id="2497"/>
+											<ExtendedTooltip name="КнигаПродажДлСуммаНДС22РасширеннаяПодсказка" id="2498"/>
+											<Events>
+												<Event name="OnChange">КнигаПродажДлСуммаНДС22ПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="КнигаПродажДлСуммаНДС22Расхождение" id="2500">
+											<DataPath>Объект.КнигаПродажДл.СуммаНДС22Расхождение</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КнигаПродажДлСуммаНДС22РасхождениеКонтекстноеМеню" id="2501"/>
+											<ExtendedTooltip name="КнигаПродажДлСуммаНДС22РасхождениеРасширеннаяПодсказка" id="2502"/>
+											<Events>
+												<Event name="OnChange">КнигаПродажДлСуммаНДС22РасхождениеПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="КнигаПродажДлГруппаСтоимость1820" id="2474">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Книга продаж дл группа стоимость1820</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Книга продаж дл группа стоимость1820</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="КнигаПродажДлГруппаСтоимость1820РасширеннаяПодсказка" id="2475"/>
+									<ChildItems>
+										<InputField name="КнигаПродажДлСтоимость1820" id="2488">
+											<DataPath>Объект.КнигаПродажДл.Стоимость1820</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Стоимость (НДС 20% или 18%)</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КнигаПродажДлСтоимость1820КонтекстноеМеню" id="2489"/>
+											<ExtendedTooltip name="КнигаПродажДлСтоимость1820РасширеннаяПодсказка" id="2490"/>
+											<Events>
+												<Event name="OnChange">КнигаПродажДлСтоимость1820ПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="КнигаПродажДлСтоимость1820Расхождение" id="2492">
+											<DataPath>Объект.КнигаПродажДл.Стоимость1820Расхождение</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КнигаПродажДлСтоимость1820РасхождениеКонтекстноеМеню" id="2493"/>
+											<ExtendedTooltip name="КнигаПродажДлСтоимость1820РасхождениеРасширеннаяПодсказка" id="2494"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="КнигаПродажДлГруппаНДС1820" id="2478">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Книга продаж дл группа НДС1820</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Книга продаж дл группа НДС1820</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="КнигаПродажДлГруппаНДС1820РасширеннаяПодсказка" id="2479"/>
+									<ChildItems>
+										<InputField name="КнигаПродажДлСуммаНДС1820" id="2504">
+											<DataPath>Объект.КнигаПродажДл.СуммаНДС1820</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>НДС 20% или 18%</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КнигаПродажДлСуммаНДС1820КонтекстноеМеню" id="2505"/>
+											<ExtendedTooltip name="КнигаПродажДлСуммаНДС1820РасширеннаяПодсказка" id="2506"/>
+											<Events>
+												<Event name="OnChange">КнигаПродажДлСуммаНДС1820ПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="КнигаПродажДлСуммаНДС1820Расхождение" id="2508">
+											<DataPath>Объект.КнигаПродажДл.СуммаНДС1820Расхождение</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КнигаПродажДлСуммаНДС1820РасхождениеКонтекстноеМеню" id="2509"/>
+											<ExtendedTooltip name="КнигаПродажДлСуммаНДС1820РасхождениеРасширеннаяПодсказка" id="2510"/>
+											<Events>
+												<Event name="OnChange">КнигаПродажДлСуммаНДС1820РасхождениеПриИзменении</Event>
 											</Events>
 										</InputField>
 									</ChildItems>
@@ -4227,7 +4776,8 @@
 							<Representation>List</Representation>
 							<ChangeRowSet>false</ChangeRowSet>
 							<ChangeRowOrder>false</ChangeRowOrder>
-							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
 							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>Объект.ЖурналУчетаВыставленныхСчетовФактур</DataPath>
 							<CommandSet>
@@ -4591,7 +5141,8 @@
 							<Representation>List</Representation>
 							<ChangeRowSet>false</ChangeRowSet>
 							<ChangeRowOrder>false</ChangeRowOrder>
-							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
 							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>Объект.ЖурналУчетаПолученныхСчетовФактур</DataPath>
 							<CommandSet>
@@ -5319,7 +5870,8 @@
 							<Representation>List</Representation>
 							<ChangeRowSet>false</ChangeRowSet>
 							<ChangeRowOrder>false</ChangeRowOrder>
-							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
 							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>Объект.ВыставленныеСчетаФактурыНеплательщиковНДС</DataPath>
 							<CommandSet>
@@ -5822,7 +6374,8 @@
 							<Representation>List</Representation>
 							<ChangeRowSet>false</ChangeRowSet>
 							<ChangeRowOrder>false</ChangeRowOrder>
-							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
@@ -6591,7 +7144,8 @@
 						<Table name="СведКС" id="1281">
 							<ChangeRowSet>false</ChangeRowSet>
 							<ChangeRowOrder>false</ChangeRowOrder>
-							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
@@ -7798,6 +8352,58 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
+					<Column name="СчетФактураВСчетРанееПолученнойОплатыПредставление" id="37">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Реквизиты счета-фактуры</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="СчетФактураВСчетРанееПолученнойОплатыРасхождениеПредставление" id="38">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Реквизиты счета-фактуры (расхождение)</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="СчетФактураВСчетРанееПолученнойОплатыДанные" id="39">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Счет фактура в счет ранее полученной оплаты данные</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>v8:ValueListType</v8:Type>
+						</Type>
+					</Column>
+					<Column name="СчетФактураВСчетРанееПолученнойОплатыРасхождениеДанные" id="40">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Счет фактура в счет ранее полученной оплаты расхождение данные</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>v8:ValueListType</v8:Type>
+						</Type>
+					</Column>
 				</AdditionalColumns>
 				<AdditionalColumns table="Объект.КнигаПродаж">
 					<Column name="ОшибкаПредставление" id="1">
@@ -8190,6 +8796,58 @@
 								<v8:Length>0</v8:Length>
 								<v8:AllowedLength>Variable</v8:AllowedLength>
 							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="СчетФактураПродавцаПредставление" id="29">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Реквизиты счета-фактуры</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="СчетФактураПродавцаРасхождениеПредставление" id="30">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Реквизиты счета-фактуры (расхождение)</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="СчетФактураПродавцаДанные" id="31">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Счет фактура продавца данные</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>v8:ValueListType</v8:Type>
+						</Type>
+					</Column>
+					<Column name="СчетФактураПродавцаРасхождениеДанные" id="32">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Счет фактура продавца расхождение данные</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>v8:ValueListType</v8:Type>
 						</Type>
 					</Column>
 				</AdditionalColumns>
@@ -8696,6 +9354,58 @@
 								<v8:Length>0</v8:Length>
 								<v8:AllowedLength>Variable</v8:AllowedLength>
 							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="СчетФактураВСчетРанееПолученнойОплатыПредставление" id="36">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Реквизиты счета-фактуры</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="СчетФактураВСчетРанееПолученнойОплатыРасхождениеПредставление" id="38">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Реквизиты счета-фактуры (расхождение)</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="СчетФактураВСчетРанееПолученнойОплатыДанные" id="39">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Счет фактура в счет ранее полученной оплаты данные</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>v8:ValueListType</v8:Type>
+						</Type>
+					</Column>
+					<Column name="СчетФактураВСчетРанееПолученнойОплатыРасхождениеДанные" id="40">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Счет фактура в счет ранее полученной оплаты расхождение данные</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>v8:ValueListType</v8:Type>
 						</Type>
 					</Column>
 				</AdditionalColumns>
@@ -9421,6 +10131,58 @@
 							</v8:StringQualifiers>
 						</Type>
 					</Column>
+					<Column name="СчетФактураПродавцаПредставление" id="29">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Реквизиты счета-фактуры</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="СчетФактураПродавцаРасхождениеПредставление" id="30">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Реквизиты счета-фактуры (расхождение)</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="СчетФактураПродавцаДанные" id="31">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Счет фактура продавца данные</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>v8:ValueListType</v8:Type>
+						</Type>
+					</Column>
+					<Column name="СчетФактураПродавцаРасхождениеДанные" id="32">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Счет фактура продавца расхождение данные</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>v8:ValueListType</v8:Type>
+						</Type>
+					</Column>
 				</AdditionalColumns>
 			</Columns>
 		</Attribute>
@@ -9594,6 +10356,21 @@
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РеквизитыСчетовФактур" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реквизиты счетов фактур</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 	</Attributes>

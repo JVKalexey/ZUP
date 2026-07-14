@@ -468,6 +468,60 @@
 							<ContextMenu name="УчетнаяПолитикаПоНДФЛВыполнятьРасчетНДФЛПоПрогрессивнойШкалеКонтекстноеМеню" id="301"/>
 							<ExtendedTooltip name="УчетнаяПолитикаПоНДФЛВыполнятьРасчетНДФЛПоПрогрессивнойШкалеРасширеннаяПодсказка" id="302"/>
 						</CheckBoxField>
+						<UsualGroup name="ГруппаВзаимодействиеСБанкамиНаАУСН" id="440">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Взаимодействие с банками на АУСН</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа взаимодействие с банками при АУСН</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаВзаимодействиеСБанкамиНаАУСНРасширеннаяПодсказка" id="441"/>
+							<ChildItems>
+								<CheckBoxField name="ВзаимодействиеСБанкамиНаАУСНЗарплатаПередаетсяВБанк" id="442">
+									<DataPath>ВзаимодействиеСБанкамиНаАУСН.ЗарплатаПередаетсяВБанк</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Зарплата передается в банк при использовании АУСН</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ВзаимодействиеСБанкамиНаАУСНЗарплатаПередаетсяВБанкКонтекстноеМеню" id="443"/>
+									<ExtendedTooltip name="ВзаимодействиеСБанкамиНаАУСНЗарплатаПередаетсяВБанкРасширеннаяПодсказка" id="444"/>
+								</CheckBoxField>
+								<InputField name="ВзаимодействиеСБанкамиНаАУСНПериодСтрокой" id="445">
+									<DataPath>ВзаимодействиеСБанкамиНаАУСНПериодСтрокой</DataPath>
+									<Width>15</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ChoiceButton>true</ChoiceButton>
+									<SpinButton>true</SpinButton>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ВзаимодействиеСБанкамиНаАУСНПериодСтрокойКонтекстноеМеню" id="446"/>
+									<ExtendedTooltip name="ВзаимодействиеСБанкамиНаАУСНПериодСтрокойРасширеннаяПодсказка" id="447"/>
+									<Events>
+										<Event name="OnChange">ВзаимодействиеСБанкамиНаАУСНПериодСтрокойПриИзменении</Event>
+										<Event name="AutoComplete">ВзаимодействиеСБанкамиНаАУСНПериодСтрокойАвтоПодбор</Event>
+										<Event name="StartChoice">ВзаимодействиеСБанкамиНаАУСНПериодСтрокойНачалоВыбора</Event>
+										<Event name="Tuning">ВзаимодействиеСБанкамиНаАУСНПериодСтрокойРегулирование</Event>
+										<Event name="TextEditEnd">ВзаимодействиеСБанкамиНаАУСНПериодСтрокойОкончаниеВводаТекста</Event>
+									</Events>
+								</InputField>
+								<Button name="ВзаимодействиеСБанкамиНаАУСНИсторияИстория" id="448">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ВзаимодействиеСБанкамиНаАУСНИстория</CommandName>
+									<ExtendedTooltip name="ВзаимодействиеСБанкамиНаАУСНИсторияИсторияРасширеннаяПодсказка" id="449"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
 						<RadioButtonField name="ОсобенностиИсчисленияНДФЛ" id="13">
 							<DataPath>УчетнаяПолитикаПоНДФЛ.ОсобенностиИсчисленияНДФЛ</DataPath>
 							<Title>
@@ -1880,6 +1934,63 @@
 			</Type>
 			<SavedData>true</SavedData>
 		</Attribute>
+		<Attribute name="ВзаимодействиеСБанкамиНаАУСН" id="25">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ВзаимодействиеСБанкамиНаАУСН</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ВзаимодействиеСБанкамиНаАУСННаборЗаписей" id="34">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ВзаимодействиеСБанкамиНаАУСН</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ВзаимодействиеСБанкамиНаАУСННаборЗаписейПрочитан" id="35">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВзаимодействиеСБанкамиНаАУСННоваяЗапись" id="36">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВзаимодействиеСБанкамиНаАУСНПериод" id="37">
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВзаимодействиеСБанкамиНаАУСНПериодСтрокой" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применяется с</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Edit>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.НастройкаНалогиИВзносы">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Edit>
+			<SavedData>true</SavedData>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьРасчетЗарплатыРасширенная</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="ВзаимодействиеСБанкамиНаАУСНПрежняя" id="39">
+			<Type/>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ТарифСтраховыхВзносовИстория" id="1">
@@ -1996,6 +2107,25 @@
 				</v8:item>
 			</ToolTip>
 			<Action>НастройкиСпособовПрямыхВыплатФСС</Action>
+		</Command>
+		<Command name="ВзаимодействиеСБанкамиНаАУСНИстория" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История изменений ...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактирование признака взаимодейстия с банком на АУСН, просмотр истории изменений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВзаимодействиеСБанкамиНаАУСНИстория</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьРасчетЗарплатыРасширенная</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
 </Form>

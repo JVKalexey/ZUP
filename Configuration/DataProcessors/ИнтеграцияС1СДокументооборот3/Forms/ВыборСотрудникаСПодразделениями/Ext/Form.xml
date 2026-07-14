@@ -6,6 +6,8 @@
 			<v8:content>Выберите сотрудника</v8:content>
 		</v8:item>
 	</Title>
+	<Width>100</Width>
+	<Height>40</Height>
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoTitle>false</AutoTitle>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
@@ -32,6 +34,53 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<UsualGroup name="ГруппаИнформация" id="41">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalAlign>Center</VerticalAlign>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИнформацияРасширеннаяПодсказка" id="42"/>
+			<ChildItems>
+				<PictureDecoration name="ИнформацияКартинка" id="43">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация картинка</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Ref>StdPicture.Information</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="ИнформацияКартинкаКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="ИнформацияКартинкаРасширеннаяПодсказка" id="45"/>
+				</PictureDecoration>
+				<LabelDecoration name="ИнформацияОписание" id="46">
+					<Width>50</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Показана первая 1000 сотрудников. Выберите подразделение для более точного поиска.</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalAlign>Center</VerticalAlign>
+					<ContextMenu name="ИнформацияОписаниеКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ИнформацияОписаниеРасширеннаяПодсказка" id="48"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаСписки" id="6">
 			<Title>
 				<v8:item>
@@ -49,13 +98,12 @@
 					<Representation>Tree</Representation>
 					<ChangeRowSet>false</ChangeRowSet>
 					<ChangeRowOrder>false</ChangeRowOrder>
+					<Width>30</Width>
 					<HeightInTableRows>10</HeightInTableRows>
 					<Header>false</Header>
 					<HorizontalLines>false</HorizontalLines>
 					<VerticalLines>false</VerticalLines>
 					<AutoInsertNewRow>true</AutoInsertNewRow>
-					<EnableStartDrag>true</EnableStartDrag>
-					<EnableDrag>true</EnableDrag>
 					<FileDragMode>AsFile</FileDragMode>
 					<DataPath>Дерево</DataPath>
 					<RowPictureDataPath>Дерево.Картинка</RowPictureDataPath>
@@ -63,6 +111,12 @@
 						<xr:Ref>CommonPicture.СостояниеПользователя04</xr:Ref>
 						<xr:LoadTransparent>false</xr:LoadTransparent>
 					</RowsPicture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделения</v8:content>
+						</v8:item>
+					</Title>
 					<SearchStringLocation>None</SearchStringLocation>
 					<ViewStatusLocation>None</ViewStatusLocation>
 					<SearchControlLocation>None</SearchControlLocation>
@@ -127,8 +181,6 @@
 					<HorizontalLines>false</HorizontalLines>
 					<VerticalLines>false</VerticalLines>
 					<AutoInsertNewRow>true</AutoInsertNewRow>
-					<EnableStartDrag>true</EnableStartDrag>
-					<EnableDrag>true</EnableDrag>
 					<FileDragMode>AsFile</FileDragMode>
 					<DataPath>СписокСотрудников</DataPath>
 					<RowPictureDataPath>СписокСотрудников.Картинка</RowPictureDataPath>
@@ -136,6 +188,12 @@
 						<xr:Ref>CommonPicture.СостояниеПользователя02</xr:Ref>
 						<xr:LoadTransparent>false</xr:LoadTransparent>
 					</RowsPicture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сотрудники</v8:content>
+						</v8:item>
+					</Title>
 					<SearchStringLocation>None</SearchStringLocation>
 					<ViewStatusLocation>None</ViewStatusLocation>
 					<SearchControlLocation>None</SearchControlLocation>
@@ -181,7 +239,7 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Сотрудники</v8:content>
+									<v8:content>Сотрудник</v8:content>
 								</v8:item>
 							</Title>
 							<EditMode>EnterOnInput</EditMode>

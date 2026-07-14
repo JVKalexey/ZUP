@@ -61,6 +61,17 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.УсловияДепозитныхПродуктовОбменСБанками</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ПакетОбменСБанкамиПрисоединенныеФайлы</name>
 		<right>
 			<name>Read</name>
@@ -94,6 +105,13 @@
 		</right>
 		<right>
 			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ЗаявкаНаДепозитОбменСБанками.Command.ЗаявкиНаДепозитОбменСБанками</name>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -132,6 +150,21 @@
 		</right>
 		<right>
 			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ЗаявкаНаДепозитОбменСБанкамиПрисоединенныеФайлы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -189,6 +222,41 @@
 		</right>
 		<right>
 			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ДепозитныеПродуктыОбменСБанками</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ЗаявкаНаДепозитОбменСБанками</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
+#ДляОбъекта("")
+#Иначе
+#ПоЗначениям("Документ.ЗаявкаНаДепозитОбменСБанками", "","",
+"Организации", "Организация",
+"","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","")
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
 			<value>true</value>
 		</right>
 	</object>

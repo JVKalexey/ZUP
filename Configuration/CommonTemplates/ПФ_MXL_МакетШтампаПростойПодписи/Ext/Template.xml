@@ -47,7 +47,8 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПОДПИСАНО ПРОСТОЙ ЭЛЕКТРОННОЙ ПОДПИСЬЮ</v8:content>
+							<v8:content>ДОКУМЕНТ ПОДПИСАН
+ПРОСТОЙ ЭЛЕКТРОННОЙ ПОДПИСЬЮ</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -58,29 +59,7 @@
 		<index>2</index>
 		<row>
 			<formatIndex>6</formatIndex>
-			<c>
-				<i>1</i>
-				<c>
-					<f>7</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Приложение:</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>8</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>1С:Кабинет сотрудника</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
+			<empty>true</empty>
 		</row>
 	</rowsItem>
 	<rowsItem>
@@ -93,18 +72,18 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ID приложения:</v8:content>
+							<v8:content>Имя подписанта:</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>9</f>
+					<f>8</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>[ИдПриложения]</v8:content>
+							<v8:content>[ИмяВладельцаПодписи]</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -121,42 +100,14 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Владелец:</v8:content>
+							<v8:content>ID подписанта:</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>9</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>[ИмяВладельцаПодписи]</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>5</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>7</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ID владельца:</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>9</f>
+					<f>8</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -168,24 +119,24 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>6</index>
+		<index>5</index>
 		<row>
 			<formatIndex>4</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>10</f>
+					<f>9</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Подписан:</v8:content>
+							<v8:content>Подписано:</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>11</f>
+					<f>10</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -197,12 +148,13 @@
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>12</defaultFormatIndex>
-	<height>7</height>
-	<vgRows>7</vgRows>
+	<defaultFormatIndex>11</defaultFormatIndex>
+	<height>6</height>
+	<vgRows>6</vgRows>
 	<merge>
 		<r>1</r>
 		<c>1</c>
+		<h>1</h>
 		<w>1</w>
 	</merge>
 	<namedItem xsi:type="NamedItemCells">
@@ -210,7 +162,7 @@
 		<area>
 			<type>Rows</type>
 			<beginRow>0</beginRow>
-			<endRow>6</endRow>
+			<endRow>5</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -230,7 +182,7 @@
 		<area>
 			<type>Rectangle</type>
 			<beginRow>1</beginRow>
-			<endRow>6</endRow>
+			<endRow>5</endRow>
 			<beginColumn>1</beginColumn>
 			<endColumn>2</endColumn>
 		</area>
@@ -238,7 +190,7 @@
 	<line width="1" gap="false">
 		<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
 	</line>
-	<font faceName="Arial" height="7" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Arial" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<font faceName="Arial" height="6" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<format>
 		<width>24</width>
@@ -260,6 +212,7 @@
 		<borderColor>#2E74B6</borderColor>
 		<width>24</width>
 		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
 		<textColor>#2E74B6</textColor>
 		<indent>0</indent>
 		<topMargin>0</topMargin>
@@ -282,15 +235,9 @@
 		<width>24</width>
 		<verticalAlignment>Center</verticalAlignment>
 		<textColor>#2E74B6</textColor>
-	</format>
-	<format>
-		<font>1</font>
-		<rightBorder>0</rightBorder>
-		<borderColor>#2E74B6</borderColor>
-		<width>24</width>
-		<verticalAlignment>Center</verticalAlignment>
-		<textColor>#2E74B6</textColor>
 		<fillType>Template</fillType>
+		<indent>1</indent>
+		<autoIndent>0</autoIndent>
 	</format>
 	<format>
 		<font>1</font>
@@ -310,6 +257,8 @@
 		<verticalAlignment>Center</verticalAlignment>
 		<textColor>#2E74B6</textColor>
 		<fillType>Template</fillType>
+		<indent>1</indent>
+		<autoIndent>0</autoIndent>
 	</format>
 	<format>
 		<width>72</width>

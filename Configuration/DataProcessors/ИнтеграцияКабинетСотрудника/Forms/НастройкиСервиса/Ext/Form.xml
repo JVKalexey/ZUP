@@ -1230,6 +1230,25 @@
 							<ContextMenu name="НастройкиСервисаИспользоватьПроизвольныеЗаявленияКонтекстноеМеню" id="744"/>
 							<ExtendedTooltip name="НастройкиСервисаИспользоватьПроизвольныеЗаявленияРасширеннаяПодсказка" id="745"/>
 						</CheckBoxField>
+						<CheckBoxField name="НастройкиСервисаСпособВыплатыЗарплаты" id="746">
+							<DataPath>НастройкиСервиса.ИспользоватьЗаявленияОСпособеВыплатыЗарплаты</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Способ выплаты зарплаты</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сотрудникам будет доступно заявление на изменение банковских реквизитов для выплаты зарплаты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="НастройкиСервисаСпособВыплатыЗарплатыКонтекстноеМеню" id="747"/>
+							<ExtendedTooltip name="НастройкиСервисаСпособВыплатыЗарплатыРасширеннаяПодсказка" id="748"/>
+						</CheckBoxField>
 					</ChildItems>
 				</UsualGroup>
 				<LabelDecoration name="ДекорацияЗаявленияОтступ" id="568">

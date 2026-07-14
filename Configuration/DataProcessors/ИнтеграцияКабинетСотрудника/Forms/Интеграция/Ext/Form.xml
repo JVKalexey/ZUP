@@ -1873,6 +1873,30 @@
 																		<Event name="OnChange">ИспользоватьУведомленияОНачалеОтпускаПриИзменении</Event>
 																	</Events>
 																</CheckBoxField>
+																<CheckBoxField name="ТребуетсяПодписьУведомленияОНачалеОтпускаСоСтороныРаботодателя" id="1146">
+																	<DataPath>ТребуетсяПодписьУведомленияОНачалеОтпускаСоСтороныРаботодателя</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Требуется подпись со стороны работодателя</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>Right</TitleLocation>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="ТребуетсяПодписьУведомленияОНачалеОтпускаСоСтороныРаботодателяКонтекстноеМеню" id="1147"/>
+																	<ExtendedTooltip name="ТребуетсяПодписьУведомленияОНачалеОтпускаСоСтороныРаботодателяРасширеннаяПодсказка" id="1148">
+																		<Title formatted="false">
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Уведомления будут отправлены в кабинет сотрудника только после подписи печатной формы со стороны работодателя</v8:content>
+																			</v8:item>
+																		</Title>
+																	</ExtendedTooltip>
+																	<Events>
+																		<Event name="OnChange">ТребуетсяПодписьУведомленияОНачалеОтпускаСоСтороныРаботодателяПриИзменении</Event>
+																	</Events>
+																</CheckBoxField>
 																<Button name="ОтправкаУведомленийОНачалеОтпуска" id="1118">
 																	<Type>Hyperlink</Type>
 																	<CommandName>Form.Command.ОтправкаУведомленийОНачалеОтпуска</CommandName>
@@ -2644,6 +2668,67 @@
 																		</Button>
 																	</ChildItems>
 																</UsualGroup>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаБлокировкаДоступа" id="1133">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Блокировка доступа</v8:content>
+																</v8:item>
+															</Title>
+															<Group>Vertical</Group>
+															<Behavior>Collapsible</Behavior>
+															<Collapsed>true</Collapsed>
+															<ControlRepresentation>Picture</ControlRepresentation>
+															<Representation>NormalSeparation</Representation>
+															<ExtendedTooltip name="ГруппаБлокировкаДоступаРасширеннаяПодсказка" id="1134"/>
+															<ChildItems>
+																<UsualGroup name="ГруппаСостояниеБлокировки" id="1135">
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа состояние блокировки</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<Behavior>Usual</Behavior>
+																	<Representation>None</Representation>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="ГруппаСостояниеБлокировкиРасширеннаяПодсказка" id="1136"/>
+																	<ChildItems>
+																		<LabelDecoration name="ДекорацияСостояниеБлокировки" id="1137">
+																			<AutoMaxWidth>false</AutoMaxWidth>
+																			<HorizontalStretch>true</HorizontalStretch>
+																			<TextColor>style:FormTextColor</TextColor>
+																			<Title formatted="false">
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Информация о состоянии доступа не получена</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ContextMenu name="ДекорацияСостояниеБлокировкиКонтекстноеМеню" id="1138"/>
+																			<ExtendedTooltip name="ДекорацияСостояниеБлокировкиРасширеннаяПодсказка" id="1139"/>
+																		</LabelDecoration>
+																		<Button name="ОбновитьСообщениеСостояниеБлокировки" id="1140">
+																			<Type>UsualButton</Type>
+																			<CommandName>Form.Command.ОбновитьСообщениеСостояниеБлокировки</CommandName>
+																			<ExtendedTooltip name="ОбновитьСообщениеСостояниеБлокировкиРасширеннаяПодсказка" id="1141"/>
+																		</Button>
+																	</ChildItems>
+																</UsualGroup>
+																<Button name="ИзменитьСостояниеБлокировки" id="1144">
+																	<Type>UsualButton</Type>
+																	<Enabled>false</Enabled>
+																	<CommandName>Form.Command.ИзменитьСостояниеБлокировки</CommandName>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Заблокировать</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ExtendedTooltip name="ИзменитьСостояниеБлокировкиРасширеннаяПодсказка" id="1145"/>
+																</Button>
 															</ChildItems>
 														</UsualGroup>
 														<UsualGroup name="ОтключениеСервиса" id="239">
@@ -4072,6 +4157,28 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ДоступПользователейЗаблокирован" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доступ пользователей заблокирован</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТребуетсяПодписьУведомленияОНачалеОтпускаСоСтороныРаботодателя" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Требуется подпись уведомления о начале отпуска со стороны работодателя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ПодробноОСервисе" id="1">
@@ -4555,6 +4662,41 @@
 				</v8:item>
 			</Title>
 			<Action>ВключитьРегламентныеЗадания</Action>
+		</Command>
+		<Command name="ОбновитьСообщениеСостояниеБлокировки" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить сообщение состояние блокировки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить сведение о состоянии блокировки доступа сотрудников</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьСообщениеСостояниеБлокировки</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ИзменитьСостояниеБлокировки" id="47">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заблокировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить состояние блокировки доступа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИзменитьСостояниеБлокировки</Action>
 		</Command>
 	</Commands>
 </Form>

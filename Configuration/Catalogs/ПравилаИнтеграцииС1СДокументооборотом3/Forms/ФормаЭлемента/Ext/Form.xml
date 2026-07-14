@@ -300,266 +300,542 @@
 										</Table>
 									</ChildItems>
 								</Page>
-								<Page name="ГруппаКлючевыеРеквизиты" id="15">
+								<Page name="ГруппаУсловияПрименимостиПриВыгрузке" id="266">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Ключевые реквизиты</v8:content>
+											<v8:content>Условия применимости для выгрузки объектов в 1С:ДО</v8:content>
 										</v8:item>
 									</Title>
-									<Group>AlwaysHorizontal</Group>
-									<ExtendedTooltip name="ГруппаКлючевыеРеквизитыРасширеннаяПодсказка" id="16"/>
+									<ExtendedTooltip name="ГруппаУсловияПрименимостиПриВыгрузкеРасширеннаяПодсказка" id="267"/>
 									<ChildItems>
-										<UsualGroup name="ГруппаКлючевыеРеквизитыИС" id="188">
+										<UsualGroup name="ГруппаКомандыУсловияПрименимостиПриВыгрузке" id="268">
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Группа ключевые реквизиты ИС</v8:content>
+													<v8:content>Группа команды условия применимости при выгрузке</v8:content>
 												</v8:item>
 											</Title>
-											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
-											<Representation>None</Representation>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Group>AlwaysHorizontal</Group>
 											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="ГруппаКлючевыеРеквизитыИСРасширеннаяПодсказка" id="189"/>
+											<ExtendedTooltip name="ГруппаКомандыУсловияПрименимостиПриВыгрузкеРасширеннаяПодсказка" id="269"/>
 											<ChildItems>
-												<Table name="КлючевыеРеквизитыИС" id="39">
-													<Representation>List</Representation>
-													<ChangeRowSet>false</ChangeRowSet>
-													<ChangeRowOrder>false</ChangeRowOrder>
-													<SelectionMode>SingleRow</SelectionMode>
-													<AutoInsertNewRow>true</AutoInsertNewRow>
-													<EnableStartDrag>true</EnableStartDrag>
-													<EnableDrag>true</EnableDrag>
-													<DataPath>КлючевыеРеквизитыИС</DataPath>
-													<CommandSet>
-														<ExcludedCommand>Add</ExcludedCommand>
-														<ExcludedCommand>Change</ExcludedCommand>
-														<ExcludedCommand>Copy</ExcludedCommand>
-														<ExcludedCommand>Delete</ExcludedCommand>
-														<ExcludedCommand>EndEdit</ExcludedCommand>
-														<ExcludedCommand>MoveDown</ExcludedCommand>
-														<ExcludedCommand>MoveUp</ExcludedCommand>
-														<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
-														<ExcludedCommand>SortListAsc</ExcludedCommand>
-														<ExcludedCommand>SortListDesc</ExcludedCommand>
-													</CommandSet>
-													<SearchStringLocation>None</SearchStringLocation>
-													<ViewStatusLocation>None</ViewStatusLocation>
-													<SearchControlLocation>None</SearchControlLocation>
-													<RowFilter xsi:nil="true"/>
-													<ContextMenu name="КлючевыеРеквизитыИСКонтекстноеМеню" id="40"/>
-													<AutoCommandBar name="КлючевыеРеквизитыИСКоманднаяПанель" id="41">
-														<Autofill>false</Autofill>
-													</AutoCommandBar>
-													<ExtendedTooltip name="КлючевыеРеквизитыИСРасширеннаяПодсказка" id="42"/>
-													<SearchStringAddition name="КлючевыеРеквизитыИССтрокаПоиска" id="43">
-														<AdditionSource>
-															<Item>КлючевыеРеквизитыИС</Item>
-															<Type>SearchStringRepresentation</Type>
-														</AdditionSource>
-														<ContextMenu name="КлючевыеРеквизитыИССтрокаПоискаКонтекстноеМеню" id="44"/>
-														<ExtendedTooltip name="КлючевыеРеквизитыИССтрокаПоискаРасширеннаяПодсказка" id="45"/>
-													</SearchStringAddition>
-													<ViewStatusAddition name="КлючевыеРеквизитыИССостояниеПросмотра" id="46">
-														<AdditionSource>
-															<Item>КлючевыеРеквизитыИС</Item>
-															<Type>ViewStatusRepresentation</Type>
-														</AdditionSource>
-														<ContextMenu name="КлючевыеРеквизитыИССостояниеПросмотраКонтекстноеМеню" id="47"/>
-														<ExtendedTooltip name="КлючевыеРеквизитыИССостояниеПросмотраРасширеннаяПодсказка" id="48"/>
-													</ViewStatusAddition>
-													<SearchControlAddition name="КлючевыеРеквизитыИСУправлениеПоиском" id="49">
-														<AdditionSource>
-															<Item>КлючевыеРеквизитыИС</Item>
-															<Type>SearchControl</Type>
-														</AdditionSource>
-														<ContextMenu name="КлючевыеРеквизитыИСУправлениеПоискомКонтекстноеМеню" id="50"/>
-														<ExtendedTooltip name="КлючевыеРеквизитыИСУправлениеПоискомРасширеннаяПодсказка" id="51"/>
-													</SearchControlAddition>
+												<RadioButtonField name="ИспользоватьУсловиеПрименимостиПриВыгрузке" id="270">
+													<DataPath>ИспользоватьУсловиеПрименимостиПриВыгрузке</DataPath>
+													<SkipOnInput>true</SkipOnInput>
+													<TitleLocation>None</TitleLocation>
+													<RadioButtonType>Tumbler</RadioButtonType>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Ключевые реквизиты</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:decimal">0</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Произвольное выражение</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:decimal">1</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ИспользоватьУсловиеПрименимостиПриВыгрузкеКонтекстноеМеню" id="271"/>
+													<ExtendedTooltip name="ИспользоватьУсловиеПрименимостиПриВыгрузкеРасширеннаяПодсказка" id="272"/>
 													<Events>
-														<Event name="BeforeAddRow">КлючевыеРеквизитыИСПередНачаломДобавления</Event>
-														<Event name="BeforeDeleteRow">КлючевыеРеквизитыИСПередУдалением</Event>
+														<Event name="OnChange">ИспользоватьУсловиеПрименимостиПриВыгрузкеПриИзменении</Event>
 													</Events>
-													<ChildItems>
-														<InputField name="КлючевыеРеквизитыИСПредставление" id="55">
-															<DataPath>КлючевыеРеквизитыИС.Представление</DataPath>
-															<ReadOnly>true</ReadOnly>
-															<EditMode>EnterOnInput</EditMode>
-															<ContextMenu name="КлючевыеРеквизитыИСПредставлениеКонтекстноеМеню" id="56"/>
-															<ExtendedTooltip name="КлючевыеРеквизитыИСПредставлениеРасширеннаяПодсказка" id="57"/>
-														</InputField>
-														<InputField name="КлючевыеРеквизитыИСЗначениеРеквизита" id="177">
-															<DataPath>КлючевыеРеквизитыИС.ЗначениеРеквизита</DataPath>
-															<HorizontalAlign>Left</HorizontalAlign>
-															<EditMode>EnterOnInput</EditMode>
-															<DropListButton>false</DropListButton>
-															<ChoiceButton>true</ChoiceButton>
-															<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
-															<ChooseType>false</ChooseType>
-															<ContextMenu name="КлючевыеРеквизитыИСЗначениеРеквизитаКонтекстноеМеню" id="178"/>
-															<ExtendedTooltip name="КлючевыеРеквизитыИСЗначениеРеквизитаРасширеннаяПодсказка" id="179"/>
-															<Events>
-																<Event name="OnChange">КлючевыеРеквизитыИСЗначениеРеквизитаПриИзменении</Event>
-																<Event name="AutoComplete">КлючевыеРеквизитыИСЗначениеРеквизитаАвтоПодбор</Event>
-																<Event name="StartChoice">КлючевыеРеквизитыИСЗначениеРеквизитаНачалоВыбора</Event>
-															</Events>
-														</InputField>
-														<CheckBoxField name="КлючевыеРеквизитыИСКлючевой" id="58">
-															<DataPath>КлючевыеРеквизитыИС.Ключевой</DataPath>
-															<EditMode>EnterOnInput</EditMode>
-															<CheckBoxType>Auto</CheckBoxType>
-															<ContextMenu name="КлючевыеРеквизитыИСКлючевойКонтекстноеМеню" id="59"/>
-															<ExtendedTooltip name="КлючевыеРеквизитыИСКлючевойРасширеннаяПодсказка" id="60"/>
-															<Events>
-																<Event name="OnChange">КлючевыеРеквизитыИСКлючевойПриИзменении</Event>
-															</Events>
-														</CheckBoxField>
-													</ChildItems>
-												</Table>
-												<LabelDecoration name="ПояснениеКлючевыеРеквизитыИС" id="183">
-													<AutoMaxWidth>false</AutoMaxWidth>
-													<Height>3</Height>
-													<HorizontalStretch>true</HorizontalStretch>
-													<TextColor>style:ПоясняющийТекст</TextColor>
-													<Title formatted="true">
+												</RadioButtonField>
+												<Button name="ПроверитьВыражениеУсловияПрименимостиПриВыгрузке" id="273">
+													<Type>UsualButton</Type>
+													<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+													<CommandName>Form.Command.ПроверитьВыражениеУсловияПрименимостиПриВыгрузке</CommandName>
+													<ExtendedTooltip name="ПроверитьВыражениеУсловияПрименимостиПриВыгрузкеРасширеннаяПодсказка" id="274"/>
+												</Button>
+												<CommandBar name="КоманднаяПанельКлючевыеРеквизитыИС" id="275">
+													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Ключевые реквизиты объекта этой конфигурации предназначены для подбора подходящего правила интеграции при создании нового объекта в 1С:Документооборот, и при обновлении данных связанных объектов.</v8:content>
+															<v8:content>Командная панель ключевые реквизиты ИС</v8:content>
 														</v8:item>
 													</Title>
-													<VerticalAlign>Top</VerticalAlign>
-													<ContextMenu name="ПояснениеКлючевыеРеквизитыИСКонтекстноеМеню" id="184"/>
-													<ExtendedTooltip name="ПояснениеКлючевыеРеквизитыИСРасширеннаяПодсказка" id="185"/>
-												</LabelDecoration>
+													<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+													<ExtendedTooltip name="КоманднаяПанельКлючевыеРеквизитыИСРасширеннаяПодсказка" id="276"/>
+													<ChildItems>
+														<SearchStringAddition name="ДополнениеКлючевыеРеквизитыИССтрокаПоиска" id="277">
+															<AdditionSource>
+																<Item>КлючевыеРеквизитыИС</Item>
+																<Type>SearchStringRepresentation</Type>
+															</AdditionSource>
+															<ContextMenu name="ДополнениеКлючевыеРеквизитыИССтрокаПоискаКонтекстноеМеню" id="278"/>
+															<ExtendedTooltip name="ДополнениеКлючевыеРеквизитыИССтрокаПоискаРасширеннаяПодсказка" id="279"/>
+														</SearchStringAddition>
+														<SearchControlAddition name="ДополнениеКлючевыеРеквизитыИСУправлениеПоиском" id="280">
+															<AdditionSource>
+																<Item>КлючевыеРеквизитыИС</Item>
+																<Type>SearchControl</Type>
+															</AdditionSource>
+															<ContextMenu name="ДополнениеКлючевыеРеквизитыИСУправлениеПоискомКонтекстноеМеню" id="281"/>
+															<ExtendedTooltip name="ДополнениеКлючевыеРеквизитыИСУправлениеПоискомРасширеннаяПодсказка" id="282"/>
+														</SearchControlAddition>
+													</ChildItems>
+												</CommandBar>
 											</ChildItems>
 										</UsualGroup>
-										<UsualGroup name="ГруппаКлючевыеРеквизитыДО" id="186">
+										<Pages name="СтраницыУсловияПрименимостиПриВыгрузке" id="283">
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Группа ключевые реквизиты ДО</v8:content>
+													<v8:content>Страницы условия применимости при выгрузке</v8:content>
 												</v8:item>
 											</Title>
-											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
-											<Representation>None</Representation>
-											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="ГруппаКлючевыеРеквизитыДОРасширеннаяПодсказка" id="187"/>
+											<PagesRepresentation>None</PagesRepresentation>
+											<ExtendedTooltip name="СтраницыУсловияПрименимостиПриВыгрузкеРасширеннаяПодсказка" id="284"/>
 											<ChildItems>
-												<Table name="КлючевыеРеквизитыДО" id="17">
-													<Representation>List</Representation>
-													<ChangeRowSet>false</ChangeRowSet>
-													<ChangeRowOrder>false</ChangeRowOrder>
-													<SelectionMode>SingleRow</SelectionMode>
-													<AutoInsertNewRow>true</AutoInsertNewRow>
-													<EnableStartDrag>true</EnableStartDrag>
-													<EnableDrag>true</EnableDrag>
-													<DataPath>КлючевыеРеквизитыДО</DataPath>
-													<CommandSet>
-														<ExcludedCommand>Add</ExcludedCommand>
-														<ExcludedCommand>Change</ExcludedCommand>
-														<ExcludedCommand>Copy</ExcludedCommand>
-														<ExcludedCommand>Delete</ExcludedCommand>
-														<ExcludedCommand>EndEdit</ExcludedCommand>
-														<ExcludedCommand>MoveDown</ExcludedCommand>
-														<ExcludedCommand>MoveUp</ExcludedCommand>
-														<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
-														<ExcludedCommand>SortListAsc</ExcludedCommand>
-														<ExcludedCommand>SortListDesc</ExcludedCommand>
-													</CommandSet>
-													<SearchStringLocation>None</SearchStringLocation>
-													<ViewStatusLocation>None</ViewStatusLocation>
-													<SearchControlLocation>None</SearchControlLocation>
-													<RowFilter xsi:nil="true"/>
-													<ContextMenu name="КлючевыеРеквизитыДОКонтекстноеМеню" id="18"/>
-													<AutoCommandBar name="КлючевыеРеквизитыДОКоманднаяПанель" id="19">
-														<Autofill>false</Autofill>
-													</AutoCommandBar>
-													<ExtendedTooltip name="КлючевыеРеквизитыДОРасширеннаяПодсказка" id="20"/>
-													<SearchStringAddition name="КлючевыеРеквизитыДОСтрокаПоиска" id="21">
-														<AdditionSource>
-															<Item>КлючевыеРеквизитыДО</Item>
-															<Type>SearchStringRepresentation</Type>
-														</AdditionSource>
-														<ContextMenu name="КлючевыеРеквизитыДОСтрокаПоискаКонтекстноеМеню" id="22"/>
-														<ExtendedTooltip name="КлючевыеРеквизитыДОСтрокаПоискаРасширеннаяПодсказка" id="23"/>
-													</SearchStringAddition>
-													<ViewStatusAddition name="КлючевыеРеквизитыДОСостояниеПросмотра" id="24">
-														<AdditionSource>
-															<Item>КлючевыеРеквизитыДО</Item>
-															<Type>ViewStatusRepresentation</Type>
-														</AdditionSource>
-														<ContextMenu name="КлючевыеРеквизитыДОСостояниеПросмотраКонтекстноеМеню" id="25"/>
-														<ExtendedTooltip name="КлючевыеРеквизитыДОСостояниеПросмотраРасширеннаяПодсказка" id="26"/>
-													</ViewStatusAddition>
-													<SearchControlAddition name="КлючевыеРеквизитыДОУправлениеПоиском" id="27">
-														<AdditionSource>
-															<Item>КлючевыеРеквизитыДО</Item>
-															<Type>SearchControl</Type>
-														</AdditionSource>
-														<ContextMenu name="КлючевыеРеквизитыДОУправлениеПоискомКонтекстноеМеню" id="28"/>
-														<ExtendedTooltip name="КлючевыеРеквизитыДОУправлениеПоискомРасширеннаяПодсказка" id="29"/>
-													</SearchControlAddition>
-													<Events>
-														<Event name="BeforeAddRow">КлючевыеРеквизитыДОПередНачаломДобавления</Event>
-														<Event name="BeforeDeleteRow">КлючевыеРеквизитыДОПередУдалением</Event>
-													</Events>
-													<ChildItems>
-														<InputField name="КлючевыеРеквизитыДОПредставление" id="33">
-															<DataPath>КлючевыеРеквизитыДО.Представление</DataPath>
-															<ReadOnly>true</ReadOnly>
-															<EditMode>EnterOnInput</EditMode>
-															<ContextMenu name="КлючевыеРеквизитыДОПредставлениеКонтекстноеМеню" id="34"/>
-															<ExtendedTooltip name="КлючевыеРеквизитыДОПредставлениеРасширеннаяПодсказка" id="35"/>
-														</InputField>
-														<InputField name="КлючевыеРеквизитыДОЗначениеРеквизита" id="180">
-															<DataPath>КлючевыеРеквизитыДО.ЗначениеРеквизита</DataPath>
-															<HorizontalAlign>Left</HorizontalAlign>
-															<EditMode>EnterOnInput</EditMode>
-															<DropListButton>false</DropListButton>
-															<ChoiceButton>true</ChoiceButton>
-															<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
-															<ChooseType>false</ChooseType>
-															<ContextMenu name="КлючевыеРеквизитыДОЗначениеРеквизитаКонтекстноеМеню" id="181"/>
-															<ExtendedTooltip name="КлючевыеРеквизитыДОЗначениеРеквизитаРасширеннаяПодсказка" id="182"/>
-															<Events>
-																<Event name="OnChange">КлючевыеРеквизитыДОЗначениеРеквизитаПриИзменении</Event>
-																<Event name="AutoComplete">КлючевыеРеквизитыДОЗначениеРеквизитаАвтоПодбор</Event>
-																<Event name="StartChoice">КлючевыеРеквизитыДОЗначениеРеквизитаНачалоВыбора</Event>
-																<Event name="TextEditEnd">КлючевыеРеквизитыДОЗначениеРеквизитаОкончаниеВводаТекста</Event>
-																<Event name="ChoiceProcessing">КлючевыеРеквизитыДОЗначениеРеквизитаОбработкаВыбора</Event>
-															</Events>
-														</InputField>
-														<CheckBoxField name="КлючевыеРеквизитыДОКлючевой" id="36">
-															<DataPath>КлючевыеРеквизитыДО.Ключевой</DataPath>
-															<EditMode>EnterOnInput</EditMode>
-															<CheckBoxType>Auto</CheckBoxType>
-															<ContextMenu name="КлючевыеРеквизитыДОКлючевойКонтекстноеМеню" id="37"/>
-															<ExtendedTooltip name="КлючевыеРеквизитыДОКлючевойРасширеннаяПодсказка" id="38"/>
-															<Events>
-																<Event name="OnChange">КлючевыеРеквизитыДОКлючевойПриИзменении</Event>
-															</Events>
-														</CheckBoxField>
-													</ChildItems>
-												</Table>
-												<LabelDecoration name="ПояснениеКлючевыеРеквизитыДО" id="190">
-													<AutoMaxWidth>false</AutoMaxWidth>
-													<Height>3</Height>
-													<HorizontalStretch>true</HorizontalStretch>
-													<TextColor>style:ПоясняющийТекст</TextColor>
-													<Title formatted="true">
+												<Page name="СтраницаКлючевыеРеквизитыИС" id="285">
+													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Ключевые реквизиты объекта 1С:Документооборот предназначены для подбора подходящего правила интеграции при создании на его основании нового объекта в этой конфигурации.</v8:content>
+															<v8:content>Страница ключевые реквизиты ИС</v8:content>
 														</v8:item>
 													</Title>
-													<VerticalAlign>Top</VerticalAlign>
-													<ContextMenu name="ПояснениеКлючевыеРеквизитыДОКонтекстноеМеню" id="191"/>
-													<ExtendedTooltip name="ПояснениеКлючевыеРеквизитыДОРасширеннаяПодсказка" id="192"/>
-												</LabelDecoration>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="СтраницаКлючевыеРеквизитыИСРасширеннаяПодсказка" id="286"/>
+													<ChildItems>
+														<Table name="КлючевыеРеквизитыИС" id="39">
+															<Representation>List</Representation>
+															<ChangeRowSet>false</ChangeRowSet>
+															<ChangeRowOrder>false</ChangeRowOrder>
+															<SelectionMode>SingleRow</SelectionMode>
+															<AutoInsertNewRow>true</AutoInsertNewRow>
+															<EnableStartDrag>true</EnableStartDrag>
+															<EnableDrag>true</EnableDrag>
+															<DataPath>КлючевыеРеквизитыИС</DataPath>
+															<CommandSet>
+																<ExcludedCommand>Add</ExcludedCommand>
+																<ExcludedCommand>Change</ExcludedCommand>
+																<ExcludedCommand>Copy</ExcludedCommand>
+																<ExcludedCommand>Delete</ExcludedCommand>
+																<ExcludedCommand>EndEdit</ExcludedCommand>
+																<ExcludedCommand>MoveDown</ExcludedCommand>
+																<ExcludedCommand>MoveUp</ExcludedCommand>
+																<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+																<ExcludedCommand>SortListAsc</ExcludedCommand>
+																<ExcludedCommand>SortListDesc</ExcludedCommand>
+															</CommandSet>
+															<SearchStringLocation>None</SearchStringLocation>
+															<ViewStatusLocation>None</ViewStatusLocation>
+															<SearchControlLocation>None</SearchControlLocation>
+															<RowFilter xsi:nil="true"/>
+															<ContextMenu name="КлючевыеРеквизитыИСКонтекстноеМеню" id="40"/>
+															<AutoCommandBar name="КлючевыеРеквизитыИСКоманднаяПанель" id="41">
+																<Autofill>false</Autofill>
+															</AutoCommandBar>
+															<ExtendedTooltip name="КлючевыеРеквизитыИСРасширеннаяПодсказка" id="42"/>
+															<SearchStringAddition name="КлючевыеРеквизитыИССтрокаПоиска" id="43">
+																<AdditionSource>
+																	<Item>КлючевыеРеквизитыИС</Item>
+																	<Type>SearchStringRepresentation</Type>
+																</AdditionSource>
+																<ContextMenu name="КлючевыеРеквизитыИССтрокаПоискаКонтекстноеМеню" id="44"/>
+																<ExtendedTooltip name="КлючевыеРеквизитыИССтрокаПоискаРасширеннаяПодсказка" id="45"/>
+															</SearchStringAddition>
+															<ViewStatusAddition name="КлючевыеРеквизитыИССостояниеПросмотра" id="46">
+																<AdditionSource>
+																	<Item>КлючевыеРеквизитыИС</Item>
+																	<Type>ViewStatusRepresentation</Type>
+																</AdditionSource>
+																<ContextMenu name="КлючевыеРеквизитыИССостояниеПросмотраКонтекстноеМеню" id="47"/>
+																<ExtendedTooltip name="КлючевыеРеквизитыИССостояниеПросмотраРасширеннаяПодсказка" id="48"/>
+															</ViewStatusAddition>
+															<SearchControlAddition name="КлючевыеРеквизитыИСУправлениеПоиском" id="49">
+																<AdditionSource>
+																	<Item>КлючевыеРеквизитыИС</Item>
+																	<Type>SearchControl</Type>
+																</AdditionSource>
+																<ContextMenu name="КлючевыеРеквизитыИСУправлениеПоискомКонтекстноеМеню" id="50"/>
+																<ExtendedTooltip name="КлючевыеРеквизитыИСУправлениеПоискомРасширеннаяПодсказка" id="51"/>
+															</SearchControlAddition>
+															<Events>
+																<Event name="BeforeAddRow">КлючевыеРеквизитыИСПередНачаломДобавления</Event>
+																<Event name="BeforeDeleteRow">КлючевыеРеквизитыИСПередУдалением</Event>
+															</Events>
+															<ChildItems>
+																<InputField name="КлючевыеРеквизитыИСПредставление" id="55">
+																	<DataPath>КлючевыеРеквизитыИС.Представление</DataPath>
+																	<ReadOnly>true</ReadOnly>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="КлючевыеРеквизитыИСПредставлениеКонтекстноеМеню" id="56"/>
+																	<ExtendedTooltip name="КлючевыеРеквизитыИСПредставлениеРасширеннаяПодсказка" id="57"/>
+																</InputField>
+																<InputField name="КлючевыеРеквизитыИСЗначениеРеквизита" id="177">
+																	<DataPath>КлючевыеРеквизитыИС.ЗначениеРеквизита</DataPath>
+																	<HorizontalAlign>Left</HorizontalAlign>
+																	<EditMode>EnterOnInput</EditMode>
+																	<DropListButton>false</DropListButton>
+																	<ChoiceButton>true</ChoiceButton>
+																	<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+																	<ChooseType>false</ChooseType>
+																	<ContextMenu name="КлючевыеРеквизитыИСЗначениеРеквизитаКонтекстноеМеню" id="178"/>
+																	<ExtendedTooltip name="КлючевыеРеквизитыИСЗначениеРеквизитаРасширеннаяПодсказка" id="179"/>
+																	<Events>
+																		<Event name="OnChange">КлючевыеРеквизитыИСЗначениеРеквизитаПриИзменении</Event>
+																		<Event name="AutoComplete">КлючевыеРеквизитыИСЗначениеРеквизитаАвтоПодбор</Event>
+																		<Event name="StartChoice">КлючевыеРеквизитыИСЗначениеРеквизитаНачалоВыбора</Event>
+																	</Events>
+																</InputField>
+																<CheckBoxField name="КлючевыеРеквизитыИСКлючевой" id="58">
+																	<DataPath>КлючевыеРеквизитыИС.Ключевой</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="КлючевыеРеквизитыИСКлючевойКонтекстноеМеню" id="59"/>
+																	<ExtendedTooltip name="КлючевыеРеквизитыИСКлючевойРасширеннаяПодсказка" id="60"/>
+																	<Events>
+																		<Event name="OnChange">КлючевыеРеквизитыИСКлючевойПриИзменении</Event>
+																	</Events>
+																</CheckBoxField>
+															</ChildItems>
+														</Table>
+														<LabelDecoration name="ПояснениеКлючевыеРеквизитыИС" id="183">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<Height>2</Height>
+															<HorizontalStretch>true</HorizontalStretch>
+															<TextColor>style:ПоясняющийТекст</TextColor>
+															<Title formatted="true">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Ключевые реквизиты объекта этой конфигурации предназначены для подбора подходящего правила интеграции при создании нового объекта в 1С:Документооборот, и при обновлении данных связанных объектов.</v8:content>
+																</v8:item>
+															</Title>
+															<VerticalAlign>Top</VerticalAlign>
+															<ContextMenu name="ПояснениеКлючевыеРеквизитыИСКонтекстноеМеню" id="184"/>
+															<ExtendedTooltip name="ПояснениеКлючевыеРеквизитыИСРасширеннаяПодсказка" id="185"/>
+														</LabelDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="СтраницаВыражениеУсловияПрименимостиПриВыгрузке" id="311">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страница выражение условия применимости при выгрузке</v8:content>
+														</v8:item>
+													</Title>
+													<Group>AlwaysHorizontal</Group>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="СтраницаВыражениеУсловияПрименимостиПриВыгрузкеРасширеннаяПодсказка" id="312"/>
+													<ChildItems>
+														<TextDocumentField name="УсловиеПрименимостиПриВыгрузке" id="313">
+															<DataPath>Объект.УсловиеПрименимостиПриВыгрузке</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Выражение на встроенном языке, определяющее применимость правила при выгрузке объектов в 1С:Документооборот</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Height>2</Height>
+															<ContextMenu name="УсловиеПрименимостиПриВыгрузкеКонтекстноеМеню" id="314"/>
+															<ExtendedTooltip name="УсловиеПрименимостиПриВыгрузкеРасширеннаяПодсказка" id="315"/>
+														</TextDocumentField>
+														<HTMLDocumentField name="ИнструкцияУсловиеПрименимостиПриВыгрузке" id="316">
+															<DataPath>ИнструкцияУсловиеПрименимостиПриВыгрузке</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<Width>35</Width>
+															<Height>2</Height>
+															<ContextMenu name="ИнструкцияУсловиеПрименимостиПриВыгрузкеКонтекстноеМеню" id="317"/>
+															<ExtendedTooltip name="ИнструкцияУсловиеПрименимостиПриВыгрузкеРасширеннаяПодсказка" id="318"/>
+															<Events>
+																<Event name="OnClick">ИнструкцияУсловиеПрименимостиПриВыгрузкеПриНажатии</Event>
+															</Events>
+														</HTMLDocumentField>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
+									</ChildItems>
+								</Page>
+								<Page name="ГруппаУсловияПрименимостиПриЗагрузке" id="213">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Условия применимости для загрузки объектов из 1С:ДО</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ГруппаУсловияПрименимостиПриЗагрузкеРасширеннаяПодсказка" id="214"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаКомандыУсловияПрименимостиПриЗагрузке" id="215">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа команды условия применимости при загрузке</v8:content>
+												</v8:item>
+											</Title>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Group>AlwaysHorizontal</Group>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаКомандыУсловияПрименимостиПриЗагрузкеРасширеннаяПодсказка" id="216"/>
+											<ChildItems>
+												<RadioButtonField name="ИспользоватьУсловиеПрименимостиПриЗагрузке" id="217">
+													<DataPath>ИспользоватьУсловиеПрименимостиПриЗагрузке</DataPath>
+													<SkipOnInput>true</SkipOnInput>
+													<TitleLocation>None</TitleLocation>
+													<RadioButtonType>Tumbler</RadioButtonType>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Ключевые реквизиты</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:decimal">0</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Произвольное выражение</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:decimal">1</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ИспользоватьУсловиеПрименимостиПриЗагрузкеКонтекстноеМеню" id="218"/>
+													<ExtendedTooltip name="ИспользоватьУсловиеПрименимостиПриЗагрузкеРасширеннаяПодсказка" id="219"/>
+													<Events>
+														<Event name="OnChange">ИспользоватьУсловиеПрименимостиПриЗагрузкеПриИзменении</Event>
+													</Events>
+												</RadioButtonField>
+												<Button name="ПроверитьВыражениеУсловияПрименимостиПриЗагрузке" id="220">
+													<Type>UsualButton</Type>
+													<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+													<CommandName>Form.Command.ПроверитьВыражениеУсловияПрименимостиПриЗагрузке</CommandName>
+													<ExtendedTooltip name="ПроверитьВыражениеУсловияПрименимостиПриЗагрузкеРасширеннаяПодсказка" id="221"/>
+												</Button>
+												<CommandBar name="КоманднаяПанельКлючевыеРеквизитыДО" id="222">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Командная панель ключевые реквизиты ДО</v8:content>
+														</v8:item>
+													</Title>
+													<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+													<ExtendedTooltip name="КоманднаяПанельКлючевыеРеквизитыДОРасширеннаяПодсказка" id="223"/>
+													<ChildItems>
+														<SearchStringAddition name="ДополнениеКлючевыеРеквизитыДОСтрокаПоиска" id="224">
+															<AdditionSource>
+																<Item>КлючевыеРеквизитыДО</Item>
+																<Type>SearchStringRepresentation</Type>
+															</AdditionSource>
+															<ContextMenu name="ДополнениеКлючевыеРеквизитыДОСтрокаПоискаКонтекстноеМеню" id="225"/>
+															<ExtendedTooltip name="ДополнениеКлючевыеРеквизитыДОСтрокаПоискаРасширеннаяПодсказка" id="226"/>
+														</SearchStringAddition>
+														<SearchControlAddition name="ДополнениеКлючевыеРеквизитыДОУправлениеПоиском" id="227">
+															<AdditionSource>
+																<Item>КлючевыеРеквизитыДО</Item>
+																<Type>SearchControl</Type>
+															</AdditionSource>
+															<ContextMenu name="ДополнениеКлючевыеРеквизитыДОУправлениеПоискомКонтекстноеМеню" id="228"/>
+															<ExtendedTooltip name="ДополнениеКлючевыеРеквизитыДОУправлениеПоискомРасширеннаяПодсказка" id="229"/>
+														</SearchControlAddition>
+													</ChildItems>
+												</CommandBar>
 											</ChildItems>
 										</UsualGroup>
+										<Pages name="СтраницыУсловияПрименимостиПриЗагрузке" id="230">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страницы условия применимости при загрузке</v8:content>
+												</v8:item>
+											</Title>
+											<PagesRepresentation>None</PagesRepresentation>
+											<ExtendedTooltip name="СтраницыУсловияПрименимостиПриЗагрузкеРасширеннаяПодсказка" id="231"/>
+											<ChildItems>
+												<Page name="СтраницаКлючевыеРеквизитыДО" id="232">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страница ключевые реквизиты ДО</v8:content>
+														</v8:item>
+													</Title>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="СтраницаКлючевыеРеквизитыДОРасширеннаяПодсказка" id="233"/>
+													<ChildItems>
+														<Table name="КлючевыеРеквизитыДО" id="17">
+															<Representation>List</Representation>
+															<ChangeRowSet>false</ChangeRowSet>
+															<ChangeRowOrder>false</ChangeRowOrder>
+															<SelectionMode>SingleRow</SelectionMode>
+															<AutoInsertNewRow>true</AutoInsertNewRow>
+															<EnableStartDrag>true</EnableStartDrag>
+															<EnableDrag>true</EnableDrag>
+															<DataPath>КлючевыеРеквизитыДО</DataPath>
+															<CommandSet>
+																<ExcludedCommand>Add</ExcludedCommand>
+																<ExcludedCommand>Change</ExcludedCommand>
+																<ExcludedCommand>Copy</ExcludedCommand>
+																<ExcludedCommand>Delete</ExcludedCommand>
+																<ExcludedCommand>EndEdit</ExcludedCommand>
+																<ExcludedCommand>MoveDown</ExcludedCommand>
+																<ExcludedCommand>MoveUp</ExcludedCommand>
+																<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+																<ExcludedCommand>SortListAsc</ExcludedCommand>
+																<ExcludedCommand>SortListDesc</ExcludedCommand>
+															</CommandSet>
+															<SearchStringLocation>None</SearchStringLocation>
+															<ViewStatusLocation>None</ViewStatusLocation>
+															<SearchControlLocation>None</SearchControlLocation>
+															<RowFilter xsi:nil="true"/>
+															<ContextMenu name="КлючевыеРеквизитыДОКонтекстноеМеню" id="18"/>
+															<AutoCommandBar name="КлючевыеРеквизитыДОКоманднаяПанель" id="19">
+																<Autofill>false</Autofill>
+															</AutoCommandBar>
+															<ExtendedTooltip name="КлючевыеРеквизитыДОРасширеннаяПодсказка" id="20"/>
+															<SearchStringAddition name="КлючевыеРеквизитыДОСтрокаПоиска" id="21">
+																<AdditionSource>
+																	<Item>КлючевыеРеквизитыДО</Item>
+																	<Type>SearchStringRepresentation</Type>
+																</AdditionSource>
+																<ContextMenu name="КлючевыеРеквизитыДОСтрокаПоискаКонтекстноеМеню" id="22"/>
+																<ExtendedTooltip name="КлючевыеРеквизитыДОСтрокаПоискаРасширеннаяПодсказка" id="23"/>
+															</SearchStringAddition>
+															<ViewStatusAddition name="КлючевыеРеквизитыДОСостояниеПросмотра" id="24">
+																<AdditionSource>
+																	<Item>КлючевыеРеквизитыДО</Item>
+																	<Type>ViewStatusRepresentation</Type>
+																</AdditionSource>
+																<ContextMenu name="КлючевыеРеквизитыДОСостояниеПросмотраКонтекстноеМеню" id="25"/>
+																<ExtendedTooltip name="КлючевыеРеквизитыДОСостояниеПросмотраРасширеннаяПодсказка" id="26"/>
+															</ViewStatusAddition>
+															<SearchControlAddition name="КлючевыеРеквизитыДОУправлениеПоиском" id="27">
+																<AdditionSource>
+																	<Item>КлючевыеРеквизитыДО</Item>
+																	<Type>SearchControl</Type>
+																</AdditionSource>
+																<ContextMenu name="КлючевыеРеквизитыДОУправлениеПоискомКонтекстноеМеню" id="28"/>
+																<ExtendedTooltip name="КлючевыеРеквизитыДОУправлениеПоискомРасширеннаяПодсказка" id="29"/>
+															</SearchControlAddition>
+															<Events>
+																<Event name="BeforeAddRow">КлючевыеРеквизитыДОПередНачаломДобавления</Event>
+																<Event name="BeforeDeleteRow">КлючевыеРеквизитыДОПередУдалением</Event>
+															</Events>
+															<ChildItems>
+																<InputField name="КлючевыеРеквизитыДОПредставление" id="33">
+																	<DataPath>КлючевыеРеквизитыДО.Представление</DataPath>
+																	<ReadOnly>true</ReadOnly>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="КлючевыеРеквизитыДОПредставлениеКонтекстноеМеню" id="34"/>
+																	<ExtendedTooltip name="КлючевыеРеквизитыДОПредставлениеРасширеннаяПодсказка" id="35"/>
+																</InputField>
+																<InputField name="КлючевыеРеквизитыДОЗначениеРеквизита" id="180">
+																	<DataPath>КлючевыеРеквизитыДО.ЗначениеРеквизита</DataPath>
+																	<HorizontalAlign>Left</HorizontalAlign>
+																	<EditMode>EnterOnInput</EditMode>
+																	<DropListButton>false</DropListButton>
+																	<ChoiceButton>true</ChoiceButton>
+																	<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+																	<ChooseType>false</ChooseType>
+																	<ContextMenu name="КлючевыеРеквизитыДОЗначениеРеквизитаКонтекстноеМеню" id="181"/>
+																	<ExtendedTooltip name="КлючевыеРеквизитыДОЗначениеРеквизитаРасширеннаяПодсказка" id="182"/>
+																	<Events>
+																		<Event name="OnChange">КлючевыеРеквизитыДОЗначениеРеквизитаПриИзменении</Event>
+																		<Event name="AutoComplete">КлючевыеРеквизитыДОЗначениеРеквизитаАвтоПодбор</Event>
+																		<Event name="StartChoice">КлючевыеРеквизитыДОЗначениеРеквизитаНачалоВыбора</Event>
+																		<Event name="TextEditEnd">КлючевыеРеквизитыДОЗначениеРеквизитаОкончаниеВводаТекста</Event>
+																		<Event name="ChoiceProcessing">КлючевыеРеквизитыДОЗначениеРеквизитаОбработкаВыбора</Event>
+																	</Events>
+																</InputField>
+																<CheckBoxField name="КлючевыеРеквизитыДОКлючевой" id="36">
+																	<DataPath>КлючевыеРеквизитыДО.Ключевой</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="КлючевыеРеквизитыДОКлючевойКонтекстноеМеню" id="37"/>
+																	<ExtendedTooltip name="КлючевыеРеквизитыДОКлючевойРасширеннаяПодсказка" id="38"/>
+																	<Events>
+																		<Event name="OnChange">КлючевыеРеквизитыДОКлючевойПриИзменении</Event>
+																	</Events>
+																</CheckBoxField>
+															</ChildItems>
+														</Table>
+														<LabelDecoration name="ПояснениеКлючевыеРеквизитыДО" id="190">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<Height>2</Height>
+															<HorizontalStretch>true</HorizontalStretch>
+															<TextColor>style:ПоясняющийТекст</TextColor>
+															<Title formatted="true">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Ключевые реквизиты объекта 1С:Документооборот предназначены для подбора подходящего правила интеграции при создании на его основании нового объекта в этой конфигурации.</v8:content>
+																</v8:item>
+															</Title>
+															<VerticalAlign>Top</VerticalAlign>
+															<ContextMenu name="ПояснениеКлючевыеРеквизитыДОКонтекстноеМеню" id="191"/>
+															<ExtendedTooltip name="ПояснениеКлючевыеРеквизитыДОРасширеннаяПодсказка" id="192"/>
+														</LabelDecoration>
+													</ChildItems>
+												</Page>
+												<Page name="СтраницаВыражениеУсловияПрименимостиПриЗагрузке" id="258">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страница выражение условия применимости при загрузке</v8:content>
+														</v8:item>
+													</Title>
+													<Group>AlwaysHorizontal</Group>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="СтраницаВыражениеУсловияПрименимостиПриЗагрузкеРасширеннаяПодсказка" id="259"/>
+													<ChildItems>
+														<TextDocumentField name="УсловиеПрименимостиПриЗагрузке" id="260">
+															<DataPath>Объект.УсловиеПрименимостиПриЗагрузке</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Выражение на встроенном языке, определяющее применимость правила при загрузке объектов из 1С:Документооборота</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Height>2</Height>
+															<ContextMenu name="УсловиеПрименимостиПриЗагрузкеКонтекстноеМеню" id="261"/>
+															<ExtendedTooltip name="УсловиеПрименимостиПриЗагрузкеРасширеннаяПодсказка" id="262"/>
+														</TextDocumentField>
+														<HTMLDocumentField name="ИнструкцияУсловиеПрименимостиПриЗагрузке" id="263">
+															<DataPath>ИнструкцияУсловиеПрименимостиПриЗагрузке</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<Width>35</Width>
+															<Height>2</Height>
+															<ContextMenu name="ИнструкцияУсловиеПрименимостиПриЗагрузкеКонтекстноеМеню" id="264"/>
+															<ExtendedTooltip name="ИнструкцияУсловиеПрименимостиПриЗагрузкеРасширеннаяПодсказка" id="265"/>
+															<Events>
+																<Event name="OnClick">ИнструкцияУсловиеПрименимостиПриЗагрузкеПриНажатии</Event>
+															</Events>
+														</HTMLDocumentField>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
 									</ChildItems>
 								</Page>
 							</ChildItems>
@@ -1105,6 +1381,17 @@
 						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
+				<Column name="ДополнительныйРеквизитИС" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительный реквизит объекта значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="КлючевыеРеквизитыДО" id="6">
@@ -1415,6 +1702,68 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ИнструкцияУсловиеПрименимостиПриЗагрузке" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инструкция условие применимости при загрузке</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьУсловиеПрименимостиПриВыгрузке" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать условие применимости при выгрузке</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьУсловиеПрименимостиПриЗагрузке" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать условие применимости при загрузке</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИнструкцияУсловиеПрименимостиПриВыгрузке" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инструкция условие применимости при выгрузке</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
 				<dcsset:selection>
@@ -1605,6 +1954,34 @@
 			<Action>ЗаполнитьПоУмолчанию</Action>
 			<ModifiesSavedData>true</ModifiesSavedData>
 			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПроверитьВыражениеУсловияПрименимостиПриВыгрузке" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.AppearanceCheckBox</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПроверитьВыражениеУсловияПрименимостиПриВыгрузке</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПроверитьВыражениеУсловияПрименимостиПриЗагрузке" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.AppearanceCheckBox</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПроверитьВыражениеУсловияПрименимостиПриЗагрузке</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 	<Parameters>

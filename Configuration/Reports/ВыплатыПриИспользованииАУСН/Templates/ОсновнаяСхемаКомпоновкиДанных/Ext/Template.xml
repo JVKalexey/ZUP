@@ -101,19 +101,6 @@
 			</orderExpression>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>КодВыплачиваемогоДохода</dataPath>
-			<field>КодВыплачиваемогоДохода</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Код выплачиваемого дохода</v8:content>
-				</v8:item>
-			</title>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>СуммаДохода</dataPath>
 			<field>СуммаДохода</field>
 			<title xsi:type="v8:LocalStringType">
@@ -234,6 +221,37 @@
 					<v8:content>Удержано НДФЛ</v8:content>
 				</v8:item>
 			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КодДохода</dataPath>
+			<field>КодДохода</field>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КодДоходаСтрокой</dataPath>
+			<field>КодДоходаСтрокой</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код дохода строкой</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
@@ -443,27 +461,22 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 ВЫБРАТЬ
-	МИНИМУМ(ДанныеУчета.Начисление) КАК Начисление,
+	МИНИМУМ(НачисленияФизическихЛиц.Начисление) КАК Начисление,
 	НачисленияФизическихЛиц.ДатаПолученияДохода КАК ДатаПолученияДохода,
 	НачисленияФизическихЛиц.Организация КАК Организация,
 	НачисленияФизическихЛиц.Период КАК Период,
 	НачисленияФизическихЛиц.ФизическоеЛицо КАК ФизическоеЛицо,
-	ДанныеУчета.НалоговаяБаза КАК НалоговаяБаза
+	НачисленияФизическихЛиц.НалоговаяБаза КАК НалоговаяБаза
 ПОМЕСТИТЬ ВТПервыеСтрокиДатыПолученияДохода
 ИЗ
 	ВТСтрокиОтчета КАК НачисленияФизическихЛиц
-		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТДанныеУчета КАК ДанныеУчета
-		ПО НачисленияФизическихЛиц.Период = ДанныеУчета.Период
-			И НачисленияФизическихЛиц.Организация = ДанныеУчета.Организация
-			И НачисленияФизическихЛиц.ФизическоеЛицо = ДанныеУчета.ФизическоеЛицо
-			И НачисленияФизическихЛиц.ДатаПолученияДохода = ДанныеУчета.ДатаПолученияДохода
 
 СГРУППИРОВАТЬ ПО
 	НачисленияФизическихЛиц.Организация,
 	НачисленияФизическихЛиц.Период,
 	НачисленияФизическихЛиц.ФизическоеЛицо,
 	НачисленияФизическихЛиц.ДатаПолученияДохода,
-	ДанныеУчета.НалоговаяБаза
+	НачисленияФизическихЛиц.НалоговаяБаза
 ;
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -956,7 +969,8 @@
 			ИНАЧЕ ВсеСтрокиОтчета.СуммаДохода
 		КОНЕЦ) КАК СуммаНеоблагаемогоВзносамиДохода,
 	СУММА(ВсеСтрокиОтчета.Начислено) КАК НачисленоНДФЛ,
-	СУММА(ВсеСтрокиОтчета.Удержано) КАК УдержаноНДФЛ
+	СУММА(ВсеСтрокиОтчета.Удержано) КАК УдержаноНДФЛ,
+	ВсеСтрокиОтчета.КодДохода КАК КодДохода
 ПОМЕСТИТЬ ВТОбработанныеСтроки
 ИЗ
 	ВТВсеСтрокиОтчета КАК ВсеСтрокиОтчета
@@ -1026,7 +1040,8 @@
 		КОГДА НЕ ВсеСтрокиОтчета.ВидДохода.ВходитВБазуПФР
 			ТОГДА "02"
 		ИНАЧЕ ""
-	КОНЕЦ
+	КОНЕЦ,
+	ВсеСтрокиОтчета.КодДохода
 ;
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -1036,21 +1051,22 @@
 	ОбработанныеСтроки.ФизическоеЛицо КАК ФизическоеЛицо,
 	ОбработанныеСтроки.ДатаПолученияДохода КАК ДатаПолученияДохода,
 	ОбработанныеСтроки.Начисление КАК Начисление,
-	ОбработанныеСтроки.КодВыплачиваемогоДохода КАК КодВыплачиваемогоДохода,
+	ОбработанныеСтроки.КодВыплачиваемогоДохода КАК КодДоходаСтрокой,
 	ОбработанныеСтроки.СуммаДохода КАК СуммаДохода,
 	ОбработанныеСтроки.КодВычета КАК КодВычета,
 	ОбработанныеСтроки.СуммаВычета КАК СуммаВычета,
 	ОбработанныеСтроки.КодНеоблагаемогоВзносамиДохода КАК КодНеоблагаемогоВзносамиДохода,
 	ОбработанныеСтроки.СуммаНеоблагаемогоВзносамиДохода КАК СуммаНеоблагаемогоВзносамиДохода,
 	ОбработанныеСтроки.НачисленоНДФЛ КАК НачисленоНДФЛ,
-	ОбработанныеСтроки.УдержаноНДФЛ КАК УдержаноНДФЛ
+	ОбработанныеСтроки.УдержаноНДФЛ КАК УдержаноНДФЛ,
+	ОбработанныеСтроки.КодДохода КАК КодДохода
 {ВЫБРАТЬ
 	Организация.*,
 	ФизическоеЛицо.*,
 	Период,
 	ДатаПолученияДохода,
 	Начисление.*,
-	КодВыплачиваемогоДохода,
+	КодДоходаСтрокой,
 	СуммаДохода,
 	КодВычета,
 	СуммаВычета,
@@ -1074,6 +1090,71 @@
 	ОбработанныеСтроки.ФизическоеЛицо.*,
 	ОбработанныеСтроки.Начисление.*}</query>
 	</dataSet>
+	<dataSet xsi:type="DataSetObject">
+		<name>ТаблицаКодовДляОтчетностиПоАУСН</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КодыАУСН.Ссылка</dataPath>
+			<field>Ссылка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коды АУСН.Ссылка</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.ВидыДоходовНДФЛ</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КодыАУСН.КодДляОтчетности</dataPath>
+			<field>КодДляОтчетности</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коды АУСН.Код для отчетности</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>4</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<objectName>ТаблицаКодовДляОтчетностиПоАУСН</objectName>
+	</dataSet>
+	<dataSetLink>
+		<sourceDataSet>Начисления</sourceDataSet>
+		<destinationDataSet>ТаблицаКодовДляОтчетностиПоАУСН</destinationDataSet>
+		<sourceExpression>КодДохода</sourceExpression>
+		<destinationExpression>КодыАУСН.Ссылка</destinationExpression>
+	</dataSetLink>
 	<calculatedField>
 		<dataPath>ПериодФормированияОтчета</dataPath>
 		<expression>Выбор
@@ -1085,6 +1166,21 @@
 			<v8:item>
 				<v8:lang>ru</v8:lang>
 				<v8:content>Период формирования отчета</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КодВыплачиваемогоДохода</dataPath>
+		<expression>Выбор
+   Когда КодыАУСН.КодДляОтчетности Есть Null Тогда
+      КодДоходаСтрокой
+   Иначе 
+      КодыАУСН.КодДляОтчетности 
+Конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Код выплачиваемого дохода</v8:content>
 			</v8:item>
 		</title>
 	</calculatedField>

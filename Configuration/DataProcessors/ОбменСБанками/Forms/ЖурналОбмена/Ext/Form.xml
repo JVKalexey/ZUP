@@ -42,7 +42,7 @@
 			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаОтбораExtendedTooltip" id="212"/>
+			<ExtendedTooltip name="ГруппаОтбораРасширеннаяПодсказка" id="212"/>
 			<ChildItems>
 				<Button name="ЖурналВыгрузитьЖурналДляПередачиВТехподдержку" id="209">
 					<Type>UsualButton</Type>
@@ -68,7 +68,7 @@
 					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
 					<Hiperlink>true</Hiperlink>
 					<ContextMenu name="ПредставлениеОтбораКонтекстноеМеню" id="220"/>
-					<ExtendedTooltip name="ПредставлениеОтбораExtendedTooltip" id="221"/>
+					<ExtendedTooltip name="ПредставлениеОтбораРасширеннаяПодсказка" id="221"/>
 					<Events>
 						<Event name="Click">ПредставлениеОтбораНажатие</Event>
 					</Events>
@@ -95,7 +95,7 @@
 				</v8:item>
 			</Title>
 			<PagesRepresentation>None</PagesRepresentation>
-			<ExtendedTooltip name="СтраницыExtendedTooltip" id="138"/>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="138"/>
 			<ChildItems>
 				<Page name="ЖурналРегистрации" id="117">
 					<Title>
@@ -104,7 +104,7 @@
 							<v8:content>Журнал регистрации</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="ЖурналРегистрацииExtendedTooltip" id="139"/>
+					<ExtendedTooltip name="ЖурналРегистрацииРасширеннаяПодсказка" id="139"/>
 					<ChildItems>
 						<Table name="Журнал" id="48">
 							<Representation>List</Representation>
@@ -137,7 +137,7 @@
 							<AutoCommandBar name="ЖурналКоманднаяПанель" id="50">
 								<Autofill>false</Autofill>
 							</AutoCommandBar>
-							<ExtendedTooltip name="ЖурналExtendedTooltip" id="145"/>
+							<ExtendedTooltip name="ЖурналРасширеннаяПодсказка" id="145"/>
 							<SearchStringAddition name="ЖурналСтрокаПоиска" id="181">
 								<AdditionSource>
 									<Item>Журнал</Item>
@@ -181,7 +181,7 @@
 									<Wrap>false</Wrap>
 									<BorderColor>style:BorderColor</BorderColor>
 									<ContextMenu name="ДатаКонтекстноеМеню" id="52"/>
-									<ExtendedTooltip name="ДатаExtendedTooltip" id="146"/>
+									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="146"/>
 								</InputField>
 								<InputField name="Комментарий" id="66">
 									<DataPath>Журнал.Комментарий</DataPath>
@@ -198,7 +198,7 @@
 									<MultiLine>true</MultiLine>
 									<BorderColor>style:BorderColor</BorderColor>
 									<ContextMenu name="КомментарийКонтекстноеМеню" id="67"/>
-									<ExtendedTooltip name="КомментарийExtendedTooltip" id="160"/>
+									<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="160"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -211,7 +211,7 @@
 							<v8:content>Индикатор длительных операций</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="ИндикаторДлительныхОперацийExtendedTooltip" id="168"/>
+					<ExtendedTooltip name="ИндикаторДлительныхОперацийРасширеннаяПодсказка" id="168"/>
 					<ChildItems>
 						<SpreadSheetDocumentField name="ПолеИндикаторДлительныхОпераций" id="114">
 							<DataPath>ПолеИндикаторДлительныхОпераций</DataPath>
@@ -219,7 +219,7 @@
 							<VerticalScrollBar>true</VerticalScrollBar>
 							<HorizontalScrollBar>true</HorizontalScrollBar>
 							<ContextMenu name="ПолеИндикаторДлительныхОперацийКонтекстноеМеню" id="115"/>
-							<ExtendedTooltip name="ПолеИндикаторДлительныхОперацийExtendedTooltip" id="169"/>
+							<ExtendedTooltip name="ПолеИндикаторДлительныхОперацийРасширеннаяПодсказка" id="169"/>
 						</SpreadSheetDocumentField>
 					</ChildItems>
 				</Page>

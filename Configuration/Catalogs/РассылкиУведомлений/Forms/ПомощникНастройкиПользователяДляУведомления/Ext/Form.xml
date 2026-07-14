@@ -8,7 +8,6 @@
 	</Title>
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoTitle>false</AutoTitle>
-	<ScalingMode>Compact</ScalingMode>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
@@ -68,6 +67,10 @@
 								<Event name="OnChange">СпособНастройкиПользователяПриИзменении</Event>
 							</Events>
 						</RadioButtonField>
+						<LabelDecoration name="ДекорацияОтступ2" id="74">
+							<ContextMenu name="ДекорацияОтступ2КонтекстноеМеню" id="75"/>
+							<ExtendedTooltip name="ДекорацияОтступ2РасширеннаяПодсказка" id="76"/>
+						</LabelDecoration>
 						<InputField name="Пользователь" id="8">
 							<DataPath>Пользователь</DataPath>
 							<Title>
@@ -77,7 +80,6 @@
 								</v8:item>
 							</Title>
 							<TitleLocation>None</TitleLocation>
-							<AutoMaxWidth>false</AutoMaxWidth>
 							<ContextMenu name="ПользовательКонтекстноеМеню" id="9"/>
 							<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="10"/>
 						</InputField>
@@ -128,6 +130,7 @@
 							</Events>
 						</RadioButtonField>
 						<LabelDecoration name="ДекорацияОтступ" id="66">
+							<Width>1</Width>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<ContextMenu name="ДекорацияОтступКонтекстноеМеню" id="67"/>
 							<ExtendedTooltip name="ДекорацияОтступРасширеннаяПодсказка" id="68"/>
@@ -148,7 +151,8 @@
 									<DataPath>ИмяПользователя</DataPath>
 									<TitleLocation>None</TitleLocation>
 									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-									<HorizontalStretch>true</HorizontalStretch>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>31</MaxWidth>
 									<InputHint>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -160,7 +164,8 @@
 										<Title formatted="false">
 											<v8:item>
 												<v8:lang>ru</v8:lang>
-												<v8:content>Рекомендуемое имя пользователя - "Уведомления", но можно указать другое</v8:content>
+												<v8:content>Рекомендуемое имя пользователя - "Уведомления",
+но можно указать другое</v8:content>
 											</v8:item>
 										</Title>
 									</ExtendedTooltip>
@@ -172,7 +177,7 @@
 									<DataPath>АдресКартинкиПользователя</DataPath>
 									<TitleLocation>None</TitleLocation>
 									<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
-									<Width>9</Width>
+									<Width>8</Width>
 									<Height>4</Height>
 									<HorizontalStretch>false</HorizontalStretch>
 									<VerticalStretch>false</VerticalStretch>

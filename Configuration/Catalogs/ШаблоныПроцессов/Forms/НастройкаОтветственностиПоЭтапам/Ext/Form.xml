@@ -395,6 +395,17 @@
 								</CheckBoxField>
 							</ChildItems>
 						</UsualGroup>
+						<Button name="НастройкаОтветственностиПоЭтапам" id="424">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.НастройкаУправленияЭлементамиФормы</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройка управления свойствами элементов формы </v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="НастройкаОтветственностиПоЭтапамРасширеннаяПодсказка" id="425"/>
+						</Button>
 					</ChildItems>
 				</Page>
 				<Page name="СтраницаПервичныеДокументы" id="292">
@@ -570,6 +581,25 @@
 									<ContextMenu name="ПервичныеДокументыПредставлениеКонтекстноеМеню" id="332"/>
 									<ExtendedTooltip name="ПервичныеДокументыПредставлениеРасширеннаяПодсказка" id="333"/>
 								</InputField>
+								<CheckBoxField name="ПервичныеДокументыПроверкаПроведенияПередПечатью" id="405">
+									<DataPath>ПервичныеДокументы.ПроверкаПроведенияПередПечатью</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<TitleLocation>None</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Признак обязательной проведенности документа при формировании формуляра</v8:content>
+										</v8:item>
+									</ToolTip>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderPicture>
+										<xr:Ref>StdPicture.Post</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</HeaderPicture>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПервичныеДокументыПроверкаПроведенияПередПечатьюКонтекстноеМеню" id="406"/>
+									<ExtendedTooltip name="ПервичныеДокументыПроверкаПроведенияПередПечатьюРасширеннаяПодсказка" id="407"/>
+								</CheckBoxField>
 								<InputField name="ПервичныеДокументыНастройкаФормированияИПодписанияФормуляра" id="364">
 									<DataPath>ПервичныеДокументы.НастройкаФормированияИПодписанияФормуляра</DataPath>
 									<EditMode>EnterOnInput</EditMode>
@@ -997,40 +1027,156 @@
 					</Title>
 					<ExtendedTooltip name="СтраницаПрисоединенныеФайлыРасширеннаяПодсказка" id="201"/>
 					<ChildItems>
-						<CheckBoxField name="ЗапрещеноДобавлениеФайлов" id="214">
-							<DataPath>ЗапрещеноДобавлениеФайлов</DataPath>
-							<TitleLocation>Right</TitleLocation>
-							<CheckBoxType>Auto</CheckBoxType>
-							<ContextMenu name="ЗапрещеноДобавлениеФайловКонтекстноеМеню" id="215"/>
-							<ExtendedTooltip name="ЗапрещеноДобавлениеФайловРасширеннаяПодсказка" id="216"/>
-						</CheckBoxField>
-						<CheckBoxField name="ЗапрещеноИзменениеФайлов" id="217">
-							<DataPath>ЗапрещеноИзменениеФайлов</DataPath>
-							<TitleLocation>Right</TitleLocation>
-							<CheckBoxType>Auto</CheckBoxType>
-							<ContextMenu name="ЗапрещеноИзменениеФайловКонтекстноеМеню" id="218"/>
-							<ExtendedTooltip name="ЗапрещеноИзменениеФайловРасширеннаяПодсказка" id="219"/>
-						</CheckBoxField>
-						<CheckBoxField name="ОбязательноНаличиеФайлов" id="220">
-							<DataPath>НаличиеФайловОбязательно</DataPath>
-							<TitleLocation>Right</TitleLocation>
-							<CheckBoxType>Auto</CheckBoxType>
-							<ContextMenu name="ОбязательноНаличиеФайловКонтекстноеМеню" id="221"/>
-							<ExtendedTooltip name="ОбязательноНаличиеФайловРасширеннаяПодсказка" id="222"/>
-						</CheckBoxField>
-						<CheckBoxField name="ПодписыватьФайлыЭП" id="223">
-							<DataPath>ПодписыватьФайлыЭП</DataPath>
+						<UsualGroup name="ГруппаНаличиеФайлов" id="385">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Подписывать файлы ЭП</v8:content>
+									<v8:content>Группа наличие файлов</v8:content>
 								</v8:item>
 							</Title>
-							<TitleLocation>Right</TitleLocation>
-							<CheckBoxType>Auto</CheckBoxType>
-							<ContextMenu name="ПодписыватьФайлыЭПКонтекстноеМеню" id="224"/>
-							<ExtendedTooltip name="ПодписыватьФайлыЭПРасширеннаяПодсказка" id="225"/>
-						</CheckBoxField>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа наличие файлов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНаличиеФайловРасширеннаяПодсказка" id="386"/>
+							<ChildItems>
+								<CheckBoxField name="ЗапрещеноИзменениеФайлов" id="217">
+									<DataPath>ЗапрещеноИзменениеФайлов</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ЗапрещеноИзменениеФайловКонтекстноеМеню" id="218"/>
+									<ExtendedTooltip name="ЗапрещеноИзменениеФайловРасширеннаяПодсказка" id="219"/>
+								</CheckBoxField>
+								<CheckBoxField name="ОбязательноНаличиеФайлов" id="220">
+									<DataPath>НаличиеФайловОбязательно</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОбязательноНаличиеФайловКонтекстноеМеню" id="221"/>
+									<ExtendedTooltip name="ОбязательноНаличиеФайловРасширеннаяПодсказка" id="222"/>
+									<Events>
+										<Event name="OnChange">ОбязательноНаличиеФайловПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="ПодписыватьФайлыЭП" id="223">
+									<DataPath>ПодписыватьФайлыЭП</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подписывать файлы ЭП</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПодписыватьФайлыЭПКонтекстноеМеню" id="224"/>
+									<ExtendedTooltip name="ПодписыватьФайлыЭПРасширеннаяПодсказка" id="225"/>
+								</CheckBoxField>
+								<CheckBoxField name="ЗапрещеноДобавлениеФайлов" id="214">
+									<DataPath>ЗапрещеноДобавлениеФайлов</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ЗапрещеноДобавлениеФайловКонтекстноеМеню" id="215"/>
+									<ExtendedTooltip name="ЗапрещеноДобавлениеФайловРасширеннаяПодсказка" id="216"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаРасшифровкаОбязательныхПрисоединенныхФайлов" id="387">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Расшифровка обязательных присоединенных файлов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>NormalSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаРасшифровкаОбязательныхПрисоединенныхФайловРасширеннаяПодсказка" id="388"/>
+							<ChildItems>
+								<Table name="РасшифровкаПрисоединенныхФайлов" id="408">
+									<Representation>List</Representation>
+									<TitleLocation>Top</TitleLocation>
+									<Header>false</Header>
+									<HorizontalLines>false</HorizontalLines>
+									<VerticalLines>false</VerticalLines>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<HorizontalStretch>false</HorizontalStretch>
+									<DataPath>РасшифровкаПрисоединенныхФайлов</DataPath>
+									<RowPictureDataPath>РасшифровкаПрисоединенныхФайлов.Picture</RowPictureDataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перечень обязательных присоединенных файлов</v8:content>
+										</v8:item>
+									</Title>
+									<CommandSet>
+										<ExcludedCommand>CancelSearch</ExcludedCommand>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>CheckAll</ExcludedCommand>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>Find</ExcludedCommand>
+										<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+										<ExcludedCommand>Pickup</ExcludedCommand>
+										<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+										<ExcludedCommand>SearchHistory</ExcludedCommand>
+										<ExcludedCommand>SelectAll</ExcludedCommand>
+										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+										<ExcludedCommand>SortListAsc</ExcludedCommand>
+										<ExcludedCommand>SortListDesc</ExcludedCommand>
+										<ExcludedCommand>UncheckAll</ExcludedCommand>
+									</CommandSet>
+									<ContextMenu name="РасшифровкаПрисоединенныхФайловКонтекстноеМеню" id="409"/>
+									<AutoCommandBar name="РасшифровкаПрисоединенныхФайловКоманднаяПанель" id="410"/>
+									<ExtendedTooltip name="РасшифровкаПрисоединенныхФайловРасширеннаяПодсказка" id="411"/>
+									<SearchStringAddition name="РасшифровкаПрисоединенныхФайловСтрокаПоиска" id="412">
+										<AdditionSource>
+											<Item>РасшифровкаПрисоединенныхФайлов</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="РасшифровкаПрисоединенныхФайловСтрокаПоискаКонтекстноеМеню" id="413"/>
+										<ExtendedTooltip name="РасшифровкаПрисоединенныхФайловСтрокаПоискаРасширеннаяПодсказка" id="414"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="РасшифровкаПрисоединенныхФайловСостояниеПросмотра" id="415">
+										<AdditionSource>
+											<Item>РасшифровкаПрисоединенныхФайлов</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="РасшифровкаПрисоединенныхФайловСостояниеПросмотраКонтекстноеМеню" id="416"/>
+										<ExtendedTooltip name="РасшифровкаПрисоединенныхФайловСостояниеПросмотраРасширеннаяПодсказка" id="417"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="РасшифровкаПрисоединенныхФайловУправлениеПоиском" id="418">
+										<AdditionSource>
+											<Item>РасшифровкаПрисоединенныхФайлов</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="РасшифровкаПрисоединенныхФайловУправлениеПоискомКонтекстноеМеню" id="419"/>
+										<ExtendedTooltip name="РасшифровкаПрисоединенныхФайловУправлениеПоискомРасширеннаяПодсказка" id="420"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="РасшифровкаПрисоединенныхФайловЗначение" id="421">
+											<DataPath>РасшифровкаПрисоединенныхФайлов.Value</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ChoiceButton>true</ChoiceButton>
+											<ClearButton>true</ClearButton>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="РасшифровкаПрисоединенныхФайловЗначениеКонтекстноеМеню" id="422"/>
+											<ExtendedTooltip name="РасшифровкаПрисоединенныхФайловЗначениеРасширеннаяПодсказка" id="423"/>
+											<Events>
+												<Event name="StartChoice">РасшифровкаПрисоединенныхФайловЗначениеНачалоВыбора</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</Page>
 				<Page name="СтраницаОбменСЛичнымКабинетом" id="359">
@@ -1450,6 +1596,17 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
+				<Column name="ТребуетсяЭП" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Требуется ЭП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="ЗапретитьПерепроведение" id="1">
@@ -1752,6 +1909,17 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
+				<Column name="ПроверкаПроведенияПередПечатью" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проверка проведения перед печатью</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="ВсеФормы" id="20">
@@ -1823,6 +1991,111 @@
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
+		</Attribute>
+		<Attribute name="РасшифровкаПрисоединенныхФайлов" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расшифровка присоединенных файлов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Settings>
+		</Attribute>
+		<Attribute name="НаименованиеФормыВыбораВидовПрисоединенныхФайлов" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование формы выбора видов присоединенных файлов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НевидимыеЭлементы" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Невидимые элементы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Settings>
+		</Attribute>
+		<Attribute name="НедоступныеЭлементы" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Недоступные элементы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Settings>
+		</Attribute>
+		<Attribute name="СтартоваяСтраница" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стартовая страница</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Settings>
+		</Attribute>
+		<Attribute name="ЭлементыСОтметкойНезаполненного" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Элементы с отметкой незаполненного</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Settings>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
@@ -2415,6 +2688,21 @@
 			</Picture>
 			<Action>ПервичныеДокументыОтметитьВсе</Action>
 			<Representation>Picture</Representation>
+		</Command>
+		<Command name="НастройкаУправленияЭлементамиФормы" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка управления элементами формы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка управления элементами формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастройкаСвойствЭлементовФормыДокумента</Action>
 		</Command>
 	</Commands>
 	<Parameters>

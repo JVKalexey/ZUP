@@ -23,10 +23,10 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЗарплатаКадрыРасширенныйКлиентСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользуетсяЕНВДВБюджетномУчреждении</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПроверитьДЗИПередЗаписьюНабораЗаписейЗарплатаКадрыРасширенная</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьЛьготыСотрудников</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЗарплатаКадрыРасширенныйСобытия</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПроверитьДЗИПередЗаписьюНабораЗаписейРегистраРасчетаЗарплатаКадрыРасширенная</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьЛьготыСотрудников</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкиЛьготСотрудников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПроверитьДЗИПередЗаписьюНабораЗаписейРегистраРасчетаЗарплатаКадрыРасширенная</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЗарплатаКадрыРасширенныйКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ВыполнятьРасчетЗарплатыПоПодразделениям</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЗарплатаКадрыРасширенныйВызовСервера</xr:Item>
@@ -123,6 +123,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПроверитьУникальностьЕстественногоКлючаЗарплатаКадрыРасширенная</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПолучитьДанныеВыбораСправочникаОрганизации</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.УведомлениеОбУвольненииОтветственныхЛиц</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УточнениеМатВыгодыПоЗаймам</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПечатьРасчетаНачислений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЗарплатаКадрыРасширенныйПереопределяемый</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьУправленческуюЗарплату</xr:Item>
@@ -143,6 +144,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ВестиРасчетыСБюджетомПоНДФЛ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьУчетКлассныхЧинов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьЗарплатаКадрыКорпоративнаяПодсистемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЗарплатаКадрыРасширенныйСинхронизацияДанных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьЗарплатаКадрыКорпоративнаяПодсистемы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.НастройкиПрограммыЗарплатаКадры</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеБезПросмотраСправочниковПодчиненныхСправочникуФизическиеЛица</xr:Item>
@@ -156,6 +158,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользуютсяТерриторииЗаПределамиРФ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ДополнительныеОбработкиНалогиИВзносы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ДополнительныеОтчетыНалогиИВзносы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.РасшифровкаРегламентированногоОтчетаЗарплата</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ДополнительныеОтчетыОтчетность</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ОтключитьКадровыйУчет</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ТерриторииСотрудниковИспр</xr:Item>
@@ -165,16 +168,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьВоеннуюСлужбу</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьВоеннуюСлужбу</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьОсобыеУсловияТруда</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.РасшифровкаРегламентированногоОтчетаЗарплата</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЗарплатаКадрыРасширенныйСинхронизацияДанных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.РедактированиеРаспределенияБухучетаДокумента</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УточнениеМатВыгодыПоЗаймам</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Constant.ВерсияДополнительныхПравилПредставленияОтчетовУплатыНалогов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НалогиИОтчетыБЗК</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.КалендарьОтчетностиБЗК</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеСпискаЗадач</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПриЗаписиДокументаСЭДОДляИзмененияЗадачиБухгалтера</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ТребованияНормативныхДокументовДополнительные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ТематическиеРабочиеМеста</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
@@ -185,13 +180,15 @@
 			<Subsystem>ДанныеДляРасчетаЗарплаты</Subsystem>
 			<Subsystem>ДоговорыГПХ</Subsystem>
 			<Subsystem>ЗаймыСотрудникам</Subsystem>
-			<Subsystem>ИнтеграцияУправлениеПерсоналомРасширенная</Subsystem>
 			<Subsystem>ЗащитаПерсональныхДанныхРасширенная</Subsystem>
+			<Subsystem>ИнтеграцияУправлениеПерсоналомРасширенная</Subsystem>
 			<Subsystem>ИсправленияДокументов</Subsystem>
+			<Subsystem>КадровыеРешения</Subsystem>
 			<Subsystem>КадровыйУчетДокументы</Subsystem>
 			<Subsystem>КадровыйУчетРасширенная</Subsystem>
-			<Subsystem>ЭДОБЗКРасширенный</Subsystem>
+			<Subsystem>КлассыУсловийТрудаРасширенная</Subsystem>
 			<Subsystem>МногофункциональныеДокументы</Subsystem>
+			<Subsystem>НастраиваемыеПечатныеФормыРасширенная</Subsystem>
 			<Subsystem>НастройкаАдминистрирование</Subsystem>
 			<Subsystem>НатуральныеДоходы</Subsystem>
 			<Subsystem>НачислениеЗарплатыДокументы</Subsystem>
@@ -212,12 +209,13 @@
 			<Subsystem>РасчетЗарплатыРасширенная</Subsystem>
 			<Subsystem>РегулярнаяОтправкаСотрудников</Subsystem>
 			<Subsystem>РедактированиеЗаконодательныхЗначений</Subsystem>
+			<Subsystem>РуководителиПодразделенийОрганизации</Subsystem>
 			<Subsystem>СборГрафиковОтпусков</Subsystem>
 			<Subsystem>СотрудникиРасширенная</Subsystem>
 			<Subsystem>СтатистикаПерсоналаРасширенная</Subsystem>
+			<Subsystem>ТерриторииИПомещения</Subsystem>
 			<Subsystem>УдержанияДокументы</Subsystem>
 			<Subsystem>УправлениеШтатнымРасписанием</Subsystem>
-			<Subsystem>ТерриторииИПомещения</Subsystem>
 			<Subsystem>УчетВзносовДокументыРасширенная</Subsystem>
 			<Subsystem>УчетВремениДокументы</Subsystem>
 			<Subsystem>УчетНачисленнойЗарплатыРасширенная</Subsystem>
@@ -227,10 +225,8 @@
 			<Subsystem>УчетРабочегоВремениРасширенная</Subsystem>
 			<Subsystem>УчетСреднегоЗаработка</Subsystem>
 			<Subsystem>УчетСтраховыхВзносовРасширенная</Subsystem>
-			<Subsystem>РуководителиПодразделенийОрганизации</Subsystem>
 			<Subsystem>УчетФактическиПолученныхДоходовРасширенная</Subsystem>
-			<Subsystem>НастраиваемыеПечатныеФормыРасширенная</Subsystem>
-			<Subsystem>КадровыеРешения</Subsystem>
+			<Subsystem>ЭДОБЗКРасширенный</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

@@ -10,7 +10,7 @@
 		</languageInfo>
 	</languageSettings>
 	<columns>
-		<size>11</size>
+		<size>14</size>
 		<columnsItem>
 			<index>0</index>
 			<column>
@@ -85,6 +85,27 @@
 							<v8:content>Банк</v8:content>
 						</v8:item>
 					</tl>
+					<note>
+						<drawingType>Comment</drawingType>
+						<id>0</id>
+						<formatIndex>13</formatIndex>
+						<text>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Если банк добавляется в макет только для информации о возможности обмена, то важно заполнить колонки «Банк,БИК,Проект», остальные можно оставить пустыми.</v8:content>
+							</v8:item>
+						</text>
+						<beginRow>1</beginRow>
+						<beginRowOffset>-21</beginRowOffset>
+						<endRow>0</endRow>
+						<endRowOffset>822</endRowOffset>
+						<beginColumn>1</beginColumn>
+						<beginColumnOffset>21</beginColumnOffset>
+						<endColumn>0</endColumn>
+						<endColumnOffset>1287</endColumnOffset>
+						<autoSize>false</autoSize>
+						<pictureSize>Stretch</pictureSize>
+					</note>
 				</c>
 			</c>
 			<c>
@@ -100,7 +121,7 @@
 			</c>
 			<c>
 				<c>
-					<f>13</f>
+					<f>14</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -111,13 +132,35 @@
 			</c>
 			<c>
 				<c>
-					<f>14</f>
+					<f>15</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>СпособПолученияНастроек</v8:content>
 						</v8:item>
 					</tl>
+					<note>
+						<drawingType>Comment</drawingType>
+						<id>0</id>
+						<formatIndex>13</formatIndex>
+						<text>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Если указано несколько адресов сервера, то в этой ячейке должно быть так же указано такое же количество способов подключения или может быть указан один способ подключения. Так же ячейку можно не заполнять.
+Возможные значения: ПоЛогину, ПоСертификату, ПоЛогинуИлиСертификату, ИзФайла</v8:content>
+							</v8:item>
+						</text>
+						<beginRow>1</beginRow>
+						<beginRowOffset>-21</beginRowOffset>
+						<endRow>0</endRow>
+						<endRowOffset>597</endRowOffset>
+						<beginColumn>1</beginColumn>
+						<beginColumnOffset>21</beginColumnOffset>
+						<endColumn>3</endColumn>
+						<endColumnOffset>1128</endColumnOffset>
+						<autoSize>false</autoSize>
+						<pictureSize>Stretch</pictureSize>
+					</note>
 				</c>
 			</c>
 			<c>
@@ -129,11 +172,37 @@
 							<v8:content>АдресСервераБанка</v8:content>
 						</v8:item>
 					</tl>
+					<note>
+						<drawingType>Comment</drawingType>
+						<id>0</id>
+						<formatIndex>13</formatIndex>
+						<text>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Адрес сервера может быть пустым или может быть указано несколько адресов сервера. Если нужно указать несколько адресов, то каждый новый адрес указывают с новой строки в рамках одной ячейки.
+Например: 
+https://bank1.ru/directbank
+https://bank1.ru/1c
+Если указано несколько адресов сервера, то в ячейке «СпособПолученияНастроек» должно быть так же указано такое же количество способов подключения или может быть указан один способ подключения. Так же ячейку СпособПолученияНастроек» можно не заполнять.
+</v8:content>
+							</v8:item>
+						</text>
+						<beginRow>1</beginRow>
+						<beginRowOffset>-21</beginRowOffset>
+						<endRow>0</endRow>
+						<endRowOffset>798</endRowOffset>
+						<beginColumn>1</beginColumn>
+						<beginColumnOffset>21</beginColumnOffset>
+						<endColumn>4</endColumn>
+						<endColumnOffset>1467</endColumnOffset>
+						<autoSize>false</autoSize>
+						<pictureSize>Stretch</pictureSize>
+					</note>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>15</f>
+					<f>16</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -162,11 +231,36 @@
 							<v8:content>Проект</v8:content>
 						</v8:item>
 					</tl>
+					<note>
+						<drawingType>Comment</drawingType>
+						<id>0</id>
+						<formatIndex>13</formatIndex>
+						<text>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Если банк добавляется в макет только для информации о возможности обмена, то важно заполнить колонки «Банк,БИК,Проект», остальные можно оставить пустыми.
+1 - руб. п/п и выписка
+2 - з/ проекты
+3 - валютные платежи и выписка
+4 - поддержка автовыписки</v8:content>
+							</v8:item>
+						</text>
+						<beginRow>1</beginRow>
+						<beginRowOffset>-21</beginRowOffset>
+						<endRow>0</endRow>
+						<endRowOffset>555</endRowOffset>
+						<beginColumn>1</beginColumn>
+						<beginColumnOffset>21</beginColumnOffset>
+						<endColumn>7</endColumn>
+						<endColumnOffset>693</endColumnOffset>
+						<autoSize>false</autoSize>
+						<pictureSize>Stretch</pictureSize>
+					</note>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>16</f>
+					<f>17</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -177,7 +271,7 @@
 			</c>
 			<c>
 				<c>
-					<f>16</f>
+					<f>17</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -188,7 +282,7 @@
 			</c>
 			<c>
 				<c>
-					<f>17</f>
+					<f>18</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -198,7 +292,7 @@
 					<note>
 						<drawingType>Comment</drawingType>
 						<id>0</id>
-						<formatIndex>18</formatIndex>
+						<formatIndex>13</formatIndex>
 						<text>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -209,14 +303,117 @@
 							</v8:item>
 						</text>
 						<beginRow>1</beginRow>
-						<beginRowOffset>-20</beginRowOffset>
+						<beginRowOffset>-21</beginRowOffset>
 						<endRow>0</endRow>
-						<endRowOffset>204</endRowOffset>
+						<endRowOffset>177</endRowOffset>
 						<beginColumn>1</beginColumn>
-						<beginColumnOffset>20</beginColumnOffset>
+						<beginColumnOffset>21</beginColumnOffset>
 						<endColumn>10</endColumn>
 						<endColumnOffset>1803</endColumnOffset>
 						<autoSize>true</autoSize>
+						<pictureSize>Stretch</pictureSize>
+					</note>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>19</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ТребуетсяSMSАвторизация</v8:content>
+						</v8:item>
+					</tl>
+					<note>
+						<drawingType>Comment</drawingType>
+						<id>0</id>
+						<formatIndex>20</formatIndex>
+						<text>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Данный параметр показывает известно ли достоверно, что банку нужно дополнительное подтверждение авторизации OTP кодом из СМС
+Возможные значения:
+Пусто (пустая ячейка) - достоверно не известно;
+1 - банк НЕ требует дополнительное подтверждение авторизации OTP кодом из СМС;
+2 - банк требует дополнительное подтверждение авторизации OTP кодом из СМС.</v8:content>
+							</v8:item>
+						</text>
+						<beginRow>1</beginRow>
+						<beginRowOffset>-21</beginRowOffset>
+						<endRow>0</endRow>
+						<endRowOffset>219</endRowOffset>
+						<beginColumn>1</beginColumn>
+						<beginColumnOffset>21</beginColumnOffset>
+						<endColumn>11</endColumn>
+						<endColumnOffset>2160</endColumnOffset>
+						<autoSize>true</autoSize>
+						<pictureSize>Stretch</pictureSize>
+					</note>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>19</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ВремяЖизниСессии</v8:content>
+						</v8:item>
+					</tl>
+					<note>
+						<drawingType>Comment</drawingType>
+						<id>0</id>
+						<formatIndex>20</formatIndex>
+						<text>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Время жизни авторизованной сессии на стороне банк.сервиса в секундах
+Возможные значения:
+0 или пусто (пустая ячейка) - нет данных о времени жизни авторизованной сессии.
+1 - 300 - время жизни сесссии установленное банком.</v8:content>
+							</v8:item>
+						</text>
+						<beginRow>1</beginRow>
+						<beginRowOffset>-21</beginRowOffset>
+						<endRow>0</endRow>
+						<endRowOffset>177</endRowOffset>
+						<beginColumn>1</beginColumn>
+						<beginColumnOffset>21</beginColumnOffset>
+						<endColumn>12</endColumn>
+						<endColumnOffset>1323</endColumnOffset>
+						<autoSize>true</autoSize>
+						<pictureSize>Stretch</pictureSize>
+					</note>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>21</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПериодЗапросаВыписки</v8:content>
+						</v8:item>
+					</tl>
+					<note>
+						<drawingType>Comment</drawingType>
+						<id>0</id>
+						<formatIndex>20</formatIndex>
+						<text>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Максимальное количество дней, за которые можно загрузить документы при подключении автоматической выписки. Если не указано, будет подставляться 14 дней.</v8:content>
+							</v8:item>
+						</text>
+						<beginRow>1</beginRow>
+						<beginRowOffset>-21</beginRowOffset>
+						<endRow>0</endRow>
+						<endRowOffset>186</endRowOffset>
+						<beginColumn>1</beginColumn>
+						<beginColumnOffset>-684</beginColumnOffset>
+						<endColumn>13</endColumn>
+						<endColumnOffset>720</endColumnOffset>
+						<autoSize>false</autoSize>
 						<pictureSize>Stretch</pictureSize>
 					</note>
 				</c>
@@ -261,7 +458,7 @@
 			</c>
 			<c>
 				<c>
-					<f>19</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -316,7 +513,7 @@
 			</c>
 			<c>
 				<c>
-					<f>20</f>
+					<f>23</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -359,7 +556,7 @@
 			</c>
 			<c>
 				<c>
-					<f>21</f>
+					<f>24</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -403,7 +600,7 @@
 			</c>
 			<c>
 				<c>
-					<f>22</f>
+					<f>25</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -425,7 +622,7 @@
 			</c>
 			<c>
 				<c>
-					<f>20</f>
+					<f>23</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -441,7 +638,7 @@
 		<row>
 			<c>
 				<c>
-					<f>23</f>
+					<f>26</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -463,7 +660,7 @@
 			</c>
 			<c>
 				<c>
-					<f>21</f>
+					<f>24</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -485,7 +682,7 @@
 			</c>
 			<c>
 				<c>
-					<f>24</f>
+					<f>27</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -507,7 +704,7 @@
 			</c>
 			<c>
 				<c>
-					<f>22</f>
+					<f>25</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -529,7 +726,7 @@
 			</c>
 			<c>
 				<c>
-					<f>20</f>
+					<f>23</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -589,7 +786,7 @@
 			</c>
 			<c>
 				<c>
-					<f>19</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -600,7 +797,7 @@
 			</c>
 			<c>
 				<c>
-					<f>25</f>
+					<f>28</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -644,7 +841,7 @@
 			</c>
 			<c>
 				<c>
-					<f>20</f>
+					<f>23</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -693,7 +890,7 @@
 			</c>
 			<c>
 				<c>
-					<f>19</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -731,7 +928,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>1,2</v8:content>
+							<v8:content>1,2,4</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -782,7 +979,7 @@
 			</c>
 			<c>
 				<c>
-					<f>19</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -837,7 +1034,7 @@
 			</c>
 			<c>
 				<c>
-					<f>20</f>
+					<f>23</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -886,7 +1083,7 @@
 			</c>
 			<c>
 				<c>
-					<f>19</f>
+					<f>22</f>
 					<tl/>
 				</c>
 			</c>
@@ -943,7 +1140,7 @@
 		<row>
 			<c>
 				<c>
-					<f>26</f>
+					<f>29</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -976,7 +1173,7 @@
 			</c>
 			<c>
 				<c>
-					<f>19</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1009,7 +1206,7 @@
 			</c>
 			<c>
 				<c>
-					<f>22</f>
+					<f>25</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1020,18 +1217,18 @@
 			</c>
 			<c>
 				<c>
-					<f>27</f>
+					<f>30</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>1,2</v8:content>
+							<v8:content>1,2,4</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>20</f>
+					<f>23</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1047,7 +1244,7 @@
 		<row>
 			<c>
 				<c>
-					<f>28</f>
+					<f>31</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1058,7 +1255,7 @@
 			</c>
 			<c>
 				<c>
-					<f>20</f>
+					<f>23</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1069,55 +1266,11 @@
 			</c>
 			<c>
 				<c>
-					<f>29</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>АсинхронныйОбмен</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>30</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПоЛогину</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>31</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>https://corp.akbars.ru/sbns-onec/</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
 					<f>32</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>1</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>22</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>https://www.akbars.ru/corporate/remote/1%D1%81-dire%D1%81tbank-abbo/</v8:content>
+							<v8:content>АсинхронныйОбмен</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1128,87 +1281,28 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>1</v8:content>
+							<v8:content>ПоЛогину</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>20</f>
-				</c>
-			</c>
-			<c>
-				<c>
 					<f>34</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://corp.akbars.ru/sbns-onec/</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>10</index>
-		<row>
 			<c>
 				<c>
 					<f>35</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>БАНК "ВБРР" (АО)</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>20</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>044525880</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>29</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>АсинхронныйОбмен</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>30</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПоСертификату</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>31</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>https://c1.vbrr.ru:3443/</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>32</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
 							<v8:content>1</v8:content>
 						</v8:item>
 					</tl>
@@ -1216,11 +1310,11 @@
 			</c>
 			<c>
 				<c>
-					<f>22</f>
+					<f>25</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>https://www.vbrr.ru/corporate/information/1cdirectbank/</v8:content>
+							<v8:content>https://www.akbars.ru/corporate/remote/1%D1%81-dire%D1%81tbank-abbo/</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1238,7 +1332,110 @@
 			</c>
 			<c>
 				<c>
+					<f>23</f>
+				</c>
+			</c>
+			<c>
+				<c>
 					<f>37</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>10</index>
+		<row>
+			<c>
+				<c>
+					<f>38</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>БАНК "ВБРР" (АО)</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>23</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>044525880</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>32</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>АсинхронныйОбмен</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>33</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПоСертификату</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>34</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://c1.vbrr.ru:3443/</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>35</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>25</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://www.vbrr.ru/corporate/information/1cdirectbank/</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>39</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>40</f>
 				</c>
 			</c>
 		</row>
@@ -1270,7 +1467,7 @@
 			</c>
 			<c>
 				<c>
-					<f>29</f>
+					<f>32</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1281,7 +1478,7 @@
 			</c>
 			<c>
 				<c>
-					<f>30</f>
+					<f>33</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1296,7 +1493,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>http://testdirectbank.1c.ru/go</v8:content>
+							<v8:content>https://testdirectbank.1c.ru/go</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1319,7 +1516,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>1,2</v8:content>
+							<v8:content>1,2,4,5</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1332,6 +1529,29 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>1</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<i>12</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>90</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>5</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1365,7 +1585,7 @@
 			</c>
 			<c>
 				<c>
-					<f>29</f>
+					<f>32</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1376,7 +1596,7 @@
 			</c>
 			<c>
 				<c>
-					<f>30</f>
+					<f>33</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1391,7 +1611,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>http://testdirectbank.1c.ru/go</v8:content>
+							<v8:content>https://testdirectbank.1c.ru/go</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1414,7 +1634,19 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>1</v8:content>
+							<v8:content>1,4,5</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<i>12</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>90</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1426,7 +1658,7 @@
 		<row>
 			<c>
 				<c>
-					<f>35</f>
+					<f>38</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1437,7 +1669,7 @@
 			</c>
 			<c>
 				<c>
-					<f>20</f>
+					<f>23</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1448,7 +1680,7 @@
 			</c>
 			<c>
 				<c>
-					<f>38</f>
+					<f>41</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1459,7 +1691,7 @@
 			</c>
 			<c>
 				<c>
-					<f>30</f>
+					<f>33</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1470,7 +1702,7 @@
 			</c>
 			<c>
 				<c>
-					<f>39</f>
+					<f>42</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1481,7 +1713,7 @@
 			</c>
 			<c>
 				<c>
-					<f>32</f>
+					<f>35</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1492,7 +1724,7 @@
 			</c>
 			<c>
 				<c>
-					<f>22</f>
+					<f>25</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1503,7 +1735,7 @@
 			</c>
 			<c>
 				<c>
-					<f>27</f>
+					<f>30</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1514,7 +1746,7 @@
 			</c>
 			<c>
 				<c>
-					<f>40</f>
+					<f>43</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1525,7 +1757,7 @@
 			</c>
 			<c>
 				<c>
-					<f>20</f>
+					<f>23</f>
 				</c>
 			</c>
 		</row>
@@ -1557,7 +1789,7 @@
 			</c>
 			<c>
 				<c>
-					<f>29</f>
+					<f>32</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1568,7 +1800,7 @@
 			</c>
 			<c>
 				<c>
-					<f>30</f>
+					<f>33</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1583,7 +1815,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>http://testdirectbank.1c.ru/go</v8:content>
+							<v8:content>https://testdirectbank.1c.ru/go</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1632,7 +1864,7 @@
 		<row>
 			<c>
 				<c>
-					<f>26</f>
+					<f>29</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1654,39 +1886,39 @@
 			</c>
 			<c>
 				<c>
-					<f>21</f>
+					<f>32</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>СинхронныйОбмен</v8:content>
+							<v8:content>АсинхронныйОбмен</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>20</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>41</f>
+					<f>33</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>https://marengo.alfabank.ru/</v8:content>
+							<v8:content>ПоСертификату</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>42</f>
+					<f>44</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>43</f>
+					<f>45</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>46</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1745,7 +1977,7 @@
 			</c>
 			<c>
 				<c>
-					<f>29</f>
+					<f>32</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1756,7 +1988,7 @@
 			</c>
 			<c>
 				<c>
-					<f>30</f>
+					<f>33</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1771,7 +2003,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>http://testdirectbank.1c.ru/go</v8:content>
+							<v8:content>https://testdirectbank.1c.ru/go</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1848,6 +2080,10 @@
 		<backColor>style:FormBackColor</backColor>
 	</format>
 	<format>
+		<verticalAlignment>Top</verticalAlignment>
+		<backColor>#FFFAD9</backColor>
+	</format>
+	<format>
 		<font>0</font>
 		<border>0</border>
 		<width>165</width>
@@ -1873,8 +2109,20 @@
 		<border>0</border>
 	</format>
 	<format>
+		<font>0</font>
+		<border>0</border>
+		<width>72</width>
+	</format>
+	<format>
 		<verticalAlignment>Top</verticalAlignment>
-		<backColor>#FFFAD9</backColor>
+		<textColor>style:ToolTipTextColor</textColor>
+		<backColor>style:ToolTipBackColor</backColor>
+	</format>
+	<format>
+		<font>0</font>
+		<border>0</border>
+		<width>59</width>
+		<backColor>style:FormBackColor</backColor>
 	</format>
 	<format>
 		<width>167</width>

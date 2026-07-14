@@ -318,6 +318,89 @@
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
+		<UsualGroup name="ИнформационныеПанели1СО" id="2957">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информационные панели</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информационные панели</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<VerticalSpacing>Half</VerticalSpacing>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ИнформационныеПанели1СОРасширеннаяПодсказка" id="2958"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаГОСТ34122018ДляФНС1СО" id="2959">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ГОСТ 34.12-2018 для ФНС</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>style:ЦветФонаОшибкиОтправки</BackColor>
+					<ExtendedTooltip name="ГруппаГОСТ34122018ДляФНС1СОРасширеннаяПодсказка" id="2960"/>
+					<ChildItems>
+						<PictureDecoration name="ВниманиеГОСТ34122018ДляФНС1СО" id="2961">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Внимание</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.КрасныйВосклицательныйЗнак</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="ВниманиеГОСТ34122018ДляФНС1СОКонтекстноеМеню" id="2962"/>
+							<ExtendedTooltip name="ВниманиеГОСТ34122018ДляФНС1СОРасширеннаяПодсказка" id="2963"/>
+						</PictureDecoration>
+						<LabelDecoration name="ПанельГОСТ34122018ДляФНС1СО" id="2964">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>С 01.04.2026 г. для обмена с ФНС необходимо использовать криптопровайдер, поддерживающий алгоритмы шифрования ГОСТ 34.12-2018 и ГОСТ 34.13-2018.
+&lt;link ОбновитьКриптоПроCSP&gt;Обновите&lt;/&gt; КриптоПро CSP до версии 5.0.12000 (R2) или выше.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПанельГОСТ34122018ДляФНС1СОКонтекстноеМеню" id="2965"/>
+							<ExtendedTooltip name="ПанельГОСТ34122018ДляФНС1СОРасширеннаяПодсказка" id="2966"/>
+							<Events>
+								<Event name="URLProcessing">ПанельГОСТ34122018ДляФНСОбработкаНавигационнойСсылки</Event>
+							</Events>
+						</LabelDecoration>
+						<LabelDecoration name="ЗакрытьПанельГОСТ34122018ДляФНС1СО" id="2967">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Закрыть</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="ЗакрытьПанельГОСТ34122018ДляФНС1СОКонтекстноеМеню" id="2968"/>
+							<ExtendedTooltip name="ЗакрытьПанельГОСТ34122018ДляФНС1СОРасширеннаяПодсказка" id="2969"/>
+							<Events>
+								<Event name="Click">ЗакрытьПанельГОСТ34122018ДляФНСНажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ИнформационныеПанели" id="2718">
 			<Title>
 				<v8:item>
@@ -337,6 +420,68 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ИнформационныеПанелиРасширеннаяПодсказка" id="2719"/>
 			<ChildItems>
+				<UsualGroup name="ГруппаГОСТ34122018ДляФНС" id="2946">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ГОСТ 34.12-2018 для ФНС</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>style:ЦветФонаОшибкиОтправки</BackColor>
+					<ExtendedTooltip name="ГруппаГОСТ34122018ДляФНСРасширеннаяПодсказка" id="2947"/>
+					<ChildItems>
+						<PictureDecoration name="ВниманиеГОСТ34122018ДляФНС" id="2948">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Внимание</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.КрасныйВосклицательныйЗнак</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="ВниманиеГОСТ34122018ДляФНСКонтекстноеМеню" id="2949"/>
+							<ExtendedTooltip name="ВниманиеГОСТ34122018ДляФНСРасширеннаяПодсказка" id="2950"/>
+						</PictureDecoration>
+						<LabelDecoration name="ПанельГОСТ34122018ДляФНС" id="2951">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>С 01.04.2026 г. для обмена с ФНС необходимо использовать криптопровайдер, поддерживающий алгоритмы шифрования ГОСТ 34.12-2018 и ГОСТ 34.13-2018.
+&lt;link ОбновитьКриптоПроCSP&gt;Обновите&lt;/&gt; КриптоПро CSP до версии 5.0.12000 (R2) или выше.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПанельГОСТ34122018ДляФНСКонтекстноеМеню" id="2952"/>
+							<ExtendedTooltip name="ПанельГОСТ34122018ДляФНСРасширеннаяПодсказка" id="2953"/>
+							<Events>
+								<Event name="URLProcessing">ПанельГОСТ34122018ДляФНСОбработкаНавигационнойСсылки</Event>
+							</Events>
+						</LabelDecoration>
+						<LabelDecoration name="ЗакрытьПанельГОСТ34122018ДляФНС" id="2954">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Закрыть</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="ЗакрытьПанельГОСТ34122018ДляФНСКонтекстноеМеню" id="2955"/>
+							<ExtendedTooltip name="ЗакрытьПанельГОСТ34122018ДляФНСРасширеннаяПодсказка" id="2956"/>
+							<Events>
+								<Event name="Click">ЗакрытьПанельГОСТ34122018ДляФНСНажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
 				<UsualGroup name="ГруппаТребований" id="2420">
 					<Title>
 						<v8:item>
@@ -12090,6 +12235,17 @@
 					<v8:FractionDigits>0</v8:FractionDigits>
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГОСТ34122018ViPNetCSPДоступен" id="71">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ГОСТ 34.12-2018 ViPNet CSP доступен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>

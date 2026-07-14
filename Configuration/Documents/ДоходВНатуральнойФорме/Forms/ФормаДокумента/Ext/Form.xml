@@ -290,6 +290,38 @@
 										<Event name="OnChange">ВариантУказанияБухучетаПриИзменении</Event>
 									</Events>
 								</RadioButtonField>
+								<InputField name="СпособРасчетовСФизическимиЛицами" id="1291">
+									<DataPath>Объект.СпособРасчетовСФизическимиЛицами</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Учитывать как</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>22</MaxWidth>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Расчеты по оплате труда</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="СпособРасчетовСФизическимиЛицамиКонтекстноеМеню" id="1292"/>
+									<ExtendedTooltip name="СпособРасчетовСФизическимиЛицамиРасширеннаяПодсказка" id="1293">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Настройка определяет порядок учета этой операции в бухгалтерском учете.
+Расчеты по оплате труда - в корреспонденции с 70 счетом.
+Прочие расчеты с персоналом - в корреспонденции с 73 счетом.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">СпособРасчетовСФизическимиЛицамиПриИзменении</Event>
+									</Events>
+								</InputField>
 								<Pages name="СтраницыБухучет" id="1254">
 									<Title>
 										<v8:item>

@@ -693,6 +693,17 @@
 					<ContextMenu name="КомандаПросмотрВзносовКонтекстноеМеню" id="101"/>
 					<ExtendedTooltip name="КомандаПросмотрВзносовРасширеннаяПодсказка" id="102"/>
 				</LabelField>
+				<InputField name="НачисленияУдержанияВзносыМестоПолученияДохода" id="217">
+					<DataPath>Объект.НачисленияУдержанияВзносы.МестоПолученияДохода</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НачисленияУдержанияВзносыМестоПолученияДоходаКонтекстноеМеню" id="218"/>
+					<ExtendedTooltip name="НачисленияУдержанияВзносыМестоПолученияДоходаРасширеннаяПодсказка" id="219"/>
+					<Events>
+						<Event name="ChoiceProcessing">НачисленияУдержанияВзносыМестоПолученияДоходаОбработкаВыбора</Event>
+					</Events>
+				</InputField>
 			</ChildItems>
 		</Table>
 		<UsualGroup name="ПодписиГруппа" id="138">
@@ -1001,6 +1012,11 @@
 					<v8:Length>10</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="УдаляемоеФизическоеЛицо" id="19">
+			<Type>
+				<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>

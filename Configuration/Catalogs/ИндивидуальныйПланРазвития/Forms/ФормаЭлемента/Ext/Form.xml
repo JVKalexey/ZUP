@@ -139,6 +139,32 @@
 							<ContextMenu name="СтатусКонтекстноеМеню" id="453"/>
 							<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="454"/>
 						</InputField>
+						<CheckBoxField name="ВидимостьПланаРазвития" id="577">
+							<DataPath>ВидимостьПланаРазвития</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Варианты индивидуального плана развития:
+"План развития" - дерево целей развития, состоящих из мероприятий обучения.
+"Программа обучения" - список мероприятий обучения.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<CheckBoxType>Tumbler</CheckBoxType>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>БЛ='Программа обучения'; БИ='План развития'</v8:content>
+								</v8:item>
+							</EditFormat>
+							<ContextMenu name="ВидимостьПланаРазвитияКонтекстноеМеню" id="578"/>
+							<ExtendedTooltip name="ВидимостьПланаРазвитияРасширеннаяПодсказка" id="579"/>
+							<Events>
+								<Event name="OnChange">ВидимостьПланаРазвитияПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
@@ -855,8 +881,8 @@
 									<ShowInHeader>true</ShowInHeader>
 									<ExtendedTooltip name="МероприятияРезультатГруппаКолонокРасширеннаяПодсказка" id="331"/>
 									<ChildItems>
-										<InputField name="МероприятияРезультатОбучения" id="332">
-											<DataPath>Объект.Мероприятия.РезультатОбучения</DataPath>
+										<InputField name="МероприятияОбучение" id="332">
+											<DataPath>Объект.Мероприятия.Обучение</DataPath>
 											<ReadOnly>true</ReadOnly>
 											<Title>
 												<v8:item>
@@ -866,8 +892,8 @@
 											</Title>
 											<CellHyperlink>true</CellHyperlink>
 											<ShowInHeader>false</ShowInHeader>
-											<ContextMenu name="МероприятияРезультатОбученияКонтекстноеМеню" id="333"/>
-											<ExtendedTooltip name="МероприятияРезультатОбученияРасширеннаяПодсказка" id="334"/>
+											<ContextMenu name="МероприятияОбучениеКонтекстноеМеню" id="333"/>
+											<ExtendedTooltip name="МероприятияОбучениеРасширеннаяПодсказка" id="334"/>
 										</InputField>
 										<InputField name="МероприятияРезультатВыполнения" id="327">
 											<DataPath>Объект.Мероприятия.РезультатВыполнения</DataPath>
@@ -1537,32 +1563,6 @@
 							<v8:Type>xs:boolean</v8:Type>
 						</Type>
 					</Column>
-					<Column name="РезультатОбучения" id="11">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Результат обучения</v8:content>
-							</v8:item>
-						</Title>
-						<Type>
-							<v8:Type>xs:string</v8:Type>
-							<v8:StringQualifiers>
-								<v8:Length>0</v8:Length>
-								<v8:AllowedLength>Variable</v8:AllowedLength>
-							</v8:StringQualifiers>
-						</Type>
-					</Column>
-					<Column name="ДокументОбучения" id="12">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Документ обучения</v8:content>
-							</v8:item>
-						</Title>
-						<Type>
-							<v8:Type>cfg:DocumentRef.ОбучениеРазвитиеСотрудников</v8:Type>
-						</Type>
-					</Column>
 					<Column name="ДокументыОбучения" id="16">
 						<Title>
 							<v8:item>
@@ -2199,6 +2199,17 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ВидимостьПланаРазвития" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Видимость плана развития</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
 				<dcsset:selection>
@@ -2320,49 +2331,6 @@
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>Отображать</dcscor:parameter>
 						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
-					</dcscor:item>
-				</dcsset:appearance>
-			</dcsset:item>
-			<dcsset:item>
-				<dcsset:selection>
-					<dcsset:item>
-						<dcsset:field>ПланРазвития</dcsset:field>
-					</dcsset:item>
-				</dcsset:selection>
-				<dcsset:filter>
-					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">ПланРазвития.Цель</dcsset:left>
-						<dcsset:comparisonType>Filled</dcsset:comparisonType>
-					</dcsset:item>
-				</dcsset:filter>
-				<dcsset:appearance>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
-						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
-					</dcscor:item>
-				</dcsset:appearance>
-			</dcsset:item>
-			<dcsset:item>
-				<dcsset:selection>
-					<dcsset:item>
-						<dcsset:field>ПланРазвития</dcsset:field>
-					</dcsset:item>
-				</dcsset:selection>
-				<dcsset:filter>
-					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">ПланРазвития.Обучение</dcsset:left>
-						<dcsset:comparisonType>Filled</dcsset:comparisonType>
-					</dcsset:item>
-				</dcsset:filter>
-				<dcsset:appearance>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:use>false</dcscor:use>
-						<dcscor:parameter>Доступность</dcscor:parameter>
-						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
-					</dcscor:item>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
-						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>

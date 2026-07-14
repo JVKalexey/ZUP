@@ -39,6 +39,7 @@
 				<v8:Type>cfg:CatalogRef.МашиночитаемыеДоверенностиФСС</v8:Type>
 				<v8:Type>cfg:DocumentRef.ОтменаЗаявкиНаЕдиновременнуюКомпенсацию</v8:Type>
 				<v8:Type>cfg:DocumentRef.СведенияОЗаработкеСтажеЗастрахованныхЛицСЗВ_ИСХ</v8:Type>
+				<v8:Type>cfg:CatalogRef.НастройкиОтправкиВГосключ</v8:Type>
 				<v8:Type>cfg:BusinessProcessRef.Задание</v8:Type>
 				<v8:Type>cfg:CatalogRef.СведенияОСтраховомСтажеЗастрахованныхЛицСЗВ_СТАЖПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogRef.ОплатаПоСреднемуЗаработкуСпискомПрисоединенныеФайлы</v8:Type>
@@ -87,6 +88,7 @@
 				<v8:Type>cfg:DocumentRef.ПереносЗатратНаПерсоналМеждуСтатьями</v8:Type>
 				<v8:Type>cfg:DocumentRef.ИзменениеУсловийОплатыОтпускаПоУходуЗаРебенком</v8:Type>
 				<v8:Type>cfg:CatalogRef.ПоследствияНесчастногоСлучаяПрисоединенныеФайлы</v8:Type>
+				<v8:Type>cfg:CatalogRef.ИзменениеМестаПозицииШтатногоРасписанияВСтруктуреПредприятияПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogRef.ПриказОПрекращенииБронированияПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПодтверждениеВыплатыДоходов</v8:Type>
 				<v8:Type>cfg:DocumentRef.РасходыВКомандировкеКабинетСотрудника</v8:Type>
@@ -285,6 +287,7 @@
 				<v8:Type>cfg:DocumentRef.СогласиеНаПрисоединениеКЭДОБЗК</v8:Type>
 				<v8:Type>cfg:CatalogRef.ПроектыПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogRef.ТерриторииВыполненияРабот</v8:Type>
+				<v8:Type>cfg:CatalogRef.ПодписанныеДанныеПОДПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogRef.ЗаявкаНаВключениеВКадровыйРезервПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogRef.ОтветНаЗапросФССДляРасчетаПособияПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogRef.СведенияОПодлежащихВоинскомуУчетуГражданахПрисоединенныеФайлы</v8:Type>
@@ -397,6 +400,7 @@
 				<v8:Type>cfg:CatalogRef.ЗаявкаНаОбучениеРазвитиеПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:DocumentRef.ОтражениеЗарплатыВФинансовомУчете</v8:Type>
 				<v8:Type>cfg:CatalogRef.ПолномочияПредставителяФСС</v8:Type>
+				<v8:Type>cfg:DocumentRef.ЗаявкаНаДепозитОбменСБанками</v8:Type>
 				<v8:Type>cfg:CatalogRef.ПредставлениеКНаградеПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:DocumentRef.ИндексацияЗаработка</v8:Type>
 				<v8:Type>cfg:CatalogRef.СправкиФизическихЛицПрисоединенныеФайлы</v8:Type>
@@ -427,6 +431,7 @@
 				<v8:Type>cfg:CatalogRef.СреднийЗаработокСЭДОПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:DocumentRef.ВводНачальныхОстатковОтпусков</v8:Type>
 				<v8:Type>cfg:CatalogRef.ЗаявкаОтпускБезОплатыКабинетСотрудникаПрисоединенныеФайлы</v8:Type>
+				<v8:Type>cfg:DocumentRef.ЗаявлениеОСпособеВыплатыЗарплатыКабинетСотрудника</v8:Type>
 				<v8:Type>cfg:DocumentRef.УведомлениеОбИзмененииРасчетаПособия</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПодготовкаСпецоценкиУсловийТруда</v8:Type>
 				<v8:Type>cfg:DocumentRef.НачальнаяШтатнаяРасстановка</v8:Type>
@@ -455,6 +460,7 @@
 				<v8:Type>cfg:CatalogRef.УчетныеЗаписиDSS</v8:Type>
 				<v8:Type>cfg:CatalogRef.СверкаСВоеннымКомиссариатомПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogRef.ДоговорАвторскогоЗаказаПрисоединенныеФайлы</v8:Type>
+				<v8:Type>cfg:DocumentRef.ИзменениеМестаПозицииШтатногоРасписанияВСтруктуреПредприятия</v8:Type>
 				<v8:Type>cfg:DocumentRef.ИзменениеПлановыхНачислений</v8:Type>
 				<v8:Type>cfg:DocumentRef.НачислениеЗарплаты</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПланПоказателейЭффективностиПодразделения</v8:Type>
@@ -487,9 +493,11 @@
 				<v8:Type>cfg:CatalogRef.ЗаявлениеОНазначенииПенсии</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПереводКДругомуРаботодателю</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПеремещениеВДругоеПодразделение</v8:Type>
+				<v8:Type>cfg:CatalogRef.ПодписанныеДанныеПОД</v8:Type>
 				<v8:Type>cfg:DocumentRef.ЕжегодныеСтандартныеВычеты</v8:Type>
 				<v8:Type>cfg:CatalogRef.ДокументыРеализацииПолномочийНалоговыхОрганов</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПлатежноеПоручение</v8:Type>
+				<v8:Type>cfg:CatalogRef.СертификатыКлючейЭлектроннойПодписиИШифрования</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПредставлениеКНаграде</v8:Type>
 				<v8:Type>cfg:CatalogRef.ПланОбученияРазвитияПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПрекращениеСтандартныхВычетовНДФЛ</v8:Type>
@@ -548,6 +556,7 @@
 				<v8:Type>cfg:DocumentRef.ВозвратИзОтпускаПоУходуЗаРебенком</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПрогулНеявка</v8:Type>
 				<v8:Type>cfg:CatalogRef.ПротоколОпросаУчастникаНесчастногоСлучаяПрисоединенныеФайлы</v8:Type>
+				<v8:Type>cfg:CatalogRef.ЗаявлениеОСпособеВыплатыЗарплатыКабинетСотрудникаПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogRef.ЗаявкаСправкаСМестаРаботыКабинетСотрудникаПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogRef.ВыплатаБывшимСотрудникамПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogRef.ПодтверждениеЗачисленияЗарплатыПрисоединенныеФайлы</v8:Type>

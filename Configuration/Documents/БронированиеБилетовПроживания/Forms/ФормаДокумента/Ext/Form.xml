@@ -318,7 +318,7 @@
 															<ContextMenu name="ВидТранспортаКонтекстноеМеню" id="110"/>
 															<ExtendedTooltip name="ВидТранспортаРасширеннаяПодсказка" id="111"/>
 														</RadioButtonField>
-														<CheckBoxField name="АвиаОбратныйБилет" id="301">
+														<CheckBoxField name="ОбратныйБилетНеНужен" id="301">
 															<DataPath>Объект.БилетВОдинКонец</DataPath>
 															<Title>
 																<v8:item>
@@ -329,8 +329,8 @@
 															<TitleLocation>Right</TitleLocation>
 															<GroupHorizontalAlign>Right</GroupHorizontalAlign>
 															<CheckBoxType>Auto</CheckBoxType>
-															<ContextMenu name="АвиаОбратныйБилетКонтекстноеМеню" id="302"/>
-															<ExtendedTooltip name="АвиаОбратныйБилетРасширеннаяПодсказка" id="303"/>
+															<ContextMenu name="ОбратныйБилетНеНуженКонтекстноеМеню" id="302"/>
+															<ExtendedTooltip name="ОбратныйБилетНеНуженРасширеннаяПодсказка" id="303"/>
 														</CheckBoxField>
 													</ChildItems>
 												</UsualGroup>
@@ -434,90 +434,50 @@
 																	<ShowTitle>false</ShowTitle>
 																	<ExtendedTooltip name="АвиаОбратныйБилетГруппаРасширеннаяПодсказка" id="282"/>
 																	<ChildItems>
-																		<Pages name="АвиаОбратныйБилетСтраницы" id="283">
+																		<InputField name="ДатаОбратногоАвиабилета" id="293">
+																			<DataPath>Объект.ДатаОтправленияОбратно</DataPath>
 																			<Title>
 																				<v8:item>
 																					<v8:lang>ru</v8:lang>
-																					<v8:content>Обратный билет</v8:content>
+																					<v8:content>Обратно</v8:content>
 																				</v8:item>
 																			</Title>
-																			<PagesRepresentation>None</PagesRepresentation>
-																			<ExtendedTooltip name="АвиаОбратныйБилетСтраницыРасширеннаяПодсказка" id="284"/>
-																			<ChildItems>
-																				<Page name="АвиаОбратныйБилетНуженСтраница" id="285">
-																					<Title>
-																						<v8:item>
-																							<v8:lang>ru</v8:lang>
-																							<v8:content>Обратный билет нужен</v8:content>
-																						</v8:item>
-																					</Title>
-																					<Group>AlwaysHorizontal</Group>
-																					<ExtendedTooltip name="АвиаОбратныйБилетНуженСтраницаРасширеннаяПодсказка" id="286"/>
-																					<ChildItems>
-																						<InputField name="ДатаОбратногоАвиабилета" id="293">
-																							<DataPath>Объект.ДатаОтправленияОбратно</DataPath>
-																							<Title>
-																								<v8:item>
-																									<v8:lang>ru</v8:lang>
-																									<v8:content>Обратно</v8:content>
-																								</v8:item>
-																							</Title>
-																							<EditMode>EnterOnInput</EditMode>
-																							<AutoMarkIncomplete>false</AutoMarkIncomplete>
-																							<ContextMenu name="ДатаОбратногоАвиабилетаКонтекстноеМеню" id="294"/>
-																							<ExtendedTooltip name="ДатаОбратногоАвиабилетаРасширеннаяПодсказка" id="295"/>
-																						</InputField>
-																						<InputField name="ГородВылетаОбратно" id="287">
-																							<DataPath>Объект.ГородПрилетаПредставление</DataPath>
-																							<Title>
-																								<v8:item>
-																									<v8:lang>ru</v8:lang>
-																									<v8:content>из</v8:content>
-																								</v8:item>
-																							</Title>
-																							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
-																							<AutoMaxWidth>false</AutoMaxWidth>
-																							<MaxWidth>30</MaxWidth>
-																							<HorizontalStretch>true</HorizontalStretch>
-																							<AutoMarkIncomplete>false</AutoMarkIncomplete>
-																							<ContextMenu name="ГородВылетаОбратноКонтекстноеМеню" id="288"/>
-																							<ExtendedTooltip name="ГородВылетаОбратноРасширеннаяПодсказка" id="289"/>
-																						</InputField>
-																						<InputField name="ГородПрилетаОбратно" id="290">
-																							<DataPath>Объект.ГородВылетаПредставление</DataPath>
-																							<Title>
-																								<v8:item>
-																									<v8:lang>ru</v8:lang>
-																									<v8:content>в</v8:content>
-																								</v8:item>
-																							</Title>
-																							<AutoMaxWidth>false</AutoMaxWidth>
-																							<MaxWidth>30</MaxWidth>
-																							<HorizontalStretch>true</HorizontalStretch>
-																							<AutoMarkIncomplete>false</AutoMarkIncomplete>
-																							<ContextMenu name="ГородПрилетаОбратноКонтекстноеМеню" id="291"/>
-																							<ExtendedTooltip name="ГородПрилетаОбратноРасширеннаяПодсказка" id="292"/>
-																						</InputField>
-																					</ChildItems>
-																				</Page>
-																				<Page name="АвиаОбратныйБилетНеНуженСтраница" id="296">
-																					<Title>
-																						<v8:item>
-																							<v8:lang>ru</v8:lang>
-																							<v8:content>Обратный билет не нужен</v8:content>
-																						</v8:item>
-																					</Title>
-																					<Group>AlwaysHorizontal</Group>
-																					<ExtendedTooltip name="АвиаОбратныйБилетНеНуженСтраницаРасширеннаяПодсказка" id="297"/>
-																					<ChildItems>
-																						<LabelDecoration name="АвиаОбратныйБилетНуженДекорация" id="298">
-																							<ContextMenu name="АвиаОбратныйБилетНуженДекорацияКонтекстноеМеню" id="299"/>
-																							<ExtendedTooltip name="АвиаОбратныйБилетНуженДекорацияРасширеннаяПодсказка" id="300"/>
-																						</LabelDecoration>
-																					</ChildItems>
-																				</Page>
-																			</ChildItems>
-																		</Pages>
+																			<EditMode>EnterOnInput</EditMode>
+																			<AutoMarkIncomplete>false</AutoMarkIncomplete>
+																			<ContextMenu name="ДатаОбратногоАвиабилетаКонтекстноеМеню" id="294"/>
+																			<ExtendedTooltip name="ДатаОбратногоАвиабилетаРасширеннаяПодсказка" id="295"/>
+																		</InputField>
+																		<InputField name="ГородВылетаОбратно" id="287">
+																			<DataPath>Объект.ГородПрилетаПредставление</DataPath>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>из</v8:content>
+																				</v8:item>
+																			</Title>
+																			<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+																			<AutoMaxWidth>false</AutoMaxWidth>
+																			<MaxWidth>30</MaxWidth>
+																			<HorizontalStretch>true</HorizontalStretch>
+																			<AutoMarkIncomplete>false</AutoMarkIncomplete>
+																			<ContextMenu name="ГородВылетаОбратноКонтекстноеМеню" id="288"/>
+																			<ExtendedTooltip name="ГородВылетаОбратноРасширеннаяПодсказка" id="289"/>
+																		</InputField>
+																		<InputField name="ГородПрилетаОбратно" id="290">
+																			<DataPath>Объект.ГородВылетаПредставление</DataPath>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>в</v8:content>
+																				</v8:item>
+																			</Title>
+																			<AutoMaxWidth>false</AutoMaxWidth>
+																			<MaxWidth>30</MaxWidth>
+																			<HorizontalStretch>true</HorizontalStretch>
+																			<AutoMarkIncomplete>false</AutoMarkIncomplete>
+																			<ContextMenu name="ГородПрилетаОбратноКонтекстноеМеню" id="291"/>
+																			<ExtendedTooltip name="ГородПрилетаОбратноРасширеннаяПодсказка" id="292"/>
+																		</InputField>
 																	</ChildItems>
 																</UsualGroup>
 															</ChildItems>
@@ -563,13 +523,6 @@
 																					<v8:content>из</v8:content>
 																				</v8:item>
 																			</Title>
-																			<Width>20</Width>
-																			<InputHint>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Название ж/д станции отправления</v8:content>
-																				</v8:item>
-																			</InputHint>
 																			<ContextMenu name="СтанцияОтправленияКонтекстноеМеню" id="133"/>
 																			<ExtendedTooltip name="СтанцияОтправленияРасширеннаяПодсказка" id="134"/>
 																		</InputField>
@@ -581,13 +534,6 @@
 																					<v8:content>в</v8:content>
 																				</v8:item>
 																			</Title>
-																			<Width>25</Width>
-																			<InputHint>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Название ж/д станции прибытия</v8:content>
-																				</v8:item>
-																			</InputHint>
 																			<ContextMenu name="СтанцияПрибытияКонтекстноеМеню" id="136"/>
 																			<ExtendedTooltip name="СтанцияПрибытияРасширеннаяПодсказка" id="137"/>
 																		</InputField>
@@ -606,107 +552,46 @@
 																	<ShowTitle>false</ShowTitle>
 																	<ExtendedTooltip name="ПоездОбратныйБилетГруппаРасширеннаяПодсказка" id="263"/>
 																	<ChildItems>
-																		<Pages name="ПоездОбратныйБилетСтраницы" id="264">
+																		<InputField name="ДатаОбратногоПоездБилета" id="157">
+																			<DataPath>Объект.ДатаОтправленияОбратно</DataPath>
 																			<Title>
 																				<v8:item>
 																					<v8:lang>ru</v8:lang>
-																					<v8:content>Обратный билет</v8:content>
+																					<v8:content>Обратно</v8:content>
 																				</v8:item>
 																			</Title>
-																			<PagesRepresentation>None</PagesRepresentation>
-																			<ExtendedTooltip name="ПоездОбратныйБилетСтраницыРасширеннаяПодсказка" id="265"/>
-																			<ChildItems>
-																				<Page name="ПоездОбратныйБилетНуженСтраница" id="266">
-																					<Title>
-																						<v8:item>
-																							<v8:lang>ru</v8:lang>
-																							<v8:content>Обратный билет нужен</v8:content>
-																						</v8:item>
-																					</Title>
-																					<Group>AlwaysHorizontal</Group>
-																					<ExtendedTooltip name="ПоездОбратныйБилетНуженСтраницаРасширеннаяПодсказка" id="267"/>
-																					<ChildItems>
-																						<LabelDecoration name="Декорация3" id="465">
-																							<Width>2</Width>
-																							<ContextMenu name="Декорация3КонтекстноеМеню" id="466"/>
-																							<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="467"/>
-																						</LabelDecoration>
-																						<InputField name="ДатаОбратногоПоездБилета" id="157">
-																							<DataPath>Объект.ДатаОтправленияОбратно</DataPath>
-																							<Title>
-																								<v8:item>
-																									<v8:lang>ru</v8:lang>
-																									<v8:content>Обратно</v8:content>
-																								</v8:item>
-																							</Title>
-																							<EditMode>EnterOnInput</EditMode>
-																							<ContextMenu name="ДатаОбратногоПоездБилетаКонтекстноеМеню" id="158"/>
-																							<ExtendedTooltip name="ДатаОбратногоПоездБилетаРасширеннаяПодсказка" id="159"/>
-																						</InputField>
-																						<InputField name="СтанцияОтправленияОбратно" id="145">
-																							<DataPath>Объект.СтанцияПрибытияПредставление</DataPath>
-																							<ReadOnly>true</ReadOnly>
-																							<Title>
-																								<v8:item>
-																									<v8:lang>ru</v8:lang>
-																									<v8:content>из</v8:content>
-																								</v8:item>
-																							</Title>
-																							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
-																							<Width>20</Width>
-																							<AutoMarkIncomplete>false</AutoMarkIncomplete>
-																							<ContextMenu name="СтанцияОтправленияОбратноКонтекстноеМеню" id="146"/>
-																							<ExtendedTooltip name="СтанцияОтправленияОбратноРасширеннаяПодсказка" id="147"/>
-																						</InputField>
-																						<InputField name="СтанцияПрибытияОбратно" id="148">
-																							<DataPath>Объект.СтанцияОтправленияПредставление</DataPath>
-																							<ReadOnly>true</ReadOnly>
-																							<Title>
-																								<v8:item>
-																									<v8:lang>ru</v8:lang>
-																									<v8:content>в</v8:content>
-																								</v8:item>
-																							</Title>
-																							<Width>13</Width>
-																							<HorizontalStretch>true</HorizontalStretch>
-																							<AutoMarkIncomplete>false</AutoMarkIncomplete>
-																							<ContextMenu name="СтанцияПрибытияОбратноКонтекстноеМеню" id="149"/>
-																							<ExtendedTooltip name="СтанцияПрибытияОбратноРасширеннаяПодсказка" id="150"/>
-																						</InputField>
-																					</ChildItems>
-																				</Page>
-																				<Page name="ПоездОбратныйБилетНеНуженСтраница" id="268">
-																					<Title>
-																						<v8:item>
-																							<v8:lang>ru</v8:lang>
-																							<v8:content>Обратный билет не нужен</v8:content>
-																						</v8:item>
-																					</Title>
-																					<Group>AlwaysHorizontal</Group>
-																					<ExtendedTooltip name="ПоездОбратныйБилетНеНуженСтраницаРасширеннаяПодсказка" id="269"/>
-																					<ChildItems>
-																						<LabelDecoration name="ПоездОбратныйБилетНуженДекорация" id="270">
-																							<ContextMenu name="ПоездОбратныйБилетНуженДекорацияКонтекстноеМеню" id="271"/>
-																							<ExtendedTooltip name="ПоездОбратныйБилетНуженДекорацияРасширеннаяПодсказка" id="272"/>
-																						</LabelDecoration>
-																					</ChildItems>
-																				</Page>
-																			</ChildItems>
-																		</Pages>
-																		<CheckBoxField name="ПоездОбратныйБилет" id="138">
-																			<DataPath>Объект.БилетВОдинКонец</DataPath>
+																			<EditMode>EnterOnInput</EditMode>
+																			<ContextMenu name="ДатаОбратногоПоездБилетаКонтекстноеМеню" id="158"/>
+																			<ExtendedTooltip name="ДатаОбратногоПоездБилетаРасширеннаяПодсказка" id="159"/>
+																		</InputField>
+																		<InputField name="СтанцияОтправленияОбратно" id="145">
+																			<DataPath>Объект.СтанцияПрибытияПредставление</DataPath>
+																			<ReadOnly>true</ReadOnly>
 																			<Title>
 																				<v8:item>
 																					<v8:lang>ru</v8:lang>
-																					<v8:content>Обратный билет не нужен</v8:content>
+																					<v8:content>из</v8:content>
 																				</v8:item>
 																			</Title>
-																			<TitleLocation>Right</TitleLocation>
 																			<GroupHorizontalAlign>Right</GroupHorizontalAlign>
-																			<CheckBoxType>Auto</CheckBoxType>
-																			<ContextMenu name="ПоездОбратныйБилетКонтекстноеМеню" id="139"/>
-																			<ExtendedTooltip name="ПоездОбратныйБилетРасширеннаяПодсказка" id="140"/>
-																		</CheckBoxField>
+																			<AutoMarkIncomplete>false</AutoMarkIncomplete>
+																			<ContextMenu name="СтанцияОтправленияОбратноКонтекстноеМеню" id="146"/>
+																			<ExtendedTooltip name="СтанцияОтправленияОбратноРасширеннаяПодсказка" id="147"/>
+																		</InputField>
+																		<InputField name="СтанцияПрибытияОбратно" id="148">
+																			<DataPath>Объект.СтанцияОтправленияПредставление</DataPath>
+																			<ReadOnly>true</ReadOnly>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>в</v8:content>
+																				</v8:item>
+																			</Title>
+																			<HorizontalStretch>true</HorizontalStretch>
+																			<AutoMarkIncomplete>false</AutoMarkIncomplete>
+																			<ContextMenu name="СтанцияПрибытияОбратноКонтекстноеМеню" id="149"/>
+																			<ExtendedTooltip name="СтанцияПрибытияОбратноРасширеннаяПодсказка" id="150"/>
+																		</InputField>
 																	</ChildItems>
 																</UsualGroup>
 															</ChildItems>

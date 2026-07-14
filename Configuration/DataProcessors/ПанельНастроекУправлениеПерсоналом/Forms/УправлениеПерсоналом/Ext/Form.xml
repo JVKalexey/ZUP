@@ -197,6 +197,59 @@
 						</CheckBoxField>
 					</ChildItems>
 				</UsualGroup>
+				<UsualGroup name="ИспользоватьДокументИзмененияМестаПозицииВСтруктуреПредприятияГруппа" id="593">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использовать документ изменения места позиции в структуре предприятия группа</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ИспользоватьДокументИзмененияМестаПозицииВСтруктуреПредприятияГруппаРасширеннаяПодсказка" id="594"/>
+					<ChildItems>
+						<PictureDecoration name="ДекорацияОтступ2" id="595">
+							<Width>1</Width>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация отступ</v8:content>
+								</v8:item>
+							</Title>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="ДекорацияОтступ2КонтекстноеМеню" id="597"/>
+							<ExtendedTooltip name="ДекорацияОтступ2РасширеннаяПодсказка" id="598"/>
+						</PictureDecoration>
+						<CheckBoxField name="ИспользоватьДокументИзмененияМестаПозицииВСтруктуреПредприятия" id="596">
+							<DataPath>КонстантыНабор.ИспользоватьДокументИзмененияМестаПозицииВСтруктуреПредприятия</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Использовать документ изменения места позиции в структуре предприятия</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьДокументИзмененияМестаПозицииВСтруктуреПредприятияКонтекстноеМеню" id="599"/>
+							<ExtendedTooltip name="ИспользоватьДокументИзмененияМестаПозицииВСтруктуреПредприятияРасширеннаяПодсказка" id="600">
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<Title formatted="true">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Позволяет относить позиции штатного расписания к управленческой структуре предприятия отдельным документом.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+							<Events>
+								<Event name="OnChange">ИспользоватьДокументИзмененияМестаПозицииВСтруктуреПредприятияПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГрейдыГруппа" id="1">
@@ -2581,7 +2634,6 @@
 									<AutoCommandBar name="ШкалаЭффективностиМатрицыТалантовКоманднаяПанель" id="495"/>
 									<ExtendedTooltip name="ШкалаЭффективностиМатрицыТалантовРасширеннаяПодсказка" id="496"/>
 									<SearchStringAddition name="ШкалаЭффективностиМатрицыТалантовСтрокаПоиска" id="497">
-										<Enabled>false</Enabled>
 										<AdditionSource>
 											<Item>ШкалаЭффективностиМатрицыТалантов</Item>
 											<Type>SearchStringRepresentation</Type>
@@ -2590,7 +2642,6 @@
 										<ExtendedTooltip name="ШкалаЭффективностиМатрицыТалантовСтрокаПоискаРасширеннаяПодсказка" id="499"/>
 									</SearchStringAddition>
 									<ViewStatusAddition name="ШкалаЭффективностиМатрицыТалантовСостояниеПросмотра" id="500">
-										<Enabled>false</Enabled>
 										<AdditionSource>
 											<Item>ШкалаЭффективностиМатрицыТалантов</Item>
 											<Type>ViewStatusRepresentation</Type>
@@ -2599,7 +2650,6 @@
 										<ExtendedTooltip name="ШкалаЭффективностиМатрицыТалантовСостояниеПросмотраРасширеннаяПодсказка" id="502"/>
 									</ViewStatusAddition>
 									<SearchControlAddition name="ШкалаЭффективностиМатрицыТалантовУправлениеПоиском" id="503">
-										<Enabled>false</Enabled>
 										<AdditionSource>
 											<Item>ШкалаЭффективностиМатрицыТалантов</Item>
 											<Type>SearchControl</Type>
@@ -2676,7 +2726,6 @@
 									<AutoCommandBar name="ШкалаПотенциалаМатрицыТалантовКоманднаяПанель" id="514"/>
 									<ExtendedTooltip name="ШкалаПотенциалаМатрицыТалантовРасширеннаяПодсказка" id="515"/>
 									<SearchStringAddition name="ШкалаПотенциалаМатрицыТалантовСтрокаПоиска" id="516">
-										<Enabled>false</Enabled>
 										<AdditionSource>
 											<Item>ШкалаПотенциалаМатрицыТалантов</Item>
 											<Type>SearchStringRepresentation</Type>
@@ -2685,7 +2734,6 @@
 										<ExtendedTooltip name="ШкалаПотенциалаМатрицыТалантовСтрокаПоискаРасширеннаяПодсказка" id="518"/>
 									</SearchStringAddition>
 									<ViewStatusAddition name="ШкалаПотенциалаМатрицыТалантовСостояниеПросмотра" id="519">
-										<Enabled>false</Enabled>
 										<AdditionSource>
 											<Item>ШкалаПотенциалаМатрицыТалантов</Item>
 											<Type>ViewStatusRepresentation</Type>
@@ -2694,7 +2742,6 @@
 										<ExtendedTooltip name="ШкалаПотенциалаМатрицыТалантовСостояниеПросмотраРасширеннаяПодсказка" id="521"/>
 									</ViewStatusAddition>
 									<SearchControlAddition name="ШкалаПотенциалаМатрицыТалантовУправлениеПоиском" id="522">
-										<Enabled>false</Enabled>
 										<AdditionSource>
 											<Item>ШкалаПотенциалаМатрицыТалантов</Item>
 											<Type>SearchControl</Type>

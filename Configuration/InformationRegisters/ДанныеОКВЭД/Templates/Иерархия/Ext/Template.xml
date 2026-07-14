@@ -41,22 +41,68 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Описание</dataPath>
+			<field>Описание</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипЗначения</dataPath>
+			<field>ТипЗначения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип значения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КлассПрофессиональногоРиска</dataPath>
+			<field>КлассПрофессиональногоРиска</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Класс профессионального риска</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	ДанныеОКВЭД.Раздел КАК Раздел,
 	ДанныеОКВЭД.Код КАК Код,
 	ДанныеОКВЭД.Наименование КАК Наименование,
+	ДанныеОКВЭД.КлассПрофессиональногоРиска КАК КлассПрофессиональногоРиска,
 	ВЫБОР
 		КОГДА ДанныеОКВЭД.Иерархия = ""
-			ТОГДА ДанныеОКВЭД.Код
-		ИНАЧЕ ДанныеОКВЭД.Код + "," + ДанныеОКВЭД.Иерархия
+			ТОГДА ДанныеОКВЭД.Раздел + "," + ДанныеОКВЭД.Код
+		ИНАЧЕ ДанныеОКВЭД.Раздел + "," + ДанныеОКВЭД.Код + "," + ДанныеОКВЭД.Иерархия
 	КОНЕЦ КАК Ссылка,
+	ДанныеОКВЭД.Описание КАК Описание,
+	"ОКВЭД" КАК ТипЗначения,
 	ДанныеОКВЭД.Код ПОДОБНО &amp;СтрокаПоиска
+		ИЛИ ДанныеОКВЭД.Раздел ПОДОБНО &amp;СтрокаПоиска
 		ИЛИ ДанныеОКВЭД.КодБезТочек ПОДОБНО &amp;СтрокаПоиска
 		ИЛИ ДанныеОКВЭД.Наименование ПОДОБНО &amp;СтрокаПоиска
+		ИЛИ ДанныеОКВЭД.Описание ПОДОБНО &amp;СтрокаПоиска
 		ИЛИ &amp;СтрокаПоиска = "" КАК СодержитТекстПоиска
 ИЗ
-	РегистрСведений.ДанныеОКВЭД КАК ДанныеОКВЭД</query>
+	РегистрСведений.ДанныеОКВЭД КАК ДанныеОКВЭД
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВТРазделы.Раздел КАК Раздел,
+	ВТРазделы.Раздел КАК Код,
+	ВТРазделы.Наименование КАК Наименование,
+	0 КАК КлассПрофессиональногоРиска,
+	ВТРазделы.Раздел КАК Ссылка,
+	ВТРазделы.Описание КАК Описание,
+	"Раздел" КАК ТипЗначения,
+	ВТРазделы.Раздел ПОДОБНО &amp;СтрокаПоиска
+		ИЛИ ВТРазделы.Наименование ПОДОБНО &amp;СтрокаПоиска
+		ИЛИ ВТРазделы.Описание ПОДОБНО &amp;СтрокаПоиска
+		ИЛИ &amp;СтрокаПоиска = "" КАК СодержитТекстПоиска
+ИЗ
+	ВТРазделы КАК ВТРазделы</query>
 	</dataSet>
 	<dataSet xsi:type="DataSetQuery">
 		<name>Иерархия</name>
@@ -84,18 +130,31 @@
 		<query>ВЫБРАТЬ
 	ВЫБОР
 		КОГДА ДанныеОКВЭД.Иерархия = ""
-			ТОГДА ДанныеОКВЭД.Код
-		ИНАЧЕ ДанныеОКВЭД.Код + "," + ДанныеОКВЭД.Иерархия
+			ТОГДА ДанныеОКВЭД.Раздел + "," + ДанныеОКВЭД.Код
+		ИНАЧЕ ДанныеОКВЭД.Раздел + "," + ДанныеОКВЭД.Код + "," + ДанныеОКВЭД.Иерархия
 	КОНЕЦ КАК Ссылка,
-	ДанныеОКВЭД.Иерархия КАК Родитель
+	ВЫБОР
+		КОГДА ДанныеОКВЭД.Иерархия = ""
+			ТОГДА ДанныеОКВЭД.Раздел
+		ИНАЧЕ ДанныеОКВЭД.Раздел + "," + ДанныеОКВЭД.Иерархия
+	КОНЕЦ КАК Родитель
 ИЗ
 	РегистрСведений.ДанныеОКВЭД КАК ДанныеОКВЭД
 ГДЕ
 	ВЫБОР
-			КОГДА ДанныеОКВЭД.Иерархия = ""
-				ТОГДА ДанныеОКВЭД.Код
-			ИНАЧЕ ДанныеОКВЭД.Код + "," + ДанныеОКВЭД.Иерархия
-		КОНЕЦ В (&amp;Ссылка)</query>
+		КОГДА ДанныеОКВЭД.Иерархия = ""
+			ТОГДА ДанныеОКВЭД.Раздел + "," + ДанныеОКВЭД.Код
+		ИНАЧЕ ДанныеОКВЭД.Раздел + "," + ДанныеОКВЭД.Код + "," + ДанныеОКВЭД.Иерархия
+	КОНЕЦ В (&amp;Ссылка)
+	
+ОБЪЕДИНИТЬ ВСЕ
+ВЫБРАТЬ
+	ВТРазделы.Раздел КАК Ссылка,
+	"" КАК Родитель
+ИЗ
+	ВТРазделы КАК ВТРазделы
+ГДЕ
+	ВТРазделы.Раздел В (&amp;Ссылка)</query>
 	</dataSet>
 	<dataSetLink>
 		<sourceDataSet>Иерархия</sourceDataSet>
@@ -168,6 +227,12 @@
 					<dcsset:field>Наименование</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КлассПрофессиональногоРиска</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Описание</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>СодержитТекстПоиска</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
@@ -218,6 +283,27 @@
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:GroupItemField">
 						<dcsset:field>Раздел</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Описание</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ТипЗначения</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>КлассПрофессиональногоРиска</dcsset:field>
 						<dcsset:groupType>Items</dcsset:groupType>
 						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>

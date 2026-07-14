@@ -71,6 +71,7 @@
 		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
 		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -1729,8 +1730,14 @@
 								<InputField name="ДополнительныеОтпускаОснование" id="453">
 									<DataPath>Объект.ДополнительныеОтпуска.Основание</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<ChoiceButton>true</ChoiceButton>
 									<ContextMenu name="ДополнительныеОтпускаОснованиеКонтекстноеМеню" id="454"/>
 									<ExtendedTooltip name="ДополнительныеОтпускаОснованиеРасширеннаяПодсказка" id="455"/>
+									<Events>
+										<Event name="AutoComplete">ДополнительныеОтпускаОснованиеАвтоПодбор</Event>
+										<Event name="StartChoice">ДополнительныеОтпускаОснованиеНачалоВыбора</Event>
+										<Event name="ChoiceProcessing">ДополнительныеОтпускаОснованиеОбработкаВыбора</Event>
+									</Events>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -8416,7 +8423,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>InformationRegister.ОтпускОснования.StandardCommand.OpenByValue.ОбъектСсылка</Command>
+				<Command>InformationRegister.УдалитьОтпускОснования.StandardCommand.OpenByValue.ОбъектСсылка</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -8441,6 +8448,14 @@
 			</Item>
 			<Item>
 				<Command>CommonCommand.ЗадачиПоПредмету</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.ОтсутствияНаОснованииОбучения.StandardCommand.OpenByValue.ДокументОтсутствия</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

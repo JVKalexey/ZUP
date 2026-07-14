@@ -347,6 +347,66 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.ЗаявлениеОСпособеВыплатыЗарплатыКабинетСотрудникаПрисоединенныеФайлы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
+#ДляОбъекта("ВладелецФайла")
+#Иначе
+#ПоЗначениям( "Справочник.ЗаявлениеОСпособеВыплатыЗарплатыКабинетСотрудникаПрисоединенныеФайлы","Чтение","","Организации","ВладелецФайла.Организация","ГруппыФизическихЛиц","ВладелецФайла.ФизическоеЛицо","","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","" )
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
+#ДляОбъекта("ВладелецФайла")
+#Иначе
+#ПоЗначениям( "Справочник.ЗаявлениеОСпособеВыплатыЗарплатыКабинетСотрудникаПрисоединенныеФайлы","Добавление","","Организации","ВладелецФайла.Организация","ГруппыФизическихЛиц","ВладелецФайла.ФизическоеЛицо","","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","" )
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
+#ДляОбъекта("ВладелецФайла")
+#Иначе
+#ПоЗначениям( "Справочник.ЗаявлениеОСпособеВыплатыЗарплатыКабинетСотрудникаПрисоединенныеФайлы","Изменение","","Организации","ВладелецФайла.Организация","ГруппыФизическихЛиц","ВладелецФайла.ФизическоеЛицо","","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","" )
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ЗаявкаСоциальноеПособиеКабинетСотрудникаПрисоединенныеФайлы</name>
 		<right>
 			<name>Read</name>
@@ -1061,6 +1121,78 @@
 		</right>
 		<right>
 			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ЗаявлениеОСпособеВыплатыЗарплатыКабинетСотрудника</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
+#ДляОбъекта("")
+#Иначе
+#ПоЗначениям( "Документ.ЗаявлениеОСпособеВыплатыЗарплатыКабинетСотрудника","Чтение","","Организации","Организация","ГруппыФизическихЛиц","ФизическоеЛицо","","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","" )
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
+#ДляОбъекта("")
+#Иначе
+#ПоЗначениям( "Документ.ЗаявлениеОСпособеВыплатыЗарплатыКабинетСотрудника","Добавление","","Организации","Организация","ГруппыФизическихЛиц","ФизическоеЛицо","","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","" )
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
+#ДляОбъекта("")
+#Иначе
+#ПоЗначениям( "Документ.ЗаявлениеОСпособеВыплатыЗарплатыКабинетСотрудника","Изменение","","Организации","Организация","ГруппыФизическихЛиц","ФизическоеЛицо","","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","" )
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Posting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePostingRegular</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
 			<value>true</value>
 		</right>
 		<right>

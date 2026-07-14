@@ -13,6 +13,7 @@
 		<Event name="BeforeClose">ПередЗакрытием</Event>
 		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
 		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -499,7 +500,7 @@
 						<PictureDecoration name="КартинкаИнформационнаяВсеОформлены" id="113">
 							<Picture>
 								<xr:Ref>StdPicture.Information</xr:Ref>
-								<xr:LoadTransparent>false</xr:LoadTransparent>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
 							</Picture>
 							<FileDragMode>AsFile</FileDragMode>
 							<ContextMenu name="КартинкаИнформационнаяВсеОформленыКонтекстноеМеню" id="114"/>
@@ -1227,7 +1228,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>InformationRegister.ОтпускаСотрудниковОснования.StandardCommand.OpenByValue.ОбъектСсылка</Command>
+				<Command>InformationRegister.УдалитьОтпускаСотрудниковОснования.StandardCommand.OpenByValue.ОбъектСсылка</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1252,6 +1253,14 @@
 			</Item>
 			<Item>
 				<Command>CommonCommand.ПрисоединенныеФайлы</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.ОтсутствияНаОснованииОбучения.StandardCommand.OpenByValue.ДокументОтсутствия</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

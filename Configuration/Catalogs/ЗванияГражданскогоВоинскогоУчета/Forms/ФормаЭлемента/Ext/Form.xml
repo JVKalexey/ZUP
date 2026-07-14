@@ -27,6 +27,39 @@
 			<ContextMenu name="СоставКонтекстноеМеню" id="12"/>
 			<ExtendedTooltip name="СоставРасширеннаяПодсказка" id="13"/>
 		</InputField>
+		<UsualGroup name="ПредельныйВозрастПребыванияВЗапасе" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предельный возраст пребывания в запасе</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предельный возраст пребывания в запасе</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>DontUse</ThroughAlign>
+			<ExtendedTooltip name="ПредельныйВозрастПребыванияВЗапасеРасширеннаяПодсказка" id="21"/>
+			<ChildItems>
+				<InputField name="ПредельныйВозрастПребыванияВЗапасеМужчин" id="14">
+					<DataPath>Объект.ПредельныйВозрастПребыванияВЗапасеМужчин</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПредельныйВозрастПребыванияВЗапасеМужчинКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ПредельныйВозрастПребыванияВЗапасеМужчинРасширеннаяПодсказка" id="16"/>
+				</InputField>
+				<InputField name="ПредельныйВозрастПребыванияВЗапасеЖенщин" id="17">
+					<DataPath>Объект.ПредельныйВозрастПребыванияВЗапасеЖенщин</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПредельныйВозрастПребыванияВЗапасеЖенщинКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ПредельныйВозрастПребыванияВЗапасеЖенщинРасширеннаяПодсказка" id="19"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаДополнительныеРеквизиты" id="9">
 			<Title>
 				<v8:item>

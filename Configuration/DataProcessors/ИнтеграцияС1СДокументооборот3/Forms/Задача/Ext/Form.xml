@@ -495,282 +495,167 @@
 													<PagesRepresentation>None</PagesRepresentation>
 													<ExtendedTooltip name="СтраницыПросмотраРасширеннаяПодсказка" id="153"/>
 													<ChildItems>
-														<Page name="СтраницаОсновное" id="154">
+														<Page name="СтраницаГруппаHTML" id="380">
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Основное</v8:content>
+																	<v8:content>Страница группа HTML</v8:content>
 																</v8:item>
 															</Title>
-															<Group>AlwaysHorizontal</Group>
-															<ExtendedTooltip name="СтраницаОсновноеРасширеннаяПодсказка" id="155"/>
+															<ExtendedTooltip name="СтраницаГруппаHTMLРасширеннаяПодсказка" id="381"/>
 															<ChildItems>
-																<HTMLDocumentField name="ОписаниеHTMLЗадачи" id="158">
-																	<DataPath>ОписаниеHTMLЗадачи</DataPath>
-																	<TitleLocation>None</TitleLocation>
-																	<Width>40</Width>
-																	<MaxWidth>50</MaxWidth>
-																	<Height>7</Height>
-																	<Output>Enable</Output>
-																	<ContextMenu name="ОписаниеHTMLЗадачиКонтекстноеМеню" id="159"/>
-																	<ExtendedTooltip name="ОписаниеHTMLЗадачиРасширеннаяПодсказка" id="160"/>
-																	<Events>
-																		<Event name="OnClick">ОписаниеHTMLПриНажатии</Event>
-																	</Events>
-																</HTMLDocumentField>
-															</ChildItems>
-														</Page>
-														<Page name="СтраницаИнструкция" id="161">
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Инструкция</v8:content>
-																</v8:item>
-															</Title>
-															<Group>AlwaysHorizontal</Group>
-															<ExtendedTooltip name="СтраницаИнструкцияРасширеннаяПодсказка" id="162"/>
-															<ChildItems>
-																<HTMLDocumentField name="Инструкция" id="163">
-																	<DataPath>Инструкция</DataPath>
-																	<SkipOnInput>true</SkipOnInput>
-																	<TitleLocation>None</TitleLocation>
-																	<Width>40</Width>
-																	<Height>7</Height>
-																	<ContextMenu name="ИнструкцияКонтекстноеМеню" id="164"/>
-																	<ExtendedTooltip name="ИнструкцияРасширеннаяПодсказка" id="165"/>
-																	<Events>
-																		<Event name="OnClick">ОписаниеHTMLПриНажатии</Event>
-																	</Events>
-																</HTMLDocumentField>
-															</ChildItems>
-														</Page>
-														<Page name="СтраницаОбзорПриложения" id="268">
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Обзор приложения</v8:content>
-																</v8:item>
-															</Title>
-															<Group>AlwaysHorizontal</Group>
-															<ExtendedTooltip name="СтраницаОбзорПриложенияРасширеннаяПодсказка" id="269"/>
-															<ChildItems>
-																<HTMLDocumentField name="ОписаниеHTMLПриложения" id="280">
-																	<DataPath>ОписаниеHTMLПриложения</DataPath>
-																	<TitleLocation>None</TitleLocation>
-																	<Width>40</Width>
-																	<Height>7</Height>
-																	<Output>Enable</Output>
-																	<ContextMenu name="ОписаниеHTMLПриложенияКонтекстноеМеню" id="281">
-																		<ChildItems>
-																			<ButtonGroup name="ОписаниеHTMLПриложенияКонтекстноеМенюГруппаОбновить" id="287">
-																				<ExtendedTooltip name="ОписаниеHTMLПриложенияКонтекстноеМенюГруппаОбновитьРасширеннаяПодсказка" id="288"/>
-																				<ChildItems>
-																					<Button name="ОписаниеHTMLПриложенияКонтекстноеМенюОбновитьПредпросмотр" id="283">
-																						<Type>CommandBarButton</Type>
-																						<CommandName>Form.Command.ОбновитьПредпросмотр</CommandName>
-																						<ExtendedTooltip name="ОписаниеHTMLПриложенияКонтекстноеМенюОбновитьПредпросмотрРасширеннаяПодсказка" id="284"/>
-																					</Button>
-																				</ChildItems>
-																			</ButtonGroup>
-																		</ChildItems>
-																	</ContextMenu>
-																	<ExtendedTooltip name="ОписаниеHTMLПриложенияРасширеннаяПодсказка" id="282"/>
-																	<Events>
-																		<Event name="OnClick">ОписаниеHTMLПриНажатии</Event>
-																	</Events>
-																</HTMLDocumentField>
-															</ChildItems>
-														</Page>
-														<Page name="СтраницаОбзорФайла" id="166">
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Обзор файла</v8:content>
-																</v8:item>
-															</Title>
-															<Group>AlwaysHorizontal</Group>
-															<ExtendedTooltip name="СтраницаОбзорФайлаРасширеннаяПодсказка" id="167"/>
-															<ChildItems>
-																<Pages name="ГруппаПредпросмотрСтраницы" id="378">
+																<UsualGroup name="ГруппаHTML" id="394">
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>Группа предпросмотр страницы</v8:content>
+																			<v8:content>Группа HTML</v8:content>
 																		</v8:item>
 																	</Title>
-																	<PagesRepresentation>None</PagesRepresentation>
-																	<ExtendedTooltip name="ГруппаПредпросмотрСтраницыРасширеннаяПодсказка" id="379"/>
+																	<Group>Vertical</Group>
+																	<Representation>None</Representation>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="ГруппаHTMLРасширеннаяПодсказка" id="395"/>
 																	<ChildItems>
-																		<Page name="ГруппаHTML" id="380">
+																		<UsualGroup name="ГруппаПредпросмотрУрезан" id="170">
+																			<Visible>false</Visible>
 																			<Title>
 																				<v8:item>
 																					<v8:lang>ru</v8:lang>
-																					<v8:content>Группа HTML</v8:content>
-																				</v8:item>
-																			</Title>
-																			<ExtendedTooltip name="ГруппаHTMLРасширеннаяПодсказка" id="381"/>
-																			<ChildItems>
-																				<UsualGroup name="ГруппаПредпросмотрУрезан" id="170">
-																					<Visible>false</Visible>
-																					<Title>
-																						<v8:item>
-																							<v8:lang>ru</v8:lang>
-																							<v8:content>Группа предпросмотр урезан</v8:content>
-																						</v8:item>
-																					</Title>
-																					<Group>AlwaysHorizontal</Group>
-																					<Behavior>Usual</Behavior>
-																					<Representation>None</Representation>
-																					<ShowTitle>false</ShowTitle>
-																					<BackColor>style:FieldAlternativeBackColor</BackColor>
-																					<ExtendedTooltip name="ГруппаПредпросмотрУрезанРасширеннаяПодсказка" id="171"/>
-																					<ChildItems>
-																						<PictureDecoration name="ДекорацияИконкаУрезан" id="172">
-																							<Width>2</Width>
-																							<Height>1</Height>
-																							<HorizontalStretch>false</HorizontalStretch>
-																							<VerticalStretch>false</VerticalStretch>
-																							<Title formatted="false">
-																								<v8:item>
-																									<v8:lang>ru</v8:lang>
-																									<v8:content>Декорация иконка урезан</v8:content>
-																								</v8:item>
-																							</Title>
-																							<Picture>
-																								<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
-																								<xr:LoadTransparent>false</xr:LoadTransparent>
-																							</Picture>
-																							<ContextMenu name="ДекорацияИконкаУрезанКонтекстноеМеню" id="173"/>
-																							<ExtendedTooltip name="ДекорацияИконкаУрезанРасширеннаяПодсказка" id="174"/>
-																						</PictureDecoration>
-																						<LabelDecoration name="ДекорацияПредпросмотрУрезан" id="175">
-																							<AutoMaxWidth>false</AutoMaxWidth>
-																							<HorizontalStretch>true</HorizontalStretch>
-																							<TextColor>style:FormTextColor</TextColor>
-																							<Font faceName="" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
-																							<Title formatted="false">
-																								<v8:item>
-																									<v8:lang>ru</v8:lang>
-																									<v8:content>Файл показан в сокращенном виде, т.к. содержит большой текст. Откройте файл для просмотра чтобы увидеть полностью.</v8:content>
-																								</v8:item>
-																							</Title>
-																							<ContextMenu name="ДекорацияПредпросмотрУрезанКонтекстноеМеню" id="176"/>
-																							<ExtendedTooltip name="ДекорацияПредпросмотрУрезанРасширеннаяПодсказка" id="177"/>
-																						</LabelDecoration>
-																					</ChildItems>
-																				</UsualGroup>
-																				<HTMLDocumentField name="ОписаниеHTMLФайла" id="178">
-																					<DataPath>ОписаниеHTMLФайла</DataPath>
-																					<TitleLocation>None</TitleLocation>
-																					<Width>40</Width>
-																					<Height>7</Height>
-																					<Output>Enable</Output>
-																					<ContextMenu name="ОписаниеHTMLФайлаКонтекстноеМеню" id="179">
-																						<ChildItems>
-																							<ButtonGroup name="ОписаниеHTMLФайлаКонтекстноеМенюГруппаОбновить" id="289">
-																								<ExtendedTooltip name="ОписаниеHTMLФайлаКонтекстноеМенюГруппаОбновитьРасширеннаяПодсказка" id="290"/>
-																								<ChildItems>
-																									<Button name="ОписаниеHTMLФайлаКонтекстноеМенюОбновитьПредпросмотр" id="285">
-																										<Type>CommandBarButton</Type>
-																										<CommandName>Form.Command.ОбновитьПредпросмотр</CommandName>
-																										<ExtendedTooltip name="ОписаниеHTMLФайлаКонтекстноеМенюОбновитьПредпросмотрРасширеннаяПодсказка" id="286"/>
-																									</Button>
-																								</ChildItems>
-																							</ButtonGroup>
-																						</ChildItems>
-																					</ContextMenu>
-																					<ExtendedTooltip name="ОписаниеHTMLФайлаРасширеннаяПодсказка" id="180"/>
-																					<Events>
-																						<Event name="OnClick">ОписаниеHTMLПриНажатии</Event>
-																					</Events>
-																				</HTMLDocumentField>
-																			</ChildItems>
-																		</Page>
-																		<Page name="ГруппаPDF" id="382">
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Группа PDF</v8:content>
+																					<v8:content>Группа предпросмотр урезан</v8:content>
 																				</v8:item>
 																			</Title>
 																			<Group>AlwaysHorizontal</Group>
-																			<ExtendedTooltip name="ГруппаPDFРасширеннаяПодсказка" id="383"/>
+																			<Behavior>Usual</Behavior>
+																			<Representation>None</Representation>
+																			<ShowTitle>false</ShowTitle>
+																			<BackColor>style:FieldAlternativeBackColor</BackColor>
+																			<ExtendedTooltip name="ГруппаПредпросмотрУрезанРасширеннаяПодсказка" id="171"/>
 																			<ChildItems>
-																				<UsualGroup name="ГруппаОбзорФайлаКоманды" id="384">
-																					<Title>
+																				<PictureDecoration name="ДекорацияИконкаУрезан" id="172">
+																					<Width>2</Width>
+																					<Height>1</Height>
+																					<HorizontalStretch>false</HorizontalStretch>
+																					<VerticalStretch>false</VerticalStretch>
+																					<Title formatted="false">
 																						<v8:item>
 																							<v8:lang>ru</v8:lang>
-																							<v8:content>Группа обзор файла команды</v8:content>
+																							<v8:content>Декорация иконка урезан</v8:content>
 																						</v8:item>
 																					</Title>
-																					<Group>Vertical</Group>
-																					<Representation>None</Representation>
-																					<ShowTitle>false</ShowTitle>
-																					<ExtendedTooltip name="ГруппаОбзорФайлаКомандыРасширеннаяПодсказка" id="385"/>
-																					<ChildItems>
-																						<Button name="ДокументPDFУвеличить" id="386">
-																							<Type>UsualButton</Type>
-																							<CommandName>Form.Command.ДокументPDFУвеличить</CommandName>
-																							<ShapeRepresentation>None</ShapeRepresentation>
-																							<ExtendedTooltip name="ДокументPDFУвеличитьРасширеннаяПодсказка" id="387"/>
-																						</Button>
-																						<Button name="ДокументPDFУменьшить" id="388">
-																							<Type>UsualButton</Type>
-																							<CommandName>Form.Command.ДокументPDFУменьшить</CommandName>
-																							<ShapeRepresentation>None</ShapeRepresentation>
-																							<ExtendedTooltip name="ДокументPDFУменьшитьРасширеннаяПодсказка" id="389"/>
-																						</Button>
-																						<Button name="ДокументPDFПоворотЛево" id="390">
-																							<Type>UsualButton</Type>
-																							<CommandName>Form.Command.ДокументPDFПоворотЛево</CommandName>
-																							<ShapeRepresentation>None</ShapeRepresentation>
-																							<ExtendedTooltip name="ДокументPDFПоворотЛевоРасширеннаяПодсказка" id="391"/>
-																						</Button>
-																						<Button name="ДокументPDFПоворотПраво" id="392">
-																							<Type>UsualButton</Type>
-																							<CommandName>Form.Command.ДокументPDFПоворотПраво</CommandName>
-																							<ShapeRepresentation>None</ShapeRepresentation>
-																							<ExtendedTooltip name="ДокументPDFПоворотПравоРасширеннаяПодсказка" id="393"/>
-																						</Button>
-																					</ChildItems>
-																				</UsualGroup>
+																					<Picture>
+																						<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
+																						<xr:LoadTransparent>false</xr:LoadTransparent>
+																					</Picture>
+																					<ContextMenu name="ДекорацияИконкаУрезанКонтекстноеМеню" id="173"/>
+																					<ExtendedTooltip name="ДекорацияИконкаУрезанРасширеннаяПодсказка" id="174"/>
+																				</PictureDecoration>
+																				<LabelDecoration name="ДекорацияПредпросмотрУрезан" id="175">
+																					<AutoMaxWidth>false</AutoMaxWidth>
+																					<HorizontalStretch>true</HorizontalStretch>
+																					<TextColor>style:FormTextColor</TextColor>
+																					<Font faceName="" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+																					<Title formatted="false">
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Файл показан в сокращенном виде, т.к. содержит большой текст. Откройте файл для просмотра чтобы увидеть полностью.</v8:content>
+																						</v8:item>
+																					</Title>
+																					<ContextMenu name="ДекорацияПредпросмотрУрезанКонтекстноеМеню" id="176"/>
+																					<ExtendedTooltip name="ДекорацияПредпросмотрУрезанРасширеннаяПодсказка" id="177"/>
+																				</LabelDecoration>
 																			</ChildItems>
-																		</Page>
+																		</UsualGroup>
+																		<HTMLDocumentField name="ПредставлениеHTML" id="178">
+																			<DataPath>ПредставлениеHTML</DataPath>
+																			<TitleLocation>None</TitleLocation>
+																			<Width>40</Width>
+																			<Height>7</Height>
+																			<Output>Enable</Output>
+																			<ContextMenu name="ПредставлениеHTMLКонтекстноеМеню" id="179">
+																				<ChildItems>
+																					<ButtonGroup name="ОписаниеHTMLФайлаКонтекстноеМенюГруппаОбновить" id="289">
+																						<ExtendedTooltip name="ОписаниеHTMLФайлаКонтекстноеМенюГруппаОбновитьРасширеннаяПодсказка" id="290"/>
+																						<ChildItems>
+																							<Button name="ОписаниеHTMLФайлаКонтекстноеМенюОбновитьПредпросмотр" id="285">
+																								<Type>CommandBarButton</Type>
+																								<CommandName>Form.Command.ОбновитьПредпросмотр</CommandName>
+																								<ExtendedTooltip name="ОписаниеHTMLФайлаКонтекстноеМенюОбновитьПредпросмотрРасширеннаяПодсказка" id="286"/>
+																							</Button>
+																						</ChildItems>
+																					</ButtonGroup>
+																				</ChildItems>
+																			</ContextMenu>
+																			<ExtendedTooltip name="ПредставлениеHTMLРасширеннаяПодсказка" id="180"/>
+																			<Events>
+																				<Event name="OnClick">ОписаниеHTMLПриНажатии</Event>
+																			</Events>
+																		</HTMLDocumentField>
 																	</ChildItems>
-																</Pages>
+																</UsualGroup>
 															</ChildItems>
 														</Page>
-														<Page name="СтраницаЗагрузкаПревью" id="260">
+														<Page name="СтраницаГруппаPDF" id="382">
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Страница загрузка превью</v8:content>
+																	<v8:content>Страница группа PDF</v8:content>
 																</v8:item>
 															</Title>
 															<Group>AlwaysHorizontal</Group>
-															<ShowTitle>false</ShowTitle>
-															<ExtendedTooltip name="СтраницаЗагрузкаПревьюРасширеннаяПодсказка" id="261"/>
+															<ExtendedTooltip name="СтраницаГруппаPDFРасширеннаяПодсказка" id="383"/>
 															<ChildItems>
-																<PictureDecoration name="ДлительнаяОперацияЗагрузкаПревьюСтраница" id="262">
-																	<Picture>
-																		<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
-																		<xr:LoadTransparent>false</xr:LoadTransparent>
-																	</Picture>
-																	<FileDragMode>AsFile</FileDragMode>
-																	<ContextMenu name="ДлительнаяОперацияЗагрузкаПревьюСтраницаКонтекстноеМеню" id="263"/>
-																	<ExtendedTooltip name="ДлительнаяОперацияЗагрузкаПревьюСтраницаРасширеннаяПодсказка" id="264"/>
-																</PictureDecoration>
-																<LabelDecoration name="ОписаниеЗагрузкаПревьюСтраница" id="265">
-																	<Title formatted="false">
+																<UsualGroup name="ГруппаPDF" id="396">
+																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>Получение предпросмотра из 1С:Документооборот...</v8:content>
+																			<v8:content>Группа PDF</v8:content>
 																		</v8:item>
 																	</Title>
-																	<GroupVerticalAlign>Center</GroupVerticalAlign>
-																	<ContextMenu name="ОписаниеЗагрузкаПревьюСтраницаКонтекстноеМеню" id="266"/>
-																	<ExtendedTooltip name="ОписаниеЗагрузкаПревьюСтраницаРасширеннаяПодсказка" id="267"/>
-																</LabelDecoration>
+																	<Group>AlwaysHorizontal</Group>
+																	<Representation>None</Representation>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="ГруппаPDFРасширеннаяПодсказка" id="397"/>
+																	<ChildItems>
+																		<UsualGroup name="ГруппаОбзорФайлаКоманды" id="384">
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Группа обзор файла команды</v8:content>
+																				</v8:item>
+																			</Title>
+																			<Group>Vertical</Group>
+																			<Representation>None</Representation>
+																			<ShowTitle>false</ShowTitle>
+																			<ExtendedTooltip name="ГруппаОбзорФайлаКомандыРасширеннаяПодсказка" id="385"/>
+																			<ChildItems>
+																				<Button name="ДокументPDFУвеличить" id="386">
+																					<Type>UsualButton</Type>
+																					<CommandName>Form.Command.ДокументPDFУвеличить</CommandName>
+																					<ShapeRepresentation>None</ShapeRepresentation>
+																					<ExtendedTooltip name="ДокументPDFУвеличитьРасширеннаяПодсказка" id="387"/>
+																				</Button>
+																				<Button name="ДокументPDFУменьшить" id="388">
+																					<Type>UsualButton</Type>
+																					<CommandName>Form.Command.ДокументPDFУменьшить</CommandName>
+																					<ShapeRepresentation>None</ShapeRepresentation>
+																					<ExtendedTooltip name="ДокументPDFУменьшитьРасширеннаяПодсказка" id="389"/>
+																				</Button>
+																				<Button name="ДокументPDFПоворотЛево" id="390">
+																					<Type>UsualButton</Type>
+																					<CommandName>Form.Command.ДокументPDFПоворотЛево</CommandName>
+																					<ShapeRepresentation>None</ShapeRepresentation>
+																					<ExtendedTooltip name="ДокументPDFПоворотЛевоРасширеннаяПодсказка" id="391"/>
+																				</Button>
+																				<Button name="ДокументPDFПоворотПраво" id="392">
+																					<Type>UsualButton</Type>
+																					<CommandName>Form.Command.ДокументPDFПоворотПраво</CommandName>
+																					<ShapeRepresentation>None</ShapeRepresentation>
+																					<ExtendedTooltip name="ДокументPDFПоворотПравоРасширеннаяПодсказка" id="393"/>
+																				</Button>
+																			</ChildItems>
+																		</UsualGroup>
+																	</ChildItems>
+																</UsualGroup>
 															</ChildItems>
 														</Page>
 													</ChildItems>
@@ -1661,7 +1546,7 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Состояние разрешает добавление скан копии</v8:content>
+							<v8:content>Состояние разрешает добавление скан-копии</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -1679,11 +1564,11 @@
 						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
-				<Column name="ПолноеИмяФайлаПредпросмотра" id="26">
+				<Column name="АдресВХранилищеФайлаПредпросмотра" id="26">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Полное имя временного файла предпросмотра</v8:content>
+							<v8:content>Адрес в хранилище файла предпросмотра</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -1707,41 +1592,11 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="Инструкция" id="8">
+		<Attribute name="ПредставлениеHTML" id="10">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Инструкция</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-		</Attribute>
-		<Attribute name="ОписаниеHTMLЗадачи" id="9">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Описание HTML</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-		</Attribute>
-		<Attribute name="ОписаниеHTMLФайла" id="10">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Описание HTML</v8:content>
+					<v8:content>Представление HTML</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -1986,11 +1841,11 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ОписаниеHTMLПриложения" id="27">
+		<Attribute name="ОписаниеHTMLЗадачи" id="27">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Описание HTML</v8:content>
+					<v8:content>Описание HTML задачи</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -2162,24 +2017,6 @@
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
-		</Attribute>
-		<Attribute name="ВременныеФайлыПредпросмотра" id="45">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Временные файлы предпросмотра</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>v8:ValueListType</v8:Type>
-			</Type>
-			<Settings xsi:type="v8:TypeDescription">
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Settings>
 		</Attribute>
 		<Attribute name="СокращенноеНаименованиеКонфигурации" id="46">
 			<Title>

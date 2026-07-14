@@ -6,59 +6,137 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<InputField name="ДатаСоздания" id="13">
-			<DataPath>Запись.ДатаСоздания</DataPath>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="14"/>
-			<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="15"/>
-		</InputField>
-		<InputField name="ДатаОтправки" id="16">
-			<DataPath>Запись.ДатаОтправки</DataPath>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="ДатаОтправкиКонтекстноеМеню" id="17"/>
-			<ExtendedTooltip name="ДатаОтправкиРасширеннаяПодсказка" id="18"/>
-		</InputField>
-		<InputField name="ИдентификаторСообщения" id="1">
-			<DataPath>Запись.ИдентификаторСообщения</DataPath>
+		<Pages name="Страницы" id="27">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Идентификатор</v8:content>
+					<v8:content>Страницы</v8:content>
 				</v8:item>
 			</Title>
-			<ContextMenu name="ИдентификаторСообщенияКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="ИдентификаторСообщенияРасширеннаяПодсказка" id="3"/>
-		</InputField>
-		<InputField name="ТелоСтрокой" id="4">
-			<DataPath>ТелоСтрокой</DataPath>
-			<Title>
+			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Тело</v8:content>
+					<v8:content>Страницы</v8:content>
 				</v8:item>
-			</Title>
-			<Width>65</Width>
-			<AutoMaxWidth>false</AutoMaxWidth>
-			<Height>12</Height>
-			<AutoMaxHeight>false</AutoMaxHeight>
-			<MultiLine>true</MultiLine>
-			<ContextMenu name="ТелоСтрокойКонтекстноеМеню" id="5"/>
-			<ExtendedTooltip name="ТелоСтрокойРасширеннаяПодсказка" id="6"/>
-		</InputField>
-		<InputField name="КоличествоПопытокОбработки" id="7">
-			<DataPath>Запись.КоличествоПопытокОбработки</DataPath>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="КоличествоПопытокОбработкиКонтекстноеМеню" id="8"/>
-			<ExtendedTooltip name="КоличествоПопытокОбработкиРасширеннаяПодсказка" id="9"/>
-		</InputField>
-		<InputField name="ТекстОшибки" id="10">
-			<DataPath>Запись.ТекстОшибки</DataPath>
-			<AutoMaxWidth>false</AutoMaxWidth>
-			<MultiLine>true</MultiLine>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="ТекстОшибкиКонтекстноеМеню" id="11"/>
-			<ExtendedTooltip name="ТекстОшибкиРасширеннаяПодсказка" id="12"/>
-		</InputField>
+			</ToolTip>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="28"/>
+			<ChildItems>
+				<Page name="Основная" id="29">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основная</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основная</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ОсновнаяРасширеннаяПодсказка" id="30"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДаты" id="25">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа даты</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа даты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДатыРасширеннаяПодсказка" id="26"/>
+							<ChildItems>
+								<InputField name="ДатаСоздания" id="13">
+									<DataPath>Запись.ДатаСоздания</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>18</MaxWidth>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="15"/>
+								</InputField>
+								<InputField name="ДатаОтправки" id="16">
+									<DataPath>Запись.ДатаОтправки</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>18</MaxWidth>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДатаОтправкиКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="ДатаОтправкиРасширеннаяПодсказка" id="18"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ИдентификаторСообщения" id="1">
+							<DataPath>Запись.ИдентификаторСообщения</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Идентификатор</v8:content>
+								</v8:item>
+							</Title>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="ИдентификаторСообщенияКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ИдентификаторСообщенияРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<InputField name="КоличествоПопытокОбработки" id="7">
+							<DataPath>Запись.КоличествоПопытокОбработки</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Попыток обработки</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="КоличествоПопытокОбработкиКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="КоличествоПопытокОбработкиРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<InputField name="ТекстОшибки" id="10">
+							<DataPath>Запись.ТекстОшибки</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MultiLine>true</MultiLine>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТекстОшибкиКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ТекстОшибкиРасширеннаяПодсказка" id="12"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="Сообщение" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сообщение</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сообщение</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СообщениеРасширеннаяПодсказка" id="32"/>
+					<ChildItems>
+						<InputField name="ТелоСтрокой" id="4">
+							<DataPath>ТелоСтрокой</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Текст сообщения</v8:content>
+								</v8:item>
+							</Title>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ТелоСтрокойКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ТелоСтрокойРасширеннаяПодсказка" id="6"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Запись" id="1">

@@ -107,7 +107,7 @@
 				<v8:Type>cfg:InformationRegisterRecordSet.АрхивФизическихЛиц</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.РолиСотрудников</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ПериодыДействияДоговоровГражданскоПравовогоХарактера</v8:Type>
-				<v8:Type>cfg:InformationRegisterRecordSet.ОтпускаСотрудниковОснования</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.УдалитьОтпускаСотрудниковОснования</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ОтправленныеДополнительныеРеквизитыИСведенияЗастрахованныхИспр</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.КомандировкиВСистемеБронирования</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.СтатусыПредставленийКНаградам</v8:Type>
@@ -245,6 +245,7 @@
 				<v8:Type>cfg:InformationRegisterRecordSet.РеестрОтпусков</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.УчетнаяПолитикаПоНДФЛРасширенный</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ФИОФизическихЛиц</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ИсторияИзмененияМестаПозицииШтатногоРасписанияВСтруктуреПредприятия</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ОплатаПубликацийВакансий</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ФинансовыйУчетПодразделений</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.НастройкиОбменаФСС</v8:Type>
@@ -257,7 +258,7 @@
 				<v8:Type>cfg:InformationRegisterRecordSet.ДокументыОтправленныеВ1САрхив</v8:Type>
 				<v8:Type>cfg:AccumulationRegisterRecordSet.ОтработанноеВремяПоСотрудникам</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ИсторияРегистрацийВОрганеПФР</v8:Type>
-				<v8:Type>cfg:InformationRegisterRecordSet.ИсторияОбменаС1САрхивом</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.УдалитьИсторияОбменаС1САрхивом</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.НастройкиСтатистикиПерсонала</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.РедактируемыеРеквизитыВидаВычетаНДФЛ</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.БухучетЗарплатыПервичныхДокументов</v8:Type>
@@ -275,7 +276,7 @@
 				<v8:Type>cfg:InformationRegisterRecordSet.ДокументыОплаченныеБезУдержанияНДФЛ</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучете</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.СведенияОбИнвалидностиФизическихЛиц</v8:Type>
-				<v8:Type>cfg:InformationRegisterRecordSet.БухучетДоговоровГПХИспр</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.УдалитьБухучетДоговоровГПХИспр</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.НастройкиКадровогоРезерва</v8:Type>
 				<v8:Type>cfg:AccumulationRegisterRecordSet.ФактическиеЗначенияПоказателейЭффективностиСотрудников</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.УдалитьСостоянияМЧДКЭДО</v8:Type>
@@ -318,6 +319,7 @@
 				<v8:Type>cfg:InformationRegisterRecordSet.ПКУСотрудниковИспр</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ОтражениеВРегламентированномУчетеНастройкиОрганизаций</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.НаличиеФайлов</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ЗначенияРазовыхПоказателейРасчетаЗарплатыПодразделенийИспр</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.КодировкиФайлов</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.УдалитьХарактеристикиФизическихЛиц</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ПринятыеСообщенияЧатботов</v8:Type>
@@ -504,6 +506,7 @@
 				<v8:Type>cfg:InformationRegisterRecordSet.АрхивФизическихЛицДокументыУдостоверяющиеЛичность</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ПравилаЗаменыУстаревшейАналитикиБухучета</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.СвойстваДолжностейМедицинскихРаботников</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ВзаимодействиеСБанкамиНаАУСН</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ПараметрыПериодовСтажаПФРИспр</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.СведенияОЛьготахФизическихЛицПострадавшихВАварииЧАЭС</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.РеквизитыПлатежныхДокументовПеречисленияЗарплаты</v8:Type>
@@ -524,7 +527,7 @@
 				<v8:Type>cfg:AccumulationRegisterRecordSet.НДФЛКПеречислению</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.РазрядыКатегорииСотрудников</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.СтажиФизическихЛицКПересчету</v8:Type>
-				<v8:Type>cfg:InformationRegisterRecordSet.ИдентификаторыДокументовНаРаботаВРоссии</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ИдентификаторыДокументовНаРаботаРоссии</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ПодписиДокументовЭДОБЗК</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ДополнительныеСведения</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ПредставленияОснованийУвольнения</v8:Type>
@@ -574,11 +577,13 @@
 				<v8:Type>cfg:InformationRegisterRecordSet.ЗначенияСтроковыхРеквизитов</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ОчередьОперацийСДокументамиДля1САрхива</v8:Type>
 				<v8:Type>cfg:AccumulationRegisterRecordSet.ДанныеОбИспользованииОтгулов</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ЗначенияПериодическихПоказателейРасчетаЗарплатыПодразделенийИспр</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ОперативныеПоказателиДляВыявленияУдержаний</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ИсторияУправленческихПоказателейПоШтатномуРасписанию</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ОценкиОтветовНаВопросыАнкет</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ЗаписиСинхронизацииКалендарей</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ПлановыеЗначенияПоказателейЭффективностиПозиций</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ЗначенияРазовыхПоказателейРасчетаЗарплатыОрганизацийИспр</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ПоказателиЭффективностиПодразделений</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.РасценкиРаботСотрудников</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ГруппыДоступаБезОграниченийНаКоличествоСеансов</v8:Type>
@@ -610,6 +615,7 @@
 				<v8:Type>cfg:InformationRegisterRecordSet.БухучетЗарплатыОрганизаций</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ПоказателиЭффективностиСотрудников</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.МотиваторыВАнкетах</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ОтсутствияНаОснованииОбучения</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ЗаявленияОВеденииТрудовыхКнижекПереданныеИспр</v8:Type>
 				<v8:Type>cfg:AccumulationRegisterRecordSet.УдержанияПоИсполнительнымДокументам</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ИспользованиеРегистрацийВОрганеСтатистики</v8:Type>
@@ -619,8 +625,9 @@
 				<v8:Type>cfg:AccumulationRegisterRecordSet.ОтражениеРасходовНаПерсонал</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ОповещенияПользователейСертификатов</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ЦветаЭтаповРаботыСКандидатами</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ИсторияОбменаС1САрхивом</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.УсловияВозвратаЗадолженности</v8:Type>
-				<v8:Type>cfg:InformationRegisterRecordSet.КомандировкаОснования</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.УдалитьКомандировкаОснования</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ДополнительныеНастройкиЗарплатаКадры</v8:Type>
 				<v8:Type>cfg:AccumulationRegisterRecordSet.РасчетыСБюджетомПоНДФЛ</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.СтандартныеВычетыНаДетейНДФЛ</v8:Type>
@@ -739,6 +746,7 @@
 				<v8:Type>cfg:InformationRegisterRecordSet.ГрафикРаботыСотрудниковИспр</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.НастройкиРасчетаУправленческойЗарплатыПозицийШтатногоРасписания</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.СтатусФизическихЛицКакНалогоплательщиковНДФЛ</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ЗначенияПериодическихПоказателейРасчетаЗарплатыОрганизацийИспр</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.СтатистикаЭлектронныхКурсовСотрудников</v8:Type>
 				<v8:Type>cfg:AccumulationRegisterRecordSet.НачисленияУдержанияПоСотрудникамАвансом</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.МероприятияТрудовойДеятельности</v8:Type>
@@ -768,7 +776,7 @@
 				<v8:Type>cfg:InformationRegisterRecordSet.ПериодыОтпусковИспр</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ЭлектронныеПодписи</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ОснованияПолнойКомпенсацииОтпусковСотрудников</v8:Type>
-				<v8:Type>cfg:InformationRegisterRecordSet.ОтпускОснования</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.УдалитьОтпускОснования</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.СоответствиеПользователейУзлам1СДокументооборота</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.СостоянияВакансий</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ПроцессыДляЗапуска</v8:Type>
@@ -779,7 +787,7 @@
 				<v8:Type>cfg:InformationRegisterRecordSet.НастройкиУчетныхЗаписейВидеоконференций</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ВредныеФакторыРабочегоМеста</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.СтавкаВзносаНаСтрахованиеОтНесчастныхСлучаев</v8:Type>
-				<v8:Type>cfg:InformationRegisterRecordSet.КомандировкиСотрудниковОснования</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.УдалитьКомандировкиСотрудниковОснования</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ОплатаВедомостейНаВыплатуЗарплаты</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ЦепочкиДокументов</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ТрудоустройствоСотрудниковПоКвотам</v8:Type>

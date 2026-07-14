@@ -82,7 +82,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа использование реквизита для норматива</v8:content>
+					<v8:content>Расчет сроков обработки документов</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -119,6 +119,41 @@
 						<Event name="ChoiceProcessing">РеквизитДляРасчетаСроковОбработкиОбработкаВыбора</Event>
 					</Events>
 				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЭДОСКонтрагентами" id="257">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ЭДО с контрагентами</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ЭДО с контрагентами</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<ExtendedTooltip name="ГруппаЭДОСКонтрагентамиРасширеннаяПодсказка" id="258"/>
+			<ChildItems>
+				<CheckBoxField name="РазрешенаОтправкаФормуляровКонтрагентамПоЭДО" id="259">
+					<DataPath>Объект.РазрешенаОтправкаФормуляровКонтрагентамПоЭДО</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Если отправка разрешена, то в карточке процесса пользователь сможет создавать произвольные электронные документы с приложенными формулярами или их копиями в формате PDF для отправки контрагентам через оператора ЭДО</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>Button</ToolTipRepresentation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="РазрешенаОтправкаФормуляровКонтрагентамПоЭДОКонтекстноеМеню" id="260"/>
+					<ExtendedTooltip name="РазрешенаОтправкаФормуляровКонтрагентамПоЭДОРасширеннаяПодсказка" id="261"/>
+				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
 		<InputField name="ИдентификаторПоддержкиСтрокой" id="179">
