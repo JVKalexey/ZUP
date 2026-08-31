@@ -1,0 +1,961 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОбластьПоиска" id="90">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Область поиска</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:бит_БыстрыеОтборыФонГруппы</BackColor>
+			<ExtendedTooltip name="ГруппаОбластьПоискаРасширеннаяПодсказка" id="91"/>
+			<ChildItems>
+				<InputField name="ОбластьПоискаДокументов" id="72">
+					<DataPath>ОбластьПоискаДокументов</DataPath>
+					<ListChoiceMode>true</ListChoiceMode>
+					<TextEdit>false</TextEdit>
+					<ContextMenu name="ОбластьПоискаДокументовКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="ОбластьПоискаДокументовРасширеннаяПодсказка" id="74"/>
+					<Events>
+						<Event name="OnChange">ОбластьПоискаДокументовПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ПериодДатаНачала" id="92">
+					<DataPath>Период.StartDate</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>с</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПериодДатаНачалаКонтекстноеМеню" id="93"/>
+					<ExtendedTooltip name="ПериодДатаНачалаРасширеннаяПодсказка" id="94"/>
+					<Events>
+						<Event name="OnChange">ПериодДатаНачалаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ПериодДатаОкончания" id="95">
+					<DataPath>Период.EndDate</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>по</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПериодДатаОкончанияКонтекстноеМеню" id="96"/>
+					<ExtendedTooltip name="ПериодДатаОкончанияРасширеннаяПодсказка" id="97"/>
+					<Events>
+						<Event name="OnChange">ПериодДатаОкончанияПриИзменении</Event>
+					</Events>
+				</InputField>
+				<Button name="ВыбратьПериод" id="98">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ВыбратьПериод</CommandName>
+					<ExtendedTooltip name="ВыбратьПериодРасширеннаяПодсказка" id="99"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<CommandBar name="ГруппаКоманднаяПанель" id="103">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ГруппаКоманднаяПанельРасширеннаяПодсказка" id="104"/>
+			<ChildItems>
+				<Button name="ФормаНайтиСвязанные" id="62">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.НайтиДокументы</CommandName>
+					<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+					<ExtendedTooltip name="ФормаНайтиСвязанныеРасширеннаяПодсказка" id="63"/>
+				</Button>
+				<Button name="ФормаПривязатьДокументы" id="64">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ПривязатьДокументы</CommandName>
+					<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+					<ExtendedTooltip name="ФормаПривязатьДокументыРасширеннаяПодсказка" id="65"/>
+				</Button>
+				<Button name="ФормаОбновитьДокументы" id="118">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.НайтиДокументы</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.Refresh</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+					<ExtendedTooltip name="ФормаОбновитьДокументыРасширеннаяПодсказка" id="119"/>
+				</Button>
+				<Button name="ИзменитьФорму" id="108">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+					<ExtendedTooltip name="ИзменитьФормуРасширеннаяПодсказка" id="109"/>
+				</Button>
+				<ButtonGroup name="ГруппаСвернутьРазвернуть" id="110">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Свернуть/развернуть</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>Compact</Representation>
+					<ExtendedTooltip name="ГруппаСвернутьРазвернутьРасширеннаяПодсказка" id="111"/>
+					<ChildItems>
+						<Button name="РазвернутьГруппу" id="112">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.РазвернутьГруппу</CommandName>
+							<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+							<ExtendedTooltip name="РазвернутьГруппуРасширеннаяПодсказка" id="113"/>
+						</Button>
+						<Button name="СвернутьГруппу" id="114">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.СвернутьГруппу</CommandName>
+							<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+							<ExtendedTooltip name="СвернутьГруппуРасширеннаяПодсказка" id="115"/>
+						</Button>
+					</ChildItems>
+				</ButtonGroup>
+				<Button name="ФормаСнятьПометки" id="116">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.СнятьПометки</CommandName>
+					<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+					<ExtendedTooltip name="ФормаСнятьПометкиРасширеннаяПодсказка" id="117"/>
+				</Button>
+				<Button name="ФормаПоказатьНастройки" id="75">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ПоказатьНастройки</CommandName>
+					<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+					<ExtendedTooltip name="ФормаПоказатьНастройкиРасширеннаяПодсказка" id="76"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+		<LabelField name="ПредставлениеПравилОтбора" id="77">
+			<DataPath>ПредставлениеПравилОтбора</DataPath>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<Hiperlink>true</Hiperlink>
+			<ContextMenu name="ПредставлениеПравилОтбораКонтекстноеМеню" id="78"/>
+			<ExtendedTooltip name="ПредставлениеПравилОтбораРасширеннаяПодсказка" id="79"/>
+			<Events>
+				<Event name="Click">ПредставлениеПравилОтбораНажатие</Event>
+			</Events>
+		</LabelField>
+		<LabelField name="ПредставлениеПравилПоиска" id="100">
+			<DataPath>ПредставлениеПравилПоиска</DataPath>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<Hiperlink>true</Hiperlink>
+			<ContextMenu name="ПредставлениеПравилПоискаКонтекстноеМеню" id="101"/>
+			<ExtendedTooltip name="ПредставлениеПравилПоискаРасширеннаяПодсказка" id="102"/>
+			<Events>
+				<Event name="Click">ПредставлениеПравилПоискаНажатие</Event>
+			</Events>
+		</LabelField>
+		<Table name="СвязанныеДокументы" id="1">
+			<Representation>Tree</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<DataPath>СвязанныеДокументы</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Change</ExcludedCommand>
+			</CommandSet>
+			<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
+			<ContextMenu name="СвязанныеДокументыКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СвязанныеДокументыКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="СвязанныеДокументыРасширеннаяПодсказка" id="4">
+				<AutoMaxWidth>false</AutoMaxWidth>
+			</ExtendedTooltip>
+			<SearchStringAddition name="СвязанныеДокументыСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>СвязанныеДокументы</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СвязанныеДокументыСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="СвязанныеДокументыСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СвязанныеДокументыСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>СвязанныеДокументы</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СвязанныеДокументыСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="СвязанныеДокументыСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СвязанныеДокументыУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>СвязанныеДокументы</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СвязанныеДокументыУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СвязанныеДокументыУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СвязанныеДокументыВыбор</Event>
+				<Event name="OnActivateRow">СвязанныеДокументыПриАктивизацииСтроки</Event>
+			</Events>
+			<ChildItems>
+				<ColumnGroup name="СвязанныеДокументыГруппаПометка" id="88">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа пометка</v8:content>
+						</v8:item>
+					</Title>
+					<Group>InCell</Group>
+					<ExtendedTooltip name="СвязанныеДокументыГруппаПометкаРасширеннаяПодсказка" id="89"/>
+					<ChildItems>
+						<PictureField name="СвязанныеДокументыКартинка" id="105">
+							<DataPath>СвязанныеДокументы.Картинка</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СвязанныеДокументыКартинкаКонтекстноеМеню" id="106"/>
+							<ExtendedTooltip name="СвязанныеДокументыКартинкаРасширеннаяПодсказка" id="107"/>
+						</PictureField>
+						<CheckBoxField name="СвязанныеДокументыПометка" id="14">
+							<DataPath>СвязанныеДокументы.Пометка</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СвязанныеДокументыПометкаКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="СвязанныеДокументыПометкаРасширеннаяПодсказка" id="16"/>
+							<Events>
+								<Event name="OnChange">СвязанныеДокументыПометкаПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<LabelField name="СвязанныеДокументыДата" id="17">
+							<DataPath>СвязанныеДокументы.Дата</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>7</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="СвязанныеДокументыДатаКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="СвязанныеДокументыДатаРасширеннаяПодсказка" id="19"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<LabelField name="СвязанныеДокументыНомер" id="20">
+					<DataPath>СвязанныеДокументы.Номер</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="СвязанныеДокументыНомерКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СвязанныеДокументыНомерРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<LabelField name="СвязанныеДокументыДатаПоступления" id="85">
+					<DataPath>СвязанныеДокументы.ДатаПоступления</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СвязанныеДокументыДатаПоступленияКонтекстноеМеню" id="86"/>
+					<ExtendedTooltip name="СвязанныеДокументыДатаПоступленияРасширеннаяПодсказка" id="87"/>
+				</LabelField>
+				<LabelField name="СвязанныеДокументыСумма" id="23">
+					<DataPath>СвязанныеДокументы.Сумма</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>10</Width>
+					<ContextMenu name="СвязанныеДокументыСуммаКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СвязанныеДокументыСуммаРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<LabelField name="СвязанныеДокументыВалюта" id="26">
+					<DataPath>СвязанныеДокументы.Валюта</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СвязанныеДокументыВалютаКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="СвязанныеДокументыВалютаРасширеннаяПодсказка" id="28"/>
+				</LabelField>
+				<LabelField name="СвязанныеДокументыКонтрагент" id="29">
+					<DataPath>СвязанныеДокументы.Контрагент</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СвязанныеДокументыКонтрагентКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="СвязанныеДокументыКонтрагентРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+				<LabelField name="СвязанныеДокументыВидОперации" id="32">
+					<DataPath>СвязанныеДокументы.ХозяйственнаяОперация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>25</Width>
+					<ContextMenu name="СвязанныеДокументыВидОперацииКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="СвязанныеДокументыВидОперацииРасширеннаяПодсказка" id="34"/>
+				</LabelField>
+				<LabelField name="СвязанныеДокументыБанковскийСчет" id="41">
+					<DataPath>СвязанныеДокументы.БанковскийСчетКасса</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СвязанныеДокументыБанковскийСчетКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="СвязанныеДокументыБанковскийСчетРасширеннаяПодсказка" id="43"/>
+				</LabelField>
+				<LabelField name="СвязанныеДокументыОрганизация" id="44">
+					<DataPath>СвязанныеДокументы.Организация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СвязанныеДокументыОрганизацияКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="СвязанныеДокументыОрганизацияРасширеннаяПодсказка" id="46"/>
+				</LabelField>
+				<LabelField name="СвязанныеДокументыДатаВходящегоДокумента" id="35">
+					<DataPath>СвязанныеДокументы.ДатаВходящегоДокумента</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СвязанныеДокументыДатаВходящегоДокументаКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="СвязанныеДокументыДатаВходящегоДокументаРасширеннаяПодсказка" id="37"/>
+				</LabelField>
+				<LabelField name="СвязанныеДокументыНомерВходящегоДокумента" id="38">
+					<DataPath>СвязанныеДокументы.НомерВходящегоДокумента</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СвязанныеДокументыНомерВходящегоДокументаКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="СвязанныеДокументыНомерВходящегоДокументаРасширеннаяПодсказка" id="40"/>
+				</LabelField>
+				<LabelField name="СвязанныеДокументыПодразделениеОрганизации" id="56">
+					<DataPath>СвязанныеДокументы.Подразделение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СвязанныеДокументыПодразделениеОрганизацииКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="СвязанныеДокументыПодразделениеОрганизацииРасширеннаяПодсказка" id="58"/>
+				</LabelField>
+				<LabelField name="СвязанныеДокументыОтветственный" id="47">
+					<DataPath>СвязанныеДокументы.Ответственный</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СвязанныеДокументыОтветственныйКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="СвязанныеДокументыОтветственныйРасширеннаяПодсказка" id="49"/>
+				</LabelField>
+				<LabelField name="СвязанныеДокументыНазначениеПлатежа" id="53">
+					<DataPath>СвязанныеДокументы.НазначениеПлатежа</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СвязанныеДокументыНазначениеПлатежаКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="СвязанныеДокументыНазначениеПлатежаРасширеннаяПодсказка" id="55"/>
+				</LabelField>
+				<LabelField name="СвязанныеДокументыОтражениеФакта" id="120">
+					<DataPath>СвязанныеДокументы.ОтражениеФакта</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СвязанныеДокументыОтражениеФактаКонтекстноеМеню" id="121"/>
+					<ExtendedTooltip name="СвязанныеДокументыОтражениеФактаРасширеннаяПодсказка" id="122"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.бит_ПривязкаПланируемогоПоступленияДСКФактическому</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="КомпоновщикПредварительногоОтбора" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Компоновщик предварительного отбора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресСхемыКомпоновки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес схемы компоновки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СвязанныеДокументы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связанные документы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ссылка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="Пометка" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Основной" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основной</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Дата" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Номер" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>12</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Проведен" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проведен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Организация" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Контрагент" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контрагент</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="ХозяйственнаяОперация" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Хозяйственная операция</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="НомерВходящегоДокумента" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вх. номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>12</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаВходящегоДокумента" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вх. дата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ответственный" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответственный</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НазначениеПлатежа" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Назначение платежа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>280</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Валюта" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Валюта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Подразделение" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПодразделенияОрганизаций</v8:Type>
+					</Type>
+				</Column>
+				<Column name="БанковскийСчетКасса" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Банковский счет / касса</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Сумма" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ДенежнаяСуммаЛюбогоЗнака</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Тип" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="ДатаПоступления" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата поступления</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Картинка" id="21">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8ui:Picture</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Обработано" id="22">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработано</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ОтражениеФакта" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отражение факта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.бит_ОтражениеФактаДДС</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ОбластьПоискаДокументов" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Искать в</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПравилаПоиска" id="9">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Пометка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВыражениеИсточник" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выражение источник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыражениеПриемник" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выражение приемник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НаборДанныхИсточник" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Набор данных источник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НаборДанныхПриемник" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Набор данных приемник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВидСравнения" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид сравнения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>dcsset:DataCompositionComparisonType</v8:Type>
+					</Type>
+				</Column>
+				<Column name="РеквизитДокумента" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизит документа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="РеквизитППДС" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизит планируемого поступления</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПредставлениеПравилОтбора" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбирать</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Период" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПредставлениеПравилПоиска" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Искать по</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СкрыватьДокументыБезПары" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скрывать документы оплаты, к которым не удалось подобрать документ планирования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АвтоПомечатьНаиболееПодходящие" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоматически помечать наиболее подходящие</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="НайтиДокументы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список связанных документов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НайтиДокументы</Action>
+		</Command>
+		<Command name="ПривязатьДокументы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Привязать документы</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПривязатьДокументы</Action>
+		</Command>
+		<Command name="ПоказатьНастройки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПоказатьНастройки</Action>
+		</Command>
+		<Command name="ВыбратьПериод" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать период</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.InputFieldSelect</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыбратьПериод</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="РазвернутьГруппу" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Развернуть группу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Развернуть группы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ExpandAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>РазвернутьГруппу</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="СвернутьГруппу" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свернуть группу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свернуть группы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CollapseAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СвернутьГруппу</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="СнятьПометки" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять пометки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять пометки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СнятьПометки</Action>
+		</Command>
+	</Commands>
+</Form>

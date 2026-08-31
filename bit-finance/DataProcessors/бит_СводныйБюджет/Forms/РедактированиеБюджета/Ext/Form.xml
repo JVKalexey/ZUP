@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Редактирование бюджета</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаКомандаСохранитьИзменения" id="76">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.КомандаСохранитьИзменения</CommandName>
+				<ExtendedTooltip name="ФормаКомандаСохранитьИзмененияРасширеннаяПодсказка" id="77"/>
+			</Button>
+			<Button name="ФормаОтмена" id="78">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Cancel</CommandName>
+				<ExtendedTooltip name="ФормаОтменаРасширеннаяПодсказка" id="79"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="8"/>
+			<ChildItems>
+				<InputField name="Сценарий" id="1">
+					<DataPath>Сценарий</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="СценарийКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="СценарийРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="ПериодСтрокой" id="9">
+					<DataPath>ПериодСтрокой</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ПериодСтрокойКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ПериодСтрокойРасширеннаяПодсказка" id="11"/>
+				</InputField>
+				<InputField name="Валюта" id="111">
+					<DataPath>Валюта</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ВалютаКонтекстноеМеню" id="112"/>
+					<ExtendedTooltip name="ВалютаРасширеннаяПодсказка" id="113"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаАналитики" id="114">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аналитики</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаАналитикиРасширеннаяПодсказка" id="115"/>
+			<ChildItems>
+				<InputField name="СтатьяОборотов" id="12">
+					<DataPath>СтатьяОборотов</DataPath>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="СтатьяОборотовКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="СтатьяОборотовРасширеннаяПодсказка" id="14"/>
+				</InputField>
+				<InputField name="ЦФО" id="15">
+					<DataPath>ЦФО</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ЦФОКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="ЦФОРасширеннаяПодсказка" id="17"/>
+				</InputField>
+				<InputField name="Организация" id="116">
+					<DataPath>Организация</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="117"/>
+					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="118"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Бюджет" id="18">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Бюджет</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="БюджетКонтекстноеМеню" id="19"/>
+			<AutoCommandBar name="БюджетКоманднаяПанель" id="20">
+				<ChildItems>
+					<Button name="БюджетДобавить" id="83">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Item.Бюджет.StandardCommand.Add</CommandName>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="БюджетДобавитьРасширеннаяПодсказка" id="84"/>
+					</Button>
+					<Button name="БюджетСкопировать" id="109">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Item.Бюджет.StandardCommand.Copy</CommandName>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="БюджетСкопироватьРасширеннаяПодсказка" id="110"/>
+					</Button>
+					<Button name="БюджетУдалить" id="85">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Item.Бюджет.StandardCommand.Delete</CommandName>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="БюджетУдалитьРасширеннаяПодсказка" id="86"/>
+					</Button>
+					<Button name="БюджетПереместитьВверх" id="87">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.Бюджет.StandardCommand.MoveUp</CommandName>
+						<ExtendedTooltip name="БюджетПереместитьВверхРасширеннаяПодсказка" id="88"/>
+					</Button>
+					<Button name="БюджетПереместитьВниз" id="89">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.Бюджет.StandardCommand.MoveDown</CommandName>
+						<ExtendedTooltip name="БюджетПереместитьВнизРасширеннаяПодсказка" id="90"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="БюджетРасширеннаяПодсказка" id="21"/>
+			<SearchStringAddition name="БюджетСтрокаПоиска" id="22">
+				<AdditionSource>
+					<Item>Бюджет</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="БюджетСтрокаПоискаКонтекстноеМеню" id="23"/>
+				<ExtendedTooltip name="БюджетСтрокаПоискаРасширеннаяПодсказка" id="24"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="БюджетСостояниеПросмотра" id="25">
+				<AdditionSource>
+					<Item>Бюджет</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="БюджетСостояниеПросмотраКонтекстноеМеню" id="26"/>
+				<ExtendedTooltip name="БюджетСостояниеПросмотраРасширеннаяПодсказка" id="27"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="БюджетУправлениеПоиском" id="28">
+				<AdditionSource>
+					<Item>Бюджет</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="БюджетУправлениеПоискомКонтекстноеМеню" id="29"/>
+				<ExtendedTooltip name="БюджетУправлениеПоискомРасширеннаяПодсказка" id="30"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">БюджетВыбор</Event>
+				<Event name="BeforeAddRow">БюджетПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">БюджетПередУдалением</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="БюджетЦФО" id="73">
+					<DataPath>Бюджет.ЦФО</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="БюджетЦФОКонтекстноеМеню" id="74"/>
+					<ExtendedTooltip name="БюджетЦФОРасширеннаяПодсказка" id="75"/>
+				</InputField>
+				<InputField name="БюджетОрганизация" id="119">
+					<DataPath>Бюджет.Организация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="БюджетОрганизацияКонтекстноеМеню" id="120"/>
+					<ExtendedTooltip name="БюджетОрганизацияРасширеннаяПодсказка" id="121"/>
+				</InputField>
+				<InputField name="БюджетКоличество" id="67">
+					<DataPath>Бюджет.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="БюджетКоличествоКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="БюджетКоличествоРасширеннаяПодсказка" id="69"/>
+				</InputField>
+				<InputField name="БюджетСумма" id="70">
+					<DataPath>Бюджет.Сумма</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="БюджетСуммаКонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="БюджетСуммаРасширеннаяПодсказка" id="72"/>
+				</InputField>
+				<InputField name="БюджетРегистратор" id="80">
+					<DataPath>Бюджет.Регистратор</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="БюджетРегистраторКонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="БюджетРегистраторРасширеннаяПодсказка" id="82"/>
+				</InputField>
+				<InputField name="БюджетСтатус" id="106">
+					<DataPath>Бюджет.Статус</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="БюджетСтатусКонтекстноеМеню" id="107"/>
+					<ExtendedTooltip name="БюджетСтатусРасширеннаяПодсказка" id="108"/>
+				</InputField>
+				<InputField name="БюджетКомментарий" id="122">
+					<DataPath>Бюджет.Комментарий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="БюджетКомментарийКонтекстноеМеню" id="123"/>
+					<ExtendedTooltip name="БюджетКомментарийРасширеннаяПодсказка" id="124"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.бит_СводныйБюджет</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Сценарий" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сценарий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СценарииПланирования</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Период" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПериодСтрокой" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СтатьяОборотов" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статья оборотов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.бит_СтатьиОборотов</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЦФО" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ЦФО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Бюджет" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бюджет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Количество" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Сумма" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЦФО" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЦФО</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Регистратор" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ движения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="ТолькоЧтение" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Только чтение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Статус" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.бит_СтатусыОбъектов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Организация" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="АдресБюджет" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес бюджет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущийБюджет" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий бюджет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОкончаниеПериода" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Окончание периода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбязательныеАналитики" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обязательные аналитики</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Settings>
+		</Attribute>
+		<Attribute name="УчетКоличества" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учет количества</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="УчетСуммы" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учет суммы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Валюта" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Организация" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаСохранитьИзменения" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<Action>КомандаСохранитьИзменения</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ПараметрыРедактированияБюджета">
+			<Type/>
+		</Parameter>
+		<Parameter name="Сценарий">
+			<Type>
+				<v8:Type>cfg:CatalogRef.СценарииПланирования</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="Период">
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="СтатьяОборотов">
+			<Type>
+				<v8:Type>cfg:CatalogRef.бит_СтатьиОборотов</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ЦФО">
+			<Type>
+				<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="АдресБюджет">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ТекущийБюджет">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="Контрагент">
+			<Type>
+				<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ДоговорКонтрагента">
+			<Type>
+				<v8:Type>cfg:CatalogRef.ДоговорыКонтрагентов</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="Проект">
+			<Type>
+				<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="НоменклатурнаяГруппа">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="БанковскийСчет">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="Валюта">
+			<Type>
+				<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

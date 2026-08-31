@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetUnion">
+		<name>СвязанныеДокументы</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументПланирования</dataPath>
+			<field>ДокументПланирования</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПлатежныйДокумент</dataPath>
+			<field>ПлатежныйДокумент</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Позиция</dataPath>
+			<field>Позиция</field>
+		</field>
+		<item xsi:type="DataSetQuery">
+			<name>ОтражениеФактаСписания</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДокументПланирования</dataPath>
+				<field>ДокументПланирования</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПлатежныйДокумент</dataPath>
+				<field>ПлатежныйДокумент</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Позиция</dataPath>
+				<field>Позиция</field>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	бит_кзн_ПлатежнаяПозиция.Ссылка КАК Позиция,
+	бит_кзн_ПлатежнаяПозиция.ДокументПланирования КАК ДокументПланирования,
+	бит_ОтражениеФактаДДС.ДокументОснование КАК ПлатежныйДокумент
+ИЗ
+	Документ.бит_кзн_ПлатежнаяПозиция КАК бит_кзн_ПлатежнаяПозиция
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.бит_ОтражениеФактаДДС.ФактическиеДанные КАК бит_ОтражениеФактаДДСФактическиеДанные
+			ЛЕВОЕ СОЕДИНЕНИЕ Документ.бит_ОтражениеФактаДДС КАК бит_ОтражениеФактаДДС
+			ПО бит_ОтражениеФактаДДСФактическиеДанные.Ссылка = бит_ОтражениеФактаДДС.Ссылка
+		ПО бит_кзн_ПлатежнаяПозиция.Ссылка = бит_ОтражениеФактаДДСФактическиеДанные.Позиция
+ГДЕ
+	бит_кзн_ПлатежнаяПозиция.ВидПлана = ЗНАЧЕНИЕ(Перечисление.бит_кзн_ВидыПланов.План)</query>
+		</item>
+		<item xsi:type="DataSetQuery">
+			<name>ОтражениеФактаПоступления</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Позиция</dataPath>
+				<field>Позиция</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Позиция</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДокументПланирования</dataPath>
+				<field>ДокументПланирования</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПлатежныйДокумент</dataPath>
+				<field>ПлатежныйДокумент</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Платежный документ</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	бит_кзн_ПозицияПоступления.Ссылка КАК Позиция,
+	бит_кзн_ПозицияПоступления.ДокументПланирования КАК ДокументПланирования,
+	бит_ОтражениеФактаДДС.ДокументОснование КАК ПлатежныйДокумент
+ИЗ
+	Документ.бит_кзн_ПозицияПоступления КАК бит_кзн_ПозицияПоступления
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.бит_ОтражениеФактаДДС.ФактическиеДанные КАК бит_ОтражениеФактаДДСФактическиеДанные
+			ЛЕВОЕ СОЕДИНЕНИЕ Документ.бит_ОтражениеФактаДДС КАК бит_ОтражениеФактаДДС
+			ПО бит_ОтражениеФактаДДСФактическиеДанные.Ссылка = бит_ОтражениеФактаДДС.Ссылка
+		ПО бит_кзн_ПозицияПоступления.Ссылка = бит_ОтражениеФактаДДСФактическиеДанные.Позиция
+ГДЕ
+	бит_кзн_ПозицияПоступления.ВидПлана = ЗНАЧЕНИЕ(Перечисление.бит_кзн_ВидыПланов.План)</query>
+		</item>
+	</dataSet>
+	<settingsVariant>
+		<dcsset:name>ПлатежныеДокументы</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Документы оплаты</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Основной</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПлатежныйДокумент</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПлатежныйДокумент.СуммаДокумента</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПлатежныйДокумент.Валюта</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ДокументПланирования</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>66c77b01-a0c3-4b9e-81c8-c89be72d0277</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ОформлениеОтчетовЗеленый</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документы оплаты</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Позиция</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ПлатежныйДокумент</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

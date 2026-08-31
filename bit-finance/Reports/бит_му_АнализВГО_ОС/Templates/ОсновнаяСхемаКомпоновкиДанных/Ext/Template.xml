@@ -1,0 +1,620 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контрагент</dataPath>
+			<field>Контрагент</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОсновноеСредство</dataPath>
+			<field>ОсновноеСредство</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументВыбытия</dataPath>
+			<field>ДокументВыбытия</field>
+			<role>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИнвентарныйНомер</dataPath>
+			<field>ИнвентарныйНомер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОклонениеАбсолютноеМУ</dataPath>
+			<field>ОклонениеАбсолютноеМУ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оклонение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Variance</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОклонениеАбсолютноеРегл</dataPath>
+			<field>ОклонениеАбсолютноеРегл</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оклонение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Variance</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОклонениеАбсолютноеУпр</dataPath>
+			<field>ОклонениеАбсолютноеУпр</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оклонение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Variance</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОклонениеОтносительноеМУ</dataPath>
+			<field>ОклонениеОтносительноеМУ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оклонение, %</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Variance,%</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОклонениеОтносительноеРегл</dataPath>
+			<field>ОклонениеОтносительноеРегл</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оклонение, %</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Variance,%</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОклонениеОтносительноеУпр</dataPath>
+			<field>ОклонениеОтносительноеУпр</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оклонение, %</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Variance,%</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СебестоимостьМУ</dataPath>
+			<field>СебестоимостьМУ</field>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СебестоимостьРегл</dataPath>
+			<field>СебестоимостьРегл</field>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СебестоимостьУпр</dataPath>
+			<field>СебестоимостьУпр</field>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтоимостьМУ</dataPath>
+			<field>СтоимостьМУ</field>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтоимостьРегл</dataPath>
+			<field>СтоимостьРегл</field>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтоимостьУпр</dataPath>
+			<field>СтоимостьУпр</field>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	бит_СобственныеКонтрагенты.Контрагент
+ПОМЕСТИТЬ СобствКонтрагенты
+ИЗ
+	РегистрСведений.бит_СобственныеКонтрагенты КАК бит_СобственныеКонтрагенты
+ГДЕ
+	бит_СобственныеКонтрагенты.ВидСвязи = ЗНАЧЕНИЕ(Перечисление.бит_ВидыСобственныхКонтрагентов.Организация)
+	И бит_СобственныеКонтрагенты.Объект В
+			(ВЫБРАТЬ
+				СоставПериметра.Организация
+			ИЗ
+				РегистрСведений.бит_му_СоставПериметровКонсолидации.СрезПоследних(&amp;КонецПериода, ПериметрКонсолидации = &amp;ПериметрКонсолидации) КАК СоставПериметра
+			ГДЕ
+				(КОНЕЦПЕРИОДА(СоставПериметра.ДатаОкончания, ДЕНЬ) &gt;= &amp;КонецПериодаДата
+					ИЛИ СоставПериметра.ДатаОкончания = ДАТАВРЕМЯ(1, 1, 1))
+				И СоставПериметра.ТипКонсолидации = ЗНАЧЕНИЕ(Перечисление.бит_му_ТипыКонсолидации.Обычная))
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	бит_му_ВыбытиеОСОбороты.Регистратор КАК ДокументВыбытия,
+	СобствКонтрагенты.Контрагент КАК Контрагент,
+	бит_му_ВыбытиеОСОбороты.Организация,
+	//++ ЕРП
+	//ПервоначальныеСведенияОСБухгалтерскийУчетСрезПоследних.ИнвентарныйНомер,
+	бит_му_ВыбытиеОСОбороты.ОсновноеСредство.ИнвентарныйНомер КАК ИнвентарныйНомер,
+	//-- ЕРП
+	бит_му_ВыбытиеОСОбороты.ОсновноеСредство,
+	бит_му_ВыбытиеОСОбороты.СтоимостьМУОборот КАК СтоимостьМУ,
+	бит_му_ВыбытиеОСОбороты.СтоимостьУпрОборот КАК СтоимостьУпр,
+	бит_му_ВыбытиеОСОбороты.СтоимостьРеглОборот КАК СтоимостьРегл,
+	бит_му_ВыбытиеОСОбороты.СебестоимостьМУОборот КАК СебестоимостьМУ,
+	бит_му_ВыбытиеОСОбороты.СебестоимостьУпрОборот КАК СебестоимостьУпр,
+	бит_му_ВыбытиеОСОбороты.СебестоимостьРеглОборот КАК СебестоимостьРегл,
+	бит_му_ВыбытиеОСОбороты.СтоимостьМУОборот - бит_му_ВыбытиеОСОбороты.СебестоимостьМУОборот КАК ОклонениеАбсолютноеМУ,
+	бит_му_ВыбытиеОСОбороты.СтоимостьУпрОборот - бит_му_ВыбытиеОСОбороты.СебестоимостьУпрОборот КАК ОклонениеАбсолютноеУпр,
+	бит_му_ВыбытиеОСОбороты.СтоимостьРеглОборот - бит_му_ВыбытиеОСОбороты.СебестоимостьРеглОборот КАК ОклонениеАбсолютноеРегл,
+	ВЫБОР
+		КОГДА бит_му_ВыбытиеОСОбороты.СебестоимостьМУОборот &lt;&gt; 0
+			ТОГДА 100 * (бит_му_ВыбытиеОСОбороты.СтоимостьМУОборот - бит_му_ВыбытиеОСОбороты.СебестоимостьМУОборот) / бит_му_ВыбытиеОСОбороты.СебестоимостьМУОборот
+		ИНАЧЕ ВЫБОР
+				КОГДА бит_му_ВыбытиеОСОбороты.СтоимостьМУОборот &lt;&gt; 0
+					ТОГДА -100
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ КАК ОклонениеОтносительноеМУ,
+	ВЫБОР
+		КОГДА бит_му_ВыбытиеОСОбороты.СебестоимостьУпрОборот &lt;&gt; 0
+			ТОГДА 100 * (бит_му_ВыбытиеОСОбороты.СтоимостьУпрОборот - бит_му_ВыбытиеОСОбороты.СебестоимостьУпрОборот) / бит_му_ВыбытиеОСОбороты.СебестоимостьУпрОборот
+		ИНАЧЕ ВЫБОР
+				КОГДА бит_му_ВыбытиеОСОбороты.СтоимостьУпрОборот &lt;&gt; 0
+					ТОГДА -100
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ КАК ОклонениеОтносительноеУпр,
+	ВЫБОР
+		КОГДА бит_му_ВыбытиеОСОбороты.СебестоимостьРеглОборот &lt;&gt; 0
+			ТОГДА 100 * (бит_му_ВыбытиеОСОбороты.СтоимостьРеглОборот - бит_му_ВыбытиеОСОбороты.СебестоимостьРеглОборот) / бит_му_ВыбытиеОСОбороты.СебестоимостьРеглОборот
+		ИНАЧЕ ВЫБОР
+				КОГДА бит_му_ВыбытиеОСОбороты.СтоимостьРеглОборот &lt;&gt; 0
+					ТОГДА -100
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ КАК ОклонениеОтносительноеРегл
+{ВЫБРАТЬ
+	Контрагент}
+ИЗ
+	РегистрНакопления.бит_му_ВыбытиеОС.Обороты(
+			&amp;НачалоПериода,
+			&amp;КонецПериода,
+			Регистратор,
+			Организация В
+				(ВЫБРАТЬ
+					СоставПериметра.Организация
+				ИЗ
+					РегистрСведений.бит_му_СоставПериметровКонсолидации.СрезПоследних(&amp;КонецПериода, ПериметрКонсолидации = &amp;ПериметрКонсолидации) КАК СоставПериметра
+				ГДЕ
+					(КОНЕЦПЕРИОДА(СоставПериметра.ДатаОкончания, ДЕНЬ) &gt;= &amp;КонецПериодаДата
+						ИЛИ СоставПериметра.ДатаОкончания = ДАТАВРЕМЯ(1, 1, 1))
+					И СоставПериметра.ТипКонсолидации = ЗНАЧЕНИЕ(Перечисление.бит_му_ТипыКонсолидации.Обычная))) КАК бит_му_ВыбытиеОСОбороты
+		ЛЕВОЕ СОЕДИНЕНИЕ СобствКонтрагенты КАК СобствКонтрагенты
+		ПО бит_му_ВыбытиеОСОбороты.Контрагент = СобствКонтрагенты.Контрагент
+		//++ ЕРП
+		//ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПервоначальныеСведенияОСБухгалтерскийУчет.СрезПоследних(&amp;КонецПериода, ) КАК ПервоначальныеСведенияОСБухгалтерскийУчетСрезПоследних
+		//ПО бит_му_ВыбытиеОСОбороты.ОсновноеСредство = ПервоначальныеСведенияОСБухгалтерскийУчетСрезПоследних.ОсновноеСредство
+		//-- ЕРП
+{ГДЕ
+	СобствКонтрагенты.Контрагент}
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ СобствКонтрагенты</query>
+	</dataSet>
+	<totalField>
+		<dataPath>ОклонениеАбсолютноеМУ</dataPath>
+		<expression>Сумма(ОклонениеАбсолютноеМУ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОклонениеАбсолютноеРегл</dataPath>
+		<expression>Сумма(ОклонениеАбсолютноеРегл)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОклонениеАбсолютноеУпр</dataPath>
+		<expression>Сумма(ОклонениеАбсолютноеУпр)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОклонениеОтносительноеМУ</dataPath>
+		<expression>ВЫБОР КОГДА Сумма(СебестоимостьМУ) &lt;&gt; 0 ТОГДА 100*(Сумма(СтоимостьМУ) - Сумма(СебестоимостьМУ))/Сумма(СебестоимостьМУ) ИНАЧЕ ВЫБОР КОГДА Сумма(СтоимостьМУ) &lt;&gt; 0 ТОГДА -100 ИНАЧЕ 0 КОНЕЦ КОНЕЦ</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОклонениеОтносительноеРегл</dataPath>
+		<expression>ВЫБОР КОГДА Сумма(СебестоимостьРегл) &lt;&gt; 0 ТОГДА 100*(Сумма(СтоимостьРегл) - Сумма(СебестоимостьРегл))/Сумма(СебестоимостьРегл) ИНАЧЕ ВЫБОР КОГДА Сумма(СтоимостьРегл) &lt;&gt; 0 ТОГДА -100 ИНАЧЕ 0 КОНЕЦ КОНЕЦ</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОклонениеОтносительноеУпр</dataPath>
+		<expression>ВЫБОР КОГДА Сумма(СебестоимостьУпр) &lt;&gt; 0 ТОГДА 100*(Сумма(СтоимостьУпр) - Сумма(СебестоимостьУпр))/Сумма(СебестоимостьУпр) ИНАЧЕ ВЫБОР КОГДА Сумма(СтоимостьУпр) &lt;&gt; 0 ТОГДА -100 ИНАЧЕ 0 КОНЕЦ КОНЕЦ</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СебестоимостьМУ</dataPath>
+		<expression>Сумма(СебестоимостьМУ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СебестоимостьРегл</dataPath>
+		<expression>Сумма(СебестоимостьРегл)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СебестоимостьУпр</dataPath>
+		<expression>Сумма(СебестоимостьУпр)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СтоимостьМУ</dataPath>
+		<expression>Сумма(СтоимостьМУ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СтоимостьРегл</dataPath>
+		<expression>Сумма(СтоимостьРегл)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СтоимостьУпр</dataPath>
+		<expression>Сумма(СтоимостьУпр)</expression>
+	</totalField>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Period Start</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Period End</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ПериметрКонсолидации</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Периметр консолидации</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Consolidation Perimeter</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.бит_му_ПериметрыКонсолидации</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Справочник.бит_му_ПериметрыКонсолидации.ПустаяСсылка</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Period</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецПериодаДата</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода дата</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Period End Date</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Основной</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Default</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СистемныеПоля.НомерПоПорядку</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Организация</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Контрагент</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДокументВыбытия</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ИнвентарныйНомер</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОсновноеСредство</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма (Регл.)</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СтоимостьРегл</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СебестоимостьРегл</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОклонениеАбсолютноеРегл</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОклонениеОтносительноеРегл</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Cумма (М.У.)</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СтоимостьМУ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СебестоимостьМУ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОклонениеАбсолютноеМУ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОклонениеОтносительноеМУ</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Cумма (Упр.)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Total (Mng.)</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СтоимостьУпр</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СебестоимостьУпр</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОклонениеАбсолютноеУпр</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОклонениеОтносительноеУпр</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:userSettingID>73cb1a16-4f95-4ba0-8a28-c2177ed354ad</dcsset:userSettingID>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:userSettingID>0135169b-b49c-43eb-9748-48904641b938</dcsset:userSettingID>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>НачалоПериода</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>cbbf1289-350f-49e5-9166-002fa11a66ff</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>КонецПериода</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>8ac94805-d8d9-48cf-9b72-a0ba305b7e98</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ПериметрКонсолидации</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DesignTimeValue">Справочник.бит_му_ПериметрыКонсолидации.ПустаяСсылка</dcscor:value>
+					<dcsset:userSettingID>bdf54047-7eb9-4a30-985a-51aefb6cc7a8</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:userSettingID>40c469ab-0ebf-46b9-80bc-7b08f5956fc5</dcsset:userSettingID>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Main</dcscor:value>
+					<dcsset:userSettingID>f870db11-f0e2-4332-9409-2e6dfe81f7a3</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Анализ внутригрупповых оборотов по ОС</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Fixed Asset Intragroup Transactions Analysis</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+			<dcsset:itemsUserSettingID>14a9419e-e252-4d22-83eb-42e4bdaeb6c7</dcsset:itemsUserSettingID>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

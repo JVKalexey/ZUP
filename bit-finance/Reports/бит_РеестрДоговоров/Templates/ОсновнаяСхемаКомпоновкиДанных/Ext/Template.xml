@@ -1,0 +1,1853 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetUnion">
+		<name>НаборДанных2</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Наименование</dataPath>
+			<field>Наименование</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Договор контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Contract</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>бит_ВключатьВРеестрДоговоров</dataPath>
+			<field>бит_ВключатьВРеестрДоговоров</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>бит_ДержательДоговора</dataPath>
+			<field>бит_ДержательДоговора</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>бит_НаправлениеДоговора</dataPath>
+			<field>бит_НаправлениеДоговора</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>бит_ОписаниеРабот</dataPath>
+			<field>бит_ОписаниеРабот</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>бит_ОсновнаяСтатьяОборотов</dataPath>
+			<field>бит_ОсновнаяСтатьяОборотов</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>бит_ПодразделениеОрганизации</dataPath>
+			<field>бит_ПодразделениеОрганизации</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>бит_ПредметДоговора</dataPath>
+			<field>бит_ПредметДоговора</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>бит_Проект</dataPath>
+			<field>бит_Проект</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>бит_СостояниеДоговора</dataPath>
+			<field>бит_СостояниеДоговора</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>бит_СуммаДоговора</dataPath>
+			<field>бит_СуммаДоговора</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма договора (с НДС)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Contract total (incl VAT)</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>бит_ТипДоговора</dataPath>
+			<field>бит_ТипДоговора</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>бит_ЦФО</dataPath>
+			<field>бит_ЦФО</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВалютаВзаиморасчетов</dataPath>
+			<field>ВалютаВзаиморасчетов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюта договора</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Contract Currency</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидАгентскогоДоговора</dataPath>
+			<field>ВидАгентскогоДоговора</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дата</dataPath>
+			<field>Дата</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата договора</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Contract Date</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДЛФ=D</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИспользуетсяПриОбменеДанными</dataPath>
+			<field>ИспользуетсяПриОбменеДанными</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Комментарий</dataPath>
+			<field>Комментарий</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номер</dataPath>
+			<field>Номер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УчетАгентскогоНДС</dataPath>
+			<field>УчетАгентскогоНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>бит_ОсновнаяСтатьяОборотовБДР</dataPath>
+			<field>бит_ОсновнаяСтатьяОборотовБДР</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>бит_СпособРасчетаФинПлатежей</dataPath>
+			<field>бит_СпособРасчетаФинПлатежей</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаНачалаДействия</dataPath>
+			<field>ДатаНачалаДействия</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДЛФ=D</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипДоговора</dataPath>
+			<field>ТипДоговора</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НаименованиеДляПечати</dataPath>
+			<field>НаименованиеДляПечати</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГруппаФинансовогоУчета</dataPath>
+			<field>ГруппаФинансовогоУчета</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Партнер</dataPath>
+			<field>Партнер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПорядокРасчетов</dataPath>
+			<field>ПорядокРасчетов</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БанковскийСчет</dataPath>
+			<field>БанковскийСчет</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОграничиватьСуммуЗадолженности</dataPath>
+			<field>ОграничиватьСуммуЗадолженности</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>бит_ВысокийПриоритетПриЗаполненииАналитик</dataPath>
+			<field>бит_ВысокийПриоритетПриЗаполненииАналитик</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Статус</dataPath>
+			<field>Статус</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>бит_КратностьВзаиморасчетов</dataPath>
+			<field>бит_КратностьВзаиморасчетов</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДопустимаяСуммаЗадолженности</dataPath>
+			<field>ДопустимаяСуммаЗадолженности</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>бит_СтавкаНДС</dataPath>
+			<field>бит_СтавкаНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатьяДвиженияДенежныхСредств</dataPath>
+			<field>СтатьяДвиженияДенежныхСредств</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗапрещаетсяПросроченнаяЗадолженность</dataPath>
+			<field>ЗапрещаетсяПросроченнаяЗадолженность</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИдентификаторПлатежа</dataPath>
+			<field>ИдентификаторПлатежа</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>бит_КурсВзаиморасчетов</dataPath>
+			<field>бит_КурсВзаиморасчетов</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контрагент</dataPath>
+			<field>Контрагент</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Согласован</dataPath>
+			<field>Согласован</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Менеджер</dataPath>
+			<field>Менеджер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтактноеЛицо</dataPath>
+			<field>КонтактноеЛицо</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаОкончанияДействия</dataPath>
+			<field>ДатаОкончанияДействия</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДЛФ=D</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>бит_СуммаНДСВзаиморасчеты</dataPath>
+			<field>бит_СуммаНДСВзаиморасчеты</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ХозяйственнаяОперация</dataPath>
+			<field>ХозяйственнаяОперация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БанковскийСчетКонтрагента</dataPath>
+			<field>БанковскийСчетКонтрагента</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидДоговора</dataPath>
+			<field>ВидДоговора</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид договора</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Contract Type</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+			<availableValue>
+				<value xsi:type="xs:decimal">1</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Договоры с контрагентами</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Contracts with counterparties</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:decimal">2</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Договоры кредитов и депозитов</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Loan and deposit contracts</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:decimal">3</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Договоры аренды (лизинга)</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Lease (leasing) agreements</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СрокДней</dataPath>
+			<field>СрокДней</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатьяДДСКомиссии</dataPath>
+			<field>СтатьяДДСКомиссии</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БанковскийСчетПроцентов</dataPath>
+			<field>БанковскийСчетПроцентов</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаТраншей</dataPath>
+			<field>СуммаТраншей</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СрокМес</dataPath>
+			<field>СрокМес</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаПроцентов</dataPath>
+			<field>СуммаПроцентов</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаЛимита</dataPath>
+			<field>СуммаЛимита</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ХарактерДоговора</dataPath>
+			<field>ХарактерДоговора</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаКомиссии</dataPath>
+			<field>СуммаКомиссии</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипСрочности</dataPath>
+			<field>ТипСрочности</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Касса</dataPath>
+			<field>Касса</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатьяДДСПоступленияВыдачи</dataPath>
+			<field>СтатьяДДСПоступленияВыдачи</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГруппаФинансовогоУчетаДенежныхСредств</dataPath>
+			<field>ГруппаФинансовогоУчетаДенежныхСредств</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипКомиссии</dataPath>
+			<field>ТипКомиссии</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатьяДоходовРасходовПроцентов</dataPath>
+			<field>СтатьяДоходовРасходовПроцентов</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ФормаОплаты</dataPath>
+			<field>ФормаОплаты</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатьяДоходовРасходовКомиссии</dataPath>
+			<field>СтатьяДоходовРасходовКомиссии</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатьяДДСОсновногоДолга</dataPath>
+			<field>СтатьяДДСОсновногоДолга</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БанковскийСчетКомиссии</dataPath>
+			<field>БанковскийСчетКомиссии</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатьяДДСПроцентов</dataPath>
+			<field>СтатьяДДСПроцентов</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕстьОбеспечительныйПлатеж</dataPath>
+			<field>ЕстьОбеспечительныйПлатеж</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕстьВыкупПредметовАренды</dataPath>
+			<field>ЕстьВыкупПредметовАренды</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Балансодержатель</dataPath>
+			<field>Балансодержатель</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ответственный</dataPath>
+			<field>Ответственный</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПервогоТранша</dataPath>
+			<field>ДатаПервогоТранша</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДЛФ=D</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПоследнегоПлатежа</dataPath>
+			<field>ДатаПоследнегоПлатежа</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДЛФ=D</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<item xsi:type="DataSetQuery">
+			<name>НаборДанных1</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Наименование</dataPath>
+				<field>Наименование</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Ссылка</dataPath>
+				<field>Ссылка</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Договор контрагента</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Contract</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ВключатьВРеестрДоговоров</dataPath>
+				<field>бит_ВключатьВРеестрДоговоров</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ДержательДоговора</dataPath>
+				<field>бит_ДержательДоговора</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_НаправлениеДоговора</dataPath>
+				<field>бит_НаправлениеДоговора</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ОписаниеРабот</dataPath>
+				<field>бит_ОписаниеРабот</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ОсновнаяСтатьяОборотов</dataPath>
+				<field>бит_ОсновнаяСтатьяОборотов</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ПодразделениеОрганизации</dataPath>
+				<field>бит_ПодразделениеОрганизации</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ПредметДоговора</dataPath>
+				<field>бит_ПредметДоговора</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_Проект</dataPath>
+				<field>бит_Проект</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_СостояниеДоговора</dataPath>
+				<field>бит_СостояниеДоговора</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_СуммаДоговора</dataPath>
+				<field>бит_СуммаДоговора</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сумма договора (с НДС)</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Contract total (incl VAT)</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ТипДоговора</dataPath>
+				<field>бит_ТипДоговора</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ЦФО</dataPath>
+				<field>бит_ЦФО</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВалютаВзаиморасчетов</dataPath>
+				<field>ВалютаВзаиморасчетов</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Валюта договора</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Contract Currency</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидАгентскогоДоговора</dataPath>
+				<field>ВидАгентскогоДоговора</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Дата</dataPath>
+				<field>Дата</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Дата договора</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Contract Date</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ИспользуетсяПриОбменеДанными</dataPath>
+				<field>ИспользуетсяПриОбменеДанными</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Комментарий</dataPath>
+				<field>Комментарий</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Номер</dataPath>
+				<field>Номер</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Организация</dataPath>
+				<field>Организация</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>УчетАгентскогоНДС</dataPath>
+				<field>УчетАгентскогоНДС</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ОсновнаяСтатьяОборотовБДР</dataPath>
+				<field>бит_ОсновнаяСтатьяОборотовБДР</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_СпособРасчетаФинПлатежей</dataPath>
+				<field>бит_СпособРасчетаФинПлатежей</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Подразделение</dataPath>
+				<field>Подразделение</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаНачалаДействия</dataPath>
+				<field>ДатаНачалаДействия</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ТипДоговора</dataPath>
+				<field>ТипДоговора</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НаименованиеДляПечати</dataPath>
+				<field>НаименованиеДляПечати</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ГруппаФинансовогоУчета</dataPath>
+				<field>ГруппаФинансовогоУчета</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Партнер</dataPath>
+				<field>Партнер</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПорядокРасчетов</dataPath>
+				<field>ПорядокРасчетов</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>БанковскийСчет</dataPath>
+				<field>БанковскийСчет</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОграничиватьСуммуЗадолженности</dataPath>
+				<field>ОграничиватьСуммуЗадолженности</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ВысокийПриоритетПриЗаполненииАналитик</dataPath>
+				<field>бит_ВысокийПриоритетПриЗаполненииАналитик</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Статус</dataPath>
+				<field>Статус</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_КратностьВзаиморасчетов</dataPath>
+				<field>бит_КратностьВзаиморасчетов</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДопустимаяСуммаЗадолженности</dataPath>
+				<field>ДопустимаяСуммаЗадолженности</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_СтавкаНДС</dataPath>
+				<field>бит_СтавкаНДС</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СтатьяДвиженияДенежныхСредств</dataPath>
+				<field>СтатьяДвиженияДенежныхСредств</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЗапрещаетсяПросроченнаяЗадолженность</dataPath>
+				<field>ЗапрещаетсяПросроченнаяЗадолженность</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ИдентификаторПлатежа</dataPath>
+				<field>ИдентификаторПлатежа</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_КурсВзаиморасчетов</dataPath>
+				<field>бит_КурсВзаиморасчетов</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Контрагент</dataPath>
+				<field>Контрагент</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Согласован</dataPath>
+				<field>Согласован</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Менеджер</dataPath>
+				<field>Менеджер</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КонтактноеЛицо</dataPath>
+				<field>КонтактноеЛицо</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаОкончанияДействия</dataPath>
+				<field>ДатаОкончанияДействия</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_СуммаНДСВзаиморасчеты</dataPath>
+				<field>бит_СуммаНДСВзаиморасчеты</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ХозяйственнаяОперация</dataPath>
+				<field>ХозяйственнаяОперация</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>БанковскийСчетКонтрагента</dataPath>
+				<field>БанковскийСчетКонтрагента</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидДоговора</dataPath>
+				<field>ВидДоговора</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Вид договора</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Contract Type</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ДоговорыКонтрагентов.Ссылка КАК Ссылка,
+	ДоговорыКонтрагентов.Наименование КАК Наименование,
+	ДоговорыКонтрагентов.БанковскийСчет КАК БанковскийСчет,
+	ДоговорыКонтрагентов.бит_ДержательДоговора КАК бит_ДержательДоговора,
+	ДоговорыКонтрагентов.БанковскийСчетКонтрагента КАК БанковскийСчетКонтрагента,
+	ДоговорыКонтрагентов.ВалютаВзаиморасчетов КАК ВалютаВзаиморасчетов,
+	ДоговорыКонтрагентов.Комментарий КАК Комментарий,
+	ДоговорыКонтрагентов.ДатаНачалаДействия КАК ДатаНачалаДействия,
+	ДоговорыКонтрагентов.ДатаОкончанияДействия КАК ДатаОкончанияДействия,
+	ДоговорыКонтрагентов.Организация КАК Организация,
+	ДоговорыКонтрагентов.Контрагент КАК Контрагент,
+	ДоговорыКонтрагентов.Менеджер КАК Менеджер,
+	ДоговорыКонтрагентов.НаименованиеДляПечати КАК НаименованиеДляПечати,
+	ДоговорыКонтрагентов.УчетАгентскогоНДС КАК УчетАгентскогоНДС,
+	ДоговорыКонтрагентов.ВидАгентскогоДоговора КАК ВидАгентскогоДоговора,
+	ДоговорыКонтрагентов.Дата КАК Дата,
+	ДоговорыКонтрагентов.Номер КАК Номер,
+	ДоговорыКонтрагентов.Партнер КАК Партнер,
+	ДоговорыКонтрагентов.Подразделение КАК Подразделение,
+	ДоговорыКонтрагентов.ПорядокРасчетов КАК ПорядокРасчетов,
+	ДоговорыКонтрагентов.Согласован КАК Согласован,
+	ДоговорыКонтрагентов.Статус КАК Статус,
+	ДоговорыКонтрагентов.ХозяйственнаяОперация КАК ХозяйственнаяОперация,
+	ДоговорыКонтрагентов.ТипДоговора КАК ТипДоговора,
+	ДоговорыКонтрагентов.ОграничиватьСуммуЗадолженности КАК ОграничиватьСуммуЗадолженности,
+	ДоговорыКонтрагентов.ДопустимаяСуммаЗадолженности КАК ДопустимаяСуммаЗадолженности,
+	ДоговорыКонтрагентов.ГруппаФинансовогоУчета КАК ГруппаФинансовогоУчета,
+	ДоговорыКонтрагентов.ЗапрещаетсяПросроченнаяЗадолженность КАК ЗапрещаетсяПросроченнаяЗадолженность,
+	ДоговорыКонтрагентов.КонтактноеЛицо КАК КонтактноеЛицо,
+	ДоговорыКонтрагентов.СтатьяДвиженияДенежныхСредств КАК СтатьяДвиженияДенежныхСредств,
+	ДоговорыКонтрагентов.ИдентификаторПлатежа КАК ИдентификаторПлатежа,
+	ДоговорыКонтрагентов.ИспользуетсяПриОбменеДанными КАК ИспользуетсяПриОбменеДанными,
+	ДоговорыКонтрагентов.бит_СостояниеДоговора КАК бит_СостояниеДоговора,
+	ДоговорыКонтрагентов.бит_ПредметДоговора КАК бит_ПредметДоговора,
+	ДоговорыКонтрагентов.бит_ОписаниеРабот КАК бит_ОписаниеРабот,
+	ДоговорыКонтрагентов.бит_ОсновнаяСтатьяОборотов КАК бит_ОсновнаяСтатьяОборотов,
+	ДоговорыКонтрагентов.бит_ОсновнаяСтатьяОборотовБДР КАК бит_ОсновнаяСтатьяОборотовБДР,
+	ДоговорыКонтрагентов.бит_ЦФО КАК бит_ЦФО,
+	ДоговорыКонтрагентов.бит_Проект КАК бит_Проект,
+	ДоговорыКонтрагентов.бит_СуммаДоговора КАК бит_СуммаДоговора,
+	ДоговорыКонтрагентов.бит_ТипДоговора КАК бит_ТипДоговора,
+	ДоговорыКонтрагентов.бит_НаправлениеДоговора КАК бит_НаправлениеДоговора,
+	ДоговорыКонтрагентов.бит_ПодразделениеОрганизации КАК бит_ПодразделениеОрганизации,
+	ДоговорыКонтрагентов.бит_СпособРасчетаФинПлатежей КАК бит_СпособРасчетаФинПлатежей,
+	ДоговорыКонтрагентов.бит_ВысокийПриоритетПриЗаполненииАналитик КАК бит_ВысокийПриоритетПриЗаполненииАналитик,
+	ДоговорыКонтрагентов.бит_ВключатьВРеестрДоговоров КАК бит_ВключатьВРеестрДоговоров,
+	ДоговорыКонтрагентов.бит_КурсВзаиморасчетов КАК бит_КурсВзаиморасчетов,
+	ДоговорыКонтрагентов.бит_КратностьВзаиморасчетов КАК бит_КратностьВзаиморасчетов,
+	ДоговорыКонтрагентов.бит_СтавкаНДС КАК бит_СтавкаНДС,
+	ДоговорыКонтрагентов.бит_СуммаНДСВзаиморасчеты КАК бит_СуммаНДСВзаиморасчеты,
+	1 КАК ВидДоговора
+{ВЫБРАТЬ
+	Ссылка.*,
+	Наименование,
+	БанковскийСчет.*,
+	бит_ДержательДоговора.*,
+	БанковскийСчетКонтрагента.*,
+	ВалютаВзаиморасчетов.*,
+	Комментарий,
+	ДатаНачалаДействия,
+	ДатаОкончанияДействия,
+	Организация.*,
+	Контрагент.*,
+	Менеджер.*,
+	НаименованиеДляПечати,
+	УчетАгентскогоНДС,
+	ВидАгентскогоДоговора.*,
+	Дата,
+	Номер,
+	Партнер.*,
+	Подразделение.*,
+	ПорядокРасчетов.*,
+	Согласован,
+	Статус.*,
+	ХозяйственнаяОперация.*,
+	ТипДоговора.*,
+	ОграничиватьСуммуЗадолженности,
+	ДопустимаяСуммаЗадолженности,
+	ГруппаФинансовогоУчета.*,
+	ЗапрещаетсяПросроченнаяЗадолженность,
+	КонтактноеЛицо.*,
+	СтатьяДвиженияДенежныхСредств.*,
+	ИдентификаторПлатежа,
+	ИспользуетсяПриОбменеДанными,
+	бит_СостояниеДоговора.*,
+	бит_ПредметДоговора,
+	бит_ОписаниеРабот,
+	бит_ОсновнаяСтатьяОборотов.*,
+	бит_ОсновнаяСтатьяОборотовБДР.*,
+	бит_ЦФО.*,
+	бит_Проект.*,
+	бит_СуммаДоговора,
+	бит_ТипДоговора.*,
+	бит_НаправлениеДоговора.*,
+	бит_ПодразделениеОрганизации,
+	бит_СпособРасчетаФинПлатежей.*,
+	бит_ВысокийПриоритетПриЗаполненииАналитик,
+	бит_ВключатьВРеестрДоговоров,
+	бит_КурсВзаиморасчетов,
+	бит_КратностьВзаиморасчетов,
+	бит_СтавкаНДС.*,
+	бит_СуммаНДСВзаиморасчеты,
+	ВидДоговора}
+ИЗ
+	Справочник.ДоговорыКонтрагентов КАК ДоговорыКонтрагентов
+{ГДЕ
+	ДоговорыКонтрагентов.Ссылка.*,
+	ДоговорыКонтрагентов.Наименование,
+	ДоговорыКонтрагентов.БанковскийСчет.*,
+	ДоговорыКонтрагентов.бит_ДержательДоговора.*,
+	ДоговорыКонтрагентов.БанковскийСчетКонтрагента.*,
+	ДоговорыКонтрагентов.ВалютаВзаиморасчетов.*,
+	ДоговорыКонтрагентов.Комментарий,
+	ДоговорыКонтрагентов.ДатаНачалаДействия,
+	ДоговорыКонтрагентов.ДатаОкончанияДействия,
+	ДоговорыКонтрагентов.Организация.*,
+	ДоговорыКонтрагентов.Контрагент.*,
+	ДоговорыКонтрагентов.Менеджер.*,
+	ДоговорыКонтрагентов.НаименованиеДляПечати,
+	ДоговорыКонтрагентов.УчетАгентскогоНДС,
+	ДоговорыКонтрагентов.ВидАгентскогоДоговора.*,
+	ДоговорыКонтрагентов.Дата,
+	ДоговорыКонтрагентов.Номер,
+	ДоговорыКонтрагентов.Партнер.*,
+	ДоговорыКонтрагентов.Подразделение.*,
+	ДоговорыКонтрагентов.ПорядокРасчетов.*,
+	ДоговорыКонтрагентов.Согласован,
+	ДоговорыКонтрагентов.Статус.*,
+	ДоговорыКонтрагентов.ХозяйственнаяОперация.*,
+	ДоговорыКонтрагентов.ТипДоговора.*,
+	ДоговорыКонтрагентов.ОграничиватьСуммуЗадолженности,
+	ДоговорыКонтрагентов.ДопустимаяСуммаЗадолженности,
+	ДоговорыКонтрагентов.ГруппаФинансовогоУчета.*,
+	ДоговорыКонтрагентов.ЗапрещаетсяПросроченнаяЗадолженность,
+	ДоговорыКонтрагентов.КонтактноеЛицо.*,
+	ДоговорыКонтрагентов.СтатьяДвиженияДенежныхСредств.*,
+	ДоговорыКонтрагентов.ИдентификаторПлатежа,
+	ДоговорыКонтрагентов.ИспользуетсяПриОбменеДанными,
+	ДоговорыКонтрагентов.бит_СостояниеДоговора.*,
+	ДоговорыКонтрагентов.бит_ПредметДоговора,
+	ДоговорыКонтрагентов.бит_ОписаниеРабот,
+	ДоговорыКонтрагентов.бит_ОсновнаяСтатьяОборотов.*,
+	ДоговорыКонтрагентов.бит_ОсновнаяСтатьяОборотовБДР.*,
+	ДоговорыКонтрагентов.бит_ЦФО.*,
+	ДоговорыКонтрагентов.бит_Проект.*,
+	ДоговорыКонтрагентов.бит_СуммаДоговора,
+	ДоговорыКонтрагентов.бит_ТипДоговора.*,
+	ДоговорыКонтрагентов.бит_НаправлениеДоговора.*,
+	ДоговорыКонтрагентов.бит_ПодразделениеОрганизации,
+	ДоговорыКонтрагентов.бит_СпособРасчетаФинПлатежей.*,
+	ДоговорыКонтрагентов.бит_ВысокийПриоритетПриЗаполненииАналитик,
+	ДоговорыКонтрагентов.бит_ВключатьВРеестрДоговоров,
+	ДоговорыКонтрагентов.бит_КурсВзаиморасчетов,
+	ДоговорыКонтрагентов.бит_КратностьВзаиморасчетов,
+	ДоговорыКонтрагентов.бит_СтавкаНДС.*,
+	ДоговорыКонтрагентов.бит_СуммаНДСВзаиморасчеты,
+	(1) КАК ВидДоговора}</query>
+		</item>
+		<item xsi:type="DataSetQuery">
+			<name>НаборДанных2</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаКомиссии</dataPath>
+				<field>СуммаКомиссии</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ВключатьВРеестрДоговоров</dataPath>
+				<field>бит_ВключатьВРеестрДоговоров</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ДержательДоговора</dataPath>
+				<field>бит_ДержательДоговора</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_СостояниеДоговора</dataPath>
+				<field>бит_СостояниеДоговора</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Ссылка</dataPath>
+				<field>Ссылка</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Наименование</dataPath>
+				<field>Наименование</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>БанковскийСчетКонтрагента</dataPath>
+				<field>БанковскийСчетКонтрагента</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>БанковскийСчетКомиссии</dataPath>
+				<field>БанковскийСчетКомиссии</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_СпособРасчетаФинПлатежей</dataPath>
+				<field>бит_СпособРасчетаФинПлатежей</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Комментарий</dataPath>
+				<field>Комментарий</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>БанковскийСчет</dataPath>
+				<field>БанковскийСчет</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Подразделение</dataPath>
+				<field>Подразделение</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Партнер</dataPath>
+				<field>Партнер</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВалютаВзаиморасчетов</dataPath>
+				<field>ВалютаВзаиморасчетов</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаНачалаДействия</dataPath>
+				<field>ДатаНачалаДействия</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ОсновнаяСтатьяОборотов</dataPath>
+				<field>бит_ОсновнаяСтатьяОборотов</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Согласован</dataPath>
+				<field>Согласован</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаОкончанияДействия</dataPath>
+				<field>ДатаОкончанияДействия</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Контрагент</dataPath>
+				<field>Контрагент</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Организация</dataPath>
+				<field>Организация</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Менеджер</dataPath>
+				<field>Менеджер</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СрокДней</dataPath>
+				<field>СрокДней</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Номер</dataPath>
+				<field>Номер</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НаименованиеДляПечати</dataPath>
+				<field>НаименованиеДляПечати</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_КурсВзаиморасчетов</dataPath>
+				<field>бит_КурсВзаиморасчетов</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Дата</dataPath>
+				<field>Дата</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СтатьяДоходовРасходовКомиссии</dataPath>
+				<field>СтатьяДоходовРасходовКомиссии</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Статус</dataPath>
+				<field>Статус</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ТипДоговора</dataPath>
+				<field>ТипДоговора</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ГруппаФинансовогоУчета</dataPath>
+				<field>ГруппаФинансовогоУчета</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ТипСрочности</dataPath>
+				<field>ТипСрочности</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СтатьяДДСОсновногоДолга</dataPath>
+				<field>СтатьяДДСОсновногоДолга</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ОсновнаяСтатьяОборотовБДР</dataPath>
+				<field>бит_ОсновнаяСтатьяОборотовБДР</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ВысокийПриоритетПриЗаполненииАналитик</dataPath>
+				<field>бит_ВысокийПриоритетПриЗаполненииАналитик</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ПредметДоговора</dataPath>
+				<field>бит_ПредметДоговора</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ОписаниеРабот</dataPath>
+				<field>бит_ОписаниеРабот</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_СтавкаНДС</dataPath>
+				<field>бит_СтавкаНДС</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ЦФО</dataPath>
+				<field>бит_ЦФО</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_Проект</dataPath>
+				<field>бит_Проект</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_СуммаНДСВзаиморасчеты</dataPath>
+				<field>бит_СуммаНДСВзаиморасчеты</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_СуммаДоговора</dataPath>
+				<field>бит_СуммаДоговора</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ТипДоговора</dataPath>
+				<field>бит_ТипДоговора</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_НаправлениеДоговора</dataPath>
+				<field>бит_НаправлениеДоговора</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ПодразделениеОрганизации</dataPath>
+				<field>бит_ПодразделениеОрганизации</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_КратностьВзаиморасчетов</dataPath>
+				<field>бит_КратностьВзаиморасчетов</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидДоговора</dataPath>
+				<field>ВидДоговора</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Вид договора</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>БанковскийСчетПроцентов</dataPath>
+				<field>БанковскийСчетПроцентов</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Касса</dataPath>
+				<field>Касса</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СрокМес</dataPath>
+				<field>СрокМес</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СтатьяДДСКомиссии</dataPath>
+				<field>СтатьяДДСКомиссии</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СтатьяДДСПоступленияВыдачи</dataPath>
+				<field>СтатьяДДСПоступленияВыдачи</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СтатьяДДСПроцентов</dataPath>
+				<field>СтатьяДДСПроцентов</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СтатьяДоходовРасходовПроцентов</dataPath>
+				<field>СтатьяДоходовРасходовПроцентов</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаЛимита</dataPath>
+				<field>СуммаЛимита</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаПроцентов</dataPath>
+				<field>СуммаПроцентов</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаТраншей</dataPath>
+				<field>СуммаТраншей</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ТипКомиссии</dataPath>
+				<field>ТипКомиссии</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ФормаОплаты</dataPath>
+				<field>ФормаОплаты</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ХарактерДоговора</dataPath>
+				<field>ХарактерДоговора</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ГруппаФинансовогоУчетаДенежныхСредств</dataPath>
+				<field>ГруппаФинансовогоУчетаДенежныхСредств</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаПервогоТранша</dataPath>
+				<field>ДатаПервогоТранша</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаПоследнегоПлатежа</dataPath>
+				<field>ДатаПоследнегоПлатежа</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Ответственный</dataPath>
+				<field>Ответственный</field>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ДоговорыКредитовИДепозитов.Ссылка КАК Ссылка,
+	ДоговорыКредитовИДепозитов.Наименование КАК Наименование,
+	ДоговорыКредитовИДепозитов.БанковскийСчет КАК БанковскийСчет,
+	ДоговорыКредитовИДепозитов.бит_ДержательДоговора КАК бит_ДержательДоговора,
+	ДоговорыКредитовИДепозитов.БанковскийСчетКонтрагента КАК БанковскийСчетКонтрагента,
+	ДоговорыКредитовИДепозитов.ВалютаВзаиморасчетов КАК ВалютаВзаиморасчетов,
+	ДоговорыКредитовИДепозитов.Комментарий КАК Комментарий,
+	ДоговорыКредитовИДепозитов.ДатаПервогоТранша КАК ДатаНачалаДействия,
+	ДоговорыКредитовИДепозитов.ДатаПоследнегоПлатежа КАК ДатаОкончанияДействия,
+	ДоговорыКредитовИДепозитов.Организация КАК Организация,
+	ДоговорыКредитовИДепозитов.Контрагент КАК Контрагент,
+	ДоговорыКредитовИДепозитов.Ответственный КАК Менеджер,
+	ДоговорыКредитовИДепозитов.НаименованиеДляПечати КАК НаименованиеДляПечати,
+	ДоговорыКредитовИДепозитов.Дата КАК Дата,
+	ДоговорыКредитовИДепозитов.Номер КАК Номер,
+	ДоговорыКредитовИДепозитов.Партнер КАК Партнер,
+	ДоговорыКредитовИДепозитов.Подразделение КАК Подразделение,
+	ДоговорыКредитовИДепозитов.Согласован КАК Согласован,
+	ДоговорыКредитовИДепозитов.Статус КАК Статус,
+	ДоговорыКредитовИДепозитов.ТипДоговора КАК ТипДоговора,
+	ДоговорыКредитовИДепозитов.ГруппаФинансовогоУчета КАК ГруппаФинансовогоУчета,
+	ДоговорыКредитовИДепозитов.бит_СостояниеДоговора КАК бит_СостояниеДоговора,
+	ДоговорыКредитовИДепозитов.бит_ПредметДоговора КАК бит_ПредметДоговора,
+	ДоговорыКредитовИДепозитов.бит_ОписаниеРабот КАК бит_ОписаниеРабот,
+	ДоговорыКредитовИДепозитов.бит_ОсновнаяСтатьяОборотов КАК бит_ОсновнаяСтатьяОборотов,
+	ДоговорыКредитовИДепозитов.бит_ОсновнаяСтатьяОборотовБДР КАК бит_ОсновнаяСтатьяОборотовБДР,
+	ДоговорыКредитовИДепозитов.бит_ЦФО КАК бит_ЦФО,
+	ДоговорыКредитовИДепозитов.бит_Проект КАК бит_Проект,
+	ДоговорыКредитовИДепозитов.бит_СуммаДоговора КАК бит_СуммаДоговора,
+	ДоговорыКредитовИДепозитов.бит_ТипДоговора КАК бит_ТипДоговора,
+	ДоговорыКредитовИДепозитов.бит_НаправлениеДоговора КАК бит_НаправлениеДоговора,
+	ДоговорыКредитовИДепозитов.бит_ПодразделениеОрганизации КАК бит_ПодразделениеОрганизации,
+	ДоговорыКредитовИДепозитов.бит_СпособРасчетаФинПлатежей КАК бит_СпособРасчетаФинПлатежей,
+	ДоговорыКредитовИДепозитов.бит_ВысокийПриоритетПриЗаполненииАналитик КАК бит_ВысокийПриоритетПриЗаполненииАналитик,
+	ДоговорыКредитовИДепозитов.бит_ВключатьВРеестрДоговоров КАК бит_ВключатьВРеестрДоговоров,
+	ДоговорыКредитовИДепозитов.бит_КурсВзаиморасчетов КАК бит_КурсВзаиморасчетов,
+	ДоговорыКредитовИДепозитов.бит_КратностьВзаиморасчетов КАК бит_КратностьВзаиморасчетов,
+	ДоговорыКредитовИДепозитов.бит_СтавкаНДС КАК бит_СтавкаНДС,
+	ДоговорыКредитовИДепозитов.бит_СуммаНДСВзаиморасчеты КАК бит_СуммаНДСВзаиморасчеты,
+	2 КАК ВидДоговора,
+	ДоговорыКредитовИДепозитов.БанковскийСчетКомиссии КАК БанковскийСчетКомиссии,
+	ДоговорыКредитовИДепозитов.БанковскийСчетПроцентов КАК БанковскийСчетПроцентов,
+	ДоговорыКредитовИДепозитов.Касса КАК Касса,
+	ДоговорыКредитовИДепозитов.СрокДней КАК СрокДней,
+	ДоговорыКредитовИДепозитов.СрокМес КАК СрокМес,
+	ДоговорыКредитовИДепозитов.СтатьяДДСКомиссии КАК СтатьяДДСКомиссии,
+	ДоговорыКредитовИДепозитов.СтатьяДДСОсновногоДолга КАК СтатьяДДСОсновногоДолга,
+	ДоговорыКредитовИДепозитов.СтатьяДДСПоступленияВыдачи КАК СтатьяДДСПоступленияВыдачи,
+	ДоговорыКредитовИДепозитов.СтатьяДДСПроцентов КАК СтатьяДДСПроцентов,
+	ДоговорыКредитовИДепозитов.СтатьяДоходовРасходовКомиссии КАК СтатьяДоходовРасходовКомиссии,
+	ДоговорыКредитовИДепозитов.СтатьяДоходовРасходовПроцентов КАК СтатьяДоходовРасходовПроцентов,
+	ДоговорыКредитовИДепозитов.СуммаКомиссии КАК СуммаКомиссии,
+	ДоговорыКредитовИДепозитов.СуммаЛимита КАК СуммаЛимита,
+	ДоговорыКредитовИДепозитов.СуммаПроцентов КАК СуммаПроцентов,
+	ДоговорыКредитовИДепозитов.СуммаТраншей КАК СуммаТраншей,
+	ДоговорыКредитовИДепозитов.ТипКомиссии КАК ТипКомиссии,
+	ДоговорыКредитовИДепозитов.ТипСрочности КАК ТипСрочности,
+	ДоговорыКредитовИДепозитов.ФормаОплаты КАК ФормаОплаты,
+	ДоговорыКредитовИДепозитов.ХарактерДоговора КАК ХарактерДоговора,
+	ДоговорыКредитовИДепозитов.ГруппаФинансовогоУчетаДенежныхСредств КАК ГруппаФинансовогоУчетаДенежныхСредств
+{ВЫБРАТЬ
+	Ссылка.*,
+	Наименование,
+	БанковскийСчет.*,
+	бит_ДержательДоговора.*,
+	БанковскийСчетКонтрагента.*,
+	ВалютаВзаиморасчетов.*,
+	Комментарий,
+	ДатаНачалаДействия,
+	ДатаОкончанияДействия,
+	Организация.*,
+	Контрагент.*,
+	Менеджер.*,
+	НаименованиеДляПечати,
+	Дата,
+	Номер,
+	Партнер.*,
+	Подразделение.*,
+	Согласован,
+	Статус.*,
+	ТипДоговора.*,
+	ГруппаФинансовогоУчета.*,
+	бит_СостояниеДоговора.*,
+	бит_ПредметДоговора,
+	бит_ОписаниеРабот,
+	бит_ОсновнаяСтатьяОборотов.*,
+	бит_ОсновнаяСтатьяОборотовБДР.*,
+	бит_ЦФО.*,
+	бит_Проект.*,
+	бит_СуммаДоговора,
+	бит_ТипДоговора.*,
+	бит_НаправлениеДоговора.*,
+	бит_ПодразделениеОрганизации,
+	бит_СпособРасчетаФинПлатежей.*,
+	бит_ВысокийПриоритетПриЗаполненииАналитик,
+	бит_ВключатьВРеестрДоговоров,
+	бит_КурсВзаиморасчетов,
+	бит_КратностьВзаиморасчетов,
+	бит_СтавкаНДС.*,
+	бит_СуммаНДСВзаиморасчеты,
+	ВидДоговора,
+	БанковскийСчетКомиссии.*,
+	БанковскийСчетПроцентов.*,
+	Касса.*,
+	СрокДней,
+	СрокМес,
+	СтатьяДДСКомиссии.*,
+	СтатьяДДСОсновногоДолга.*,
+	СтатьяДДСПоступленияВыдачи.*,
+	СтатьяДДСПроцентов.*,
+	СтатьяДоходовРасходовКомиссии.*,
+	СтатьяДоходовРасходовПроцентов.*,
+	СуммаКомиссии,
+	СуммаЛимита,
+	СуммаПроцентов,
+	СуммаТраншей,
+	ТипКомиссии.*,
+	ТипСрочности.*,
+	ФормаОплаты.*,
+	ХарактерДоговора.*,
+	ГруппаФинансовогоУчетаДенежныхСредств.*}
+ИЗ
+	Справочник.ДоговорыКредитовИДепозитов КАК ДоговорыКредитовИДепозитов
+{ГДЕ
+	ДоговорыКредитовИДепозитов.Ссылка.*,
+	ДоговорыКредитовИДепозитов.Наименование,
+	ДоговорыКредитовИДепозитов.БанковскийСчет.*,
+	ДоговорыКредитовИДепозитов.бит_ДержательДоговора.*,
+	ДоговорыКредитовИДепозитов.БанковскийСчетКонтрагента.*,
+	ДоговорыКредитовИДепозитов.ВалютаВзаиморасчетов.*,
+	ДоговорыКредитовИДепозитов.Комментарий,
+	ДоговорыКредитовИДепозитов.ДатаПервогоТранша,
+	ДоговорыКредитовИДепозитов.ДатаПоследнегоПлатежа,
+	ДоговорыКредитовИДепозитов.Организация.*,
+	ДоговорыКредитовИДепозитов.Контрагент.*,
+	ДоговорыКредитовИДепозитов.Ответственный.*,
+	ДоговорыКредитовИДепозитов.НаименованиеДляПечати,
+	ДоговорыКредитовИДепозитов.Дата,
+	ДоговорыКредитовИДепозитов.Номер,
+	ДоговорыКредитовИДепозитов.Партнер.*,
+	ДоговорыКредитовИДепозитов.Подразделение.*,
+	ДоговорыКредитовИДепозитов.Согласован,
+	ДоговорыКредитовИДепозитов.Статус.*,
+	ДоговорыКредитовИДепозитов.ТипДоговора.*,
+	ДоговорыКредитовИДепозитов.ГруппаФинансовогоУчета.*,
+	ДоговорыКредитовИДепозитов.бит_СостояниеДоговора.*,
+	ДоговорыКредитовИДепозитов.бит_ПредметДоговора,
+	ДоговорыКредитовИДепозитов.бит_ОписаниеРабот,
+	ДоговорыКредитовИДепозитов.бит_ОсновнаяСтатьяОборотов.*,
+	ДоговорыКредитовИДепозитов.бит_ОсновнаяСтатьяОборотовБДР.*,
+	ДоговорыКредитовИДепозитов.бит_ЦФО.*,
+	ДоговорыКредитовИДепозитов.бит_Проект.*,
+	ДоговорыКредитовИДепозитов.бит_СуммаДоговора,
+	ДоговорыКредитовИДепозитов.бит_ТипДоговора.*,
+	ДоговорыКредитовИДепозитов.бит_НаправлениеДоговора.*,
+	ДоговорыКредитовИДепозитов.бит_ПодразделениеОрганизации,
+	ДоговорыКредитовИДепозитов.бит_СпособРасчетаФинПлатежей.*,
+	ДоговорыКредитовИДепозитов.бит_ВысокийПриоритетПриЗаполненииАналитик,
+	ДоговорыКредитовИДепозитов.бит_ВключатьВРеестрДоговоров,
+	ДоговорыКредитовИДепозитов.бит_КурсВзаиморасчетов,
+	ДоговорыКредитовИДепозитов.бит_КратностьВзаиморасчетов,
+	ДоговорыКредитовИДепозитов.бит_СтавкаНДС.*,
+	ДоговорыКредитовИДепозитов.бит_СуммаНДСВзаиморасчеты,
+	(2) КАК ВидДоговора,
+	ДоговорыКредитовИДепозитов.БанковскийСчетКомиссии.*,
+	ДоговорыКредитовИДепозитов.БанковскийСчетПроцентов.*,
+	ДоговорыКредитовИДепозитов.Касса.*,
+	ДоговорыКредитовИДепозитов.СрокДней,
+	ДоговорыКредитовИДепозитов.СрокМес,
+	ДоговорыКредитовИДепозитов.СтатьяДДСКомиссии.*,
+	ДоговорыКредитовИДепозитов.СтатьяДДСОсновногоДолга.*,
+	ДоговорыКредитовИДепозитов.СтатьяДДСПоступленияВыдачи.*,
+	ДоговорыКредитовИДепозитов.СтатьяДДСПроцентов.*,
+	ДоговорыКредитовИДепозитов.СтатьяДоходовРасходовКомиссии.*,
+	ДоговорыКредитовИДепозитов.СтатьяДоходовРасходовПроцентов.*,
+	ДоговорыКредитовИДепозитов.СуммаКомиссии,
+	ДоговорыКредитовИДепозитов.СуммаЛимита,
+	ДоговорыКредитовИДепозитов.СуммаПроцентов,
+	ДоговорыКредитовИДепозитов.СуммаТраншей,
+	ДоговорыКредитовИДепозитов.ТипКомиссии.*,
+	ДоговорыКредитовИДепозитов.ТипСрочности.*,
+	ДоговорыКредитовИДепозитов.ФормаОплаты.*,
+	ДоговорыКредитовИДепозитов.ХарактерДоговора.*,
+	ДоговорыКредитовИДепозитов.ГруппаФинансовогоУчетаДенежныхСредств.*}</query>
+		</item>
+		<item xsi:type="DataSetQuery">
+			<name>НаборДанных3</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ДержательДоговора</dataPath>
+				<field>бит_ДержательДоговора</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_СостояниеДоговора</dataPath>
+				<field>бит_СостояниеДоговора</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Ссылка</dataPath>
+				<field>Ссылка</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Наименование</dataPath>
+				<field>Наименование</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>БанковскийСчетКонтрагента</dataPath>
+				<field>БанковскийСчетКонтрагента</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЕстьВыкупПредметовАренды</dataPath>
+				<field>ЕстьВыкупПредметовАренды</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Комментарий</dataPath>
+				<field>Комментарий</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>БанковскийСчет</dataPath>
+				<field>БанковскийСчет</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Подразделение</dataPath>
+				<field>Подразделение</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Партнер</dataPath>
+				<field>Партнер</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВалютаВзаиморасчетов</dataPath>
+				<field>ВалютаВзаиморасчетов</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаНачалаДействия</dataPath>
+				<field>ДатаНачалаДействия</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ОсновнаяСтатьяОборотов</dataPath>
+				<field>бит_ОсновнаяСтатьяОборотов</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Согласован</dataPath>
+				<field>Согласован</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаОкончанияДействия</dataPath>
+				<field>ДатаОкончанияДействия</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КонтактноеЛицо</dataPath>
+				<field>КонтактноеЛицо</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Контрагент</dataPath>
+				<field>Контрагент</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Организация</dataPath>
+				<field>Организация</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Менеджер</dataPath>
+				<field>Менеджер</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Номер</dataPath>
+				<field>Номер</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_КурсВзаиморасчетов</dataPath>
+				<field>бит_КурсВзаиморасчетов</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Дата</dataPath>
+				<field>Дата</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Статус</dataPath>
+				<field>Статус</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СтатьяДвиженияДенежныхСредств</dataPath>
+				<field>СтатьяДвиженияДенежныхСредств</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ОсновнаяСтатьяОборотовБДР</dataPath>
+				<field>бит_ОсновнаяСтатьяОборотовБДР</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ПредметДоговора</dataPath>
+				<field>бит_ПредметДоговора</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ОписаниеРабот</dataPath>
+				<field>бит_ОписаниеРабот</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_СтавкаНДС</dataPath>
+				<field>бит_СтавкаНДС</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ЦФО</dataPath>
+				<field>бит_ЦФО</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_Проект</dataPath>
+				<field>бит_Проект</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_СуммаНДСВзаиморасчеты</dataPath>
+				<field>бит_СуммаНДСВзаиморасчеты</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_СуммаДоговора</dataPath>
+				<field>бит_СуммаДоговора</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ТипДоговора</dataPath>
+				<field>бит_ТипДоговора</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_НаправлениеДоговора</dataPath>
+				<field>бит_НаправлениеДоговора</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_ПодразделениеОрганизации</dataPath>
+				<field>бит_ПодразделениеОрганизации</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бит_КратностьВзаиморасчетов</dataPath>
+				<field>бит_КратностьВзаиморасчетов</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидДоговора</dataPath>
+				<field>ВидДоговора</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Вид договора</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Балансодержатель</dataPath>
+				<field>Балансодержатель</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЕстьОбеспечительныйПлатеж</dataPath>
+				<field>ЕстьОбеспечительныйПлатеж</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Ответственный</dataPath>
+				<field>Ответственный</field>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ДоговорыАренды.Ссылка КАК Ссылка,
+	ДоговорыАренды.Наименование КАК Наименование,
+	ДоговорыАренды.БанковскийСчет КАК БанковскийСчет,
+	ДоговорыАренды.бит_ДержательДоговора КАК бит_ДержательДоговора,
+	ДоговорыАренды.БанковскийСчетКонтрагента КАК БанковскийСчетКонтрагента,
+	ДоговорыАренды.ВалютаВзаиморасчетов КАК ВалютаВзаиморасчетов,
+	ДоговорыАренды.Комментарий КАК Комментарий,
+	ДоговорыАренды.ДатаНачалаДействия КАК ДатаНачалаДействия,
+	ДоговорыАренды.ДатаОкончанияДействия КАК ДатаОкончанияДействия,
+	ДоговорыАренды.Организация КАК Организация,
+	ДоговорыАренды.Контрагент КАК Контрагент,
+	ДоговорыАренды.Ответственный КАК Менеджер,
+	ДоговорыАренды.Дата КАК Дата,
+	ДоговорыАренды.Номер КАК Номер,
+	ДоговорыАренды.Партнер КАК Партнер,
+	ДоговорыАренды.Подразделение КАК Подразделение,
+	ДоговорыАренды.Согласован КАК Согласован,
+	ДоговорыАренды.Статус КАК Статус,
+	ДоговорыАренды.КонтактноеЛицо КАК КонтактноеЛицо,
+	ДоговорыАренды.СтатьяДвиженияДенежныхСредств КАК СтатьяДвиженияДенежныхСредств,
+	ДоговорыАренды.бит_СостояниеДоговора КАК бит_СостояниеДоговора,
+	ДоговорыАренды.бит_ПредметДоговора КАК бит_ПредметДоговора,
+	ДоговорыАренды.бит_ОписаниеРабот КАК бит_ОписаниеРабот,
+	ДоговорыАренды.бит_ОсновнаяСтатьяОборотов КАК бит_ОсновнаяСтатьяОборотов,
+	ДоговорыАренды.бит_ОсновнаяСтатьяОборотовБДР КАК бит_ОсновнаяСтатьяОборотовБДР,
+	ДоговорыАренды.бит_ЦФО КАК бит_ЦФО,
+	ДоговорыАренды.бит_Проект КАК бит_Проект,
+	ДоговорыАренды.бит_СуммаДоговора КАК бит_СуммаДоговора,
+	ДоговорыАренды.бит_ТипДоговора КАК бит_ТипДоговора,
+	ДоговорыАренды.бит_НаправлениеДоговора КАК бит_НаправлениеДоговора,
+	ДоговорыАренды.бит_ПодразделениеОрганизации КАК бит_ПодразделениеОрганизации,
+	ДоговорыАренды.бит_КурсВзаиморасчетов КАК бит_КурсВзаиморасчетов,
+	ДоговорыАренды.бит_КратностьВзаиморасчетов КАК бит_КратностьВзаиморасчетов,
+	ДоговорыАренды.бит_СтавкаНДС КАК бит_СтавкаНДС,
+	ДоговорыАренды.бит_СуммаНДСВзаиморасчеты КАК бит_СуммаНДСВзаиморасчеты,
+	3 КАК ВидДоговора,
+	ДоговорыАренды.Балансодержатель КАК Балансодержатель,
+	ДоговорыАренды.ЕстьОбеспечительныйПлатеж КАК ЕстьОбеспечительныйПлатеж,
+	ДоговорыАренды.ЕстьВыкупПредметовАренды КАК ЕстьВыкупПредметовАренды
+{ВЫБРАТЬ
+	Ссылка.*,
+	Наименование,
+	БанковскийСчет.*,
+	бит_ДержательДоговора.*,
+	БанковскийСчетКонтрагента.*,
+	ВалютаВзаиморасчетов.*,
+	Комментарий,
+	ДатаНачалаДействия,
+	ДатаОкончанияДействия,
+	Организация.*,
+	Контрагент.*,
+	Менеджер.*,
+	Дата,
+	Номер,
+	Партнер.*,
+	Подразделение.*,
+	Согласован,
+	Статус.*,
+	КонтактноеЛицо.*,
+	СтатьяДвиженияДенежныхСредств.*,
+	бит_СостояниеДоговора.*,
+	бит_ПредметДоговора,
+	бит_ОписаниеРабот,
+	бит_ОсновнаяСтатьяОборотов.*,
+	бит_ОсновнаяСтатьяОборотовБДР.*,
+	бит_ЦФО.*,
+	бит_Проект.*,
+	бит_СуммаДоговора,
+	бит_ТипДоговора.*,
+	бит_НаправлениеДоговора.*,
+	бит_ПодразделениеОрганизации,
+	бит_КурсВзаиморасчетов,
+	бит_КратностьВзаиморасчетов,
+	бит_СтавкаНДС.*,
+	бит_СуммаНДСВзаиморасчеты,
+	ВидДоговора,
+	Балансодержатель.*,
+	ЕстьОбеспечительныйПлатеж,
+	ЕстьВыкупПредметовАренды}
+ИЗ
+	Справочник.ДоговорыАренды КАК ДоговорыАренды
+{ГДЕ
+	ДоговорыАренды.Ссылка.*,
+	ДоговорыАренды.Наименование,
+	ДоговорыАренды.БанковскийСчет.*,
+	ДоговорыАренды.бит_ДержательДоговора.*,
+	ДоговорыАренды.БанковскийСчетКонтрагента.*,
+	ДоговорыАренды.ВалютаВзаиморасчетов.*,
+	ДоговорыАренды.Комментарий,
+	ДоговорыАренды.ДатаНачалаДействия,
+	ДоговорыАренды.ДатаОкончанияДействия,
+	ДоговорыАренды.Организация.*,
+	ДоговорыАренды.Контрагент.*,
+	ДоговорыАренды.Ответственный.*,
+	ДоговорыАренды.Дата,
+	ДоговорыАренды.Номер,
+	ДоговорыАренды.Партнер.*,
+	ДоговорыАренды.Подразделение.*,
+	ДоговорыАренды.Согласован,
+	ДоговорыАренды.Статус.*,
+	ДоговорыАренды.КонтактноеЛицо.*,
+	ДоговорыАренды.СтатьяДвиженияДенежныхСредств.*,
+	ДоговорыАренды.бит_СостояниеДоговора.*,
+	ДоговорыАренды.бит_ПредметДоговора,
+	ДоговорыАренды.бит_ОписаниеРабот,
+	ДоговорыАренды.бит_ОсновнаяСтатьяОборотов.*,
+	ДоговорыАренды.бит_ОсновнаяСтатьяОборотовБДР.*,
+	ДоговорыАренды.бит_ЦФО.*,
+	ДоговорыАренды.бит_Проект.*,
+	ДоговорыАренды.бит_СуммаДоговора,
+	ДоговорыАренды.бит_ТипДоговора.*,
+	ДоговорыАренды.бит_НаправлениеДоговора.*,
+	ДоговорыАренды.бит_ПодразделениеОрганизации,
+	ДоговорыАренды.бит_КурсВзаиморасчетов,
+	ДоговорыАренды.бит_КратностьВзаиморасчетов,
+	ДоговорыАренды.бит_СтавкаНДС.*,
+	ДоговорыАренды.бит_СуммаНДСВзаиморасчеты,
+	(3) КАК ВидДоговора,
+	ДоговорыАренды.Балансодержатель.*,
+	ДоговорыАренды.ЕстьОбеспечительныйПлатеж,
+	ДоговорыАренды.ЕстьВыкупПредметовАренды}</query>
+		</item>
+	</dataSet>
+	<totalField>
+		<dataPath>бит_СуммаДоговора</dataPath>
+		<expression>Сумма(бит_СуммаДоговора)</expression>
+	</totalField>
+	<settingsVariant>
+		<dcsset:name>РеестрДоговоров</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Реестр договоров</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Default</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СистемныеПоля.НомерПоПорядкуВГруппировке</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№ п/п</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>No.</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Ссылка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Дата</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Контрагент</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаОкончанияДействия</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВалютаВзаиморасчетов</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>бит_СуммаДоговора</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>бит_СостояниеДоговора</dcsset:field>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>501dcf82-38f3-4163-9e45-a3bf1c2d97ef</dcsset:userSettingID>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Организация</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>ce1d884f-4efc-4fe4-b7bd-38acf97dfaa7</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">бит_ВключатьВРеестрДоговоров</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>158e3f70-e49a-427b-850f-3130bbabbbf6</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реестр договоров</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Registry of Contracts</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ВидДоговора</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Организация</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

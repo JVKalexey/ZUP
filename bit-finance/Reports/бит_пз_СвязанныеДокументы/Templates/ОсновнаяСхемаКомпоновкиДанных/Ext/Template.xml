@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СвязанныйДокумент</dataPath>
+			<field>СвязанныйДокумент</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связанный документ</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>related documents</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ЗаказПоставщику</v8:Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.бит_пз_ЗаявкаНаЗатраты</v8:Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.бит_пз_СводнаяЗаявкаНаЗатраты</v8:Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.бит_кзн_ЗаявкаНаРасходованиеСредств</v8:Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.бит_пз_ОтражениеФактаЗатрат</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Документ</dataPath>
+			<field>Документ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>document</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Документ.Ссылка КАК Документ,
+	ОтражениеФактаЗатрат.Ссылка КАК СвязанныйДокумент
+ИЗ
+	Документ.бит_пз_ЗаявкаНаЗатраты КАК Документ
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.бит_пз_ОтражениеФактаЗатрат КАК ОтражениеФактаЗатрат
+		ПО Документ.Ссылка = ОтражениеФактаЗатрат.ДокументОснование
+
+СГРУППИРОВАТЬ ПО
+	Документ.Ссылка,
+	ОтражениеФактаЗатрат.Ссылка
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Документ.Ссылка,
+	ТЧСводнаяЗаявкаНаЗатраты.Ссылка
+ИЗ
+	Документ.бит_пз_ЗаявкаНаЗатраты КАК Документ
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.бит_пз_СводнаяЗаявкаНаЗатраты.ЗаявкиНаЗатраты КАК ТЧСводнаяЗаявкаНаЗатраты
+		ПО Документ.Ссылка = ТЧСводнаяЗаявкаНаЗатраты.ЗаявкаНаЗатраты
+
+СГРУППИРОВАТЬ ПО
+	Документ.Ссылка,
+	ТЧСводнаяЗаявкаНаЗатраты.Ссылка
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Документ.Ссылка,
+	ОтражениеФактаЗатрат.Ссылка
+ИЗ
+	Документ.бит_пз_СводнаяЗаявкаНаЗатраты КАК Документ
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.бит_пз_ОтражениеФактаЗатрат КАК ОтражениеФактаЗатрат
+		ПО Документ.Ссылка = ОтражениеФактаЗатрат.ДокументОснование
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Документ.Ссылка,
+	ЗаявкаНаРасходованиеСредств.Ссылка
+ИЗ
+	Документ.бит_пз_ЗаявкаНаЗатраты КАК Документ
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.бит_кзн_ЗаявкаНаРасходованиеСредств КАК ЗаявкаНаРасходованиеСредств
+		ПО Документ.Ссылка = ЗаявкаНаРасходованиеСредств.ДокументОснование
+ГДЕ
+	ТИПЗНАЧЕНИЯ(ЗаявкаНаРасходованиеСредств.ДокументОснование) = ТИП(Документ.бит_пз_ЗаявкаНаЗатраты)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Документ.Ссылка,
+	ЗаявкаНаРасходованиеСредств.Ссылка
+ИЗ
+	Документ.бит_пз_СводнаяЗаявкаНаЗатраты КАК Документ
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.бит_кзн_ЗаявкаНаРасходованиеСредств КАК ЗаявкаНаРасходованиеСредств
+		ПО Документ.Ссылка = ЗаявкаНаРасходованиеСредств.ДокументОснование
+ГДЕ
+	ТИПЗНАЧЕНИЯ(ЗаявкаНаРасходованиеСредств.ДокументОснование) = ТИП(Документ.бит_пз_СводнаяЗаявкаНаЗатраты)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Документ.Ссылка,
+	бит_ДополнительныеАналитики.Объект
+ИЗ
+	Документ.бит_пз_ЗаявкаНаЗатраты КАК Документ
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.бит_ДополнительныеАналитики КАК бит_ДополнительныеАналитики
+		ПО Документ.Ссылка = бит_ДополнительныеАналитики.ЗначениеАналитики
+ГДЕ
+	ТИПЗНАЧЕНИЯ(бит_ДополнительныеАналитики.ЗначениеАналитики) = ТИП(Документ.бит_пз_ЗаявкаНаЗатраты)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Документ.Ссылка,
+	бит_ДополнительныеАналитики.Объект
+ИЗ
+	Документ.бит_пз_СводнаяЗаявкаНаЗатраты КАК Документ
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.бит_ДополнительныеАналитики КАК бит_ДополнительныеАналитики
+		ПО Документ.Ссылка = бит_ДополнительныеАналитики.ЗначениеАналитики
+ГДЕ
+	ТИПЗНАЧЕНИЯ(бит_ДополнительныеАналитики.ЗначениеАналитики) = ТИП(Документ.бит_пз_СводнаяЗаявкаНаЗатраты)</query>
+	</dataSet>
+	<parameter>
+		<name>Документ</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Документ</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>document</v8:content>
+			</v8:item>
+		</title>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СвязанныйДокумент</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Документ</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>66c77b01-a0c3-4b9e-81c8-c89be72d0277</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Документ</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>СвязанныйДокумент</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

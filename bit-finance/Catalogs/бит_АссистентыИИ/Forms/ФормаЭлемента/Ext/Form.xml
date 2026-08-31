@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНаименованиеМодель" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование и модель</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНаименованиеМодельРасширеннаяПодсказка" id="14"/>
+			<ChildItems>
+				<InputField name="Наименование" id="1">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Модель" id="4">
+					<DataPath>Объект.Модель</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="МодельКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="МодельРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<TrackBarField name="Температура" id="15">
+			<DataPath>Объект.Температура</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уровень креатива</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Чем выше значение, тем более стебень свободы, которую будет использовать в ответах ассистент</v8:content>
+				</v8:item>
+			</ToolTip>
+			<MaxValue>10</MaxValue>
+			<LargeStep>2</LargeStep>
+			<MarkingStep>2</MarkingStep>
+			<ContextMenu name="ТемператураКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="ТемператураРасширеннаяПодсказка" id="17"/>
+		</TrackBarField>
+		<UsualGroup name="ГруппаОписание" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОписаниеРасширеннаяПодсказка" id="19"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаАватарка" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа аватарка</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаАватаркаРасширеннаяПодсказка" id="26"/>
+					<ChildItems>
+						<PictureDecoration name="АватарАссистента" id="22">
+							<Width>20</Width>
+							<Height>6</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Аватар ассистента</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<PictureSize>Proportionally</PictureSize>
+							<NonselectedPictureText>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выберите аватар</v8:content>
+								</v8:item>
+							</NonselectedPictureText>
+							<Border width="1">
+								<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+							</Border>
+							<ContextMenu name="АватарАссистентаКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="АватарАссистентаРасширеннаяПодсказка" id="24"/>
+							<Events>
+								<Event name="Click">АватарАссистентаНажатие</Event>
+							</Events>
+						</PictureDecoration>
+						<UsualGroup name="ГруппаВыборАватара" id="27">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выберите аватар</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>PopUp</Behavior>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<ExtendedTooltip name="ГруппаВыборАватараРасширеннаяПодсказка" id="28"/>
+							<ChildItems>
+								<PictureDecoration name="АватарАссистента1" id="29">
+									<Width>20</Width>
+									<Height>6</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Аватар ассистента</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<PictureSize>Proportionally</PictureSize>
+									<Picture>
+										<xr:Ref>CommonPicture.бит_Ассистент1</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Border width="1">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+									</Border>
+									<ContextMenu name="АватарАссистента1КонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="АватарАссистента1РасширеннаяПодсказка" id="31"/>
+									<Events>
+										<Event name="Click">ВыборАватара</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="АватарАссистента2" id="32">
+									<Width>20</Width>
+									<Height>6</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Аватар ассистента</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<PictureSize>Proportionally</PictureSize>
+									<Picture>
+										<xr:Ref>CommonPicture.бит_Ассистент2</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Border width="1">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+									</Border>
+									<ContextMenu name="АватарАссистента2КонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="АватарАссистента2РасширеннаяПодсказка" id="34"/>
+									<Events>
+										<Event name="Click">ВыборАватара</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="АватарАссистента3" id="35">
+									<Width>20</Width>
+									<Height>6</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Аватар ассистента</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<PictureSize>Proportionally</PictureSize>
+									<Picture>
+										<xr:Ref>CommonPicture.бит_Ассистент3</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Border width="1">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+									</Border>
+									<ContextMenu name="АватарАссистента3КонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="АватарАссистента3РасширеннаяПодсказка" id="37"/>
+									<Events>
+										<Event name="Click">ВыборАватара</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="АватарРобота" id="38">
+									<Width>20</Width>
+									<Height>6</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Аватар робота</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<PictureSize>Proportionally</PictureSize>
+									<Picture>
+										<xr:Ref>CommonPicture.бит_Робот</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Border width="1">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+									</Border>
+									<ContextMenu name="АватарРоботаКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="АватарРоботаРасширеннаяПодсказка" id="40"/>
+									<Events>
+										<Event name="Click">ВыборАватара</Event>
+									</Events>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<Pages name="СтраницыОписания" id="62">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницыОписанияРасширеннаяПодсказка" id="63"/>
+					<ChildItems>
+						<Page name="СтраницаИнструкции" id="64">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Инструкции</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="СтраницаИнструкцииРасширеннаяПодсказка" id="65"/>
+							<ChildItems>
+								<InputField name="Идентификация" id="7">
+									<DataPath>Объект.Идентификация</DataPath>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MultiLine>true</MultiLine>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ИдентификацияКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="ИдентификацияРасширеннаяПодсказка" id="9"/>
+								</InputField>
+								<InputField name="Инструкции" id="10">
+									<DataPath>Объект.Инструкции</DataPath>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MultiLine>true</MultiLine>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ИнструкцииКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="ИнструкцииРасширеннаяПодсказка" id="12"/>
+								</InputField>
+							</ChildItems>
+						</Page>
+						<Page name="СтраницаСлужебныеПромпты" id="66">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Служебные промпты</v8:content>
+								</v8:item>
+							</Title>
+							<TitleDataPath>Объект.СлужебныеПромпты.RowsCount</TitleDataPath>
+							<ExtendedTooltip name="СтраницаСлужебныеПромптыРасширеннаяПодсказка" id="67"/>
+							<ChildItems>
+								<Table name="СлужебныеПромпты" id="41">
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Объект.СлужебныеПромпты</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="СлужебныеПромптыКонтекстноеМеню" id="42"/>
+									<AutoCommandBar name="СлужебныеПромптыКоманднаяПанель" id="43"/>
+									<ExtendedTooltip name="СлужебныеПромптыРасширеннаяПодсказка" id="44"/>
+									<SearchStringAddition name="СлужебныеПромптыСтрокаПоиска" id="45">
+										<AdditionSource>
+											<Item>СлужебныеПромпты</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СлужебныеПромптыСтрокаПоискаКонтекстноеМеню" id="46"/>
+										<ExtendedTooltip name="СлужебныеПромптыСтрокаПоискаРасширеннаяПодсказка" id="47"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="СлужебныеПромптыСостояниеПросмотра" id="48">
+										<AdditionSource>
+											<Item>СлужебныеПромпты</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СлужебныеПромптыСостояниеПросмотраКонтекстноеМеню" id="49"/>
+										<ExtendedTooltip name="СлужебныеПромптыСостояниеПросмотраРасширеннаяПодсказка" id="50"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="СлужебныеПромптыУправлениеПоиском" id="51">
+										<AdditionSource>
+											<Item>СлужебныеПромпты</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="СлужебныеПромптыУправлениеПоискомКонтекстноеМеню" id="52"/>
+										<ExtendedTooltip name="СлужебныеПромптыУправлениеПоискомРасширеннаяПодсказка" id="53"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="СлужебныеПромптыНомерСтроки" id="54">
+											<DataPath>Объект.СлужебныеПромпты.LineNumber</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СлужебныеПромптыНомерСтрокиКонтекстноеМеню" id="55"/>
+											<ExtendedTooltip name="СлужебныеПромптыНомерСтрокиРасширеннаяПодсказка" id="56"/>
+										</LabelField>
+										<InputField name="СлужебныеПромптыПромпт" id="57">
+											<DataPath>Объект.СлужебныеПромпты.Промпт</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="СлужебныеПромптыПромптКонтекстноеМеню" id="58"/>
+											<ExtendedTooltip name="СлужебныеПромптыПромптРасширеннаяПодсказка" id="59"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.бит_АссистентыИИ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,3293 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Субконто1</dataPath>
+			<field>Субконто1</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Субконто 1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Subconto 1</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Субконто2</dataPath>
+			<field>Субконто2</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Субконто 2</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Subconto 2</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Субконто3</dataPath>
+			<field>Субконто3</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Субконто 3</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Subconto 3</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Субконто4</dataPath>
+			<field>Субконто4</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Субконто 4</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Subconto 4</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Валюта</dataPath>
+			<field>Валюта</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Источник</dataPath>
+			<field>Источник</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодПриемника</dataPath>
+			<field>ПериодПриемника</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Приемник</dataPath>
+			<field>Приемник</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СубконтоИсточника1</dataPath>
+			<field>СубконтоИсточника1</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СубконтоИсточника2</dataPath>
+			<field>СубконтоИсточника2</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СубконтоИсточника3</dataPath>
+			<field>СубконтоИсточника3</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СубконтоИсточника4</dataPath>
+			<field>СубконтоИсточника4</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СубконтоИсточникаДт1</dataPath>
+			<field>СубконтоИсточникаДт1</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СубконтоИсточникаДт2</dataPath>
+			<field>СубконтоИсточникаДт2</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СубконтоИсточникаДт3</dataPath>
+			<field>СубконтоИсточникаДт3</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СубконтоИсточникаДт4</dataPath>
+			<field>СубконтоИсточникаДт4</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СубконтоИсточникаКт1</dataPath>
+			<field>СубконтоИсточникаКт1</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СубконтоИсточникаКт2</dataPath>
+			<field>СубконтоИсточникаКт2</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СубконтоИсточникаКт3</dataPath>
+			<field>СубконтоИсточникаКт3</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СубконтоИсточникаКт4</dataPath>
+			<field>СубконтоИсточникаКт4</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СубконтоПриемника1</dataPath>
+			<field>СубконтоПриемника1</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СубконтоПриемника2</dataPath>
+			<field>СубконтоПриемника2</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СубконтоПриемника3</dataPath>
+			<field>СубконтоПриемника3</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СубконтоПриемника4</dataPath>
+			<field>СубконтоПриемника4</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СубконтоПриемникаДт1</dataPath>
+			<field>СубконтоПриемникаДт1</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СубконтоПриемникаДт2</dataPath>
+			<field>СубконтоПриемникаДт2</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СубконтоПриемникаДт3</dataPath>
+			<field>СубконтоПриемникаДт3</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СубконтоПриемникаДт4</dataPath>
+			<field>СубконтоПриемникаДт4</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СубконтоПриемникаКт1</dataPath>
+			<field>СубконтоПриемникаКт1</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СубконтоПриемникаКт2</dataPath>
+			<field>СубконтоПриемникаКт2</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СубконтоПриемникаКт3</dataPath>
+			<field>СубконтоПриемникаКт3</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СубконтоПриемникаКт4</dataPath>
+			<field>СубконтоПриемникаКт4</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИсточникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокДтИсточник</dataPath>
+			<field>СуммаРеглКонечныйОстатокДтИсточник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дебет</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Debit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>СуммаРегл_Дт_Источник</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПриемникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокДтПриемник</dataPath>
+			<field>СуммаРеглКонечныйОстатокДтПриемник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дебет</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Debit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>СуммаРегл_Дт_Приемник</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИсточникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокКтИсточник</dataPath>
+			<field>СуммаРеглКонечныйОстатокКтИсточник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кредит</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Credit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>СуммаРегл_Кт_Источник</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПриемникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокКтПриемник</dataPath>
+			<field>СуммаРеглКонечныйОстатокКтПриемник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кредит</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Credit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>СуммаРегл_Кт_Приемник</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИсточникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокДтИсточник</dataPath>
+			<field>СуммаРеглНачальныйОстатокДтИсточник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дебет</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Debit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>СуммаРегл_Дт_Источник</dcscom:balanceGroupName>
+				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПриемникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокДтПриемник</dataPath>
+			<field>СуммаРеглНачальныйОстатокДтПриемник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дебет</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Debit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>СуммаРегл_Дт_Приемник</dcscom:balanceGroupName>
+				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИсточникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокКтИсточник</dataPath>
+			<field>СуммаРеглНачальныйОстатокКтИсточник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кредит</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Credit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>СуммаРегл_Кт_Источник</dcscom:balanceGroupName>
+				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПриемникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокКтПриемник</dataPath>
+			<field>СуммаРеглНачальныйОстатокКтПриемник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кредит</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Credit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>СуммаРегл_Кт_Приемник</dcscom:balanceGroupName>
+				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОборотыРегл.СуммаРеглОборотДт</dataPath>
+			<field>СуммаРеглОборотДт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дебет</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Debit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОборотыРегл.СуммаРеглОборотКт</dataPath>
+			<field>СуммаРеглОборотКт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кредит</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Credit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СчетИсточника</dataPath>
+			<field>СчетИсточника</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Счет источника</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СчетИсточникаДт</dataPath>
+			<field>СчетИсточникаДт</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СчетИсточникаКт</dataPath>
+			<field>СчетИсточникаКт</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СчетПриемника</dataPath>
+			<field>СчетПриемника</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Счет приемника</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СчетПриемникаДт</dataPath>
+			<field>СчетПриемникаДт</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СчетПриемникаКт</dataPath>
+			<field>СчетПриемникаКт</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипПроводки</dataPath>
+			<field>ТипПроводки</field>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>ИсточникНачальныеОстаткиРегл</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Источник. Начальные остатки (регл)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Source. The initial residues (Regul)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>ИсточникКонечныеОстаткиРегл</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Источник. Конечные остатки (регл)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Source. The final residues (Regul)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>ОборотыРегл</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обороты (регл)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Turnover (Regul)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИсточникКонечныеОстаткиУпр.СуммаУпрКонечныйОстатокДтИсточник</dataPath>
+			<field>СуммаУпрКонечныйОстатокДтИсточник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дебет</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Debit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>СуммаУпр_Дт_Источник</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПриемникКонечныеОстаткиУпр.СуммаУпрКонечныйОстатокДтПриемник</dataPath>
+			<field>СуммаУпрКонечныйОстатокДтПриемник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дебет</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Debit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>СуммаУпр_Дт_Приемник</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИсточникКонечныеОстаткиУпр.СуммаУпрКонечныйОстатокКтИсточник</dataPath>
+			<field>СуммаУпрКонечныйОстатокКтИсточник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кредит</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Credit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>СуммаУпр_Кт_Источник</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПриемникКонечныеОстаткиУпр.СуммаУпрКонечныйОстатокКтПриемник</dataPath>
+			<field>СуммаУпрКонечныйОстатокКтПриемник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кредит</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Credit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>СуммаУпр_Кт_Приемник</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИсточникНачальныеОстаткиУпр.СуммаУпрНачальныйОстатокДтИсточник</dataPath>
+			<field>СуммаУпрНачальныйОстатокДтИсточник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дебет</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Debit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>СуммаУпр_Дт_Источник</dcscom:balanceGroupName>
+				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПриемникНачальныеОстаткиУпр.СуммаУпрНачальныйОстатокДтПриемник</dataPath>
+			<field>СуммаУпрНачальныйОстатокДтПриемник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дебет</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Debit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>СуммаУпр_Дт_Приемник</dcscom:balanceGroupName>
+				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИсточникНачальныеОстаткиУпр.СуммаУпрНачальныйОстатокКтИсточник</dataPath>
+			<field>СуммаУпрНачальныйОстатокКтИсточник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кредит</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Credit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>СуммаУпр_Кт_Источник</dcscom:balanceGroupName>
+				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПриемникНачальныеОстаткиУпр.СуммаУпрНачальныйОстатокКтПриемник</dataPath>
+			<field>СуммаУпрНачальныйОстатокКтПриемник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кредит</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Credit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>СуммаУпр_Кт_Приемник</dcscom:balanceGroupName>
+				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОборотыУпр.СуммаУпрОборотДт</dataPath>
+			<field>СуммаУпрОборотДт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дебет</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Debit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОборотыУпр.СуммаУпрОборотКт</dataPath>
+			<field>СуммаУпрОборотКт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кредит</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Credit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>ПриемникНачальныеОстаткиРегл</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приемник. Начальные остатки (регл)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Receiver. The initial residues (Regul)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>ПриемникКонечныеОстаткиРегл</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приемник. Конечные остатки (регл)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Receiver. The final residues (Regul)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>ИсточникНачальныеОстаткиУпр</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Источник. Начальные остатки (упр)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Source. The initial residues (Control)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>ИсточникКонечныеОстаткиУпр</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Источник. Конечные остатки (упр)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Source. The final residues (Exercise)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>ОборотыУпр</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обороты (упр)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Turnover (Exercise)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>ПриемникНачальныеОстаткиУпр</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приемник. Начальные остатки (упр)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Receiver. The initial residues (Control)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>ПриемникКонечныеОстаткиУпр</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приемник. Конечные остатки (упр)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Receiver. The final residues (Exercise)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Регистратор</dataPath>
+			<field>Регистратор</field>
+			<role>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИсточникКонечныеОстаткиМу.СуммаМуКонечныйОстатокДтИсточник</dataPath>
+			<field>СуммаМуКонечныйОстатокДтИсточник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дебет</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Debit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>СуммаМу_Дт_Источник</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПриемникКонечныеОстаткиМу.СуммаМуКонечныйОстатокДтПриемник</dataPath>
+			<field>СуммаМуКонечныйОстатокДтПриемник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дебет</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Debit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>СуммаМу_Дт_Приемник</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИсточникКонечныеОстаткиМу.СуммаМуКонечныйОстатокКтИсточник</dataPath>
+			<field>СуммаМуКонечныйОстатокКтИсточник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кредит</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Credit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>СуммаМу_Кт_Источник</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПриемникКонечныеОстаткиМу.СуммаМуКонечныйОстатокКтПриемник</dataPath>
+			<field>СуммаМуКонечныйОстатокКтПриемник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кредит</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Credit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>СуммаМу_Кт_Приемник</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИсточникНачальныеОстаткиМу.СуммаМуНачальныйОстатокДтИсточник</dataPath>
+			<field>СуммаМуНачальныйОстатокДтИсточник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дебет</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Debit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>СуммаМу_Дт_Источник</dcscom:balanceGroupName>
+				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПриемникНачальныеОстаткиМу.СуммаМуНачальныйОстатокДтПриемник</dataPath>
+			<field>СуммаМуНачальныйОстатокДтПриемник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дебет</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Debit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>СуммаМу_Дт_Приемник</dcscom:balanceGroupName>
+				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИсточникНачальныеОстаткиМу.СуммаМуНачальныйОстатокКтИсточник</dataPath>
+			<field>СуммаМуНачальныйОстатокКтИсточник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кредит</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Credit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>СуммаМу_Кт_Источник</dcscom:balanceGroupName>
+				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПриемникНачальныеОстаткиМу.СуммаМуНачальныйОстатокКтПриемник</dataPath>
+			<field>СуммаМуНачальныйОстатокКтПриемник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кредит</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Credit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>СуммаМу_Кт_Приемник</dcscom:balanceGroupName>
+				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОборотыМу.СуммаМуОборотДт</dataPath>
+			<field>СуммаМУОборотДт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дебет</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Debit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОборотыМу.СуммаМуОборотКт</dataPath>
+			<field>СуммаМУОборотКт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кредит</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Credit</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>ИсточникНачальныеОстаткиМу</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Источник. Начальные остатки (му)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Source. Opening balances (mu)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>ИсточникКонечныеОстаткиМу</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Источник. Конечные остатки (му)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Source. Finite residues (mu)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>ПриемникНачальныеОстаткиМу</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приемник. Начальные остатки (му)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Receiver. Opening balances (mu)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>ПриемникКонечныеОстаткиМу</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приемник. Конечные остатки (му)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Receiver. Finite residues (mu)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>ОборотыМу</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обороты (му)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Turnover (mu)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КорСчет</dataPath>
+			<field>КорСчет</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КорСубконто1</dataPath>
+			<field>КорСубконто1</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кор. субконто 1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Cor. subconto 1</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КорСубконто2</dataPath>
+			<field>КорСубконто2</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кор. субконто 2</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Cor. subconto 2</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КорСубконто3</dataPath>
+			<field>КорСубконто3</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кор. субконто 3</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Cor. subconto 3</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КорСубконто4</dataPath>
+			<field>КорСубконто4</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кор. субконто 4</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Cor. subconto 4</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВалютаКор</dataPath>
+			<field>ВалютаКор</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПодразделениеКор</dataPath>
+			<field>ПодразделениеКор</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериметрКонсолидации</dataPath>
+			<field>ПериметрКонсолидации</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Счет</dataPath>
+			<field>Счет</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НаправлениеДеятельности</dataPath>
+			<field>НаправлениеДеятельности</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НаправлениеДеятельностиКор</dataPath>
+			<field>НаправлениеДеятельностиКор</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	бит_му_СоставПериметровКонсолидацииСрезПоследних.Организация КАК Организация
+ПОМЕСТИТЬ СоставОрганизаций
+ИЗ
+	РегистрСведений.бит_му_СоставПериметровКонсолидации.СрезПоследних(&amp;КонецПериода {(&amp;КонецПериода)}, ПериметрКонсолидации = &amp;Организация) КАК бит_му_СоставПериметровКонсолидацииСрезПоследних
+ГДЕ
+	(бит_му_СоставПериметровКонсолидацииСрезПоследних.ДатаОкончания &gt;= &amp;КонецПериода
+			ИЛИ бит_му_СоставПериметровКонсолидацииСрезПоследних.ДатаОкончания = ДАТАВРЕМЯ(1, 1, 1))
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Организации.Ссылка
+ИЗ
+	Справочник.Организации КАК Организации
+ГДЕ
+	ВЫБОР
+			КОГДА &amp;ПоВсемОрганизациям
+				ТОГДА ИСТИНА
+			ИНАЧЕ Организации.Ссылка = &amp;Организация
+		КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+// Начало.ЗапросПоИсточнику
+// ВРЕМТАБЛ_2 - РегистрИсточникОстатки
+ВЫБРАТЬ
+	РегистрИсточникОстаткиПереопределяемый.Организация КАК Организация,
+	РегистрИсточникОстаткиПереопределяемый.Счет КАК СчетИсточникаВТ,
+	ЕСТЬNULL(РегистрИсточникОстаткиПереопределяемый.Субконто1, НЕОПРЕДЕЛЕНО) КАК Субконто1,
+	ЕСТЬNULL(РегистрИсточникОстаткиПереопределяемый.Субконто2, НЕОПРЕДЕЛЕНО) КАК Субконто2,
+	ЕСТЬNULL(РегистрИсточникОстаткиПереопределяемый.Субконто3, НЕОПРЕДЕЛЕНО) КАК Субконто3,
+	РегистрИсточникОстаткиПереопределяемый.СуммаНачальныйОстатокДт КАК СуммаРеглНачальныйОстатокДт,
+	РегистрИсточникОстаткиПереопределяемый.СуммаНачальныйОстатокКт КАК СуммаРеглНачальныйОстатокКт,
+	РегистрИсточникОстаткиПереопределяемый.СуммаКонечныйОстатокДт КАК СуммаРеглКонечныйОстатокДт,
+	РегистрИсточникОстаткиПереопределяемый.СуммаКонечныйОстатокКт КАК СуммаРеглКонечныйОстатокКт
+ПОМЕСТИТЬ РегистрИсточникОстатки
+ИЗ
+	РегистрБухгалтерии.Хозрасчетный.ОстаткиИОбороты(
+			&amp;НачалоПериода,
+			&amp;КонецПериода,
+			Период,
+			,
+			,
+			,
+			Организация В
+				(ВЫБРАТЬ
+					СО.Организация
+				ИЗ
+					СоставОрганизаций КАК СО)) КАК РегистрИсточникОстаткиПереопределяемый
+;
+
+////////////////////////////////////////////////////////////////////////////////
+// ВРЕМТАБЛ_3 - РегистрИсточникОбороты
+ВЫБРАТЬ
+	РегистрИсточникОборотыПереопределяемый.Организация КАК Организация,
+	РегистрИсточникОборотыПереопределяемый.Регистратор КАК Регистратор,
+	РегистрИсточникОборотыПереопределяемый.Счет КАК Счет,
+	ЕСТЬNULL(РегистрИсточникОборотыПереопределяемый.Субконто1, НЕОПРЕДЕЛЕНО) КАК Субконто1,
+	ЕСТЬNULL(РегистрИсточникОборотыПереопределяемый.Субконто2, НЕОПРЕДЕЛЕНО) КАК Субконто2,
+	ЕСТЬNULL(РегистрИсточникОборотыПереопределяемый.Субконто3, НЕОПРЕДЕЛЕНО) КАК Субконто3,
+	РегистрИсточникОборотыПереопределяемый.СуммаОборотДт КАК СуммаРеглОборотДт,
+	РегистрИсточникОборотыПереопределяемый.СуммаОборотКт КАК СуммаРеглОборотКт
+ПОМЕСТИТЬ РегистрИсточникОбороты
+ИЗ
+	РегистрБухгалтерии.Хозрасчетный.Обороты(
+			&amp;НачалоПериода,
+			&amp;КонецПериода,
+			Регистратор,
+			,
+			,
+			Организация В
+				(ВЫБРАТЬ
+					СО.Организация
+				ИЗ
+					СоставОрганизаций КАК СО),
+			,
+			) КАК РегистрИсточникОборотыПереопределяемый
+// Конец.ЗапросПоИсточнику
+ИНДЕКСИРОВАТЬ ПО
+	Организация,
+	Счет,
+	Регистратор
+;
+
+////////////////////////////////////////////////////////////////////////////////
+// Начало.ЗапросПоПриемнику
+// ВРЕМТАБЛ_4 - РегистрПриемникОстатки
+ВЫБРАТЬ
+	РегистрПриемникОстаткиПереопределяемый.Организация КАК Организация,
+	РегистрПриемникОстаткиПереопределяемый.Счет КАК СчетПриемникаВТ,
+	ЕСТЬNULL(РегистрПриемникОстаткиПереопределяемый.Субконто1, НЕОПРЕДЕЛЕНО) КАК Субконто1,
+	ЕСТЬNULL(РегистрПриемникОстаткиПереопределяемый.Субконто2, НЕОПРЕДЕЛЕНО) КАК Субконто2,
+	ЕСТЬNULL(РегистрПриемникОстаткиПереопределяемый.Субконто3, НЕОПРЕДЕЛЕНО) КАК Субконто3,
+	НЕОПРЕДЕЛЕНО КАК Субконто4,
+	РегистрПриемникОстаткиПереопределяемый.СуммаРеглНачальныйОстатокДт КАК СуммаРеглНачальныйОстатокДт,
+	РегистрПриемникОстаткиПереопределяемый.СуммаРеглНачальныйОстатокКт КАК СуммаРеглНачальныйОстатокКт,
+	РегистрПриемникОстаткиПереопределяемый.СуммаРеглКонечныйОстатокДт КАК СуммаРеглКонечныйОстатокДт,
+	РегистрПриемникОстаткиПереопределяемый.СуммаРеглКонечныйОстатокКт КАК СуммаРеглКонечныйОстатокКт,
+	РегистрПриемникОстаткиПереопределяемый.СуммаУпрНачальныйОстатокДт КАК СуммаУпрНачальныйОстатокДт,
+	РегистрПриемникОстаткиПереопределяемый.СуммаУпрНачальныйОстатокКт КАК СуммаУпрНачальныйОстатокКт,
+	РегистрПриемникОстаткиПереопределяемый.СуммаУпрКонечныйОстатокДт КАК СуммаУпрКонечныйОстатокДт,
+	РегистрПриемникОстаткиПереопределяемый.СуммаУпрКонечныйОстатокКт КАК СуммаУпрКонечныйОстатокКт,
+	РегистрПриемникОстаткиПереопределяемый.СуммаМУНачальныйОстатокДт КАК СуммаМУНачальныйОстатокДт,
+	РегистрПриемникОстаткиПереопределяемый.СуммаМУНачальныйОстатокКт КАК СуммаМУНачальныйОстатокКт,
+	РегистрПриемникОстаткиПереопределяемый.СуммаМУКонечныйОстатокДт КАК СуммаМУКонечныйОстатокДт,
+	РегистрПриемникОстаткиПереопределяемый.СуммаМУКонечныйОстатокКт КАК СуммаМУКонечныйОстатокКт
+ПОМЕСТИТЬ РегистрПриемникОстатки
+ИЗ
+	РегистрБухгалтерии.бит_Дополнительный_2.ОстаткиИОбороты(
+			&amp;НачалоПериодаПриемника,
+			&amp;КонецПериодаПриемника,
+			Период,
+			,
+			,
+			,
+			Организация В
+				(ВЫБРАТЬ
+					СО.Организация
+				ИЗ
+					СоставОрганизаций КАК СО)) КАК РегистрПриемникОстаткиПереопределяемый
+;
+
+////////////////////////////////////////////////////////////////////////////////
+// ВРЕМТАБЛ_5 - РегистрПриемникОбороты
+ВЫБРАТЬ
+	РегистрПриемникОборотыПереопределяемый.Организация КАК Организация,
+	РегистрПриемникОборотыПереопределяемый.Регистратор КАК Регистратор,
+	РегистрПриемникОборотыПереопределяемый.Счет КАК Счет,
+	ЕСТЬNULL(РегистрПриемникОборотыПереопределяемый.Субконто1, НЕОПРЕДЕЛЕНО) КАК Субконто1,
+	ЕСТЬNULL(РегистрПриемникОборотыПереопределяемый.Субконто2, НЕОПРЕДЕЛЕНО) КАК Субконто2,
+	ЕСТЬNULL(РегистрПриемникОборотыПереопределяемый.Субконто3, НЕОПРЕДЕЛЕНО) КАК Субконто3,
+	НЕОПРЕДЕЛЕНО КАК Субконто4,
+	РегистрПриемникОборотыПереопределяемый.СуммаРеглОборотДт КАК СуммаРеглОборотДт,
+	РегистрПриемникОборотыПереопределяемый.СуммаРеглОборотКт КАК СуммаРеглОборотКт,
+	РегистрПриемникОборотыПереопределяемый.СуммаУпрОборотДт КАК СуммаУпрОборотДт,
+	РегистрПриемникОборотыПереопределяемый.СуммаУпрОборотКт КАК СуммаУпрОборотКт,
+	РегистрПриемникОборотыПереопределяемый.СуммаМУОборотДт КАК СуммаМУОборотДт,
+	РегистрПриемникОборотыПереопределяемый.СуммаМУОборотКт КАК СуммаМУОборотКт
+ПОМЕСТИТЬ РегистрПриемникОбороты
+ИЗ
+	РегистрБухгалтерии.бит_Дополнительный_2.Обороты(
+			&amp;НачалоПериодаПриемника,
+			&amp;КонецПериодаПриемника,
+			Регистратор,
+			,
+			,
+			Организация В
+				(ВЫБРАТЬ
+					СО.Организация
+				ИЗ
+					СоставОрганизаций КАК СО),
+			,
+			) КАК РегистрПриемникОборотыПереопределяемый
+// Конец.ЗапросПоПриемнику
+ИНДЕКСИРОВАТЬ ПО
+	Организация
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СоответствиеОборотовПереопределяемый.Регистратор КАК Регистратор,
+	СоответствиеОборотовПереопределяемый.Организация КАК Организация,
+	СоответствиеОборотовПереопределяемый.СчетИсточникаДт КАК СчетИсточникаДт,
+	СоответствиеОборотовПереопределяемый.СчетИсточникаКт КАК СчетИсточникаКт,
+	СоответствиеОборотовПереопределяемый.СчетПриемникаДт КАК СчетПриемникаДт,
+	СоответствиеОборотовПереопределяемый.СчетПриемникаКт КАК СчетПриемникаКт,
+	СоответствиеОборотовПереопределяемый.СубконтоИсточникаДт1 КАК СубконтоИсточникаДт1,
+	СоответствиеОборотовПереопределяемый.СубконтоИсточникаДт2 КАК СубконтоИсточникаДт2,
+	СоответствиеОборотовПереопределяемый.СубконтоИсточникаДт3 КАК СубконтоИсточникаДт3,
+	СоответствиеОборотовПереопределяемый.СубконтоИсточникаДт4 КАК СубконтоИсточникаДт4,
+	СоответствиеОборотовПереопределяемый.СубконтоИсточникаКт1 КАК СубконтоИсточникаКт1,
+	СоответствиеОборотовПереопределяемый.СубконтоИсточникаКт2 КАК СубконтоИсточникаКт2,
+	СоответствиеОборотовПереопределяемый.СубконтоИсточникаКт3 КАК СубконтоИсточникаКт3,
+	СоответствиеОборотовПереопределяемый.СубконтоИсточникаКт4 КАК СубконтоИсточникаКт4,
+	СоответствиеОборотовПереопределяемый.СубконтоПриемникаДт1 КАК СубконтоПриемникаДт1,
+	СоответствиеОборотовПереопределяемый.СубконтоПриемникаДт2 КАК СубконтоПриемникаДт2,
+	СоответствиеОборотовПереопределяемый.СубконтоПриемникаДт3 КАК СубконтоПриемникаДт3,
+	СоответствиеОборотовПереопределяемый.СубконтоПриемникаДт4 КАК СубконтоПриемникаДт4,
+	СоответствиеОборотовПереопределяемый.СубконтоПриемникаКт1 КАК СубконтоПриемникаКт1,
+	СоответствиеОборотовПереопределяемый.СубконтоПриемникаКт2 КАК СубконтоПриемникаКт2,
+	СоответствиеОборотовПереопределяемый.СубконтоПриемникаКт3 КАК СубконтоПриемникаКт3,
+	СоответствиеОборотовПереопределяемый.СубконтоПриемникаКт4 КАК СубконтоПриемникаКт4,
+	СоответствиеОборотовПереопределяемый.СуммаРеглОборот КАК СуммаРегл
+ПОМЕСТИТЬ ПлоскаяТаблицаТрансляции
+ИЗ
+	РегистрНакопления.бит_УдалитьСоответствиеОборотовТрансляции.Обороты(
+			&amp;НачалоПериода,
+			&amp;КонецПериода,
+			Регистратор,
+			Источник = &amp;РегистрИсточник
+				И Приемник = &amp;РегистрПриемник
+				И ПериодПриемника &gt;= &amp;НачалоПериодаПриемника
+				И ПериодПриемника &lt;= &amp;КонецПериодаПриемника
+				И Организация В
+				(ВЫБРАТЬ
+					СО.Организация
+				ИЗ
+					СоставОрганизаций КАК СО)) КАК СоответствиеОборотовПереопределяемый
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПлоскаяТаблицаТрансляции.Регистратор КАК Регистратор,
+	ПлоскаяТаблицаТрансляции.Организация КАК Организация,
+	ПлоскаяТаблицаТрансляции.СчетИсточникаДт КАК СчетИсточникаВТ,
+	ПлоскаяТаблицаТрансляции.СчетПриемникаДт КАК СчетПриемникаВТ,
+	ПлоскаяТаблицаТрансляции.СубконтоИсточникаДт1 КАК СубконтоИсточника1,
+	ПлоскаяТаблицаТрансляции.СубконтоИсточникаДт2 КАК СубконтоИсточника2,
+	ПлоскаяТаблицаТрансляции.СубконтоИсточникаДт3 КАК СубконтоИсточника3,
+	ПлоскаяТаблицаТрансляции.СубконтоИсточникаДт4 КАК СубконтоИсточника4,
+	ПлоскаяТаблицаТрансляции.СубконтоПриемникаДт1 КАК СубконтоПриемника1,
+	ПлоскаяТаблицаТрансляции.СубконтоПриемникаДт2 КАК СубконтоПриемника2,
+	ПлоскаяТаблицаТрансляции.СубконтоПриемникаДт3 КАК СубконтоПриемника3,
+	ПлоскаяТаблицаТрансляции.СубконтоПриемникаДт4 КАК СубконтоПриемника4,
+	ПлоскаяТаблицаТрансляции.СуммаРегл КАК СуммаРеглОборотДт,
+	NULL КАК СуммаРеглОборотКт
+ПОМЕСТИТЬ ДанныеТрансляций
+ИЗ
+	ПлоскаяТаблицаТрансляции КАК ПлоскаяТаблицаТрансляции
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ПлоскаяТаблицаТрансляции.Регистратор,
+	ПлоскаяТаблицаТрансляции.Организация,
+	ПлоскаяТаблицаТрансляции.СчетИсточникаКт,
+	ПлоскаяТаблицаТрансляции.СчетПриемникаКт,
+	ПлоскаяТаблицаТрансляции.СубконтоИсточникаКт1,
+	ПлоскаяТаблицаТрансляции.СубконтоИсточникаКт2,
+	ПлоскаяТаблицаТрансляции.СубконтоИсточникаКт3,
+	ПлоскаяТаблицаТрансляции.СубконтоИсточникаКт4,
+	ПлоскаяТаблицаТрансляции.СубконтоПриемникаКт1,
+	ПлоскаяТаблицаТрансляции.СубконтоПриемникаКт2,
+	ПлоскаяТаблицаТрансляции.СубконтоПриемникаКт3,
+	ПлоскаяТаблицаТрансляции.СубконтоПриемникаКт4,
+	NULL,
+	ПлоскаяТаблицаТрансляции.СуммаРегл
+ИЗ
+	ПлоскаяТаблицаТрансляции КАК ПлоскаяТаблицаТрансляции
+
+ИНДЕКСИРОВАТЬ ПО
+	Организация,
+	СчетИсточникаВТ,
+	Регистратор
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ ПлоскаяТаблицаТрансляции
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ДанныеТрансляций.Регистратор КАК Регистратор,
+	ДанныеТрансляций.Организация КАК Организация,
+	ДанныеТрансляций.СчетИсточникаВТ КАК СчетИсточника,
+	ДанныеТрансляций.СчетПриемникаВТ КАК СчетПриемника,
+	ДанныеТрансляций.СуммаРеглОборотДт КАК СуммаРеглОборотДт,
+	ДанныеТрансляций.СуммаРеглОборотКт КАК СуммаРеглОборотКт,
+	NULL КАК СуммаУпрОборотДт,
+	NULL КАК СуммаУпрОборотКт,
+	NULL КАК СуммаМУОборотДт,
+	NULL КАК СуммаМУОборотКт,
+	ДанныеТрансляций.СубконтоИсточника1 КАК СубконтоИсточника1,
+	ДанныеТрансляций.СубконтоИсточника2 КАК СубконтоИсточника2,
+	ДанныеТрансляций.СубконтоИсточника3 КАК СубконтоИсточника3,
+	ДанныеТрансляций.СубконтоИсточника4 КАК СубконтоИсточника4,
+	ДанныеТрансляций.СубконтоПриемника1 КАК СубконтоПриемника1,
+	ДанныеТрансляций.СубконтоПриемника2 КАК СубконтоПриемника2,
+	ДанныеТрансляций.СубконтоПриемника3 КАК СубконтоПриемника3,
+	ДанныеТрансляций.СубконтоПриемника4 КАК СубконтоПриемника4,
+	NULL КАК СуммаРеглНачальныйОстатокДтИсточник,
+	NULL КАК СуммаРеглНачальныйОстатокКтИсточник,
+	NULL КАК СуммаРеглКонечныйОстатокДтИсточник,
+	NULL КАК СуммаРеглКонечныйОстатокКтИсточник,
+	NULL КАК СуммаРеглНачальныйОстатокДтПриемник,
+	NULL КАК СуммаРеглНачальныйОстатокКтПриемник,
+	NULL КАК СуммаРеглКонечныйОстатокДтПриемник,
+	NULL КАК СуммаРеглКонечныйОстатокКтПриемник,
+	NULL КАК СуммаУпрНачальныйОстатокДтИсточник,
+	NULL КАК СуммаУпрНачальныйОстатокКтИсточник,
+	NULL КАК СуммаУпрКонечныйОстатокДтИсточник,
+	NULL КАК СуммаУпрКонечныйОстатокКтИсточник,
+	NULL КАК СуммаУпрНачальныйОстатокДтПриемник,
+	NULL КАК СуммаУпрНачальныйОстатокКтПриемник,
+	NULL КАК СуммаУпрКонечныйОстатокДтПриемник,
+	NULL КАК СуммаУпрКонечныйОстатокКтПриемник,
+	NULL КАК СуммаМуНачальныйОстатокДтИсточник,
+	NULL КАК СуммаМуНачальныйОстатокКтИсточник,
+	NULL КАК СуммаМуКонечныйОстатокДтИсточник,
+	NULL КАК СуммаМуКонечныйОстатокКтИсточник,
+	NULL КАК СуммаМуНачальныйОстатокДтПриемник,
+	NULL КАК СуммаМуНачальныйОстатокКтПриемник,
+	NULL КАК СуммаМуКонечныйОстатокДтПриемник,
+	NULL КАК СуммаМуКонечныйОстатокКтПриемник
+ИЗ
+	ДанныеТрансляций КАК ДанныеТрансляций
+{ГДЕ
+	ДанныеТрансляций.СчетИсточникаВТ КАК СчетИсточника,
+	ДанныеТрансляций.СчетПриемникаВТ КАК СчетПриемника}
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	РегистрИсточникОбороты.Регистратор,
+	РегистрИсточникОбороты.Организация,
+	РегистрИсточникОбороты.Счет,
+	ЗНАЧЕНИЕ(Перечисление.бит_ОСВПоЗаписямТрансляции_ТипыЗаписей.НеОттранслировано),
+	РегистрИсточникОбороты.СуммаРеглОборотДт,
+	РегистрИсточникОбороты.СуммаРеглОборотКт,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	РегистрИсточникОбороты.Субконто1,
+	РегистрИсточникОбороты.Субконто2,
+	РегистрИсточникОбороты.Субконто3,
+	НЕОПРЕДЕЛЕНО,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL
+ИЗ
+	РегистрИсточникОбороты КАК РегистрИсточникОбороты
+		ЛЕВОЕ СОЕДИНЕНИЕ ДанныеТрансляций КАК ДанныеТрансляций
+		ПО РегистрИсточникОбороты.Организация = ДанныеТрансляций.Организация
+			И РегистрИсточникОбороты.Регистратор = ДанныеТрансляций.Регистратор
+			И РегистрИсточникОбороты.Счет = ДанныеТрансляций.СчетИсточникаВТ
+			И РегистрИсточникОбороты.Субконто1 = ДанныеТрансляций.СубконтоИсточника1
+			И РегистрИсточникОбороты.Субконто2 = ДанныеТрансляций.СубконтоИсточника2
+			И РегистрИсточникОбороты.Субконто3 = ДанныеТрансляций.СубконтоИсточника3
+ГДЕ
+	ДанныеТрансляций.Регистратор ЕСТЬ NULL
+{ГДЕ
+	РегистрИсточникОбороты.Счет КАК СчетИсточника,
+	(ЗНАЧЕНИЕ(Перечисление.бит_ОСВПоЗаписямТрансляции_ТипыЗаписей.НеОттранслировано)) КАК СчетПриемника}
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	РегистрПриемникОбороты.Регистратор,
+	РегистрПриемникОбороты.Организация,
+	ЗНАЧЕНИЕ(Перечисление.бит_ОСВПоЗаписямТрансляции_ТипыЗаписей.ПараллельныйУчет),
+	РегистрПриемникОбороты.Счет,
+	РегистрПриемникОбороты.СуммаРеглОборотДт,
+	РегистрПриемникОбороты.СуммаРеглОборотКт,
+	РегистрПриемникОбороты.СуммаУпрОборотДт,
+	РегистрПриемникОбороты.СуммаУпрОборотКт,
+	РегистрПриемникОбороты.СуммаМУОборотДт,
+	РегистрПриемникОбороты.СуммаМУОборотКт,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	РегистрПриемникОбороты.Субконто1,
+	РегистрПриемникОбороты.Субконто2,
+	РегистрПриемникОбороты.Субконто3,
+	РегистрПриемникОбороты.Субконто4,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL
+ИЗ
+	РегистрПриемникОбороты КАК РегистрПриемникОбороты
+		ЛЕВОЕ СОЕДИНЕНИЕ ДанныеТрансляций КАК ДанныеТрансляций
+		ПО РегистрПриемникОбороты.Регистратор = ДанныеТрансляций.Регистратор
+			И РегистрПриемникОбороты.Организация = ДанныеТрансляций.Организация
+			И РегистрПриемникОбороты.Счет = ДанныеТрансляций.СчетПриемникаВТ
+			И РегистрПриемникОбороты.Субконто1 = ДанныеТрансляций.СубконтоПриемника1
+			И РегистрПриемникОбороты.Субконто2 = ДанныеТрансляций.СубконтоПриемника2
+			И РегистрПриемникОбороты.Субконто3 = ДанныеТрансляций.СубконтоПриемника3
+ГДЕ
+	ДанныеТрансляций.Регистратор ЕСТЬ NULL
+{ГДЕ
+	(ЗНАЧЕНИЕ(Перечисление.бит_ОСВПоЗаписямТрансляции_ТипыЗаписей.ПараллельныйУчет)) КАК СчетИсточника,
+	РегистрПриемникОбороты.Счет КАК СчетПриемника}
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	NULL,
+	РегистрИсточникОстатки.Организация,
+	РегистрИсточникОстатки.СчетИсточникаВТ,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	РегистрИсточникОстатки.Субконто1,
+	РегистрИсточникОстатки.Субконто2,
+	РегистрИсточникОстатки.Субконто3,
+	НЕОПРЕДЕЛЕНО,
+	НЕОПРЕДЕЛЕНО,
+	НЕОПРЕДЕЛЕНО,
+	НЕОПРЕДЕЛЕНО,
+	НЕОПРЕДЕЛЕНО,
+	РегистрИсточникОстатки.СуммаРеглНачальныйОстатокДт,
+	РегистрИсточникОстатки.СуммаРеглНачальныйОстатокКт,
+	РегистрИсточникОстатки.СуммаРеглКонечныйОстатокДт,
+	РегистрИсточникОстатки.СуммаРеглКонечныйОстатокКт,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL
+ИЗ
+	РегистрИсточникОстатки КАК РегистрИсточникОстатки
+{ГДЕ
+	РегистрИсточникОстатки.СчетИсточникаВТ КАК СчетИсточника,
+	(NULL) КАК СчетПриемника}
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	NULL,
+	РегистрПриемникОстатки.Организация,
+	NULL,
+	РегистрПриемникОстатки.СчетПриемникаВТ,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	НЕОПРЕДЕЛЕНО,
+	НЕОПРЕДЕЛЕНО,
+	НЕОПРЕДЕЛЕНО,
+	НЕОПРЕДЕЛЕНО,
+	РегистрПриемникОстатки.Субконто1,
+	РегистрПриемникОстатки.Субконто2,
+	РегистрПриемникОстатки.Субконто3,
+	РегистрПриемникОстатки.Субконто4,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	РегистрПриемникОстатки.СуммаРеглНачальныйОстатокДт,
+	РегистрПриемникОстатки.СуммаРеглНачальныйОстатокКт,
+	РегистрПриемникОстатки.СуммаРеглКонечныйОстатокДт,
+	РегистрПриемникОстатки.СуммаРеглКонечныйОстатокКт,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	РегистрПриемникОстатки.СуммаУпрНачальныйОстатокДт,
+	РегистрПриемникОстатки.СуммаУпрНачальныйОстатокКт,
+	РегистрПриемникОстатки.СуммаУпрКонечныйОстатокДт,
+	РегистрПриемникОстатки.СуммаУпрКонечныйОстатокКт,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	РегистрПриемникОстатки.СуммаМУНачальныйОстатокДт,
+	РегистрПриемникОстатки.СуммаМУНачальныйОстатокКт,
+	РегистрПриемникОстатки.СуммаМУКонечныйОстатокДт,
+	РегистрПриемникОстатки.СуммаМУКонечныйОстатокКт
+ИЗ
+	РегистрПриемникОстатки КАК РегистрПриемникОстатки
+{ГДЕ
+	(NULL) КАК СчетИсточника,
+	РегистрПриемникОстатки.СчетПриемникаВТ КАК СчетПриемника}</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ПорядокСортировкиИсточника</dataPath>
+		<expression>ВЫБОР КОГДА СчетИсточника = ЗНАЧЕНИЕ(Перечисление.бит_ОСВПоЗаписямТрансляции_ТипыЗаписей.ПараллельныйУчет) ТОГДА "яяяяя" ИНАЧЕ СчетИсточника.Порядок КОНЕЦ</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Порядок сортировки источника</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Source Sorted by</v8:content>
+			</v8:item>
+		</title>
+		<useRestriction>
+			<group>true</group>
+		</useRestriction>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ПорядокСортировкиПриемника</dataPath>
+		<expression>ВЫБОР КОГДА СчетПриемника = ЗНАЧЕНИЕ(Перечисление.бит_ОСВПоЗаписямТрансляции_ТипыЗаписей.НеОттранслировано) ТОГДА "яяяяя" ИНАЧЕ СчетПриемника.Порядок КОНЕЦ</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Порядок сортировки приемника</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Recipient Sorted by</v8:content>
+			</v8:item>
+		</title>
+		<useRestriction>
+			<group>true</group>
+		</useRestriction>
+	</calculatedField>
+	<totalField>
+		<dataPath>ИсточникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокДтИсточник</dataPath>
+		<expression>Сумма(ИсточникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокДтИсточник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ИсточникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокКтИсточник</dataPath>
+		<expression>Сумма(ИсточникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокКтИсточник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ИсточникКонечныеОстаткиУпр.СуммаУпрКонечныйОстатокДтИсточник</dataPath>
+		<expression>Сумма(ИсточникКонечныеОстаткиУпр.СуммаУпрКонечныйОстатокДтИсточник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ИсточникКонечныеОстаткиУпр.СуммаУпрКонечныйОстатокКтИсточник</dataPath>
+		<expression>Сумма(ИсточникКонечныеОстаткиУпр.СуммаУпрКонечныйОстатокКтИсточник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ИсточникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокДтИсточник</dataPath>
+		<expression>Сумма(ИсточникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокДтИсточник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ИсточникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокКтИсточник</dataPath>
+		<expression>Сумма(ИсточникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокКтИсточник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ИсточникНачальныеОстаткиУпр.СуммаУпрНачальныйОстатокДтИсточник</dataPath>
+		<expression>Сумма(ИсточникНачальныеОстаткиУпр.СуммаУпрНачальныйОстатокДтИсточник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ИсточникНачальныеОстаткиУпр.СуммаУпрНачальныйОстатокКтИсточник</dataPath>
+		<expression>Сумма(ИсточникНачальныеОстаткиУпр.СуммаУпрНачальныйОстатокКтИсточник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОборотыРегл.СуммаРеглОборотДт</dataPath>
+		<expression>Сумма(ОборотыРегл.СуммаРеглОборотДт)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОборотыРегл.СуммаРеглОборотКт</dataPath>
+		<expression>Сумма(ОборотыРегл.СуммаРеглОборотКт)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОборотыУпр.СуммаУпрОборотДт</dataPath>
+		<expression>Сумма(ОборотыУпр.СуммаУпрОборотДт)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОборотыУпр.СуммаУпрОборотКт</dataPath>
+		<expression>Сумма(ОборотыУпр.СуммаУпрОборотКт)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПриемникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокДтПриемник</dataPath>
+		<expression>Сумма(ПриемникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокДтПриемник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПриемникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокКтПриемник</dataPath>
+		<expression>Сумма(ПриемникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокКтПриемник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПриемникКонечныеОстаткиУпр.СуммаУпрКонечныйОстатокДтПриемник</dataPath>
+		<expression>Сумма(ПриемникКонечныеОстаткиУпр.СуммаУпрКонечныйОстатокДтПриемник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПриемникКонечныеОстаткиУпр.СуммаУпрКонечныйОстатокКтПриемник</dataPath>
+		<expression>Сумма(ПриемникКонечныеОстаткиУпр.СуммаУпрКонечныйОстатокКтПриемник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПриемникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокДтПриемник</dataPath>
+		<expression>Сумма(ПриемникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокДтПриемник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПриемникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокКтПриемник</dataPath>
+		<expression>Сумма(ПриемникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокКтПриемник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПриемникНачальныеОстаткиУпр.СуммаУпрНачальныйОстатокДтПриемник</dataPath>
+		<expression>Сумма(ПриемникНачальныеОстаткиУпр.СуммаУпрНачальныйОстатокДтПриемник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПриемникНачальныеОстаткиУпр.СуммаУпрНачальныйОстатокКтПриемник</dataPath>
+		<expression>Сумма(ПриемникНачальныеОстаткиУпр.СуммаУпрНачальныйОстатокКтПриемник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ИсточникКонечныеОстаткиМу.СуммаМуКонечныйОстатокДтИсточник</dataPath>
+		<expression>Сумма(ИсточникКонечныеОстаткиМу.СуммаМуКонечныйОстатокДтИсточник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ИсточникКонечныеОстаткиМу.СуммаМуКонечныйОстатокКтИсточник</dataPath>
+		<expression>Сумма(ИсточникКонечныеОстаткиМу.СуммаМуКонечныйОстатокКтИсточник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПриемникКонечныеОстаткиМу.СуммаМуКонечныйОстатокДтПриемник</dataPath>
+		<expression>Сумма(ПриемникКонечныеОстаткиМу.СуммаМуКонечныйОстатокДтПриемник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПриемникКонечныеОстаткиМу.СуммаМуКонечныйОстатокКтПриемник</dataPath>
+		<expression>Сумма(ПриемникКонечныеОстаткиМу.СуммаМуКонечныйОстатокКтПриемник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ИсточникНачальныеОстаткиМу.СуммаМуНачальныйОстатокДтИсточник</dataPath>
+		<expression>Сумма(ИсточникНачальныеОстаткиМу.СуммаМуНачальныйОстатокДтИсточник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ИсточникНачальныеОстаткиМу.СуммаМуНачальныйОстатокКтИсточник</dataPath>
+		<expression>Сумма(ИсточникНачальныеОстаткиМу.СуммаМуНачальныйОстатокКтИсточник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПриемникНачальныеОстаткиМу.СуммаМуНачальныйОстатокДтПриемник</dataPath>
+		<expression>Сумма(ПриемникНачальныеОстаткиМу.СуммаМуНачальныйОстатокДтПриемник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПриемникНачальныеОстаткиМу.СуммаМуНачальныйОстатокКтПриемник</dataPath>
+		<expression>Сумма(ПриемникНачальныеОстаткиМу.СуммаМуНачальныйОстатокКтПриемник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОборотыМу.СуммаМуОборотДт</dataPath>
+		<expression>Сумма(ОборотыМу.СуммаМуОборотДт)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОборотыМу.СуммаМуОборотКт</dataPath>
+		<expression>Сумма(ОборотыМу.СуммаМуОборотКт)</expression>
+	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Period</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Period Start</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>НачалоПериода(&amp;Период.ДатаНачала, "День")</expression>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Period End</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>КонецПериода(&amp;Период.ДатаОкончания, "День")</expression>
+	</parameter>
+	<parameter>
+		<name>Организация</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Организация</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Organization</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Организации</v8:Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.бит_му_ПериметрыКонсолидации</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ПоВсемОрганизациям</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>По всем организациям</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>РегистрИсточник</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Регистр источник</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Source Register</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.бит_ОбъектыСистемы</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>РегистрПриемник</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Регистр приемник</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Recipient Register</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.бит_ОбъектыСистемы</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ВалютаУпр</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Валюта упр</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Currency MA</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Валюты</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ПериодПриемника</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период приемника</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Period receiver</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>НачалоПериодаПриемника</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода приемника</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Start of Recipient Period</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>НачалоПериода(&amp;ПериодПриемника.ДатаНачала, "День")</expression>
+	</parameter>
+	<parameter>
+		<name>КонецПериодаПриемника</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода приемника</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>End of Recipient Period</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>КонецПериода(&amp;ПериодПриемника.ДатаОкончания, "День")</expression>
+	</parameter>
+	<parameter>
+		<name>ПриводитьПустойТипКНеопределено</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Приводить пустой тип к "Неопределено"</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ПустыеСсылки</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Пустые ссылки</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:TypeSet xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:AnyIBRef</v8:TypeSet>
+		</valueType>
+		<useRestriction>true</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>РазворотПоИсточнику</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Разворот по источнику</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Expand by Source</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сальдо на начало периода</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Period Opening Balance</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ИсточникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокДтИсточник</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ИсточникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокКтИсточник</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обороты за период</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Subtotals for Period</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОборотыРегл.СуммаРеглОборотДт</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОборотыРегл.СуммаРеглОборотКт</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сальдо на конец периода</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Period Closing Balance</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ИсточникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокДтИсточник</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ИсточникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокКтИсточник</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:userSettingID>174629a3-35c4-4ad9-ba44-9f9c2b0bf47f</dcsset:userSettingID>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">СчетИсточника</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>4dc67e3c-b994-4399-9d24-adc17251cc62</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">СчетПриемника</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>00514e8e-8ae7-499a-a087-777eb74416aa</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:userSettingID>1f04ca4c-f98e-41e5-bec9-7dc476d47464</dcsset:userSettingID>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</dcscor:value>
+					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+					<dcsset:userSettingID>c3fb18e1-6bf1-4e58-9e27-621f27585d1c</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Организация</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+					<dcsset:userSettingID>d4d79dbd-ce00-4476-8cb4-5e4e50a2d6aa</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВалютаУпр</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ПериодПриемника</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</dcscor:value>
+					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+					<dcsset:userSettingID>25dfad35-14ab-4b25-b99c-37899af7dad7</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ПриводитьПустойТипКНеопределено</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>ccec74b0-c3f0-4cea-b1b4-4e5a1679e2a1</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>b6d7a836-cefa-49b9-a1bd-f283dce95064</dcsset:userSettingID>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ИсточникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокДтИсточник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ИсточникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокКтИсточник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ИсточникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокДтИсточник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ИсточникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокКтИсточник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ОборотыРегл.СуммаРеглОборотДт</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ОборотыРегл.СуммаРеглОборотКт</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПриемникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокДтПриемник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПриемникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокКтПриемник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПриемникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокДтПриемник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПриемникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокКтПриемник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ИсточникНачальныеОстаткиУпр.СуммаУпрНачальныйОстатокДтИсточник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ИсточникНачальныеОстаткиУпр.СуммаУпрНачальныйОстатокКтИсточник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ИсточникКонечныеОстаткиУпр.СуммаУпрКонечныйОстатокДтИсточник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ИсточникКонечныеОстаткиУпр.СуммаУпрКонечныйОстатокКтИсточник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ОборотыУпр.СуммаУпрОборотДт</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ОборотыУпр.СуммаУпрОборотКт</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПриемникНачальныеОстаткиУпр.СуммаУпрНачальныйОстатокДтПриемник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПриемникНачальныеОстаткиУпр.СуммаУпрНачальныйОстатокКтПриемник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПриемникКонечныеОстаткиУпр.СуммаУпрКонечныйОстатокДтПриемник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПриемникКонечныеОстаткиУпр.СуммаУпрКонечныйОстатокКтПриемник</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">20</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">20</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:use>false</dcsset:use>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>СчетИсточника</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">СчетИсточника</dcsset:left>
+							<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параллельный учет</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Parallel Accounting</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:use>false</dcsset:use>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>СчетПриемника</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">СчетПриемника</dcsset:left>
+							<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Не оттранслировано</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Not converted</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>ea36437b-5106-42b3-8612-115302fc7e33</dcsset:userSettingID>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Зеленый</dcscor:value>
+					<dcsset:userSettingID>7b4fb50e-b0f3-48c2-b3be-c35fe5a83a56</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оборотно-сальдовая ведомость по записям трансляции</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Balances and Subtotals Report by Conversion Records</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>СчетИсточника</dcsset:field>
+						<dcsset:groupType>Hierarchy</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto">
+						<dcsset:use>false</dcsset:use>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:OrderItemField">
+						<dcsset:field>ПорядокСортировкиИсточника</dcsset:field>
+						<dcsset:orderType>Asc</dcsset:orderType>
+					</dcsset:item>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>СчетПриемника</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemGroup">
+							<dcsset:groupType>OrGroup</dcsset:groupType>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ОборотыРегл.СуммаРеглОборотДт</dcsset:left>
+								<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ОборотыРегл.СуммаРеглОборотКт</dcsset:left>
+								<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ОборотыУпр.СуммаУпрОборотДт</dcsset:left>
+								<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ОборотыУпр.СуммаУпрОборотКт</dcsset:left>
+								<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ОборотыМу.СуммаМуОборотДт</dcsset:left>
+								<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ОборотыМу.СуммаМуОборотКт</dcsset:left>
+								<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>ИсточникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокДтИсточник</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ИсточникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокКтИсточник</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ИсточникКонечныеОстаткиУпр.СуммаУпрКонечныйОстатокДтИсточник</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ИсточникКонечныеОстаткиУпр.СуммаУпрКонечныйОстатокКтИсточник</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ИсточникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокДтИсточник</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ИсточникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокКтИсточник</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ИсточникНачальныеОстаткиУпр.СуммаУпрНачальныйОстатокДтИсточник</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ИсточникНачальныеОстаткиУпр.СуммаУпрНачальныйОстатокКтИсточник</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter/>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Текст</dcscor:parameter>
+									<dcscor:value xsi:type="xs:string"/>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+					</dcsset:conditionalAppearance>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+				</dcsset:item>
+			</dcsset:item>
+			<dcsset:itemsUserSettingID>ff506a40-e6f6-4a73-8f7f-33ee973ed24d</dcsset:itemsUserSettingID>
+		</dcsset:settings>
+	</settingsVariant>
+	<settingsVariant>
+		<dcsset:name>РазворотПоПриемнику</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Разворот по приемнику</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Expand by Recipient</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сальдо на начало периода</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Period Opening Balance</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПриемникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокДтПриемник</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПриемникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокКтПриемник</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обороты за период</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Subtotals for Period</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОборотыРегл.СуммаРеглОборотДт</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОборотыРегл.СуммаРеглОборотКт</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сальдо на конец периода</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Period Closing Balance</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПриемникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокДтПриемник</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПриемникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокКтПриемник</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:userSettingID>174629a3-35c4-4ad9-ba44-9f9c2b0bf47f</dcsset:userSettingID>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">СчетИсточника</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>eb4af983-af7d-4564-bf77-d7be341c6a94</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">СчетПриемника</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>4491f500-d391-4414-8076-c212b0e1b0ab</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:userSettingID>1f04ca4c-f98e-41e5-bec9-7dc476d47464</dcsset:userSettingID>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</dcscor:value>
+					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+					<dcsset:userSettingID>c3fb18e1-6bf1-4e58-9e27-621f27585d1c</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Организация</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+					<dcsset:userSettingID>d4d79dbd-ce00-4476-8cb4-5e4e50a2d6aa</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВалютаУпр</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ПериодПриемника</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</dcscor:value>
+					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+					<dcsset:userSettingID>fb82568b-4184-4932-9835-e3c231fc3977</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ПриводитьПустойТипКНеопределено</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>1dcef155-468c-4622-9fae-a73d27dd297c</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>b6d7a836-cefa-49b9-a1bd-f283dce95064</dcsset:userSettingID>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ИсточникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокДтИсточник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ИсточникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокКтИсточник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ИсточникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокДтИсточник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ИсточникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокКтИсточник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ОборотыРегл.СуммаРеглОборотДт</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ОборотыРегл.СуммаРеглОборотКт</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПриемникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокДтПриемник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПриемникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокКтПриемник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПриемникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокДтПриемник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПриемникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокКтПриемник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ИсточникНачальныеОстаткиУпр.СуммаУпрНачальныйОстатокДтИсточник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ИсточникНачальныеОстаткиУпр.СуммаУпрНачальныйОстатокКтИсточник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ИсточникКонечныеОстаткиУпр.СуммаУпрКонечныйОстатокДтИсточник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ИсточникКонечныеОстаткиУпр.СуммаУпрКонечныйОстатокКтИсточник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ОборотыУпр.СуммаУпрОборотДт</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ОборотыУпр.СуммаУпрОборотКт</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПриемникНачальныеОстаткиУпр.СуммаУпрНачальныйОстатокДтПриемник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПриемникНачальныеОстаткиУпр.СуммаУпрНачальныйОстатокКтПриемник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПриемникКонечныеОстаткиУпр.СуммаУпрКонечныйОстатокДтПриемник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПриемникКонечныеОстаткиУпр.СуммаУпрКонечныйОстатокКтПриемник</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">20</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">20</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:use>false</dcsset:use>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>СчетИсточника</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">СчетИсточника</dcsset:left>
+							<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параллельный учет</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Parallel Accounting</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:use>false</dcsset:use>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>СчетПриемника</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">СчетПриемника</dcsset:left>
+							<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Не оттранслировано</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Not converted</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>ea36437b-5106-42b3-8612-115302fc7e33</dcsset:userSettingID>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Зеленый</dcscor:value>
+					<dcsset:userSettingID>7b4fb50e-b0f3-48c2-b3be-c35fe5a83a56</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оборотно-сальдовая ведомость по записям трансляции</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Balances and Subtotals Report by Conversion Records</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>СчетПриемника</dcsset:field>
+						<dcsset:groupType>Hierarchy</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto">
+						<dcsset:use>false</dcsset:use>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:OrderItemField">
+						<dcsset:field>ПорядокСортировкиПриемника</dcsset:field>
+						<dcsset:orderType>Asc</dcsset:orderType>
+					</dcsset:item>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>СчетИсточника</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemGroup">
+							<dcsset:groupType>OrGroup</dcsset:groupType>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ОборотыРегл.СуммаРеглОборотДт</dcsset:left>
+								<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ОборотыРегл.СуммаРеглОборотКт</dcsset:left>
+								<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ОборотыУпр.СуммаУпрОборотДт</dcsset:left>
+								<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ОборотыУпр.СуммаУпрОборотКт</dcsset:left>
+								<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ОборотыМу.СуммаМуОборотДт</dcsset:left>
+								<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ОборотыМу.СуммаМуОборотКт</dcsset:left>
+								<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+							</dcsset:item>
+							<dcsset:application>Hierarchy</dcsset:application>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>ПриемникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокДтПриемник</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ПриемникКонечныеОстаткиРегл.СуммаРеглКонечныйОстатокКтПриемник</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ПриемникКонечныеОстаткиУпр.СуммаУпрКонечныйОстатокДтПриемник</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ПриемникКонечныеОстаткиУпр.СуммаУпрКонечныйОстатокКтПриемник</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ПриемникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокДтПриемник</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ПриемникНачальныеОстаткиРегл.СуммаРеглНачальныйОстатокКтПриемник</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ПриемникНачальныеОстаткиУпр.СуммаУпрНачальныйОстатокДтПриемник</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ПриемникНачальныеОстаткиУпр.СуммаУпрНачальныйОстатокКтПриемник</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter/>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Текст</dcscor:parameter>
+									<dcscor:value xsi:type="xs:string"/>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+					</dcsset:conditionalAppearance>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+				</dcsset:item>
+			</dcsset:item>
+			<dcsset:itemsUserSettingID>ff506a40-e6f6-4a73-8f7f-33ee973ed24d</dcsset:itemsUserSettingID>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

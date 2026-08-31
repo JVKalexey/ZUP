@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗаписатьИЗакрыть" id="58">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
+				<ExtendedTooltip name="ФормаЗаписатьИЗакрытьРасширеннаяПодсказка" id="59"/>
+			</Button>
+			<Button name="ФормаЗаписать" id="60">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<CommandName>Form.StandardCommand.Write</CommandName>
+				<ExtendedTooltip name="ФормаЗаписатьРасширеннаяПодсказка" id="61"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="83">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<United>false</United>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="84"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаРеквизитыОбъекта" id="54">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизиты объекта</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Object Attributes</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ControlRepresentation>Picture</ControlRepresentation>
+					<ExtendedTooltip name="ГруппаРеквизитыОбъектаРасширеннаяПодсказка" id="55"/>
+					<ChildItems>
+						<InputField name="Период" id="1">
+							<DataPath>Запись.Period</DataPath>
+							<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<InputField name="Объект" id="4">
+							<DataPath>Запись.Объект</DataPath>
+							<ListChoiceMode>true</ListChoiceMode>
+							<TextEdit>false</TextEdit>
+							<ContextMenu name="ОбъектКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ОбъектРасширеннаяПодсказка" id="6"/>
+							<Events>
+								<Event name="OnChange">ОбъектПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ВидОперации" id="100">
+							<DataPath>Запись.ВидОперации</DataPath>
+							<DropListButton>true</DropListButton>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+							<ContextMenu name="ВидОперацииКонтекстноеМеню" id="101"/>
+							<ExtendedTooltip name="ВидОперацииРасширеннаяПодсказка" id="102"/>
+							<Events>
+								<Event name="OnChange">ВидОперацииПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Организация" id="7">
+							<DataPath>Запись.Организация</DataPath>
+							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<InputField name="БанковскийСчет" id="10">
+							<DataPath>Запись.БанковскийСчет</DataPath>
+							<TitleHeight>2</TitleHeight>
+							<ContextMenu name="БанковскийСчетКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="БанковскийСчетРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="Контрагент" id="13">
+							<DataPath>Запись.Контрагент</DataPath>
+							<ContextMenu name="КонтрагентКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="15"/>
+						</InputField>
+						<InputField name="СтатьяДвиженияДенежныхСтредств" id="80">
+							<DataPath>Запись.СтатьяДвиженияДенежныхСтредств</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СтатьяДвиженияДенежныхСтредствКонтекстноеМеню" id="81"/>
+							<ExtendedTooltip name="СтатьяДвиженияДенежныхСтредствРасширеннаяПодсказка" id="82"/>
+						</InputField>
+						<UsualGroup name="ГруппаТекстШаблона" id="72">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа Текст шаблона</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаТекстШаблонаРасширеннаяПодсказка" id="73"/>
+							<ChildItems>
+								<InputField name="МаскаНазначенияПлатежа" id="16">
+									<DataPath>Запись.МаскаНазначенияПлатежа</DataPath>
+									<TitleLocation>Left</TitleLocation>
+									<TitleHeight>2</TitleHeight>
+									<Height>2</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="МаскаНазначенияПлатежаКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="МаскаНазначенияПлатежаРасширеннаяПодсказка" id="18"/>
+								</InputField>
+								<Button name="ВставитьШаблон" id="62">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ВставитьШаблон</CommandName>
+									<ExtendedTooltip name="ВставитьШаблонРасширеннаяПодсказка" id="63"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаАналитики" id="56">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значения для подстановки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Dimensions</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ControlRepresentation>Picture</ControlRepresentation>
+					<ExtendedTooltip name="ГруппаАналитикиРасширеннаяПодсказка" id="57"/>
+					<ChildItems>
+						<InputField name="ЦФО" id="22">
+							<DataPath>Запись.ЦФО</DataPath>
+							<ContextMenu name="ЦФОКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ЦФОРасширеннаяПодсказка" id="24"/>
+						</InputField>
+						<InputField name="СтатьяОборотов" id="25">
+							<DataPath>Запись.СтатьяОборотов</DataPath>
+							<ContextMenu name="СтатьяОборотовКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="СтатьяОборотовРасширеннаяПодсказка" id="27"/>
+							<Events>
+								<Event name="OnChange">СтатьяОборотовПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Аналитика_1" id="31">
+							<DataPath>Запись.Аналитика_1</DataPath>
+							<ContextMenu name="Аналитика_1КонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="Аналитика_1РасширеннаяПодсказка" id="33"/>
+							<Events>
+								<Event name="AutoComplete">Аналитика_АвтоПодбор</Event>
+								<Event name="StartChoice">Аналитика_НачалоВыбора</Event>
+								<Event name="Clearing">Аналитика_Очистка</Event>
+							</Events>
+						</InputField>
+						<InputField name="Аналитика_2" id="34">
+							<DataPath>Запись.Аналитика_2</DataPath>
+							<ContextMenu name="Аналитика_2КонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="Аналитика_2РасширеннаяПодсказка" id="36"/>
+							<Events>
+								<Event name="AutoComplete">Аналитика_АвтоПодбор</Event>
+								<Event name="StartChoice">Аналитика_НачалоВыбора</Event>
+								<Event name="Clearing">Аналитика_Очистка</Event>
+							</Events>
+						</InputField>
+						<InputField name="Аналитика_3" id="37">
+							<DataPath>Запись.Аналитика_3</DataPath>
+							<ContextMenu name="Аналитика_3КонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="Аналитика_3РасширеннаяПодсказка" id="39"/>
+							<Events>
+								<Event name="AutoComplete">Аналитика_АвтоПодбор</Event>
+								<Event name="StartChoice">Аналитика_НачалоВыбора</Event>
+								<Event name="Clearing">Аналитика_Очистка</Event>
+							</Events>
+						</InputField>
+						<InputField name="Аналитика_4" id="40">
+							<DataPath>Запись.Аналитика_4</DataPath>
+							<ContextMenu name="Аналитика_4КонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="Аналитика_4РасширеннаяПодсказка" id="42"/>
+							<Events>
+								<Event name="AutoComplete">Аналитика_АвтоПодбор</Event>
+								<Event name="StartChoice">Аналитика_НачалоВыбора</Event>
+								<Event name="Clearing">Аналитика_Очистка</Event>
+							</Events>
+						</InputField>
+						<InputField name="Аналитика_5" id="43">
+							<DataPath>Запись.Аналитика_5</DataPath>
+							<ContextMenu name="Аналитика_5КонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="Аналитика_5РасширеннаяПодсказка" id="45"/>
+							<Events>
+								<Event name="AutoComplete">Аналитика_АвтоПодбор</Event>
+								<Event name="StartChoice">Аналитика_НачалоВыбора</Event>
+								<Event name="Clearing">Аналитика_Очистка</Event>
+							</Events>
+						</InputField>
+						<InputField name="Аналитика_6" id="46">
+							<DataPath>Запись.Аналитика_6</DataPath>
+							<ContextMenu name="Аналитика_6КонтекстноеМеню" id="47"/>
+							<ExtendedTooltip name="Аналитика_6РасширеннаяПодсказка" id="48"/>
+							<Events>
+								<Event name="AutoComplete">Аналитика_АвтоПодбор</Event>
+								<Event name="StartChoice">Аналитика_НачалоВыбора</Event>
+								<Event name="Clearing">Аналитика_Очистка</Event>
+							</Events>
+						</InputField>
+						<InputField name="Аналитика_7" id="49">
+							<DataPath>Запись.Аналитика_7</DataPath>
+							<ContextMenu name="Аналитика_7КонтекстноеМеню" id="50"/>
+							<ExtendedTooltip name="Аналитика_7РасширеннаяПодсказка" id="51"/>
+							<Events>
+								<Event name="AutoComplete">Аналитика_АвтоПодбор</Event>
+								<Event name="StartChoice">Аналитика_НачалоВыбора</Event>
+								<Event name="Clearing">Аналитика_Очистка</Event>
+							</Events>
+						</InputField>
+						<InputField name="Аналитика_8" id="85">
+							<DataPath>Запись.Аналитика_8</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="Аналитика_8КонтекстноеМеню" id="86"/>
+							<ExtendedTooltip name="Аналитика_8РасширеннаяПодсказка" id="87"/>
+							<Events>
+								<Event name="AutoComplete">Аналитика_АвтоПодбор</Event>
+								<Event name="StartChoice">Аналитика_НачалоВыбора</Event>
+								<Event name="Clearing">Аналитика_Очистка</Event>
+							</Events>
+						</InputField>
+						<InputField name="Аналитика_9" id="88">
+							<DataPath>Запись.Аналитика_9</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="Аналитика_9КонтекстноеМеню" id="89"/>
+							<ExtendedTooltip name="Аналитика_9РасширеннаяПодсказка" id="90"/>
+							<Events>
+								<Event name="AutoComplete">Аналитика_АвтоПодбор</Event>
+								<Event name="StartChoice">Аналитика_НачалоВыбора</Event>
+								<Event name="Clearing">Аналитика_Очистка</Event>
+							</Events>
+						</InputField>
+						<InputField name="Аналитика_10" id="91">
+							<DataPath>Запись.Аналитика_10</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="Аналитика_10КонтекстноеМеню" id="92"/>
+							<ExtendedTooltip name="Аналитика_10РасширеннаяПодсказка" id="93"/>
+							<Events>
+								<Event name="AutoComplete">Аналитика_АвтоПодбор</Event>
+								<Event name="StartChoice">Аналитика_НачалоВыбора</Event>
+								<Event name="Clearing">Аналитика_Очистка</Event>
+							</Events>
+						</InputField>
+						<InputField name="Аналитика_11" id="94">
+							<DataPath>Запись.Аналитика_11</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="Аналитика_11КонтекстноеМеню" id="95"/>
+							<ExtendedTooltip name="Аналитика_11РасширеннаяПодсказка" id="96"/>
+							<Events>
+								<Event name="AutoComplete">Аналитика_АвтоПодбор</Event>
+								<Event name="StartChoice">Аналитика_НачалоВыбора</Event>
+								<Event name="Clearing">Аналитика_Очистка</Event>
+							</Events>
+						</InputField>
+						<InputField name="Аналитика_12" id="97">
+							<DataPath>Запись.Аналитика_12</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="Аналитика_12КонтекстноеМеню" id="98"/>
+							<ExtendedTooltip name="Аналитика_12РасширеннаяПодсказка" id="99"/>
+							<Events>
+								<Event name="AutoComplete">Аналитика_АвтоПодбор</Event>
+								<Event name="StartChoice">Аналитика_НачалоВыбора</Event>
+								<Event name="Clearing">Аналитика_Очистка</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.бит_НастройкиЗаполненияАналитикПоНазначениюПлатежа</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ИзмеренияДоп" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Измерения доп</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Add. Dimensions</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="НастройкиИзмерений" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки измерений</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Dimension Settings</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="СписокВидовОбъектов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список видов объектов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Object Types List</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокОбъектовСистемы" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список объектов системы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>System Object List</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписаниеСРасчетногоСчета" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Списание с расчетного счета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.бит_ОбъектыСистемы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоступлениеНаРасчетныйСчет" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поступление на расчетный счет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.бит_ОбъектыСистемы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидыОперацийПоступления" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид операции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:EnumRef.ХозяйственныеОперации</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="ВидыОперацийСписания" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид операции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:EnumRef.ХозяйственныеОперации</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="ЕстьРасшифровкаПалетежа" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Есть расшифровка палетежа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВставитьШаблон" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить шаблон</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Insert Template</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить шаблон</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Insert Template</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьШаблон</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

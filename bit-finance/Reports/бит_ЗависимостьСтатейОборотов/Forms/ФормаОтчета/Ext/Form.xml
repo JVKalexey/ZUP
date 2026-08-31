@@ -1,0 +1,1442 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<CommandBarLocation>None</CommandBarLocation>
+	<ReportFormType>Main</ReportFormType>
+	<AutoShowState>Auto</AutoShowState>
+	<ReportResultViewMode>Auto</ReportResultViewMode>
+	<ViewModeApplicationOnSetReportResult>Auto</ViewModeApplicationOnSetReportResult>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаДатаИСценарий" id="49">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата и сценарий</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Date and scenario</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДатаИСценарийРасширеннаяПодсказка" id="50"/>
+			<ChildItems>
+				<InputField name="Сценарий" id="1">
+					<DataPath>Отчет.Сценарий</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="СценарийКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="СценарийРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="OnChange">СценарийПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="НаДату" id="46">
+					<DataPath>Отчет.НаДату</DataPath>
+					<ContextMenu name="НаДатуКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="НаДатуРасширеннаяПодсказка" id="48"/>
+					<Events>
+						<Event name="OnChange">НаДатуПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<RadioButtonField name="ОтборЗависимости" id="51">
+			<DataPath>Отчет.ОтборЗависимости</DataPath>
+			<RadioButtonType>Auto</RadioButtonType>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Все</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>All</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">0</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Установленные зависимости</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Identified dependencies</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">1</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Неустановленные зависимости</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Unidentified dependencies</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">2</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="ОтборЗависимостиКонтекстноеМеню" id="52"/>
+			<ExtendedTooltip name="ОтборЗависимостиРасширеннаяПодсказка" id="53"/>
+			<Events>
+				<Event name="OnChange">ОтборЗависимостиПриИзменении</Event>
+			</Events>
+		</RadioButtonField>
+		<UsualGroup name="ГруппаСтатьиОборотов" id="231">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статьи оборотов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Line-Items group</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСтатьиОборотовРасширеннаяПодсказка" id="232"/>
+			<ChildItems>
+				<Table name="СтатьиОборотов" id="23">
+					<Representation>Tree</Representation>
+					<ReadOnly>true</ReadOnly>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>СтатьиОборотов</DataPath>
+					<RowPictureDataPath>СтатьиОборотов.ИдентификаторКартинки</RowPictureDataPath>
+					<RowsPicture>
+						<xr:Ref>CommonPicture.КоллекцияКартинокСопоставлениеОбъектов</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</RowsPicture>
+					<ContextMenu name="СтатьиОборотовКонтекстноеМеню" id="24"/>
+					<AutoCommandBar name="СтатьиОборотовКоманднаяПанель" id="25">
+						<ChildItems>
+							<Button name="ФормаОбновитьДанныеОтчета" id="39">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ОбновитьДанныеОтчета</CommandName>
+								<ExtendedTooltip name="ФормаОбновитьДанныеОтчетаРасширеннаяПодсказка" id="40"/>
+							</Button>
+							<Popup name="СтатьиОборотовГруппаРежимПросмотра" id="289">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Режим просмотра</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>View mode</v8:content>
+									</v8:item>
+								</Title>
+								<Picture>
+									<xr:Ref>StdPicture.ListViewMode</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="СтатьиОборотовГруппаРежимПросмотраРасширеннаяПодсказка" id="290"/>
+								<ChildItems>
+									<Button name="СтатьиОборотовРежимПросмотраТолькоЭлементы" id="291">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.РежимПросмотраТолькоЭлементы</CommandName>
+										<ExtendedTooltip name="СтатьиОборотовРежимПросмотраТолькоЭлементыРасширеннаяПодсказка" id="292"/>
+									</Button>
+									<Button name="СтатьиОборотовРежимПросмотраСписок" id="293">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.РежимПросмотраСписок</CommandName>
+										<ExtendedTooltip name="СтатьиОборотовРежимПросмотраСписокРасширеннаяПодсказка" id="294"/>
+									</Button>
+									<Button name="СтатьиОборотовРежимПросмотраДерево" id="295">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.РежимПросмотраДерево</CommandName>
+										<ExtendedTooltip name="СтатьиОборотовРежимПросмотраДеревоРасширеннаяПодсказка" id="296"/>
+									</Button>
+									<Button name="СтатьиОборотовРежимПросмотраИерархическийСписок" id="297">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.РежимПросмотраИерархическийСписок</CommandName>
+										<ExtendedTooltip name="СтатьиОборотовРежимПросмотраИерархическийСписокРасширеннаяПодсказка" id="298"/>
+									</Button>
+								</ChildItems>
+							</Popup>
+							<Button name="СтатьиОборотовРазвернутьВсе" id="214">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.РазвернутьВсе</CommandName>
+								<ExtendedTooltip name="СтатьиОборотовРазвернутьВсеРасширеннаяПодсказка" id="215"/>
+							</Button>
+							<Button name="СтатьиОборотовСвернутьВсе" id="216">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.СвернутьВсе</CommandName>
+								<ExtendedTooltip name="СтатьиОборотовСвернутьВсеРасширеннаяПодсказка" id="217"/>
+							</Button>
+							<Button name="СтатьиОборотовВызовОтборовСтатейОборотов" id="233">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ВызовОтборовСтатейОборотов</CommandName>
+								<ExtendedTooltip name="СтатьиОборотовВызовОтборовСтатейОборотовРасширеннаяПодсказка" id="234"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="СтатьиОборотовРасширеннаяПодсказка" id="26"/>
+					<SearchStringAddition name="СтатьиОборотовСтрокаПоиска" id="27">
+						<AdditionSource>
+							<Item>СтатьиОборотов</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СтатьиОборотовСтрокаПоискаКонтекстноеМеню" id="28"/>
+						<ExtendedTooltip name="СтатьиОборотовСтрокаПоискаРасширеннаяПодсказка" id="29"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СтатьиОборотовСостояниеПросмотра" id="30">
+						<AdditionSource>
+							<Item>СтатьиОборотов</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СтатьиОборотовСостояниеПросмотраКонтекстноеМеню" id="31"/>
+						<ExtendedTooltip name="СтатьиОборотовСостояниеПросмотраРасширеннаяПодсказка" id="32"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СтатьиОборотовУправлениеПоиском" id="33">
+						<AdditionSource>
+							<Item>СтатьиОборотов</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СтатьиОборотовУправлениеПоискомКонтекстноеМеню" id="34"/>
+						<ExtendedTooltip name="СтатьиОборотовУправлениеПоискомРасширеннаяПодсказка" id="35"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">СтатьиОборотовВыбор</Event>
+						<Event name="OnActivateRow">СтатьиОборотовПриАктивизацииСтроки</Event>
+					</Events>
+					<ChildItems>
+						<ColumnGroup name="ГруппаКодификаторНаименование" id="44">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кодификатор и наименование</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Codifier and name</v8:content>
+								</v8:item>
+							</Title>
+							<Group>InCell</Group>
+							<ExtendedTooltip name="ГруппаКодификаторНаименованиеРасширеннаяПодсказка" id="45"/>
+							<ChildItems>
+								<InputField name="СтатьиОборотовКодификатор" id="41">
+									<DataPath>СтатьиОборотов.Кодификатор</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтатьиОборотовКодификаторКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="СтатьиОборотовКодификаторРасширеннаяПодсказка" id="43"/>
+								</InputField>
+								<InputField name="СтатьиОборотовСтатьяОборотов" id="36">
+									<DataPath>СтатьиОборотов.СтатьяОборотов</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтатьиОборотовСтатьяОборотовКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="СтатьиОборотовСтатьяОборотовРасширеннаяПодсказка" id="38"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<InputField name="СтатьиОборотовТипСтатьи" id="189">
+							<DataPath>СтатьиОборотов.ТипСтатьи</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СтатьиОборотовТипСтатьиКонтекстноеМеню" id="190"/>
+							<ExtendedTooltip name="СтатьиОборотовТипСтатьиРасширеннаяПодсказка" id="191"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Table name="КомпоновщикОтборовСтатейОборотовНастройкиОтбор" id="218">
+					<Representation>Tree</Representation>
+					<Visible>false</Visible>
+					<Autofill>true</Autofill>
+					<Width>60</Width>
+					<InitialTreeView>ExpandAllLevels</InitialTreeView>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>КомпоновщикОтборовСтатейОборотов.Settings.Filter</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отбор</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Selection</v8:content>
+						</v8:item>
+					</Title>
+					<ViewMode>All</ViewMode>
+					<SettingsNamedItemDetailedRepresentation>false</SettingsNamedItemDetailedRepresentation>
+					<ContextMenu name="КомпоновщикОтборовСтатейОборотовНастройкиОтборКонтекстноеМеню" id="219"/>
+					<AutoCommandBar name="КомпоновщикОтборовСтатейОборотовНастройкиОтборКоманднаяПанель" id="220"/>
+					<ExtendedTooltip name="КомпоновщикОтборовСтатейОборотовНастройкиОтборРасширеннаяПодсказка" id="221"/>
+					<SearchStringAddition name="КомпоновщикОтборовСтатейОборотовНастройкиОтборСтрокаПоиска" id="222">
+						<AdditionSource>
+							<Item>КомпоновщикОтборовСтатейОборотовНастройкиОтбор</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КомпоновщикОтборовСтатейОборотовНастройкиОтборСтрокаПоискаКонтекстноеМеню" id="223"/>
+						<ExtendedTooltip name="КомпоновщикОтборовСтатейОборотовНастройкиОтборСтрокаПоискаРасширеннаяПодсказка" id="224"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="КомпоновщикОтборовСтатейОборотовНастройкиОтборСостояниеПросмотра" id="225">
+						<AdditionSource>
+							<Item>КомпоновщикОтборовСтатейОборотовНастройкиОтбор</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КомпоновщикОтборовСтатейОборотовНастройкиОтборСостояниеПросмотраКонтекстноеМеню" id="226"/>
+						<ExtendedTooltip name="КомпоновщикОтборовСтатейОборотовНастройкиОтборСостояниеПросмотраРасширеннаяПодсказка" id="227"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="КомпоновщикОтборовСтатейОборотовНастройкиОтборУправлениеПоиском" id="228">
+						<AdditionSource>
+							<Item>КомпоновщикОтборовСтатейОборотовНастройкиОтбор</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="КомпоновщикОтборовСтатейОборотовНастройкиОтборУправлениеПоискомКонтекстноеМеню" id="229"/>
+						<ExtendedTooltip name="КомпоновщикОтборовСтатейОборотовНастройкиОтборУправлениеПоискомРасширеннаяПодсказка" id="230"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="OnChange">КомпоновщикОтборовСтатейОборотовНастройкиОтборПриИзменении</Event>
+					</Events>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ЗависимыеОбороты" id="54">
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>ЗависимыеОбороты</DataPath>
+			<RowPictureDataPath>ЗависимыеОбороты.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="ЗависимыеОборотыКонтекстноеМеню" id="55"/>
+			<AutoCommandBar name="ЗависимыеОборотыКоманднаяПанель" id="56"/>
+			<ExtendedTooltip name="ЗависимыеОборотыРасширеннаяПодсказка" id="57"/>
+			<SearchStringAddition name="ЗависимыеОборотыСтрокаПоиска" id="58">
+				<AdditionSource>
+					<Item>ЗависимыеОбороты</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗависимыеОборотыСтрокаПоискаКонтекстноеМеню" id="59"/>
+				<ExtendedTooltip name="ЗависимыеОборотыСтрокаПоискаРасширеннаяПодсказка" id="60"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ЗависимыеОборотыСостояниеПросмотра" id="61">
+				<AdditionSource>
+					<Item>ЗависимыеОбороты</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗависимыеОборотыСостояниеПросмотраКонтекстноеМеню" id="62"/>
+				<ExtendedTooltip name="ЗависимыеОборотыСостояниеПросмотраРасширеннаяПодсказка" id="63"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ЗависимыеОборотыУправлениеПоиском" id="64">
+				<AdditionSource>
+					<Item>ЗависимыеОбороты</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗависимыеОборотыУправлениеПоискомКонтекстноеМеню" id="65"/>
+				<ExtendedTooltip name="ЗависимыеОборотыУправлениеПоискомРасширеннаяПодсказка" id="66"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ЗависимыеОборотыВыбор</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ЗависимыеОборотыПериод" id="67">
+					<DataPath>ЗависимыеОбороты.Период</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Start</v8:content>
+						</v8:item>
+					</Title>
+					<Width>7</Width>
+					<MaxWidth>7</MaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ЗависимыеОборотыПериодКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="ЗависимыеОборотыПериодРасширеннаяПодсказка" id="69"/>
+				</LabelField>
+				<LabelField name="ЗависимыеОборотыДатаОкончания" id="184">
+					<DataPath>ЗависимыеОбороты.ДатаОкончания</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Окончание</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>End</v8:content>
+						</v8:item>
+					</Title>
+					<Width>7</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>7</MaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ЗависимыеОборотыДатаОкончанияКонтекстноеМеню" id="185"/>
+					<ExtendedTooltip name="ЗависимыеОборотыДатаОкончанияРасширеннаяПодсказка" id="186"/>
+				</LabelField>
+				<LabelField name="ЗависимыеОборотыСтатьяОборотов_Зависимый" id="124">
+					<DataPath>ЗависимыеОбороты.СтатьяОборотов_Зависимый</DataPath>
+					<ContextMenu name="ЗависимыеОборотыСтатьяОборотов_ЗависимыйКонтекстноеМеню" id="125"/>
+					<ExtendedTooltip name="ЗависимыеОборотыСтатьяОборотов_ЗависимыйРасширеннаяПодсказка" id="126"/>
+				</LabelField>
+				<ColumnGroup name="ЗависимыеОборотыГруппаЦФО" id="187">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ЦФО</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Fin. Resp. Ctr. group</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ЗависимыеОборотыГруппаЦФОРасширеннаяПодсказка" id="188"/>
+					<ChildItems>
+						<LabelField name="ЗависимыеОборотыЦФО" id="79">
+							<DataPath>ЗависимыеОбороты.ЦФО</DataPath>
+							<ContextMenu name="ЗависимыеОборотыЦФОКонтекстноеМеню" id="80"/>
+							<ExtendedTooltip name="ЗависимыеОборотыЦФОРасширеннаяПодсказка" id="81"/>
+						</LabelField>
+						<LabelField name="ЗависимыеОборотыЦФО_Зависимый" id="121">
+							<DataPath>ЗависимыеОбороты.ЦФО_Зависимый</DataPath>
+							<ContextMenu name="ЗависимыеОборотыЦФО_ЗависимыйКонтекстноеМеню" id="122"/>
+							<ExtendedTooltip name="ЗависимыеОборотыЦФО_ЗависимыйРасширеннаяПодсказка" id="123"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<LabelField name="ЗависимыеОборотыПрофильРаспределения" id="163">
+					<DataPath>ЗависимыеОбороты.ПрофильРаспределения</DataPath>
+					<ContextMenu name="ЗависимыеОборотыПрофильРаспределенияКонтекстноеМеню" id="164"/>
+					<ExtendedTooltip name="ЗависимыеОборотыПрофильРаспределенияРасширеннаяПодсказка" id="165"/>
+				</LabelField>
+				<ColumnGroup name="ЗависимыеОборотыГруппаКоличество" id="192">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа количество</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Quantity group</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ЗависимыеОборотыГруппаКоличествоРасширеннаяПодсказка" id="193"/>
+					<ChildItems>
+						<LabelField name="ЗависимыеОборотыКоэффициентКоличество" id="166">
+							<DataPath>ЗависимыеОбороты.КоэффициентКоличество</DataPath>
+							<ContextMenu name="ЗависимыеОборотыКоэффициентКоличествоКонтекстноеМеню" id="167"/>
+							<ExtendedTooltip name="ЗависимыеОборотыКоэффициентКоличествоРасширеннаяПодсказка" id="168"/>
+						</LabelField>
+						<LabelField name="ЗависимыеОборотыРеквизитКоличество" id="172">
+							<DataPath>ЗависимыеОбороты.РеквизитКоличество</DataPath>
+							<ContextMenu name="ЗависимыеОборотыРеквизитКоличествоКонтекстноеМеню" id="173"/>
+							<ExtendedTooltip name="ЗависимыеОборотыРеквизитКоличествоРасширеннаяПодсказка" id="174"/>
+						</LabelField>
+						<LabelField name="ЗависимыеОборотыФункцияКоличество" id="178">
+							<DataPath>ЗависимыеОбороты.ФункцияКоличество</DataPath>
+							<ContextMenu name="ЗависимыеОборотыФункцияКоличествоКонтекстноеМеню" id="179"/>
+							<ExtendedTooltip name="ЗависимыеОборотыФункцияКоличествоРасширеннаяПодсказка" id="180"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ЗависимыеОборотыГруппаСумма" id="194">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа сумма</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Amount group</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ЗависимыеОборотыГруппаСуммаРасширеннаяПодсказка" id="195"/>
+					<ChildItems>
+						<LabelField name="ЗависимыеОборотыКоэффициентСумма" id="169">
+							<DataPath>ЗависимыеОбороты.КоэффициентСумма</DataPath>
+							<ContextMenu name="ЗависимыеОборотыКоэффициентСуммаКонтекстноеМеню" id="170"/>
+							<ExtendedTooltip name="ЗависимыеОборотыКоэффициентСуммаРасширеннаяПодсказка" id="171"/>
+						</LabelField>
+						<LabelField name="ЗависимыеОборотыРеквизитСумма" id="175">
+							<DataPath>ЗависимыеОбороты.РеквизитСумма</DataPath>
+							<ContextMenu name="ЗависимыеОборотыРеквизитСуммаКонтекстноеМеню" id="176"/>
+							<ExtendedTooltip name="ЗависимыеОборотыРеквизитСуммаРасширеннаяПодсказка" id="177"/>
+						</LabelField>
+						<LabelField name="ЗависимыеОборотыФункцияСумма" id="181">
+							<DataPath>ЗависимыеОбороты.ФункцияСумма</DataPath>
+							<ContextMenu name="ЗависимыеОборотыФункцияСуммаКонтекстноеМеню" id="182"/>
+							<ExtendedTooltip name="ЗависимыеОборотыФункцияСуммаРасширеннаяПодсказка" id="183"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ЗависимыеОборотыГруппаАналитика_1" id="235">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналитика 1</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ЗависимыеОборотыГруппаАналитика_1РасширеннаяПодсказка" id="236"/>
+					<ChildItems>
+						<LabelField name="ЗависимыеОборотыАналитика_1" id="100">
+							<DataPath>ЗависимыеОбороты.Аналитика_1</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ЗависимыеОборотыАналитика_1КонтекстноеМеню" id="101"/>
+							<ExtendedTooltip name="ЗависимыеОборотыАналитика_1РасширеннаяПодсказка" id="102"/>
+						</LabelField>
+						<LabelField name="ЗависимыеОборотыАналитика_1_Зависимый" id="142">
+							<DataPath>ЗависимыеОбороты.Аналитика_1_Зависимый</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ЗависимыеОборотыАналитика_1_ЗависимыйКонтекстноеМеню" id="143"/>
+							<ExtendedTooltip name="ЗависимыеОборотыАналитика_1_ЗависимыйРасширеннаяПодсказка" id="144"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ЗависимыеОборотыГруппаАналитика_2" id="237">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналитика 2</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ЗависимыеОборотыГруппаАналитика_2РасширеннаяПодсказка" id="238"/>
+					<ChildItems>
+						<LabelField name="ЗависимыеОборотыАналитика_2" id="103">
+							<DataPath>ЗависимыеОбороты.Аналитика_2</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ЗависимыеОборотыАналитика_2КонтекстноеМеню" id="104"/>
+							<ExtendedTooltip name="ЗависимыеОборотыАналитика_2РасширеннаяПодсказка" id="105"/>
+						</LabelField>
+						<LabelField name="ЗависимыеОборотыАналитика_2_Зависимый" id="145">
+							<DataPath>ЗависимыеОбороты.Аналитика_2_Зависимый</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ЗависимыеОборотыАналитика_2_ЗависимыйКонтекстноеМеню" id="146"/>
+							<ExtendedTooltip name="ЗависимыеОборотыАналитика_2_ЗависимыйРасширеннаяПодсказка" id="147"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ЗависимыеОборотыГруппаАналитика_3" id="239">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналитика 3</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ЗависимыеОборотыГруппаАналитика_3РасширеннаяПодсказка" id="240"/>
+					<ChildItems>
+						<LabelField name="ЗависимыеОборотыАналитика_3" id="106">
+							<DataPath>ЗависимыеОбороты.Аналитика_3</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ЗависимыеОборотыАналитика_3КонтекстноеМеню" id="107"/>
+							<ExtendedTooltip name="ЗависимыеОборотыАналитика_3РасширеннаяПодсказка" id="108"/>
+						</LabelField>
+						<LabelField name="ЗависимыеОборотыАналитика_3_Зависимый" id="148">
+							<DataPath>ЗависимыеОбороты.Аналитика_3_Зависимый</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ЗависимыеОборотыАналитика_3_ЗависимыйКонтекстноеМеню" id="149"/>
+							<ExtendedTooltip name="ЗависимыеОборотыАналитика_3_ЗависимыйРасширеннаяПодсказка" id="150"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ЗависимыеОборотыГруппаАналитика_4" id="241">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналитика 4</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ЗависимыеОборотыГруппаАналитика_4РасширеннаяПодсказка" id="242"/>
+					<ChildItems>
+						<LabelField name="ЗависимыеОборотыАналитика_4" id="109">
+							<DataPath>ЗависимыеОбороты.Аналитика_4</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ЗависимыеОборотыАналитика_4КонтекстноеМеню" id="110"/>
+							<ExtendedTooltip name="ЗависимыеОборотыАналитика_4РасширеннаяПодсказка" id="111"/>
+						</LabelField>
+						<LabelField name="ЗависимыеОборотыАналитика_4_Зависимый" id="151">
+							<DataPath>ЗависимыеОбороты.Аналитика_4_Зависимый</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ЗависимыеОборотыАналитика_4_ЗависимыйКонтекстноеМеню" id="152"/>
+							<ExtendedTooltip name="ЗависимыеОборотыАналитика_4_ЗависимыйРасширеннаяПодсказка" id="153"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ЗависимыеОборотыГруппаАналитика_5" id="243">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналитика 5</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ЗависимыеОборотыГруппаАналитика_5РасширеннаяПодсказка" id="244"/>
+					<ChildItems>
+						<LabelField name="ЗависимыеОборотыАналитика_5" id="112">
+							<DataPath>ЗависимыеОбороты.Аналитика_5</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ЗависимыеОборотыАналитика_5КонтекстноеМеню" id="113"/>
+							<ExtendedTooltip name="ЗависимыеОборотыАналитика_5РасширеннаяПодсказка" id="114"/>
+						</LabelField>
+						<LabelField name="ЗависимыеОборотыАналитика_5_Зависимый" id="154">
+							<DataPath>ЗависимыеОбороты.Аналитика_5_Зависимый</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ЗависимыеОборотыАналитика_5_ЗависимыйКонтекстноеМеню" id="155"/>
+							<ExtendedTooltip name="ЗависимыеОборотыАналитика_5_ЗависимыйРасширеннаяПодсказка" id="156"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ЗависимыеОборотыГруппаАналитика_6" id="245">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналитика 6</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ЗависимыеОборотыГруппаАналитика_6РасширеннаяПодсказка" id="246"/>
+					<ChildItems>
+						<LabelField name="ЗависимыеОборотыАналитика_6" id="115">
+							<DataPath>ЗависимыеОбороты.Аналитика_6</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ЗависимыеОборотыАналитика_6КонтекстноеМеню" id="116"/>
+							<ExtendedTooltip name="ЗависимыеОборотыАналитика_6РасширеннаяПодсказка" id="117"/>
+						</LabelField>
+						<LabelField name="ЗависимыеОборотыАналитика_6_Зависимый" id="157">
+							<DataPath>ЗависимыеОбороты.Аналитика_6_Зависимый</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ЗависимыеОборотыАналитика_6_ЗависимыйКонтекстноеМеню" id="158"/>
+							<ExtendedTooltip name="ЗависимыеОборотыАналитика_6_ЗависимыйРасширеннаяПодсказка" id="159"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ЗависимыеОборотыГруппаАналитика_7" id="247">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналитика 7</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ЗависимыеОборотыГруппаАналитика_7РасширеннаяПодсказка" id="248"/>
+					<ChildItems>
+						<LabelField name="ЗависимыеОборотыАналитика_7" id="118">
+							<DataPath>ЗависимыеОбороты.Аналитика_7</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ЗависимыеОборотыАналитика_7КонтекстноеМеню" id="119"/>
+							<ExtendedTooltip name="ЗависимыеОборотыАналитика_7РасширеннаяПодсказка" id="120"/>
+						</LabelField>
+						<LabelField name="ЗависимыеОборотыАналитика_7_Зависимый" id="160">
+							<DataPath>ЗависимыеОбороты.Аналитика_7_Зависимый</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ЗависимыеОборотыАналитика_7_ЗависимыйКонтекстноеМеню" id="161"/>
+							<ExtendedTooltip name="ЗависимыеОборотыАналитика_7_ЗависимыйРасширеннаяПодсказка" id="162"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ЗависимыеОборотыГруппаАналитика_8" id="249">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналитика 8</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ЗависимыеОборотыГруппаАналитика_8РасширеннаяПодсказка" id="250"/>
+					<ChildItems>
+						<LabelField name="ЗависимыеОборотыАналитика_8" id="259">
+							<DataPath>ЗависимыеОбороты.Аналитика_8</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ЗависимыеОборотыАналитика_8КонтекстноеМеню" id="260"/>
+							<ExtendedTooltip name="ЗависимыеОборотыАналитика_8РасширеннаяПодсказка" id="261"/>
+						</LabelField>
+						<LabelField name="ЗависимыеОборотыАналитика_8_Зависимый" id="262">
+							<DataPath>ЗависимыеОбороты.Аналитика_8_Зависимый</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ЗависимыеОборотыАналитика_8_ЗависимыйКонтекстноеМеню" id="263"/>
+							<ExtendedTooltip name="ЗависимыеОборотыАналитика_8_ЗависимыйРасширеннаяПодсказка" id="264"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ЗависимыеОборотыГруппаАналитика_9" id="251">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналитика 9</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ЗависимыеОборотыГруппаАналитика_9РасширеннаяПодсказка" id="252"/>
+					<ChildItems>
+						<LabelField name="ЗависимыеОборотыАналитика_9" id="265">
+							<DataPath>ЗависимыеОбороты.Аналитика_9</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ЗависимыеОборотыАналитика_9КонтекстноеМеню" id="266"/>
+							<ExtendedTooltip name="ЗависимыеОборотыАналитика_9РасширеннаяПодсказка" id="267"/>
+						</LabelField>
+						<LabelField name="ЗависимыеОборотыАналитика_9_Зависимый" id="268">
+							<DataPath>ЗависимыеОбороты.Аналитика_9_Зависимый</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ЗависимыеОборотыАналитика_9_ЗависимыйКонтекстноеМеню" id="269"/>
+							<ExtendedTooltip name="ЗависимыеОборотыАналитика_9_ЗависимыйРасширеннаяПодсказка" id="270"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ЗависимыеОборотыГруппаАналитика_10" id="253">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналитика 10</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ЗависимыеОборотыГруппаАналитика_10РасширеннаяПодсказка" id="254"/>
+					<ChildItems>
+						<LabelField name="ЗависимыеОборотыАналитика_10" id="271">
+							<DataPath>ЗависимыеОбороты.Аналитика_10</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ЗависимыеОборотыАналитика_10КонтекстноеМеню" id="272"/>
+							<ExtendedTooltip name="ЗависимыеОборотыАналитика_10РасширеннаяПодсказка" id="273"/>
+						</LabelField>
+						<LabelField name="ЗависимыеОборотыАналитика_10_Зависимый" id="274">
+							<DataPath>ЗависимыеОбороты.Аналитика_10_Зависимый</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ЗависимыеОборотыАналитика_10_ЗависимыйКонтекстноеМеню" id="275"/>
+							<ExtendedTooltip name="ЗависимыеОборотыАналитика_10_ЗависимыйРасширеннаяПодсказка" id="276"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ЗависимыеОборотыГруппаАналитика_11" id="255">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналитика 11</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ЗависимыеОборотыГруппаАналитика_11РасширеннаяПодсказка" id="256"/>
+					<ChildItems>
+						<LabelField name="ЗависимыеОборотыАналитика_11" id="277">
+							<DataPath>ЗависимыеОбороты.Аналитика_11</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ЗависимыеОборотыАналитика_11КонтекстноеМеню" id="278"/>
+							<ExtendedTooltip name="ЗависимыеОборотыАналитика_11РасширеннаяПодсказка" id="279"/>
+						</LabelField>
+						<LabelField name="ЗависимыеОборотыАналитика_11_Зависимый" id="280">
+							<DataPath>ЗависимыеОбороты.Аналитика_11_Зависимый</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ЗависимыеОборотыАналитика_11_ЗависимыйКонтекстноеМеню" id="281"/>
+							<ExtendedTooltip name="ЗависимыеОборотыАналитика_11_ЗависимыйРасширеннаяПодсказка" id="282"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ЗависимыеОборотыГруппаАналитика_12" id="257">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналитика 12</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ЗависимыеОборотыГруппаАналитика_12РасширеннаяПодсказка" id="258"/>
+					<ChildItems>
+						<LabelField name="ЗависимыеОборотыАналитика_12" id="283">
+							<DataPath>ЗависимыеОбороты.Аналитика_12</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ЗависимыеОборотыАналитика_12КонтекстноеМеню" id="284"/>
+							<ExtendedTooltip name="ЗависимыеОборотыАналитика_12РасширеннаяПодсказка" id="285"/>
+						</LabelField>
+						<LabelField name="ЗависимыеОборотыАналитика_12_Зависимый" id="286">
+							<DataPath>ЗависимыеОбороты.Аналитика_12_Зависимый</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="ЗависимыеОборотыАналитика_12_ЗависимыйКонтекстноеМеню" id="287"/>
+							<ExtendedTooltip name="ЗависимыеОборотыАналитика_12_ЗависимыйРасширеннаяПодсказка" id="288"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<LabelField name="ЗависимыеОборотыРегистратор" id="70">
+					<DataPath>ЗависимыеОбороты.Регистратор</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ регистрации</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Registration document </v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ЗависимыеОборотыРегистраторКонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="ЗависимыеОборотыРегистраторРасширеннаяПодсказка" id="72"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Отчет" id="1">
+			<Type>
+				<v8:Type>cfg:ReportObject.бит_ЗависимостьСтатейОборотов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СтатьиОборотов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статьи оборотов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Line-Items</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="СтатьяОборотов" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статья оборотов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Line-Item</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.бит_СтатьиОборотов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторКартинки" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор картинки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Image ID</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Кодификатор" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кодификатор</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Codifier</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>25</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЕстьЗависимость" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть зависимость</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Got addiction</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЕстьНеустановленные" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть неустановленные</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Got unidentified</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТипСтатьи" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип статьи</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Line-Item type</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.бит_ТипыСтатейОборотов</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ЗависимыеОбороты" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зависимые обороты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Dependent Line-Items</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ЗависимыеОбороты.Период КАК Период,
+	ЗависимыеОбороты.Регистратор КАК Регистратор,
+	ЗависимыеОбороты.НомерСтроки КАК НомерСтроки,
+	ЗависимыеОбороты.Активность КАК Активность,
+	ЗависимыеОбороты.Сценарий КАК Сценарий,
+	ЗависимыеОбороты.ЦФО КАК ЦФО,
+	ЗависимыеОбороты.СтатьяОборотов КАК СтатьяОборотов,
+	ЗависимыеОбороты.Аналитика_1 КАК Аналитика_1,
+	ЗависимыеОбороты.Аналитика_2 КАК Аналитика_2,
+	ЗависимыеОбороты.Аналитика_3 КАК Аналитика_3,
+	ЗависимыеОбороты.Аналитика_4 КАК Аналитика_4,
+	ЗависимыеОбороты.Аналитика_5 КАК Аналитика_5,
+	ЗависимыеОбороты.Аналитика_6 КАК Аналитика_6,
+	ЗависимыеОбороты.Аналитика_7 КАК Аналитика_7,
+	ЗависимыеОбороты.Аналитика_8 КАК Аналитика_8,
+	ЗависимыеОбороты.Аналитика_9 КАК Аналитика_9,
+	ЗависимыеОбороты.Аналитика_10 КАК Аналитика_10,
+	ЗависимыеОбороты.Аналитика_11 КАК Аналитика_11,
+	ЗависимыеОбороты.Аналитика_12 КАК Аналитика_12,
+	ЗависимыеОбороты.ЦФО_Зависимый КАК ЦФО_Зависимый,
+	ЗависимыеОбороты.СтатьяОборотов_Зависимый КАК СтатьяОборотов_Зависимый,
+	ЗависимыеОбороты.Аналитика_1_Зависимый КАК Аналитика_1_Зависимый,
+	ЗависимыеОбороты.Аналитика_2_Зависимый КАК Аналитика_2_Зависимый,
+	ЗависимыеОбороты.Аналитика_3_Зависимый КАК Аналитика_3_Зависимый,
+	ЗависимыеОбороты.Аналитика_4_Зависимый КАК Аналитика_4_Зависимый,
+	ЗависимыеОбороты.Аналитика_5_Зависимый КАК Аналитика_5_Зависимый,
+	ЗависимыеОбороты.Аналитика_6_Зависимый КАК Аналитика_6_Зависимый,
+	ЗависимыеОбороты.Аналитика_7_Зависимый КАК Аналитика_7_Зависимый,
+	ЗависимыеОбороты.Аналитика_8_Зависимый КАК Аналитика_8_Зависимый,
+	ЗависимыеОбороты.Аналитика_9_Зависимый КАК Аналитика_9_Зависимый,
+	ЗависимыеОбороты.Аналитика_10_Зависимый КАК Аналитика_10_Зависимый,
+	ЗависимыеОбороты.Аналитика_11_Зависимый КАК Аналитика_11_Зависимый,
+	ЗависимыеОбороты.Аналитика_12_Зависимый КАК Аналитика_12_Зависимый,
+	ЗависимыеОбороты.ПрофильРаспределения КАК ПрофильРаспределения,
+	ЗависимыеОбороты.КоэффициентКоличество КАК КоэффициентКоличество,
+	ЗависимыеОбороты.КоэффициентСумма КАК КоэффициентСумма,
+	ЗависимыеОбороты.РеквизитКоличество КАК РеквизитКоличество,
+	ЗависимыеОбороты.РеквизитСумма КАК РеквизитСумма,
+	ЗависимыеОбороты.ФункцияКоличество КАК ФункцияКоличество,
+	ЗависимыеОбороты.ФункцияСумма КАК ФункцияСумма,
+	ЗависимыеОбороты.ДатаОкончания КАК ДатаОкончания
+ИЗ
+	РегистрСведений.бит_ЗависимыеОбороты КАК ЗависимыеОбороты
+ГДЕ
+	ЗависимыеОбороты.Сценарий = &amp;Сценарий
+	И ЗависимыеОбороты.СтатьяОборотов = &amp;СтатьяОборотов
+	И ЗависимыеОбороты.Период &lt;= &amp;ДатаОкончания
+	И (ЗависимыеОбороты.ДатаОкончания &gt;= &amp;ДатаОкончания
+			ИЛИ ЗависимыеОбороты.ДатаОкончания = ДАТАВРЕМЯ(1, 1, 1))</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Сценарий</dcssch:dataPath>
+					<dcssch:field>Сценарий</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Период</dcssch:dataPath>
+					<dcssch:field>Период</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КоэффициентСумма</dcssch:dataPath>
+					<dcssch:field>КоэффициентСумма</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НомерСтроки</dcssch:dataPath>
+					<dcssch:field>НомерСтроки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Регистратор</dcssch:dataPath>
+					<dcssch:field>Регистратор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Аналитика_8_Зависимый</dcssch:dataPath>
+					<dcssch:field>Аналитика_8_Зависимый</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Аналитика_1</dcssch:dataPath>
+					<dcssch:field>Аналитика_1</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Аналитика_10</dcssch:dataPath>
+					<dcssch:field>Аналитика_10</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЦФО</dcssch:dataPath>
+					<dcssch:field>ЦФО</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Активность</dcssch:dataPath>
+					<dcssch:field>Активность</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Аналитика_10_Зависимый</dcssch:dataPath>
+					<dcssch:field>Аналитика_10_Зависимый</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЦФО_Зависимый</dcssch:dataPath>
+					<dcssch:field>ЦФО_Зависимый</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Аналитика_2</dcssch:dataPath>
+					<dcssch:field>Аналитика_2</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КоэффициентКоличество</dcssch:dataPath>
+					<dcssch:field>КоэффициентКоличество</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтатьяОборотов</dcssch:dataPath>
+					<dcssch:field>СтатьяОборотов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Аналитика_3</dcssch:dataPath>
+					<dcssch:field>Аналитика_3</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Аналитика_4</dcssch:dataPath>
+					<dcssch:field>Аналитика_4</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Аналитика_5</dcssch:dataPath>
+					<dcssch:field>Аналитика_5</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Аналитика_6</dcssch:dataPath>
+					<dcssch:field>Аналитика_6</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Аналитика_7</dcssch:dataPath>
+					<dcssch:field>Аналитика_7</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Аналитика_7_Зависимый</dcssch:dataPath>
+					<dcssch:field>Аналитика_7_Зависимый</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Аналитика_8</dcssch:dataPath>
+					<dcssch:field>Аналитика_8</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Аналитика_9</dcssch:dataPath>
+					<dcssch:field>Аналитика_9</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Аналитика_11</dcssch:dataPath>
+					<dcssch:field>Аналитика_11</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РеквизитСумма</dcssch:dataPath>
+					<dcssch:field>РеквизитСумма</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Аналитика_12</dcssch:dataPath>
+					<dcssch:field>Аналитика_12</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтатьяОборотов_Зависимый</dcssch:dataPath>
+					<dcssch:field>СтатьяОборотов_Зависимый</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Аналитика_1_Зависимый</dcssch:dataPath>
+					<dcssch:field>Аналитика_1_Зависимый</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Аналитика_2_Зависимый</dcssch:dataPath>
+					<dcssch:field>Аналитика_2_Зависимый</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Аналитика_3_Зависимый</dcssch:dataPath>
+					<dcssch:field>Аналитика_3_Зависимый</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Аналитика_4_Зависимый</dcssch:dataPath>
+					<dcssch:field>Аналитика_4_Зависимый</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Аналитика_5_Зависимый</dcssch:dataPath>
+					<dcssch:field>Аналитика_5_Зависимый</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Аналитика_6_Зависимый</dcssch:dataPath>
+					<dcssch:field>Аналитика_6_Зависимый</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Аналитика_9_Зависимый</dcssch:dataPath>
+					<dcssch:field>Аналитика_9_Зависимый</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Аналитика_11_Зависимый</dcssch:dataPath>
+					<dcssch:field>Аналитика_11_Зависимый</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ФункцияСумма</dcssch:dataPath>
+					<dcssch:field>ФункцияСумма</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Аналитика_12_Зависимый</dcssch:dataPath>
+					<dcssch:field>Аналитика_12_Зависимый</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПрофильРаспределения</dcssch:dataPath>
+					<dcssch:field>ПрофильРаспределения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СценарийЗависимый</dcssch:dataPath>
+					<dcssch:field>СценарийЗависимый</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаОкончания</dcssch:dataPath>
+					<dcssch:field>ДатаОкончания</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РеквизитКоличество</dcssch:dataPath>
+					<dcssch:field>РеквизитКоличество</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ФункцияКоличество</dcssch:dataPath>
+					<dcssch:field>ФункцияКоличество</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>ДатаОкончания</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата окончания</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>СтатьяОборотов</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статья оборотов</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.бит_СтатьиОборотов</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>Сценарий</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сценарий</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:TypeId>c3588e9d-09c6-4452-a4ba-5efc42b1670e</v8:TypeId>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<MainTable>InformationRegister.бит_ЗависимыеОбороты</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТекущаяСтатьяОборотов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая статья оборотов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Current line-Item</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.бит_СтатьиОборотов</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КомпоновщикОтборовСтатейОборотов" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Компоновщик отборов статей оборотов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Line-Items selection linker</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресСКДОтбораСтатейОборотов" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес СКД отбора статей оборотов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Selection for Line-Items address</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТолькоЭлементы" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только элементы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьДанныеОтчета" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Refresh</v8:content>
+				</v8:item>
+			</Title>
+			<Shortcut>F5</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьДанныеОтчета</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="СвернутьВсе" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свернуть все</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Collapse all</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свернуть все</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Collapse all</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CollapseAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СвернутьВсе</Action>
+		</Command>
+		<Command name="РазвернутьВсе" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Развернуть все</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Expand all</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Развернуть все</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Expand all</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ExpandAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>РазвернутьВсе</Action>
+		</Command>
+		<Command name="ВызовОтборовСтатейОборотов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отборы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Selections</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отборы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Selections</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DataCompositionFilter</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВызовОтборовСтатейОборотов</Action>
+		</Command>
+		<Command name="РежимПросмотраДерево" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.ListViewModeTree</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>РежимПросмотраДерево</Action>
+		</Command>
+		<Command name="РежимПросмотраИерархическийСписок" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Иерархический список</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.ListViewModeHierarchicalList</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>РежимПросмотраИерархическийСписок</Action>
+		</Command>
+		<Command name="РежимПросмотраСписок" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.ListViewModeList</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>РежимПросмотраСписок</Action>
+		</Command>
+		<Command name="РежимПросмотраТолькоЭлементы" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только элементы</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.Attribute</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>РежимПросмотраТолькоЭлементы</Action>
+		</Command>
+	</Commands>
+</Form>

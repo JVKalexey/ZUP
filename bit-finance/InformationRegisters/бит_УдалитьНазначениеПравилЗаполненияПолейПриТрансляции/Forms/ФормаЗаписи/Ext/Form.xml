@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ПравилоЗаполнения" id="1">
+			<DataPath>Запись.ПравилоЗаполнения</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПравилоЗаполненияКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПравилоЗаполненияРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="OnChange">ПравилоЗаполненияПриИзменении</Event>
+			</Events>
+		</InputField>
+		<LabelField name="Источник" id="24">
+			<DataPath>Источник</DataPath>
+			<Hiperlink>true</Hiperlink>
+			<ContextMenu name="ИсточникКонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="ИсточникРасширеннаяПодсказка" id="26"/>
+		</LabelField>
+		<LabelField name="Приемник" id="27">
+			<DataPath>Приемник</DataPath>
+			<Hiperlink>true</Hiperlink>
+			<ContextMenu name="ПриемникКонтекстноеМеню" id="28"/>
+			<ExtendedTooltip name="ПриемникРасширеннаяПодсказка" id="29"/>
+		</LabelField>
+		<InputField name="ОбъектСистемы" id="4">
+			<DataPath>Запись.ОбъектСистемы</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ОбъектСистемыКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ОбъектСистемыРасширеннаяПодсказка" id="6"/>
+			<Events>
+				<Event name="OnChange">ОбъектСистемыПриИзменении</Event>
+				<Event name="AutoComplete">ОбъектСистемыАвтоПодбор</Event>
+				<Event name="StartChoice">ОбъектСистемыНачалоВыбора</Event>
+				<Event name="TextEditEnd">ОбъектСистемыОкончаниеВводаТекста</Event>
+			</Events>
+		</InputField>
+		<CheckBoxField name="ЭтоИсключение" id="10">
+			<DataPath>Запись.ЭтоИсключение</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кроме этого объекта</v8:content>
+				</v8:item>
+			</Title>
+			<TitleTextColor>style:SpecialTextColor</TitleTextColor>
+			<TitleLocation>Left</TitleLocation>
+			<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЭтоИсключениеКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ЭтоИсключениеРасширеннаяПодсказка" id="12"/>
+		</CheckBoxField>
+		<InputField name="УсловиеПрименения" id="30">
+			<DataPath>Запись.УсловиеПрименения</DataPath>
+			<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="УсловиеПримененияКонтекстноеМеню" id="31"/>
+			<ExtendedTooltip name="УсловиеПримененияРасширеннаяПодсказка" id="32"/>
+		</InputField>
+		<InputField name="Приоритет" id="7">
+			<DataPath>Запись.Приоритет</DataPath>
+			<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+			<SpinButton>true</SpinButton>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПриоритетКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПриоритетРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<UsualGroup name="ГруппаПериодДействия" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период действия</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа период действия</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПериодДействияРасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<InputField name="Период" id="13">
+					<DataPath>Запись.Period</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<LabelDecoration name="ДекорацияПо" id="21">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>по</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияПоКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ДекорацияПоРасширеннаяПодсказка" id="23"/>
+				</LabelDecoration>
+				<InputField name="ДатаОкончания" id="16">
+					<DataPath>Запись.ДатаОкончания</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>-</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>None</TitleLocation>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДатаОкончанияКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ДатаОкончанияРасширеннаяПодсказка" id="18"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Комментарий" id="35">
+			<DataPath>Запись.Комментарий</DataPath>
+			<TitleLocation>Left</TitleLocation>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<AutoMaxHeight>false</AutoMaxHeight>
+			<VerticalStretch>false</VerticalStretch>
+			<MultiLine>true</MultiLine>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="36"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="37"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.бит_УдалитьНазначениеПравилЗаполненияПолейПриТрансляции</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Источник" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Источник</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.бит_ОбъектыСистемы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Приемник" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приемник</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.бит_ОбъектыСистемы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПодготовленаПриЧтении" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подготовлена при чтении</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

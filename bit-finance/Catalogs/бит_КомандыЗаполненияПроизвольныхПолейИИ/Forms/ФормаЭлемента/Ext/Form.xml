@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаКодНаименование" id="63">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код и наименование</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКодНаименованиеРасширеннаяПодсказка" id="64"/>
+			<ChildItems>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаШапка" id="65">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Что заполняем</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="66"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаШапкаЛево" id="70">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка (лево)</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаШапкаЛевоРасширеннаяПодсказка" id="71"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОбъектСистемы" id="74">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Объект системы</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<United>false</United>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОбъектСистемыРасширеннаяПодсказка" id="75"/>
+							<ChildItems>
+								<InputField name="ОбъектСистемы" id="67">
+									<DataPath>Объект.ОбъектыСистемы[0].ОбъектСистемы</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ContextMenu name="ОбъектСистемыКонтекстноеМеню" id="68"/>
+									<ExtendedTooltip name="ОбъектСистемыРасширеннаяПодсказка" id="69"/>
+									<Events>
+										<Event name="StartChoice">ОбъектСистемыНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<Button name="КомандаСписокОбъектовСистемы" id="76">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.КомандаСписокОбъектовСистемы</CommandName>
+									<ExtendedTooltip name="КомандаСписокОбъектовСистемыРасширеннаяПодсказка" id="77"/>
+								</Button>
+								<InputField name="СписокОбъектов" id="81">
+									<DataPath>СписокОбъектов</DataPath>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ContextMenu name="СписокОбъектовКонтекстноеМеню" id="82"/>
+									<ExtendedTooltip name="СписокОбъектовРасширеннаяПодсказка" id="83"/>
+									<Events>
+										<Event name="OnChange">СписокОбъектовПриИзменении</Event>
+										<Event name="StartChoice">СписокОбъектовНачалоВыбора</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ПолеЗаполнения" id="10">
+							<DataPath>Объект.ПолеЗаполнения</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ChoiceButton>true</ChoiceButton>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПолеЗаполненияКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ПолеЗаполненияРасширеннаяПодсказка" id="12"/>
+							<Events>
+								<Event name="StartChoice">ПолеЗаполненияНачалоВыбора</Event>
+								<Event name="ChoiceProcessing">ПолеЗаполненияОбработкаВыбора</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаШапкаПраво" id="72">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка (право)</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаШапкаПравоРасширеннаяПодсказка" id="73"/>
+					<ChildItems>
+						<InputField name="ПользовательскоеУсловие" id="13">
+							<DataPath>Объект.ПользовательскоеУсловие</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ClearButton>true</ClearButton>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПользовательскоеУсловиеКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ПользовательскоеУсловиеРасширеннаяПодсказка" id="15"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПравилаЗаполнения" id="84">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Как заполняем</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаПравилаЗаполненияРасширеннаяПодсказка" id="85"/>
+			<ChildItems>
+				<InputField name="Ассистент" id="7">
+					<DataPath>Объект.Ассистент</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="АссистентКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="АссистентРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<Table name="ШаблоныПромптов" id="41">
+					<Representation>List</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.ШаблоныПромптов</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ШаблоныПромптовКонтекстноеМеню" id="42"/>
+					<AutoCommandBar name="ШаблоныПромптовКоманднаяПанель" id="43"/>
+					<ExtendedTooltip name="ШаблоныПромптовРасширеннаяПодсказка" id="44"/>
+					<SearchStringAddition name="ШаблоныПромптовСтрокаПоиска" id="45">
+						<AdditionSource>
+							<Item>ШаблоныПромптов</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ШаблоныПромптовСтрокаПоискаКонтекстноеМеню" id="46"/>
+						<ExtendedTooltip name="ШаблоныПромптовСтрокаПоискаРасширеннаяПодсказка" id="47"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ШаблоныПромптовСостояниеПросмотра" id="48">
+						<AdditionSource>
+							<Item>ШаблоныПромптов</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ШаблоныПромптовСостояниеПросмотраКонтекстноеМеню" id="49"/>
+						<ExtendedTooltip name="ШаблоныПромптовСостояниеПросмотраРасширеннаяПодсказка" id="50"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ШаблоныПромптовУправлениеПоиском" id="51">
+						<AdditionSource>
+							<Item>ШаблоныПромптов</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ШаблоныПромптовУправлениеПоискомКонтекстноеМеню" id="52"/>
+						<ExtendedTooltip name="ШаблоныПромптовУправлениеПоискомРасширеннаяПодсказка" id="53"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ШаблоныПромптовНомерСтроки" id="54">
+							<DataPath>Объект.ШаблоныПромптов.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ШаблоныПромптовНомерСтрокиКонтекстноеМеню" id="55"/>
+							<ExtendedTooltip name="ШаблоныПромптовНомерСтрокиРасширеннаяПодсказка" id="56"/>
+						</LabelField>
+						<InputField name="ШаблоныПромптовПромпт" id="57">
+							<DataPath>Объект.ШаблоныПромптов.Промпт</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ШаблоныПромптовПромптКонтекстноеМеню" id="58"/>
+							<ExtendedTooltip name="ШаблоныПромптовПромптРасширеннаяПодсказка" id="59"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<CheckBoxField name="ЗапрашиватьФайл" id="60">
+					<DataPath>Объект.ЗапрашиватьФайл</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЗапрашиватьФайлКонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="ЗапрашиватьФайлРасширеннаяПодсказка" id="62"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.бит_КомандыЗаполненияПроизвольныхПолейИИ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СписокОбъектов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объекты системы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<FillCheck>ShowError</FillCheck>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.бит_ОбъектыСистемы</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="ОбъектыСписоком" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объекты списоком</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаСписокОбъектовСистемы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Указать несколько объектов системы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаСписокОбъектовСистемы</Action>
+		</Command>
+	</Commands>
+</Form>

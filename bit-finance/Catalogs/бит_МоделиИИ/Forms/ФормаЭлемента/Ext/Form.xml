@@ -1,0 +1,624 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаКодИНаименование" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код и наименование</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<United>false</United>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКодИНаименованиеРасширеннаяПодсказка" id="14"/>
+			<ChildItems>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+					<Events>
+						<Event name="OnChange">НаименованиеПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПоставщикИМодель" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поставщик и модель</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<United>false</United>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПоставщикИМодельРасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПоставщик" id="90">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поставщик</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<United>false</United>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПоставщикРасширеннаяПодсказка" id="91"/>
+					<ChildItems>
+						<InputField name="Поставщик" id="7">
+							<DataPath>Объект.Поставщик</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПоставщикКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ПоставщикРасширеннаяПодсказка" id="9"/>
+							<Events>
+								<Event name="OnChange">ПоставщикПриИзменении</Event>
+							</Events>
+						</InputField>
+						<LabelField name="ИнформацияОПоставщике" id="92">
+							<DataPath>ИнформацияОПоставщике</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Width>50</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<TextColor>style:бит_ЦветГиперссылки</TextColor>
+							<BackColor>style:бит_ЦветФонаПодсказки</BackColor>
+							<ContextMenu name="ИнформацияОПоставщикеКонтекстноеМеню" id="93"/>
+							<ExtendedTooltip name="ИнформацияОПоставщикеРасширеннаяПодсказка" id="94"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="ВидМодели" id="18">
+					<DataPath>Объект.ВидМодели</DataPath>
+					<DropListButton>true</DropListButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ВидМоделиКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ВидМоделиРасширеннаяПодсказка" id="20"/>
+					<Events>
+						<Event name="OnChange">ВидМоделиПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПараметрыПодключения" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры подключения</v8:content>
+				</v8:item>
+			</Title>
+			<United>false</United>
+			<ExtendedTooltip name="ГруппаПараметрыПодключенияРасширеннаяПодсказка" id="45"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаАдреса" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адреса</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<United>false</United>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаАдресаРасширеннаяПодсказка" id="36"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаАдресСервера" id="54">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Адрес сервера</v8:content>
+								</v8:item>
+							</Title>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаАдресСервераРасширеннаяПодсказка" id="55"/>
+							<ChildItems>
+								<InputField name="БазовыйURL" id="10">
+									<DataPath>Объект.АдресСервера</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>http(s)://host[:port]</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="БазовыйURLКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="БазовыйURLРасширеннаяПодсказка" id="12"/>
+									<Events>
+										<Event name="OnChange">БазовыйURLПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ПортСервера" id="46">
+									<DataPath>Объект.ПортСервера</DataPath>
+									<SpinButton>true</SpinButton>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ПортСервераКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="ПортСервераРасширеннаяПодсказка" id="48"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="АдресРесурса" id="21">
+							<DataPath>Объект.АдресРесурса</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="АдресРесурсаКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="АдресРесурсаРасширеннаяПодсказка" id="23"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПараметрыСервера" id="52">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры сервера</v8:content>
+						</v8:item>
+					</Title>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПараметрыСервераРасширеннаяПодсказка" id="53"/>
+					<ChildItems>
+						<CheckBoxField name="ИспользоватьБезопасноеСоединение" id="49">
+							<DataPath>Объект.ИспользоватьБезопасноеСоединение</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Использовать HTTPS</v8:content>
+								</v8:item>
+							</Title>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ИспользоватьБезопасноеСоединениеКонтекстноеМеню" id="50"/>
+							<ExtendedTooltip name="ИспользоватьБезопасноеСоединениеРасширеннаяПодсказка" id="51"/>
+						</CheckBoxField>
+						<CheckBoxField name="ИспользоватьПрокси" id="56">
+							<DataPath>Объект.ИспользоватьПрокси</DataPath>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ИспользоватьПроксиКонтекстноеМеню" id="57"/>
+							<ExtendedTooltip name="ИспользоватьПроксиРасширеннаяПодсказка" id="58"/>
+							<Events>
+								<Event name="OnChange">ИспользоватьПроксиПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПараметрыПроксиСервера" id="59">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры прокси сервера</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Representation>StrongSeparation</Representation>
+					<ExtendedTooltip name="ГруппаПараметрыПроксиСервераРасширеннаяПодсказка" id="60"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаАдресПрокси" id="78">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Адрес прокси</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаАдресПроксиРасширеннаяПодсказка" id="79"/>
+							<ChildItems>
+								<InputField name="ПроксиСервер" id="61">
+									<DataPath>Объект.ПроксиСервер</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ПроксиСерверКонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="ПроксиСерверРасширеннаяПодсказка" id="63"/>
+								</InputField>
+								<InputField name="ПроксиПорт" id="64">
+									<DataPath>Объект.ПроксиПорт</DataPath>
+									<SpinButton>true</SpinButton>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ПроксиПортКонтекстноеМеню" id="65"/>
+									<ExtendedTooltip name="ПроксиПортРасширеннаяПодсказка" id="66"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаАутентификация" id="67">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Аутентификация</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаАутентификацияРасширеннаяПодсказка" id="68"/>
+							<ChildItems>
+								<InputField name="ПроксиИспользоватьАутентификациюОС" id="69">
+									<DataPath>Объект.ПроксиИспользоватьАутентификациюОС</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Аутентификация</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ChooseType>false</ChooseType>
+									<TextEdit>false</TextEdit>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Базовая</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:boolean">false</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Операционная система</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:boolean">true</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ПроксиИспользоватьАутентификациюОСКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="ПроксиИспользоватьАутентификациюОСРасширеннаяПодсказка" id="71">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>- Базовая (Basic Authentication)
+- Операционная система (NTLM Integrated Windows)
+     в версии 1С:Предприятия под Windows</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</InputField>
+								<InputField name="ПользовательПрокси" id="72">
+									<DataPath>Объект.ПроксиПользователь</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пользователь</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Логин для авторизации на прокси сервере</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Wrap>false</Wrap>
+									<ContextMenu name="ПользовательПроксиКонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="ПользовательПроксиРасширеннаяПодсказка" id="74"/>
+								</InputField>
+								<InputField name="ПарольПрокси" id="75">
+									<DataPath>ПарольПрокси</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пароль</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пароль для авторизации на прокси сервере</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Wrap>false</Wrap>
+									<PasswordMode>true</PasswordMode>
+									<ContextMenu name="ПарольПроксиКонтекстноеМеню" id="76"/>
+									<ExtendedTooltip name="ПарольПроксиРасширеннаяПодсказка" id="77"/>
+									<Events>
+										<Event name="OnChange">ПарольПроксиПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКлючи" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключи</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<United>false</United>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКлючиРасширеннаяПодсказка" id="38"/>
+			<ChildItems>
+				<InputField name="КлючAPI" id="15">
+					<DataPath>КлючAPI</DataPath>
+					<PasswordMode>true</PasswordMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КлючAPIКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="КлючAPIРасширеннаяПодсказка" id="17"/>
+					<Events>
+						<Event name="OnChange">КлючAPIПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ИдентификаторКаталога" id="24">
+					<DataPath>ИдентификаторКаталога</DataPath>
+					<PasswordMode>true</PasswordMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="ИдентификаторКаталогаКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ИдентификаторКаталогаРасширеннаяПодсказка" id="26"/>
+					<Events>
+						<Event name="OnChange">ИдентификаторКаталогаПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРаботаСФайлами" id="80">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Работа с файлами</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<United>false</United>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРаботаСФайламиРасширеннаяПодсказка" id="81"/>
+			<ChildItems>
+				<InputField name="МетодОбработкиВложений" id="82">
+					<DataPath>Объект.МетодОбработкиВложений</DataPath>
+					<ToolTipRepresentation>Button</ToolTipRepresentation>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="МетодОбработкиВложенийКонтекстноеМеню" id="83"/>
+					<ExtendedTooltip name="МетодОбработкиВложенийРасширеннаяПодсказка" id="84"/>
+					<Events>
+						<Event name="OnChange">МетодОбработкиВложенийПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="АдресРесурсаФайлов" id="41">
+					<DataPath>Объект.АдресРесурсаФайлов</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="АдресРесурсаФайловКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="АдресРесурсаФайловРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<Button name="КомандаНастройкаСервиса" id="88">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.КомандаНастройкаСервиса</CommandName>
+					<ExtendedTooltip name="КомандаНастройкаСервисаРасширеннаяПодсказка" id="89"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПрочее" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочее</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<United>false</United>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПрочееРасширеннаяПодсказка" id="40"/>
+			<ChildItems>
+				<InputField name="ТарифGigaChat" id="27">
+					<DataPath>Объект.ТарифGigaChat</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тариф</v8:content>
+						</v8:item>
+					</Title>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Физическое лицо</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">GIGACHAT_API_PERS</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Юридическое лицо</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">GIGACHAT_API_B2B</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Коммерческое использование</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">GIGACHAT_API_CORP</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ТарифGigaChatКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ТарифGigaChatРасширеннаяПодсказка" id="29"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Комментарий" id="30">
+			<DataPath>Объект.Комментарий</DataPath>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>true</HorizontalStretch>
+			<MultiLine>true</MultiLine>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="31"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="32"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.бит_МоделиИИ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КлючAPI" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ API</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КлючИзменен" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ изменен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АвтоНаименование" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Авто наименование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИдентификаторКаталога" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор каталога</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ИдентификаторКаталогаИзменен" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор каталога изменен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПарольПрокси" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПарольПроксиИзменен" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль прокси изменен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИнформацияОПоставщике" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация о поставщике</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаНастройкаСервиса" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка сервиса</v8:content>
+				</v8:item>
+			</Title>
+			<Action>КомандаНастройкаСервиса</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+	</Commands>
+</Form>
