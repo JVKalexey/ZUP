@@ -37,11 +37,47 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="ТерриторияДействия" id="10">
-			<DataPath>Объект.ТерриторияДействия</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="ТерриторияДействияКонтекстноеМеню" id="11"/>
-			<ExtendedTooltip name="ТерриторияДействияРасширеннаяПодсказка" id="12"/>
+		<InputField name="КодОргана" id="23">
+			<DataPath>Объект.КодОргана</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КодОрганаКонтекстноеМеню" id="24"/>
+			<ExtendedTooltip name="КодОрганаРасширеннаяПодсказка" id="25"/>
+		</InputField>
+		<UsualGroup name="ГруппаТерриторияДействияИКодСубъекта" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Территория действия и код субъекта</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаТерриторияДействияИКодСубъектаРасширеннаяПодсказка" id="19"/>
+			<ChildItems>
+				<InputField name="ТерриторияДействия" id="10">
+					<DataPath>Объект.ТерриторияДействия</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТерриторияДействияКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ТерриторияДействияРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="КодСубъекта" id="20">
+					<DataPath>Объект.КодСубъекта</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КодСубъектаКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="КодСубъектаРасширеннаяПодсказка" id="22"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Адрес" id="26">
+			<DataPath>Объект.Адрес</DataPath>
+			<TitleLocation>Left</TitleLocation>
+			<Height>2</Height>
+			<MultiLine>true</MultiLine>
+			<ExtendedEdit>true</ExtendedEdit>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="АдресКонтекстноеМеню" id="27"/>
+			<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="28"/>
 		</InputField>
 		<InputField name="Начальник" id="15">
 			<DataPath>Объект.Начальник</DataPath>

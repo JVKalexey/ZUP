@@ -35,7 +35,6 @@
 					<Width>43</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<Group>Vertical</Group>
-					<Behavior>Usual</Behavior>
 					<Representation>NormalSeparation</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаНастройкаКадровогоУчетаРасширеннаяПодсказка" id="1087"/>
@@ -115,7 +114,6 @@
 							</Title>
 							<TitleTextColor>style:FormTextColor</TitleTextColor>
 							<Group>Vertical</Group>
-							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<BackColor>style:СобытиеОтказ</BackColor>
 							<ExtendedTooltip name="ГруппаФормированиеКадровыхДокументовРасширеннаяПодсказка" id="1095"/>
@@ -168,7 +166,6 @@
 					<Width>43</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<Group>Vertical</Group>
-					<Behavior>Usual</Behavior>
 					<Representation>NormalSeparation</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаНастройкаУчетаМигрантовРасширеннаяПодсказка" id="1101"/>
@@ -276,6 +273,28 @@
 							</ExtendedTooltip>
 							<Events>
 								<Event name="OnChange">бит_ум_УчетПатентовПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="бит_ум_УчетНесколькихПатентов" id="1117">
+							<DataPath>НаборКонстант.бит_ум_УчетНесколькихПатентов</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Учет нескольких патентов у одного работника</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Позволяет хранить несколько одновременно действующих патентов одного работника — например, полученных в разных субъектах РФ или на разные профессии. Патенты разделяются разрезом.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="бит_ум_УчетНесколькихПатентовКонтекстноеМеню" id="1118"/>
+							<ExtendedTooltip name="бит_ум_УчетНесколькихПатентовРасширеннаяПодсказка" id="1119"/>
+							<Events>
+								<Event name="OnChange">бит_ум_УчетНесколькихПатентовПриИзменении</Event>
 							</Events>
 						</CheckBoxField>
 						<InputField name="бит_ум_ПредупреждениеОбОплатеПатентов" id="1111">

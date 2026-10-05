@@ -339,6 +339,13 @@
 									<ContextMenu name="ВыполняемыеДействияСотрудникКонтекстноеМеню" id="70"/>
 									<ExtendedTooltip name="ВыполняемыеДействияСотрудникРасширеннаяПодсказка" id="71"/>
 								</InputField>
+								<InputField name="ВыполняемыеДействияРазрез" id="133">
+									<DataPath>Объект.ВыполняемыеДействия.Разрез</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ВыполняемыеДействияРазрезКонтекстноеМеню" id="134"/>
+									<ExtendedTooltip name="ВыполняемыеДействияРазрезРасширеннаяПодсказка" id="135"/>
+								</InputField>
 								<CheckBoxField name="ВыполняемыеДействияВыполнено" id="75">
 									<DataPath>Объект.ВыполняемыеДействия.Выполнено</DataPath>
 									<EditMode>EnterOnInput</EditMode>

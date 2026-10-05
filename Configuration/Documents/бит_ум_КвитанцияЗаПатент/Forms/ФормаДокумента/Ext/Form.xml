@@ -26,7 +26,6 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Horizontal</Group>
-			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="26"/>
@@ -45,7 +44,6 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Vertical</Group>
-					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаШапкаЛеваяРасширеннаяПодсказка" id="2"/>
@@ -74,7 +72,6 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Vertical</Group>
-					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаШапкаПраваяРасширеннаяПодсказка" id="7"/>
@@ -93,7 +90,6 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Horizontal</Group>
-							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаНомерДатаРасширеннаяПодсказка" id="9"/>
@@ -174,7 +170,6 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
-			<Behavior>Usual</Behavior>
 			<Representation>StrongSeparation</Representation>
 			<ThroughAlign>Use</ThroughAlign>
 			<ExtendedTooltip name="ГруппаИнформацияОбОплатеРасширеннаяПодсказка" id="50"/>
@@ -187,7 +182,6 @@
 						</v8:item>
 					</Title>
 					<Group>Horizontal</Group>
-					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаНомерИДатаВходящегоДокументаРасширеннаяПодсказка" id="28"/>
@@ -224,6 +218,17 @@
 					<ExtendedTooltip name="СотрудникРасширеннаяПодсказка" id="37"/>
 					<Events>
 						<Event name="OnChange">СотрудникПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Разрез" id="72">
+					<DataPath>Объект.Разрез</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<QuickChoice>false</QuickChoice>
+					<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+					<ContextMenu name="РазрезКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="РазрезРасширеннаяПодсказка" id="74"/>
+					<Events>
+						<Event name="OnChange">РазрезПриИзменении</Event>
 					</Events>
 				</InputField>
 				<UsualGroup name="ГруппаПатент" id="67">
@@ -279,7 +284,6 @@
 					</ToolTip>
 					<ToolTipRepresentation>Button</ToolTipRepresentation>
 					<Group>Horizontal</Group>
-					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаПериодРасширеннаяПодсказка" id="55"/>
@@ -315,7 +319,6 @@
 		</UsualGroup>
 		<UsualGroup name="ГруппаКомментарийОтветственный" id="41">
 			<Group>Horizontal</Group>
-			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКомментарийОтветственныйРасширеннаяПодсказка" id="42"/>

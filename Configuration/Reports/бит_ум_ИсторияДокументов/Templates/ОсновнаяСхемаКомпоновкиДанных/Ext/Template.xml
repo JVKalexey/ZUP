@@ -273,6 +273,13 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Разрез</dataPath>
+			<field>Разрез</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
 	Сотрудники.Ссылка КАК Сотрудник,
@@ -403,7 +410,8 @@
 		ИНАЧЕ NULL
 	КОНЕЦ КАК ОсталосьДоОкончанияСрокаДействия,
 	НЕ ДокументыИРСрезПоследних.Период ЕСТЬ NULL КАК ПоследняяЗапись,
-	ДокументыИР.Период КАК Период
+	ДокументыИР.Период КАК Период,
+	ДокументыИР.Разрез КАК Разрез
 {ВЫБРАТЬ
 	Сотрудник.*,
 	ТабельныйНомер,
@@ -429,7 +437,8 @@
 	АктуальностьДокумента,
 	ОсталосьДоОкончанияСрокаДействия,
 	ПоследняяЗапись,
-	Период}
+	Период,
+	Разрез.*}
 ИЗ
 	Представления_КадровыеДанныеСотрудников КАК Представления_КадровыеДанныеСотрудников
 		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.бит_ум_ДокументыИР КАК ДокументыИР
@@ -444,6 +453,7 @@
 		ПО (ДокументыИР.Период = ДокументыИРСрезПоследних.Период)
 			И (ДокументыИР.Физлицо = ДокументыИРСрезПоследних.Физлицо)
 			И (ДокументыИР.ВидДокумента = ДокументыИРСрезПоследних.ВидДокумента)
+			И (ДокументыИР.Разрез = ДокументыИРСрезПоследних.Разрез)
 ГДЕ
 	ДокументыИР.Период &gt;= &amp;НачалоПериода
 	И (ДокументыИР.Период &lt;= &amp;КонецПериода
@@ -496,7 +506,8 @@
 			ИНАЧЕ NULL
 		КОНЕЦ) КАК ОсталосьДоОкончанияСрокаДействия,
 	(НЕ ДокументыИРСрезПоследних.Период ЕСТЬ NULL) КАК ПоследняяЗапись,
-	ДокументыИР.Период}</query>
+	ДокументыИР.Период,
+	ДокументыИР.Разрез.*}</query>
 		<autoFillFields>false</autoFillFields>
 	</dataSet>
 	<parameter>
@@ -575,6 +586,25 @@
 		<availableAsField>false</availableAsField>
 		<use>Always</use>
 	</parameter>
+	<parameter>
+		<name>ТекущаяДата</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Текущая дата</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>ТекущаяДатаСеанса()</expression>
+		<use>Always</use>
+	</parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
 		<dcsset:presentation xsi:type="v8:LocalStringType">
@@ -590,6 +620,9 @@
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>ВидДокумента</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Разрез</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Серия</dcsset:field>
@@ -742,6 +775,13 @@
 						<dcsset:groupItems>
 							<dcsset:item xsi:type="dcsset:GroupItemField">
 								<dcsset:field>ВидДокумента</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Разрез</dcsset:field>
 								<dcsset:groupType>Items</dcsset:groupType>
 								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>

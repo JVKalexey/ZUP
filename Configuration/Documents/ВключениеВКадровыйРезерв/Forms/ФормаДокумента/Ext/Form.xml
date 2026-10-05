@@ -11,7 +11,6 @@
 		<ChildItems>
 			<Button name="ФормаПровестиИЗакрыть" id="124">
 				<Type>CommandBarButton</Type>
-				<DefaultButton>true</DefaultButton>
 				<CommandName>Form.Command.ПровестиИЗакрыть</CommandName>
 				<ExtendedTooltip name="ФормаПровестиИЗакрытьРасширеннаяПодсказка" id="125"/>
 			</Button>
@@ -195,18 +194,31 @@
 							<v8:content>Сотрудники</v8:content>
 						</v8:item>
 					</Title>
-					<CommandSet>
-						<ExcludedCommand>Add</ExcludedCommand>
-						<ExcludedCommand>Copy</ExcludedCommand>
-					</CommandSet>
 					<RowFilter xsi:nil="true"/>
 					<ContextMenu name="СотрудникиКонтекстноеМеню" id="36"/>
 					<AutoCommandBar name="СотрудникиКоманднаяПанель" id="37">
+						<Autofill>false</Autofill>
 						<ChildItems>
 							<Button name="СотрудникиПодбор" id="101">
 								<Type>CommandBarButton</Type>
 								<CommandName>Form.Command.Подобрать</CommandName>
 								<ExtendedTooltip name="СотрудникиПодборРасширеннаяПодсказка" id="102"/>
+							</Button>
+							<Button name="СотрудникиДобавить" id="144">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.Сотрудники.StandardCommand.Add</CommandName>
+								<ExtendedTooltip name="СотрудникиДобавитьРасширеннаяПодсказка" id="145"/>
+							</Button>
+							<Button name="СотрудникиСкопировать" id="142">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Item.Сотрудники.StandardCommand.Copy</CommandName>
+								<Picture>
+									<xr:Ref>StdPicture.CloneListItem</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+								<ExtendedTooltip name="СотрудникиСкопироватьРасширеннаяПодсказка" id="143"/>
 							</Button>
 							<Button name="СотрудникиПереместитьВниз" id="122">
 								<Type>CommandBarButton</Type>

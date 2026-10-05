@@ -162,11 +162,27 @@
 				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="21"/>
 			</SearchControlAddition>
 			<ChildItems>
-				<LabelField name="ВидДокумента" id="28">
-					<DataPath>Список.ВидДокумента</DataPath>
-					<ContextMenu name="ВидДокументаКонтекстноеМеню" id="29"/>
-					<ExtendedTooltip name="ВидДокументаРасширеннаяПодсказка" id="30"/>
-				</LabelField>
+				<ColumnGroup name="ГруппаВидДокументаРазрез" id="78">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид документа и разрез</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаВидДокументаРазрезРасширеннаяПодсказка" id="79"/>
+					<ChildItems>
+						<LabelField name="ВидДокумента" id="28">
+							<DataPath>Список.ВидДокумента</DataPath>
+							<ContextMenu name="ВидДокументаКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ВидДокументаРасширеннаяПодсказка" id="30"/>
+						</LabelField>
+						<LabelField name="Разрез" id="80">
+							<DataPath>Список.Разрез</DataPath>
+							<ContextMenu name="РазрезКонтекстноеМеню" id="81"/>
+							<ExtendedTooltip name="РазрезРасширеннаяПодсказка" id="82"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
 				<ColumnGroup name="ГруппаСерияИНомер" id="52">
 					<Title>
 						<v8:item>
@@ -297,11 +313,12 @@
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
-				<DynamicDataRead>false</DynamicDataRead>
+				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
 	ДокументыИР.Период,
 	ДокументыИР.Физлицо,
-	ДокументыИР.ВидДокумента,
+	ДокументыИР.ВидДокумента, 
+	ДокументыИР.Разрез,
 	ДокументыИР.Серия,
 	ДокументыИР.Номер,
 	ДокументыИР.ДатаВыдачи,
@@ -335,7 +352,8 @@
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.бит_ум_ДокументыИР.СрезПоследних КАК ДокументыИРСрезПоследних
 		ПО ДокументыИР.Период = ДокументыИРСрезПоследних.Период
 			И ДокументыИР.Физлицо = ДокументыИРСрезПоследних.Физлицо
-			И ДокументыИР.ВидДокумента = ДокументыИРСрезПоследних.ВидДокумента</QueryText>
+			И ДокументыИР.ВидДокумента = ДокументыИРСрезПоследних.ВидДокумента 
+			И ДокументыИР.Разрез = ДокументыИРСрезПоследних.Разрез</QueryText>
 				<MainTable>InformationRegister.бит_ум_ДокументыИР</MainTable>
 				<ListSettings>
 					<dcsset:filter>

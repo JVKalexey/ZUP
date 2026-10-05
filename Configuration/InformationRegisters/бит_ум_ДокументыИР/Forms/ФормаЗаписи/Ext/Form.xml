@@ -4,6 +4,8 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -20,6 +22,12 @@
 				<Event name="OnChange">ВидДокументаПриИзменении</Event>
 			</Events>
 		</InputField>
+		<InputField name="Разрез" id="61">
+			<DataPath>Запись.Разрез</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="РазрезКонтекстноеМеню" id="62"/>
+			<ExtendedTooltip name="РазрезРасширеннаяПодсказка" id="63"/>
+		</InputField>
 		<UsualGroup name="ГруппаСерияИНомер" id="34">
 			<Title>
 				<v8:item>
@@ -29,7 +37,6 @@
 			</Title>
 			<HorizontalStretch>false</HorizontalStretch>
 			<Group>Horizontal</Group>
-			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаСерияИНомерРасширеннаяПодсказка" id="35"/>
@@ -56,7 +63,6 @@
 				</v8:item>
 			</Title>
 			<Group>Horizontal</Group>
-			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаДатаВыдачиИСрокДействияРасширеннаяПодсказка" id="44"/>
@@ -81,7 +87,6 @@
 				</v8:item>
 			</Title>
 			<Group>Horizontal</Group>
-			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаДополнительноеПолеРасширеннаяПодсказка" id="37"/>
@@ -102,7 +107,6 @@
 				</v8:item>
 			</Title>
 			<Group>Horizontal</Group>
-			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаДополнительноеПоле2РасширеннаяПодсказка" id="49"/>
@@ -120,18 +124,38 @@
 			<ContextMenu name="ГосударственныйОрганКонтекстноеМеню" id="29"/>
 			<ExtendedTooltip name="ГосударственныйОрганРасширеннаяПодсказка" id="30"/>
 		</InputField>
-		<InputField name="ТерриторияДействия" id="45">
-			<DataPath>Запись.ТерриторияДействия</DataPath>
-			<ToolTip>
+		<UsualGroup name="ГруппаТерриторияДействияИКодСубъекта" id="56">
+			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Территория действия документа. Если не заполнено, то будет определяться из данных государственного органа, указанного в соответствующем поле.</v8:content>
+					<v8:content>Территория действия и код субъекта</v8:content>
 				</v8:item>
-			</ToolTip>
-			<ToolTipRepresentation>Button</ToolTipRepresentation>
-			<ContextMenu name="ТерриторияДействияКонтекстноеМеню" id="46"/>
-			<ExtendedTooltip name="ТерриторияДействияРасширеннаяПодсказка" id="47"/>
-		</InputField>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаТерриторияДействияИКодСубъектаРасширеннаяПодсказка" id="57"/>
+			<ChildItems>
+				<InputField name="ТерриторияДействия" id="45">
+					<DataPath>Запись.ТерриторияДействия</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Территория действия документа. Если не заполнено, то будет определяться из данных государственного органа, указанного в соответствующем поле.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>Button</ToolTipRepresentation>
+					<ContextMenu name="ТерриторияДействияКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="ТерриторияДействияРасширеннаяПодсказка" id="47"/>
+				</InputField>
+				<InputField name="КодСубъекта" id="58">
+					<DataPath>Запись.КодСубъекта</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КодСубъектаКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="КодСубъектаРасширеннаяПодсказка" id="60"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<InputField name="Примечание" id="53">
 			<DataPath>Запись.Примечание</DataPath>
 			<TitleLocation>Left</TitleLocation>
@@ -146,7 +170,6 @@
 				</v8:item>
 			</Title>
 			<Group>Horizontal</Group>
-			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаПериодИАрхивРасширеннаяПодсказка" id="42"/>

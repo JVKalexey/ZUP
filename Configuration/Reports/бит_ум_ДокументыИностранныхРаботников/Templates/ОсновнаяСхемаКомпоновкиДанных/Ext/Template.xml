@@ -253,6 +253,13 @@
 			<dataPath>ВидДокументаНазваниеДопПоля</dataPath>
 			<field>ВидДокументаНазваниеДопПоля</field>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Разрез</dataPath>
+			<field>Разрез</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
 	Сотрудники.Ссылка КАК Сотрудник,
@@ -377,7 +384,8 @@
 		КОГДА ДокументыИР.СрокДействия = ДАТАВРЕМЯ(1, 1, 1)
 			ТОГДА NULL
 		ИНАЧЕ РАЗНОСТЬДАТ(КОНЕЦПЕРИОДА(&amp;Период, ДЕНЬ), ДокументыИР.СрокДействия, ДЕНЬ)
-	КОНЕЦ КАК ОсталосьДоОкончанияСрокаДействия
+	КОНЕЦ КАК ОсталосьДоОкончанияСрокаДействия,
+	ДокументыИР.Разрез КАК Разрез
 {ВЫБРАТЬ
 	Сотрудник.*,
 	ТабельныйНомер,
@@ -401,7 +409,8 @@
 	ДопПолеНазвание,
 	Архив,
 	АктуальностьДокумента,
-	ОсталосьДоОкончанияСрокаДействия}
+	ОсталосьДоОкончанияСрокаДействия,
+	Разрез.*}
 ИЗ
 	Представления_КадровыеДанныеСотрудников КАК Представления_КадровыеДанныеСотрудников
 		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.бит_ум_ДокументыИР.СрезПоследних(&amp;Период, ) КАК ДокументыИР
@@ -444,7 +453,8 @@
 			КОГДА ДокументыИР.СрокДействия = ДАТАВРЕМЯ(1, 1, 1)
 				ТОГДА NULL
 			ИНАЧЕ РАЗНОСТЬДАТ(КОНЕЦПЕРИОДА(&amp;Период, ДЕНЬ), ДокументыИР.СрокДействия, ДЕНЬ)
-		КОНЕЦ) КАК ОсталосьДоОкончанияСрокаДействия}</query>
+		КОНЕЦ) КАК ОсталосьДоОкончанияСрокаДействия,
+	ДокументыИР.Разрез.*}</query>
 		<autoFillFields>false</autoFillFields>
 	</dataSet>
 	<parameter>
@@ -466,6 +476,25 @@
 		<denyIncompleteValues>true</denyIncompleteValues>
 		<use>Always</use>
 	</parameter>
+	<parameter>
+		<name>ТекущаяДата</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Текущая дата</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>ТекущаяДатаСеанса()</expression>
+		<use>Always</use>
+	</parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
 		<dcsset:presentation xsi:type="v8:LocalStringType">
@@ -478,6 +507,9 @@
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>ВидДокумента</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Разрез</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Серия</dcsset:field>

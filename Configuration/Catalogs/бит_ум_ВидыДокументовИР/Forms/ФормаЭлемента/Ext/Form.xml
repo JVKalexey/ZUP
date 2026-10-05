@@ -8,15 +8,35 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<InputField name="Наименование" id="1">
-			<DataPath>Объект.Description</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
-			<Events>
-				<Event name="OnChange">НаименованиеПриИзменении</Event>
-			</Events>
-		</InputField>
+		<UsualGroup name="ГруппаНаименованиеКодВида" id="62">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование и код вида</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНаименованиеКодВидаРасширеннаяПодсказка" id="63"/>
+			<ChildItems>
+				<InputField name="Наименование" id="1">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="OnChange">НаименованиеПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="КодВида" id="64">
+					<DataPath>Объект.КодВида</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КодВидаКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="КодВидаРасширеннаяПодсказка" id="66"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<InputField name="НаименованиеДляПечати" id="59">
 			<DataPath>Объект.НаименованиеДляПечати</DataPath>
 			<ContextMenu name="НаименованиеДляПечатиКонтекстноеМеню" id="60"/>
@@ -148,6 +168,14 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
+		<CheckBoxField name="ИспользоватьРазрез" id="67">
+			<DataPath>Объект.ИспользоватьРазрез</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ИспользоватьРазрезКонтекстноеМеню" id="68"/>
+			<ExtendedTooltip name="ИспользоватьРазрезРасширеннаяПодсказка" id="69"/>
+		</CheckBoxField>
 		<Table name="ВидыИР" id="21">
 			<HeightInTableRows>3</HeightInTableRows>
 			<EnableStartDrag>true</EnableStartDrag>

@@ -58,7 +58,7 @@
 					<Title formatted="false">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Компания "Первый Бит" г. Москва 2024 г.</v8:content>
+							<v8:content>Компания "Первый Бит" г. Москва 2026 г.</v8:content>
 						</v8:item>
 					</Title>
 					<ContextMenu name="ДекорацияАвторскиеПраваКонтекстноеМеню" id="9"/>
@@ -105,6 +105,11 @@
 							<ContextMenu name="ДекорацияОтступКонтекстноеМеню" id="19"/>
 							<ExtendedTooltip name="ДекорацияОтступРасширеннаяПодсказка" id="20"/>
 						</LabelDecoration>
+						<Button name="ПроверитьВнедрение" id="24">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПроверитьВнедрение</CommandName>
+							<ExtendedTooltip name="ПроверитьВнедрениеРасширеннаяПодсказка" id="25"/>
+						</Button>
 						<Button name="КнопкаЗакрыть" id="16">
 							<Type>UsualButton</Type>
 							<DefaultButton>true</DefaultButton>
@@ -140,4 +145,21 @@
 			</Type>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ПроверитьВнедрение" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить внедрение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверяет, что подсистема встроена в конфигурацию полностью</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьВнедрение</Action>
+		</Command>
+	</Commands>
 </Form>

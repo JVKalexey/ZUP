@@ -178,6 +178,24 @@
 			</Item>
 		</ChildItems>
 	</Item>
+	<Item id="96855272-a4f3-4adb-b796-ef05263e8bb2">
+		<Name>ПостановкаСнятиеУчета</Name>
+		<Code/>
+		<Description>Постановка / снятие учета</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="2564594c-929e-4b92-976f-7967f915a707">
+				<Name>ПостановкаСнятиеУчетаТип</Name>
+				<Code/>
+				<Description>Тип сведений</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.бит_ум_ЗначенияПараметровПечати</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
 	<Item id="6b468065-8354-4a3c-94eb-89a96ba519eb">
 		<Name>СведенияОбОбучении</Name>
 		<Code/>
@@ -387,6 +405,32 @@
 				</Type>
 				<IsFolder>false</IsFolder>
 			</Item>
+			<Item id="56549fe3-badc-48d7-b57d-ab99b9d27ff4">
+				<Name>СтажЛет</Name>
+				<Code/>
+				<Description>Стаж, лет</Description>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>2</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="dc88bde2-7cfa-4f62-8c75-fd68d8c69404">
+				<Name>СтажМесяцев</Name>
+				<Code/>
+				<Description>Стаж, месяцев</Description>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>2</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
 		</ChildItems>
 	</Item>
 	<Item id="58f26d82-a13b-4ae7-8da3-93e4122ecaf8">
@@ -544,6 +588,19 @@
 			<v8:Type>xs:string</v8:Type>
 			<v8:StringQualifiers>
 				<v8:Length>999</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="539c22cf-af98-471a-980a-60cfc87fc5fb">
+		<Name>НомерЗаписиВЕРН</Name>
+		<Code/>
+		<Description>Номер записи в ЕРН</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>12</v8:Length>
 				<v8:AllowedLength>Variable</v8:AllowedLength>
 			</v8:StringQualifiers>
 		</Type>
